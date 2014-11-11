@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.UserServiceSalary, Entities" table="UserServiceSalary" dynamic-update="true">
+    
+    <id name="Id" column="USL_ID"><generator class="guid.comb"/></id>
+    <property name="DeleteTime" column="USL__DELETE_TIME" />
+
+	  <property name="UserService" column="USL_USER_SERVICE_ID"/>
+    <component name="SeleryType">
+      <property name="Value" column="USL_SELERY_TYPE" access="property"/>
+    </component>
+    <component name="Selery">
+      <property name="Value" column="USL_SELERY" access="property"/>
+    </component>
+	  <property name="SeleryValue" column="USL_SELERY_VALUE"/>
+	  <property name="ValidFrom" column="USL_VALID_FROM"/>
+	  <property name="ValidTo" column="USL_VALID_TO"/>
+  </class>
+</hibernate-mapping>
+<!--
+
+-->

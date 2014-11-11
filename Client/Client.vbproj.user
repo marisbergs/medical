@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>\\192.168.55.100\Application\|p\|\\192.168.1.246\Application\|D:\PreMedic\|\\192.168.1.249\Application\</PublishUrlHistory>
+    <InstallUrlHistory>\\192.168.1.246\Application\|\\192.168.1.249\Application\|\\77.240.245.152\Application\</InstallUrlHistory>
+    <SupportUrlHistory>
+    </SupportUrlHistory>
+    <UpdateUrlHistory>\\192.168.1.246\Application\|\\192.168.1.249\Application\|\\77.240.245.152\Application\|\\77.240.245.152/Application\</UpdateUrlHistory>
+    <BootstrapperUrlHistory>
+    </BootstrapperUrlHistory>
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>true</VerifyUploadedFiles>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+    <ErrorReportUrlHistory>
+    </ErrorReportUrlHistory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.WorkTime, Entities" table="WorkTime" dynamic-update="true">
+    
+    <id name="Id" column="WOT_ID"><generator class="guid.comb"/></id>
+    <property name="DeleteTime" column="WOT__DELETE_TIME" />
+
+    <many-to-one name="User" column="WOT_USER_ID" fetch="join"/>
+	  <many-to-one name="UserWorkTime" column="WOT_USER_WORK_TIME_ID"/>
+	  <many-to-one name="Room" column="WOT_ROOM_ID"/>
+	  <many-to-one name="GroupWork" column="WOT_GROUPS_WORK"/>
+	  <property name="GroupId" column="WOT_GROUPS_ID"/>
+	  <property name="Price" column="WOT_PRICE"/>
+	  <property name="PatientCount" column="WOT_PATIENT_COUNT"/>
+	  <property name="Length" column="WOT_LENGTH"/>
+	  <property name="StartTime" column="WOT_START_TIME"/>
+	  <property name="EndTime" column="WOT_END_TIME"/>
+	  <property name ="Acity" column ="WOT_ACYITY" />
+  </class>
+</hibernate-mapping>
+<!--
+
+-->

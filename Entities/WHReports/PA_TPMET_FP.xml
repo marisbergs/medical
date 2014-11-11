@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<PA_TPMET_FP>
+  <Pamatdati>
+    <vidtin_kods>$this.S('CMCase.SrsDepartment.Department.Code')</vidtin_kods>
+    <akta_numurs>$this.S('CMCase.TIAct.DocNumber')</akta_numurs>
+    <akta_datums>$this.D('CMCase.TIAct.ActDate')</akta_datums>
+    <kp_veids>$this.S('CMCase.TIAct.CaseType.ExternalID')</kp_veids>
+    <nmr_kods>$this.S('CMCase.TaxpayerCode')</nmr_kods>
+    <adrese>$this.S('CMCase.TIAct.ObjAddress')</adrese>
+  </Pamatdati>
+  <!--#if($this.PhysicalEntitiesPurchase.ActiveItems.Count>0)-->
+  <!--#foreach($a in $this.PhysicalEntitiesPurchase.ActiveItems)-->
+  <Saturs>
+    <personas_kods>$a.S('PersonCode')</personas_kods>
+    <akta_datums>$a.D('DocDate')</akta_datums>
+    <akta_numurs>$a.S('DocNumber')</akta_numurs>
+    <iin_aprekinats>$a.S('Calculated')</iin_aprekinats>
+    <iin_summa>$a.N('CalculatedSum')</iin_summa>
+    <iin_pareizs>$a.S('CalculatedProperly')</iin_pareizs>
+  </Saturs>
+  <!--#end-->
+  <!--#end-->
+</PA_TPMET_FP>

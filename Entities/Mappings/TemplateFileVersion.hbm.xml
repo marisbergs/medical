@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.TemplateFileVersion, Entities" table="[TemplateFileVersions]" dynamic-update="true" batch-size="10">
+    
+    <id name="Id" column="TFV_ID">
+      <generator class="guid.comb"/>
+    </id>
+    
+    <!-- Common fields for optimistic locking and data synchronization -->
+    <property name="DeleteTime" column="TFV__DELETE_TIME" />
+    <!-- . -->
+    <many-to-one name="Template" column="TFV_TEMPLATE_ID" cascade="all-delete-orphan" not-null="true" fetch="select" />
+    <property name="VersionNumber" column="TFV_VERSION_NUMBER" not-null="true" />
+    <property name="Comment" column="TFV_COMMENT" />
+    <property name="ValidFrom" column="TFV_VALID_FROM" not-null="true" />
+    <property name="ValidUntil" column="TFV_VALID_UNTIL" />
+    <many-to-one name="File" column="TFV_FILE_ID" not-null="true" fetch="join" cascade="all-delete-orphan" />
+
+  </class>
+</hibernate-mapping>
+

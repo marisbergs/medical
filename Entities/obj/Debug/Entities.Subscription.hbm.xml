@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.Subscription, Entities" table="[Subscriptions]" dynamic-update="true">
+    
+    <id name="Id" column="SUB_ID"><generator class="guid.comb" /></id>	  
+    <property name="DeleteTime" column="SUB__DELETE_TIME" />
+    
+    <property name ="Patient" column ="SUB_PATIENT_ID"/>
+    <property name ="Service" column ="SUB_SERVICE_ID"/>
+    <property name ="Price" column ="SUB_PRICE"/>
+    <property name ="TimeCount" column ="SUB_TIME_COUNT"/>
+    <property name ="Comment" column ="SUB_COMMENT"/>
+    <property name ="PayTime" column ="SUB_PAY_TIME"/>
+    <property name ="UserAcceptedPayment" column ="SUB_USER_ID_ACCEPT_PAYMENT"/>
+
+    <bag name="SubscriptionDetail" table="[SubscriptionsDetails]"
+		  access="property" generic="true" inverse="true" outer-join ="true" cascade="all-delete-orphan" lazy="false"
+		  collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.SubscriptionDetail, Entities]], Core">
+      <key column="SUD_SUBSCRIPTION_ID" />
+      <one-to-many class="Entities.SubscriptionDetail, Entities" />
+    </bag>
+  </class>
+</hibernate-mapping>

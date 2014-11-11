@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.PatientFamily, Entities" table="[PatientsFamily]" dynamic-update="true">
+    
+    <id name="Id" column="PAP_ID"><generator class="guid.comb" /></id>
+	  
+	  <property name="DeleteTime" column="PAP__DELETE_TIME" />
+	  <property name="Patient" column="PAP_PATIENT_ID"/>
+	  <property name="PatientRelated" column="PAP_RELATED_PATIENT_ID"/>
+	  <property name="Kindred" column="PAP_TYPE_ID" />	  
+  </class>
+</hibernate-mapping>

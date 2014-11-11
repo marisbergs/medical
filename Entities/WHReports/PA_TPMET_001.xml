@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<PA_TPMET_001>
+  <Pamatdati>
+    <vidtin_kods>$this.S('CMCase.SrsDepartment.Department.Code')</vidtin_kods>
+    <akta_numurs>$this.S('CMCase.TIAct.DocNumber')</akta_numurs>
+    <akta_datums>$this.D('CMCase.TIAct.ActDate')</akta_datums>
+    <kp_veids>$this.S('CMCase.TIAct.CaseType.ExternalID')</kp_veids>
+    <nmr_kods>$this.S('CMCase.TaxpayerCode')</nmr_kods>
+    <adrese>$this.S('CMCase.TIAct.ObjAddress')</adrese>
+  </Pamatdati>
+  <!--#if($this.LegalEntitiesPurchase.ActiveItems.Count>0)-->
+  <!--#foreach($a in $this.LegalEntitiesPurchase.ActiveItems)-->
+  <Saturs>
+    <nmr_kods>$a.S('TaxpayerCode')</nmr_kods>
+    <darijuma_datums>$a.D('DocDate')</darijuma_datums>
+    <serija_numurs>$a.S('DocNumber')</serija_numurs>
+    <summa_bezpvn>$a.N('SumWithoutVAT')</summa_bezpvn>
+    <pvn_summa>$a.N('VAT')</pvn_summa>
+    <kopeja_summa>$a.N('Sum')</kopeja_summa>
+    <sanemnodod_pazime>1</sanemnodod_pazime>
+  </Saturs>
+  <!--#end-->
+  <!--#end-->
+  <!--#if($this.LegalEntitiesSell.ActiveItems.Count>0)-->
+  <!--#foreach($a in $this.LegalEntitiesSell.ActiveItems)-->
+  <Saturs>
+    <nmr_kods>$a.S('TaxpayerCode')</nmr_kods>
+    <darijuma_datums>$a.D('DocDate')</darijuma_datums>
+    <serija_numurs>$a.S('DocNumber')</serija_numurs>
+    <summa_bezpvn>$a.N('SumWithoutVAT')</summa_bezpvn>
+    <pvn_summa>$a.N('VAT')</pvn_summa>
+    <kopeja_summa>$a.N('Sum')</kopeja_summa>
+    <sanemnodod_pazime>2</sanemnodod_pazime>
+  </Saturs>
+  <!--#end-->
+  <!--#end-->
+</PA_TPMET_001>

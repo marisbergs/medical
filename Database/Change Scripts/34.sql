@@ -1,0 +1,1 @@
+UPDATE _SysParameters SET PRM_VALUE = '34' WHERE PRM_NAME LIKE ('VERSION_%_DB')    

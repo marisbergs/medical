@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.UserService, Entities" table="UserServices" dynamic-update="true">
+    
+    <id name="Id" column="USE_ID"><generator class="guid.comb"/></id>
+    <property name="DeleteTime" column="USE__DELETE_TIME" />
+
+    <many-to-one name="User" column="USE_USER_ID"/>
+	  <property name="Service" column="USE_SERVICE_ID"/>
+	  <property name="ManualPrice" column="USE_PRICE"/>
+	  <property name="ManualTime" column="USE_TIME"/>
+    <component name="SeleryType">
+      <property name="Value" column="USE_SELERY_TYPE" access="property"/>
+    </component>
+    <property name="SeleryValue" column="USE_SELERY_VALUE"/>
+    <component name="Selery">
+      <property name="Value" column="USE_SELERY" access="property"/>
+    </component>
+    <bag name="UserServiceSelery" table="[UserServiceSalary]"
+		  access="property" generic="true" inverse="true"
+		  cascade="all-delete-orphan" lazy="true"
+		  collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.UserServiceSalary, Entities]], Core">
+      <key column="USL_USER_SERVICE_ID" />
+      <one-to-many class="Entities.UserServiceSalary, Entities" />
+    </bag>
+  </class>
+</hibernate-mapping>
+<!--
+
+-->

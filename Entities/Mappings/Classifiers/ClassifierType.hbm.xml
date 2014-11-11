@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.ClassifierType, Entities" table="ClassifierTypes" dynamic-update="true">
+    
+    <id name="Id" column="CLT_ID"><generator class="assigned"/></id>
+    <property name="DeleteTime" column="CLT__DELETE_TIME" />
+    
+    <property name="Value" column="CLT_NAME" />
+    <component name="Kind">
+      <property name="Value" column="CLT_KIND" access="property" not-null="true" />
+    </component>
+    <property name="BrowseFormName" column="CLT_FORM" />
+    <property name="ValuePrompt" column="CLT_VALUE_PROMPT"/>
+    <property name="CodePrompt" column="CLT_CODE_PROMPT"/>
+	  <property name="MemoPrompt" column="CLT_MEMO_PROMPT"/>
+	  <property name="DecimalPlace" column="CTL_DECIMAL_PLACE"/>
+    <property name="NumberPrompt" column="CLT_NUMBER_PROMPT"/>
+	  <property name="MarkPrompt" column="CLT_MARK_PROMPT"/>
+	  <property name="SecondMarkPrompt" column="CLT_SECOND_MARK_PROPT"/>
+	  <property name="IntegerPrompt" column="CLT_INTEGER_PROMPT"/>
+	  <property name="SecondIntegerPrompt" column="CTL_SECOND_INTEGER_PROMPT"/>
+	  <property name="ThirdIntegerPrompt" column="CTL_THIRD_INTEGER_PROMPT"/>
+    <property name="CommentPrompt" column="CLT_COMMENT_PROMPT" />
+	  <many-to-one name="Lookup" column ="CLT_LOOKUP_ID" fetch="select" />
+	  <many-to-one name="Reference" column ="CLT_REFERENCE_ID" fetch="select" />
+	  <many-to-one name="ReferenceSecond" column ="CTL_REFERENCE_ID_SECOND" fetch="select" />
+	  <many-to-one name="ReferenceThird" column ="CTL_REFERENCE_ID_THIRD" fetch="select" />
+	  <many-to-one name="ReferenceFourth" column ="CTL_REFERENCE_ID_FOURTH" fetch="select" />
+    <many-to-one name="ReferenceFive" column ="CTL_REFERENCE_ID_FIVE" fetch="select" />
+    <many-to-one name="ReferenceSix" column ="CTL_REFERENCE_ID_SIX" fetch="select" />
+    <property name="FourIntegerPrompt" column ="CTL_FOUR_INTEGER_PROPT"/>
+    <property name="MaterialCostPrompt" column ="CTL_MATERIAL_COST"/>
+    <property name ="ColorPrompt" column ="CTL_COLOR" />
+     
+  </class>
+</hibernate-mapping>
+

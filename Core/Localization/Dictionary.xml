@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE dictionary [
+  <!ELEMENT dictionary (Entry*)>
+  <!ELEMENT Entry EMPTY>
+  <!ATTLIST dictionary language CDATA #REQUIRED>
+  <!ATTLIST Entry key ID #REQUIRED>
+  <!ATTLIST Entry value CDATA #REQUIRED>
+]>
+
+<dictionary language="lv">
+  <Entry key="rbn.Yes" value="Jā"/>
+  <Entry key="rbn.NO" value="Nē"/>
+
+  <Entry key="Err.HasErrors" value="Pirms saglabāt ierakstu, izlabojiet ievadlauku kļūdas!"/>
+  <Entry key="Err.TimeIntervalOverlap" value ="Ņorādītie laika intervāli pārklājās ar {0}"/>
+  <Entry key="Err.TooLong" value="Lauka garums nedrīkst pārsniegt {0} simbolus!" />
+  <Entry key="Err.TooBig" value="Lauka maksimālā vērtība ir {0}!" />
+  <Entry key="Err.TooShort" value="Lauka garums nedrīkst būt mazāks par {0} simboliem!" />
+  <Entry key="Err.ValueRequired" value="Nav aizpildīts obligāti aizpildāms lauks!" />
+  <Entry key="Err.InvalidDateInterval" value="Nekorekti uzrādīts datumu intervāls!" />
+  <Entry key="Err.InvalidDateValueLes" value="Datumam jābūt lielākam vai vienādam ar {0}!" />
+  <Entry key="Err.InvalidDateValueGrt" value="Datumam jābūt mazākam vai vienādam ar {0}!" />
+  <Entry key="Err.InvalidDecimalValueLes" value="Skaitļim jābūt lielākam vai vienādam ar {0}!" />
+  <Entry key="Err.InvalidDecimalValueGrt" value="Skaitļim jābūt mazākam vai vienādam ar {0}!" />
+  <Entry key="Err.EmailNotValid" value ="E-pasta adrese ir ievadīta nepareizi!"/>
+  <Entry key ="Err.InvalidVisitTime" value="Norādītais vizītes laiks neietilpst pieejamajā intervālā, kas ir no {0} līdz {1}"/>
+  <Entry key="Err.FutureDate" value="Datums nevar būt lielāks par šodienas datumu!" />
+  <Entry key="Err.Negative" value="Skaitlis nevar būt negatīvs!" />
+  <Entry key="Err.PastDate" value="Datums nevar būt mazāks par šodienas datumu!" />
+  <Entry key="Err.UnhandledException" value="Negaidīta kļūda!" />
+  <Entry key="Err.InvalidLoginInformation" value="Nepareizs lietotāja vārds vai parole!" />
+  <Entry key="Msg.CloseApp" value="Vai tiešām vēlaties beigt darbu ar aplikāciju?"/>
+  <Entry key="Msg.SaveNewVersion" value="No datubāzes atvērtajā dokumentā ir veiktas izmaiņas vai vēlaties tās saglabāt arī sistēmā?"/>
+  <Entry key="Msg.ActivateConfirmation" value ="Vai tiešām vēlaties atjaunot šo ierakstu?"/>
+  <Entry key="Err.HierClassifierDeleteChild" value="Pirms dzēst ierakstu, izdzēšiet apakšierakstus!"/>
+  <Entry key="Err.CouldNotDelete" value="Neizdevās izdzēst ierakstu!" />
+  <Entry key="Err.CouldNotSave" value="Neizdevās saglabāt ierakstu!" />
+  <Entry key="Msg.EntryAlreadyDeleted" value="Šis ieraksts ir jau izdzēsts!" />
+  <Entry key="Msg.DeleteConfirmation" value="Vai tiešām vēlaties dzēst šo ierakstu?" />
+  <Entry key="Msg.CantGenerateUnlessSaved" value="Pirms dokumenta ģenerēšanas jāsaglabā veiktās izmaiņas!" />
+  <Entry key="Msg.GenerateAgain" value="Dokuments jau ir ģenerēts, vai vēlaties ģenerēt vēlreiz? Ģenerējot vēlreiz, tiks zaudētas izmaiņas, kas pirms tam veiktas WORD dokumentā." />
+  <Entry key="Msg.IncorrectPassword" value ="Ievadītās paroles nesakrīt."/>
+  <Entry key="Err.RoleIsBysy" value="Loma ir piešķirta sistēmas lietotājiem!" />
+  <Entry key="Err.TemplateFileOpened" value ="Pievienojamais fails atvērts. Lūdzu aizveriet un mēģiniet vēlreiz!"/>
+  <Entry key="Msg.UserConfirmLockout" value="Vai jūs tiešām vēlaties noņemt darbiniekam piešķirto lomu?"/>
+  <Entry key="Msg.Save" value="Ieraksta dati ir laboti. Vai vēlaties saglabāt datus?"/>
+
+
+  <Entry key ="BonusPointType.Add" value ="Pievienot"/>
+  <Entry key ="BonusPointType.Use" value ="Izmantota"/>
+
+  <!-- YesNo... -->
+  <Entry key="YesNo.Yes" value="Ir"/>
+  <Entry key="YesNo.No" value="Nav"/>
+    
+  <Entry key="Sex.Male" value="Vīrietis"/>
+  <Entry key="Sex.Female" value="Sieviete"/>
+
+  <Entry key="YesNo.DpGreaterOrEqualD" value="Dp&gt;=D"/>
+  <Entry key="YesNo.DpLessD" value="Dp&lt;D"/>
+
+  <!-- Cycle -->
+  <Entry key="Cycle.Regular" value="Regulārs"/>
+  <Entry key="Cycle.Irregular" value="Neregulārs"/>
+
+  <!-- SmsSendStatus -->
+  <Entry key="SmsSendStatus.NotSent" value="Jauns"/>
+  <Entry key="SmsSendStatus.Sent" value="Nosūtīts"/>
+  <Entry key="SmsSendStatus.InvalidPhone" value="Kļūdains telefona numurs"/>
+
+  <!-- PaymentStatus -->
+  <Entry key="PaymentStatus.NotPayd" value="Apmaksa nav veikta"/>
+  <Entry key="PaymentStatus.PaydPart" value="Apmaksāts daļēji"/>
+  <Entry key="PaymentStatus.PaydAll" value="Apmaksāts pilnībā"/>
+  
+  <!-- UsageStatus -->
+  <Entry key="UsageStatus.Created" value="Jauns"/>
+  <Entry key="UsageStatus.StartUsed" value="Uzsākts izmantot"/>
+  <Entry key="UsageStatus.Used" value="Izmantots pilnībā"/>
+
+	<!-- SeleryType -->
+	<Entry key="SeleryType.Time" value="1 nodarbība"/>
+	<Entry key="SeleryType.Percentage" value="Cenas"/>
+	
+	<!-- Selery -->
+	<Entry key="Selery.Percentage" value="%"/>
+	<Entry key="Selery.Ls" value="EUR"/>
+
+  <!-- Lay -->
+  <Entry key="Lay.One" value="Viens"/>
+  <Entry key="Lay.Many" value="Vairāki partneri"/>
+
+	<!-- Day -->
+	<Entry key="Day.Monday" value="Pirmdiena"/>
+	<Entry key="Day.Tuesday" value="Otrdiena"/>
+	<Entry key="Day.Wednesday" value="Treštdiena"/>
+	<Entry key="Day.Thursday" value="Ceturtdiena"/>
+	<Entry key="Day.Friday" value="Piektdiena"/>
+	<Entry key="Day.Saturday" value="Sestdiena"/>
+	<Entry key="Day.Sanday" value="Svētdiena"/>
+	
+  <!-- Health-->
+	<Entry key="Health.Normal" value="Normālas"/>
+	<Entry key="Health.Pathalogical" value="Pataloģija"/>
+	<Entry key="Health.SC" value="S.C."/>
+	<Entry key="Health.Well" value="Vesels"/>
+	<Entry key="Health.Ill" value="Slims"/>
+
+  <!-- Core.Dal.ConnectionTarget -->
+  <Entry key="ConnectionTarget.Local" value="Lokālā datubāze"/>
+  <Entry key="ConnectionTarget.Central" value="Centrālā datubāze"/>
+
+  <!-- MessageBox button text and Caption -->
+  <Entry key="Button.OK" value="Labi"/>
+  <Entry key="Button.Cancel" value="Atcelt"/>
+  <Entry key="Button.Yes" value="Jā"/>
+  <Entry key="Button.No" value="Nē"/>
+  <Entry key="Caption.Default" value="Paziņojums"/>
+	
+<!-- ClassifierKind -->
+  <Entry key="ClassifierKind.System" value="Sistēmas"/>
+  <Entry key="ClassifierKind.External" value="Ārējais"/>
+  <Entry key="ClassifierKind.Internal" value="Iekšējais"/>
+
+  <!-- PaymentType -->
+  <Entry key="PaymentType.PaymentCash" value="Skaidrā naudā"/>
+  <Entry key="PaymentType.Payment" value="Bezskaidrā naudā"/>
+  <Entry key="PaymentType.PaymentNo" value="Nav nepieciešams"/>
+
+	<!-- DeforestDocuments -->
+	<Entry key="DeforestDocuments.DeforestDocumentsYes" value="Ir"/>
+	<Entry key="DeforestDocuments.DeforestDocumentsNo" value="Nav"/>
+	<Entry key="DeforestDocuments.DeforestDocumentsNotNecessary" value="Nav nepieciešams"/>
+
+	<!-- Working -->
+	<Entry key="Working.Work" value="Strādā"/>
+	<Entry key="Working.Student" value="Students"/>
+	<Entry key="Working.Unwork" value="Bezdarbnieks"/>
+	<Entry key="Working.Children" value="Bērns"/>
+	<Entry key="Working.Senior" value="Pensionārs"/>
+	
+	<!-- v -->
+	<Entry key="SMSType.Before" value="Vizīte ieplānota pirms"/>
+	<Entry key="SMSType.After" value="Vizīte ieplānota pēc"/>
+	<Entry key="SMSType.GroupWork" value="Seminārs"/>
+	<Entry key="SMSType.Reservation" value="Vizītes pieteikums"/>
+	<Entry key ="SMSType.BlackList" value ="Paziņojums par iekļaušanu melnajā sarakstā"/>
+  <Entry key ="SMSType.BonusPointsAdded" value="Paziņojums par piešķirtiem bonusa punktiem"/>
+  <Entry key ="SMSType.BirthDay" value="Dzimšanas dienas apsveikums"/>
+      
+  <!-- DevExpress strings -->  
+  <Entry key ="DevEx.OK" value = "Labi"/>
+  <Entry key ="DevEx.Cancel" value = "Atcelt"/>
+  <Entry key ="DevEx.DateEditToday" value = "Šodien"/>
+  <Entry key ="DevEx.DateEditClear" value = "Attīrīt"/>
+  <Entry key ="DevEx.TextEditMenuUndo" value = "Atsaukt"/>
+  <Entry key ="DevEx.TextEditMenuCut" value = "Izgriezt"/>
+  <Entry key ="DevEx.TextEditMenuCopy" value = "Kopēt"/>
+  <Entry key ="DevEx.TextEditMenuPaste" value = "Ielīmēt"/>
+  <Entry key ="DevEx.TextEditMenuDelete" value = "Dzēst"/>
+  <Entry key ="DevEx.TextEditMenuSelectAll" value = "Iezīmēt visu"/>
+  <Entry key ="DevEx.LookUpEditValueIsNull" value = ""/>
+  <Entry key ="DevEx.InvalidValueText" value = "Aplama vērtība."/>
+  <Entry key ="DevEx.CheckChecked" value ="X"/>
+  <Entry key ="DevEx.CheckUnchecked" value =""/>
+
+  <!-- Universal classifier -->
+	<Entry key ="Classifier.ValuePrompt" value ="Nosaukums"/>
+	<Entry key ="Classifier.AcceptPatients" value ="Pieņem Klientus"/>
+	<Entry key ="Classifier.Acyity" value ="Akūta vizīte"/>
+	<Entry key ="Classifier.Internet" value ="Internetam"/>
+	<Entry key ="Classifier.VisitTime" value ="Vizītes ilgums"/>
+	<Entry key ="Classifier.CommentPrompt" value ="Piezīmes"/>
+	<Entry key ="Classifier.CodePrompt" value ="Kods"/>
+	<Entry key ="Classifier.ParentPrompt" value ="Virsgrupa"/>
+	<Entry key ="Classifier.NumberPrompt" value ="Vērtība"/>
+	<Entry key ="Classifier.Account" value ="Konts"/>
+	<Entry key ="Classifier.Subaccount" value ="Subkonts"/>
+	<Entry key ="Classifier.NeedPeriod" value ="Jānorāda periods"/>
+	<Entry key ="Classifier.NotNeedPeriod" value ="Periods nav nepieciešams"/>
+	<Entry key ="Classifier.FineRate" value ="Naudas soda likme"/>
+	<Entry key ="Classifier.Room" value ="Resursu kabinets"/>
+	<Entry key ="Classifier.Group" value ="Grupa"/>
+	<Entry key ="Classifier.Price" value ="Pakalpojuma cena"/>
+	<Entry key ="Classifier.LessonPrice" value ="Nodarbības cena"/>
+  <Entry key ="Classifier.Delay" value ="Ilgums min."/>
+  <Entry key ="Classifier.MaterialCost" value ="Materiālu cena."/>
+	<Entry key ="Classifier.StartTime" value ="Klienta sagatavošanas ilgums min."/>
+	<Entry key ="Classifier.PartnerCount" value ="Dalībnieku skaits grupā / Abonementa reižu skaits"/>
+	<Entry key ="Classifier.EndTime" value ="Klienta vizītes pabeigšanas ilgums min."/>
+	<Entry key ="Classifier.Percent" value ="Procentu likme"/>
+	<Entry key ="Classifier.Percentage" value ="Procentu likme"/>
+	<Entry key ="Classifier.SpecialityGroups" value ="Specialitātes grupa"/>
+	<Entry key ="Classifier.ServiceTypes" value ="Pakalpojuma veids"/>
+	<Entry key ="Classifier.Specialization" value ="Medicīniskā specializācija"/>
+	<Entry key ="Classifier.BusinessGroup" value ="Biznesa grupējums"/>
+	<Entry key ="Classifier.Resource" value ="Piesaistītais resurss"/>
+	<Entry key ="Classifier.GroupWork" value ="Grupas nodarbības"/>
+	<Entry key ="Classifier.PresentCard" value ="Dāvanu kartes"/>
+	<Entry key ="Classifier.ResourcesTotal" value ="Iekārtas kopā"/>
+	<Entry key ="Classifier.ResourcesAviable" value ="Iekārtas pieejamas"/>
+  <Entry key ="Classifier.RtgType" value ="RTG izmeklējuma veidi"/>
+  <Entry key ="Classifier.Services" value ="Saistītais pakalpojums"/>
+  <Entry key ="Classifier.Color" value ="Krāsa"/>
+  <Entry key ="Classifier.NeedCall" value ="Klientam jāzvana"/>
+	
+  <Entry key="DocumentType.Prescription" value ="Parastā recepte"/>
+  <Entry key="DocumentType.RtgSummary" value ="Rentgendiagnostikas izmeklējumu slēdziens"/>
+  <Entry key="DocumentType.RTG" value ="RTG"/>
+  <Entry key="DocumentType.USG" value ="USG"/>
+  <Entry key="DocumentType.DenticalCard" value ="Zobārstniecības karte"/>
+  
+</dictionary>

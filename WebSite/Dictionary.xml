@@ -1,0 +1,1305 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE dictionary [
+  <!ELEMENT dictionary (Entry*)>
+  <!ELEMENT Entry EMPTY>
+  <!ATTLIST dictionary language CDATA #REQUIRED>
+  <!ATTLIST Entry key ID #REQUIRED>
+  <!ATTLIST Entry value CDATA #REQUIRED>
+]>
+
+<dictionary language="lv">
+  <Entry key="rbn.Yes" value="Jā"/>
+  <Entry key="rbn.NO" value="Nē"/>
+
+
+  <Entry key="Err.TidWithoutTcd" value ="Izvēlētā struktūrvienība nav Tematisko pārbaužu daļa!"/>
+  <Entry key="Err.EmailNotValid" value ="E-pasta adrese ir ievadīta nepareizi!"/>
+  <Entry key="Err.IncompatiblePermissions" value="Atļaujas {0} un {1} ir savstarpēji izslēdzošas!"/>
+  <Entry key="Err.TooLong" value="Lauka garums nedrīkst pārsniegt {0} simbolus!" />
+  <Entry key="Err.TooBig" value="Lauka maksimālā vērtība ir {0}!" />
+  <Entry key="Err.TooShort" value="Lauka garums nedrīkst būt mazāks par {0} simboliem!" />
+  <Entry key="Err.ValueRequired" value="Nav aizpildīts obligāti aizpildāms lauks!" />
+  <Entry key="Err.InvalidDateInterval" value="Nekorekti uzrādīts datumu intervāls!" />
+  <Entry key="Err.InvalidDateValueLes" value="Datumam jābūt lielākam vai vienādam ar {0}!" />
+  <Entry key="Err.InvalidDateValueGrt" value="Datumam jābūt mazākam vai vienādam ar {0}!" />
+  <Entry key="Err.InvalidDecimalValueLes" value="Skaitļim jābūt lielākam vai vienādam ar {0}!" />
+  <Entry key="Err.InvalidDecimalValueGrt" value="Skaitļim jābūt mazākam vai vienādam ar {0}!" />
+  <Entry key="Err.FutureDate" value="Datums nevar būt lielāks par šodienas datumu!" />
+  <Entry key="Err.Negative" value="Skaitlis nevar būt negatīvs!" />
+  <Entry key="Err.PastDate" value="Datums nevar būt mazāks par šodienas datumu!" />
+  <Entry key="Err.InvalidLoginInformation" value="Nepareizs lietotāja vārds vai parole!" />
+  <Entry key="Err.UnhandledException" value="Negaidīta kļūda!" />
+  <Entry key="Err.CouldNotDelete" value="Neizdevās izdzēst ierakstu!" />
+  <Entry key="Err.CouldNotSave" value="Neizdevās saglabāt ierakstu!" />
+  <Entry key="Err.TcdPlanCannotChangeCMCaseList" value="KP lietu sarakstu TPD plānā var mainīt tikai tad, ja plāns atrodas statusā 'Sagatavošanā' vai 'Gatavs'!" />
+  <Entry key="Err.TcdPlanCannotReceiveCMCases" value="KP lietas var pārvietot tikai uz TPD plānu, kas atrodas statusā 'Sagatavošanā' vai 'Gatavs'!" />
+  <Entry key="Err.TcdPlanSelectedCannotBeTheSame" value="TPD plānu sarksta formā izvēlētais TPD plāns nedrīkst sakrist ar atvērto plānu!"/>
+  <Entry key="Err.TcdPlanSelectAtLeastOneCMCase" value="Atzīmējiet vismaz vienu KP lietu!"/>
+  <Entry key="Err.TcdPlanNotSelected" value="TPD plānu sarksta formā netika izvēlēts TPD plāns, kuram piesaistīt atzīmētās KP lietas!"/>
+  <Entry key="Err.TcdPlanCheckDateOverlap" value="'Datums no' un 'Datums līdz' pārklājas ar cita TPD plāna laika periodu!"/>
+  <Entry key="Err.HasErrors" value="Pirms saglabāt ierakstu, izlabojiet ievadlauku kļūdas!"/>
+  <Entry key="Err.HasErrorsBeforeStatusChange" value="Pirms Statusu maiņas, izlabojiet ievadlauku kļūdas!"/>
+  <Entry key="Err.HasFieldErrors" value="Izlabojiet ievadlauku kļūdas!"/>
+  <Entry key="Err.SelectedCMCaseSendToTcdPlan" value="Vai vēlaties nosūtīt atzīmētās lietas uz plānu?"/>
+  <Entry key="Err.OrganizationDeleteChild" value="Pirms dzēst struktūrvienību, izdzēšiet apakšstruktūrvienības!"/>
+  <Entry key="Err.ClassifierBeforeChooseTheme" value ="Pirms izvēlaties NIS pārkāpumu, aizpildiet lauku TP tēma!"/>
+  <Entry key="Err.HierClassifierDeleteChild" value="Pirms dzēst ierakstu, izdzēšiet apakšierakstus!"/>
+  <Entry key="Err.UserRoleIsIncorrect" value="Ar sarakstu var daboties analizēs daļas darbinieks un koordinators!"/>
+  <Entry key="Err.HasErrorsOnStatusChange" value="Pirms mainīt statusu, izlabojiet ievadlauku kļūdas!"/>
+  <Entry key="Err.TcdPlanApprovalDateNeedValue" value="Pirms mainīt statusu uz 'Pabeigts' aizpildiet apstiprināšanas datumu!"/>
+  <Entry key="Err.SaveBeforeAddViolation" value="Pirms pārkāpumu pievienošanas nepieciešams saglabāt izveidoto dokumentu."/>
+  <Entry key="Err.TIActCannotChangeStatus" value ="Akta statusu nav iespējams nomainīt uz nosūtīts, jo aktam piesaistītais(ie) dokuments(i) nav pabeigts(i)!"/>
+  <Entry key="Err.TIActCannotChangeStatusToComplete" value ="Akta statusu nav iespējams nomainīt uz pabeigts, jo aktam piesaistītais(ie) dokuments(i) nav pabeigts(i)!"/>
+  <Entry key="Err.TIActNoDocumentPerformers" value ="Akta lapā 'VID un NM amatpersonas' nav piesaistīta neviena VID amatpersona!"/>
+  <Entry key="Err.TIActNoTaxpayerMembers" value ="Akta lapā 'VID un NM amatpersonas' nav piesaistīta neviena NM amatpersona!"/>
+  <Entry key="Err.EAAct1_4NoDocumentPerformers" value ="Akta lapā 'Visi veicēji' nav piesaistīta neviena VID amatpersona!"/>
+  <Entry key="Err.NoBOAppInstalled" value ="Iespējams nav uzinstalēta BO parlūkprogramma."/>
+  <Entry key="Err.MandatoryFormCheckDateOverlap" value="'Periods no' un 'Periods līdz' pārklājas ar cita 'Veidlapu izlietojumu' laika periodu!"/>
+  <Entry key="Err.StatusChangeToSend" value ="Nav iespējams nomainīt statusu jo dokuments '{0}' nav statusā 'Nosūtīts'."/>
+  <Entry key="Err.NotAdded" value ="Nav iespējams nomainīt statusu jo nav pievienots obligātais dokuments '{0}'."/>
+  <Entry key="Err.AuditLogImportIncorrect" value ="Datu imports neizdevās!"/>
+  <Entry key="Err.TemplateFileOpened" value ="Pievienojamais fails atvērts. Lūdzu aizveriet un mēģiniet vēlreiz!"/>
+  <Entry key="Err.ReportIsOpened" value ="Šis pārskats jau ir atvērts!"/>
+  <Entry key="Err.ConnFailed" value="Nevar pieslēgties datubāzei."/>
+  <Entry key="Err.AuditLogImportFileTypeIncorrect" value ="Importā vajag tikai xml-failu!"/>
+  <Entry key="Err.InspectionActDeletePartners" value="Vai vēlaties dzēst pievienotos darījumu partnerus?"/>
+  <Entry key ="Err.InspectionActNoDocumentPerformers" value ="Akta lapā 'Nobeigums' nav piesaistīta neviena VID pilnvarotā persona!"/>
+  <Entry key ="Err.ActDeleteUndeclaredAccounts" value ="Dzēšot ierakstu 'Konstatēts nedeklarēts norēķinu konts' tiks dzēsti pievienotie nedeklarētie norēķinu konti! Vai turpināt dzēšanu?"/>
+  <Entry key ="Err.MandatoryFormDetailUniquenees" value ="Ieraksta laukiem 'Periods no' , 'Periods līdz'  un 'Pavadzīmes veids'  jābūt unikāliem!"/>
+  <Entry key ="Err.TaxpayerInformNeedToAddUndeclaredAccount" value ="Sarakstam 'Nedeklarēts norēķinu konts' jābūt pievienotam vismaz vienam ierakstam!"/>
+  <Entry key ="Err.ActDeleteTpNotes" value ="Atzīmējot izvēles rūtiņu 'Paskaidrojumu, piezīmju nav' tiks dzēstas ievadītās vērtības laukos 'Pielikumā' un 'Pierakstīts no NM teiktā'! Vai dzēst šīs vērtības?"/>
+  <Entry key ="Err.NotAddedPerformer" value ="Pirms mainīt KP lietas statusu uz 'Sagatavošanās' ir jānorāda vismaz viens KP veicējs."/>
+  <Entry key="Err.NotArticleLength" value ="Atbildību nosakošā NA panta garumam {0} ir jābūt no 1 - 4 cipari!"/>
+  <Entry key="Err.NotNumber" value ="Ievadītais atbildību nosakošais NA pants {0} nav cipars!"/>
+  <Entry key="Err.AppealHasNoFiles" value ="Pārsūdzībai nav pievienots neviens dokuments!"/>
+  <Entry key="Err.AppealHasNoStatement" value ="Pārsūdzībai nav pievienota TP izziņa!"/>
+  <Entry key="Err.ActiveCodeChecks" value="Sadaļā 'Kļūdainie dati' ir aktīvi ieraksti!"/>
+  <Entry key="Err.UnCheckedCode" value="Sadaļā 'Kļūdainie dati' visi ieraksti nav salīdzināti ar NIS!"/>
+  <Entry key="Err.TimeIntervalOverlap" value ="Ņorādītie laika intervāli pārklājās ar {0}"/>
+  <Entry key ="Err.InvalidVisitTime" value="Norādītais vizītes laiks neietilpst pieejamajā intervālā, kas ir no {0} līdz {1}"/>
+  <Entry key="Err.NotResponsibilityFinal" value="Sadaļā 'Pārkāpumu saraksta jābūt vienam pārkāpumam tikt fiksēts, ka tas ir gala lēmums!"/>
+  <Entry key="Err.NotResponsibilityFinalOnlyOne" value="Pārkāpumu saraksta tikai vienam pārkāpumam var tikt fiksēts, ka tas ir gala lēmums!"/>
+
+  <Entry key="Msg.RequisitesWillBeDeleted" value="Attaisnojuma dokumentos norādīti normatīvajos aktos noteiktie rekvizīt tiks dzēsti. Vai vēlaties turpināt?" />
+  <Entry key="Msg.EntryAlreadyDeleted" value="Šis ieraksts ir jau izdzēsts!" />
+  <Entry key="Msg.DeleteConfirmation" value="Vai tiešām vēlaties dzēst šo ierakstu?" />
+  <Entry key="Msg.DeleteReasonOnCMTypeChange" value="Ieraksts dzēsts veicot KP veida maiņu." />
+  <Entry key="Msg.DeleteTheme" value="Mainot KP veidu tiks dzēstas visas tēmas. Vai vēlaties turpināt?" />
+  <Entry key="Msg.ActivateConfirmation" value ="Vai tiešām vēlaties atjaunot šo ierakstu?"/>
+  <Entry key="Msg.Save" value="Vai vēlaties saglabāt veiktās izmaiņas?" />
+  <Entry key="Msg.TcdPlanCMCasesRemove" value="Vai tiešām vēlaties izņemt atzīmētās KP lietas no TPD plāna?" />
+  <Entry key="Msg.TcdPlanCMCasesMove" value="  Vai jūs tiešām vēlaties TPD plānam Nr.: '{0}' piesaistīt atzīmētās KP lietas?" />
+  <Entry key="Msg.CantGenerateUnlessSaved" value="Pirms dokumenta ģenerēšanas jāsaglabā veiktās izmaiņas!" />
+  <Entry key="Msg.GenerateAgain" value="Dokuments jau ir ģenerēts, vai vēlaties ģenerēt vēlreiz? Ģenerējot vēlreiz, tiks zaudētas izmaiņas, kas pirms tam veiktas WORD dokumentā." />
+  <Entry key="Msg.TiActCheckDate" value="Ierašanās datums vairāk kā 30 dienas pārsniedz TP uzsākšanas datumu!" />
+  <Entry key="Msg.CMCaseMoveToADadvices" value="Vai tiešām vēlaties pārcelt atzīmētās KP lietas uz ieteikumiem?" />
+  <!--<Entry key="Msg.CMCaseMoveToPreparation" value ="KP lietas statuss joprojām ir 'Neplānotas KP lietas sagatave'! Vai tiešām vēlaties aizvērt formu?"/>-->
+  <Entry key="Msg.CMCaseMoveToPreparation" value ="KP lietas statuss joprojām ir '{0}'! Vai tiešām vēlaties aizvērt formu?"/>
+  <Entry key="Msg.UserConfirmLockout" value="Vai jūs tiešām vēlaties noņemt darbiniekam piešķirto lomu?"/>
+  <Entry key="Msg.InvalidTaxpayerCode" value="Ievadītais NMR kods ir īsāks par 11 simboliem. Vai vēlaties veikt pieprasījumu?"/>
+  <Entry key="Msg.WHRequestReload" value="Vai vēlaties pārlasīt pieprasījumu?"/>
+  <Entry key="Msg.NoRowsInForms" value="Nav pievienots neviens ieraksts lapas 'Veidlapas' tabulā!"/>
+  <Entry key="Msg.NoRowsInBlanks" value="Nav pievienots neviens ieraksts lapas 'PVIIDNr' tabulā!"/>
+  <Entry key="Msg.StaleObject" value ="Cits lietotājs jau ir izmainījis šī ieraksta datus! Aizveriet formu un atveriet vēlreiz labošanai!"/>
+  <Entry key="Msg.AuditLogRowsWillBeDeleted" value="Arhivējamie notikumu žurnāla ieraksti tiks dzēsti!"/>
+  <Entry key="Msg.AuditLogRowsImported" value="Pievienotas ierakstu skaits:"/>
+  <Entry key="Msg.MailPS" value="Šis ir automatizēti ģenerēts TPAIS sistēmas e-pasts un lūdzu neatbildēt un nesūtīt e-pastus uz e-pasta adresi TPAIS.Serviss@vid.gov.lv."/>
+  <Entry key="Msg.CantChangeStatusInComplete" value="Nav ievadīts Lietvedības datums un/vai numurs"/>
+  <Entry key="Msg.AuditLogImportNotRealized" value="Datu imports nenotiek. Tādi ieraksti notikumu žurnālā jau ir!"/>
+  <Entry key="Msg.CloseApp" value="Vai tiešām vēlaties beigt darbu ar aplikāciju?"/>
+  <Entry key="Msg.TcdPlanIsSent" value="KP lietu nevar pievienot, jo TPD plāns nav statusā 'Sagatavošana'." />
+  <Entry key="Msg.TcdPlanIsDraft" value="Izvēlieties TPD plānu (s) un spiediet pogu 'Labi'." />
+  <Entry key="Msg.TcdPlanListIsEmpty" value="KP lietu nevar pievienot, jo nav izveidots neviens plāns." />
+  <Entry key="Msg.NoGenerateDocument" value="Pirms statusa maiņas veiciet dokumenta ģenerēšanu." />
+  <Entry key="Msg.ExecutionDecisionAlreadyAdded" value="KP lietā tāds uzsākšanas lēmums jau ir." />
+  <Entry key="Msg.TcdPlanApprovalDate" value="Vai tiešām vēlas mainīt statusu TPD plānam, kur apstiprināšanas datums lielāks nekā uzsākšanas datums?" />
+  <Entry key="Msg.SaveNewVersion" value="Vai izveidot jaunu versiju?"/>
+  <Entry key="Msg.NoPermissionToDelete" value="Nav tiesību dzēst šo ierakstu."/>
+  <Entry key="Msg.NoTaxpayerCode" value="DNS pieprasījums netiks izveidots jo KP lietas pamatinformācijā nav ievadīts NMR kods."/>
+  <Entry key="Msg.NoRowsInPartners" value="Nav norādīts neviens no darījuma partneriem!"/>
+  <Entry key="Msg.NoRowsInDutyInspections" value="Nav pievienots neviens pārbaudāmās nodevas veids!"/>
+  <Entry key="Msg.PromptStatusChange" value="Vai tiešām vēlaties mainīt statusu uz &quot;"/>
+  <Entry key="Msg.QuestionMark" value="&quot;?"/>
+  <Entry key="Msg.TcdPlanNoCMCases" value="Nav norādīts neviens nodokļu maksātājs!"/>
+  <Entry key="Msg.StatementAddAtAppeal" value="Lai izveidotu izziņu, vispirms jāsaglabā pārsūdzība!"/>
+  <Entry key="Msg.CorrespondenceNoTemplate" value="Lai ģenerētu dokumentu, vispirms jāizvēlas veidlapu grupa un dokumenta veids!"/>
+  <Entry key="Msg.CheckProperty" value="Nav atzīmēts, ka uzrādīta apliecība, pilnvarojums! Vai vēlaties to atzīmēt un saglabāt visas izmaiņas?"/>
+  <Entry key="Msg.ViolationNotExternal" value="Vai pārkāpums ir jāiekļauj TP izziņā?"/>
+  <Entry key="Msg.DocumentWasInCorrection" value="Dokuments ir bijis statusā labošana."/>
+  <Entry key="Msg.NeedCopy" value="Vai vēlaties kopēt datus no iepriekšējās dokumenta versijas?."/>
+  <Entry key="Msg.SetRedy" value="Pārkāpumam nav norādīta pazīme, ka tas ir sagatavots. Vai vēlaties to norādīt un saglabāt?"/>
+  <Entry key="Msg.Duty" value="Pārbaudāmās valsts nodevas"/>
+  <Entry key="Msg.Partner" value="Pārbaudāmie darījumu partneri"/>
+  <Entry key="Msg.AVPs" value="Administratīvā pārkāpuma protokoli FP"/>
+  <Entry key="Msg.EndDecResps" value="Administratīvā pārkāpuma lēmumi FP"/>
+  <Entry key="Msg.IncorrectPassword" value ="Ievadītās paroles nesakrīt."/>
+  <Entry key="Msg.Corrected" value="(labota)"/>
+  <Entry key="Msg.Copy" value="(kopēta)"/>
+  <Entry key="Msg.Plkst" value="plkst"/>
+  <Entry key="Msg.From" value="No"/>
+  <Entry key="Msg.Until" value="līdz"/>
+  <Entry key="Msg.ViolPartNom" value="daļa"/>
+  <Entry key="Msg.ViolArticleNom" value="pants"/>
+  <Entry key="Msg.ViolPointNom" value="punkts"/>
+  <Entry key="Msg.ViolIndexNom" value="indekss"/>
+  <Entry key="Msg.ViolPartGen" value="daļas"/>
+  <Entry key="Msg.ViolArticleGen" value="panta"/>
+  <Entry key="Msg.ViolPointGen" value="punkta"/>
+  <Entry key="Msg.ViolIndexGen" value="indeksa"/>
+  <Entry key="Msg.ViolPartLok" value="daļā"/>
+  <Entry key="Msg.ViolArticleLok" value="pantā"/>
+  <Entry key="Msg.ViolPointLok" value="punktā"/>
+  <Entry key="Msg.ViolIndexLok" value="indeksā"/>
+  <Entry key="Msg.Department" value="struktūrvienība"/>
+  <Entry key="Msg.NeedSaveDocument" value="Pirms pievienot pārkāpumus saglabājiet dokumentu, kuram pārkāpums tiks piesaistīts."/>
+  <Entry key="Msg.HasNoTIDocuments" value="Nav pārbaudīta neviena tēma. Nepieciešama papildus informācija vai jāpārbauda kāda tēma!"/>
+  <Entry key="Msg.WrongPECodeInAVProtocol" value="Personas koda dzimšanas datuma daļa ir nekorekta! Vai vēlaties turpināt ģenerēšanu?"/>
+  <Entry key="Msg.Article21" value="21.pants"/>
+  <Entry key="Msg.FuelLossViewOrMakeNew" value="Dokuments 'Degvielas zuduma pārbaudes aprēķins' ir statusā '{0}'. Vai vēlaties izveidot jaunu 'Degvielas zuduma pārbaudes aprēķina' dokumentu?"/>
+  <Entry key="Msg.Waybills_WaybillRegistrationText" value="Preču pavaddokumentus reģistrē:"/>
+  <Entry key="Msg.Waybills_WaybillRegisterJournalText" value="Pavaddokumentu reģistrācijas žurnālā"/>
+  <Entry key="Msg.Waybills_PropertiesRegisteredText" value="Preču pavaddokumentu reģistrā norādīti NA noteiktie rekvizīti:"/>
+  <Entry key="Msg.Waybills_JournalCheckedText" value="Žurnālā par pārbaudi veikts ieraksts:"/>
+  <Entry key="Msg.HasNoObjectAddressId" value="Pirms TP izziņas pievienošanas nepieciešams norādīt: KP lietas pamatinformācijā pārbaudāmā objekta adresi no NIS vai TP aktā veikšanas vietu 'Cita adrese'!"/>
+
+  <!-- Klašu nosaukumu tulkojumi -->
+  <Entry key="ClassNames.Act" value="Akts"/>
+  <Entry key="ClassNames.ActExternalPerson" value="Pieaicinātā persona"/>
+  <Entry key="ClassNames.Activity" value="Aktivitātes"/>
+  <Entry key="ClassNames.AuditLog" value="Ieraksts notikumu žurnālā"/>
+  <Entry key="ClassNames.AuditMessage" value="Notikumu žurnāla notikmu veids"/>
+  <Entry key="ClassNames.AuthorizationForProperty" value="Lietotāja pilnvarojumu saraksts"/>
+  <Entry key="ClassNames.AuthorizationVisitTaxPayer" value="Pilnvarojums apmeklēt NM"/>
+  <Entry key="ClassNames.BinaryFile" value="Ģenerētais fails"/>
+  <Entry key="ClassNames.CodeCheck" value="Kļūdainie NM dati"/>
+  <Entry key="ClassNames.DealDocument" value="Novērošanas akta darījumu apliecinošie dokumenti"/>
+  <Entry key="ClassNames.DecisionDutyInspection" value="Lēmums par valsts nodevas pārbaudes veikšanu"/>
+  <Entry key="ClassNames.DecisionInspection" value="Lēmums par apsekošanas veikšanu"/>
+  <Entry key="ClassNames.DecisionObservation" value="Lēmums par noverošanas veikšanu"/>
+  <Entry key="ClassNames.DecisionThematicInspection" value="Lēmums par tematiskās pārbaudes veikšanu"/>
+  <Entry key="ClassNames.DecisionThematicInspectionDealCompare" value="Lēmums par TP veikšanu (savstarpējo darījumu salīdzināšanai)"/>
+  <Entry key="ClassNames.DocumentPerformer" value="Veicējs -- VID pilnvarotā persona"/>
+  <Entry key="ClassNames.DutyInspection" value="Lēmuma par valsts nodevu pārbaudāmā nodeva"/>
+  <Entry key="ClassNames.Employee" value="Darba devēja pārbaudē - darba ņēmējs "/>
+  <Entry key="ClassNames.Employer" value="Darba devēja pārbaude"/>
+  <Entry key="ClassNames.ExecutionDecision" value="Lēmums par TP veikšanu"/>
+  <Entry key="ClassNames.ExecutionDocumentBase" value="Veikšanas veidlapa"/>
+  <Entry key="ClassNames.GambleEquipments" value="Azartspēļu organizēšanas pārbaudē - azartspēļu iekārta"/>
+  <Entry key="ClassNames.Gambling" value="Azartspēļu organizēšanas pārbaude"/>
+  <Entry key="ClassNames.InspectionAct" value="Apsekošanas akts"/>
+  <Entry key="ClassNames.InvitationDocument" value="Akti -- līdzi ņemamais dokuments no lapas 'Uzaicinājums'"/>
+  <Entry key="ClassNames.LatestCM" value="KP lietas tematiskās pārbaudes tēmas"/>
+  <Entry key="ClassNames.Licence" value="Licence no nodokļu maksātāja saimnieciskās darbības novērošanas akta 3. daļas"/>
+  <Entry key="ClassNames.LogEntryConfig" value="Notikumu žurnāla ieraksta konfigurācija"/>
+  <Entry key="ClassNames.MetalLegalEntityPurchase" value="Juridiskās personas, kuras nodevušas lielāku daudzumu metālu atgriezumu un lūžņu"/>
+  <Entry key="ClassNames.MetalLegalEntitySell" value="Juridiskās personas, kurām tiek realizēti metālu atgriezumi un lūžņi"/>
+  <Entry key="ClassNames.Organization" value="Iestāde"/>
+  <Entry key="ClassNames.Partner" value="Darījuma partneris uzsākšanas lēmumā"/>
+  <Entry key="ClassNames.Patent" value="Individuālā darba reģistrācijas apliecība vai patents"/>
+  <Entry key="ClassNames.PendingEmail" value="E-pasta vēstule"/>
+  <Entry key="ClassNames.Performer" value="KP lietas nozīmēts veicējs"/>
+  <Entry key="ClassNames.Permission" value="Tiesība"/>
+  <Entry key="ClassNames.Resource" value="Pie aktivitātes - resurss"/>
+  <Entry key="ClassNames.Role" value="Loma"/>
+  <Entry key="ClassNames.TaxpayerInform" value="Aktos - NM informēts"/>
+  <Entry key="ClassNames.TaxpayerMember" value="Aktos - NM amatpersona (pārstāvis)"/>
+  <Entry key="ClassNames.TcdPlan" value="TPD plāns"/>
+  <Entry key="ClassNames.Template" value="Veidlapas sagatave"/>
+  <Entry key="ClassNames.TemplateFileVersion" value="Veidlapas sagataves faila versija"/>
+  <Entry key="ClassNames.TemplateSignatory" value="Veidlapas parakstītājs"/>
+  <Entry key="ClassNames.TemplateTheme" value="Veidlapas sagataves TP tēmas"/>
+  <Entry key="ClassNames.TextContent" value="Garš teksts"/>
+  <Entry key="ClassNames.TimberCheckOnRoad" value="Kokmateriālu kravu pārbaude uz ceļa"/>
+  <Entry key="ClassNames.TimberReceivedDocument" value="Saņemto kokmateriālu dokuemntācijā sniegtā informācija"/>
+  <Entry key="ClassNames.TimberReceivedDocumentDetail" value="Saņemto kokmateriālu dokuemntācijā sniegtā informācija - dokuments"/>
+  <Entry key="ClassNames.TimberSentDocument" value="Nosūtīto kokmateriālu dokumentācijā sniegtā informācija"/>
+  <Entry key="ClassNames.TimberSentDocumentDetail" value="Nosūtīto kokmateriālu dokumentācijā sniegtā informācija - dokuments"/>
+  <Entry key="ClassNames.TimberStackMeasure" value="Kokmateriālu krautņu uzmērīšana kokmateriālu tilpuma noteikšanai"/>
+  <Entry key="ClassNames.TimberStackMeasureDetail" value="Kokmateriālu krautņu uzmērīšana kokmateriālu tilpuma noteikšanai - kokmateriāli"/>
+  <Entry key="ClassNames.UndeclaredAccount" value="Aktos - nedeklarēts norēķinu konts"/>
+  <Entry key="ClassNames.User" value="Lietotājs"/>
+  <Entry key="ClassNames.UserReplacement" value="Darbinieka kartiņā - aizstājējs"/>
+  <Entry key="ClassNames.ViolatedRule" value="Pārkāpums - pārkāptais NA"/>
+  <Entry key="ClassNames.ViolatedRuleBase" value="Pārkāpums - pārkāptais NA"/>
+  <Entry key="ClassNames.Violation" value="Pārkāpums"/>
+  <Entry key="ClassNames.ViolationBase" value="Pārkāpums"/>
+  <Entry key="ClassNames.ViolationResponsibleRule" value="Pārkāpums - atbildību nosakošais NA"/>
+  <Entry key="ClassNames.ViolationResponsibleRuleBase" value="Pārkāpums - atbildību nosakošais NA"/>
+  <Entry key="ClassNames.ViolationTheme" value="Pārkāpuma tēma"/>
+  <Entry key="ClassNames.WarehouseRequest" value="DNS pārskats"/>
+  <Entry key="ClassNames.Classifier" value="Klasifikators"/>
+  <Entry key="ClassNames.ClassifierType" value="Klasifikatora veids"/>
+  <Entry key="ClassNames.ClassifierWithCode" value="Klasifikators ar kodu"/>
+  <Entry key="ClassNames.HierClassifier" value="Hierarhisks klasifikators"/>
+  <Entry key="ClassNames.TemplateType" value="Veidlapas veids"/>
+  <Entry key="ClassNames.Theme" value="TP tēmu klasifikators"/>
+  <Entry key="ClassNames.CMCase" value="KP lieta"/>
+  <Entry key="ClassNames.CMCaseComments" value="KP lietas komentāru saraksts - KP lietas komentāri"/>
+  <Entry key="ClassNames.CMCaseRisk" value="KP lietas pamatinformācija - identificēties riski"/>
+  <Entry key="ClassNames.CMCaseSpecialMarks" value="KP lietas pamatinformācija - īpašās piezīmes"/>
+  <Entry key="ClassNames.CMCaseTheme" value="KP lietas tēmas"/>
+  <Entry key="ClassNames.CMCaseViolations" value="KP lietas pārkāpums"/>
+  <Entry key="ClassNames.RelatedCMCase" value="KP lietas pamatinformācija - saistītās lietas"/>
+  <Entry key="ClassNames.StatusChange" value="KP lietas statusu maiņa"/>
+  <Entry key="ClassNames.AccountingChecks" value="Uzņēmuma grāmatvedības kārtošanas un organizācijas pārbaude"/>
+  <Entry key="ClassNames.AccountingDocuments" value="Uzņēmuma grāmatvedības kārtošanas un organizācijas pārbaude - attaisnojuma dokumentos nenorādītie NA noteiktie rekvizīti"/>
+  <Entry key="ClassNames.AccountingOtherSoftwares" value="Uzņēmuma grāmatvedības kārtošanas un organizācijas pārbaude - pārbaudītas citas datorprogrammas"/>
+  <Entry key="ClassNames.AccountingRegisters" value="Grāmatvedības vienkāršā ieraksta sistēmā kārtošanas un organizācijas pārbaude - reģistri"/>
+  <Entry key="ClassNames.AccountingSimpleRecords" value="Grāmatvedības vienkāršā ieraksta sistēmā kārtošanas un organizācijas pārbaude"/>
+  <Entry key="ClassNames.AccountingSimpleRecordsDocuments" value="Grāmatvedības vienkāršā ieraksta sistēmā kārtošanas un organizācijas pārbaude - attaisnojuma dokumentos nenorādītie NA noteiktie rekvizīti"/>
+  <Entry key="ClassNames.AccountingSimpleRecordsSoftware" value="Grāmatvedības vienkāršā ieraksta sistēmā kārtošanas un organizācijas pārbaude - grāmatvedības datorprogrammas"/>
+  <Entry key="ClassNames.AccountingSoftwares" value="Uzņēmuma grāmatvedības kārtošanas un organizācijas pārbaude - grāmatvedības datorprogrammas"/>
+  <Entry key="ClassNames.AccountingSoftwaresBase" value="Uzņēmuma grāmatvedības kārtošanas un organizācijas pārbaude - grāmatvedības datorprogrammas"/>
+  <Entry key="ClassNames.ActPartner" value="Apsekošanas akts - darījumu partneri"/>
+  <Entry key="ClassNames.Appeal" value="Pārsūdzība"/>
+  <Entry key="ClassNames.AppealFile" value="Pārsūdzības dokuments"/>
+  <Entry key="ClassNames.Attachment" value="Pievienotais dokuments"/>
+  <Entry key="ClassNames.AVProtocol" value="Administratīvā pārkāpuma protokols"/>
+  <Entry key="ClassNames.CashDeal" value="Skaidras naudas darījumu pārbaude"/>
+  <Entry key="ClassNames.CashDealDetail" value="Skaidras naudas darījumu pārbaudes dokuments"/>
+  <Entry key="ClassNames.CashOperation" value="Kases operācijas"/>
+  <Entry key="ClassNames.CashOperationGood" value="Kases operācijas - pirktās preces"/>
+  <Entry key="ClassNames.CashOperationMoney" value="Kases operācijas - naudas līdzekļi"/>
+  <Entry key="ClassNames.CashOperationRequisite" value="Kases operācijas - kvīšu grāmatiņa"/>
+  <Entry key="ClassNames.CashRegister" value="Kases operācijas - kases čekā nav norādīti šādi rekvizīti"/>
+  <Entry key="ClassNames.CharacterStatement" value="NM raksturojuma izziņa"/>
+  <Entry key="ClassNames.CharacterStatementDetail" value="NM raksturojuma izziņa - dati"/>
+  <Entry key="ClassNames.Construction" value="Pārbaude būvobjektā"/>
+  <Entry key="ClassNames.ConstructionContractor" value="Pārbaude būvobjektā - būvuzņēmēji/apakšuzņēmēji"/>
+  <Entry key="ClassNames.ConstructionMaterial" value="Pārbaude būvobjektā - materiāli/būvizstrādājumi"/>
+  <Entry key="ClassNames.Correspondence" value="Sarakstes dokuments"/>
+  <Entry key="ClassNames.DataCompare" value="Datu salīdzināšana"/>
+  <Entry key="ClassNames.DataCompareDetails" value="Datu salīdzināšanas dokuments"/>
+  <Entry key="ClassNames.DealCompare" value="Savstarpējo darījumu salīdzināšana"/>
+  <Entry key="ClassNames.DealCompareAccounts" value="Savstarpējo darījumu salīdzināšanas konts"/>
+  <Entry key="ClassNames.DealCompareDocuments" value="Savstarpējo darījumu salīdzināšanas dokuments"/>
+  <Entry key="ClassNames.DocFileHistory" value="Dokumenta failu versiju vēsture"/>
+  <Entry key="ClassNames.DocOwnerHistory" value="Dokumenta īpašnieku vēsture"/>
+  <Entry key="ClassNames.DocStatusHistory" value="Dokumenta statusu vēsture"/>
+  <Entry key="ClassNames.Document" value="Dokuments"/>
+  <Entry key="ClassNames.EAAct1_4" value="Nodokļu maksātāja saimnieciskās darbības novērošanas akta 1., 4. daļa"/>
+  <Entry key="ClassNames.EAAct2" value="Nodokļu maksātāja saimnieciskās darbības novērošanas akta 2. daļa"/>
+  <Entry key="ClassNames.EAAct2Inventorie" value="Nodokļu maksātāja saimnieciskās darbības novērošanas akta 2. daļa - naudas līdzekļu inventarizācija"/>
+  <Entry key="ClassNames.EAAct2Journal" value="Nodokļu maksātāja saimnieciskās darbības novērošanas akta 2. daļa - EKA žurnāla dati pirms novērošanas"/>
+  <Entry key="ClassNames.EAAct2ZX" value="Nodokļu maksātāja saimnieciskās darbības novērošanas akta 2. daļa - 'Z', 'X' dienas ieņēmumi"/>
+  <Entry key="ClassNames.EAAct3" value="Nodokļu maksātāja saimnieciskās darbības novērošanas akta 3. daļa"/>
+  <Entry key="ClassNames.EAAct3ReceiptsAfter" value="Nodokļu maksātāja saimnieciskās darbības novērošanas akta 3. daļa - dati pirms novērošanas"/>
+  <Entry key="ClassNames.EAAct3ReceiptsBefore" value="Nodokļu maksātāja saimnieciskās darbības novērošanas akta 3. daļa - dati novērošanas beigās"/>
+  <Entry key="ClassNames.EndDecisionCashDeal" value="Lēmums par skaidras naudas darījumu pārbaudes rezultātiem"/>
+  <Entry key="ClassNames.EndDecisionFixedAsset" value="Lēmums par ievesto pamatlīdzekļu pārbaudes rezultātiem"/>
+  <Entry key="ClassNames.EndDecisionHalt" value="Lēmums par pārbaudāmā (pārbaudītā) objekta darbības apturēšanu"/>
+  <Entry key="ClassNames.EndDecisionHaltProlong" value="Lēmums par pārbaudāmā (pārbaudītā) objekta darbības apturēšanas laika pagarināšanu"/>
+  <Entry key="ClassNames.EndDecisionHaltWarning" value="Lēmums par brīdināšanu apturēt saimniecisko darbību"/>
+  <Entry key="ClassNames.EndDecisionResponsibility" value="Lēmums par saukšanu pie administratīvās atbildības"/>
+  <Entry key="ClassNames.EndDecisionRestore" value="Lēmums par objekta saimnieciskās darbības atjaunošanu"/>
+  <Entry key="ClassNames.EndDecisionsBase" value="Pabeigšanas lēmums"/>
+  <Entry key="ClassNames.EndDecisionStateDuties" value="Lēmums par valsts nodevas pārbaudes rezultātiem"/>
+  <Entry key="ClassNames.ExciseGoods" value="Akcīzes preču aprite"/>
+  <Entry key="ClassNames.ExciseGoodsNumbers" value="Akcīzes preču aprite - pārbaudīties akcīzes nodokļa marku numuri"/>
+  <Entry key="ClassNames.FixedAsset" value="PL pārbaudes rezultāti"/>
+  <Entry key="ClassNames.FixedAssetAccounting" value="PL pārbaudes rezultāti - grāmatvedībā uzrādīti"/>
+  <Entry key="ClassNames.FixedAssetCheck" value="PL pārbaudes rezultāti - faktiskā pārbaude"/>
+  <Entry key="ClassNames.FixedAssetPenalty" value="PL pārbaudes rezultāti - soda naudas"/>
+  <Entry key="ClassNames.FixedAssetWarehouse" value="PL pārbaudes rezultāti - informācija par pamatlīdzekļiem pēc VID datu noliktavas VAD informācijas"/>
+  <Entry key="ClassNames.Fuel" value="Degvielas krājumu atlikumu faktiskā daudzuma mērījumu tabula degvielas uzpildes stacijā"/>
+  <Entry key="ClassNames.FuelLoss" value="Degvielas zuduma pārbaudes aprēķins"/>
+  <Entry key="ClassNames.FuelMeasures" value="Degvielas krājumu atlikumu faktiskā daudzuma mērījumu tabula degvielas uzpildes stacijā - mērījumu tabula"/>
+  <Entry key="ClassNames.InfoAboutStated" value="Informācija par pārbaudē konstatēto"/>
+  <Entry key="ClassNames.InfoAboutStatedAccounts" value="Informācija par pārbaudē konstatēto - bankas konti"/>
+  <Entry key="ClassNames.InfoAboutStatedActs" value="Informācija par pārbaudē konstatēto - veiktie KP"/>
+  <Entry key="ClassNames.InfoAboutStatedCashRegisters" value="Informācija par pārbaudē konstatēto - EKA"/>
+  <Entry key="ClassNames.InfoAboutStatedEmployeesBase" value="Informācija par pārbaudē konstatēto - darba ņēmēji"/>
+  <Entry key="ClassNames.InfoAboutStatedNaturalResources" value="Informācija par pārbaudē konstatēto - ar DRN apliekamais objekts"/>
+  <Entry key="ClassNames.InfoAboutStatedReportsBase" value="Informācija par pārbaudē konstatēto - pārskati"/>
+  <Entry key="ClassNames.InfoAboutStatedRisks" value="Informācija par pārbaudē konstatēto - riski"/>
+  <Entry key="ClassNames.MandatoryForm" value="Stingrās uzskaites PR veidlapu (VID piešķirto numuru) izlietojuma pārbaude"/>
+  <Entry key="ClassNames.MandatoryFormDetail" value="Stingrās uzskaites PR veidlapu (VID piešķirto numuru) izlietojuma pārbaude - veidlapu izlietojums"/>
+  <Entry key="ClassNames.Metal" value="Melno un krāsaino metālu atgriezumu un lūžņu iepirkšanas un uzglabāšanas vietu pārbaude"/>
+  <Entry key="ClassNames.MetalLegalEntityBase" value="Melno un krāsaino metālu atgriezumu un lūžņu iepirkšanas un uzglabāšanas vietu pārbaude - Iepirkšana no JP vai realizācija JP"/>
+  <Entry key="ClassNames.MetalPhysicalEntityPurchase" value="Melno un krāsaino metālu atgriezumu un lūžņu iepirkšanas un uzglabāšanas vietu pārbaude - Iepirkšana no FP"/>
+  <Entry key="ClassNames.NoticePenalties" value="Paziņojums sodu reģistram par par piemēroto administratīvo sodu"/>
+  <Entry key="ClassNames.NoticeViolations" value="Paziņojums sodu reģistram par administratīvo pārkāpumu"/>
+  <Entry key="ClassNames.ObservationAct" value="Atsevišķa darījuma novērošanas akts"/>
+  <Entry key="ClassNames.Quality" value="Kvalitātes novērtējums"/>
+  <Entry key="ClassNames.QualityAcquaintance" value="Kvalitātes novērtējums - Ar novērtējumu jāiepazīstas"/>
+  <Entry key="ClassNames.QualityDetail" value="Kvalitātes novērtējums - Novērtējums"/>
+  <Entry key="ClassNames.QualityNote" value="Kvalitātes novērtējums - Piezīmes"/>
+  <Entry key="ClassNames.RealEstate" value="Nekustamā īpašuma nodokļa aprēķināšana pašvaldībās"/>
+  <Entry key="ClassNames.RealEstateTaxpayer" value="Nekustamā īpašuma nodokļa aprēķināšana pašvaldībās - Pārbaudītie NM"/>
+  <Entry key="ClassNames.ResponsibilityAggravatingCircumstances" value="Atbildību pastiprinoši apstākļi"/>
+  <Entry key="ClassNames.ResponsibilityMitigatingCircumstances" value="Atbildību mīkstinoši apstākļi"/>
+  <Entry key="ClassNames.RiskDuties" value="Uzņēmējdarbības riska valsts nodeva"/>
+  <Entry key="ClassNames.RiskDutyDetails" value="Uzņēmējdarbības riska valsts nodeva - pārbaudē konstatēts"/>
+  <Entry key="ClassNames.SpecialAct" value="SP akta titullapa"/>
+  <Entry key="ClassNames.SpecialActEnd" value="SP akta noslēgums"/>
+  <Entry key="ClassNames.SrsNumber" value="Stingrās uzskaites PR veidlapu un pavadzīmju ar VID piešķirtajiem numuriem uzskaites, noformēšanas, lietošanas un uzglabāšanas pārbaude"/>
+  <Entry key="ClassNames.SrsNumberDetail" value="Stingrās uzskaites PR veidlapu un pavadzīmju ar VID piešķirtajiem numuriem uzskaites, noformēšanas, lietošanas un uzglabāšanas pārbaude - veidlapas"/>
+  <Entry key="ClassNames.SrsNumberRequisites" value="Stingrās uzskaites PR veidlapu un pavadzīmju ar VID piešķirtajiem numuriem uzskaites, noformēšanas, lietošanas un uzglabāšanas pārbaude - nav šādi rekvizīti"/>
+  <Entry key="ClassNames.StateDuties" value="VN pārbaudes rezultāti"/>
+  <Entry key="ClassNames.StateDutyDocuments" value="VN pārbaudes rezultāti - pārbaudīties dokumenti"/>
+  <Entry key="ClassNames.StateDutyServices" value="VN pārbaudes rezultāti - pārbaudē konstatēts"/>
+  <Entry key="ClassNames.Statement" value="TP izziņa"/>
+  <Entry key="ClassNames.StatementAfterActions" value="TP izziņa - darbības pēc TP"/>
+  <Entry key="ClassNames.StatementDecisions" value="TP izziņa - lēmumi"/>
+  <Entry key="ClassNames.StatementPenalties" value="TP izziņa - administratīvais sods"/>
+  <Entry key="ClassNames.StatementPenaltyRules" value="TP izziņa - TP izziņa - administratīvais sods, pārkāptie NA"/>
+  <Entry key="ClassNames.StatementSpecialMarks" value="TP izziņa - īpašās piezīmes"/>
+  <Entry key="ClassNames.StatementViolationDetails" value="TP izziņa - konstatētie pārkāpumi, to kodi"/>
+  <Entry key="ClassNames.StatementViolations" value="TP izziņa - konstatētie pārkāpumi"/>
+  <Entry key="ClassNames.TIAct" value="TP akta titullapa"/>
+  <Entry key="ClassNames.TIActEnd" value="TP akta noslēgums"/>
+  <Entry key="ClassNames.TIEstablished" value="TP konstatēts"/>
+  <Entry key="ClassNames.TimberEquipment" value="Kokmateriālu pastāvīgās uzglabāšanas vietas pārbaude - koksnes apstrādes iekārtas"/>
+  <Entry key="ClassNames.TimberIncompleteWaybill" value="Kokmateriālu pastāvīgās uzglabāšanas vietas pārbaude - nenorādītie rekvizīti"/>
+  <Entry key="ClassNames.TimberRegisterResponsible" value="Kokmateriālu pastāvīgās uzglabāšanas vietas pārbaude - atbildīgās personas par KTPR (pavaddokumentu) reģistrāciju"/>
+  <Entry key="ClassNames.TimberStorageCheck" value="Kokmateriālu pastāvīgās uzglabāšanas vietas pārbaude"/>
+  <Entry key="ClassNames.Waybills" value="Preču pavaddokumentu reģistrācija"/>
+  <Entry key="ClassNames.Wholesale" value="Preču reģistrācija un uzskaite vairumtirdzniecībā"/>
+  <Entry key="ClassNames.WholesaleGoods" value="Preču reģistrācija un uzskaite vairumtirdzniecībā - nav reģistrētas šādas preces"/>
+  <Entry key="ClassNames.WithdrawalProtocol" value="MDI protokols administratīvā pārkāpuma lietā"/>
+  <Entry key="ClassNames.WWBase" value="Preču reģistracija"/>
+  <Entry key="ClassNames.WWDocuments" value="Preču pavaddokumentu reģistrācija vai preču reģistrācija un uzskaite vairumtirdzniecībā - nav reģistrēti šādi pavaddokumenti"/>
+  <Entry key="ClassNames.WWDocumentsRequisites" value="Preču pavaddokumentu reģistrācija vai preču reģistrācija un uzskaite vairumtirdzniecībā - nav šādu rekvizītu"/>
+  <Entry key="ClassNames.WWExtraCharges" value="Preču pavaddokumentu reģistrācija vai preču reģistrācija un uzskaite vairumtirdzniecībā - uzcenojums"/>
+
+  <!-- Klašu nosaukumu tulkojumu beigas -->
+
+  <Entry key="Msg.NotActDateInExecutionDecisionPeriod" value="Akta datums neiekļaujas periodā no pēdējā attiecīgā lēmuma par uzsākšanu."/>
+  <Entry key="Msg.NotActivityDateInCMCasePeriod" value="Aktivitātes datums neiekļaujas periodā, kas norādīts KP lietas pamatinformācijā."/>
+  <Entry key="Msg.NotExecutionDecisionDateInActivityPeriod" value="Lēmuma par uzsākšanu datums neiekļaujas periodā, kas norādīts aktivitātes."/>
+  <Entry key="Msg.NotAuthorizationDateInActivityPeriod" value="Pilnvarojuma datums neiekļaujas periodā, kas norādīts aktivitātes."/>
+
+  <!-- Sinhronizācija -->
+  <Entry key="Msg.Synchro.WorkstationNameNotSet" value="Pirmās sinhronizācijas reizē jums jāidentificē sava darbstacija."/>
+  <Entry key="Msg.Synchro.SynchronizationStarted" value="Uzsākta darbstacijas '{0}' sinhronizācija"/>
+  <Entry key="Msg.Synchro.SynchronizationCompleted" value="Pabeigta darbstacijas '{0}' sinhronizācija"/>
+  <Entry key="Msg.Synchro.SynchronizationInterrupted" value="Darbstacijas '{0}' sinhronizācija pārtraukta"/>
+  <Entry key="Msg.Synchro.SynchronizationCaseCorupted" value="Kļūda KP lietas '{0}' sinhronizācijā. KP lietas sinhronizācija nav veikta."/>
+  <Entry key="Msg.Synchro.SyncGlobalData" value="Centralizēti uzturēto datu sinhronizācija:"/>
+  <Entry key="Msg.Synchro.SyncClassifiers" value="... klasifikatori"/>
+  <Entry key="Msg.Synchro.SyncTemplates" value="... veidlapas"/>
+  <Entry key="Msg.Synchro.SyncPB" value="... padomu bibliotēka"/>
+  <Entry key="Msg.Synchro.SyncUsers" value="... lietotāji"/>
+  <Entry key="Msg.Synchro.SyncViolations" value="... pārkāpumu klasifikators"/>
+  <Entry key="Msg.Synchro.SyncGeneralLogEntries" value="Vispārīgo audita ziņojumu nosūtīšana" />
+  <Entry key="Msg.Synchro.SyncCases" value="KP lietu sinhronizācija:"/>
+  <Entry key="Msg.Synchro.SyncActualCase" value="... sinhronizē lietu {0}" />
+  <Entry key="Msg.Synchro.SyncObsoleteCaseFound" value="... atrasta no lokālās darbstacijas izdzēšama lieta" />
+  <Entry key="Msg.Synchro.SyncObsoleteCaseDeleted" value= "...... Lieta {0} izdzēsta" />
+  <Entry key="Msg.Synchro.SyncObsoleteCaseNotDeleted" value="...... Lietas izdzēšana atcelta" />
+  <Entry key="Msg.Synchro.SynchroConflict" value="Sinhronizācijas konflikts" />
+  <Entry key="Msg.Synchro.SynchroConflictData" value="Vienums {0} ir mainīts vienlaicīgi uz centrālā servera un mobilajā darbstacijā! Vai turpināt lietas sinhronizēšanu, saglabājot tikai centrālajā severī veiktās izmaiņas?" />
+  <Entry key="Msg.Synchro.SynchroDeleteConflict" value="Var zaudēt nesinhronizētās izmaiņas" />
+  <Entry key="Msg.Synchro.SynchroDeleteConflictData" value="No jūsu datora jādzēš lieta {0}, kuras izmaiņas vēl nav sinhronizētas ar centrālo serveri. Turpināt?" />
+  <Entry key="Msg.Synchro.SynchroConfirmAbort" value="Pārtraukt?" />
+  <Entry key="Msg.Synchro.SynchroConfirmAbortCaption" value="Datu sinhronizācija nav pabeigta" />
+  <Entry key="Msg.Synchro.SyncLocalDBVersionCheck" value="Lokālās datubāzes versijas pārbaude..." />
+  <Entry key="Msg.Synchro.SyncLocalDBVersionMismatch" value="Lokālās datubāzes versija {0} nesakrīt ar centrālās datubāzes versiju {1}!" />
+  <Entry key="Msg.Synchro.SyncLocalDBVersionUpgradeRequired" value="Pieslēdzieties lokālajai datubāzei, lai veiktu datubāze versijas atjaunināšanu!" />
+  <Entry key="Msg.Synchro.SynchronizationPending" value="Lokālā datubāze nav sinhronizēta" />
+  <Entry key="Msg.Synchro.SynchronizationAdvised" value="Lai samazinātu sinhronizācijas konfliktu iespēju, ieteicams sinhronizēt datubāzes. Sinhronizēt tagad?" />
+    
+
+  <Entry key="Err.InvalidDateInclusion" value="Aizstāšanas termiņam jāiekļaujas prombūtnes termiņā!" />
+  <Entry key="Err.UserReplacementListDate" value="Aizstāšanas termiņi nevar pārklāties!" />
+  <Entry key="Err.UserReplacementDateOverlap" value="Aizstājējs norādītajā laika periodā nevar aizstāt citu darbinieku!" />
+  <Entry key="Err.UserReplacementUnavailableDateOverlap" value="Aizstājējs norādītajā laika periodā nedrīkst būt reģistrēts kā prombūtnē esošs!" />
+  <Entry key="Err.SoapException" value="Neizdevās pieslēgties TPAIS web servisam." />
+  <Entry key="Err.EmptyDnsData" value ="NMR kods nav atrasts!"/>
+  <Entry key ="Err.InformActValueIaAdded" value ="Izvēlētā vērtība jau ir pievienota!"/>
+
+  <Entry key="Err.EAAct2CashRegisterIsDeleted" value="Dzēstu EKA nevar izvēlēties!" />
+  
+  <Entry key="Err.CannotChangeData" value="Jums nav tiesību mainīt datus!" />
+  <Entry key="Err.RoleIsBysy" value="Loma ir piešķirta sistēmas lietotājiem!" />
+  <Entry key="Err.LogonNotUnique" value="Ievadītais Aktīvās direktorijas konts ir piešķirts sistēmas lietotājiem!" />
+  
+  <Entry key="frmCMCaseList.Text.Advices" value="Ieteikumi"/>
+
+  <!-- CaseStatus -->
+  <Entry key="CaseStatus.ADAdviceDraft" value="AD ieteikuma sagatave"/>
+  <Entry key="CaseStatus.ADAdvice" value="AD ieteikums"/>
+  <Entry key="CaseStatus.CooAdvice" value="Koordinatora ieteikums"/>
+  <Entry key="CaseStatus.InTcdPlan" value="Ieteikums TPD plānā"/>
+  <Entry key="CaseStatus.PlannedCaseTemplate" value="Plānotās KP lietas sagatave"/>
+  <Entry key="CaseStatus.NonPlannedCaseTemplate" value="Neplānotās KP lietas sagatave"/>
+  <Entry key="CaseStatus.Preparation" value="Sagatavošanās"/>
+  <Entry key="CaseStatus.CMRealization" value="KP veikšana"/>
+  <Entry key="CaseStatus.StartedDocumentation" value="Uzsākta lietvedība"/>
+  <Entry key="CaseStatus.NonStartedDocumentation" value="Neuzsākta lietvedība"/>
+  <Entry key="CaseStatus.DecisionMaking" value="Lēmumu pieņemšana"/>
+  <Entry key="CaseStatus.Completion" value="Pabeigšana"/>
+  <Entry key="CaseStatus.Complete" value="Pabeigta"/>
+  <Entry key="CaseStatus.Unfulfilled" value="Neizpildīta"/>
+  <Entry key="CaseStatus.Correction" value="Labošana"/>
+  <Entry key="CaseStatus.Appeal" value="Pārsūdzība"/>
+  <Entry key="CaseStatus.Deleted" value="Dzēsta"/>
+
+  <!-- CMCasePlanned -->
+  <Entry key="CMCasePlanned.Planned" value="Plānotā KP lieta"/>
+  <Entry key="CMCasePlanned.NonPlanned" value="Neplānotā KP lieta"/>
+  <Entry key="CMCasePlanned.PlannedCMCase" value="Plānota"/>
+  <Entry key="CMCasePlanned.NonPlannedCMCase" value="Neplānota"/>
+  
+  <!-- CaseType -->
+  <Entry key="CaseType.Inspection" value="Apsekošana"/>
+  <Entry key="CaseType.Observation" value="Novērošana"/>
+  <Entry key="CaseType.SpecialInspection" value="Speciālā pārbaude"/>
+  <Entry key="CaseType.ThematicInspection" value="Tematiskā pārbaude"/>
+
+  <!-- ActionType -->
+  <Entry key="ActionType.DutyAudit" value="Nodokļu audits"/>
+  <Entry key="ActionType.FinancialAudit" value="Saimnieciski finansiālās darbības revīzija"/>
+  
+  <!-- DeliveryType -->
+  <Entry key="DeliveryType.Delivered" value="Lēmums nodots NM"/>
+  <Entry key="DeliveryType.SendByPost" value="Nosūtīts pa pastu"/>
+
+  <!-- TimberSiteType -->
+  <Entry key="TimberSiteType.Sawmill" value="Kokzāģētava"/>
+  <Entry key="TimberSiteType.Logframe" value="Gateris"/>
+  <Entry key="TimberSiteType.Chop" value="Cirsma"/>
+  <Entry key="TimberSiteType.NearRoad" value="Pie ceļa"/>
+  <Entry key="TimberSiteType.Other" value="Cita"/>
+  
+  <!-- CaseType -->
+  <Entry key="CaseType.Planed" value="Plānotā KP lieta"/>
+  <Entry key="CaseType.NonPlaned" value="Neplānotā KP lieta"/>
+
+  <!-- DocumentStatus -->
+  <Entry key="DocumentStatus.Draft" value="Sagatavošanā"/>
+  <Entry key="DocumentStatus.Ready" value="Gatavs"/>
+  <Entry key="DocumentStatus.Complete" value="Pabeigts"/>
+  <Entry key="DocumentStatus.Sent" value="Nosūtīts"/>
+  <Entry key="DocumentStatus.NotValid" value="Spēkā neesošs"/>
+  <Entry key="DocumentStatus.Cancelled" value="Anulēts"/>
+  <Entry key="DocumentStatus.AppealStarted" value="Uzsākta"/>
+  <Entry key="DocumentStatus.AppealCompleted" value="Pabeigta"/>
+  <Entry key="DocumentStatus.Correction" value="Labošana"/>
+
+  <!-- MoneyUnit -->
+  <Entry key="MoneyUnit.Coin" value="Monētas"/>
+  <Entry key="MoneyUnit.Banknote" value="Banknotes"/>
+
+  <!--Prioritāte-->
+  <Entry key="PriorityType.Low" value="Parasta"/>
+  <Entry key="PriorityType.High" value="Steidzama"/>
+
+  <!--Pzīme-->
+  <Entry key="InfoAboutStatedRisksEnum.TPD_Planned" value="Plānots KP"/>
+  <Entry key="InfoAboutStatedRisksEnum.TPD_NonPlanned" value="Neplānots KP"/>
+  <Entry key="InfoAboutStatedRisksEnum.NotTPD" value="Pārbaudē konstatēts"/>
+
+  <!-- ActivityStatus -->
+  <Entry key="ActivityStatus.Actual" value="Aktuāla"/>
+  <Entry key="ActivityStatus.Finished" value="Pabeigta"/>
+  <Entry key="ActivityStatus.Deleted" value="Dzēsta"/>
+
+  <!-- DocumentType -->
+  <Entry key="DocumentType.Attachment" value="Pievienotais dokuments"/>
+  <Entry key="DocumentType.AuthorizationVisitTaxPayer" value="Pilnvarojums apmeklēt NM"/>
+  <Entry key="DocumentType.AVProtocol" value="Administratīvā pārkāpuma protokols"/>
+  <Entry key="DocumentType.CashDeal" value="Skaidras naudas darījumi"/>
+  <Entry key="DocumentType.Correspondence" value="Sarakstes dokuments"/>
+  <Entry key="DocumentType.DataCompare" value="Datu salīdzināšana"/>
+  <Entry key="DocumentType.DecisionInspection" value="Lēmums par apsekošanas veikšanu"/>
+  <Entry key="DocumentType.DecisionObservation" value="Lēmums par noverošanas veikšanu"/>
+  <Entry key="DocumentType.DecisionThematicInspection" value="Lēmums par tematiskās pārbaudes veikšanu"/>
+  <Entry key="DocumentType.DecisionDutyInspection" value="Lēmums par valsts nodevas pārbaudes veikšanu"/>
+  <Entry key="DocumentType.DecisionDealCompare" value="Lēmums par TP veikšanu (savstarpējo darījumu salīdzināšanai)"/>
+  <Entry key="DocumentType.Gambling" value="Azartspēļu organizēšanas pārbaude"/>
+  <Entry key="DocumentType.TIAct" value="TP akta titullapa"/>
+  <Entry key="DocumentType.TIActEnd" value="TP akta noslēgums"/>
+  <Entry key="DocumentType.TIActAll" value="TP akts"/>
+  <Entry key="DocumentType.InspectionAct" value="Apsekošanas akts"/>
+  <Entry key="DocumentType.ObservationAct" value="Atsevišķa darījuma novērošanas akts"/>
+  <Entry key="DocumentType.EAAct1_4" value="NM SD novērošanas akts I, IV daļas"/>
+  <Entry key="DocumentType.EAAct2" value="NM SD novērošanas akts II daļa"/>
+  <Entry key="DocumentType.EAAct3" value="NM SD novērošanas akts III daļa"/>
+  <Entry key="DocumentType.SpecialAct" value="SP akta titullapa"/>
+  <Entry key="DocumentType.SpecialActEnd" value="SP akta noslēgums"/>
+  <Entry key="DocumentType.ExciseGoods" value="Akcīzes preču aprite"/>
+  <Entry key="DocumentType.TimberStorageCheck" value="Kokmateriālu pastāvīgās uzglabāšanas vietas pārbaude"/>
+  <Entry key="DocumentType.TimberCheckOnRoad" value="Kokmateriālu pārbaude uz ceļa"/>
+  <Entry key="DocumentType.TimberStackMeasure" value="Kokmateriālu krautņu uzmērīšana kokmateriālu tilpuma noteikšanai"/>
+  <Entry key="DocumentType.TimberReceivedDocument" value="Saņemto kokmateriālu dokumentācijā sniegtā informācija"/>
+  <Entry key="DocumentType.Employer" value="Darba devēja pārbaude"/>
+  <Entry key="DocumentType.TimberSentDocument" value="Nosūtīto kokmateriālu dokumentācijā sniegtā informācija"/>
+  <Entry key="DocumentType.Fuel" value="Degvielas krājumu atlikumu faktiskā daudzuma mērījumu tabula degvielas uzpildes stacijā"/>
+  <Entry key="DocumentType.Metal" value="Melno un krāsaino metālu atgriezumu un lūžņu iepirkšanas un uzglabāšanas vietu pārbaude"/>
+  <Entry key="DocumentType.WithdrawalProtocol" value="MDI protokols administratīvā pārkāpuma lietā"/>
+  <Entry key="DocumentType.Construction" value="Pārbaude būvobjektā"/>
+  <Entry key="DocumentType.MandatoryForm" value="Stingrās uzskaites PR veidlapu (VID piešķirto numuru) izlietojuma pārbaude"/>
+  <Entry key="DocumentType.TIEstablished" value="Tematiskajā pārbaudē konstatēts"/>
+  <Entry key="DocumentType.RealEstate" value="Nekustamā īpašuma nodokļa aprēķināšana pašvaldībās"/>
+  <Entry key="DocumentType.DealCompare" value="Savstarpējo darījumu salīdzināšana"/>
+  <Entry key="DocumentType.FuelLoss" value="Degvielas zuduma pārbaudes aprēķins"/>
+  <Entry key="DocumentType.EndDecisionCashDeal" value="SND pārbaudes rezultāti"/>
+  <Entry key="DocumentType.EndDecisionFixedAsset" value="PL pārbaudes rezultāti"/>
+  <Entry key="DocumentType.EndDecisionStateDuties" value="VN pārbaudes rezultāti"/>
+  <Entry key="DocumentType.EndDecisionHaltWarning" value="Brīdinājums apturēt SD"/>
+  <Entry key="DocumentType.EndDecisionHalt" value="Objekta SD apturēšana"/>
+  <Entry key="DocumentType.EndDecisionRestore" value="Objekta SD atjaunošana"/>
+  <Entry key="DocumentType.EndDecisionHaltProlong" value="Objekta SD apturēšanas pagarināšana"/>
+  <Entry key="DocumentType.EndDecisionResponsibilityPE" value="AP lēmums FP"/>
+  <Entry key="DocumentType.EndDecisionResponsibilityLE" value="AP lēmums JP"/>
+  <Entry key="DocumentType.Waybills" value="Preču pavaddokumentu reģistrācija"/>
+  <Entry key="DocumentType.WholeSale" value="Preču reģistrācija un uzskaite vairumtirdzniecībā"/>
+  <Entry key="DocumentType.FixedAsset" value="Ievestie pamatlīdzekļi"/>
+  <Entry key="DocumentType.SrsNumber" value="Stingrās uzskaites PR veidlapu un pavadzīmju ar VID piešķirtajiem numuriem uzskaites, noformēšanas, lietošanas un uzglabāšanas pārbaude"/>
+  <Entry key="DocumentType.CharacterStatement" value="NM raksturojuma izziņa"/>
+  <Entry key="DocumentType.Statement" value="TP izziņa"/>
+  <Entry key="DocumentType.RiskDuties" value="Uzņēmējdarbības riska valsts nodeva"/>
+  <Entry key="DocumentType.AccountingSimpleRecords" value="Grāmatvedības vienkāršā ieraksta sistēmā kārtošanas un organizācijas pārbaude"/>
+  <Entry key="DocumentType.StateDuties" value="Valsts nodeva"/>
+  <Entry key="DocumentType.CashOperation" value="Kases operācijas"/>
+  <Entry key="DocumentType.InfoAboutStated" value="Informācija par pārbaudē konstatēto"/>
+  <Entry key="DocumentType.Quality" value="Kvalitātes novērtējums"/>
+  <Entry key="DocumentType.TcdPlan" value="TPD plāns"/>
+  <Entry key="DocumentType.InfoAboutEmployer" value="Informācija par darba devēju"/>
+
+
+  <Entry key="DocumentType.AccountingChecks" value="Uzņēmuma grāmatvedības kārtošanas un organizācijas pārbaude"/>
+  <Entry key="DocumentType.SealingAct" value="Aizzīmogosanas (noplombēšanas) akts"/>
+  <Entry key="DocumentType.InventoryAct" value="Inventarizācijas akts"/>
+  <Entry key="DocumentType.RegistrationAct" value="Mantu (preču) un dokumentu uzskaites akts"/>
+  <Entry key="DocumentType.NoticeViolations" value="Paziņojums sodu reģistram par administratīvo pārkāpumu"/>
+  <Entry key="DocumentType.NoticeViolationsPE" value="Paziņojums sodu reģistram par administratīvo pārkāpumu FP"/>
+  <Entry key="DocumentType.NoticeViolationsLE" value="Paziņojums sodu reģistram par administratīvo pārkāpumu JP"/>
+  <Entry key="DocumentType.NoticePenalties" value="Paziņojums sodu reģistram par par piemēroto administratīvo sodu"/>
+  <Entry key="DocumentType.NoticePenaltiesPE" value="Paziņojums sodu reģistram par par piemēroto administratīvo sodu FP"/>
+  <Entry key="DocumentType.NoticePenaltiesLE" value="Paziņojums sodu reģistram par par piemēroto administratīvo sodu JP"/>
+  <!-- AVProtocolType -->
+  <Entry key="AVProtocolType.AvpPE" value="Administratīvā pārkāpuma protokols FP"/>
+  <Entry key="AVProtocolType.AvpLE" value="Administratīvā pārkāpuma protokols JP"/>
+
+  <!-- TaxpayerType -->
+  <Entry key="TaxpayerType.IsTaxpayer" value=""/>
+  <Entry key="TaxpayerType.NotTaxpayer_JP" value="JP"/>
+  <Entry key="TaxpayerType.NotTaxpayer_FP" value="FP"/>
+
+  <!-- YesNo... -->
+  <Entry key="YesNo.Yes" value="Ir"/>
+  <Entry key="YesNo.No" value="Nav"/>
+  <Entry key="YesNo.Ne" value="Nē"/>
+  <Entry key="YesNo.Ja" value="Jā"/>
+  <Entry key="YesNo.NotPresent" value="Nevar uzrādīt"/>
+  <Entry key="YesNo.NotSent" value="Nav nosūtīta"/>
+  <Entry key="YesNo.NotExecuted" value="Nav veikta"/>
+  <Entry key="YesNo.CantExecute" value="Nevar veikt"/>
+  <Entry key="YesNo.IsLocatedIsExecuted" value="Atrodas/Ir veikts"/>
+  <Entry key="YesNo.NotLocatedNotExecuted" value="Neatrodas/Nav veikts"/>
+  <Entry key="YesNo.NotPurchase" value="Neiepērk"/>
+  <Entry key="YesNo.NotRefer" value="Neattiecas"/>
+  <Entry key="YesNo.ALossLessFLoss" value="Di&lt;D"/>
+  <Entry key="YesNo.ALossGreaterFLoss" value="Di&gt;=D"/>
+  <Entry key="YesNo.NotDocument" value ="Nevar uzrādīt pavaddokumentu"/>
+  
+  <Entry key="YesNo.Loto" value="Izlases kārtībā"/>
+  <Entry key="YesNo.Partially" value="Daļēji"/>
+
+  <Entry key="YesNo.NoLease" value="Nē - iznomāts"/>
+  <Entry key="YesNo.NoOtherForfeit" value="Nē - citādi atsavināts"/>
+  <Entry key="YesNo.NoNotAdjust" value="Nē - nav uzstādīts"/>
+  
+  <Entry key="Sex.Male" value="Vīrietis"/>
+  <Entry key="Sex.Female" value="Sieviete"/>
+
+  <Entry key="YesNo.DpGreaterOrEqualD" value="Dp&gt;=D"/>
+  <Entry key="YesNo.DpLessD" value="Dp&lt;D"/>
+
+  <!-- Cycle -->
+  <Entry key="Cycle.Regular" value="Regulārs"/>
+  <Entry key="Cycle.Irregular" value="Neregulārs"/>
+
+  <!-- Lay -->
+  <Entry key="Lay.One" value="Viens"/>
+  <Entry key="Lay.Many" value="Vairāki partneri"/>
+
+	<!-- Day -->
+	<Entry key="Day.Monday" value="Pirmdiena"/>
+	<Entry key="Day.Tuesday" value="Otrdiena"/>
+	<Entry key="Day.Wednesday" value="Treštdiena"/>
+	<Entry key="Day.Thursday" value="Ceturtdiena"/>
+	<Entry key="Day.Friday" value="Piektdiena"/>
+	<Entry key="Day.Saturday" value="Sestdiena"/>
+	<Entry key="Day.Sanday" value="Svētdiena"/>
+	
+  <!-- AccountingPlace-->
+  <Entry key="AccountingPlace.Factory" value="Uzņēmuma"/>
+  <Entry key="AccountingPlace.OtherFactory" value="Saņem citas personas pakalpojumus"/>
+
+  <!-- Health-->
+<Entry key="Health.Normal" value="Normālas"/>
+<Entry key="Health.Pathalogical" value="Pataloģija"/>
+<Entry key="Health.SC" value="S.C."/>
+	<Entry key="Health.Well" value="Vesels"/>
+	<Entry key="Health.Ill" value="Slims"/>
+
+  <!-- Period -->
+  <Entry key="Period.Normal" value="Mēnesis"/>
+  <Entry key="Period.Quarter" value="Ceturksnis"/>
+  <Entry key="Period.Year" value="Gads"/>
+  <Entry key="Period.Other" value="Cits"/>
+  
+  <!-- TimberInspectionPlace -->
+  <Entry key="TimberInspectionPlace.SawFrame" value="Gateris"/>
+  <Entry key="TimberInspectionPlace.LumberMill" value="Kokzāģētava"/>
+  <Entry key="TimberInspectionPlace.Other" value="Cita"/>
+
+  <!-- PropertyType-->
+  <Entry key="PropertyType.Own" value="Īpašumā"/>
+  <Entry key="PropertyType.Lease" value="Nomā"/>
+  <Entry key="PropertyType.NotClear" value="Nevar noskaidrot"/>
+
+  <!-- FixedAssetApplyType-->
+  <Entry key="FixedAssetApplyType.Completely" value="Pilnīgi"/>
+  <Entry key="FixedAssetApplyType.Partially" value="Daļēji"/>
+  <Entry key="FixedAssetApplyType.NotApply" value="Netiek izmantots"/>
+
+  <!-- WareHouseRequest Status-->
+  <Entry key="WHRequestStatus.Draft" value="Jauns"/>
+  <Entry key="WHRequestStatus.Ready" value="Izpildīts"/>
+  <Entry key="WHRequestStatus.Sent" value="Pieprasīts"/>
+
+  <!-- Core.Dal.ConnectionTarget -->
+  <Entry key="ConnectionTarget.Local" value="Lokālā datubāze"/>
+  <Entry key="ConnectionTarget.Central" value="Centrālā datubāze"/>
+
+  <!-- MessageBox button text and Caption -->
+  <Entry key="Button.OK" value="Labi"/>
+  <Entry key="Button.Cancel" value="Atcelt"/>
+  <Entry key="Button.Yes" value="Jā"/>
+  <Entry key="Button.No" value="Nē"/>
+  <Entry key="Caption.Default" value="Paziņojums"/>
+
+  <!-- WorkSafetyOptions -->
+  <Entry key="WorkSafetyOptions.Yes" value="Jā"/>
+  <Entry key="WorkSafetyOptions.No" value="Nē"/>
+  <Entry key="WorkSafetyOptions.NotRequired" value="Nav nepieciešams"/>
+  <Entry key="WorkSafetyOptions.NotPresent" value="Nevar uzrādīt"/>
+<!-- ClassifierKind -->
+  <Entry key="ClassifierKind.System" value="Sistēmas"/>
+  <Entry key="ClassifierKind.External" value="Ārējais"/>
+  <Entry key="ClassifierKind.Internal" value="Iekšējais"/>
+
+  <!-- PaymentType -->
+  <Entry key="PaymentType.PaymentCash" value="Skaidrā naudā"/>
+  <Entry key="PaymentType.Payment" value="Bezskaidrā naudā"/>
+  <Entry key="PaymentType.PaymentNo" value="Nav nepieciešams"/>
+
+	<!-- DeforestDocuments -->
+	<Entry key="DeforestDocuments.DeforestDocumentsYes" value="Ir"/>
+	<Entry key="DeforestDocuments.DeforestDocumentsNo" value="Nav"/>
+	<Entry key="DeforestDocuments.DeforestDocumentsNotNecessary" value="Nav nepieciešams"/>
+
+	<!-- Working -->
+	<Entry key="Working.Work" value="Strādā"/>
+	<Entry key="Working.Student" value="Students"/>
+	<Entry key="Working.Unwork" value="Bezdarbnieks"/>
+
+  <!-- DelivererType -->
+  <Entry key="DelivererType.TimberDeliverer" value="Kokmateriālu piegādātājs"/>
+  <Entry key="DelivererType.ServiceDeliverer" value="Pakalpojumu sniedzējs"/>
+
+  <!-- ReceiverType -->
+  <Entry key="ReceiverType.TimberReceiver" value="Kokmateriālu saņēmējs"/>
+  <Entry key="ReceiverType.ServiceReceiver" value="Pakalpojumu saņēmējs"/>
+
+  <!-- PerformPlace -->
+  <Entry key="PerformPlace.Department" value="Struktūrvienība"/>
+  <Entry key="PerformPlace.LegalAddress" value="Juridiskā adrese"/>
+  <Entry key="PerformPlace.OtherPlace" value="Cita pārbaudes vieta"/>
+  <Entry key="PerformPlace.VIDInstitution" value="VID iestāde"/>
+  <Entry key="PerformPlace.BookkeepingInstitution" value="Grāmatvedības pakalpojumu saņemšanas vieta citā uzņēmumā"/>
+  <Entry key="PerformPlace.OtherAddress" value="Cita adrese"/>
+
+  <!-- Direction -->
+  <Entry key="Direction.MakeRecordsPe" value="Uzsākt AP lietvedību A/FP"/>
+  <Entry key="Direction.MakeRecordsLe" value="Uzsākt AP lietvedību JP"/>
+  <Entry key="Direction.DontMakeRecords" value="Neuzsākt AP lietvedību"/>
+  <Entry key="Direction.Warn" value="Izteikt brīdinājumu SD"/>
+  <Entry key="Direction.StopActivities" value="Apturēt SD"/>
+  <Entry key="Direction.Send" value="Nosūtīt citai iestādei"/>
+  <Entry key="Direction.StateDuty" value="Lēmums par Valsts nodevām pārbaudes rezultātiem"/>
+  <Entry key="Direction.Cash" value="Lēmums par Skaidras naudas pārbaudes rezultātiem"/>
+  <Entry key="Direction.FixedAssets" value="Lēmums par Pamatlīdzekļu pārbaudes rezultātiem"/>
+  <Entry key="Direction.Ignore" value="Neņemt vērā"/>
+
+  <!--DNS Reports Start-->
+  <!--NMR data-->
+  <Entry key="NmrData.nmr_kods" value="NMR: "/>
+  <Entry key="NmrData.isais_nosauk" value="Nosaukums: "/>
+  <Entry key="NmrData.adrese" value="Adrese: "/>
+  <Entry key="NmrData.nace_kods" value="NACE kods: "/>
+  <Entry key="NmrData.nace_nosaukums" value="Pamatdarbības veids: "/>
+  <Entry key="NmrData.vid_nosaukums" value="Reģistrēts: "/>
+  <Entry key="NmrData.pvn_paz" value="PVN maksātājs: "/>
+  <Entry key="NmrData.strukturvienibu_sk" value="Struktūrvienību skaits: "/>
+  <Entry key="NmrData.nm_tips" value="NM tips: "/>
+  <Entry key="NmrData.kp_pasak" value="Kontroles pasākums"/>
+  <Entry key="NmrData.kp_veids" value="KP veids: "/>
+  <Entry key="NmrData.datums" value="Datums: "/>
+  <Entry key="NmrData.veicejs" value="Veicējs: "/>
+  <Entry key="NmrData.tema" value="Tēmas: "/>
+  <Entry key="NmrData.kp_iemesls" value="Iemesli: "/>
+  <Entry key="NmrData.kont_park" value="Konstatēts pārkāpums: "/>
+  <Entry key="NmrData.strukturvieniba" value="Struktūrvienības"/>
+  <Entry key ="NmrData.IzzinataAdrese" value ="Izzinātās adreses"/>
+  <Entry key ="NmrData.Adrese" value ="Adrese:"/>
+  <Entry key ="NmrData.Veids" value ="Veids:"/>
+
+  <!-- Warehouse Requests localization begin-->
+
+  <!-- TPAIS_ST_AZARTSPELES-->
+  <Entry key="TPAIS_ST_AZARTSPELES.Text" value="Azartspēļu iekārtu (spēļu automātu) reģistrācija"/>
+  <Entry key ="TPAIS_ST_AZARTSPELES.ASI_Veida_nosaukums.Caption" value ="Azartspēļu iekārtas veida nosaukums"/>
+  <Entry key ="TPAIS_ST_AZARTSPELES.ASI_Numurs.Caption" value ="Identifikācijas numurs"/>
+  <Entry key ="TPAIS_ST_AZARTSPELES.NMR_Kods.Caption" value ="Īpašnieka NMR kods"/>
+  <Entry key ="TPAIS_ST_AZARTSPELES.NM_Adrese.Caption" value ="Īpašnieka adrese"/>
+  <Entry key ="TPAIS_ST_AZARTSPELES.ASI_OB_ĪP_NMR_Kods.Caption" value ="NMR kods, kura adresē uzstādīta azartspēļu iekārta"/>
+  <Entry key ="TPAIS_ST_AZARTSPELES.ASI_UZ_Adrese.Caption" value ="Uzstādītāja adrese"/>
+  <Entry key ="TPAIS_ST_AZARTSPELES.NM_Īsais_nosaukums.Caption" value ="Īpašnieka nosaukums"/>
+  <Entry key ="TPAIS_ST_AZARTSPELES.ASI_OB_ĪP_Nosaukums.Caption" value ="ASI_OB_ĪP_Nosaukums"/>
+  <Entry key ="TPAIS_ST_AZARTSPELES.ASI_UZ_Objekta_nosaukums.Caption" value ="ASI_UZ_Objekta_nosaukums"/>
+  <Entry key ="TPAIS_ST_AZARTSPELES.ASI_UZ_ATVK_Nosaukums.Caption" value ="Iekārtas uzstādīšanas vietas adrese"/>
+  <Entry key ="TPAIS_ST_AZARTSPELES.colSelected.Caption" value ="Izvēlēts"/>
+
+  <!-- TPAIS_ST_amatpersonas-->
+  <Entry key ="TPAIS_ST_amatpersonas.Text" value="Informācija par NM amatpersonām un darba ņēmējiem"/>
+  <Entry key ="TPAIS_ST_amatpersonas.AM_PERS_Vārds.Caption" value ="Vārds"/>
+  <Entry key ="TPAIS_ST_amatpersonas.AM_PERS_Uzvārds.Caption" value ="Uzvārds"/>
+  <Entry key ="TPAIS_ST_amatpersonas.AM_PERS_Amats.Caption" value ="Amats"/>
+  <Entry key ="TPAIS_ST_amatpersonas.AM_PERS_Datums_no.Caption" value ="Datums no"/>
+  <Entry key ="TPAIS_ST_amatpersonas.AM_PERS_Datums_līdz.Caption" value ="Datums līdz"/>
+  <Entry key ="TPAIS_ST_amatpersonas.AM_PERS_Pazīme.Caption" value ="Pazīme"/>
+  <Entry key ="TPAIS_ST_amatpersonas.AM_PERS_Personas_kods.Caption" value ="Personas kods"/>
+  <Entry key ="TPAIS_ST_amatpersonas.colSelected.Caption" value ="Izvēlēts"/>
+
+  <!--TPAIS_ST_DATORPROGRAMMAS-->
+  <Entry key ="TPAIS_ST_DATORPROGRAMMAS.Text" value="Grāmatvedības datorprogrammas"/>
+  <Entry key ="TPAIS_ST_DATORPROGRAMMAS.RAKS_Apakštēmas_nosaukums.Caption" value ="Grāmatvedības datorprogrammas nosaukums"/>
+  <Entry key ="TPAIS_ST_DATORPROGRAMMAS.RAKS_Teksts.Caption" value ="Apraksts"/>
+  <Entry key ="TPAIS_ST_DATORPROGRAMMAS.RAKS_Ievades_datums.Caption" value ="Datums, kad reģistrēta NIS"/>
+  <Entry key ="TPAIS_ST_DATORPROGRAMMAS.colSelected.Caption" value ="Izvēlēts"/>
+
+  <!-- TPAIS_ST_PVN_PARTN-->
+  <Entry key ="TPAIS_ST_PVN_PARTN.Text" value="NM kopējās darījumu vērības un DP deklarēto summu salīdzinājums"/>
+  <Entry key ="TPAIS_ST_PVN_PARTN.colSelected.Caption" value ="Izvēlēts"/>
+  <Entry key ="TPAIS_ST_PVN_PARTN.PS_DP_PVN_Numurs.Caption" value ="NMR kods"/>
+  <Entry key ="TPAIS_ST_PVN_PARTN.PS_DP_KOR_Īsais_nosaukums.Caption" value ="DP nosaukums"/>
+  <Entry key ="TPAIS_ST_PVN_PARTN.PS_Dokumenta_sērija.Caption" value ="Dokumenta sērija"/>
+  <Entry key ="TPAIS_ST_PVN_PARTN.PS_Dokumenta_numurs.Caption" value ="Dokumenta Nr."/>
+  <Entry key ="TPAIS_ST_PVN_PARTN.PS_Attaisnojuma_dokumenta_datums.Caption" value ="Dokumenta datums"/>
+  <Entry key ="TPAIS_ST_PVN_PARTN.PS_Darījums_ar_PVN.Caption" value ="Summa ar PVN"/>
+  <Entry key ="TPAIS_ST_PVN_PARTN.PS_Darījums_bez_PVN.Caption" value ="Summa bez PVN"/>
+  <Entry key ="TPAIS_ST_PVN_PARTN.PS_Darījuma_PVN.Caption" value ="PVN"/>
+
+  <!--TPAIS_ST_SND-->
+  <Entry key ="TPAIS_ST_SND.Text" value="Skaidrās naudas darījumi"/>
+  <Entry key ="TPAIS_ST_SND.SN_DAR_Partnera_NMR_Kods.Caption" value ="NMR Kods"/>
+  <Entry key ="TPAIS_ST_SND.SN_DAR_Partnera_īsais_nosaukums.Caption" value ="NM"/>
+  <Entry key ="TPAIS_ST_SND.DD_SN_Deva.Caption" value ="SN Deva"/>
+  <Entry key ="TPAIS_ST_SND.DD_SN_Saņēma.Caption" value ="SN Saņēma"/>
+  <Entry key ="TPAIS_ST_SND.SND_Datums_no.Caption" value ="SND periods no"/>
+  <Entry key ="TPAIS_ST_SND.SND_Datums_līdz.Caption" value ="SND periods līdz"/>
+  <Entry key ="TPAIS_ST_SND.Gads.Caption" value ="Gads"/>
+  <Entry key ="TPAIS_ST_SND.Mēnesis.Caption" value ="Mēnesis"/>
+  <Entry key ="TPAIS_ST_SND.Mēneša_nosaukums.Caption" value ="Mēneša nosaukums"/>
+  <Entry key ="TPAIS_ST_SND.colSelected.Caption" value ="Izvēlēts"/>
+
+  <!--TPAIS_ST_konti-->
+  <Entry key ="TPAIS_ST_konti.Text" value="Reģistrētie bankas konti"/>
+  <Entry key ="TPAIS_ST_konti.NM_Bankas_nosaukums.Caption" value ="Bankas nosaukums"/>
+  <Entry key ="TPAIS_ST_konti.NM_Konta_numurs.Caption" value ="Konta numurs"/>
+  <Entry key ="TPAIS_ST_konti.colSelected.Caption" value ="Izvēlēts"/>
+
+  <!--TPAIS_ST_DN_RISKANOD-->
+  <Entry key ="TPAIS_ST_DN_RISKANOD.Text" value="Uzņēmējdarbības riska valsts nodeva"/>
+  <Entry key ="TPAIS_ST_DN_RISKANOD.Periods.Caption" value ="Taksācijas periods"/>
+  <Entry key ="TPAIS_ST_DN_RISKANOD.DN_URV_DARB_skaits.Caption" value ="Darba ņēmēju skaits, par kuriem samaksāta nodeva"/>
+  <Entry key ="TPAIS_ST_DN_RISKANOD.DN_Riska_nodeva.Caption" value ="Samaksātā nodeva (Ls)"/>
+  <Entry key ="TPAIS_ST_DN_RISKANOD.colSelected.Caption" value ="Izvēlēts"/>
+  <Entry key ="TPAIS_ST_DN_RISKANOD.DN_Kopējais_skaits.Caption" value ="Izvēlēts"/>
+  <Entry key ="TPAIS_ST_DN_RISKANOD.Gads.Caption" value ="Izvēlēts"/>
+
+  <!-- TPAIS_ST_LICENCES-->
+  <Entry key ="TPAIS_ST_LICENCES.Text" value="Licences"/>
+  <Entry key ="TPAIS_ST_LICENCES.LIC_DOK_Veids.Caption" value ="Dokumenta veids"/>
+  <Entry key ="TPAIS_ST_LICENCES.LIC_Izsniedza.Caption" value ="Izsniedza"/>
+  <Entry key ="TPAIS_ST_LICENCES.LIC_IZSN_Datums.Caption" value ="Izsniegšanas datums"/>
+  <Entry key ="TPAIS_ST_LICENCES.LIC_Numurs.Caption" value ="Numurs"/>
+  <Entry key ="TPAIS_ST_LICENCES.LIC_Datums_no.Caption" value ="Derīga no"/>
+  <Entry key ="TPAIS_ST_LICENCES.LIC_Datums_līdz.Caption" value ="Derīga līdz"/>
+  <Entry key ="TPAIS_ST_LICENCES.LIC_Veids.Caption" value ="Licences veids"/>
+  <Entry key ="TPAIS_ST_LICENCES.LIC_ATVK_Nosaukums.Caption" value ="Licences darbības vieta"/>
+  <Entry key ="TPAIS_ST_LICENCES.colSelected.Caption" value ="Izvēlēts"/>
+
+  <!-- TPAIS_ST_EKA-->
+  <Entry key ="TPAIS_ST_EKA.Text" value="EKA(kases aparāti)"/>
+  <Entry key ="TPAIS_ST_EKA.EKA_Šasijas_numurs.Caption" value ="EKA šasijas Nr."/>
+  <Entry key ="TPAIS_ST_EKA.EKA_Marka.Caption" value ="EKA marka"/>
+  <Entry key ="TPAIS_ST_EKA.EKA_Modelis.Caption" value ="EKA modelis"/>
+  <Entry key ="TPAIS_ST_EKA.EKA_TI_Kods.Caption" value ="VID TI, kur reģistrēts"/>
+  <Entry key ="TPAIS_ST_EKA.EKA_STAT_Datums.Caption" value ="Reģistrācijas datums"/>
+  <Entry key ="TPAIS_ST_EKA.EKA_Adrese.Caption" value ="Adrese"/>
+  <Entry key ="TPAIS_ST_EKA.colSelected.Caption" value ="Izvēlēts"/>
+  <Entry key ="TPAIS_ST_EKA.VID_TI_Īsais_Nosaukums.Caption" value ="Īsais nosaukums"/>
+
+  <!-- TPAIS_ST_DAK-->
+  <Entry key ="TPAIS_ST_DAK.Text" value="Stingrās uzskaites reģistrācijas kvītis (kvīšu grāmatiņas)"/>
+  <Entry key ="TPAIS_ST_DAK.SUP_Sērija.Caption" value ="Sērija"/>
+  <Entry key ="TPAIS_ST_DAK.SUP_NR_No.Caption" value ="Numurs no"/>
+  <Entry key ="TPAIS_ST_DAK.SUP_NR_Līdz.Caption" value ="Numurs līdz"/>
+  <Entry key ="TPAIS_ST_DAK.Datums.Caption" value ="Reģistrācijas datums"/>
+  <Entry key ="TPAIS_ST_DAK.SUP_AKT_Statuss.Caption" value ="Izlietošanas akta iesniegšanas datums"/>
+  <Entry key ="TPAIS_ST_DAK.SUP_STAT_Datums.Caption" value ="Izlietošanas statuss"/>
+  <Entry key ="TPAIS_ST_DAK.colSelected.Caption" value ="Izvēlēts"/>
+
+  <!-- TPAIS_ST_SUP_SUMMA-->
+  <Entry key ="TPAIS_ST_SUP_SUMMA.Text" value="VID izsniegto stingrās uzskaites pavadzīmes-rēķina veidlapu izlietojums (summāri)"/>
+  <Entry key ="TPAIS_ST_SUP_SUMMA.colSelected.Caption" value ="Izvēlēts"/>
+  <Entry key ="TPAIS_ST_SUP_SUMMA.SUP_PARSK_Izlietotas.Caption" value ="Izlietoto komplektu skaits"/>
+  <Entry key ="TPAIS_ST_SUP_SUMMA.SUP_PARSK_Anulētas.Caption" value ="Anulēto komplektu skaits"/>
+  <Entry key ="TPAIS_ST_SUP_SUMMA.SUP_PARSK_Beigu_atlikums.Caption" value ="Beigu atlikums"/>
+  <Entry key ="TPAIS_ST_SUP_SUMMA.SUP_PARSK_Datums_no.Caption" value ="Pārskata periods no"/>
+  <Entry key ="TPAIS_ST_SUP_SUMMA.SUP_PARSK_Datums_līdz.Caption" value ="Pārskata periods līdz"/>
+  <Entry key ="TPAIS_ST_SUP_SUMMA.SUP_PARSK_Sākuma_atlikums.Caption" value ="Sākuma atlikums"/>
+  <Entry key ="TPAIS_ST_SUP_SUMMA.SUP_PARSK_Saņemtas.Caption" value ="Izsniegto komplektu skaits"/>
+  <Entry key ="TPAIS_ST_SUP_SUMMA.SUP_PARSK_Tips.Caption" value ="Pavadzīmes veids"/>
+  <Entry key ="TPAIS_ST_SUP_SUMMA.SUP_Atlikums.Caption" value ="Atlikums pārskata perioda beigās"/>
+  <Entry key ="TPAIS_ST_SUP_SUMMA.SUP_Izlietotas.Caption" value ="Izlietots"/>
+  <Entry key ="TPAIS_ST_SUP_SUMMA.SUP_Anulētas.Caption" value ="Anulēts"/>
+
+  <!-- TPAIS_ST_PVN_DEKL-->
+  <Entry key ="TPAIS_ST_PVN_DEKL.Text" value="PVN deklarācijā uzrādītais priekšnodoklis par ievestajiem pamatlīdzekļiem"/>
+  <Entry key ="TPAIS_ST_PVN_DEKL.Gads.Caption" value ="Taksācijas gads"/>
+  <Entry key ="TPAIS_ST_PVN_DEKL.Periods.Caption" value ="Taksācijas periods"/>
+  <Entry key ="TPAIS_ST_PVN_DEKL.PVN_Rindas_vērtība.Caption" value ="PVN summa"/>
+
+  <!-- TPAIS_ST_MUITA-->
+  <Entry key ="TPAIS_ST_MUITA.Text" value="Ievestie pamatlīdzekļi"/>
+  <Entry key ="TPAIS_ST_MUITA.colSelected.Caption" value ="Izvēlēts"/>
+  <Entry key ="TPAIS_ST_MUITA.A33L4_Preces_kods.Caption" value ="Pamatlīdzekļa kods"/>
+  <Entry key ="TPAIS_ST_MUITA.KD_Datums.Caption" value ="Muitas kontroles datums"/>
+  <Entry key ="TPAIS_ST_MUITA.A_Pilns_deklarācijas_numurs.Caption" value ="Muitas deklarācijas numurs"/>
+  <Entry key ="TPAIS_ST_MUITA.A33_Preces_pilnais_nosaukums.Caption" value ="Pamatlīdzekļa nosaukums"/>
+  <Entry key ="TPAIS_ST_MUITA.A31_Preču_daudzums_mērvienībās.Caption" value ="Daudzums"/>
+  <Entry key ="TPAIS_ST_MUITA.A46_Statistiskā_vērtība.Caption" value ="Kopējā vērtība (statistiskā)"/>
+  <Entry key ="TPAIS_ST_MUITA.Apvienotā_vērtība.Caption" value ="Kopējā vērtība"/>
+  <Entry key ="TPAIS_ST_MUITA.A47L4_Nodokļa_summa.Caption" value ="PVN summa"/>
+
+  <!-- TPAIS_ST_patenti-->
+  <Entry key ="TPAIS_ST_PATENTI.Text" value="Informācija par IDRA un patentiem"/>
+  <Entry key ="TPAIS_ST_PATENTI.colSelected.Caption" value ="Izvēlēts"/>
+  <Entry key ="TPAIS_ST_PATENTI.NM_IDP_NMR_Doktips.Caption" value ="IDRA/patents"/>
+  <Entry key ="TPAIS_ST_PATENTI.NM_IDP_Numurs.Caption" value ="Numurs"/>
+  <Entry key ="TPAIS_ST_PATENTI.NM_IDP_SAK_Datums.Caption" value ="Datums no"/>
+  <Entry key ="TPAIS_ST_PATENTI.NM_IDP_BEIG_Datums.Caption" value ="Datums līdz"/>
+  <Entry key ="TPAIS_ST_PATENTI.NM_IDP_Sērija.Caption" value ="Sērija"/>
+
+  <!-- Warehouse Requests localization end-->
+  
+  
+  <!-- Violation description -->
+  <Entry key ="Violation.Employee_NoContract" value="Darba devēja pārbaude: nav darba līguma"/>
+  <Entry key ="Violation.Employee_WorkSafety" value="Darba devēja pārbaude: nav reģistrēts darba drošības žurnālā"/>
+
+  <Entry key ="Violation.Construction_DocPermit" value="Pārbaude būvobjektā: būvatļauja nav uzrādīta"/>
+  <Entry key ="Violation.Construction_JournalRegistered" value="Pārbaude būvobjektā: būvdarbu žurnāls nav reģistrēts būvvaldē"/>
+
+  <Entry key ="Violation.MandatoryFormDetail_DiffUsed" value="Stingras uzskaites PR veidlapu (VID piešķirto numuru) izlietojuma pārbaude: ir novirze izlietoto veidlapu daudzumā"/>
+  <Entry key ="Violation.MandatoryFormDetail_DiffAnnulled" value="Stingras uzskaites PR veidlapu (VID piešķirto numuru) izlietojuma pārbaude: ir novirze anulēto veidlapu daudzumā"/>
+
+  <Entry key ="Violation.TimberCheckOnRoad_WBSerial" value="Kokmateriālu kravu pārbaude uz ceļa: nevar uzrādīt KTPR"/>
+  <Entry key ="Violation.TimberCheckOnRoad_WBDate" value="Kokmateriālu kravu pārbaude uz ceļa: KTPR nav norādīts datums"/>
+  <Entry key ="Violation.TimberCheckOnRoad_Amount" value="Kokmateriālu kravu pārbaude uz ceļa: KTPR nav norādīts kopējais daudzums"/>
+  <Entry key ="Violation.TimberCheckOnRoad_Unit" value="Kokmateriālu kravu pārbaude uz ceļa: KTPR nav norādīta mērvienība"/>
+  <Entry key ="Violation.TimberCheckOnRoad_CarLoad" value="Kokmateriālu kravu pārbaude uz ceļa: KTPR nav norādīta kravas iekraušanas vieta"/>
+  <Entry key ="Violation.TimberCheckOnRoad_CarUnload" value="Kokmateriālu kravu pārbaude uz ceļa: KTPR nav norādīta kravas izkraušanas vieta"/>
+  <Entry key ="Violation.TimberCheckOnRoad_DeforestDocuments" value="Kokmateriālu kravu pārbaude uz ceļa: nav ciršanas apliecinājuma"/>
+
+  <Entry key ="Violation.RealEstate_RecordsTimely" value="NĪN aprēķināšanas, iekasēšanas un uzskaites pārbaude pašvaldībās: ieraksti nav veikti savlaicīgi"/>
+  <Entry key ="Violation.RealEstate_TaxpayerRegistered" value="NĪN aprēķināšanas, iekasēšanas un uzskaites pārbaude pašvaldībās: NĪN nodokļa maksātāji netiek uzskaitīti uzskaites reģistrā"/>
+  <Entry key ="Violation.RealEstate_RulesTakeEffect" value="NĪN aprēķināšanas, iekasēšanas un uzskaites pārbaude pašvaldībās: pašvaldības izdotie saistošie noteikumi par atvieglojumu piešķiršanu atsevišķām nekustamā īpašuma nodokļa maksātāju kategorijām, nav stājušies spēkā likumā noteiktajā kārtībā"/>
+  <Entry key ="Violation.RealEstateTaxpayer_AccountOpened" value="NĪN aprēķināšanas, iekasēšanas un uzskaites pārbaude pašvaldībās: nav atvērta personīgā konta kartīte"/>
+  <Entry key ="Violation.RealEstateTaxpayer_CadastreValue" value="NĪN aprēķināšanas, iekasēšanas un uzskaites pārbaude pašvaldībās: NĪN nav aprēķināts no VZD NĪ kadastrālās vērtības"/>
+  <Entry key ="Violation.RealEstateTaxpayer_BuildingValue" value="NĪN aprēķināšanas, iekasēšanas un uzskaites pārbaude pašvaldībās: ēkām NĪN nav aprēķināts no bilances / VZD noteiktās inventarizācijas vērtības"/>
+  <Entry key ="Violation.RealEstateTaxpayer_CadastreRate" value="NĪN aprēķināšanas, iekasēšanas un uzskaites pārbaude pašvaldībās: aprēķinot NĪN, nav piemērota likumā noteiktā likme no NĪ kadastrālās vērtības"/>
+  <Entry key ="Violation.RealEstateTaxpayer_PrivilegeApplied" value="NĪN aprēķināšanas, iekasēšanas un uzskaites pārbaude pašvaldībās: nav piemēroti saistošajos noteikumos noteiktie atvieglojumi"/>
+  <Entry key ="Violation.RealEstateTaxpayer_PrivilegeReprisal" value="NĪN aprēķināšanas, iekasēšanas un uzskaites pārbaude pašvaldībās: atvieglojumi politiski represētajiem nav piešķirti atbilstoši NA"/>
+  <Entry key ="Violation.RealEstateTaxpayer_PaymentNoticeSent" value="NĪN aprēķināšanas, iekasēšanas un uzskaites pārbaude pašvaldībās: maksāšanas paziņojumi nav nosūtīti līdz taksācijas gada 15.02."/>
+  <Entry key ="Violation.RealEstateTaxpayer_PaymentDivided" value="NĪN aprēķināšanas, iekasēšanas un uzskaites pārbaude pašvaldībās: NĪN maksājumi nav sadalīti pa ceturkšņiem ¼ apmērā no NĪN gada summas"/>
+  <Entry key ="Violation.RealEstateTaxpayer_PaymentNextMonth" value="NĪN aprēķināšanas, iekasēšanas un uzskaites pārbaude pašvaldībās: NĪN maksāšanas termiņš nav noteikts ar nākamo mēnesi pēc īpašumu tiesību vai valdījuma, vai valsts vai pašvaldību NĪ lietošanas vai nomas tiesību rašanās"/>
+  <Entry key ="Violation.RealEstateTaxpayer_PenaltyCalculated" value="NĪN aprēķināšanas, iekasēšanas un uzskaites pārbaude pašvaldībās: par noteiktā laikā nenomaksāto NĪN nav aprēķināta soda nauda un NN"/>
+
+  <Entry key ="Violation.Metal_Licence" value="Melno/krāsaino metālu atgriezumu/lūžņu iepirkšanas un uzglabāšanas vietu pārbaude: iepirkšanas, uzglabāšanas vietā nav licences oriģināla vai kopijas"/>
+  <Entry key ="Violation.Metal_Storage" value="Melno/krāsaino metālu atgriezumu/lūžņu iepirkšanas un uzglabāšanas vietu pārbaude: metālu atgriezumi un lūžņi neatrodas licencē norādītajā vietā"/>
+  <Entry key ="Violation.Metal_Purchase" value="Melno/krāsaino metālu atgriezumu/lūžņu iepirkšanas un uzglabāšanas vietu pārbaude: metālu atgriezumu un lūžņu iepirkšana no FP nenotiek licencē norādītajā"/>
+  <Entry key ="Violation.Metal_SourceDocument" value="Melno/krāsaino metālu atgriezumu/lūžņu iepirkšanas un uzglabāšanas vietu pārbaude: nogādājot metāla atgriezumus un lūžņus no FP, kas nav komersanti, ar savu transportu uz iepirkšanas un glabāšanas vietu, nav noformēts iekšējā attaisnojuma dokuments"/>
+  <Entry key ="Violation.Metal_Clearing" value="Melno/krāsaino metālu atgriezumu/lūžņu iepirkšanas un uzglabāšanas vietu pārbaude: norēķini nav veikti bezskaidras naudas norēķinu veidā"/>
+  <Entry key ="Violation.Metal_JournalSoftware" value="Melno/krāsaino metālu atgriezumu/lūžņu iepirkšanas un uzglabāšanas vietu pārbaude: ziņas par iepirktajiem metālu atgriezumiem un lūžņiem netiek reģistrētas ne žurnālā, ne datorprogrammā"/>
+  <Entry key ="Violation.Metal_JournalEntriesTimely" value="Melno/krāsaino metālu atgriezumu/lūžņu iepirkšanas un uzglabāšanas vietu pārbaude: žurnālā ieraksti nav veikti savlaicīgi"/>
+  <Entry key ="Violation.Metal_JournalRegistered" value="Melno/krāsaino metālu atgriezumu/lūžņu iepirkšanas un uzglabāšanas vietu pārbaude: žurnāls nav reģistrēts VID TI"/>
+  <Entry key ="Violation.Metal_SoftwareOK" value="Melno/krāsaino metālu atgriezumu/lūžņu iepirkšanas un uzglabāšanas vietu pārbaude: datorprogramma neatbilst NA par grāmatvedības kārtošanu un organizāciju noteiktajām prasībām"/>
+  <Entry key ="Violation.Metal_JournalPrintable" value="Melno/krāsaino metālu atgriezumu/lūžņu iepirkšanas un uzglabāšanas vietu pārbaude: ar datorprogrammu nevar izdrukāt uzskaites žurnālā iekļauto informāciju"/>
+  <Entry key ="Violation.Metal_LegalEntityPurchaseDocuments" value="Melno/krāsaino metālu atgriezumu/lūžņu iepirkšanas un uzglabāšanas vietu pārbaude: nav noformētas pavadzīmes iepērkot metālu atgriezumus un lūžņus no JP"/>
+  <Entry key ="Violation.Metal_PhysicalEntityPurchaseDocuments" value="Melno/krāsaino metālu atgriezumu/lūžņu iepirkšanas un uzglabāšanas vietu pārbaude: nav noformēti iepirkuma un izcelsmes apliecinājuma akti iepērkot metālu atgriezumus un lūžņus no FP"/>
+  <Entry key ="Violation.MetalPhysicalEntityPurchase_MetalType" value="Melno/krāsaino metālu atgriezumu/lūžņu iepirkšanas un uzglabāšanas vietu pārbaude: aktā nav norādīts metālu lūžņu nosaukums"/>
+  <Entry key ="Violation.MetalPhysicalEntityPurchase_Weight" value="Melno/krāsaino metālu atgriezumu/lūžņu iepirkšanas un uzglabāšanas vietu pārbaude: aktā nav norādīts metālu lūžņu svars"/>
+  <Entry key ="Violation.MetalPhysicalEntityPurchase_Price" value="Melno/krāsaino metālu atgriezumu/lūžņu iepirkšanas un uzglabāšanas vietu pārbaude: aktā nav norādīta metālu lūžņu iepirkuma cena"/>
+  <Entry key ="Violation.MetalPhysicalEntityPurchase_Sum" value="Melno/krāsaino metālu atgriezumu/lūžņu iepirkšanas un uzglabāšanas vietu pārbaude: aktā nav norādīta metālu lūžņu iepirkuma summa"/>
+  <Entry key ="Violation.MetalPhysicalEntityPurchase_CalculatedProperly" value="Melno/krāsaino metālu atgriezumu/lūžņu iepirkšanas un uzglabāšanas vietu pārbaude: iedzīvotāju ienākuma nodoklis aprēķināts nepareizi"/>
+  <Entry key ="Violation.Metal_LegalEntitySellDocuments" value="Melno/krāsaino metālu atgriezumu/lūžņu iepirkšanas un uzglabāšanas vietu pārbaude: nav noformētas pavadzīmes realizējot metālu atgriezumus un lūžņus JP"/>
+  
+  <Entry key ="Violation.Wholesale_GoodsRegister" value="Preču reģistrācija un uzskaite vairumtirdzniecībā: Preces nav reģistrētas"/>
+  <Entry key ="Violation.Wholesale_RegisterPrintable" value="Preču reģistrācija un uzskaite vairumtirdzniecībā: datorprogramma nenodrošina iespēju izdrukāt informāciju par preču kustību un krājumu stāvokli"/>
+  <Entry key ="Violation.Wholesale_PropertiesRegistered" value="Preču reģistrācija un uzskaite vairumtirdzniecībā: preču reģistrā nav uzrādīti NA noteiktie rekvizīti"/>
+  <Entry key ="Violation.Wholesale_HaveWaybills" value="Preču reģistrācija un uzskaite vairumtirdzniecībā: Precēm nav pavaddokumentu"/>
+  <Entry key ="Violation.Wholesale_SampleWaybillsRegistered" value="Preču reģistrācija un uzskaite vairumtirdzniecībā: Izlases kartībā pārbaudīto preču pavaddokumenti nav reģistrēti"/>
+  <Entry key ="Violation.Wholesale_SampleGoodsRegistered" value="Preču reģistrācija un uzskaite vairumtirdzniecībā: Izlases kartībā pārbaudītās preces nav reģistrētas"/>
+  <Entry key ="Violation.Wholesale_ExpiryDateSpecified" value="Preču reģistrācija un uzskaite vairumtirdzniecībā: izlases kārtībā pārbaudītajām precēm derīguma termiņš nav uzrādīts"/>
+  <Entry key ="Violation.Wholesale_ExpiryDateNoticed" value="Preču reģistrācija un uzskaite vairumtirdzniecībā: izlases kārtībā pārbaudītajām precēm derīguma termiņš nav ievērots"/>
+
+  <Entry key ="Violation.Waybills_GoodsRegister" value="Preču pavaddokumentu reģistrācija: saņemto un izsniegto preču pavaddokumenti nav reģistrēti"/>
+  <Entry key ="Violation.Waybills_RegisterPrintable" value="Preču pavaddokumentu reģistrācija: datorprogramma nenodrošina iespēju izdrukāt informāciju par preču kustību un par preču krājumu stāvokli"/>
+  <Entry key ="Violation.Waybills_PropertiesRegistered" value="Preču pavaddokumentu reģistrācija: preču pavaddokumentu reģistrācijas žurnālā nav uzrādīti NA noteiktie rekvizīti"/>
+  <Entry key ="Violation.Waybills_HaveWaybills" value="Preču pavaddokumentu reģistrācija: izlases veidā pārbaudītajām pārdošanā esošajām precēm nav pavaddokumenti"/>
+  <Entry key ="Violation.Waybills_SampleWaybillsRegistered" value="Preču pavaddokumentu reģistrācija: izlases kartībā pārbaudītajām precēm nav reģistrēti pavaddokumenti"/>
+  <Entry key ="Violation.Waybills_ExpiryDateSpecified" value="Preču pavaddokumentu reģistrācija: precēm nav uzrādīts derīguma termiņš"/>
+  <Entry key ="Violation.Waybills_ExpiryDateNoticed" value="Preču pavaddokumentu reģistrācija: precēm nav ievērots derīguma termiņš"/>
+
+  <Entry key ="Violation.AccountingSoftwares_Licence" value="Grāmatvedības uzskaite: Nav grāmatvedības datorprogrammas izmantošanas tiesības apliecinošas licences vai licences līguma"/>
+  <Entry key ="Violation.AccountingChecks_DocumentCopies" value="Grāmatvedības uzskaite: Nevar izsniegt kopijas papīra formātā"/>
+  <Entry key ="Violation.AccountingChecks_ArchieveCarrier" value="Grāmatvedības uzskaite: Arhīvu nesaglabā informācijas nesējos vai kā izdrukās"/>
+  <Entry key ="Violation.AccountingChecks_ArchivePrintouts" value="Grāmatvedības uzskaite: Arhīvu nesaglabā informācijas nesējos vai kā izdrukās"/>
+  <Entry key ="Violation.AccountingOtherSoftwares_Licence" value="Uzņēmuma grāmatvedības kārtošanas un organizācijas pārbaude: nav datorprogrammas izmantošanas tiesības apliecinošas licences"/>
+  <Entry key ="Violation.AccountingChecks_GeneralLedger" value="Uzņēmuma grāmatvedības kārtošanas un organizācijas pārbaude: netiek kārtoti grāmatvedības reģistri - Galvenā grāmata"/>
+  <Entry key ="Violation.AccountingChecks_Journal" value="Uzņēmuma grāmatvedības kārtošanas un organizācijas pārbaude: netiek kārtoti grāmatvedības reģistri - Žurnāls-virsgrāmata"/>
+  <Entry key ="Violation.AccountingChecks_ChronologicalRegisters" value="Uzņēmuma grāmatvedības kārtošanas un organizācijas pārbaude: netiek kārtoti grāmatvedības reģistri - Hronoloģiskie reģistri atsevišķiem saimniecisko darījumu veidiem"/>
+  <Entry key ="Violation.AccountingChecks_AnalyticalRegisters" value="Uzņēmuma grāmatvedības kārtošanas un organizācijas pārbaude: netiek kārtoti grāmatvedības reģistri - Analītiskās uzskaites reģistri"/>
+  <Entry key ="Violation.AccountingChecks_MoneyCountry" value="Uzņēmuma grāmatvedības kārtošanas un organizācijas pārbaude: par vērtības mēru nav lietota Latvijas Republikas naudas vienība (Ls)"/>
+  <Entry key ="Violation.AccountingChecks_RegistersLatvian" value="Uzņēmuma grāmatvedības kārtošanas un organizācijas pārbaude: grāmatvedības reģistri nav kārtoti latviešu valodā"/>
+  <Entry key ="Violation.AccountingChecks_DoubleRegisters" value="Uzņēmuma grāmatvedības kārtošanas un organizācijas pārbaude: grāmatvedības reģistrus nekārto divkāršā ieraksta sistēmā"/>
+  <Entry key ="Violation.AccountingChecks_SourceDocuments" value="Uzņēmuma grāmatvedības kārtošanas un organizācijas pārbaude: reģistros veiktie ieraksti nav pamatoti ar attaisnojuma dokumentiem"/>
+  <Entry key ="Violation.AccountingChecks_Requisites" value="Uzņēmuma grāmatvedības kārtošanas un organizācijas pārbaude: attaisnojuma dokumentos nav norādīti NA noteiktie rekvizīti"/>
+  <Entry key ="Violation.AccountingChecks_EletronicEntries" value="Uzņēmuma grāmatvedības kārtošanas un organizācijas pārbaude: uz attaisnojuma dokumentiem nav iegrāmatojuma vai tā atšifrējuma (iegrāmatojums veikts elektroniski)"/>
+  <Entry key ="Violation.AccountingChecks_OrderNumber" value="Uzņēmuma grāmatvedības kārtošanas un organizācijas pārbaude: uz attaisnojuma dokumentiem nav norādīts grāmatvedības reģistra kārtas numurs"/>
+  <Entry key ="Violation.AccountingChecks_EntriesTimely" value="Uzņēmuma grāmatvedības kārtošanas un organizācijas pārbaude: ieraksti grāmatvedības reģistros nav izdarīti savlaicīgi"/>
+  <Entry key ="Violation.AccountingChecks_EntriesComplete" value="Uzņēmuma grāmatvedības kārtošanas un organizācijas pārbaude: ieraksti grāmatvedības reģistros nav pilnīgi"/>
+  <Entry key ="Violation.AccountingChecks_SourceDocumentsIsCorrect" value="Uzņēmuma grāmatvedības kārtošanas un organizācijas pārbaude: attaisnojuma dokumentos un grāmatvedības reģistros veiktie labojumi nav veikti atbilstoši NA prasībām"/>
+  <Entry key ="Violation.AccountingChecks_CashBook" value="Uzņēmuma grāmatvedības kārtošanas un organizācijas pārbaude: kases grāmata nav aizpildīta atbilstoši NA prasībām"/>
+  <Entry key ="Violation.AccountingChecks_IncomeOrdersNumbered" value="Uzņēmuma grāmatvedības kārtošanas un organizācijas pārbaude: kases ieņēmumu un izdevumu orderi nav numurēti"/>
+  <Entry key ="Violation.AccountingChecks_OrderRequisites" value="Uzņēmuma grāmatvedības kārtošanas un organizācijas pārbaude: orderos nav norādīti obligātie rekvizīti"/>
+  <Entry key ="Violation.AccountingChecks_OrdersRegistered" value="Uzņēmuma grāmatvedības kārtošanas un organizācijas pārbaude: orderi nav reģistrēti kases ieņēmumu un izdevumu orderu reģistrācijas žurnālā"/>
+  <Entry key ="Violation.AccountingChecks_InventoryList" value="Uzņēmuma grāmatvedības kārtošanas un organizācijas pārbaude: inventarizācijas saraksti nav sastādīti atbilstoši NA prasībām"/>
+  <Entry key ="Violation.AccountingChecks_DifferentPersons" value="Uzņēmuma grāmatvedības kārtošanas un organizācijas pārbaude: kasiera un atbildīgā grāmatveža pienākumus nepilda dažādas personas"/>
+
+  <Entry key ="Violation.TimberStorageCheck_MoveReport" value="Kokmateriālu pastāvīgās uzglabāšanas pārbaude: netiek sagatavots koksnes kustības pārskats"/>
+  <Entry key ="Violation.TimberStorageCheck_TallyCargo" value="Kokmateriālu pastāvīgās uzglabāšanas pārbaude: katrā kokapstrādes ciklā netiek uzskaitīts kokmateriālu daudzums"/>
+  <Entry key ="Violation.TimberStorageCheck_HaveRegisters" value="Kokmateriālu pastāvīgās uzglabāšanas pārbaude: katrā kokapstrādes ciklā netiek iekārtoti reģistri"/>
+  <Entry key ="Violation.TimberStorageCheck_HaveWaybills" value="Kokmateriālu pastāvīgās uzglabāšanas pārbaude: esošajiem kokmateriāliem nevar uzrādīt KTPR (pavaddokumentus)"/>
+  <Entry key ="Violation.TimberStorageCheck_WaybillsRegistered" value="Kokmateriālu pastāvīgās uzglabāšanas pārbaude: esošajiem kokmateriāliem KTPR (pavaddokumenti) nav reģistrēti uzskaites reģistrā"/>
+  <Entry key ="Violation.TimberStorageCheck_WaybillsProperties" value="Kokmateriālu pastāvīgās uzglabāšanas pārbaude: esošajiem kokmateriāliem KTPR (pavaddokumentos) nav visi rekvizīti"/>
+  <Entry key ="Violation.TimberStorageCheck_SendWaybills" value="Kokmateriālu pastāvīgās uzglabāšanas pārbaude: nosūtot gatavo produkciju netiek noformēti KTPR (pavaddokumenti)"/>
+  <Entry key ="Violation.TimberStorageCheck_SendWaybillsRegistered" value="Kokmateriālu pastāvīgās uzglabāšanas pārbaude: nosūtot gatavo produkciju KTPR (pavaddokumenti) nav reģistrēti"/>
+
+  <Entry key ="Violation.SrsNumberDetail_RegistrationStorage" value="Stingrās uzskaites pavadzīmes-rēķina veidlapu un pavadzīmju ar VID piešķirtajiem numuriem uzskaites, noformēšanas, lietošanas un uzglabāšanas pārbaude: Lietotājs nav rakstiski apstiprinājis kārtību par veidlapu uzskaiti un glabāšanu"/>
+  <Entry key ="Violation.SrsNumberDetail_RegistrationStoragePerson" value="Stingrās uzskaites pavadzīmes-rēķina veidlapu un pavadzīmju ar VID piešķirtajiem numuriem uzskaites, noformēšanas, lietošanas un uzglabāšanas pārbaude: Lietotājs nav rakstiski noteicis personas, kuras ir pilnvarotas un atbildīgas par veidlapu uzskaiti un glabāšanu"/>
+  <Entry key ="Violation.SrsNumberDetail_Receipt" value="Stingrās uzskaites pavadzīmes-rēķina veidlapu un pavadzīmju ar VID piešķirtajiem numuriem uzskaites, noformēšanas, lietošanas un uzglabāšanas pārbaude: Lietotājs nav rakstiski noteicis personas, kuras ir pilnvarotas un atbildīgas par veidlapu saņemšanu VID"/>
+  <Entry key ="Violation.SrsNumberDetail_ControlPerson" value="Stingrās uzskaites pavadzīmes-rēķina veidlapu un pavadzīmju ar VID piešķirtajiem numuriem uzskaites, noformēšanas, lietošanas un uzglabāšanas pārbaude: Lietotājs nav rakstiski noteicis personas, kuras ir pilnvarotas un atbildīgas par veidlapu noformēšanu un tajās sniegtās informācijas pareizību un reģistrēšanu preču pavaddokumentu reģistros"/>
+  <Entry key ="Violation.SrsNumberDetail_NumberSrs" value="Stingrās uzskaites pavadzīmes-rēķina veidlapu un pavadzīmju ar VID piešķirtajiem numuriem uzskaites, noformēšanas, lietošanas un uzglabāšanas pārbaude: Lietotājs nav rakstiski noteicis personas, kuras ir pilnvarotas un atbildīgas par PVIDNr. numuru saņemšanu VID"/>
+  <Entry key ="Violation.SrsNumberDetail_ControlSrs" value="Stingrās uzskaites pavadzīmes-rēķina veidlapu un pavadzīmju ar VID piešķirtajiem numuriem uzskaites, noformēšanas, lietošanas un uzglabāšanas pārbaude: Lietotājs nav rakstiski noteicis personas, kuras ir pilnvarotas un atbildīgas par PVIDNr. noformēšanu un tajās sniegtās informācijas pareizību un reģistrēšanu pavadzīmju reģistros"/>
+  <Entry key ="Violation.SrsNumber_Registration" value="Stingrās uzskaites pavadzīmes-rēķina veidlapu un pavadzīmju ar VID piešķirtajiem numuriem uzskaites, noformēšanas, lietošanas un uzglabāšanas pārbaude: Lietotājs nav nodrošinājis veidlapu uzskaiti"/>
+  <Entry key ="Violation.SrsNumber_Storage" value="Stingrās uzskaites pavadzīmes-rēķina veidlapu un pavadzīmju ar VID piešķirtajiem numuriem uzskaites, noformēšanas, lietošanas un uzglabāšanas pārbaude: Lietotājs nav nodrošinājis veidlapu glabāšanu"/>
+  <Entry key ="Violation.SrsNumber_Inventory" value="Stingrās uzskaites pavadzīmes-rēķina veidlapu un pavadzīmju ar VID piešķirtajiem numuriem uzskaites, noformēšanas, lietošanas un uzglabāšanas pārbaude: Katru mēnesi (ceturksni) nav veikta izlietoto, anulēto un atlikumā esošo veidlapu inventarizācija"/>
+  <Entry key ="Violation.SrsNumber_Usage" value="Stingrās uzskaites pavadzīmes-rēķina veidlapu un pavadzīmju ar VID piešķirtajiem numuriem uzskaites, noformēšanas, lietošanas un uzglabāšanas pārbaude: Katru mēnesi (ceturksni) VID nav iesniegti pārskati par veidlapu izlietojumu"/>
+  <Entry key ="Violation.SrsNumber_UserStorage" value="Stingrās uzskaites pavadzīmes-rēķina veidlapu un pavadzīmju ar VID piešķirtajiem numuriem uzskaites, noformēšanas, lietošanas un uzglabāšanas pārbaude: Lietotājs nav nodrošinājis PVIDNr. glabāšanu"/>
+  <Entry key ="Violation.SrsNumber_UserUsage" value="Stingrās uzskaites pavadzīmes-rēķina veidlapu un pavadzīmju ar VID piešķirtajiem numuriem uzskaites, noformēšanas, lietošanas un uzglabāšanas pārbaude: Lietotājs katru mēnesi VID TI nav iesniedzis pārskatu par PVIDNr. numuru izlietojumu"/>
+  <Entry key ="Violation.SrsNumber_Together" value="Stingrās uzskaites pavadzīmes-rēķina veidlapu un pavadzīmju ar VID piešķirtajiem numuriem uzskaites, noformēšanas, lietošanas un uzglabāšanas pārbaude: Visi anulēto veidlapu/PVIDNr. komplekta eksemplāri neatrodas vienkopus"/>
+  <Entry key ="Violation.SrsNumber_HaveMarks" value="Stingrās uzskaites pavadzīmes-rēķina veidlapu un pavadzīmju ar VID piešķirtajiem numuriem uzskaites, noformēšanas, lietošanas un uzglabāšanas pārbaude: Uz visiem anulēto veidlapu/PVIDNr. eksemplāriem nav izdarītas atzīmes 'Anulēts'"/>
+  <Entry key ="Violation.SrsNumber_HaveReasons" value="Stingrās uzskaites pavadzīmes-rēķina veidlapu un pavadzīmju ar VID piešķirtajiem numuriem uzskaites, noformēšanas, lietošanas un uzglabāšanas pārbaude: Uz visiem anulēto veidlapu/PVIDNr. eksemplāriem nav norādīts anulēšanas pamatojums"/>
+  <Entry key ="Violation.SrsNumber_Signed" value="Stingrās uzskaites pavadzīmes-rēķina veidlapu un pavadzīmju ar VID piešķirtajiem numuriem uzskaites, noformēšanas, lietošanas un uzglabāšanas pārbaude: Uz visiem anulēto veidlapu/PVIDNr. eksemplāriem nav norādīts anulēšanas apliecinājums ar parakstu"/>
+  <Entry key ="Violation.SrsNumber_HaveCopies" value="Stingrās uzskaites pavadzīmes-rēķina veidlapu un pavadzīmju ar VID piešķirtajiem numuriem uzskaites, noformēšanas, lietošanas un uzglabāšanas pārbaude: Grāmatvedībā neglabājas izsniegto veidlapu/PVIDNr. otrie (ceturtie) eksemplāri"/>
+  <Entry key ="Violation.SrsNumber_Requisites" value="Stingrās uzskaites pavadzīmes-rēķina veidlapu un pavadzīmju ar VID piešķirtajiem numuriem uzskaites, noformēšanas, lietošanas un uzglabāšanas pārbaude: Veidlapās/ PVIDNr. nav uzrādīti visi saimnieciskajai darbībai atbilstošie rekvizīti"/>
+  <Entry key ="Violation.SrsNumber_CorrectionsSigned" value="Stingrās uzskaites pavadzīmes-rēķina veidlapu un pavadzīmju ar VID piešķirtajiem numuriem uzskaites, noformēšanas, lietošanas un uzglabāšanas pārbaude: labojumi veidlapās/ PVIDNr. nav apliecināti ar parakstiem"/>
+
+  <Entry key ="Violation.AccountingSimpleRecordsSoftware_Licence" value="Grāmatvedības vienkāršā ieraksta sistēmā kārtošanas un organizācijas pārbaude: nav licences grāmatvedības uzskaites datorprogrammai"/>
+  <Entry key ="Violation.AccountingSimpleRecords_Paper" value="Grāmatvedības vienkāršā ieraksta sistēmā kārtošanas un organizācijas pārbaude: nevar papīra formātā izsniegt elektroniskā dokumenta kopiju(norakstu/izrakstu)"/>
+  <Entry key ="Violation.AccountingSimpleRecords_Printout" value="Grāmatvedības vienkāršā ieraksta sistēmā kārtošanas un organizācijas pārbaude: grāmatvedības informācija netiek glabāta informācijas nesējos vai kā attaisnojuma dokumentu un grāmatvedības reģistru izdrukas"/>
+  <Entry key ="Violation.AccountingSimpleRecords_DealsRegistered" value="Grāmatvedības vienkāršā ieraksta sistēmā kārtošanas un organizācijas pārbaude: ieņēmumi un izdevumi nav reģistrēti, pamatojoties uz attaisnojuma dokumentiem"/>
+  <Entry key ="Violation.AccountingSimpleRecords_DocumentRequisites" value="Grāmatvedības vienkāršā ieraksta sistēmā kārtošanas un organizācijas pārbaude: nav norādīti visi attaisnojuma dokumenta rekvizīti"/>
+  <Entry key ="Violation.AccountingSimpleRecords_MeetRequirements" value="Grāmatvedības vienkāršā ieraksta sistēmā kārtošanas un organizācijas pārbaude: attaisnojuma dokumenti nav tehniski sagatavoti atbilstoši normatīvo aktu prasībām"/>
+  <Entry key ="Violation.AccountingSimpleRecords_EconomicDeals" value="Grāmatvedības vienkāršā ieraksta sistēmā kārtošanas un organizācijas pārbaude: saimnieciskie darījumi nav reģistrēti tā, ka no tiem var iegūt priekšstatu par jebkurā laika periodā notikušajiem darījumiem"/>
+  <Entry key ="Violation.AccountingSimpleRecords_Storage" value="Grāmatvedības vienkāršā ieraksta sistēmā kārtošanas un organizācijas pārbaude: grāmatvedības dokumenti netiek uzglabāti atbilstoši prasībām"/>
+  <Entry key ="Violation.AccountingSimpleRecords_RegisterSeparate" value="Grāmatvedības vienkāršā ieraksta sistēmā kārtošanas un organizācijas pārbaude: naudas līdzekļu uzskaite nav nodokļu maksātāja kasē ir nošķirta no personīgās kases"/>
+
+  <Entry key ="Violation.FixedAssetAccounting_Accounting" value="Ievestie pamatlīdzekļi: pamatlīdzeklis neatrodas grāmatvedības uzskaitē"/>
+  <Entry key ="Violation.FixedAssetAccounting_AnalyticalCard" value="Ievestie pamatlīdzekļi: nav aizpildīta analītiskā kartīte"/>
+  <Entry key ="Violation.FixedAssetAccounting_Rented" value="Ievestie pamatlīdzekļi: pamatlīdzeklis iznomāts vai citādi atsavināts"/>
+  <Entry key ="Violation.FixedAssetAccounting_PropertyDocuments" value="Ievestie pamatlīdzekļi: nav dokumentu, kas apliecina īpašuma tiesības uz pamatlīdzekli"/>
+  <Entry key ="Violation.FixedAssetAccounting_Registered" value="Ievestie pamatlīdzekļi: pamatlīdzeklis nav reģistrēts CSDD vai SIA 'Valsts tehniskās uzraudzības inspekcija' uz apliekamās personas, kura ievedusi pamatlīdzekli, vārda "/>
+  <Entry key ="Violation.FixedAssetAccounting_ActuallyMounted" value="Ievestie pamatlīdzekļi: ievestais pamatlīdzeklis ir iznomāts vai citādi atsavināts"/>
+  <Entry key ="Violation.FixedAssetWarehouse_PenaltySum" value="Ievestie pamatlīdzekļi: noteikta soda nauda iznomātiem vai citādi atsavinātiem pamatlīdzekļiem"/>
+
+  <Entry key ="Violation.RiskDuties_DutyCalculatedLess" value="Uzņēmējdarbības riska valsts nodeva: Uzņēmējdarbības riska valsts nodeva aprēķināta mazāk salīdzinājumā ar VID datiem"/>
+  <Entry key ="Violation.RiskDuties_DutyCalculatedMore" value="Uzņēmējdarbības riska valsts nodeva: Uzņēmējdarbības riska valsts nodeva aprēķināta vairāk salīdzinājumā ar VID datiem"/>
+
+  <Entry key ="Violation.Gambling_HasLicence" value="Azartspēļu organizēšanas pārbaude: neatrodas Finanšu ministrijas Izložu un azartspēļu uzraudzības inspekcijas izsniegtā atļauja (licence) azartspēļu organizēšanas vietas atvēršanai"/>
+  <Entry key ="Violation.Gambling_HasRules" value="Azartspēļu organizēšanas pārbaude: neatrodas inspekcijas apstiprināta attiecīgās azartspēles noteikumu kopija"/>
+  <Entry key ="Violation.Gambling_HasAct" value="Azartspēļu organizēšanas pārbaude: katrā azartspēļu organizēšanas vietā neatrodas esošā azartspēļu automāta inkasācijas akts – stingrās uzskaites dokuments, kas nav reģistrēts inspekcijā"/>
+  <Entry key ="Violation.Gambling_HasAgeCheck" value="Azartspēļu organizēšanas pārbaude: azartspēlēs piedalās personas, kuras nav sasniegušas 18 gadu vecumu"/>
+  <Entry key ="Violation.GambleEquipments_SrsNumber" value="Azartspēļu organizēšanas pārbaude: nav norādīts ID Nr. "/>
+  <Entry key ="Violation.GambleEquipments_Number" value="Azartspēļu organizēšanas pārbaude: nesakrīt ar ID Nr. pēc VID datiem"/>
+  <Entry key ="Violation.GambleEquipments_MarkNumber" value="Azartspēļu organizēšanas pārbaude: nav norādīts marķējuma zīmes Nr. "/>
+  <Entry key ="Violation.GambleEquipments_CreditAqcuiredWon" value="Azartspēļu organizēšanas pārbaude: nav norādīti iegūtie kredītpunkti pēc uzskaites"/>
+  <Entry key ="Violation.GambleEquipments_CreditLostWon" value="Azartspēļu organizēšanas pārbaude: nav norādīti zaudētie kredītpunkti pēc uzskaites"/>
+  <Entry key ="Violation.GambleEquipments_JackpotWon" value="Azartspēļu organizēšanas pārbaude: nav norādīts džekpots pēc uzskaites"/>
+  <Entry key ="Violation.GambleEquipments_FillDate" value="Azartspēļu organizēšanas pārbaude: nav norādīts ieņēmumu veidlapas datums"/>
+
+  <Entry key ="Violation.CashOperation_CheckIssued" value ="Kases operācijas: Saņemtā nauda reģistrēta kases aparātā/kases sistēmā. Nav izsniegts kases čeks" />
+  <Entry key ="Violation.CashOperation_CheckHaveRequisites" value ="Kases operācijas: Saņemtā nauda reģistrēta kases aparātā/ kases sistēmā. Kases čekā nav norādīti nepieciešamie rekvizīti" />
+  <Entry key ="Violation.CashOperation_CanIssueReceipt" value ="Kases operācijas: Saņemtā nauda reģistrēta kases aparātā/ kases sistēmā. Kases čekā nav nrādīti nepieciešamie rekvizīti un nevar izsniegt pirkuma kvīti" />
+  <Entry key ="Violation.CashOperation_ReceiptIssued" value ="Kases operācia: Saņemtā nauda reģistrēta kvīšu grāmatiņā. Nav izsniegta kvīts" />
+  <Entry key ="Violation.CashOperation_ReceiptHaveRequisites" value ="Kases operācijas: Saņemtā nauda reģistrēta kvīšu grāmatiņā. Kvītī nav norādīti nepieciešamie rekvizīti" />
+  <Entry key ="Violation.CashOperation_ReceiptBookRegistered" value ="Kases operācijas: Kvīšu grāmatiņa nav reģistrēta VID" />
+  <Entry key ="Violation.CashOperation_MoneyRegistered" value ="Kases operācijas: Par kontrolpirkumu (kontrolpasūtījumu) saņemtā naudas summa nav reģistrēta" />
+  <Entry key ="Violation.CashOperation_InventoryDeficit" value ="Kases operācijas: Naudas līdzekļu inventarizācijā konstatēts iztrūkums" />
+  <Entry key ="Violation.CashOperation_InventoryOverstock" value ="Kases operācijas: Naudas līdzekļu inventarizācijā konstatēts pārpalikums" />
+  <Entry key ="Violation.CashOperation_PassportRegistered" value ="Kases operācijas: EKA tehniskā pase nav reģistrēta VID" />
+  <Entry key ="Violation.CashOperation_ContractSpecified" value ="Kases operācijas: Nav uzrādīts līgums ar EKA apkalpojošo dienestu" />
+  <Entry key ="Violation.CashOperation_Sealed" value ="Kases operācijas: EKA nav noplombēts ar stingrās uzskaites plombu" />
+  <Entry key ="Violation.CashOperation_JournalSpecified" value ="Kases operācijas: Nav uzrādīts EKA žurnāls" />
+  <Entry key ="Violation.CashOperation_JournalCorrect" value ="Kases operācijas: EKA žurnāls nav aizpildīts pareizi" />
+  <Entry key ="Violation.CashOperation_ReportZSpecified" value ="Kases operācijas : Nav uzrādīts pēdējais dienas  finanšu pārskats ('Z' pārskats)" />
+  <Entry key ="Violation.CashOperation_ReportZRequisites" value ="Kases operācijas: 'Z' pārskatā nav uzrādīti normatīvajos aktos noteiktie rekvizīti" />
+
+  <Entry key ="Violation.StateDutyServices_TaxpayerSrsSum" value="Valsts nodeva: Valsts nodeva aprēķināta vairāk salīdzinājumā ar  VID datiem"/>
+  <Entry key ="Violation.StateDutyServices_SrsTaxpayerSum" value="Valsts nodeva: Valsts nodeva aprēķināta mazāk salīdzinājumā ar  VID datiem"/>
+
+  <Entry key ="Violation.DealCompareDocuments_Recorded" value="Savstarpējo darījumu salīdzināšana: grāmatvedības reģistros nav iegrāmatoti darījuma dokumenti"/>
+  <Entry key ="Violation.DealCompareDocuments_VatDeclaration" value="Savstarpējo darījumu salīdzināšana: darījuma vērtība nav iekļauta PVN deklarācijā"/>
+  <Entry key ="Violation.DealCompareDocuments_Approved" value="Savstarpējo darījumu salīdzināšana: darījums nav apstiprinājies"/>
+  <Entry key ="Violation.DealCompareDocuments_ApprovedPartially" value="Savstarpējo darījumu salīdzināšana: darījums apstiprinājies daļēji"/>
+  <Entry key ="Violation.DealCompareAccounts_Declared" value="Savstarpējo darījumu salīdzināšana: konts nav deklarēts VID"/>
+
+  <Entry key ="Violation.CashDealDetail_FineSum" value="Skaidrās naudas darījumi: Soda naudas summas aprēķins"/>
+
+  <Entry key ="Violation.ExciseGoods_WaybillsPlace" value="Akcīzes preču aprite: pavaddokumenti nav reģistrēti ne žurnālā, ne datorprogrammā"/>
+  <Entry key ="Violation.ExciseGoods_Printed" value="Akcīzes preču aprite: datorprogrammā reģistrētā informācija netiek izdrukāta reizi mēnesī"/>
+  <Entry key ="Violation.ExciseGoods_Printouts" value="Akcīzes preču aprite: izdrukas nav glabātas preču izsniegšanas un saņemšanas vietā"/>
+  <Entry key ="Violation.ExciseGoods_Beakers" value="Akcīzes preču aprite: objekts nav nodrošināts ar verificētām mērglāzēm"/>
+  <Entry key ="Violation.ExciseGoods_Cisterns" value="Akcīzes preču aprite: objekts nav nodrošināts ar attestētām cisternām"/>
+  <Entry key ="Violation.ExciseGoods_Dipsticks" value="Akcīzes preču aprite: objekts nav nodrošināts ar mērstieņiem"/>
+  <Entry key ="Violation.ExciseGoods_Counters" value="Akcīzes preču aprite: objekts nav nodrošināts ar skaitītājiem"/>
+  <Entry key ="Violation.ExciseGoods_Tables" value="Akcīzes preču aprite: objekts nav nodrošināts ar kalibrēšanas tabulām"/>
+  <Entry key ="Violation.ExciseGoods_Other" value="Akcīzes preču aprite: objekts nav nodrošināts ar normatīvi citiem tehniskiem dokumentiem un ierīcēm, kas nepieciešamas darbībām ar akcīzes precēm"/>
+  <Entry key ="Violation.ExciseGoods_AStorage" value="Akcīzes preču aprite: alkoholiskos dzērienus neuzglabā licencē norādītajā vietā"/>
+  <Entry key ="Violation.ExciseGoods_ASeparately" value="Akcīzes preču aprite: alkoholiskie dzērieni netiek uzskaitīti atsevišķi no citām precēm"/>
+  <Entry key ="Violation.ExciseGoods_ACertificate" value="Akcīzes preču aprite: alkoholiskie dzērieni netiek nodrošināti ar kvalitātes sertifikātiem"/>
+  <Entry key ="Violation.ExciseGoods_ABestBefore" value="Akcīzes preču aprite: alkoholisko dzērienu derīguma termiņi nav ievēroti"/>
+  <Entry key ="Violation.ExciseGoods_AMarking" value="Akcīzes preču aprite: alkoholisko dzērienu marķējums neatbilst normatīvo aktu prasībām"/>
+  <Entry key ="Violation.ExciseGoodsNumbers_Status" value="Akcīzes preču aprite: alkoholisko dzērienu nodokļa marka neatbilst attiecīgajam pavaddokumentam"/>
+  <Entry key ="Violation.ExciseGoods_TStorage" value="Akcīzes preču aprite: tabakas izstrādājumi netiek uzglabāti licencē norādītajā vietā"/>
+  <Entry key ="Violation.ExciseGoods_TSeparately" value="Akcīzes preču aprite: ja tabakas preču uzskaite nav atsevišķi no citām precēm"/>
+  <Entry key ="Violation.ExciseGoods_TCertificate" value="Akcīzes preču aprite: ja nav kvalitātes sertifikātu tabakai un tabakas izstrādājumiem"/>
+  <Entry key ="Violation.ExciseGoods_TMarking" value="Akcīzes preču aprite: tabakas preču marķējums neatbilst normatīvo aktu prasībām"/>
+  <Entry key ="Violation.ExciseGoods_FStorage" value="Akcīzes preču aprite: ja degvielas uzglabāšana nav atbilstoši licencei"/>
+  <Entry key ="Violation.ExciseGoods_FSeparately" value="Akcīzes preču aprite: ja degvielas preču uzskaite nav atsevišķi no citam precēm"/>
+  <Entry key ="Violation.ExciseGoods_FCertificate" value="Akcīzes preču aprite: degviela netiek nodrošināta ar kvalitātes sertifikātiem"/>
+
+  <Entry key ="Violation.FuelLoss_ConstatedLossesDivergenceYesNo" value="Darbs ar akcīzes precēm: Degvielas zuduma pārbaudes aprēķinā faktiskais zudums lielāks nekā pieļaujamais zudums"/>
+  <Entry key ="Violation.FuelLoss_ConstatedMeasureDivergenceYesNo" value="Darbs ar akcīzes precēm: Degvielas zuduma pārbaudes aprēķinā faktiskais pārpalikums lielāks nekā pieļaujamais pārpalikums"/>
+  <!-- Violation description end -->
+  
+  <!-- InvitationDoc -->
+  <Entry key="InvitationDoc.Employee_WorkSafety" value="Darba drošības žurnāls"/>
+  <Entry key="InvitationDoc.AccountingChecks_DocumentTurnover" value="Dokumentu apgrozības apraksts vai shēma"/>
+  <Entry key="InvitationDoc.AccountingChecks_AccountChart" value="Uzņēmuma grāmatvedības kontu plāns"/>
+  <Entry key="InvitationDoc.AccountingChecks_CodeSystem" value="Uzņēmumā ieviestās uzskaites objektu kodu sistēmas, simbolu un saīsinājumu lietošanas noteikumi"/>
+  <Entry key="InvitationDoc.AccountingChecks_RecordRules" value="Grāmatvedības ierakstu, dokumentu un reģistru glabāšanas noteikumi"/>
+  <Entry key="InvitationDoc.AccountingChecks_ReportRules" value ="Gada pārskata u.c. grāmatvedības pārskatu sagatavošanas noteikumi"/>
+  <Entry key="InvitationDoc.AccountingChecks_InventoryInstruction" value="Inventarizācijas instrukcija"/>
+  <Entry key="InvitationDoc.AccountingChecks_ClassificationCriteria" value="Ilgtermiņa ieguldījumu, apgrozāmo līdzekļu, saistību un pašu kapitāla instrumentu klasifikācijas kritēriji"/>
+  <Entry key="InvitationDoc.AccountingChecks_RecourcesRules" value="Krājumu uzskaites kārtības noteiumi"/>
+  <Entry key="InvitationDoc.AccountingChecks_GeneralLedger" value="Galvenā grāmata"/>
+  <Entry key="InvitationDoc.AccountingChecks_Journal" value="Žurnāls-virsgrāmata"/>
+  <Entry key="InvitationDoc.AccountingChecks_ChronologicalRegisters" value="Hronoloģiskie reģistri atsevišķiem saimniecisko darījumu veidiem"/>
+  <Entry key="InvitationDoc.AccountingChecks_AnalyticalRegisters" value="Analītiskās uzskaites reģistri"/>
+  <Entry key="InvitationDoc.AccountingChecks_SourceDocumentsEditable" value="Ieņēmumu un izdevumu attaisnojuma dokumenti"/>
+  <Entry key="InvitationDoc.AccountingChecks_CashBook" value="Kases grāmata"/>
+  <Entry key="InvitationDoc.AccountingChecks_IncomeOrdersNumbered" value="Kases ieņēmumu un izdevumu orderi"/>
+  <Entry key="InvitationDoc.AccountingChecks_OrdersRegistered" value="Kases ieņēmumu un izdevumu orderu reģistrācijas žurnāls"/>
+  <Entry key="InvitationDoc.AccountingChecks_InventoryList" value="Inventarizācijas saraksti"/>
+  <Entry key="InvitationDoc.AccountingChecks_Register" value="Grāmatvedības reģistri"/>
+  
+  <Entry key="InvitationDoc.AccountingSoftwares_Licence" value="Grāmatvedības programmas izmantošanas tiesības apliecinoša licence vai licences līgums"/>
+  <Entry key="InvitationDoc.AccountingOtherSoftwares_Licence" value="Citas datorprogrammas izmantošanas tiesības apliecinoša licence vai licences līgums"/>
+
+  <Entry key="InvitationDoc.AccountingSimpleRecords_DealsRegistered" value="Ieņēmumu un izdevumu attaisnojuma dokumenti"/>
+  <Entry key="InvitationDoc.AccountingSimpleRecords_EconomicDeals" value="Saimniecisko darījumu reģistrs"/>
+  <Entry key="InvitationDoc.AccountingSimpleRecords_Storage" value="Grāmatvedības dokumenti"/>
+  <Entry key="InvitationDoc.AccountingSimpleRecords_RegisterSeparate" value="Naudas līdzekļu uzskaites žurnāls"/>
+ 
+  <Entry key="InvitationDoc.Metal_JournalEntriesTimely" value="Žurnāls par iepirktajiem metālu atgriezumiem un lūžņiem"/>
+  
+  <Entry key="InvitationDoc.RealEstate_TaxpayerRegistered" value="NĪN NM uzskaites žurnāls"/>
+  
+  <Entry key="InvitationDoc.CashOperation_JournalSpecified" value="EKA žurnāls"/>
+  <Entry key="InvitationDoc.CashOperation_MoneyRegistered" value="Saņemto un izsniegto preču pavaddokumentu žurnāls"/>
+  <Entry key="InvitationDoc.CashOperation_CashMoneyRegister" value="Preču pavaddokumenti"/>
+  
+  <Entry key="InvitationDoc.SrsNumberDetail_RegistrationStorage" value="Kārtība par veidlapu uzskaiti un glabāšanu"/>
+  <Entry key="InvitationDoc.SrsNumberDetail_Receipt" value="Rīkojums par personām, kuras ir pilnvarotas un atbildīgas par veidlapu saņemšanu VID"/>
+  <Entry key="InvitationDoc.SrsNumberDetail_RegistrationStoragePerson" value="Rīkojums par personām, kuras ir pilnvarotas un atbildīgas par veidlapu uzskaiti un glabāšanu"/>
+  <Entry key="InvitationDoc.SrsNumberDetail_ControlPerson" value="Rīkojums par personām, kuras ir pilnvarotas un atbildīgas par veidlapu noformēšanu un tajās sniegtās informācijas pareizību un reģistrēšanu preču pavaddokumentu reģistros"/>
+  <Entry key="InvitationDoc.SrsNumberDetail_NumberSrs" value="Rīkojums par personām, kuras pilnvarotas un atbildīgas par pavadzīmju numuru saņemšanu VID"/>
+  <Entry key="InvitationDoc.SrsNumberDetail_ControlSrs" value="Rīkojums par personām, kuras pilnvarotas un atbildīgas par pavadzīmju noformēšanu un tajās sniegtās informācijas pareizību, un reģistrēšanu pavadzīmju reģistros"/>
+  
+  <Entry key="InvitationDoc.Construction_JournalRegistered" value="Būvdarbu žurnāls"/>
+  <Entry key="InvitationDoc.Construction_ExpensesCantDetect" value="Plānotās objekta celtniecības izmaksas"/>
+  
+  <Entry key="InvitationDoc.AccRequisites" value="Ieņēmumu un izdevumu attaisnojuma dokumenti"/>
+  <Entry key="InvitationDoc.AccountingSimpleRecordsSoftware_Licence" value="Grāmatvedības datorprogrammas licence vai licences līgums"/>
+  <Entry key="InvitationDoc.AccountingRegister" value="Saimnieciskās darbības ieņēmumu un izdevumu uzskaites žurnāls"/>
+
+  <Entry key="InvitationDoc.WholeSale_GoodsRegister" value="Preču reģistrs"/>
+  <Entry key="InvitationDoc.WholeSale_HaveWaybills" value="Preču pavaddokumenti"/>
+  
+  <Entry key="InvitationDoc.Waybills_GoodsRegister" value="Preču reģistrs"/>
+  <Entry key="InvitationDoc.Waybills_HaveWaybills" value="Preču pavaddokumenti"/>
+  
+  <!-- DevExpress strings -->  
+  <Entry key ="DevEx.OK" value = "Labi"/>
+  <Entry key ="DevEx.Cancel" value = "Atcelt"/>
+  <Entry key ="DevEx.DateEditToday" value = "Šodien"/>
+  <Entry key ="DevEx.DateEditClear" value = "Attīrīt"/>
+  <Entry key ="DevEx.TextEditMenuUndo" value = "Atsaukt"/>
+  <Entry key ="DevEx.TextEditMenuCut" value = "Izgriezt"/>
+  <Entry key ="DevEx.TextEditMenuCopy" value = "Kopēt"/>
+  <Entry key ="DevEx.TextEditMenuPaste" value = "Ielīmēt"/>
+  <Entry key ="DevEx.TextEditMenuDelete" value = "Dzēst"/>
+  <Entry key ="DevEx.TextEditMenuSelectAll" value = "Iezīmēt visu"/>
+  <Entry key ="DevEx.LookUpEditValueIsNull" value = ""/>
+  <Entry key ="DevEx.InvalidValueText" value = "Aplama vērtība."/>
+
+  <!-- DbUpdater -->
+  <Entry key ="DbUpdater.CreatingDBBackup" value = "Veidojam DB rezerves kopiju..."/>
+  <Entry key ="DbUpdater.RestoringDBFromBackup" value = "Notika kļūda. Atjaunojam Db no rezerves kopijas..."/>
+  <Entry key ="DbUpdater.DBRestoredFromBackup" value = "Notika kļūda. DB atjaunota no rezerves kopijas."/>
+  <Entry key ="DbUpdater.ExecutingFile" value = "Izpildam {0}"/>
+  <Entry key ="DbUpdater.ErrorExecuting" value = "Kļūda izpildot {0}: {1}"/>
+  <Entry key ="DbUpdater.DBSucsessfullyUpdated" value = "Datubāze veiksmīgi atjaunota no {0}. uz {1}. versiju!"/>
+
+  <!--PresentedDocument-->
+  <Entry key ="PresentedDocument.Passport" value = "Pase"/>
+  <Entry key ="PresentedDocument.DrivingLicence" value = "Vadītāja apliecība"/>
+  <Entry key ="PresentedDocument.Other" value = "Cits"/>
+  <Entry key ="PresentedDocument.PassportAccuse" value = "pasi"/>
+  <Entry key ="PresentedDocument.DrivingLicenceAccuse" value = "vadītāja apliecību"/>
+  <Entry key ="PresentedDocument.OtherAccuse" value = "citu"/>
+
+  <!--SrsGroup-->
+  <Entry key ="SrsGroup.ConfirmOrder" value = "Apstiprinājis kārtību par"/>
+  <Entry key ="SrsGroup.ConfirmPerson" value = "Noteicis personas, kuras ir pilnvarotas un atbildīgas par veidlapu"/>
+  <Entry key ="SrsGroup.Srs" value = "Pavadzīmes ar VID piešķirtiem numuriem"/>
+
+  <!--SrsType-->
+  <Entry key ="SrsType.RegistrationStorage" value = "veidlapu uzskaiti un glabāšanu"/>
+  <Entry key ="SrsType.Receipt" value = "saņemšanu VID"/>
+  <Entry key ="SrsType.RegistrationStoragePerson" value = "uzskaiti un glabāšanu"/>
+  <Entry key ="SrsType.ControlPerson" value = "noformēšanu un tajās sniegtās informācijas pareizību un reģistrēšanu preču pavaddokumentu reģistros"/>
+  <Entry key ="SrsType.NumberSrs" value = "numuru saņemšanu VID"/>
+  <Entry key ="SrsType.ControlSrs" value = "noformēšanu un tajās sniegtās informācijas pareizību un reģistrēšanu pavadzīmju reģistros"/>
+
+  <!-- CharacterApplyType -->
+  <Entry key="CharacterApplyType.Grant" value="Piešķirt raksturojumu"/>
+  <Entry key="CharacterApplyType.Reject" value="Atcelt raksturojumu"/>
+
+  <!-- MoneyRegister -->
+  <Entry key="MoneyRegister.CashRegister" value="Kases aparātā/kases sistēmā"/>
+  <Entry key="MoneyRegister.ReceiptBook" value="Kvīšu grāmatiņā"/>
+  <Entry key="MoneyRegister.NotRegistered" value="Naudas summa nav reģistrēta"/>
+  
+  <!-- CMBasicInformation -->
+  <Entry key="CMBasicInformation.BasicInformation" value="KP lietas pamatinformācija"/>
+  <Entry key="CMBasicInformation.StatusHistory" value="KP lietas statusu vēsture"/>
+  <Entry key="CMBasicInformation.Comments" value="KP lietas komentāri"/>
+  
+  <!-- Decisions -->
+  <Entry key="Decisions.Payment" value="Par maksājumiem budžetā"/>
+  <Entry key="Decisions.AdministrativePenalty" value="Par administratīvo sodu"/>
+  <Entry key="Decisions.Warning" value="Par brīdinājumu vai saimnieciskās darbības apturēšanu"/>
+  <Entry key="Decisions.Sent" value="Par NM lietas nosūtīšanu izskatīšanai citām institūcijām"/>
+  <Entry key="Decisions.DocumentationStop" value="Par lietvedības izbeigšanu, piemērojot mutvārdu aizrādījumu"/>
+  <Entry key="Decisions.PantaltyCut" value="Par soda naudas samazināšanu"/>
+
+  <!-- Universal classifier -->
+  <Entry key ="Classifier.ValuePrompt" value ="Nosaukums"/>
+  <Entry key ="Classifier.AcceptPatients" value ="Pieņem pacientus"/>
+  <Entry key ="Classifier.Acyity" value ="Akūta vizīte"/>
+  <Entry key ="Classifier.VisitTime" value ="Vizītes ilgums"/>
+  <Entry key ="Classifier.CommentPrompt" value ="Piezīmes"/>
+  <Entry key ="Classifier.CodePrompt" value ="Kods"/>
+  <Entry key ="Classifier.ParentPrompt" value ="Virsgrupa"/>
+  <Entry key ="Classifier.NumberPrompt" value ="Vērtība"/>
+  <Entry key ="Classifier.Account" value ="Konts"/>
+  <Entry key ="Classifier.Subaccount" value ="Subkonts"/>
+  <Entry key ="Classifier.NeedPeriod" value ="Jānorāda periods"/>
+  <Entry key ="Classifier.NotNeedPeriod" value ="Periods nav nepieciešams"/>
+  <Entry key ="Classifier.FineRate" value ="Naudas soda likme"/>
+  <Entry key ="Classifier.Room" value ="Resursu kabinets"/>
+
+  <!-- Date -->
+  <Entry key ="Date.Year" value ="gada"/>
+  <Entry key ="Date.1.Gen" value ="janvāra"/>
+  <Entry key ="Date.2.Gen" value ="februāra"/>
+  <Entry key ="Date.3.Gen" value ="marta"/>
+  <Entry key ="Date.4.Gen" value ="aprīļa"/>
+  <Entry key ="Date.5.Gen" value ="maija"/>
+  <Entry key ="Date.6.Gen" value ="jūnija"/>
+  <Entry key ="Date.7.Gen" value ="jūlija"/>
+  <Entry key ="Date.8.Gen" value ="augusta"/>
+  <Entry key ="Date.9.Gen" value ="septembra"/>
+  <Entry key ="Date.10.Gen" value ="oktobra"/>
+  <Entry key ="Date.11.Gen" value ="novembra"/>
+  <Entry key ="Date.12.Gen" value ="decembra"/>  
+  <Entry key ="Date.1.Dat" value ="janvārim"/>
+  <Entry key ="Date.2.Dat" value ="februārim"/>
+  <Entry key ="Date.3.Dat" value ="martam"/>
+  <Entry key ="Date.4.Dat" value ="aprīlim"/>
+  <Entry key ="Date.5.Dat" value ="maijam"/>
+  <Entry key ="Date.6.Dat" value ="jūnijam"/>
+  <Entry key ="Date.7.Dat" value ="jūlijam"/>
+  <Entry key ="Date.8.Dat" value ="augustam"/>
+  <Entry key ="Date.9.Dat" value ="septembrim"/>
+  <Entry key ="Date.10.Dat" value ="oktobrim"/>
+  <Entry key ="Date.11.Dat" value ="novembrim"/>
+  <Entry key ="Date.12.Dat" value ="decembrim"/>
+  <Entry key ="Date.1.Aku" value ="janvāri"/>
+  <Entry key ="Date.2.Aku" value ="februāri"/>
+  <Entry key ="Date.3.Aku" value ="martu"/>
+  <Entry key ="Date.4.Aku" value ="aprīli"/>
+  <Entry key ="Date.5.Aku" value ="maiju"/>
+  <Entry key ="Date.6.Aku" value ="jūniju"/>
+  <Entry key ="Date.7.Aku" value ="jūliju"/>
+  <Entry key ="Date.8.Aku" value ="augustu"/>
+  <Entry key ="Date.9.Aku" value ="septembri"/>
+  <Entry key ="Date.10.Aku" value ="oktobri"/>
+  <Entry key ="Date.11.Aku" value ="novembri"/>
+  <Entry key ="Date.12.Aku" value ="decembri"/>
+  <Entry key ="Date.1.Lok" value ="janvārī"/>
+  <Entry key ="Date.2.Lok" value ="februārī"/>
+  <Entry key ="Date.3.Lok" value ="martā"/>
+  <Entry key ="Date.4.Lok" value ="aprīlī"/>
+  <Entry key ="Date.5.Lok" value ="maijā"/>
+  <Entry key ="Date.6.Lok" value ="jūnijā"/>
+  <Entry key ="Date.7.Lok" value ="jūlijā"/>
+  <Entry key ="Date.8.Lok" value ="augustā"/>
+  <Entry key ="Date.9.Lok" value ="septembrī"/>
+  <Entry key ="Date.10.Lok" value ="oktobrī"/>
+  <Entry key ="Date.11.Lok" value ="novembrī"/>
+  <Entry key ="Date.12.Lok" value ="decembrī"/>
+
+  
+</dictionary>

@@ -1,0 +1,12 @@
+public class $className<$baseClassType>
+{
+	 $baseClassType item;
+	 
+	 
+	 #foreach ( $property in $CheckedNodes )
+	 public $property.TypeName $property.PropertyName
+	 {
+		get { return item.$property.Node.FullPath;}
+	 }      
+	 #end
+}

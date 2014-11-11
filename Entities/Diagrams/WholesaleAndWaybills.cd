@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Entities.WholeSale">
+    <Position X="1.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>WholeSale.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.Document" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Document.vb</FileName>
+      <HashCode>AAAgAACEAAAAAgAAABAAAAQAAAAEAAQAAQACAABAAAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.WWNotRegistered">
+    <Position X="4.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>WWNotRegistered.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAgAAAAAAAAAACAAACAAAAAAQ=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Document" />
+    </ShowAsAssociation>
+    <AssociationLine Name="Document" Type="Entities.WWBase" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.281" Y="6.75" />
+        <Point X="5.281" Y="3.607" />
+        <Point X="3.75" Y="3.607" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.256" Y="0.143" />
+      </MemberNameLabel>
+    </AssociationLine>
+  </Class>
+  <Class Name="Entities.WholesaleGoodsNotRegistered">
+    <Position X="1.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>WholesaleGoodsNotRegistered.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAgAAAAAAACAAAAAACAAAACAQ=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="WholeSale" />
+    </ShowAsAssociation>
+    <AssociationLine Name="WholeSale" Type="Entities.WholeSale" FixedFromPoint="true">
+      <Path>
+        <Point X="1.938" Y="6.75" />
+        <Point X="1.938" Y="6.101" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.994" Y="0.237" />
+      </MemberNameLabel>
+    </AssociationLine>
+  </Class>
+  <Class Name="Entities.WWExtraCharge">
+    <Position X="6.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>WWExtraCharge.vb</FileName>
+      <HashCode>AAAAAAAACAAAAgAAIABAgAAABAAACAACAIACAAAAAEA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Document" />
+    </ShowAsAssociation>
+    <AssociationLine Name="Document" Type="Entities.WWBase" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="6" />
+        <Point X="7" Y="3.009" />
+        <Point X="3.75" Y="3.009" />
+      </Path>
+    </AssociationLine>
+  </Class>
+  <Class Name="Entities.Violation" Collapsed="true">
+    <Position X="8.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Violation.vb</FileName>
+      <HashCode>AACAAAAAAAAAAAAAAIAAAAAAAAAAAAACAQAAAAEAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Document" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Entities.WWBase">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>WWBase.vb</FileName>
+      <HashCode>AKAQAAAAAAAIAAgGAAAEAQAAAAAQACBAAAgSAAAAAAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.Waybill">
+    <Position X="3.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Waybill.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

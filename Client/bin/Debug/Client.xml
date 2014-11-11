@@ -1,0 +1,239 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Client
+</name>
+</assembly>
+<members>
+<member name="T:Client.ctlFind">
+	<summary>
+ Bāzes kontrole visādiem tur searchiem
+ </summary>
+	<remarks>
+ Novietojiet uz tās savu TableLayout ar atlases kritērijiem (Dock: Fill).
+ Šo layoutu izvēlieties kontroles propertijā CriteriaTable
+ </remarks>
+</member><member name="P:Client.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Client.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Client.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:Client.ClassifierFind.UseInClassifier">
+	<summary>
+ vai iekļaut atlasē: tēmas 
+ </summary>
+</member><member name="P:Client.ClassifierFind.UseInList">
+	<summary>
+ vai iekļaut atlasē: tēmas 
+ </summary>
+</member><member name="P:Client.ClassifierFind.UseIsParent">
+	<summary>
+ vai iekļaut atlasē: tēmas 
+ </summary>
+</member><member name="P:Client.ClassifierFind.UseNotInClassifier">
+	<summary>
+ vai neiekļaut lietotājus atlasē
+ </summary>
+</member><member name="P:Client.ClassifierFind.Classifier">
+	<summary>
+ Atlasē neiekļautie lietotāji; ieļautās tēmas
+ </summary>
+</member><member name="P:Client.ClassifierFind.ClassifiersId">
+	<summary>
+ Atlasē neiekļautie lietotāji; ieļautās tēmas
+ </summary>
+</member><member name="P:Client.ClassifierFind.ExcludeComputersInUse">
+	<summary>
+ Special property for computer lists
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Client.FindUsers.UseNotInUser">
+	<summary>
+ vai neiekļaut lietotājus atlasē
+ </summary>
+</member><member name="P:Client.FindUsers.UseInUser">
+	<summary>
+ vai iekļaut lietotājus atlasē
+ </summary>
+</member><member name="P:Client.FindUsers.User">
+	<summary>
+ Atlasē neiekļautie lietotāji
+ </summary>
+</member><member name="P:Client.FindUsers.UserIn">
+	<summary>
+ Atlasē iekļautie lietotāji
+ </summary>
+</member><member name="P:Client.FindUsers.UseSpeciality">
+	<summary>
+ Atlasē neiekļautie lietotāji
+ </summary>
+</member><member name="P:Client.FindUsers.UseSpecialities">
+	<summary>
+ iekļaut atlases kritērijos specialitāti
+ </summary>
+</member><member name="P:Client.FindUsers.UseServices">
+	<summary>
+ Atlasē neiekļautie lietotāji ar norādīto pakalpojumu
+ </summary>
+</member><member name="P:Client.FindUsers.Speciality">
+	<summary>
+ Atlasē iekļautie lietotāji
+ </summary>
+</member><member name="P:Client.FindUsers.Specialities">
+	<summary>
+ Atlasē iekļautās specialitātes
+ </summary>
+</member><member name="P:Client.FindUsers.Services">
+	<summary>
+ Atlasē iekļautie lietotāji
+ </summary>
+</member><member name="P:Client.FindUsers.UseActualUsers">
+	<summary>
+ vai neiekļaut lietotājus atlasē
+ </summary>
+</member><member name="P:Client.FindUsers.UseDoctor">
+	<summary>
+ iekļaut atlasē tikai ārstus
+ </summary>
+</member><member name="P:Client.FindUsers.UsePosition">
+	<summary>
+ Amats
+ </summary>
+</member><member name="P:Client.FindUsers.Position">
+	<summary>
+ Amats
+ </summary>
+</member><member name="P:Client.FindUsers.UseName">
+	<summary>
+ Vārds
+ </summary>
+</member><member name="P:Client.FindUsers.Name">
+	<summary>
+ Vārds
+ </summary>
+</member><member name="P:Client.FindUsers.UseLastName">
+	<summary>
+ Uzvārds
+ </summary>
+</member><member name="P:Client.FindUsers.LastName">
+	<summary>
+ Uzvārds
+ </summary>
+</member><member name="P:Client.FindUsers.UseIsUser">
+	<summary>
+ Ir sistēmas lietotājs
+ </summary>
+</member><member name="P:Client.FindUsers.IsUser">
+	<summary>
+ Ir sistēmas lietotājs
+ </summary>
+</member><member name="P:Client.FindUsers.UseLogon">
+	<summary>
+ Lietotāja konts
+ </summary>
+</member><member name="P:Client.FindUsers.Logon">
+	<summary>
+ Lietotāja konts
+ </summary>
+</member><member name="P:Client.FindUsers.UseActive">
+	<summary>
+ Tikai aktuālie
+ </summary>
+</member><member name="P:Client.FindPatients.UseName">
+	<summary>
+ Vārds
+ </summary>
+</member><member name="P:Client.FindPatients.Name">
+	<summary>
+ Vārds
+ </summary>
+</member><member name="P:Client.FindPatients.UseSurname">
+	<summary>
+ Uzvārds
+ </summary>
+</member><member name="P:Client.FindPatients.Surname">
+	<summary>
+ Uzvārds
+ </summary>
+</member><member name="P:Client.FindPatients.UseCode">
+	<summary>
+ personas kods
+ </summary>
+</member><member name="P:Client.FindPatients.Code">
+	<summary>
+ personas kods
+ </summary>
+</member><member name="P:Client.FindPatients.UseNumber">
+	<summary>
+ klienta numurs
+ </summary>
+</member><member name="P:Client.FindPatients.Number">
+	<summary>
+ klienta numurs
+ </summary>
+</member><member name="T:Client.TwinDataDataSet.Patients_1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Client.TwinDataDataSet.Patients_2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Client.TwinDataDataSet.Patients_3DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Client.TwinDataDataSet.Patients_1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Client.TwinDataDataSet.Patients_2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Client.TwinDataDataSet.Patients_3Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Client.TwinDataDataSet.Patients_1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Client.TwinDataDataSet.Patients_2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Client.TwinDataDataSet.Patients_3RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Client.TwinDataDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Client.TwinDataDataSetTableAdapters.Patients_1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Client.TwinDataDataSetTableAdapters.Patients_2TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Client.TwinDataDataSetTableAdapters.Patients_3TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+</members>
+</doc>

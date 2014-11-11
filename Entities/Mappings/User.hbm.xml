@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.User, Entities" table="[Users]" dynamic-update="true">
+    
+    <id name="Id" column="USR_ID"><generator class="guid.comb" /></id>
+	 <property name="DeleteTime" column="USR__DELETE_TIME" />
+    <property name="FirstName" column="USR_FIRST_NAME" not-null="true" />
+    <property name="LastName" column="USR_LAST_NAME" not-null="true" />
+    <property name="OtherNames" column="USR_OTHER_NAMES"/>
+    <property name="Signature" column="USR_SIGNATURE"/>
+    <property name="Email" column="USR_EMAIL"/>
+    <property name="Phone" column="USR_PHONE"/>
+    <property name="CellPhone" column="USR_CELL_PHONE"/>
+	  <property name="Specialities" formula="dbo.GetSpecialityValues(USR_ID)"/>
+	  <property name="Languages" formula="dbo.GetLanguage(USR_ID)"/>
+
+
+	  <property name="Logon" column="USR_LOGON" />
+	  <property name="Password" column="USR_PASWORD" />
+	  <property name="Code" column="USR_CODE" />
+	  <property name="PK" column="USR_PK" />
+    <property name="SalaryNote" column="USR_SALARY_NOTE"/>
+
+	  <many-to-one name="Role" column="USR_ROLE_ID" fetch="select" />
+	  <many-to-one name="Position" column="USR_POSITION_ID" fetch ="join"/>
+	  <many-to-one name="UserGrouping" column="USR_USER_GROUPING_ID"/>
+    <property name="WorksFrom" column="USR_WORKS_FROM" not-null="true" />
+    <property name="WorkedUntil" column="USR_WORKED_UNTIL" />
+    <property name="Salary" column="USR_SALARY" />
+
+	  <bag name="UserSpecialities" table="[UsersSpecialities]"
+		access="property" generic="true" inverse="true"
+		  cascade="all-delete-orphan" lazy="true"
+		  collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.UsersSpecialities, Entities]], Core">
+		  <key column="USS_USER_ID" />
+		  <one-to-many class="Entities.UsersSpecialities, Entities" />
+	  </bag>
+	  <bag name="UserLanguage" table="[UsersLanguages]"
+		access="property" generic="true" inverse="true"
+		  cascade="all-delete-orphan" lazy="true"
+		  collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.UserLanguage, Entities]], Core">
+		  <key column="USL_USER_ID" />
+		  <one-to-many class="Entities.UserLanguage, Entities" />
+	  </bag>
+	  <bag name="UserServices" table="[UserServices]"
+		access="property" generic="true" inverse="true"
+		  cascade="all-delete-orphan" lazy="true"
+		  collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.UserService, Entities]], Core">
+		  <key column="USE_USER_ID" />
+		  <one-to-many class="Entities.UserService, Entities" />
+	  </bag>
+	  <bag name="UsersWorkTime" table="[UsersWorkTime]"
+		access="property" generic="true" inverse="true"
+		  cascade="all-delete-orphan" lazy="true"
+		  collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.UsersWorkTime, Entities]], Core">
+		  <key column="UWT_USER_ID" />
+		  <one-to-many class="Entities.UsersWorkTime, Entities" />
+	  </bag>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.Template, Entities" table="[Templates]" dynamic-update="true">
+    
+    <id name="Id" column="TPL_ID"><generator class="guid.comb"/></id>
+    
+    <property name="DeleteTime" column="TPL__DELETE_TIME" />
+
+    <property name="Code" column="TPL_CODE" not-null="true" />
+    <property name="Name" column="TPL_NAME" not-null="true" />
+    <property name="Description" column="TPL_DESCRIPTION" />
+    <property name="ValidFrom" column="TPL_VALID_FROM" not-null="true" />
+    <property name="ValidUntil" column="TPL_VALID_UNTIL" />
+
+    <many-to-one name="Type" column="TPL_TYPE_ID"/>
+
+    <bag name="Files" table="[TemplateFileVersions]"
+         access="property" generic="true" inverse="true" cascade="all-delete-orphan" lazy="true"
+         collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.TemplateFileVersion, Entities]], Core">
+      <key column="TFV_TEMPLATE_ID" />
+      <one-to-many class="Entities.TemplateFileVersion, Entities" />
+    </bag>
+
+  </class>
+</hibernate-mapping>
+

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Entities.DecisionThematicInspection">
+    <Position X="2" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>DecisionThematicInspection.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.DecisionThematicInspectionDealCompare">
+    <Position X="3.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>DecisionThematicInspectionDealCompare.vb</FileName>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Partners" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Entities.DecisionInspection">
+    <Position X="5.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>DecisionInspection.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.DecisionObservation">
+    <Position X="7.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>DecisionObservation.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.Partner">
+    <Position X="3.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Partner.vb</FileName>
+      <HashCode>IABAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAABAABAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.DutyInspection">
+    <Position X="9" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>DutyInspection.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAABAABAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.DecisionDutyInspection">
+    <Position X="9" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>DecisionDutyInspection.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="DutiesToInspect" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Entities.Document" Collapsed="true">
+    <Position X="5.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Document.vb</FileName>
+      <HashCode>QAAgAQCEBFAAAgAABBAAAAQACAAEAAAAEAECAABAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.ExecutionDecision">
+    <Position X="5.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ExecutionDecision.vb</FileName>
+      <HashCode>AACAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

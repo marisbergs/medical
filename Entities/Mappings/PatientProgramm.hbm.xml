@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.PatientProgramm, Entities" table="[PatientProgramms]" dynamic-update="true">
+    
+    <id name="Id" column="PRG_ID"><generator class="guid.comb" /></id>	  
+	  <property name="DeleteTime" column="PRG__DELETE_TIME" />
+    <property name="Price" column="PRG_PRICE" />
+    <many-to-one name="Patient" column="PRG_PATIENT_ID" fetch="join"  />
+    <many-to-one name="ProgrammTemplate" column="PRG_PROGRAMM_TEMPLATE_ID" fetch="join" />
+    <component name="UsageStatus">
+      <property name="Value" column="PRG_STATE" access="property"/>
+    </component>
+    <component name="PaymentStatus">
+      <property name="Value" column="PRG_PAYMENT_STATE" access="property"/>
+    </component>
+    <property name="ProgrammIsLock" column="PRG_PROGRAMM_IS_LOCK" />
+    <property name ="NeedBillPrint" column ="PRG_NEED_BILL_PRINT"/>
+
+    <bag name="Payments" table="[PatientProgrammPayments]"
+			  access="property" generic="true" inverse="true"
+				cascade="all-delete-orphan" lazy="true"
+				collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.PatientProgrammPayment, Entities]], Core">
+      <key column="PPP_PATIENT_PROGRAMM_ID" />
+      <one-to-many class="Entities.PatientProgrammPayment, Entities" />
+    </bag>
+    <bag name="Services" table="[PatientProgrammsServices]"
+			  access="property" generic="true" inverse="true"
+				cascade="all-delete-orphan" lazy="true" 
+				collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.PatientProgrammService, Entities]], Core">
+      <key column="PPS_PATIENT_PROGRAMM_ID" />
+      <one-to-many class="Entities.PatientProgrammService, Entities" />
+    </bag>
+  </class>
+</hibernate-mapping>

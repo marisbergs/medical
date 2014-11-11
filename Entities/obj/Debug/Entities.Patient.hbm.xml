@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.Patient, Entities" table="[Patients]" dynamic-update="true">
+    
+    <id name="Id" column="PAT_ID"><generator class="guid.comb" /></id>
+	  
+	  <property name="DeleteTime" column="PAT__DELETE_TIME" />
+	  <property name="Name" column="PAT_NAME" not-null="true" />
+	  <property name="SecondName" column="PAT_SECOND_NAME"/>
+	  <property name="Surname" column="PAT_SURNAME" not-null="true" />
+	  <property name="Code" column="PAT_CODE"/>
+	  <property name="BirthDate" column="PAT_BIRTH_DATE"/>
+	  <property name="Address" column="PAT_ADDRESS"/>
+	  <property name="DeclaredAddress" column="PAT_DECLARED_ADDRESS"/>
+	  <property name="PostIndex" column="PAT_POST_INDEX"/>
+	  <property name="Phone" column="PAT_PHONE"/>
+	  <property name="WorkPhone" column="PAT_WORK_PHONE"/>
+	  <property name ="MobilePhone" column="PAT_MOBIE_PHONE"/>
+	  <property name ="FamilyStatus" column="PAT_FAMILY_STATUS"/>
+	  <property name ="Position" column="PAT_POSITION"/>
+	  <many-to-one name ="Language" column="PAT_LANGUAGE" fetch="select"/>
+	  <property name="Fax" column="PAT_FAX"/>
+	  <property name="Mail" column="PAT_MAIL"/>
+	  <property name="PasportSeries" column="PAT_PASPORT_SERIES"/>
+	  <property name="PasportIsueDate" column="PAT_PASPORT_ISUE_DATE"/>
+	  <property name="PasportIsuer" column="PAT_PASPORT_ISUER"/>
+	  <property name="PasportNumber" column="PAT_PASPORT_NUMBER"/>
+	  <property name="WorkPlace" column="PAT_WORK_PLACE"/>
+	  <property name="FamilyDoctorName" column="PAT_FAMILY_DOCTOR_NAME"/>
+	  <property name="FamilyDoctorSurname" column="PAT_FAMILY_DOCTOR_SURNAME"/>
+	  <property name="FamilyDoctorPhone" column="PAT_FAMILY_DOCTOR_PHONE"/>
+	  <component name="Work">
+		  <property name="Value" column="PAT_WORK" access="property"/>
+	  </component>
+	  <component name="Sex">
+		  <property name="Value" column="PAT_SEX" access="property"/>
+	  </component>
+	  <property name="Username" column="PAT_USERNAME"/>
+	  <property name="Password" column="PAT_PASSWORD"/>
+	  <property name="ConfirmationCode" column="PAT_CONFIRMATION_CODE"/>
+	  <property name="Confirmed" column="PAT_CONFIRMATION_ACCEPTED"/>
+	  <property name="Number" column="PAT_NUMBER"/>
+	  <property name="Notes" column="PAT_NOTES"/>
+	  <property name ="HasCard" column ="PAT_HAS_CARD"/>
+	  <property name ="CreateDate" column ="PAT_CREATE_DATE" insert="false"  update ="false"/>
+	  <property name ="CreatePlace" column ="PAT_CREATE_PLACE"/>
+	  <property name ="Vip" column ="PAT_VIP"/>
+	  <property name ="Biz" column ="PAT_BIZ"/>
+	  <property name ="EmployeId" column ="PAT_EMPLOYE_ID"/>
+	  <property name ="BlackList" column ="PAT_BLACK_LIST"/>
+	  <property name ="Relation" column ="PAT_RELATION"/>
+	  <property name ="RelationUser" column ="PAT_RELATION_EMPLOYE_ID"/>
+	  <property name ="RelationType" column ="PAT_RELATION_EMPLOYE_KINDRED_ID"/>
+	  <property name ="Recomend" column ="PAT_RECOMEND"/>
+	  <property name ="RecomendComment" column ="PAT_RECOMEND_COMMENT"/>
+	  <property name ="Media" column ="PAT_MEDIA"/>
+	  <property name ="MediaComment" column ="PAT_MEDIA_COMMENT"/>
+	  <property name ="Other" column ="PAT_OTHER"/>
+	  <property name ="OtherComment" column ="PAT_OTHER_COMMENT"/>
+	  <property name ="Discount" column ="PAT_DISCOUNT"/>
+    <property name ="PatientStatus" column ="PAT_PATIENT_STATUS" />
+
+    <bag name="Guardian" table="[Guardians]"
+			  access="property" generic="true" inverse="true"
+				cascade="all-delete-orphan" lazy="true"
+				collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.Guardian, Entities]], Core">
+      <key column="GUA_PATIENT_ID" />
+      <one-to-many class="Entities.Guardian, Entities" />
+    </bag>
+    <bag name="Sms" table="[SMSSendingList]"
+			  access="property" generic="true" inverse="true"
+				cascade="all-delete-orphan" lazy="true"
+				collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.SMSSendingList, Entities]], Core">
+      <key column="SMG_PATIENT_ID" />
+      <one-to-many class="Entities.SMSSendingList, Entities" />
+    </bag>
+	  <bag name="PatientFamily" table="[PatientCommercInformation]"
+			  access="property" generic="true" inverse="true"
+				cascade="all-delete-orphan" lazy="true"
+				collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.PatientFamily, Entities]], Core">
+		  <key column="PAP_PATIENT_ID" />
+		  <one-to-many class="Entities.PatientFamily, Entities" />
+	  </bag>
+	  <bag name="PatientCommercInformation" table="[PatientsFamily]"
+			  access="property" generic="true" inverse="true"
+				cascade="all-delete-orphan" lazy="true"
+				collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.PatientCommercInformation, Entities]], Core">
+		  <key column="PCI_PATIENT_ID" />
+		  <one-to-many class="Entities.PatientCommercInformation, Entities" />
+	  </bag>
+	  <bag name="PatientDocuments" table="[PatientDocuments]"
+			  access="property" generic="true" inverse="true"
+				cascade="all-delete-orphan" lazy="true"
+				collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.PatientDocument, Entities]], Core">
+		  <key column="PDO_PATIENT_ID" />
+		  <one-to-many class="Entities.PatientDocument, Entities" />
+	  </bag>
+	  <bag name="BonusPointsRecive" table="[BonusPoints]" where="BPO_EVENT_TYPE = 1"
+			  access="property" generic="true" inverse="true"
+				cascade="all-delete-orphan" lazy="true"
+				collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.BonusPoints, Entities]], Core">
+		  <key column="BPO_PATIENT_ID" />
+		  <one-to-many class="Entities.BonusPoints, Entities" />
+	  </bag>
+	  <bag name="BonusPointsUse" table="[BonusPoints]" where="BPO_EVENT_TYPE = 2"
+			  access="property" generic="true" inverse="true"
+				cascade="all-delete-orphan" lazy="true"
+				collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.BonusPoints, Entities]], Core">
+		  <key column="BPO_PATIENT_ID" />
+		  <one-to-many class="Entities.BonusPoints, Entities" />
+	  </bag>
+	  <bag name="Insurance" table="[PatientsInsurances]" order-by="INS_VALID_FROM DESC"
+			  access="property" generic="true" inverse="true"
+				cascade="all-delete-orphan" lazy="true"
+				collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.PatientInsurance, Entities]], Core">
+		  <key column="INS_PATIENT_ID" />
+		  <one-to-many class="Entities.PatientInsurance, Entities" />
+	  </bag>
+  </class>
+</hibernate-mapping>

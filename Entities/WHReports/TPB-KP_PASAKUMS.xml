@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kp_pasakums_list xmlns="http://tempuri.org/TPB-KP_PASAKUMS.xsd">
+  <kp_pasakums>
+    <guid>$this.S('CMCase.Id')</guid>
+    <id_viddarbin>$this.S('Owner.ExternalId')</id_viddarbin>
+    <id_kpveids>$this.S('CaseType.ExternalID')</id_kpveids>
+    <datums>$this.D('ActDate')</datums>
+    <nmr_kods>$this.S('CMCase.TaxpayerCode')</nmr_kods>
+    <id_vidkp>$this.S('CMCase.SrsDepartment.Department.ExternalId')</id_vidkp>
+    <!--#if($this.NeedReason)-->
+    <id_kpiemesls>$this.S('CMCase.Reason.ExternalID')</id_kpiemesls>
+    <!--#end-->
+  </kp_pasakums>
+</kp_pasakums_list>

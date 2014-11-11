@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.SaleProduct, Entities" table="[SaleProducts]" dynamic-update="true">
+    
+    <id name="Id" column="SAP_ID"><generator class="guid.comb" /></id>
+    <property name="DeleteTime" column="SAP__DELETE_TIME" />
+    
+	  <property name="Sale" column="SAP_SALE_ID"/>
+    <many-to-one name="Service" column="SAP_SERVICE_ID" fetch="join"/>
+    <property name="Price" column="SAP_PRICE" />
+    <property name="Count" column="SAP_COUNT" />
+
+  </class>
+</hibernate-mapping>

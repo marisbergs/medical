@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.RtgSummaryRecord, Entities" table="[RtgSummaryRecords]" dynamic-update="true">
+
+    <id name="Id" column="RTG_ID">
+      <generator class="guid.comb"/>
+    </id>
+
+    <!-- Common fields for optimistic locking and data synchronization -->
+    <property name="DeleteTime" column="RTG__DELETE_TIME" />
+    <!-- . -->
+
+    <property name="RtgSummary" column="RTG_SUMMARY_ID" />
+    <property name="RtgType" column="RTG_RTG_TYPE_ID" />
+    <property name="RtgCreateDate" column="RTG_PICTURE_CREATE_DATE" />
+    <property name="RtgDescription" column="RTG_DESCRIPTION" />
+    <property name="RtgSummaryText" column="RTG_SUMMARY" />
+  </class>
+</hibernate-mapping>

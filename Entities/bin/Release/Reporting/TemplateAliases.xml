@@ -1,0 +1,143 @@
+﻿<!DOCTYPE aliases [
+  <!ELEMENT aliases (Entry*)>
+  <!ELEMENT Entry EMPTY>
+  <!ATTLIST Entry key CDATA #REQUIRED>
+  <!ATTLIST Entry value CDATA #REQUIRED>
+]>
+
+<aliases>
+	<Entry key="_" value="#end" />
+
+	<Entry key ="P1_VARDS" value ="$P1.RI('Name')"/>
+	<Entry key ="P1_UZVARDS" value ="$P1.RI('Surname')"/>
+	<Entry key ="P1_PERSONAS_KODS" value ="$P1.RI('Code')"/>
+	<Entry key ="P1_PERS_KODS" value ="$P1.RI('Code')"/>
+	<Entry key ="P1_KLIENTA_NR" value ="$P1.RI('Number')"/>
+	<Entry key ="P1_DZIMSANAS_DATUMS" value ="$P1.FI('BirthDate','d')"/>
+	<Entry key ="P1_ADRESE" value ="$P1.RI('Address')"/>
+	<Entry key ="P1_DZIMUMS" value ="$P1.RI('Sex')"/>
+	<Entry key ="P1_OTRS_VARDS" value ="$P1.RI('SecondName')"/>
+	<Entry key ="P1_DEKLARETA_ADRESE" value ="$P1.RI('DeclaredAddress')"/>
+	<Entry key ="P1_PASTA_INDEKSS" value ="$P1.RI('PostIndex')"/>
+	<Entry key ="P1_PASES_SERIJA" value ="$P1.RI('PasportSeries')"/>
+	<Entry key ="P1_PASES_NR" value ="$P1.RI('PasportNumber')"/>
+	<Entry key ="P1_PASES_DATUMS" value ="$P1.FI('PasportIsueDate', 'd')"/>
+	<Entry key ="P1_PASES_IZDEVEJS" value ="$P1.RI('PasportIsuer')"/>
+	<Entry key ="P1_NODARBOSANAS" value ="$P1.RI('WorkPlace')"/>
+	<Entry key ="P1_AMATS" value ="$P1.RI('Position')"/>
+	<Entry key ="P1_EPASTS" value ="$P1.RI('Mail')"/>
+	<Entry key ="P1_MOBILAIS" value ="$P1.RI('MobilePhone')"/>
+	<Entry key ="P1_TALRUNIS" value ="$P1.RI('Phone')"/>
+	<Entry key ="P1_DARBA_TALRUNIS" value ="$P1.RI('WorkPhone')"/>
+	<Entry key ="P1_FAKS" value ="$P1.RI('Fax')"/>
+	<Entry key ="P1_APRDOSINATAJS" value ="$P1.RI('CurrentInsurance.Value')"/>
+	<Entry key ="P1_DERIGUMA_TERMINS" value =""/>
+	<Entry key ="P1_KARTES_NR" value ="$P1.RI('CurrentInsuranceNumber')"/>
+	<Entry key ="P1_KARTE_NUMURS" value ="$P1.RI('CurrentInsuranceProgrammAndNumber')"/>
+	<Entry key ="P1_PROGRAMMA" value ="$P1.RI('CurrentInsuranceProgramm.Value')"/>
+	<Entry key ="P1_SUMMA" value ="$P1.FI('TotalInsuranceSumm', 'f')"/>
+	
+	<Entry key ="P2_ARSTS" value ="$P2.RI('FullName')"/>
+	
+	<Entry key ="D03_KODS" value ="$D03.RI('DiagnosisCode')"/>
+	<Entry key ="D03_ZALES" value ="$D03.RI('Notes')"/>
+	<Entry key ="D03_DIENA" value ="$D03.RI('IsueDay')"/>
+	<Entry key ="D03_MENESIS" value ="$D03.RI('IsueMonth')"/>
+	<Entry key ="D03_GADS" value ="$D03.RI('IsueYear')"/>
+	<Entry key ="D03_LIDZ_DIENA" value ="$D03.RI('ValidToDay')"/>
+	<Entry key ="D03_LIDZ_MENESIS" value ="$D03.RI('ValidToMonth')"/>
+	<Entry key ="D03_LIDZ_GADS" value ="$D03.RI('ValidToYear')"/>
+
+	<Entry key ="D04A" value="#foreach($D04A in $D04.FirstCollection)" />
+	<Entry key ="D04A_ARSTS" value ="$D04A.RI('Doctor.FullName')" />
+	<Entry key ="D04A_KLIENTS" value ="$D04A.RI('Patient.FullName')"/>
+	<Entry key ="D04A_KLIENTA_PERS_KODS" value ="$D04A.RI('Patient.Code')"/>
+	<Entry key ="D04A_KLIENTA_NR" value ="$D04A.RI('Patient.Number')"/>
+	<Entry key ="D04A_DAT" value ="$D04A.FI('StartTime', 'd')"/>
+	<Entry key ="D04A_SADALIT" value ="#if($D04A.S('SplitServicesByType')==true)"/>
+	<Entry key ="D04B" value="#foreach($D04B in $D04A.OI('DoctorVisit.ActiveItems'))" />
+	<Entry key ="D04B_PAKALPOJUMS" value ="$D04B.RI('Service.Value')" />
+	<Entry key ="D04B_KODS" value ="$D04B.RI('Service.Code')" />
+	<Entry key ="D04B_CENA" value ="$D04B.FI('PriceNullable', 'f')" />
+	<Entry key ="D04C" value="#foreach($D04C in $D04A.OI('Diagnostic.ActiveItems'))" />
+	<Entry key ="D04C_PAKALPOJUMS" value ="$D04C.RI('Service.Value')" />
+	<Entry key ="D04C_KODS" value ="$D04C.RI('Service.Code')" />
+	<Entry key ="D04C_CENA" value ="$D04C.FI('PriceNullable', 'f')" />
+	<Entry key ="D04D" value="#foreach($D04D in $D04A.OI('Laboratory.ActiveItems'))" />
+	<Entry key ="D04D_PAKALPOJUMS" value ="$D04D.RI('Service.Value')" />
+	<Entry key ="D04D_KODS" value ="$D04D.RI('Service.Code')" />
+	<Entry key ="D04D_CENA" value ="$D04D.FI('PriceNullable', 'f')" />
+	<Entry key ="D04E" value="#foreach($D04E in $D04A.OI('Manipulations.ActiveItems'))" />
+	<Entry key ="D04E_PAKALPOJUMS" value ="$D04E.RI('Service.Value')" />
+	<Entry key ="D04E_KODS" value ="$D04E.RI('Service.Code')" />
+	<Entry key ="D04E_CENA" value ="$D04E.FI('PriceNullable', 'f')" />
+	<Entry key ="D04F" value="#foreach($D04F in $D04A.OI('Vaccination.ActiveItems'))" />
+	<Entry key ="D04F_PAKALPOJUMS" value ="$D04F.RI('Service.Value')" />
+	<Entry key ="D04F_KODS" value ="$D04F.RI('Service.Code')" />
+	<Entry key ="D04F_CENA" value ="$D04F.FI('PriceNullable', 'f')" />
+  <Entry key ="D04Z" value="#foreach($D04H in $D04.SecondCollection)" />
+  <Entry key ="D04H_ARSTS" value ="$D04H.RI('Doctor.FullName')" />
+  <Entry key ="D04H_KLIENTS" value ="$D04H.RI('Patient.FullName')"/>
+  <Entry key ="D04H_KLIENTA_PERS_KODS" value ="$D04H.RI('Patient.Code')"/>
+  <Entry key ="D04H_KLIENTA_NR" value ="$D04H.RI('Patient.Number')"/>
+  <Entry key ="D04H_DAT" value ="$D04H.FI('StartTime', 'd')"/>
+  <Entry key ="D04H_SADALIT" value ="#if($D04H.S('SplitServicesByType')==true)"/>
+  <Entry key ="D04J" value="#foreach($D04J in $D04H.OI('Dentist.ActiveItems'))" />
+  <Entry key ="D04J_PAKALPOJUMS" value ="$D04J.RI('Service.Value')" />
+  <Entry key ="D04J_KODS" value ="$D04J.RI('Service.Code')" />
+  <Entry key ="D04J_CENA" value ="$D04J.FI('PriceNullable', 'f')" />
+
+
+  <Entry key ="D05A" value="#foreach($D05A in $D05.OI('Rtg.ActiveItems'))" />
+  <Entry key ="D05A_RTG_UZNEMUMS" value ="$D05A.RI('RtgType')" />
+  <Entry key ="D05A_UZNEMUMA_DATUMS" value ="$D05A.FI('RtgCreateDate', 'd')"/>
+  <Entry key ="D05A_APRAKSTS" value ="$D05A.RI('RtgDescription')"/>
+  <Entry key ="D05A_SLEDZIENS" value ="$D05A.RI('RtgSummaryText')"/>
+    
+  
+	<Entry key ="P01A" value="#foreach($P01A in $P01)" />
+	<Entry key ="P01A_ARSTS" value ="$P01A.RI('FullName')"/>
+	<Entry key ="P01A_VARDS" value ="$P01A.RI('FirstName')"/>
+	<Entry key ="P01A_UZVARDS" value ="$P01A.RI('LastName')"/>
+	<Entry key ="P01A_MOBILAIS" value ="$P01A.RI('CellPhone')"/>
+	
+	<Entry key ="P02A" value="#foreach($P02A in $P02)" />
+	<Entry key ="P02A_KLIENTS" value ="$P02A.RI('FullName')"/>
+	<Entry key ="P02A_VARDS" value ="$P02A.RI('Name')"/>
+	<Entry key ="P02A_OTRS_VARDS" value ="$P02A.RI('SecondName')"/>
+	<Entry key ="P02A_UZVARDS" value ="$P02A.RI('LastName')"/>
+	<Entry key ="P02A_MOBILAIS" value ="$P02A.RI('MobilePhone')"/>
+	<Entry key ="P02A_PK" value ="$P02A.RI('Code')"/>
+	<Entry key ="P02A_NR" value ="$P02A.RI('Number')"/>
+
+	<Entry key ="P03_1" value="#foreach($P03_1 in $P03)" />
+	<Entry key ="P03_SPECIALIZACIJA" value ="$P03_1.Key"/>
+	<Entry key ="P03A" value="#foreach($P03A in $P03_1.Value)" />
+	<Entry key ="P03A_SPECIALITATE" value ="$P03A.RI('Specialities')"/>
+	<Entry key ="P03A_ARSTS" value ="$P03A.RI('FullName')"/>
+	<Entry key ="P03B" value="#foreach($P03B in $P03A.OI('UserServices.ActiveItems'))" />
+	<Entry key ="P03B_PAKALPOJUMS" value ="$P03B.RI('Service')"/>
+	<Entry key ="P03B_CENA" value ="$P03B.FI('Price', 'f')"/>
+	<Entry key ="P03B_ILGUMS" value ="$P03B.RI('Time')"/>
+	<Entry key ="P03B_KODS" value ="$P03B.RI('Service.Code')"/>
+
+	<Entry key ="P05A" value="#foreach($P05A in $P05)" />
+	<Entry key ="P05A_ARSTS" value ="$P05A.Key"/>
+	<Entry key ="P05C" value="#foreach($P05C in $P05A.Value)" />
+	<Entry key ="P05B" value="#foreach($P05B in $P05C.Value)" />
+	<Entry key ="P05B_KLIENTS" value ="$P05B.RI('Patient')"/>
+	<Entry key ="P05B_KABINETS" value ="$P05B.RI('Room')"/>
+	<Entry key ="P05B_LAIKS" value ="$P05B.FI('StartTime', 'G')"/>
+	<Entry key ="P05B_PAKALPOJUMS" value ="$P05B.RI('Service')"/>
+	<Entry key ="P05B_APMAKSATS" value ="$P05B.RI('PaydAll')"/>
+	<Entry key ="P05B_CENA" value ="$P05B.FI('Price', 'f')"/>
+
+
+	<!--Apdrošināšana-->
+	<Entry key ="A01A" value="#foreach($A01A in $A01)" />
+	<Entry key ="A01A_DATUMS" value ="$A01A.FI('Visit.StartTime', 'd')"/>
+	<Entry key ="A01A_PAKALPOJUMS" value ="$A01A.RI('Service')"/>
+	<Entry key ="A01A_CENA" value ="$A01A.FI('Insurance', 'f')"/>
+	
+</aliases>
+

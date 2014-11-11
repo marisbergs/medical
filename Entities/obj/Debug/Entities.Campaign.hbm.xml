@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.Campaign, Entities" table="[Campaign]" dynamic-update="true">
+    
+    <id name="Id" column="CMG_ID"><generator class="guid.comb" /></id>	  
+    <property name="DeleteTime" column="CMG__DELETE_TIME" />
+    <property name="Name" column="CMG_NAME" />
+	  <property name="NameForPrint" column="CMG_NAME_FOR_PRINT" />
+	  <property name="Comment" column="CMG_COMMENT" />
+	  <property name="ValidFrom" column="CMG_VALID_FROM" />
+	  <property name="ValidTo" column="CMG_VALID_TO" />
+	  <property name="Discount" column="CMG_DISCOUNT" />
+	  <property name="Code" column="CMG_CODE" />
+	  <property name="CreateDate" column="CMG_CREATE_DATE" />
+	  <property name="CreateUser" column="CMG_CREATE_USER_ID" />
+    <property name ="CampaignValue" column ="CMG_CAMPAIGN_VALUE" />
+
+    <bag name="CampaignPatients" table="[CampaignPatients]"
+		  access="property" generic="true" inverse="true" outer-join ="true" cascade="all-delete-orphan" lazy="true"
+		  collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.CampaignPatient, Entities]], Core">
+      <key column="CUI_CAMPAIGN_ID" />
+      <one-to-many class="Entities.CampaignPatient, Entities" />
+    </bag>
+  </class>
+</hibernate-mapping>

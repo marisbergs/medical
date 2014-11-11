@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Entities.Document" Collapsed="true">
+    <Position X="4.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Document.vb</FileName>
+      <HashCode>AAAiAACEAAAAAgAAABAAAAQAAAAEAAQAAAACAABAAAE=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Violations" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Entities.TimberCheckOnRoad">
+    <Position X="1.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TimberCheckOnRoad.vb</FileName>
+      <HashCode>AAgAEAAACAQgAAAQICAUAICBiAMEAABIAIBIAABAFAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.Violation" Collapsed="true">
+    <Position X="4.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Violation.vb</FileName>
+      <HashCode>AACAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAQAAAAEAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

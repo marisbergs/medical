@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.LocalSettings, Entities" table="[LocalSettings]" dynamic-update="true">    
+		<id name="Id" column="LST_ID"><generator class="guid.comb" /></id>
+	  <property name="DeleteTime" column="LST__DELETE_TIME" />
+	  <property name="Key" column="LST_KEY"/>
+	  <property name="Value" column="LST_VALUE"/>
+  </class>
+</hibernate-mapping>

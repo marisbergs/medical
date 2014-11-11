@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<PA_TPVAI_001>
+  <Pamatdati>
+    <vidtin_kods>$this.S('CMCase.SrsDepartment.Department.Code')</vidtin_kods>
+    <akta_numurs>$this.S('CMCase.TIAct.DocNumber')</akta_numurs>
+    <akta_datums>$this.D('CMCase.TIAct.ActDate')</akta_datums>
+    <kp_veids>$this.S('CMCase.TIAct.CaseType.ExternalID')</kp_veids>
+    <nmr_kods>$this.S('CMCase.TaxpayerCode')</nmr_kods>
+    <adrese>$this.S('CMCase.TIAct.ObjAddress')</adrese>
+  </Pamatdati>
+  <!--#if($this.WWExtraCharges.ActiveItems.Count>0)-->
+  <!--#foreach($a in $this.WWExtraCharges.ActiveItems)-->
+  <Saturs>
+    <preces_nosaukums>$a.S('GoodsName')</preces_nosaukums>
+    <mervieniba>$a.S('Unit')</mervieniba>
+    <iepirkuma_cena>$a.N('PurchasePrice')</iepirkuma_cena>
+    <pardosanas_cena>$a.N('SalePrice')</pardosanas_cena>
+    <uzcenojums>$a.N('ExtraPrice')</uzcenojums>
+    <pavaddok_veids>$a.S('DocName')</pavaddok_veids>
+    <serija_numurs>$a.S('DocNumber')</serija_numurs>
+    <pavaddok_datums>$a.D('DocDate')</pavaddok_datums>
+    <piegadataja_kods>$a.S('SupplierCode')</piegadataja_kods>
+  </Saturs>
+  <!--#end-->
+  <!--#end-->
+</PA_TPVAI_001>

@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DB11FF75-F34E-4194-A7B3-2DFADB5F1D06}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Core</RootNamespace>
+    <AssemblyName>Core</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>3</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <DocumentationFile>bin\Debug\Core.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v6.1, Version=6.1.5.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\DevExpress\DevExpress.Data.v6.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v6.1, Version=6.1.5.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\DevExpress\DevExpress.Utils.v6.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v6.1, Version=6.1.5.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\DevExpress\DevExpress.XtraEditors.v6.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v6.1, Version=6.1.5.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\DevExpress\DevExpress.XtraGrid.v6.1.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=0.0.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\NHibernate\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NVelocity, Version=0.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\lib\NVelocity\NVelocity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataAccessLayer\ISynchronizable.cs" />
+    <Compile Include="BusinessObjectsBase\IValidatable.cs" />
+    <Compile Include="DataAccessLayer\ConnectionTarget.cs" />
+    <Compile Include="DataAccessLayer\CriteriaBuilder.cs" />
+    <Compile Include="DataAccessLayer\IChildCollection.cs" />
+    <Compile Include="DataAccessLayer\IConstrained.cs" />
+    <Compile Include="DataAccessLayer\IHasParent.cs" />
+    <Compile Include="DataAccessLayer\Impl\ChildCollection.cs" />
+    <Compile Include="DataAccessLayer\Impl\ChildCollectionType.cs" />
+    <Compile Include="DataAccessLayer\Impl\NHChildCollection.cs" />
+    <Compile Include="DataAccessLayer\Impl\PersistentBindableEntity.cs" />
+    <Compile Include="DataAccessLayer\ITracksDirty.cs" />
+    <Compile Include="DataAccessLayer\ISession.cs" />
+    <Compile Include="DataAccessLayer\Impl\IInterceptor.cs" />
+    <Compile Include="DataAccessLayer\Impl\Interceptor.cs" />
+    <Compile Include="DataAccessLayer\IProvidesSession.cs" />
+    <Compile Include="DbUpdates\DbUpdater.cs" />
+    <Compile Include="DnsGate.cs" />
+    <Compile Include="EnumWrapper.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="Logger\AuditMessages.cs" />
+    <Compile Include="Logger\ILogger.cs" />
+    <Compile Include="Logger\Logger.cs" />
+    <Compile Include="NVelocity\NVelocityEngine.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ReflectionHelper.cs" />
+    <Compile Include="Reporting\Report.cs" />
+    <Compile Include="SecurityHelper.cs" />
+    <Compile Include="UI\BindingHelper.cs" />
+    <Compile Include="UI\ControlListGenerator.cs" />
+    <Compile Include="UI\CoreMoneySpinEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\CoreTreeNode.cs" />
+    <Compile Include="UI\CoreTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\CoreTreeView.Designer.cs">
+      <DependentUpon>CoreTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormFactory.cs" />
+    <Compile Include="UI\IEditForm.cs" />
+    <Compile Include="UI\IFrmBase.cs" />
+    <Compile Include="UI\IPickerSupportsPresets.cs" />
+    <Compile Include="UI\ListPicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\MsgBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MsgBox.Designer.cs">
+      <DependentUpon>MsgBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PeriodWithTimePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\PeriodWithTimePicker.Designer.cs">
+      <DependentUpon>PeriodWithTimePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DevExpressLocalizer.cs" />
+    <Compile Include="UI\GridButtonHelper.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\CoreGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\dlgQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\dlgQuestion.Designer.cs">
+      <DependentUpon>dlgQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmClassifier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmClassifier.Designer.cs">
+      <DependentUpon>frmClassifier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ISelectionForm.cs" />
+    <Compile Include="UI\PeriodPicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\PeriodPicker.Designer.cs">
+      <DependentUpon>PeriodPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PeriodWithTimePickerSecond.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\PeriodWithTimePickerSecond.Designer.cs">
+      <DependentUpon>PeriodWithTimePickerSecond.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RadioGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\RadioGroup.Designer.cs">
+      <DependentUpon>RadioGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SearchControlHelper.cs" />
+    <Compile Include="BusinessObjectsBase\CommonBusinessRules.cs" />
+    <Compile Include="BusinessObjectsBase\Entities.cs" />
+    <Compile Include="BusinessObjectsBase\DictionaryBase.cs" />
+    <Compile Include="BusinessObjectsBase\IBusinessCriteria.cs" />
+    <Compile Include="BusinessObjectsBase\BusinessObjectBase.cs" />
+    <Compile Include="BusinessObjectsBase\IBusinessObjectBase.cs" />
+    <Compile Include="BusinessObjectsBase\ISearchObject.cs" />
+    <Compile Include="DataAccessLayer\Criteria.cs" />
+    <Compile Include="DataAccessLayer\Impl\HibernateCriteria.cs" />
+    <Compile Include="DataAccessLayer\Impl\Session.cs" />
+    <Compile Include="DesignerDetector.cs" />
+    <Compile Include="UI\DictionaryDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DictionaryDesigner.Designer.cs">
+      <DependentUpon>DictionaryDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exceptions.cs" />
+    <Compile Include="UI\frmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmBase.Designer.cs">
+      <DependentUpon>frmBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmDictionaryBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmDictionaryBase.Designer.cs">
+      <DependentUpon>frmDictionaryBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grid Modifications\CalendarColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Localization\Localization.cs" />
+    <Compile Include="Localization\LocalizationConfig.cs" />
+    <Compile Include="DataAccessLayer\Manager.cs" />
+    <Compile Include="Localization\ErrMsg.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BusinessObjectsBase\Validator.cs" />
+    <Compile Include="PropertyComparers.cs" />
+    <Compile Include="Result.cs" />
+    <Compile Include="UI\TimeEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\TimeEdit.Designer.cs">
+      <DependentUpon>TimeEdit.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="hibernate.debug.central.cfg.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Localization\Dictionary.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reporting\TemplateAliases.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="UI\CoreMoneySpinEdit.resx">
+      <DependentUpon>CoreMoneySpinEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CoreTreeView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CoreTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MsgBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MsgBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PeriodWithTimePicker.resx">
+      <DependentUpon>PeriodWithTimePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CoreGrid.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CoreGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DictionaryDesigner.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DictionaryDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\dlgQuestion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>dlgQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmClassifier.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmClassifier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmDictionaryBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDictionaryBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\GridButtonHelper.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GridButtonHelper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PeriodPicker.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PeriodPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PeriodWithTimePickerSecond.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PeriodWithTimePickerSecond.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TimeEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TimeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="hibernate.central.cfg.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="NVelocity\Runtime\Defaults\directive.properties">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="NVelocity\Runtime\Defaults\nvelocity.properties">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="app.config" />
+    <None Include="Localization\formMappings.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Migrated rules for Core.ruleset" />
+    <None Include="nhibernate-configuration-2.0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\Core.Bll.IBusinessObjectBase.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

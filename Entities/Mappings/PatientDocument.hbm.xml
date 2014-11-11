@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.PatientDocument, Entities" table="[PatientDocuments]" dynamic-update="true">
+
+    <id name="Id" column="PDO_ID">
+      <generator class="guid.comb"/>
+    </id>
+
+    <!-- Common fields for optimistic locking and data synchronization -->
+    <property name="DeleteTime" column="PDO__DELETE_TIME" />
+    <!-- . -->
+	  <many-to-one name="Patient" column="PDO_PATIENT_ID" not-null="true" fetch="join"/>
+	  <many-to-one name="DocType" column="PDO_DOC_TYPE_ID" not-null="true" fetch="join"/>
+	  <property name="CreateDate" column="PDO_CREATE_DATE" />
+	  <many-to-one name="Creator" column="PDO_CREATOR_ID" not-null="true" fetch="join"/>
+	  <bag name="Files" table="[AttachmentsFiles]"
+        access="property" collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.AttachmentFile, Entities]], Core"
+        generic="true" inverse="true" cascade="all-delete-orphan" lazy="true">
+		  <key column="ATF_PATIENT_DOCUMENT_ID" />
+		  <one-to-many class="Entities.AttachmentFile, Entities" />
+	  </bag>
+  </class>
+</hibernate-mapping>

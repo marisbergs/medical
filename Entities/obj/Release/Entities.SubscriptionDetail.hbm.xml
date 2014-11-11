@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.SubscriptionDetail, Entities" table="[SubscriptionsDetails]" dynamic-update="true">
+    
+    <id name="Id" column="SUD_ID"><generator class="guid.comb" /></id>	  
+    <property name="DeleteTime" column="SUD__DELETE_TIME" />
+    
+    <many-to-one name ="Subscription" column ="SUD_SUBSCRIPTION_ID"/>
+    <property name ="Appointment" column ="SUD_APPOINTMENT"/>
+    <property name ="Price" column ="SUD_PRICE"/>
+    <property name ="Visit" column ="SUD_VISIT_ID"/>
+    <property name ="Service" column="SUD_SUBSCRIPTION_SUBSERVICE_ID"/>
+  </class>
+</hibernate-mapping>

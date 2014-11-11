@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.UsersSpecialities, Entities" table="UsersSpecialities" dynamic-update="true">
+    
+    <id name="Id" column="USS_ID"><generator class="guid.comb"/></id>
+    <property name="DeleteTime" column="USS__DELETE_TIME" />
+
+    <many-to-one name="User" column="USS_USER_ID"/>
+	  <property name="Speciality" column="USS_SPECIALITY_ID"/>
+	  <property name="From" column="USS_FROM"/>
+	  <property name="Until" column="USS_UNTIL"/>
+	  <property name="Number" column="USS_NUMBER"/>
+  </class>
+</hibernate-mapping>
+<!--
+
+-->

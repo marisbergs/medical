@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.HierClassifier, Entities" table="Classifiers" dynamic-update="true">
+
+    <id name="Id" column="CLS_ID">
+      <generator class="guid.comb"/>
+    </id>
+
+    <discriminator column="CLS_TYPE_ID" type="String" />
+
+    <!-- Common fields for optimistic locking and data synchronization -->
+    <property name="DeleteTime" column="CLS__DELETE_TIME" />
+    <!-- . -->
+
+	  <property name="Value" column="CLS_NAME" />
+	  <property name="Code" column="CLS_CODE" />
+	  <property name="ValidFrom" column="CLS_VALID_FROM" />
+	  <property name="ValidUntil" column="CLS_VALID_UNTIL" />
+	  <property name="Text" column="CLS_TEXT" />
+	  <property name="DecimalValue" column="CLS_DECIMAL"/>
+	  <property name ="Mark" column ="CLS_MARK"/>
+	  <property name ="SecondMark" column ="CLS_SECOND_MARK"/>
+	  <property name ="IntegerValue" column ="CLS_INTEGER"/>
+	  <property name ="SecondIntegerValue" column ="CLS_SECOND_INTEGER"/>
+	  <property name ="ThirdIntegerValue" column ="CLS_THIRD_INTEGER"/>
+	  <property name ="FourIntegerValue" column ="CLS_FOUR_INTEGER"/>
+	  <property name ="Comment" column ="CLS_COMMENTS" />
+	  <many-to-one name ="Parents" column ="CLS_PARENT_ID" />
+	  <property name ="Reference" column ="CLS_REFERENCE_ID" />
+	  <property name ="ReferenceSecond" column ="CLS_REFERENCE_ID_SECOND" />
+	  <property name ="ReferenceThird" column ="CLS_REFERENCE_ID_THIRD" />
+	  <property name ="ReferenceFourth" column ="CLS_REFERENCE_ID_FOURTH" />
+	  <property name ="CanNotDelete" column ="CLS_CANNOT_DELETE" />    
+
+    <bag name="Children" table="[Classifiers]"
+         access="property" generic="true" inverse="true" cascade="all-delete-orphan" lazy="true"
+         collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.HierClassifier, Entities]], Core">
+      <key column="CLS_PARENT_ID" />
+      <one-to-many class="Entities.HierClassifier, Entities" />
+    </bag>
+    <subclass name ="Entities.Insurance, Entities" discriminator-value ="Insurance" />
+
+    </class>
+</hibernate-mapping> 

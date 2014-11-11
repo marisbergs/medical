@@ -1,0 +1,3 @@
+bin\Debug\TpaisScheduler.exe.config
+obj\Debug\TpaisScheduler.exe
+obj\Debug\TpaisScheduler.pdb

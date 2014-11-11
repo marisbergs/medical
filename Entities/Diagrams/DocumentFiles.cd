@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Entities.DocFileHistory">
+    <Position X="3" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>DocFileHistory.vb</FileName>
+      <HashCode>QAAAAAAAAECAAEAAAAAAQAAAAAAEAAASEAAAAAAAEAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Document" />
+      <Property Name="File" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Entities.Document" Collapsed="true">
+    <Position X="7.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Documents\Document.vb</FileName>
+      <HashCode>wGAyqUCEBFagAiCQLBgEQkQQAHdEKAjUUgEqAEJAECI=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="Entities.BinaryFile" Collapsed="true">
+    <Position X="6" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BinaryFile.vb</FileName>
+      <HashCode>AAAAIgAAAgAAAAABAAAAAAQAAAAAAAAAAAAAAAAADAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Content" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Entities.BinaryContent" Collapsed="true">
+    <Position X="8.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BinaryFile.vb</FileName>
+      <HashCode>AAACACAgAIAAAAAAAABAAAAAAAAAAAAAAAAAAABAQAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

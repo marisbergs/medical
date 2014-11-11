@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.UsersWorkTime, Entities" table="UsersWorkTime" dynamic-update="true">
+    
+    <id name="Id" column="UWT_ID"><generator class="guid.comb"/></id>
+    <property name="DeleteTime" column="UWT__DELETE_TIME" />
+
+    <many-to-one name="User" column="UWT_USER_ID" fetch ="join"/>
+	  <many-to-one name="Room" column="UWT_ROOM_ID"/>
+	  <property name="StartTime" column="UWT_START_TIME"/>
+	  <property name="EndTime" column="UWT_END_TIME"/>
+	  <component name="DayOfWeek">
+		  <property name="Value" column="UWT_DAY" access="property"/>
+	  </component>
+	  <property name="Acyity" column="UWT_ACYITY"/>
+    <property name="CreateDate" column="UWT_CREATE_TIME"/>
+    <property name="ValidFrom" column="UWT_VALID_FROM"/>
+    <property name="ValidTo" column="UWT_VALID_TO"/>    
+  </class>
+</hibernate-mapping>
+<!--
+
+-->

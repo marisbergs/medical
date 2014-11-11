@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<PA_PLANS>
+  <Pamatdati>
+    <plana_datums>$this.D('DocDate')</plana_datums>
+    <plana_numurs>$this.S('DocNumber')</plana_numurs>
+    <plana_periods>$this.D('DateFrom')-$this.D('DateUntil')</plana_periods>
+    <plana_tpd>$this.S('SrsDepartment.HeadOrganization.ExternalId')</plana_tpd>
+  </Pamatdati>
+<!--#foreach ($case in $this.CMCases)-->
+  <Saturs>
+    <nmr_kods>$case.S('TaxpayerCode')</nmr_kods>
+    <riska_grupa>$case.S('RiskGroup.ExternalId')</riska_grupa>
+  </Saturs>
+<!--#end-->
+</PA_PLANS>

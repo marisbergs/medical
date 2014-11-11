@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.VisitService, Entities" table="[VisitsServices]" dynamic-update="true">
+    
+    <id name="Id" column="VSS_ID"><generator class="guid.comb" /></id>	  
+	<property name="DeleteTime" column="VSS__DELETE_TIME" />
+
+	  <many-to-one name="Visit" column="VSS_VISIT_ID" fetch="join"/>
+    <many-to-one name="Service" column="VSS_SERVICE_ID" fetch="join"/>
+    <many-to-one name="PaymentType" column="VSS_PAYMENT_TYPE_ID" fetch="join"/>
+	  <property name ="Payd" column ="VSS_PAYD"/>
+	  <property name ="Price" column ="VSS_PRICE"/>
+	  <property name ="DefaultPrice" column ="VSS_DEFAULT_PRICE"/>
+	  <property name ="Percentage" column ="VSS_PERCENTAGE" update="true"/>
+	  <property name ="Insurance" column ="VSS_INSURANCE"/>
+	  <property name ="PresentCard" column ="VSS_PRESENT_CARD_ID"/>
+	  <property name ="PresentCardSum" column ="VSS_PRESENT_CARD_SUM"/>
+	  <property name ="BonusPoints" column ="VSS_BONUS_POINTS"/>
+	  <property name ="PaydDate" column ="VSS_PAYD_DATE"/>
+	  <property name ="PaydStateChangedByUser" column ="VSS_PAYD_STATE_CHANGED"/>
+	  <property name ="ServiceGiven" column ="VSS_SERVICE_GIVEN"/>
+    <property name ="Discount" column ="VSS_DISCOUNT" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="TPB_IZZINA" targetNamespace="http://tempuri.org/TPB_IZZINA.xsd" elementFormDefault="qualified"
+	xmlns="http://tempuri.org/TPB_IZZINA.xsd" xmlns:mstns="http://tempuri.org/TPB_IZZINA.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="tpb_izzina_list" msdata:Locale="lv-LV">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="tpb_izzina">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="guid" type="xs:string" />
+              <xs:element name="numurs" type="xs:string" />
+              <xs:element name="nmr_kods" type="xs:string" />
+              <xs:element name="datums_parb" type="xs:date" />
+              <xs:element name="datums_izz" type="xs:date" />
+              <xs:element name="id_vidparb" type="xs:int" />
+              <xs:element name="id_vidlemum" type="xs:int" />
+              <xs:element name="koment" type="xs:string" minOccurs="0" />
+              <xs:element name="kont_park" type="xs:string" minOccurs="0" />
+              <xs:element name="id_adrese" type="xs:int" />
+              <xs:element name="id_tpbdarbk" type="xs:int" minOccurs="0" />
+              <xs:element name="id_tpbiemesls" type="xs:int" minOccurs="0" />
+              <xs:element name="id_tpbveiceji" type="xs:int" />
+              <xs:element name="adrese" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="id_pilspag" type="xs:int" />
+                    <xs:element name="teksts" type="xs:string" />
+                    <xs:element name="adresveids" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="planots" type="xs:string" />
+              <xs:element name="tpb_viddarb" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="id_viddarbin" type="xs:int" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="tpb_lemumi" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="id_tpblemkods" type="xs:int" />
+                    <xs:element name="datums" type="xs:date" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="tpb_parbiest" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="id_parbiestade" type="xs:int" />
+                    <xs:element name="id_vidnod" type="xs:int" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="tpb_parbpaz" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="id_tpbpazime" type="xs:int" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="tpb_parbpectp" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="id_tpbpectp" type="xs:int" />
+                    <xs:element name="datums_lidz" type="xs:date" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="tpb_parbtem" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="id_tpbtema" type="xs:int" />
+                    <xs:element name="adm_summa" type="xs:decimal" minOccurs="0" />
+                    <xs:element name="budz_summa" type="xs:decimal" minOccurs="0" />
+                    <xs:element name="saimn_aptur" type="xs:string" minOccurs="0" />
+                    <xs:element name="sods_maz33p" type="xs:decimal" minOccurs="0" />
+                    <xs:element name="budz_sumk" type="xs:decimal" minOccurs="0" />
+                    <xs:element name="tpb_parbkods" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="id_tpbpkods" type="xs:int" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="tpb_parbpartn" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="nmr_kods" type="xs:string" />
+                          <xs:element name="koment" type="xs:string" minOccurs="0" />
+                          <xs:element name="datums_no" type="xs:date" />
+                          <xs:element name="datums_lidz" type="xs:date" />
+                          <xs:element name="apstiprinats" type="xs:string" />
+                          <xs:element name="nm_koment" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="tpb_admsods" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="nmr_kods" type="xs:string" />
+                          <xs:element name="summa" type="xs:decimal" />
+                          <xs:element name="maks_term" type="xs:date" />
+                          <xs:element name="koment" type="xs:string" minOccurs="0" />
+                          <xs:element name="id_normapants" type="xs:int" />
+                          <xs:element name="lemuma_dat" type="xs:date" minOccurs="0" />
+                          <xs:element name="tpb_admkonst" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="id_normapants" type="xs:int" />
+                                <xs:element name="id_tpbadmlem" type="xs:int" />
+                                <xs:element name="summa" type="xs:decimal" />
+                                <xs:element name="id_tpbtema" type="xs:int" />
+                                <xs:element name="konfiskacija" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

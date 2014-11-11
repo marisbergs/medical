@@ -1,0 +1,33 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Entities.Test
+</name>
+</assembly>
+<members>
+<member name="P:TpaisEntities.Test.HierClassifierTests.TestContext">
+	<summary>
+Gets or sets the test context which provides
+information about and functionality for the current test run.
+</summary>
+</member><member name="M:TpaisEntities.Test.BinaryFileTests.BusinessConstraintsTest">
+	<summary>
+A test for business constraints
+</summary>
+</member><member name="M:TpaisEntities.Test.BinaryFileTests.FileTypeDetectionTest">
+	<summary>
+A test for FileType detection from Name
+</summary>
+</member><member name="M:TpaisEntities.Test.Helper.CompareStreams(System.IO.Stream,System.IO.Stream)">
+	<summary>
+ Tests contents of two streams for equality. Testing starts from the current position of both streams.
+ </summary>
+	<param name="stream1">First stream</param>
+	<param name="stream2">Second stream</param>
+	<returns>String with the first encountered difference described,
+ or empty string if no differences were encountered.</returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

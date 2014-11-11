@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.Visit, Entities" table="[Visits]" dynamic-update="true">
+    
+    <id name="Id" column="VIS_ID"><generator class="guid.comb" /></id>	  
+	<property name="DeleteTime" column="VIS__DELETE_TIME" />
+
+	  <many-to-one  name="Patient" column="VIS_PATIENT" fetch="join"/>
+	  <many-to-one  name="PatientSecond" column="VIS_PATIENT_SECOND"/>
+	  <many-to-one  name="PatientThird" column="VIS_PATIENT_THIRD"/>
+	  <many-to-one name="Doctor" column="VIS_DOCTOR" fetch="join"/>
+	  <many-to-one name="Service" column="VIS_SERVICE" fetch="join"/>
+	  <many-to-one name="Room" column="VIS_ROOM" fetch="join"/>
+    <property name="StartTime" column="VIS_START_TIME" />
+	  <property name="EndTime" column="VIS_END_TIME" />
+	  <property name="Length" column="VIS_LENGTH" />
+	  <property name="LengthBefore" column="VIS_LENGTH_BEFORE" />
+	  <property name="LengthAfter" column="VIS_LENGTH_AFTER" />
+	  <property name="Acyity" column="VIS_ACYITY"/>
+	  <property name="Notes" column="VIS_NOTES"/>
+	  <property name="ParentId" column="VIS_PARENT_ID"/>
+	  <property name="Called" column="VIS_CALLED"/>
+	  <property name="Creator" column="VIS_CREATOR"/>
+	  <property name="DeletedBy" column="VIS_DELETE_BY"/>
+	  <property name="Group" column="VIS_GROUP_WORK"/>
+	  <property name="GroupId" column="VIS_GROUP_ID"/>
+	  <property name="Status" column="VIS_STATUS"/>
+	  <property name ="CreateDate" column ="VIS_CREATE_DATE" insert="false"  update ="false"/>
+	  <property name="CreatePlace" column="VIS_CREATE_PLACE" />
+	  <property name ="PrepareCard" column ="VIS_PREPARE_CARD" />
+	  <property name ="RelatedDoctor" column ="VIS_RELATED_DOCTOR_ID" />
+    <many-to-one name ="CampaignPatient" column ="VIS_CAMPAIGN_PATIENT_ID"/>
+    <property name ="ActivePAK" column ="VIS_PATIENT_PROFILE_DESCRIPTION_ID"/>
+
+	  <bag name="VisitServices" table="[VisitsServices]"
+		  access="property" generic="true" inverse="true" outer-join ="true" fetch="join" cascade="all-delete-orphan" lazy="true"
+		  collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.VisitService, Entities]], Core" >
+		  <key column="VSS_VISIT_ID" />
+		  <one-to-many class="Entities.VisitService, Entities" />
+	  </bag>
+	  
+	  <bag name="VisitStatus" table="[VisitsStatusHistory]"
+		  access="property" generic="true" inverse="true" cascade="all-delete-orphan" lazy="true"
+		  collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.VisitStatusHistory, Entities]], Core">
+		  <key column="VSH_VISIT_ID" />
+		  <one-to-many class="Entities.VisitStatusHistory, Entities" />
+	  </bag>
+  </class>
+</hibernate-mapping>

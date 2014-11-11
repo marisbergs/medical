@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.Document, Entities" table="Documents" dynamic-update="true" batch-size="10">
+    
+	<id name="Id" column="DOC_ID"><generator class="guid.comb"/></id>
+
+	<!-- Common fields for optimistic locking and data synchronization -->
+	<property name="DeleteTime" column="DOC__DELETE_TIME" />
+	<!-- . -->
+
+	<component name="DocType">
+	<property name="StringValue" column="DOC_TYPE_ID" access="property" not-null="true" />
+	</component>
+	<property name="DocNumber" column="DOC_NUMBER" />
+	<property name="DocDate" column="DOC_DATE" />
+	<property name="RecordNumber" column="DOC_RECORD_NUMBER" />
+	<property name="RecordDate" column="DOC_RECORD_DATE" />
+
+	<property name="Name" column="DOC_NAME" />
+	<property name="CreationDate" column="DOC_CREATE_DATE" not-null="true" />
+	<property name="Notes" column="DOC_NOTES" />
+
+	<many-to-one name="Template" column="DOC_TEMPLATE_ID" fetch="select" />
+	<many-to-one name="File" column="DOC_FILE_ID" cascade ="all-delete-orphan"/>
+	<many-to-one name="Patient" column="DOC_PATIENT_ID"/>
+	<property name="CurrentVersion" column="DOC_FILE_VERSION" />
+
+	<bag name="DocFileHistory" table="[DocFileHistory]"
+		access="property" generic="true" inverse="true" cascade="all-delete-orphan" lazy="true"
+		collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.DocFileHistory, Entities]], Core">
+		<key column="DFH_DOCUMENT_ID" />
+		<one-to-many class="Entities.DocFileHistory, Entities" />
+	</bag>
+	  
+
+    <!-- Subclasses -->
+	<joined-subclass dynamic-update="true" name="Entities.Prescription, Entities" table="Prescriptions">
+		<key column="PRE_ID"/>
+		<property name="IsueDate" column="PRE_DATE"/>
+		<property name="ValidTo" column="PRE_VALID_TO"/>
+		<property name ="DiagnosisCode" column ="PRE_DIAGNOSIS_CODE" />
+	</joined-subclass>
+    <joined-subclass dynamic-update="true" name="Entities.RtgSummary, Entities" table="RtgSummary">
+      <key column="RTD_ID"/>
+      <bag name="Rtg" table="[RtgSummaryRecords]"
+		    access="property" generic="true" inverse="true" cascade="all-delete-orphan" lazy="true"
+		    collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.RtgSummaryRecord, Entities]], Core">
+        <key column="RTG_SUMMARY_ID" />
+        <one-to-many class="Entities.RtgSummaryRecord, Entities" />
+      </bag>
+    </joined-subclass>
+
+  </class>
+</hibernate-mapping>
+<!--
+
+-->

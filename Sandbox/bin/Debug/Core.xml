@@ -1,0 +1,1419 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Core</name>
+    </assembly>
+    <members>
+        <member name="F:Core.UI.TimeEdit.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Core.UI.TimeEdit.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Core.UI.TimeEdit.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Core.UI.MsgBox.#ctor(System.Windows.Forms.MessageBoxButtons,System.String,System.Boolean)">
+            <summary>
+            Create MessageBox form
+            </summary>
+        </member>
+        <member name="M:Core.UI.MsgBox.Show(System.Enum,System.Windows.Forms.MessageBoxButtons,System.String,System.Boolean)">
+            <summary>
+            Display MessageBox
+            </summary>
+            <param name="messageCode">Message code</param>
+            <param name="ButtonType">Buttons which need show</param>
+            <param name="Caption">MessageBox caption</param>
+            <param name="topMost">Display on top</param>
+            <returns>Dialog result</returns>
+        </member>
+        <member name="M:Core.UI.MsgBox.Show(System.Enum,System.Windows.Forms.MessageBoxButtons,System.String)">
+            <summary>
+            Display MessageBox
+            </summary>
+            <param name="messageCode">Message code</param>
+            <param name="ButtonType">Buttons which need show</param>
+            <param name="Caption">MessageBox caption</param>
+            <returns>Dialog result</returns>
+        </member>
+        <member name="M:Core.UI.MsgBox.Show(System.Enum,System.Windows.Forms.MessageBoxButtons)">
+            <summary>
+            Display MessageBox
+            </summary>
+            <param name="messageCode">Message code</param>
+            <param name="ButtonType">Buttons which need show</param>
+            <returns>Dialog result</returns>
+        </member>
+        <member name="M:Core.UI.MsgBox.Show(System.Enum,System.String)">
+            <summary>
+            Display MessageBox
+            </summary>
+            <param name="messageCode">Message code</param>
+            <param name="Caption">MessageBox caption</param>
+            <returns>Dialog result</returns>
+        </member>
+        <member name="M:Core.UI.MsgBox.Show(System.Enum)">
+            <summary>
+            Display MessageBox
+            </summary>
+            <param name="messageCode">Message code</param>
+            <returns>Dialog result</returns>
+        </member>
+        <member name="M:Core.UI.MsgBox.Show(System.String,System.Windows.Forms.MessageBoxButtons,System.String,System.Boolean)">
+            <summary>
+            Display MessageBox
+            </summary>
+            <param name="messageText">Message text</param>
+            <param name="ButtonType">Buttons which need show</param>
+            <param name="Caption">MessageBox caption</param>
+            <param name="topMost">Display on top</param>
+            <returns>Dialog result</returns>
+        </member>
+        <member name="M:Core.UI.MsgBox.Show(System.String,System.Windows.Forms.MessageBoxButtons,System.String)">
+            <summary>
+            Display MessageBox
+            </summary>
+            <param name="messageText">Message text</param>
+            <param name="ButtonType">Buttons which need show</param>
+            <param name="Caption">MessageBox caption</param>
+            <returns>Dialog result</returns>
+        </member>
+        <member name="M:Core.UI.MsgBox.Show(System.String,System.Windows.Forms.MessageBoxButtons)">
+            <summary>
+            Display MessageBox
+            </summary>
+            <param name="messageText">Message text</param>
+            <param name="ButtonType">Buttons which need show</param>
+            <returns>Dialog result</returns>
+        </member>
+        <member name="M:Core.UI.MsgBox.Show(System.String,System.String)">
+            <summary>
+            Display MessageBox
+            </summary>
+            <param name="messageText">Message text</param>
+            <param name="Caption">MessageBox caption</param>
+            <returns>Dialog result</returns>
+        </member>
+        <member name="M:Core.UI.MsgBox.Show(System.String)">
+            <summary>
+            Display MessageBox
+            </summary>
+            <param name="messageText">Message text</param>
+            <returns>Dialog result</returns>
+        </member>
+        <member name="M:Core.UI.MsgBox.DeleteMessage">
+            <summary>
+            Default message for delete
+            </summary>
+            <returns>Dialog result</returns>
+        </member>
+        <member name="M:Core.UI.MsgBox.SaveMessage">
+            <summary>
+            Default message for save
+            </summary>
+            <returns>Dialog result</returns>
+        </member>
+        <member name="M:Core.UI.MsgBox.HasErrorMessage">
+            <summary>
+            Default message for eror on save
+            </summary>
+            <returns>Dialog result</returns>
+        </member>
+        <member name="M:Core.UI.MsgBox.HasErrorOnStatusChangeMessage">
+            <summary>
+            Default message for eror on status change
+            </summary>
+            <returns>Dialog result</returns>
+        </member>
+        <member name="F:Core.UI.MsgBox.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Core.UI.MsgBox.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Core.UI.MsgBox.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Core.frmDictionaryBase.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Core.frmDictionaryBase.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Core.frmDictionaryBase.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Core.UI.CoreTreeView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Core.UI.CoreTreeView.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Core.UI.CoreTreeView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Core.Helper">
+            <summary>
+            Common helper functions
+            </summary>
+        </member>
+        <member name="T:Core.DnsGate">
+            <summary>
+            TpaisWSProxy wrapper class
+            </summary>
+        </member>
+        <member name="T:Core.Dal.ISession">
+            <summary>
+            <seealso cref="T:NHibernate.ISession"/> papildinājumi ar loģiskās tranzakcijas elementiem.
+            </summary>
+        </member>
+        <member name="M:Core.Dal.ISession.CreateAndBuildCriteria``1(System.Collections.Generic.IList{Core.Dal.Expressions.CriterionBase})">
+            <summary>
+            Izveido NHibernate.ICriteria, balstoties uz nodoto <seealso cref="T:Core.Dal.Expressions.CriterionBase"/> sarakstu.
+            </summary>
+            <typeparam name="T">Mapota klase, kuri bûvē kritērijus</typeparam>
+            <param name="criteria"><seealso cref="T:Core.Dal.Expressions.CriterionBase"/> saraksts vai null.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Core.Dal.ISession.Commit">
+            <summary>
+            Saglabā sessijā veiktās izmaiņas.
+            </summary>
+            <remarks>
+            Neveiksmes (exception) gadījumā dati nebûs saglabāti, bet izmaiņas arī vēl nebûs zudušas.
+            Pēc datu koriģēšanas varēs atkal mēģināt Commit() izsaukumu.
+            </remarks>
+        </member>
+        <member name="M:Core.Dal.ISession.Commit(Core.Dal.ISession)">
+            <summary>
+            Obsolete! Simple Commit() will do.
+            Saglabā sessijā veiktās izmaiņas.
+            Veiksmes gadījumā atjauno mainīto objektu datus arī <paramref name="partner"/> sessijā.
+            </summary>
+            <param name="partner">Partnera sessija</param>
+            <remarks>
+            Neveiksmes (exception) gadījumā dati nebûs saglabāti, bet izmaiņas arī vēl nebûs zudušas.
+            Pēc datu koriģēšanas varēs atkal mēģināt Commit() izsaukumu.
+            </remarks>
+        </member>
+        <member name="M:Core.Dal.ISession.Rollback">
+            <summary>
+            Atceļ sessijā veiktās izmaiņas.
+            </summary>
+        </member>
+        <member name="E:Core.Dal.ISession.AfterRefresh">
+            <summary>
+            Atceļ sessijā veiktās izmaiņas.
+            </summary>
+        </member>
+        <member name="M:Core.Dal.Session.NHibernate#ISession#Contains(System.Type,System.Object)">
+            <summary>
+            Is there an instance associated with this Session?
+            </summary>
+            <param name="theType">A persistent class</param>
+            <param name="id">A valid identifier of an instance of the class</param>
+            <returns>true if the given instance is associated with this Session</returns>
+        </member>
+        <member name="M:Core.Dal.Session.NHibernate#ISession#Load``1(System.Object,NHibernate.LockMode)">
+            <summary>
+            Return the persistent instance of the given entity class with the given identifier,
+            obtaining the specified lock mode.
+            </summary>
+            <typeparam name="T">A persistent class</typeparam>
+            <param name="id">A valid identifier of an existing persistent instance of the class</param>
+            <param name="lockMode">The lock level</param>
+            <returns>the persistent instance</returns>
+        </member>
+        <member name="M:Core.Dal.Session.NHibernate#ISession#Load``1(System.Object)">
+            <summary>
+            Return the persistent instance of the given entity class with the given identifier,
+            assuming that the instance exists.
+            </summary>
+            <remarks>
+            You should not use this method to determine if an instance exists (use <see cref="M:NHibernate.ISession.Find(System.String)"/>
+            or its overloads instead). Use this only to retrieve an instance that you assume exists, where non-existence
+            would be an actual error.
+            </remarks>
+            <typeparam name="T">A persistent class</typeparam>
+            <param name="id">A valid identifier of an existing persistent instance of the class</param>
+            <returns>The persistent instance or proxy</returns>
+        </member>
+        <member name="M:Core.Dal.Session.NHibernate#ISession#Replicate(System.Object,NHibernate.ReplicationMode)">
+            <summary>
+            Persist all reachable transient objects, reusing the current identifier 
+            values. Note that this will not trigger the Interceptor of the Session.
+            </summary>
+            <param name="obj"></param>
+            <param name="replicationMode"></param>
+        </member>
+        <member name="M:Core.Dal.Session.NHibernate#ISession#Save(System.Object)">
+            <summary>
+            Persist the given transient instance, first assigning a generated identifier.
+            </summary>
+            <remarks>
+            Save will use the current value of the identifier property if the <c>Assigned</c>
+            generator is used.
+            </remarks>
+            <param name="obj">A transient instance of a persistent class</param>
+            <returns>The generated identifier</returns>
+        </member>
+        <member name="M:Core.Dal.Session.NHibernate#ISession#SaveOrUpdate(System.Object)">
+            <summary>
+            Either <c>Save()</c> or <c>Update()</c> the given instance, depending upon the value of
+            its identifier property.
+            </summary>
+            <remarks>
+            By default the instance is always saved. This behaviour may be adjusted by specifying
+            an <c>unsaved-value</c> attribute of the identifier property mapping
+            </remarks>
+            <param name="obj">A transient instance containing new or updated state</param>
+        </member>
+        <member name="M:Core.Dal.Session.NHibernate#ISession#SaveOrUpdateCopy(System.Object)">
+            <summary>
+            Copy the state of the given object onto the persistent object with the same
+            identifier. If there is no persistent instance currently associated with 
+            the session, it will be loaded. Return the persistent instance. If the 
+            given instance is unsaved or does not exist in the database, save it and 
+            return it as a newly persistent instance. Otherwise, the given instance
+            does not become associated with the session.
+            </summary>
+            <param name="obj">a transient instance with state to be copied</param>
+            <returns>an updated persistent instance</returns>
+        </member>
+        <member name="M:Core.Dal.Session.NHibernate#ISession#Refresh(System.Object)">
+            <summary>
+            Re-read the state of the given instance from the underlying database.
+            </summary>
+            <remarks>
+            <para>
+            It is inadvisable to use this to implement long-running sessions that span many
+            business tasks. This method is, however, useful in certain special circumstances.
+            </para>
+            <para>
+            For example,
+            <list>
+            	<item>Where a database trigger alters the object state upon insert or update</item>
+            	<item>After executing direct SQL (eg. a mass update) in the same session</item>
+            	<item>After inserting a <c>Blob</c> or <c>Clob</c></item>
+            </list>
+            </para>
+            </remarks>
+            <param name="obj">A persistent instance</param>
+        </member>
+        <member name="M:Core.Dal.Session.NHibernate#ISession#CreateCriteria(System.Type)">
+            <summary>
+            Creates a new <c>Criteria</c> for the entity class.
+            </summary>
+            <param name="persistentClass">The class to Query</param>
+            <returns>An ICriteria object</returns>
+        </member>
+        <member name="M:Core.Dal.Session.NHibernate#ISession#CreateQuery(System.String)">
+            <summary>
+            Create a new instance of <c>Query</c> for the given query string
+            </summary>
+            <param name="queryString">A hibernate query string</param>
+            <returns>The query</returns>
+        </member>
+        <member name="M:Core.Dal.Session.NHibernate#ISession#CreateFilter(System.Object,System.String)">
+            <summary>
+            Create a new instance of <c>Query</c> for the given collection and filter string
+            </summary>
+            <param name="collection">A persistent collection</param>
+            <param name="queryString">A hibernate query</param>
+            <returns>A query</returns>
+        </member>
+        <member name="M:Core.Dal.Session.NHibernate#ISession#Get(System.Type,System.Object)">
+            <summary>
+            Return the persistent instance of the given entity class with the given identifier, or null
+            if there is no such persistent instance. (If the instance, or a proxy for the instance, is
+            already associated with the session, return that instance or proxy.)
+            </summary>
+            <param name="clazz">a persistent class</param>
+            <param name="id">an identifier</param>
+            <returns>a persistent instance or null</returns>
+        </member>
+        <member name="M:Core.Dal.Session.NHibernate#ISession#Get(System.Type,System.Object,NHibernate.LockMode)">
+            <summary>
+            Return the persistent instance of the given entity class with the given identifier, or null
+            if there is no such persistent instance. Obtain the specified lock mode if the instance
+            exists.
+            </summary>
+            <param name="clazz">a persistent class</param>
+            <param name="id">an identifier</param>
+            <param name="lockMode">the lock mode</param>
+            <returns>a persistent instance or null</returns>
+        </member>
+        <member name="M:Core.Dal.Session.NHibernate#ISession#Get``1(System.Object)">
+            <summary>
+            Strongly-typed version of <see cref="M:NHibernate.ISession.Get(System.Type,System.Object)"/>
+            </summary>
+        </member>
+        <member name="T:Core.Dal.Manager">
+            <summary>
+            Datu piekļuves līmeņa pārvaldnieks.
+            </summary>
+        </member>
+        <member name="M:Core.Dal.Manager.SetDefaultConnectionTarget(Core.Dal.ConnectionTarget)">
+            <summary>
+            Uzstāda noklusēto pieslēgšanās vietu.
+            </summary>
+            <param name="target">Serveris, kam pieslēgties.</param>
+        </member>
+        <member name="M:Core.Dal.Manager.DecryptConfigLine(System.String)">
+            <summary>
+            Finds and decrypts passwords in the string
+            If no passwords is found the string is returned unchanged
+            </summary>
+        </member>
+        <member name="M:Core.Dal.Manager.OpenSession(Core.Dal.ConnectionTarget)">
+            <summary>
+            Atver jaunu sessiju.
+            </summary>
+            <param name="target">Serveris, pie kura slēgties.</param>
+            <returns>Sessija</returns>
+        </member>
+        <member name="M:Core.Dal.Manager.OpenSession">
+            <summary>
+            Atver jaunu sessiju.
+            Tiks izmantots serveris, kas norādīts ar <seealso cref="M:Core.Dal.Manager.SetDefaultConnectionTarget(Core.Dal.ConnectionTarget)"/>.
+            </summary>
+            <returns>Sessija</returns>
+        </member>
+        <member name="M:Core.frmBase.StatusChangePrompt(System.Object[])">
+            <summary>
+            1. parametrs -- jaunais statuss [string], pēc tam -- visi statusi,
+            pie kuriem jāpārjautā, vai tiešām mainīt
+            </summary>
+        </member>
+        <member name="F:Core.frmBase.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Core.frmBase.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Core.frmBase.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Core.UI.PeriodWithTimePickerSecond.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Core.UI.PeriodWithTimePickerSecond.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Core.UI.PeriodWithTimePickerSecond.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Core.Bll.IValidatable.IsValid">
+            <summary>
+            is record valid
+            </summary>
+        </member>
+        <member name="M:Core.Dal.IChildCollection`1.FilterItems(Core.Dal.Expressions.CriterionBase[])">
+            <summary>
+            Filters existing collection according to supplied criteria
+            </summary>
+            <param name="criteria"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Core.Bll.BusinessObjectBase`1">
+            <summary>
+            Base class for all application entities
+            </summary>
+            <typeparam name="IdType">Type used as a key to identify objects. Id property of an object is of type IdType</typeparam>
+        </member>
+        <member name="T:Core.Dal.ITracksDirty">
+            <summary>
+            Support for IsDirty property.
+            </summary>
+        </member>
+        <member name="P:Core.Dal.ITracksDirty.IsDirty">
+            <summary>
+            Inicates that object has some changes that are not persisted
+            </summary>
+        </member>
+        <member name="M:Core.Dal.ISynchronizable.CollectChangedItems(System.Collections.Queue,Core.Dal.Expressions.CriterionBase,System.Boolean,System.Collections.ArrayList)">
+            <summary>
+            Collects changed entities, cascading down to children
+            </summary>
+            <param name="target"></param>
+        </member>
+        <member name="F:Core.Dal.PersistentBindableEntity._isDirty">
+            <summary>
+            Pazīme, ka ierasksts ir jāsaglabā pie Flush().
+            </summary>
+        </member>
+        <member name="M:Core.Dal.PersistentBindableEntity.OnPropertyChanged(System.String)">
+            <summary>
+            Wrapperis <seealso cref="E:Core.Dal.PersistentBindableEntity.PropertyChanged"/> eventa izšaušanai.
+            Pie viena arī uzstāda IsDirty pazīmi.
+            </summary>
+            <param name="propertyName"></param>
+        </member>
+        <member name="M:Core.Dal.PersistentBindableEntity.GetSession">
+            <summary>
+            Atdod vai nu savu sessiju, vai jaunu, ja savas nav.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Core.Dal.PersistentBindableEntity.OnSaveNew">
+            <summary>
+            Called when a new object is added to session (INSERT will be performed on commit)
+            </summary>
+            <remarks>You can use this method to do some logging</remarks>
+        </member>
+        <member name="M:Core.Dal.PersistentBindableEntity.#ctor">
+            <summary>
+            Creates an instance of <seealso cref="T:Core.Dal.PersistentBindableEntity"/>
+            </summary>
+        </member>
+        <member name="M:Core.Dal.PersistentBindableEntity.#ctor(Core.Dal.ISession)">
+            <summary>
+            Creates an new instance of <seealso cref="T:Core.Dal.PersistentBindableEntity"/>
+            that is going to be attached to given <paramref name="session"/>
+            </summary>
+            <param name="session">Session that will be used to persist given instance</param>
+        </member>
+        <member name="E:Core.Dal.PersistentBindableEntity.PropertyChanged">
+            <summary>
+            PropertyChanged event is fired whenever a property of an object is changed
+            </summary>
+        </member>
+        <member name="M:Core.Bll.IBusinessObjectBase.GetPropertyValue``1(System.String)">
+            <summary>
+            Get given property value
+            </summary>
+        </member>
+        <member name="M:Core.Bll.IBusinessObjectBase.Validate">
+            <summary>
+            Validate object
+            </summary>
+        </member>
+        <member name="M:Core.Bll.IBusinessObjectBase.ValidateProperty(System.String)">
+            <summary>
+            Validate given propertu
+            </summary>
+        </member>
+        <member name="P:Core.Bll.IBusinessObjectBase.IsActive">
+            <summary>
+            for record delete set active to false
+            </summary>
+        </member>
+        <member name="P:Core.Bll.IBusinessObjectBase.DeleteNotes">
+            <summary>
+            Delete reason
+            </summary>
+        </member>
+        <member name="P:Core.Bll.IBusinessObjectBase.Object">
+            <summary>
+            for object type
+            </summary>
+        </member>
+        <member name="P:Core.Dal.IConstrained.CanSee">
+            <summary>
+            Propertija, kura nosaka, vai objektu drīkst rādīt lietotājam. Izsaucas no Get un List metodēm.
+            </summary>
+            <returns><c>true</c>, ja piekļuve objektam ir atļauta</returns>
+        </member>
+        <member name="P:Core.Dal.IConstrained.CanSave">
+            <summary>
+            Propertija, kura nosaka, vai objektu drīkst saglabāt.
+            </summary>
+            <returns><c>true</c>, ja objektu drīkst saglabāt</returns>
+            <remarks>
+            Ja atgriezīs false, objektu vienkārši KLUSI nesaglabās.
+            Tā kā reportējamu problēmu gadījumā labāk šajā funkcijā mest exceptionu.
+            </remarks>
+        </member>
+        <member name="P:Core.Dal.IConstrained.CanEdit">
+            <summary>
+            Determines whether current object can be edited
+            </summary>
+        </member>
+        <member name="P:Core.Dal.IConstrained.IsActive">
+            <summary>
+            Determines whether current object is active
+            </summary>
+        </member>
+        <member name="M:Core.Bll.BusinessObjectBase`1.CanDo(System.String)">
+            <summary>
+            Performs a security check for a given action. If current user role allows to perform the action it returns true, otherwise it returns false
+            </summary>
+            <param name="actionName">name of the action</param>
+            <returns></returns>
+        </member>
+        <member name="M:Core.Bll.BusinessObjectBase`1.Assign``1(System.String,``0,``0@)">
+            <summary>
+            Method used instead of standard assignment operator in setter properties of an object. Fires propertyChanged events, performs validation checks, maintains IsDirty flag.
+            </summary>
+            <typeparam name="PropertyType">type of the property to be assigned to (current property type).</typeparam>
+            <param name="propertyName">name of the property to be assigned to (current property).</param>
+            <param name="value">new value to be assigned</param>
+            <param name="member">member field name in which the actual property value is strored</param>
+            <returns>false if property value did not change, true otherwise</returns>
+        </member>
+        <member name="M:Core.Bll.BusinessObjectBase`1.CascadeDelete">
+            <summary>
+            Override this to delete (set IsActive, DeleteNotes) child objects
+            </summary>
+        </member>
+        <member name="M:Core.Bll.BusinessObjectBase`1.DeleteChild(System.Object)">
+            <summary>
+            Use this to delete (set IsActive, DeleteNotes) child object or collection
+            </summary>
+            <param name="member">child or child collection to delete</param>
+        </member>
+        <member name="M:Core.Bll.BusinessObjectBase`1.RIL(System.String)">
+            <summary>
+            Formating with lover case
+            </summary>
+        </member>
+        <member name="M:Core.Bll.BusinessObjectBase`1.RIN(System.String)">
+            <summary>
+            Return empti string if value is null
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Core.Bll.BusinessObjectBase`1.FIN(System.String,System.String)">
+            <summary>
+            Return empti string if value is null
+            </summary>
+        </member>
+        <member name="P:Core.Bll.BusinessObjectBase`1.DeleteNotes">
+            <summary>
+            Dzēšanas pamatojums
+            </summary>
+        </member>
+        <member name="F:Core.UI.PeriodPicker.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Core.UI.PeriodPicker.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Core.UI.PeriodPicker.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Core.Dal.ConnectionTargetEnum">
+            <summary>
+            Pieslēguma vietu kodi
+            </summary>
+        </member>
+        <member name="F:Core.Dal.ConnectionTargetEnum.Local">
+            <summary>
+            Lokālā datubāze. Konfigurāciju ņems no "hibernate.Local.cfg.xml".
+            </summary>
+        </member>
+        <member name="F:Core.Dal.ConnectionTargetEnum.Central">
+            <summary>
+            Centrālais serveris. Konfigurāciju ņems no "hibernate.Central.cfg.xml".
+            </summary>
+        </member>
+        <member name="T:Core.Dal.ConnectionTarget">
+            <summary>
+            Pieslēguma vietas
+            </summary>
+        </member>
+        <member name="T:Core.EnumWrapper`1">
+            <summary>
+            Wrapper for enumerations
+            </summary>
+            <typeparam name="T">enumeration</typeparam>
+        </member>
+        <member name="F:Core.EnumWrapper`1._currentTranslation">
+            <summary>
+            Cache storage for translation string
+            </summary>
+        </member>
+        <member name="M:Core.EnumWrapper`1.ToString">
+            <summary>
+            Localized ToString()
+            </summary>
+            <returns>Localized text representation</returns>
+        </member>
+        <member name="M:Core.EnumWrapper`1.#ctor(`0)">
+            <summary>
+            Constructor that wraps specific value
+            </summary>
+            <param name="value">Value to wrap</param>
+        </member>
+        <member name="M:Core.EnumWrapper`1.#ctor">
+            <summary>
+            Parameterless default constructor
+            </summary>
+        </member>
+        <member name="F:Core.EnumWrapper`1._listHolder">
+            <summary>
+            Lazy initialized IList that could be used in pickers
+            </summary>
+        </member>
+        <member name="F:Core.EnumWrapper`1._converter">
+            <summary>
+            Lazy initialized enum converter
+            </summary>
+        </member>
+        <member name="P:Core.EnumWrapper`1.Value">
+            <summary>
+            Conained enumeration value
+            </summary>
+        </member>
+        <member name="P:Core.EnumWrapper`1.StringValue">
+            <summary>
+            Unlocalized string value of contained enum value
+            </summary>
+        </member>
+        <member name="P:Core.EnumWrapper`1.Name">
+            <summary>
+            Localized text representation of value
+            </summary>
+        </member>
+        <member name="P:Core.EnumWrapper`1.ListSource">
+            <summary>
+            Property to use as a binding source for value pickers
+            </summary>
+        </member>
+        <member name="F:Core.Dal.ConnectionTarget.Local">
+            <summary>
+            Lokālā datubāze. Konfigurāciju ņems no "hibernate.Local.cfg.xml".
+            </summary>
+        </member>
+        <member name="F:Core.Dal.ConnectionTarget.Central">
+            <summary>
+            Centrālais serveris. Konfigurāciju ņems no "hibernate.Central.cfg.xml".
+            </summary>
+        </member>
+        <member name="M:Core.Bll.CommonBusinessRules.CheckOneOfTwoRequired(Core.Bll.IBusinessObjectBase,System.Object[])">
+            <summary>
+            return eror if one of to is not filled
+            </summary>
+        </member>
+        <member name="M:Core.Bll.CommonBusinessRules.CheckOneOfThreeRequired(Core.Bll.IBusinessObjectBase,System.Object[])">
+            <summary>
+            Atgriež erroru, ja neviens no 3 parametriem nav 'True'
+            </summary>
+        </member>
+        <member name="M:Core.Bll.CommonBusinessRules.CheckBothBooleanTrue(Core.Bll.IBusinessObjectBase,System.Object[])">
+            <summary>
+            return error if both are true
+            </summary>
+        </member>
+        <member name="T:Core.UI.GridButtonHelper">
+            <summary>
+            control for adding and deleting records
+            </summary>
+        </member>
+        <member name="M:Core.UI.GridButtonHelper.#ctor">
+            <summary>
+            Initialize GridButtonHelper
+            </summary>
+        </member>
+        <member name="M:Core.UI.GridButtonHelper.btnDelete_Click(System.Object,System.EventArgs)">
+            <summary>
+            Record delete
+            </summary>
+        </member>
+        <member name="P:Core.UI.GridButtonHelper.Grid">
+            <summary>
+            Return grid witw which will work helper
+            </summary>
+        </member>
+        <member name="P:Core.UI.GridButtonHelper.GridDataSource">
+            <summary>
+            Return grid bindingsource for btnDelete enabled change
+            </summary>
+        </member>
+        <member name="P:Core.UI.GridButtonHelper.DeleteReason">
+            <summary>
+            Is necessary delete reason form
+             </summary>
+        </member>
+        <member name="P:Core.UI.GridButtonHelper.ShowAdd">
+            <summary>
+            Display Add button
+             </summary>
+        </member>
+        <member name="P:Core.UI.GridButtonHelper.ShowDelete">
+            <summary>
+            Display Delete button
+             </summary>
+        </member>
+        <member name="P:Core.UI.GridButtonHelper.UseCanDelete">
+            <summary>
+            Display Delete button
+             </summary>
+        </member>
+        <member name="P:Core.UI.GridButtonHelper.ShowChk">
+            <summary>
+            Display checkbox
+             </summary>
+        </member>
+        <member name="P:Core.UI.GridButtonHelper.DeleteReasonColumn">
+            <summary>
+            Delete reason column name in grid
+            </summary>
+        </member>
+        <member name="E:Core.UI.GridButtonHelper.OnAddNew">
+            <summary>
+            Define new record adding event
+            </summary>
+        </member>
+        <member name="E:Core.UI.GridButtonHelper.OnDelete">
+            <summary>
+            Define record delete event
+            </summary>
+        </member>
+        <member name="P:Core.UI.GridButtonHelper.ShowActive">
+            <summary>
+            Set checkbox status for filtr active records
+            </summary>
+        </member>
+        <member name="T:Core.UI.GridButtonHelper.AddNewEventDelegate">
+            <summary>
+            Define delegate for new record
+            </summary>
+        </member>
+        <member name="T:Core.UI.GridButtonHelper.DeleteEventDelegate">
+            <summary>
+            Define delegate for delete record
+            </summary>
+        </member>
+        <member name="T:Core.UI.GridButtonHelper.AddNewEventArgs">
+            <summary>
+            New record adding arguments
+            </summary>
+        </member>
+        <member name="F:Core.UI.GridButtonHelper.AddNewEventArgs.AddedObject">
+            <summary>
+            New record
+            </summary>
+        </member>
+        <member name="F:Core.UI.GridButtonHelper.AddNewEventArgs.CancelAdd">
+            <summary>
+            Cancel adding new record
+            </summary>
+        </member>
+        <member name="T:Core.UI.GridButtonHelper.DeleteEventArgs">
+            <summary>
+            Record delete reason arguments
+            </summary>
+        </member>
+        <member name="F:Core.UI.GridButtonHelper.DeleteEventArgs.Object">
+            <summary>
+            Delete reason
+            </summary>
+        </member>
+        <member name="F:Core.UI.GridButtonHelper.DeleteEventArgs.CancelDelete">
+            <summary>
+            Cancel deleting record
+            </summary>
+        </member>
+        <member name="T:Core.UI.SearchControlHelper">
+            <summary>
+            Helper functions for "TPAIS standard" search controls.
+            </summary>
+            <remarks>
+            "TPAIS standard" search control:
+            * Table layout with (at least) 2 columns.
+            * Each row describes a single search criteria.
+            * Checkbox in first column determines if this criteria has to be included in search.
+            * The rest of the row is occupied by controls that contain criteria values.
+            * Last row is special: while there can be usual checkbox in first column,
+              the rest of the row is empty or is occupied by command buttons, like btnShowAll, btnReset, btnFind.
+            </remarks>
+        </member>
+        <member name="M:Core.UI.SearchControlHelper.Collapse(System.Windows.Forms.TableLayoutPanel,System.Windows.Forms.Control)">
+            <summary>
+            Collapses the <paramref name="panTableLayout"/> vertically, by hiding all controls that are in "unchecked" rows.
+            </summary>
+            <param name="panTableLayout">"Standard" table layout of the search control.</param>
+            <param name="ctlShowAll">Control (usually command button) that is used to "Expand" the layout.</param>
+            <remarks>
+            Exceptions:
+            * Rows that have disabled checkbox will be always hidden
+            * Last row is always kept visible
+            </remarks>
+            <seealso cref="M:Core.UI.SearchControlHelper.Expand(System.Windows.Forms.TableLayoutPanel,System.Windows.Forms.Control)"/>
+        </member>
+        <member name="M:Core.UI.SearchControlHelper.Expand(System.Windows.Forms.TableLayoutPanel,System.Windows.Forms.Control)">
+            <summary>
+            Expands the <paramref name="panTableLayout"/> vertically, by showing all rows.
+            </summary>
+            <param name="panTableLayout">"Standard" table layout of the search control.</param>
+            <param name="ctlShowAll">Control (usually command button) that is used to "Expand" the layout.</param>
+            <remarks>
+            Exceptions:
+            * Rows that have disabled checkbox will be always hidden
+            * Last row is always visible
+            </remarks>
+        </member>
+        <member name="M:Core.UI.SearchControlHelper.SetupEnabledWhenCheckedBindings(System.Windows.Forms.TableLayoutPanel)">
+            <summary>
+            Binds the Enabled property of all controls to the Checked property of checkboxes from column 0
+            of the same row in the tableLayoutPanel.
+            Exception: no bindings for the last row.
+            </summary>
+            <param name="panTableLayout">"Standard" table layout of the search control.</param>
+            <remarks></remarks>
+        </member>
+        <member name="M:Core.UI.SearchControlHelper.BindByNamingConventions(System.Windows.Forms.TableLayoutPanel,System.Object)">
+            <summary>
+            Binds controls in the tableLayoutPanel to datamembers of the dataSource, using simple naming conventions.
+            </summary>
+            <param name="panTableLayout">"Standard" table layout of the search control.</param>
+            <param name="dataSource">Search object associated with the search control.</param>
+            <remarks>
+            Checkboxes "chk..." are bound to properties that are named "Use..."
+            Textboxes "txt..." are bound to properties that are named "..."
+            Dx.DateEdits "dtp..." are bound to properties that are named "..."
+            Dx.TimeEdits "dtp..." are bound to properties that are named "..."
+            Dx.ButtonEdits "txt..." are bound to properties that are named "..."
+            Controls are bound recursive, using parent control names as prefixes.
+                Example: If container's name is "pnlValid", and it contains DateEdit with name dtpFrom,
+                         then dtpFrom.EditValue will be bound to dataSource's property ValidFrom.
+            </remarks>
+        </member>
+        <member name="M:Core.UI.SearchControlHelper.BindRecursive(System.Windows.Forms.Control,System.Object,System.String)">
+            <summary>
+            Tries to bind a control or it's descendants, if any
+            </summary>
+            <param name="ctl">Control (possibly a Container)</param>
+            <param name="dataSource">Data source to bind with</param>
+            <param name="prefix">Prefix to use </param>
+        </member>
+        <member name="M:Core.UI.SearchControlHelper.AddBinding(System.Windows.Forms.Control,System.String,System.Object,System.String,System.String)">
+            <summary>
+            Tries to bind. If dataMember does not exist, shows message in debug mode.
+            </summary>
+            <param name="ctl">Control to bind.</param>
+            <param name="propertyName">Property of control to bind.</param>
+            <param name="dataSource">Data source to bind to.</param>
+            <param name="dataMember">Data member to bind to.</param>
+        </member>
+        <member name="F:Core.UI.PeriodWithTimePicker.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Core.UI.PeriodWithTimePicker.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Core.UI.PeriodWithTimePicker.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Core.Bll.Entities`1.MergeProperty(System.Collections.Generic.IList{`0},System.ComponentModel.PropertyDescriptor)">
+            <summary>
+            Merges designated property values of mergedItems list to the respective items in the collection 
+            </summary>
+            <param name="mergedItems"></param>
+            <param name="prop"></param>
+        </member>
+        <member name="P:Core.Bll.Entities`1.DeleteNotes">
+            <summary>
+            IBusinessObjectBase interface propertu
+            </summary>
+        </member>
+        <member name="F:Core.UI.RadioGroup.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Core.UI.RadioGroup.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Core.UI.RadioGroup.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Core.UI.RadioGroup.ChangeEventDelegate">
+            <summary>
+            Define delegate for changing property
+            </summary>
+        </member>
+        <member name="T:Core.UI.RadioGroup.ChangeEventArgs">
+            <summary>
+            Property change arguments
+            </summary>
+        </member>
+        <member name="F:Core.UI.RadioGroup.ChangeEventArgs.OldValue">
+            <summary>
+            Old value
+            </summary>
+        </member>
+        <member name="F:Core.UI.RadioGroup.ChangeEventArgs.NewValue">
+            <summary>
+            New value
+            </summary>
+        </member>
+        <member name="F:Core.UI.RadioGroup.ChangeEventArgs.Cancel">
+            <summary>
+            Cancel changing
+            </summary>
+        </member>
+        <member name="F:Core.UI.frmClassifier.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Core.UI.frmClassifier.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Core.UI.frmClassifier.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Core.DictionaryDesigner.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Core.DictionaryDesigner.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Core.DictionaryDesigner.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Core.UI.dlgQuestion.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Core.UI.dlgQuestion.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Core.UI.dlgQuestion.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Core.UI.BindingHelper">
+            <summary>
+            Helper functions to deal with binding information
+            </summary>
+        </member>
+        <member name="M:Core.UI.BindingHelper.BoundTypeFinder(System.Windows.Forms.Control,System.String,System.Boolean@)">
+            <summary>
+            
+            </summary>
+            <param name="control"></param>
+            <param name="propertyName"></param>
+            <param name="isCollection"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:Core.ReflectionHelper.PropertyExists(System.Object,System.String)">
+            <summary>
+            Checks for existence of property with given name in o (if o is System.Type) or in o.GetType()
+            </summary>
+            <param name="o">object or Type</param>
+            <param name="propertyName">Name of the property to check</param>
+            <returns></returns>
+        </member>
+        <member name="M:Core.ReflectionHelper.SetMemberValue(System.Object,System.String,System.Object)">
+            <summary>
+            Sets member value using specified propertyPath.
+            Looks thorough instance fields and properties.
+            </summary>
+            <param name="o">object to start with</param>
+            <param name="propertyPath">member chain to set</param>
+            <param name="value">value to set</param>
+            <returns></returns>
+        </member>
+        <member name="M:Core.ReflectionHelper.LocateProperty(System.Type,System.String,System.Reflection.BindingFlags)">
+            <summary>
+            Recursively searches for given property thru base classes chain
+            </summary>
+            <param name="t">type (class) to start with</param>
+            <param name="propertyName">property to search</param>
+            <param name="bindingFlags">binding flags</param>
+            <returns><seealso cref="T:System.Reflection.PropertyInfo"/> of found property or <c>null</c></returns>
+            <remarks>
+            For things to work correctly you have to choose appropriate binding flags. It is necessary to specify
+            at least one of <seealso cref="F:System.Reflection.BindingFlags.Instance"/> or <seealso cref="F:System.Reflection.BindingFlags.Static"/>,
+            and at least one of <seealso cref="F:System.Reflection.BindingFlags.Public"/> or <seealso cref="F:System.Reflection.BindingFlags.NonPublic"/>  
+            </remarks>
+        </member>
+        <member name="T:Core.AuditMessages">
+            <summary>
+            Core Notikumu veidi (notikumu žurnālam)
+            </summary>
+        </member>
+        <member name="T:Core.Err">
+            <summary>
+            Enumeration of supported error messages
+            </summary>
+        </member>
+        <member name="T:Core.Msg">
+            <summary>
+            Enumeration of supported informational messages and queries
+            </summary>
+        </member>
+        <member name="T:Core.ErrMsg">
+            <summary>
+            Helper class for building localized messages
+            </summary>
+        </member>
+        <member name="M:Core.ErrMsg.GetText(System.String,System.Object,System.Object[])">
+            <summary>
+            Returns message that corresponds to code {<paramref name="prefix"/>}.{<paramref name="msgCodeObject"/>.ToString()}
+            </summary>
+            <param name="prefix">message code prefix</param>
+            <param name="msgCodeObject">object, whose ToString() method will be used to generate the rest of the code</param>
+            <param name="parameters">optional message parameters</param>
+            <returns>Localized message string with parameters applied</returns>
+        </member>
+        <member name="M:Core.ErrMsg.GetText(System.Enum,System.Object[])">
+            <summary>
+            Returns error message that corresponds to code ERR.{<paramref name="errMsg"/>.ToString()}
+            </summary>
+            <param name="msgEnum">error message enum value</param>
+            <param name="parameters">optional message parameters</param>
+            <returns>Localized error message string with parameters applied</returns>
+        </member>
+        <member name="T:Core.DesignerDetector">
+            <summary>
+            Статический класс, предназначенный для распознавания режима работы -
+            design-time/run-time.</summary>
+            <remarks>Этот класс написан по причине того, что в некоторых случаях, когда форма (компонент) создается
+            в дизайнере, нельзя определить режим (поскольку <see cref="P:System.ComponentModel.IComponent.Site"/> равен null).</remarks>
+        </member>
+        <member name="F:Core.DesignerDetector.START_FRAME">
+            <summary>
+            Номер фрейма стека, начиная с которого ищем <see cref="F:Core.DesignerDetector.sm_Interface_Match"/>.</summary>
+            <remarks>Чем больше число, тем быстрее будем искать (но менее надежно).</remarks>
+        </member>
+        <member name="F:Core.DesignerDetector.sm_Interface_Match">
+            <summary>
+            В методе <see cref="M:Core.DesignerDetector.IsComponentInDesignMode(System.ComponentModel.IComponent)"/> происходит
+            поиск по стеку вызовов типа, который реализует данный интерфейс (<see cref="T:System.ComponentModel.Design.IDesignerHost"/>).</summary>
+        </member>
+        <member name="M:Core.DesignerDetector.IsComponentInDesignMode(System.ComponentModel.IComponent)">
+            <summary>
+            Проверяет, находится ли компонент в режиме дизайна.</summary>
+            <param name="component">Компонент.</param>
+            <returns>true, если компонент открыт в дизайнере.</returns>
+            <remarks>В этом методе происходит
+            поиск по стеку вызовов типа, который реализует интерфейс (<see cref="F:Core.DesignerDetector.sm_Interface_Match"/>).</remarks>
+        </member>
+        <member name="M:Core.DesignerDetector.#ctor">
+            <summary>
+            Предотвращает создание экземпляра класса.</summary>
+        </member>
+        <member name="M:Core.Dal.Interceptor.OnLoad(System.Object,System.Object,System.Object[],System.String[],NHibernate.Type.IType[])">
+            <summary>
+            Called just before an object is initialized
+            </summary>
+            <param name="entity"></param>
+            <param name="id"></param>
+            <param name="propertyNames"></param>
+            <param name="state"></param>
+            <param name="types"></param>
+            <remarks>
+            The interceptor may change the <c>state</c>, which will be propagated to the persistent
+            object. Note that when this method is called, <c>entity</c> will be an empty
+            uninitialized instance of the class.</remarks>
+            <returns><c>true</c> if the user modified the <c>state</c> in any way</returns>
+        </member>
+        <member name="M:Core.Dal.Interceptor.OnFlushDirty(System.Object,System.Object,System.Object[],System.Object[],System.String[],NHibernate.Type.IType[])">
+            <summary>
+            Called when an object is detected to be dirty, during a flush.
+            </summary>
+            <param name="currentState"></param>
+            <param name="entity"></param>
+            <param name="id"></param>
+            <param name="previousState"></param>
+            <param name="propertyNames"></param>
+            <param name="types"></param>
+            <remarks>
+            The interceptor may modify the detected <c>currentState</c>, which will be propagated to
+            both the database and the persistent object. Note that all flushes end in an actual
+            synchronization with the database, in which as the new <c>currentState</c> will be propagated
+            to the object, but not necessarily (immediately) to the database. It is strongly recommended
+            that the interceptor <b>not</b> modify the <c>previousState</c>.
+            </remarks>
+            <returns><c>true</c> if the user modified the <c>currentState</c> in any way</returns>
+        </member>
+        <member name="M:Core.Dal.Interceptor.OnSave(System.Object,System.Object,System.Object[],System.String[],NHibernate.Type.IType[])">
+            <summary>
+            Called before an object is saved
+            </summary>
+            <param name="entity"></param>
+            <param name="id"></param>
+            <param name="propertyNames"></param>
+            <param name="state"></param>
+            <param name="types"></param>
+            <remarks>
+            The interceptor may modify the <c>state</c>, which will be used for the SQL <c>INSERT</c>
+            and propagated to the persistent object
+            </remarks>
+            <returns><c>true</c> if the user modified the <c>state</c> in any way</returns>
+        </member>
+        <member name="M:Core.Dal.Interceptor.OnDelete(System.Object,System.Object,System.Object[],System.String[],NHibernate.Type.IType[])">
+            <summary>
+            Called before an object is deleted
+            </summary>
+            <param name="entity"></param>
+            <param name="id"></param>
+            <param name="propertyNames"></param>
+            <param name="state"></param>
+            <param name="types"></param>
+            <remarks>
+            It is not recommended that the interceptor modify the <c>state</c>.
+            </remarks>
+        </member>
+        <member name="M:Core.Dal.Interceptor.PreFlush(System.Collections.ICollection)">
+            <summary>
+            Called before a flush
+            </summary>
+            <param name="entities">The entities</param>
+        </member>
+        <member name="M:Core.Dal.Interceptor.PostFlush(System.Collections.ICollection)">
+            <summary>
+            Called after a flush that actually ends in execution of the SQL statements required to
+            synchronize in-memory state with the database.
+            </summary>
+            <param name="entities">The entitites</param>
+        </member>
+        <member name="M:Core.Dal.Interceptor.IsUnsaved(System.Object)">
+            <summary>
+            Called when a transient entity is passed to <c>SaveOrUpdate</c>.
+            </summary>
+            <remarks>
+            The return value determines if the object is saved
+            <list>
+            	<item><c>true</c> - the entity is passed to <c>Save()</c>, resulting in an <c>INSERT</c></item>
+            	<item><c>false</c> - the entity is passed to <c>Update()</c>, resulting in an <c>UPDATE</c></item>
+            	<item><c>null</c> - Hibernate uses the <c>unsaved-value</c> mapping to determine if the object is unsaved</item>
+            </list>
+            </remarks>
+            <param name="entity">A transient entity</param>
+            <returns></returns>
+        </member>
+        <member name="M:Core.Dal.Interceptor.FindDirty(System.Object,System.Object,System.Object[],System.Object[],System.String[],NHibernate.Type.IType[])">
+            <summary>
+            Called from <c>Flush()</c>. The return value determines whether the entity is updated
+            </summary>
+            <remarks>
+            	<list>
+            		<item>an array of property indicies - the entity is dirty</item>
+            		<item>an empty array - the entity is not dirty</item>
+            		<item><c>null</c> - use Hibernate's default dirty-checking algorithm</item>
+            	</list>
+            </remarks>
+            <param name="entity">A persistent entity</param>
+            <param name="currentState"></param>
+            <param name="id"></param>
+            <param name="previousState"></param>
+            <param name="propertyNames"></param>
+            <param name="types"></param>
+            <returns>An array of dirty property indicies or <c>null</c> to choose default behavior</returns>
+        </member>
+        <member name="M:Core.Dal.Interceptor.Instantiate(System.Type,System.Object)">
+            <summary>
+            Instantiate the entity class. Return <c>null</c> to indicate that Hibernate should use the default
+            constructor of the class
+            </summary>
+            <param name="type">A mapped type</param>
+            <param name="id">The identifier of the new instance</param>
+            <returns>An instance of the class, or <c>null</c> to choose default behaviour</returns>
+        </member>
+        <member name="T:Core.Dal.CriteriaBuilder">
+            <summary>
+            Contains helper methods for building various non-trivial Criteria expressions
+            </summary>
+        </member>
+        <member name="M:Core.Dal.CriteriaBuilder.IntervalsOverlap(System.String,System.String,System.Object,System.Object)">
+            <summary>
+            Do intervals overlap?
+            </summary>
+            <param name="propertyFrom">Startpoint property of interval to be checked</param>
+            <param name="propertyUntil">Endpoint property of interval to be checked</param>
+            <param name="valueFrom">Startpoint value of interval to be compared with</param>
+            <param name="valueUntil">Endpoint value of interval to be compared with</param>
+            <returns>Criterion expression</returns>
+        </member>
+        <member name="M:Core.Dal.CriteriaBuilder.IsInCollection``1(System.String,System.Collections.Generic.ICollection{``0})">
+            <summary>
+            Builds "In" expression, converting passed ICollection{T} to an array
+            </summary>
+            <typeparam name="T">Type of items in the collection</typeparam>
+            <param name="propertyName">Property to be checked</param>
+            <param name="collection">Collection</param>
+            <returns>Criterion expression</returns>
+        </member>
+        <member name="M:Core.Dal.CriteriaBuilder.IsNotInCollection``1(System.String,System.Collections.Generic.ICollection{``0})">
+            <summary>
+            Builds "Not In" expression, converting passed ICollection{T} to an array
+            </summary>
+            <typeparam name="T">Type of items in the collection</typeparam>
+            <param name="propertyName">Property to be checked</param>
+            <param name="collection">Collection</param>
+            <returns>Criterion expression</returns>
+        </member>
+        <member name="M:Core.Dal.CriteriaBuilder.MultiValueLike(System.String,System.String,System.Char)">
+            <summary>
+            Generates Or'ed Like expressions, splitting the parameter string according to the separator character
+            </summary>
+            <param name="propertyName">Property to be checked</param>
+            <param name="value">Single or multiple values</param>
+            <param name="separator">Separator used</param>
+            <returns></returns>
+        </member>
+        <member name="M:Core.Dal.CriteriaBuilder.IntMultiValueLike(System.String,System.String,System.Char)">
+            <summary>
+            Generates Or'ed Like expressions, splitting the parameter string according to the separator character
+            </summary>
+            <param name="propertyName">Property to be checked</param>
+            <param name="value">Single or multiple values</param>
+            <param name="separator">Separator used</param>
+            <returns></returns>
+        </member>
+        <member name="M:Core.Dal.CriteriaBuilder.MultiValueLike(System.String,System.String)">
+            <summary>
+            Overloaded version of <seealso cref="M:Core.Dal.CriteriaBuilder.MultiValueLike(System.String,System.String,System.Char)"/>
+            </summary>
+            <param name="propertyName"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Core.Dal.CriteriaBuilder.CreatePickerSource(System.Object)">
+            <summary>
+            Generates expression (DeleteTime IS NULL) OR (Id == @existingId) for usage in drop-downs
+            </summary>
+            <param name="existingId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Core.DbUpdates.DbUpdater">
+            <summary>
+            provides functionality to perfom local DB updates, using *.sql update scripts
+            installed in .\DbUpdates directory 
+            </summary>
+        </member>
+        <member name="M:Core.DbUpdates.DbUpdater.UpdateLocalDb">
+            <summary>
+            perfroms local DB update, executing all required sql skripts
+            </summary>
+        </member>
+        <member name="M:Core.DbUpdates.DbUpdater.UpdateNeeded">
+            <summary>
+            checks, whether the local DB needs updates
+            </summary>
+        </member>
+        <member name="M:Core.DbUpdates.DbUpdater.VersionFromUpdateScripts">
+            <summary>
+            returns the biggest version number from the update scripts
+            </summary>
+        </member>
+        <member name="P:Core.DbUpdates.DbUpdater.CurrentLocalDBVersion">
+            <summary>
+            current version of local DB
+            </summary>
+        </member>
+        <member name="P:Core.DbUpdates.DbUpdater.RequiredDbVersion">
+            <summary>
+            latest version from the DB update scripts
+            </summary>
+        </member>
+        <member name="T:Core.DbUpdates.DbUpdater.myFileInfoComparer">
+            <summary>
+            is used to compare two FileInfo objects in reverse order
+            </summary>
+        </member>
+        <member name="M:Core.Dal.Impl.NHChildCollection`1.#ctor(NHibernate.Engine.ISessionImplementor)">
+            <summary>
+            Initializes an instance of the <see cref="T:Core.Dal.Impl.NHChildCollection`1"/>
+            in the <paramref name="session"/>.
+            </summary>
+            <param name="session">The <see cref="T:NHibernate.Engine.ISessionImplementor"/> the bag is in.</param>
+        </member>
+        <member name="M:Core.Dal.Impl.NHChildCollection`1.#ctor(NHibernate.Engine.ISessionImplementor,System.Collections.Generic.IList{`0})">
+            <summary>
+            Initializes an instance of the <see cref="T:Core.Dal.Impl.NHChildCollection`1"/>
+            that wraps an existing <see cref="T:Core.Dal.IChildCollection`1"/> in the <paramref name="session"/>.
+            </summary>
+            <param name="session">The <see cref="T:NHibernate.Engine.ISessionImplementor"/> the bag is in.</param>
+            <param name="coll">The <see cref="T:System.Collections.Generic.IList`1"/> to wrap.</param>
+        </member>
+    </members>
+</doc>

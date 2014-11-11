@@ -1,0 +1,1432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2480A2EC-8686-4902-9B8B-421D83485299}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Client.My.MyApplication</StartupObject>
+    <RootNamespace>Client</RootNamespace>
+    <AssemblyName>Client</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <OptionStrict>Off</OptionStrict>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>9DD8569D5A568D6FC70BE8EF55742C4D8815CE5E</ManifestCertificateThumbprint>
+    <ManifestKeyFile>key.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <ApplicationIcon>medical.ico</ApplicationIcon>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>\\192.168.55.100\Application\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\192.168.1.246\Application\</InstallUrl>
+    <UpdateUrl>\\192.168.1.246\Application\</UpdateUrl>
+    <ProductName>PreMedic</ProductName>
+    <PublisherName>Premium Medical</PublisherName>
+    <MinimumRequiredVersion>1.0.0.245</MinimumRequiredVersion>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>246</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Client.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <CodeAnalysisRuleSet>Migrated rules for Client.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Client.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v6.1, Version=6.1.5.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\DevExpress\DevExpress.Data.v6.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v6.1, Version=6.1.5.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\DevExpress\DevExpress.Utils.v6.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v6.1, Version=6.1.5.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\DevExpress\DevExpress.XtraEditors.v6.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v6.1, Version=6.1.5.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\DevExpress\DevExpress.XtraGrid.v6.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v6.1, Version=6.1.5.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHibernate, Version=1.2.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\NHibernate\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NVelocity, Version=0.5.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.Designer.vb">
+      <DependentUpon>AboutBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Atbalsta Procesi\frmAccountingByPatient.Designer.vb">
+      <DependentUpon>frmAccountingByPatient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmAccountingByPatient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmIncomeSummaryFromPatient.Designer.vb">
+      <DependentUpon>frmIncomeSummaryFromPatient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmIncomeSummaryFromPatient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmAccountingByDate.Designer.vb">
+      <DependentUpon>frmAccountingByDate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmAccountingByDate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmActivity.Designer.vb">
+      <DependentUpon>frmActivity.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmActivity.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmActivityDateSelector.Designer.vb">
+      <DependentUpon>frmActivityDateSelector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmActivityDateSelector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmActivityEdit.Designer.vb">
+      <DependentUpon>frmActivityEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmActivityEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmCampaign.Designer.vb">
+      <DependentUpon>frmCampaign.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmCampaign.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmCampaignPatients.Designer.vb">
+      <DependentUpon>frmCampaignPatients.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmCampaignPatients.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmContacts.Designer.vb">
+      <DependentUpon>frmContacts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmContacts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmIncomeSummary.Designer.vb">
+      <DependentUpon>frmIncomeSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmIncomeSummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmInsurance.Designer.vb">
+      <DependentUpon>frmInsurance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmInsurance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmLocalSettings.Designer.vb">
+      <DependentUpon>frmLocalSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmLocalSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmPrimarasAprupesProfils.Designer.vb">
+      <DependentUpon>frmPrimarasAprupesProfils.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmPrimarasAprupesProfils.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmPrimarasAprupesProfiluSaraksts.Designer.vb">
+      <DependentUpon>frmPrimarasAprupesProfiluSaraksts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmPrimarasAprupesProfiluSaraksts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Localization\Languages.vb" />
+    <Compile Include="Planotaji\frmNorikojumi.Designer.vb">
+      <DependentUpon>frmNorikojumi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Planotaji\frmNorikojumi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Programmas\frmPatientProgrammPayment.Designer.vb">
+      <DependentUpon>frmPatientProgrammPayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Programmas\frmPatientProgrammPayment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Programmas\frmProgrammTemplateEdit.Designer.vb">
+      <DependentUpon>frmProgrammTemplateEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Programmas\frmProgrammTemplateEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Programmas\frmProgrammTemplateList.Designer.vb">
+      <DependentUpon>frmProgrammTemplateList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Programmas\frmProgrammTemplateList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmResetPassword.Designer.vb">
+      <DependentUpon>frmResetPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmResetPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmSMSManager.Designer.vb">
+      <DependentUpon>frmSMSManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmSMSManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmUserWorkTimeDeletedRecordList.Designer.vb">
+      <DependentUpon>frmUserWorkTimeDeletedRecordList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmUserWorkTimeDeletedRecordList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmUserWorkTimeEdit.Designer.vb">
+      <DependentUpon>frmUserWorkTimeEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmUserWorkTimeEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPatientsAdvanced.Designer.vb">
+      <DependentUpon>frmPatientsAdvanced.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPatientsAdvanced.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPatientVisitList.Designer.vb">
+      <DependentUpon>frmPatientVisitList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPatientVisitList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubscription.Designer.vb">
+      <DependentUpon>frmSubscription.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSubscription.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documents\frmRtgSummary.Designer.vb">
+      <DependentUpon>frmRtgSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\frmRtgSummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documents\frmAttachment.Designer.vb">
+      <DependentUpon>frmAttachment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\frmAttachment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documents\frmPrescription.Designer.vb">
+      <DependentUpon>frmPrescription.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\frmPrescription.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPresentCards.Designer.vb">
+      <DependentUpon>frmPresentCards.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPresentCards.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubscriptionDetail.Designer.vb">
+      <DependentUpon>frmSubscriptionDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSubscriptionDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubscriptionPaymentSet.Designer.vb">
+      <DependentUpon>frmSubscriptionPaymentSet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSubscriptionPaymentSet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planotaji\frmGroupWorkEdit.Designer.vb">
+      <DependentUpon>frmGroupWorkEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Planotaji\frmGroupWorkEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planotaji\frmGroupWorkVisitsEdit.Designer.vb">
+      <DependentUpon>frmGroupWorkVisitsEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Planotaji\frmGroupWorkVisitsEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planotaji\frmVisitEdit.Designer.vb">
+      <DependentUpon>frmVisitEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Planotaji\frmVisitEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planotaji\frmPlanner.Designer.vb">
+      <DependentUpon>frmPlanner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Planotaji\frmPlanner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planotaji\frmVisits.Designer.vb">
+      <DependentUpon>frmVisits.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Planotaji\frmVisits.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planotaji\frmWorkTime.Designer.vb">
+      <DependentUpon>frmWorkTime.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Planotaji\frmWorkTime.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPatients.Designer.vb">
+      <DependentUpon>frmPatients.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPatients.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmClassifierLinkingManagement.Designer.vb">
+      <DependentUpon>frmClassifierLinkingManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmClassifierLinkingManagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmRolesManagement.Designer.vb">
+      <DependentUpon>frmRolesManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmRolesManagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmSystemParameters.designer.vb">
+      <DependentUpon>frmSystemParameters.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmSystemParameters.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Programmas\frmPatientProgrammEdit.Designer.vb">
+      <DependentUpon>frmPatientProgrammEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Programmas\frmPatientProgrammEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Programmas\frmPatientProgrammList.Designer.vb">
+      <DependentUpon>frmPatientProgrammList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Programmas\frmPatientProgrammList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Programmas\frmProgrammPaymentSet.Designer.vb">
+      <DependentUpon>frmProgrammPaymentSet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Programmas\frmProgrammPaymentSet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\frmSale.Designer.vb">
+      <DependentUpon>frmSale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\frmSale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\frmSalesList.Designer.vb">
+      <DependentUpon>frmSalesList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\frmSalesList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search Controls\ctlPatientFindAdvanced.Designer.vb">
+      <DependentUpon>ctlPatientFindAdvanced.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Search Controls\ctlPatientFindAdvanced.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Search Controls\ctlProgrammFind.Designer.vb">
+      <DependentUpon>ctlProgrammFind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Search Controls\ctlProgrammFind.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Search Controls\ctlSubscriptionFind.Designer.vb">
+      <DependentUpon>ctlSubscriptionFind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Search Controls\ctlSubscriptionFind.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Search Controls\ctlActivityFind.Designer.vb">
+      <DependentUpon>ctlActivityFind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Search Controls\ctlActivityFind.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Search Controls\ctlUserServicesFinder.Designer.vb">
+      <DependentUpon>ctlUserServicesFinder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Search Controls\ctlUserServicesFinder.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Search Controls\ctlVisitsFinder.Designer.vb">
+      <DependentUpon>ctlVisitsFinder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Search Controls\ctlVisitsFinder.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmTree.Designer.vb">
+      <DependentUpon>frmTree.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTree.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUIBase.Designer.vb">
+      <DependentUpon>frmUIBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUIBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gynaecology\frmGynaecology.Designer.vb">
+      <DependentUpon>frmGynaecology.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gynaecology\frmGynaecology.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuCreator.vb" />
+    <Compile Include="Planotaji\frmWorkTimeEdit.Designer.vb">
+      <DependentUpon>frmWorkTimeEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Planotaji\frmWorkTimeEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search Controls\ctlPatientFind.Designer.vb">
+      <DependentUpon>ctlPatientFind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Search Controls\ctlPatientFind.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Localization\frmLocalization.Designer.vb">
+      <DependentUpon>frmLocalization.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\frmLocalization.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Services\frmSmsSending.Designer.vb">
+      <DependentUpon>frmSmsSending.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Services\frmSmsSending.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TreeBranch\ctlPatientCards.Designer.vb">
+      <DependentUpon>ctlPatientCards.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TreeBranch\ctlPatientCards.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeBranch\ctlRtgSummary.Designer.vb">
+      <DependentUpon>ctlRtgSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TreeBranch\ctlRtgSummary.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeBranch\ctlSMS.Designer.vb">
+      <DependentUpon>ctlSMS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TreeBranch\ctlSMS.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeBranch\ctlAttachment.Designer.vb">
+      <DependentUpon>ctlAttachment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TreeBranch\ctlAttachment.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeBranch\ctlCheckUp.Designer.vb">
+      <DependentUpon>ctlCheckUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TreeBranch\ctlCheckUp.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeBranch\ctlRefer.Designer.vb">
+      <DependentUpon>ctlRefer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TreeBranch\ctlRefer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeBranch\ctlPatientBasicInformation.Designer.vb">
+      <DependentUpon>ctlPatientBasicInformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TreeBranch\ctlPatientBasicInformation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeBranch\ctlPrescription.Designer.vb">
+      <DependentUpon>ctlPrescription.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TreeBranch\ctlPrescription.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeBranch\ctlVisits.Designer.vb">
+      <DependentUpon>ctlVisits.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TreeBranch\ctlVisits.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeBranch\frmPatientProfileDescription.Designer.vb">
+      <DependentUpon>frmPatientProfileDescription.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TreeBranch\frmPatientProfileDescription.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TwinDataDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TwinDataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Universalais Klasifikators\ClassifierPicker.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Search Controls\ctlFind.Designer.vb">
+      <DependentUpon>ctlFind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Search Controls\ctlFind.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Universalais Klasifikators\frmClassifierEdit.Designer.vb">
+      <DependentUpon>frmClassifierEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Universalais Klasifikators\frmClassifierEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search Controls\ctlClassifierFind.Designer.vb">
+      <DependentUpon>ctlClassifierFind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Search Controls\ctlClassifierFind.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="dlgLogin.Designer.vb">
+      <DependentUpon>dlgLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dlgLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Universalais Klasifikators\frmClassifierList.Designer.vb">
+      <DependentUpon>frmClassifierList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Universalais Klasifikators\frmClassifierList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmUserEdit.Designer.vb">
+      <DependentUpon>frmUserEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmUserEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmUsers.Designer.vb">
+      <DependentUpon>frmUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Atbalsta Procesi\frmUsers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Search Controls\ctlUsersFind.Designer.vb">
+      <DependentUpon>ctlUsersFind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Search Controls\ctlUsersFind.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Universalais Klasifikators\frmClassifierTypeList.designer.vb">
+      <DependentUpon>frmClassifierTypeList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Universalais Klasifikators\frmClassifierTypeList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Universalais Klasifikators\frmHierClassifierList.Designer.vb">
+      <DependentUpon>frmHierClassifierList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Universalais Klasifikators\frmHierClassifierList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Universalais Klasifikators\frmUniversalClassifierBase.Designer.vb">
+      <DependentUpon>frmUniversalClassifierBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Universalais Klasifikators\frmUniversalClassifierBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Universalais Klasifikators\SearchObjects\ClassifierFind.vb" />
+    <Compile Include="Universalais Klasifikators\SearchObjects\FindPatients.vb" />
+    <Compile Include="Universalais Klasifikators\SearchObjects\FindUsers.vb" />
+    <Compile Include="Universalais Klasifikators\SearchObjects\VisitsFinder.vb" />
+    <Compile Include="Veidlapu Parvaldiba\frmTemplateEdit.Designer.vb">
+      <DependentUpon>frmTemplateEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Veidlapu Parvaldiba\frmTemplateEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veidlapu Parvaldiba\frmTemplateList.Designer.vb">
+      <DependentUpon>frmTemplateList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Veidlapu Parvaldiba\frmTemplateList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmClientGrouping.Designer.vb">
+      <DependentUpon>frmClientGrouping.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmClientGrouping.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmDoctorServices.Designer.vb">
+      <DependentUpon>frmDoctorServices.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmDoctorServices.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmPAKList.Designer.vb">
+      <DependentUpon>frmPAKList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmPAKList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmPriceList.Designer.vb">
+      <DependentUpon>frmPriceList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmPriceList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Atbalsta Procesi\frmAccountingByPatient.resx">
+      <DependentUpon>frmAccountingByPatient.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Atbalsta Procesi\frmIncomeSummaryFromPatient.resx">
+      <DependentUpon>frmIncomeSummaryFromPatient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Atbalsta Procesi\frmAccountingByDate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAccountingByDate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Atbalsta Procesi\frmActivity.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmActivity.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Atbalsta Procesi\frmActivityDateSelector.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmActivityDateSelector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Atbalsta Procesi\frmActivityEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmActivityEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Atbalsta Procesi\frmCampaign.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCampaign.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Atbalsta Procesi\frmCampaignPatients.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCampaignPatients.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Atbalsta Procesi\frmContacts.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmContacts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Atbalsta Procesi\frmIncomeSummary.resx">
+      <DependentUpon>frmIncomeSummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Atbalsta Procesi\frmInsurance.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmInsurance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Atbalsta Procesi\frmLocalSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLocalSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Atbalsta Procesi\frmPrimarasAprupesProfils.resx">
+      <DependentUpon>frmPrimarasAprupesProfils.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Atbalsta Procesi\frmPrimarasAprupesProfiluSaraksts.resx">
+      <DependentUpon>frmPrimarasAprupesProfiluSaraksts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgLogin.en-GB.resx">
+      <DependentUpon>dlgLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgLogin.en.resx">
+      <DependentUpon>dlgLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgLogin.ru-RU.resx">
+      <DependentUpon>dlgLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgLogin.ru.resx">
+      <DependentUpon>dlgLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUIBase.resx">
+      <DependentUpon>frmUIBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planotaji\frmNorikojumi.resx">
+      <DependentUpon>frmNorikojumi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Programmas\frmPatientProgrammPayment.resx">
+      <DependentUpon>frmPatientProgrammPayment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Programmas\frmPatientProgrammEdit.resx">
+      <DependentUpon>frmPatientProgrammEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Programmas\frmPatientProgrammList.resx">
+      <DependentUpon>frmPatientProgrammList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Programmas\frmProgrammTemplateEdit.resx">
+      <DependentUpon>frmProgrammTemplateEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Programmas\frmProgrammTemplateList.resx">
+      <DependentUpon>frmProgrammTemplateList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Atbalsta Procesi\frmResetPassword.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmResetPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Atbalsta Procesi\frmSMSManager.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSMSManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Atbalsta Procesi\frmUserWorkTimeDeletedRecordList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmUserWorkTimeDeletedRecordList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Atbalsta Procesi\frmUserWorkTimeEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmUserWorkTimeEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPatientsAdvanced.resx">
+      <DependentUpon>frmPatientsAdvanced.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPatientVisitList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPatientVisitList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSubscription.resx">
+      <DependentUpon>frmSubscription.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents\frmRtgSummary.resx">
+      <DependentUpon>frmRtgSummary.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents\frmAttachment.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAttachment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents\frmPrescription.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPrescription.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPresentCards.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPresentCards.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSubscriptionDetail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSubscriptionDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSubscriptionPaymentSet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSubscriptionPaymentSet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planotaji\frmGroupWorkEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmGroupWorkEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planotaji\frmGroupWorkVisitsEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmGroupWorkVisitsEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planotaji\frmVisitEdit.resx">
+      <DependentUpon>frmVisitEdit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planotaji\frmPlanner.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPlanner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planotaji\frmVisits.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmVisits.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planotaji\frmWorkTime.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmWorkTime.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPatients.resx">
+      <DependentUpon>frmPatients.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Atbalsta Procesi\frmClassifierLinkingManagement.resx">
+      <DependentUpon>frmClassifierLinkingManagement.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Atbalsta Procesi\frmRolesManagement.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRolesManagement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Atbalsta Procesi\frmSystemParameters.resx">
+      <DependentUpon>frmSystemParameters.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Programmas\frmProgrammPaymentSet.resx">
+      <DependentUpon>frmProgrammPaymentSet.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\frmSale.resx">
+      <DependentUpon>frmSale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\frmSalesList.resx">
+      <DependentUpon>frmSalesList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search Controls\ctlPatientFindAdvanced.resx">
+      <DependentUpon>ctlPatientFindAdvanced.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search Controls\ctlProgrammFind.resx">
+      <DependentUpon>ctlProgrammFind.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search Controls\ctlSubscriptionFind.resx">
+      <DependentUpon>ctlSubscriptionFind.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search Controls\ctlActivityFind.resx">
+      <DependentUpon>ctlActivityFind.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search Controls\ctlUserServicesFinder.resx">
+      <DependentUpon>ctlUserServicesFinder.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search Controls\ctlVisitsFinder.resx">
+      <DependentUpon>ctlVisitsFinder.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTree.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmTree.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gynaecology\frmGynaecology.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmGynaecology.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planotaji\frmWorkTimeEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmWorkTimeEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search Controls\ctlPatientFind.resx">
+      <DependentUpon>ctlPatientFind.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\frmLocalization.resx">
+      <DependentUpon>frmLocalization.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Services\frmSmsSending.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSmsSending.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeBranch\ctlPatientCards.resx">
+      <DependentUpon>ctlPatientCards.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeBranch\ctlRtgSummary.resx">
+      <DependentUpon>ctlRtgSummary.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeBranch\ctlSMS.resx">
+      <DependentUpon>ctlSMS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeBranch\ctlAttachment.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ctlAttachment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeBranch\ctlCheckUp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ctlCheckUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeBranch\ctlRefer.resx">
+      <DependentUpon>ctlRefer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeBranch\ctlPatientBasicInformation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ctlPatientBasicInformation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeBranch\ctlPrescription.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ctlPrescription.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeBranch\ctlVisits.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ctlVisits.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeBranch\frmPatientProfileDescription.resx">
+      <DependentUpon>frmPatientProfileDescription.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Universalais Klasifikators\ClassifierPicker.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ClassifierPicker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search Controls\ctlFind.resx">
+      <DependentUpon>ctlFind.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Universalais Klasifikators\frmClassifierEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmClassifierEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="Search Controls\ctlClassifierFind.resx">
+      <DependentUpon>ctlClassifierFind.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgLogin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>dlgLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Universalais Klasifikators\frmClassifierList.resx">
+      <DependentUpon>frmClassifierList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Atbalsta Procesi\frmUserEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmUserEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Atbalsta Procesi\frmUsers.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmUsers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search Controls\ctlUsersFind.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ctlUsersFind.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Universalais Klasifikators\frmClassifierTypeList.resx">
+      <DependentUpon>frmClassifierTypeList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Universalais Klasifikators\frmHierClassifierList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmHierClassifierList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Universalais Klasifikators\frmUniversalClassifierBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmUniversalClassifierBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Veidlapu Parvaldiba\frmTemplateEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmTemplateEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Veidlapu Parvaldiba\frmTemplateList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmTemplateList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmClientGrouping.resx">
+      <DependentUpon>frmClientGrouping.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmDoctorServices.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDoctorServices.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmPAKList.resx">
+      <DependentUpon>frmPAKList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmPriceList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPriceList.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Core\NVelocity\Runtime\Defaults\directive.properties">
+      <Link>NVelocity\Runtime\Defaults\directive.properties</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Core\NVelocity\Runtime\Defaults\nvelocity.properties">
+      <Link>NVelocity\Runtime\Defaults\nvelocity.properties</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="App.config" />
+    <None Include="key.pfx" />
+    <None Include="key1.pfx" />
+    <None Include="Localization\formMappings.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Localization\formMappings.xsx">
+      <DependentUpon>formMappings.xsd</DependentUpon>
+    </None>
+    <None Include="Migrated rules for Client.ruleset" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\Entities.Activity.datasource" />
+    <None Include="My Project\DataSources\Entities.AnamnesesAllergy.datasource" />
+    <None Include="My Project\DataSources\Entities.AnamnesesEvolutionAnomaly.datasource" />
+    <None Include="My Project\DataSources\Entities.AnamnesesExtragenitalPathalogy.datasource" />
+    <None Include="My Project\DataSources\Entities.AnamnesesHereditaryDsesase.datasource" />
+    <None Include="My Project\DataSources\Entities.AnamnesesOperation.datasource" />
+    <None Include="My Project\DataSources\Entities.AnamnesesUsedMedicaments.datasource" />
+    <None Include="My Project\DataSources\Entities.BonusPoints.datasource" />
+    <None Include="My Project\DataSources\Entities.Campaign.datasource" />
+    <None Include="My Project\DataSources\Entities.Classifier.datasource" />
+    <None Include="My Project\DataSources\Entities.Contacts.datasource" />
+    <None Include="My Project\DataSources\Entities.FindPatients.datasource" />
+    <None Include="My Project\DataSources\Entities.FindPatientsAdvanced.datasource" />
+    <None Include="My Project\DataSources\Entities.FindProgramm.datasource" />
+    <None Include="My Project\DataSources\Entities.FindUsers.datasource" />
+    <None Include="My Project\DataSources\Entities.Gynaecology.datasource" />
+    <None Include="My Project\DataSources\Entities.GynaecologyActualMedicaments.datasource" />
+    <None Include="My Project\DataSources\Entities.GynaecologyIlness.datasource" />
+    <None Include="My Project\DataSources\Entities.HierClassifier.datasource" />
+    <None Include="My Project\DataSources\Entities.Labour.datasource" />
+    <None Include="My Project\DataSources\Entities.Localization.datasource" />
+    <None Include="My Project\DataSources\Entities.Patient.datasource" />
+    <None Include="My Project\DataSources\Entities.PatientDocument.datasource" />
+    <None Include="My Project\DataSources\Entities.PatientProfileDescription.datasource" />
+    <None Include="My Project\DataSources\Entities.PatientProfileDescriptionService.datasource" />
+    <None Include="My Project\DataSources\Entities.PatientProgramm.datasource" />
+    <None Include="My Project\DataSources\Entities.PatientProgrammPayment.datasource" />
+    <None Include="My Project\DataSources\Entities.PatientProgrammPaymentService.datasource" />
+    <None Include="My Project\DataSources\Entities.PatientProgrammService.datasource" />
+    <None Include="My Project\DataSources\Entities.Prescription.datasource" />
+    <None Include="My Project\DataSources\Entities.PresentCard.datasource" />
+    <None Include="My Project\DataSources\Entities.ProfileDescription.datasource" />
+    <None Include="My Project\DataSources\Entities.ProfileDescriptionService.datasource" />
+    <None Include="My Project\DataSources\Entities.ProgrammTemplate.datasource" />
+    <None Include="My Project\DataSources\Entities.ProgrammTemplateService.datasource" />
+    <None Include="My Project\DataSources\Entities.RtgSummary.datasource" />
+    <None Include="My Project\DataSources\Entities.RtgSummaryRecord.datasource" />
+    <None Include="My Project\DataSources\Entities.Sale.datasource" />
+    <None Include="My Project\DataSources\Entities.SaleProduct.datasource" />
+    <None Include="My Project\DataSources\Entities.Services.datasource" />
+    <None Include="My Project\DataSources\Entities.SMSMessages.datasource" />
+    <None Include="My Project\DataSources\Entities.SMSSendingList.datasource" />
+    <None Include="My Project\DataSources\Entities.Speciality.datasource" />
+    <None Include="My Project\DataSources\Entities.SpecialityGroups.datasource" />
+    <None Include="My Project\DataSources\Entities.Subscription.datasource" />
+    <None Include="My Project\DataSources\Entities.SubscriptionDetail.datasource" />
+    <None Include="My Project\DataSources\Entities.TimeTable.datasource" />
+    <None Include="My Project\DataSources\Entities.User.datasource" />
+    <None Include="My Project\DataSources\Entities.UserLanguage.datasource" />
+    <None Include="My Project\DataSources\Entities.UserService.datasource" />
+    <None Include="My Project\DataSources\Entities.UsersSpecialities.datasource" />
+    <None Include="My Project\DataSources\Entities.UsersWorkTime.datasource" />
+    <None Include="My Project\DataSources\Entities.Visit.datasource" />
+    <None Include="My Project\DataSources\Entities.VisitResult.datasource" />
+    <None Include="My Project\DataSources\Entities.VisitService.datasource" />
+    <None Include="My Project\DataSources\Entities.VisitsFinder.datasource" />
+    <None Include="My Project\DataSources\Entities.WorkTime.datasource" />
+    <None Include="My Project\DataSources\Languages.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="TwinDataDataSet.xsc">
+      <DependentUpon>TwinDataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TwinDataDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TwinDataDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="TwinDataDataSet.xss">
+      <DependentUpon>TwinDataDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{DB11FF75-F34E-4194-A7B3-2DFADB5F1D06}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.vbproj">
+      <Project>{BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Core\hibernate.central.cfg.xml">
+      <Link>hibernate.central.cfg.xml</Link>
+    </Content>
+    <Content Include="..\Core\Localization\Dictionary.xml">
+      <Link>Localization\Dictionary.xml</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Core\Reporting\TemplateAliases.xml">
+      <Link>Reporting\TemplateAliases.xml</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon_new.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="medical.ico" />
+    <Content Include="PM.ico" />
+    <Content Include="pm3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Castle.DynamicProxy">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Core.XmlSerializers">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Data.v6.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Utils.v6.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraEditors.v6.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraGrid.v6.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraScheduler.v6.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Entities">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="hibernate.central.cfg.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="icon_new.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Iesi.Collections">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Localization\Dictionary.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="NVelocity">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="NVelocity\Runtime\Defaults\directive.properties">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="NVelocity\Runtime\Defaults\nvelocity.properties">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="PM.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="pm3.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Reporting\TemplateAliases.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="HELP\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

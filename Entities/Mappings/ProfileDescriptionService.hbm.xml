@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.ProfileDescriptionService, Entities" table="[ProfileDescriptionServices]" dynamic-update="true">
+    
+    <id name="Id" column="PDS_ID"><generator class="guid.comb" /></id>	  
+	  <property name="DeleteTime" column="PDS__DELETE_TIME" />
+	  <many-to-one name="ProfileDescription" column="PDS_PROFILE_DESCRIPTION_ID" fetch="join"/>
+    <many-to-one name="Service" column="PDS_SERVICE_ID" fetch ="join" />
+    <property name="FreeGroup" column="PDS_FREE_GROUP" />
+    <property name="Price" column="PDS_PRICE" />
+
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,50 @@
+<VSPerformanceSession Version="1.00">
+  <Options>
+    <Solution>TPAIS.sln</Solution>
+    <CollectionMethod>Sampling</CollectionMethod>
+    <AllocationMethod>None</AllocationMethod>
+    <AddReport>true</AddReport>
+    <UniqueReport>Timestamp</UniqueReport>
+    <SamplingMethod>Cycles</SamplingMethod>
+    <CycleCount>10000000</CycleCount>
+    <PageFaultCount>10</PageFaultCount>
+    <SysCallCount>10</SysCallCount>
+    <SamplingCounter PlatformID="00000000" CounterID="0000000000000000" ReloadValue="00000000000f4240" />
+    <RelocateBinaries>false</RelocateBinaries>
+    <HardwareCounters EnableHWCounters="false" />
+    <EtwSettings />
+  </Options>
+  <PreinstrumentEvent>
+    <InstrEventExclude>false</InstrEventExclude>
+  </PreinstrumentEvent>
+  <PostinstrumentEvent>
+    <InstrEventExclude>false</InstrEventExclude>
+  </PostinstrumentEvent>
+  <Binaries>
+    <ProjBinary>
+      <Path>Client\obj\Debug\Client.exe</Path>
+      <ArgumentTimestamp>01/01/0001 00:00:00</ArgumentTimestamp>
+      <Instrument>true</Instrument>
+      <LaunchProject>true</LaunchProject>
+      <LaunchMethod>Executable</LaunchMethod>
+      <ExecutablePath>Client\bin\Debug\Client.exe</ExecutablePath>
+      <StartupDirectory>Client\bin\Debug\</StartupDirectory>
+      <Arguments />
+      <NetAppHost>IIS</NetAppHost>
+      <PreinstrumentEvent>
+        <InstrEventExclude>false</InstrEventExclude>
+      </PreinstrumentEvent>
+      <PostinstrumentEvent>
+        <InstrEventExclude>false</InstrEventExclude>
+      </PostinstrumentEvent>
+      <ProjRef>{2480A2EC-8686-4902-9B8B-421D83485299}|Client\Client.vbproj</ProjRef>
+      <ProjPath>Client\Client.vbproj</ProjPath>
+      <ProjName>Client</ProjName>
+    </ProjBinary>
+  </Binaries>
+  <Launches>
+    <ProjBinary>
+      <Path>:PB:{2480A2EC-8686-4902-9B8B-421D83485299}|Client\Client.vbproj</Path>
+    </ProjBinary>
+  </Launches>
+</VSPerformanceSession>

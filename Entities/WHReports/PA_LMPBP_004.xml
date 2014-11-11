@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<PA_LMPBP_004>
+  <Pamatdati>
+    <vidtin_kods>$this.S('CMCase.SrsDepartment.Department.Code')</vidtin_kods>
+    <akta_numurs>$this.S('GenActNo')</akta_numurs>
+    <akta_datums>$this.D('GenActDate')</akta_datums>
+    <kp_veids>$this.S('CMCase.TIAct.CaseType.ExternalID')</kp_veids>
+    <nmr_kods>$this.S('CMCase.TaxpayerCode')</nmr_kods>
+    <adrese>$this.S('CMCase.TIAct.ObjAddress')</adrese>
+  </Pamatdati>
+  <Saturs>
+    <termins>$this.S('WarningTime')</termins>
+  </Saturs>
+</PA_LMPBP_004>

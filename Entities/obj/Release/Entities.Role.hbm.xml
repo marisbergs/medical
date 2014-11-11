@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.Role, Entities" table="Roles" dynamic-update="true">
+
+    <id name="Id" column="RLE_ID"><generator class="guid.comb" /></id>
+
+    <property name="DeleteTime" column="RLE__DELETE_TIME" />
+
+    <property name="Name" column="RLE_NAME" not-null="true"/>
+    
+    <bag name="Permissions" table="RolesPermissions"
+         access="property" generic="true" lazy="true"
+         collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.Permission, Entities]], Core">
+      <key column="RLP_ROLE_ID"/>
+      <many-to-many column="RLP_PERMISSION_ID" class="Entities.Permission, Entities" fetch="join" />
+    </bag>
+  </class>
+</hibernate-mapping>
+

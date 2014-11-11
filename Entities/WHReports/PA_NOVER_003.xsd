@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<xs:schema id="PA_NOVER_003" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="PA_NOVER_003" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="Pamatdati">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="vidtin_kods" type="xs:string" minOccurs="0" />
+              <xs:element name="akta_numurs" type="xs:string" minOccurs="0" />
+              <xs:element name="akta_datums" type="xs:string" minOccurs="0" />
+              <xs:element name="kp_veids" type="xs:string" minOccurs="0" />
+              <xs:element name="nmr_kods" type="xs:string" minOccurs="0" />
+              <xs:element name="adrese" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Saturs">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="darbinieku_skaits" type="xs:string" minOccurs="0" />
+              <xs:element name="ienemumi" type="xs:string" minOccurs="0" />
+              <xs:element name="uzsaksanas_datums" type="xs:string" minOccurs="0" />
+              <xs:element name="ienemumi_kpa" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

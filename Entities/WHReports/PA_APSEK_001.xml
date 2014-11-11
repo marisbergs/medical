@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<PA_APSEK_001>
+  <Pamatdati>
+    <vidtin_kods>$this.S('CMCase.SrsDepartment.Department.Code')</vidtin_kods>
+    <akta_numurs>$this.S('DocNumber')</akta_numurs>
+    <akta_datums>$this.D('DocDate')</akta_datums>
+    <kp_veids>$this.S('CaseType.ExternalID')</kp_veids>
+    <nmr_kods>$this.S('CMCase.TaxpayerCode')</nmr_kods>
+    <adrese>$this.S('ObjAddress')</adrese>
+  </Pamatdati>
+  <Saturs>
+    <iznomataja_kods>$this.S('OwnerCode')</iznomataja_kods>
+    <liguma_datums>$this.D('OwnerCtrDate')</liguma_datums>
+    <termins_no>$this.D('OwnerCtrFrom')</termins_no>
+    <termins_lidz>$this.D('OwnerCtrUntil')</termins_lidz>
+    <darbinieku_skaits>$this.S('ObjEmployees')</darbinieku_skaits>
+    <adrese>$this.S('ObjAddress')</adrese>
+  </Saturs>
+</PA_APSEK_001>

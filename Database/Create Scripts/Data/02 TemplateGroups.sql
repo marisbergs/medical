@@ -1,0 +1,1 @@
+INSERT INTO Classifiers( CLS_ID, CLS_TYPE_ID, CLS_CODE, CLS_NAME )  VALUES (NewId(), 'TemplateGroup', 'Other', 'Veidlapas bez algoritma')

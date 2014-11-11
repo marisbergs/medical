@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Entities.AdministrativeViolationProtocol">
+    <Position X="1.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>AdministrativeViolationProtocol.vb</FileName>
+      <HashCode>QBAAIAhAAIAAAAAAAQEBAgIAAAJABgKASAAEAAQEAQA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="Entities.Document" FixedFromPoint="true">
+      <Path>
+        <Point X="4" Y="0.75" />
+        <Point X="2" Y="0.75" />
+        <Point X="2" Y="1" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="Entities.Document" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Document.vb</FileName>
+      <HashCode>AAAiAACEAAAAAgAAABAAAAQAAAAEAAQAAAACAABAAAE=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Violations" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Entities.DecisionAdminResponsibility">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>DecisionAdminResponsibility.vb</FileName>
+      <HashCode>AAAAIAIAIIAgAAAAAAAAAAAAAAAAAAAAAAAAACAAAEA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.Violation">
+    <Position X="7" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Violation.vb</FileName>
+      <HashCode>AACAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAQAAAAEAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

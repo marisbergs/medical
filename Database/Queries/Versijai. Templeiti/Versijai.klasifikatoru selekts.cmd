@@ -1,0 +1,1 @@
+bcp "select TXT_ID, TXT_CONTENT from TPAIS.dbo.Classifiers inner JOIN TPAIS.dbo.TextContent on TPAIS.dbo.Classifiers.CLS_NTEXT_ID = TPAIS.dbo.TextContent.TXT_ID WHERE TXT__DELETE_TIME IS NULL AND TXT__UPDATE_TIME > '2006-10-25'" queryout classif.bin -S zeus\tpais -T

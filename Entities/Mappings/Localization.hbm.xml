@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.Localization, Entities" table="[Localization]" dynamic-update="true">
+    
+    <id name="Id" column="LOC_ID"><generator class="guid.comb" /></id>	  
+    <property name="Forma" column="LOC_FORMA" />
+    <property name ="Labels" column ="LOC_LABEL_NAME"/>
+    <property name ="Lv" column ="LOC_LV"/>
+    <property name ="Rus" column ="LOC_ENG"/>
+    <property name ="Eng" column ="LOC_RUS"/>
+  </class>
+</hibernate-mapping>

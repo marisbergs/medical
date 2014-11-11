@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="TPB-KP_PASAKUMS" targetNamespace="http://tempuri.org/TPB-KP_PASAKUMS.xsd" elementFormDefault="qualified"
+	xmlns="http://tempuri.org/TPB-KP_PASAKUMS.xsd" xmlns:mstns="http://tempuri.org/TPB-KP_PASAKUMS.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="kp_pasakums_list" msdata:Locale="lv-LV">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="kp_pasakums">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="guid" type="xs:string" />
+              <xs:element name="id_viddarbin" type="xs:int" />
+              <xs:element name="id_kpveids" type="xs:int" />
+              <xs:element name="datums" type="xs:date" />
+              <xs:element name="nmr_kods" type="xs:string" />
+              <xs:element name="id_vidkp" type="xs:int" />
+              <xs:element name="id_kpiemesls" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.PatientProgrammPaymentService, Entities" table="[PatientProgrammPaymentServices]" dynamic-update="true">
+    
+    <id name="Id" column="PPS_ID"><generator class="guid.comb" /></id>	  
+	  <property name="DeleteTime" column="PPS__DELETE_TIME" />
+    <property name="PatientProgrammPayment" column="PPS_PATIENT_PROGRAMM_PAYMENT_ID" />
+    <property name="Service" column="PPS_SERVICE_ID" />
+    <property name="Price" column="PPS_PRICE" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.SMSMessages, Entities" table="[SMSmessages]" dynamic-update="true">
+    
+    <id name="Id" column="MSG_ID"><generator class="guid.comb" /></id>
+	  
+	  <property name="DeleteTime" column="MSG__DELETE_TIME" />
+	  <property name="MeesageText" column="MSG_TEXT" not-null="true" />
+	  <property name="DaysBefore" column="MSG_DAYS_BEFORE" not-null="true" />
+	  <property name="SendTime" column="MSG_SEND_TIME"/>
+
+	  <component name="Type">
+		  <property name="Value" column="MSG_TYPE" access="property"/>
+	  </component>
+  </class>
+</hibernate-mapping>

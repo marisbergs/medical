@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<PA_TPMAZ_001>
+  <Pamatdati>
+    <vidtin_kods>$this.S('CMCase.SrsDepartment.Department.Code')</vidtin_kods>
+    <akta_numurs>$this.S('CMCase.TIAct.DocNumber')</akta_numurs>
+    <akta_datums>$this.D('CMCase.TIAct.ActDate')</akta_datums>
+    <kp_veids>$this.S('CMCase.TIAct.CaseType.ExternalID')</kp_veids>
+    <nmr_kods>$this.S('CMCase.TaxpayerCode')</nmr_kods>
+    <adrese>$this.S('CMCase.TIAct.ObjAddress')</adrese>
+  </Pamatdati>
+  <Saturs>
+    <marka>$this.S('ModelParent')</marka>
+    <modelis>$this.S('Model')</modelis>
+    <sasijas_numurs>$this.S('CashRegisterNumber')</sasijas_numurs>
+    <grandtotal_datums>$this.D('GrandTotalDate')</grandtotal_datums>
+    <grandtotal_summa>$this.N('GrandTotal')</grandtotal_summa>
+  </Saturs>
+</PA_TPMAZ_001>

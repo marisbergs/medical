@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Entities</RootNamespace>
+    <AssemblyName>Entities</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Entities.xml</DocumentationFile>
+    <NoWarn>42105,42106,42107</NoWarn>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRules>-Microsoft.Design#CA1012;-Microsoft.Design#CA2210;-Microsoft.Design#CA1040;-Microsoft.Design#CA1005;-Microsoft.Design#CA1020;-Microsoft.Design#CA1021;-Microsoft.Design#CA1010;-Microsoft.Design#CA1011;-Microsoft.Design#CA1009;-Microsoft.Design#CA1050;-Microsoft.Design#CA1026;-Microsoft.Design#CA1019;-Microsoft.Design#CA1031;-Microsoft.Design#CA1047;-Microsoft.Design#CA1000;-Microsoft.Design#CA1048;-Microsoft.Design#CA1051;-Microsoft.Design#CA1002;-Microsoft.Design#CA1061;-Microsoft.Design#CA1006;-Microsoft.Design#CA1046;-Microsoft.Design#CA1045;-Microsoft.Design#CA1038;-Microsoft.Design#CA1008;-Microsoft.Design#CA1028;-Microsoft.Design#CA1035;-Microsoft.Design#CA1063;-Microsoft.Design#CA1032;-Microsoft.Design#CA1023;-Microsoft.Design#CA1033;-Microsoft.Design#CA1039;-Microsoft.Design#CA1016;-Microsoft.Design#CA1014;-Microsoft.Design#CA1017;-Microsoft.Design#CA1018;-Microsoft.Design#CA1027;-Microsoft.Design#CA1059;-Microsoft.Design#CA1060;-Microsoft.Design#CA1034;-Microsoft.Design#CA1013;-Microsoft.Design#CA1036;-Microsoft.Design#CA1044;-Microsoft.Design#CA1041;-Microsoft.Design#CA1025;-Microsoft.Design#CA1052;-Microsoft.Design#CA1053;-Microsoft.Design#CA1057;-Microsoft.Design#CA1058;-Microsoft.Design#CA1001;-Microsoft.Design#CA1049;-Microsoft.Design#CA1054;-Microsoft.Design#CA1056;-Microsoft.Design#CA1055;-Microsoft.Design#CA1030;-Microsoft.Design#CA1003;-Microsoft.Design#CA1007;-Microsoft.Design#CA1043;-Microsoft.Design#CA1024;-Microsoft.Design#CA1062;-Microsoft.Globalization#CA1301;-Microsoft.Globalization#CA1302;-Microsoft.Globalization#CA1303;-Microsoft.Globalization#CA1306;-Microsoft.Globalization#CA1304;-Microsoft.Globalization#CA1305;-Microsoft.Globalization#CA1300;-Microsoft.Interoperability#CA1403;-Microsoft.Interoperability#CA1406;-Microsoft.Interoperability#CA1413;-Microsoft.Interoperability#CA1402;-Microsoft.Interoperability#CA1407;-Microsoft.Interoperability#CA1404;-Microsoft.Interoperability#CA1410;-Microsoft.Interoperability#CA1411;-Microsoft.Interoperability#CA1405;-Microsoft.Interoperability#CA1409;-Microsoft.Interoperability#CA1415;-Microsoft.Interoperability#CA1408;-Microsoft.Interoperability#CA1414;-Microsoft.Interoperability#CA1412;-Microsoft.Interoperability#CA1400;-Microsoft.Interoperability#CA1401;-Microsoft.Maintainability#CA1502;-Microsoft.Maintainability#CA1501;-Microsoft.Maintainability#CA1500;-Microsoft.Mobility#CA1600;-Microsoft.Mobility#CA1601;-Microsoft.Naming#CA1718;-Microsoft.Naming#CA1720;-Microsoft.Naming#CA1700;-Microsoft.Naming#CA1712;-Microsoft.Naming#CA1713;-Microsoft.Naming#CA1709;-Microsoft.Naming#CA1708;-Microsoft.Naming#CA1715;-Microsoft.Naming#CA1710;-Microsoft.Naming#CA1707;-Microsoft.Naming#CA1722;-Microsoft.Naming#CA1711;-Microsoft.Naming#CA1716;-Microsoft.Naming#CA1705;-Microsoft.Naming#CA1725;-Microsoft.Naming#CA1719;-Microsoft.Naming#CA1721;-Microsoft.Naming#CA1706;-Microsoft.Naming#CA1724;-Microsoft.Naming#CA1726;-Microsoft.Performance#CA1809;-Microsoft.Performance#CA1811;-Microsoft.Performance#CA1812;-Microsoft.Performance#CA1807;-Microsoft.Performance#CA1813;-Microsoft.Performance#CA1823;-Microsoft.Performance#CA1816;-Microsoft.Performance#CA1817;-Microsoft.Performance#CA1800;-Microsoft.Performance#CA1818;-Microsoft.Performance#CA1805;-Microsoft.Performance#CA1810;-Microsoft.Performance#CA1822;-Microsoft.Performance#CA1815;-Microsoft.Performance#CA1814;-Microsoft.Performance#CA1819;-Microsoft.Performance#CA1804;-Microsoft.Performance#CA1820;-Microsoft.Performance#CA1802;-Microsoft.Portability#CA1901;-Microsoft.Portability#CA1900;-Microsoft.Reliability#CA2000;-Microsoft.Reliability#CA2002;-Microsoft.Reliability#CA2003;-Microsoft.Reliability#CA2004;-Microsoft.Reliability#CA2006;-Microsoft.Security#CA2116;-Microsoft.Security#CA2117;-Microsoft.Security#CA2105;-Microsoft.Security#CA2115;-Microsoft.Security#CA2104;-Microsoft.Security#CA2122;-Microsoft.Security#CA2114;-Microsoft.Security#CA2123;-Microsoft.Security#CA2111;-Microsoft.Security#CA2108;-Microsoft.Security#CA2107;-Microsoft.Security#CA2103;-Microsoft.Security#CA2100;-Microsoft.Security#CA2118;-Microsoft.Security#CA2109;-Microsoft.Security#CA2119;-Microsoft.Security#CA2106;-Microsoft.Security#CA2112;-Microsoft.Security#CA2110;-Microsoft.Security#CA2120;-Microsoft.Security#CA2101;-Microsoft.Security#CA2121;-Microsoft.Security#CA2126;-Microsoft.Security#CA2124;-Microsoft.Usage#CA2209;-Microsoft.Usage#CA2236;-Microsoft.Usage#CA2227;-Microsoft.Usage#CA2213;-Microsoft.Usage#CA2216;-Microsoft.Usage#CA2215;-Microsoft.Usage#CA2214;-Microsoft.Usage#CA2222;-Microsoft.Usage#CA2202;-Microsoft.Usage#CA1806;-Microsoft.Usage#CA2217;-Microsoft.Usage#CA2212;-Microsoft.Usage#CA2219;-Microsoft.Usage#CA2201;-Microsoft.Usage#CA2228;-Microsoft.Usage#CA2221;-Microsoft.Usage#CA2220;-Microsoft.Usage#CA2240;-Microsoft.Usage#CA2229;-Microsoft.Usage#CA2238;-Microsoft.Usage#CA2207;-Microsoft.Usage#CA2208;-Microsoft.Usage#CA2235;-Microsoft.Usage#CA2237;-Microsoft.Usage#CA2232;-Microsoft.Usage#CA2223;-Microsoft.Usage#CA2211;-Microsoft.Usage#CA2233;-Microsoft.Usage#CA2225;-Microsoft.Usage#CA2226;-Microsoft.Usage#CA2231;-Microsoft.Usage#CA2224;-Microsoft.Usage#CA2218;-Microsoft.Usage#CA2234;-Microsoft.Usage#CA2241;-Microsoft.Usage#CA2239;-Microsoft.Usage#CA2200;-Microsoft.Usage#CA1801;-Microsoft.Usage#CA2205;-Microsoft.Usage#CA2230</CodeAnalysisRules>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Entities.xml</DocumentationFile>
+    <NoWarn>42105,42106,42107</NoWarn>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v6.1, Version=6.1.5.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\DevExpress\DevExpress.Data.v6.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v6.1, Version=6.1.5.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\DevExpress\DevExpress.Utils.v6.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v6.1, Version=6.1.5.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\DevExpress\DevExpress.XtraEditors.v6.1.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=1.2.0.1001, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\NHibernate\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NVelocity, Version=0.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\NVelocity\NVelocity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AttachmentFile.vb" />
+    <Compile Include="Classifiers\Classifier.vb" />
+    <Compile Include="Classifiers\ClassifierKind.vb" />
+    <Compile Include="Classifiers\ClassifierType.vb" />
+    <Compile Include="Classifiers\ClassifierWithCode.vb" />
+    <Compile Include="Classifiers\HierClassifier.vb" />
+    <Compile Include="Classifiers\Theme.vb" />
+    <Compile Include="BonusPoints.vb" />
+    <Compile Include="BonusPointType.vb" />
+    <Compile Include="BirthDateGenerator.vb" />
+    <Compile Include="Campaign.vb" />
+    <Compile Include="CampaignPatient.vb" />
+    <Compile Include="Activity.vb" />
+    <Compile Include="SearchObjects\FindSubscription.vb" />
+    <Compile Include="SubscriptionDetail.vb" />
+    <Compile Include="Subscription.vb" />
+    <Compile Include="Documents\RtgSummary.vb" />
+    <Compile Include="Documents\RtgSummaryRecord.vb" />
+    <Compile Include="SearchObjects\FindActivity.vb" />
+    <Compile Include="SmsSendStatus.vb" />
+    <Compile Include="UserServiceSalary.vb" />
+    <Compile Include="InsuranceVSService.vb" />
+    <Compile Include="PatientInsurance.vb" />
+    <Compile Include="SearchObjects\UserServicesFinder.vb" />
+    <Compile Include="SMSSendingList.vb" />
+    <Compile Include="PresentCardState.vb" />
+    <Compile Include="PresentCard.vb" />
+    <Compile Include="PatientCommercInformation.vb" />
+    <Compile Include="PatientFamily.vb" />
+    <Compile Include="PatientDocument.vb" />
+    <Compile Include="SeleryType.vb" />
+    <Compile Include="Support\LocalSettings.vb" />
+    <Compile Include="UserLanguage.vb" />
+    <Compile Include="DocFileHistory.vb" />
+    <Compile Include="Documents\Prescription.vb" />
+    <Compile Include="GuardianType.vb" />
+    <Compile Include="Guardian.vb" />
+    <Compile Include="SearchObjects\VisitsFinder.vb" />
+    <Compile Include="SMSType.vb" />
+    <Compile Include="Support\SMSMessages.vb" />
+    <Compile Include="UserService.vb" />
+    <Compile Include="Visit.vb" />
+    <Compile Include="VisitService.vb" />
+    <Compile Include="VisitStatusHistory.vb" />
+    <Compile Include="WorkTime.vb" />
+    <Compile Include="Day.vb" />
+    <Compile Include="UsersWorkTime.vb" />
+    <Compile Include="Health.vb" />
+    <Compile Include="Sex.vb" />
+    <Compile Include="Gynaecology\Labour.vb" />
+    <Compile Include="Gynaecology\GynaecologyIlness.vb" />
+    <Compile Include="Gynaecology\GynaecologyActualMedicaments.vb" />
+    <Compile Include="Lay.vb" />
+    <Compile Include="Cycle.vb" />
+    <Compile Include="Gynaecology\AnamnesesExtragenitalPathalogy.vb" />
+    <Compile Include="Gynaecology\AnamnesesOperation.vb" />
+    <Compile Include="Gynaecology\AnamnesesAllergy.vb" />
+    <Compile Include="Gynaecology\AnamnesesUsedMedicaments.vb" />
+    <Compile Include="Gynaecology\AnamnesesEvolutionAnomaly.vb" />
+    <Compile Include="Gynaecology\AnamnesesHereditaryDsesase.vb" />
+    <Compile Include="Gynaecology\Gynaecology.vb" />
+    <Compile Include="Patient.vb" />
+    <Compile Include="SearchObjects\FindPatients.vb" />
+    <Compile Include="Support\Contacts.vb" />
+    <Compile Include="UsersSpecialities.vb" />
+    <Compile Include="CorrectionType.vb" />
+    <Compile Include="AuditMessage.vb" />
+    <Compile Include="Document.vb" />
+    <Compile Include="DocumentStatus.vb" />
+    <Compile Include="DocumentType.vb" />
+    <Compile Include="Support\IPersonalization.vb" />
+    <Compile Include="Support\IResolver.vb" />
+    <Compile Include="PresentedDocument.vb" />
+    <Compile Include="RequisiteDocType.vb" />
+    <Compile Include="Support\Personalization.vb" />
+    <Compile Include="Support\SystemParameter.vb" />
+    <Compile Include="TextContent.vb" />
+    <Compile Include="BinaryFile.vb" />
+    <Compile Include="PriorityType.vb" />
+    <Compile Include="Support\DatabaseAppender.vb" />
+    <Compile Include="Synchronizer.vb" />
+    <Compile Include="ReceiverType.vb" />
+    <Compile Include="YesNo.vb" />
+    <Compile Include="Work.vb" />
+    <Compile Include="Licence.vb" />
+    <Compile Include="Support\EventFind.vb" />
+    <Compile Include="Support\DocumentWatcher.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LatestCM.vb" />
+    <Compile Include="TaxpayerMember.vb" />
+    <Compile Include="TaxpayerType.vb" />
+    <Compile Include="LogEntryConfig.vb" />
+    <Compile Include="Permission.vb" />
+    <Compile Include="Role.vb" />
+    <Compile Include="SearchObjects\ClassifierFind.vb" />
+    <Compile Include="SearchObjects\FindUsers.vb" />
+    <Compile Include="EntityType.vb" />
+    <Compile Include="Support\CurrentContext.vb" />
+    <Compile Include="Template.vb" />
+    <Compile Include="TemplateFileVersion.vb" />
+    <Compile Include="User.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WHRequestStatus.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\lib\NHibernate\nhibernate-mapping-2.0.xsd">
+      <Link>Mappings\nhibernate-mapping-2.0.xsd</Link>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Diagrams\AdministrativeViolationProtocol.cd" />
+    <None Include="Diagrams\Authorizations.cd" />
+    <None Include="Diagrams\Case.cd" />
+    <None Include="Diagrams\CashDeals.cd" />
+    <None Include="Diagrams\DealCompare.cd" />
+    <None Include="Diagrams\Decisions.cd" />
+    <None Include="Diagrams\DocumentFiles.cd" />
+    <None Include="Diagrams\Metal.cd" />
+    <None Include="Diagrams\RealEstateTax.cd" />
+    <None Include="Diagrams\Templates.cd" />
+    <None Include="Diagrams\TimberCheckOnRoad.cd" />
+    <None Include="Diagrams\TimberReceivedDocuments.cd" />
+    <None Include="Diagrams\TimberSentDocuments.cd" />
+    <None Include="Diagrams\TimberStackMeasure.cd" />
+    <None Include="Diagrams\TimberStorageCheck.cd" />
+    <None Include="Diagrams\WholesaleAndWaybills.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Diagrams\UsersAndOrganizations.cd" />
+    <None Include="WHReports\PA_PLANS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WHReports\PA_TPAKT_001.xsd">
+      <LastGenOutput>PA_TPAKT_001.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WHReports\PA_TPDDV_001.xsd">
+      <LastGenOutput>PA_TPDDV_001.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WHReports\PA_TPGRM_001.xsd">
+      <LastGenOutput>PA_TPGRM_001.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WHReports\PA_TPKOK_001.xsd">
+      <LastGenOutput>PA_TPKOK_001.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WHReports\PA_TPMAZ_001.xsd">
+      <LastGenOutput>PA_TPMAZ_001.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WHReports\PA_TPMAZ_002.xsd">
+      <LastGenOutput>PA_TPMAZ_002.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WHReports\PA_TPMET_001.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WHReports\PA_TPMET_FP.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WHReports\PA_TPNNP_001.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WHReports\PA_TPPAK_001.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WHReports\PA_TPVAI_001.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WHReports\TPB-IZZINA.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WHReports\TPB-KP_PASAKUMS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WHReports\TPB-RAKSTUROTS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\User.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\Permission.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Role.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{DB11FF75-F34E-4194-A7B3-2DFADB5F1D06}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="WHReports\PA_APSEK_001.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WHReports\PA_NOVER_003.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WHReports\PA_TPAKT_001.xsc">
+      <DependentUpon>PA_TPAKT_001.xsd</DependentUpon>
+    </None>
+    <None Include="WHReports\TPB-IZZINA.xsx">
+      <DependentUpon>TPB-IZZINA.xsd</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Mappings\UsersSpecialities.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Classifiers\Classifier.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Classifiers\ClassifierType.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Patient.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Support\Contacts.hbm.xml" />
+    <EmbeddedResource Include="Mappings\UsersWorkTime.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Support\SystemParameter.hbm.xml" />
+    <EmbeddedResource Include="Mappings\WorkTime.hbm.xml" />
+    <EmbeddedResource Include="Mappings\BinaryFile.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Visit.hbm.xml" />
+    <EmbeddedResource Include="Mappings\UserService.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Guardian.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Template.hbm.xml" />
+    <EmbeddedResource Include="Mappings\TemplateFileVersion.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Support\SMSMessages.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Document.hbm.xml" />
+    <EmbeddedResource Include="Mappings\DocFileHistory.hbm.xml" />
+    <EmbeddedResource Include="Mappings\VisitService.hbm.xml" />
+    <EmbeddedResource Include="Mappings\UserLanguage.hbm.xml" />
+    <EmbeddedResource Include="Mappings\AttachmentFile.hbm.xml" />
+    <EmbeddedResource Include="Mappings\PatientDocument.hbm.xml" />
+    <EmbeddedResource Include="Mappings\PatientFamily.hbm.xml" />
+    <EmbeddedResource Include="Mappings\PatientCommercInformation.hbm.xml" />
+    <EmbeddedResource Include="Mappings\VisitStatusHistory.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Support\LocalSettings.hbm.xml" />
+    <EmbeddedResource Include="Mappings\SMSSendingList.hbm.xml" />
+    <EmbeddedResource Include="Mappings\PresentCard.hbm.xml" />
+    <EmbeddedResource Include="Mappings\BonusPoints.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Classifiers\HierClassifier.hbm.xml" />
+    <EmbeddedResource Include="Mappings\PatientInsurance.hbm.xml" />
+    <EmbeddedResource Include="Mappings\InsuranceVSService.hbm.xml" />
+    <EmbeddedResource Include="Mappings\BirthDateGenerator.hbm.xml" />
+    <EmbeddedResource Include="Mappings\UserServiceSalary.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Campaign.hbm.xml" />
+    <EmbeddedResource Include="Mappings\CampaignPatient.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Activity.hbm.xml" />
+    <EmbeddedResource Include="Mappings\RtgSummaryRecord.hbm.xml" />
+    <EmbeddedResource Include="Mappings\SubscriptionDetail.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Subscription.hbm.xml" />
+    <Content Include="WHReports\PA_APSEK_001.xml" />
+    <Content Include="WHReports\PA_LMPBP_004.xml" />
+    <Content Include="WHReports\PA_NOVER_003.xml" />
+    <Content Include="WHReports\PA_PLANS.xml" />
+    <Content Include="WHReports\PA_TPAKT_001.xml" />
+    <Content Include="WHReports\PA_TPDDV_001.xml" />
+    <Content Include="WHReports\PA_TPGRM_001.xml" />
+    <Content Include="WHReports\PA_TPKOK_001.xml" />
+    <Content Include="WHReports\PA_TPMAZ_001.xml" />
+    <Content Include="WHReports\PA_TPMAZ_002.xml" />
+    <Content Include="WHReports\PA_TPMET_001.xml" />
+    <Content Include="WHReports\PA_TPMET_FP.xml" />
+    <Content Include="WHReports\PA_TPNNP_001.xml" />
+    <Content Include="WHReports\PA_TPPAK_001.xml" />
+    <Content Include="WHReports\PA_TPVAI_001.xml" />
+    <Content Include="WHReports\TPB-IZZINA.xml" />
+    <Content Include="WHReports\TPB-KP_PASAKUMS.xml" />
+    <Content Include="WHReports\TPB-RAKSTUROTS.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

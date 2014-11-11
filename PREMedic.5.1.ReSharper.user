@@ -1,0 +1,100 @@
+<Configuration>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="DB11FF75-F34E-4194-A7B3-2DFADB5F1D06/d:DataAccessLayer/d:Impl/f:ChildCollection.cs" caret="10008" fromTop="10" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/d:Mappings/f:PatientProfileDescription.hbm.xml" caret="892" fromTop="10" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/f:PatientProfileDescription.vb" caret="5318" fromTop="6" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/f:PatientProfileDescriptionService.vb" caret="1870" fromTop="17" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Views/f:frmPAKList.vb" caret="384" fromTop="8" />
+      <File id="DB11FF75-F34E-4194-A7B3-2DFADB5F1D06/d:DataAccessLayer/d:Impl/f:Session.cs" caret="22837" fromTop="12" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Views/f:frmClientGrouping.vb" caret="9272" fromTop="15" />
+      <File id="DB11FF75-F34E-4194-A7B3-2DFADB5F1D06/d:UI/f:frmBase.Designer.cs" caret="690" fromTop="20" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Search Controls/f:ctlVisitsFinder.vb" caret="571" fromTop="19" />
+      <File id="DB11FF75-F34E-4194-A7B3-2DFADB5F1D06/d:DataAccessLayer/d:Impl/f:NHChildCollection.cs" caret="6152" fromTop="18" />
+      <File id="DB11FF75-F34E-4194-A7B3-2DFADB5F1D06/d:UI/f:frmBase.cs" caret="3558" fromTop="14" />
+      <File id="DB11FF75-F34E-4194-A7B3-2DFADB5F1D06/d:BusinessObjectsBase/f:Entities.cs" caret="3250" fromTop="10" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/f:Visit.vb" caret="51339" fromTop="10" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Planotaji/f:frmVisits.vb" caret="2391" fromTop="9" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Programmas/f:frmPatientProgrammEdit.vb" caret="0" fromTop="0" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:TreeBranch/f:ctlPatientBasicInformation.vb" caret="5548" fromTop="6" />
+      <File id="DB11FF75-F34E-4194-A7B3-2DFADB5F1D06/d:UI/f:CoreGrid.cs" caret="416" fromTop="0" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/f:frmPatients.vb" caret="4461" fromTop="26" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/f:frmSubscriptionDetail.vb" caret="9978" fromTop="3" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/d:Classifiers/f:Classifier.vb" caret="24172" fromTop="9" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Planotaji/f:frmVisitEdit.vb" caret="1342" fromTop="6" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/f:frmSubscriptionPaymentSet.vb" caret="584" fromTop="16" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Programmas/f:frmProgrammPaymentSet.Designer.vb" caret="105" fromTop="1" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/f:frmSubscription.vb" caret="2148" fromTop="11" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/f:PatientProgrammPayment.vb" caret="351" fromTop="5" />
+      <File id="DB11FF75-F34E-4194-A7B3-2DFADB5F1D06/f:ReflectionHelper.cs" caret="7666" fromTop="18" />
+      <File id="DB11FF75-F34E-4194-A7B3-2DFADB5F1D06/d:UI/f:BindingHelper.cs" caret="2701" fromTop="8" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Universalais Klasifikators/f:ClassifierPicker.vb" caret="5433" fromTop="12" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Programmas/f:frmProgrammPaymentSet.vb" caret="99" fromTop="5" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Programmas/f:frmPatientProgrammPayment.vb" caret="11551" fromTop="34" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Planotaji/f:frmVisits.vb" caret="1738" fromTop="3" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Planotaji/f:frmVisits.vb" caret="3436" fromTop="10" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Planotaji/f:frmVisits.vb" caret="3523" fromTop="16" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Planotaji/f:frmVisits.vb" caret="3165" fromTop="15" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Planotaji/f:frmVisits.vb" caret="1908" fromTop="3" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Planotaji/f:frmVisits.vb" caret="2270" fromTop="7" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Planotaji/f:frmVisitEdit.vb" caret="21253" fromTop="3" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Programmas/f:frmPatientProgrammPayment.vb" caret="443" fromTop="13" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Programmas/f:frmPatientProgrammPayment.vb" caret="1029" fromTop="11" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Programmas/f:frmPatientProgrammPayment.vb" caret="6458" fromTop="9" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Programmas/f:frmPatientProgrammPayment.vb" caret="11557" fromTop="23" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Programmas/f:frmPatientProgrammPayment.vb" caret="10777" fromTop="9" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Programmas/f:frmPatientProgrammPayment.vb" caret="10443" fromTop="10" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/f:frmSubscription.vb" caret="2148" fromTop="11" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/f:frmSubscription.vb" caret="5265" fromTop="11" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/d:Classifiers/f:Classifier.vb" caret="24262" fromTop="10" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Planotaji/f:frmVisitEdit.vb" caret="923" fromTop="12" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Planotaji/f:frmVisitEdit.vb" caret="1600" fromTop="12" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Planotaji/f:frmVisitEdit.vb" caret="1990" fromTop="19" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Programmas/f:frmPatientProgrammPayment.vb" caret="1409" fromTop="10" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/f:frmSubscriptionPaymentSet.vb" caret="584" fromTop="10" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Programmas/f:frmProgrammPaymentSet.Designer.vb" caret="105" fromTop="1" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Programmas/f:frmProgrammPaymentSet.vb" caret="854" fromTop="17" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Programmas/f:frmProgrammPaymentSet.vb" caret="239" fromTop="8" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Programmas/f:frmPatientProgrammPayment.vb" caret="11052" fromTop="6" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Programmas/f:frmProgrammPaymentSet.vb" caret="744" fromTop="17" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Programmas/f:frmProgrammPaymentSet.vb" caret="50" fromTop="3" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Programmas/f:frmProgrammPaymentSet.vb" caret="1828" fromTop="3" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Programmas/f:frmPatientProgrammPayment.vb" caret="11527" fromTop="13" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Programmas/f:frmPatientProgrammPayment.vb" caret="11583" fromTop="34" />
+    </RecentEdits>
+  </RecentFiles>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+      <setting name="UseSolutionBuilder">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="PresentCardState.Izveidota" priority="0" />
+      <Item value="PresentCardState.Nopirkta" priority="0" />
+      <Item value="Application" priority="0" />
+      <Item value="Run" priority="0" />
+      <Item value="Exists" priority="0" />
+      <Item value="fileName" priority="0" />
+      <Item value="SmsSendStatus.InvalidPhone" priority="0" />
+      <Item value="SmsSendStatus.NotSent" priority="1" />
+      <Item value="True" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.VisitResult, Entities" table="[VisitResults]" dynamic-update="true">
+    
+    <id name="Id" column="VRS_ID"><generator class="guid.comb" /></id>	  
+    <property name="DeleteTime" column="VRS__DELETE_TIME" />
+    
+    <property name ="Visit" column ="VRS_VISIT_ID"/>
+    <property name ="Notes" column ="VRS_NOTES"/>
+    <property name ="NotNeedBloodTest" column ="VRS_NOT_NEED_BLOOD_TEST"/>
+
+
+    <bag name="VisitResultAssignments" table="[VisitResultAssignments]"
+		  access="property" generic="true" inverse="true" outer-join ="true" fetch="join" cascade="all-delete-orphan" lazy="true"
+		  collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.VisitResultAssignment, Entities]], Core" >
+      <key column="VRA_VISIT_RESULT_ID" />
+      <one-to-many class="Entities.VisitResultAssignment, Entities" />
+    </bag>
+  </class>
+</hibernate-mapping>

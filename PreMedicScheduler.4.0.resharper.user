@@ -1,0 +1,93 @@
+<Configuration>
+  <UnitTestRunner>
+    <CustomStartDirectory>
+    </CustomStartDirectory>
+    <UseShadowCopy>True</UseShadowCopy>
+    <UseCustomFolder>False</UseCustomFolder>
+    <EnableUnitTesting>True</EnableUnitTesting>
+    <Providers />
+  </UnitTestRunner>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="DB11FF75-F34E-4194-A7B3-2DFADB5F1D06/d:Localization/f:Dictionary.xml" caret="18909" scrollPosition="0|200" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/f:BirthDateGenerator.vb" caret="2586" scrollPosition="0|24" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/f:SmsSendStatus.vb" caret="1475" scrollPosition="0|9" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/d:Support/f:SMSMessages.vb" caret="371" scrollPosition="0|3" />
+      <File id="DB11FF75-F34E-4194-A7B3-2DFADB5F1D06/f:hibernate.central.cfg.xml" caret="798" scrollPosition="0|0" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/d:Mappings/f:Visit.hbm.xml" caret="0" scrollPosition="0|0" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/d:Mappings/f:Activity.hbm.xml" caret="0" scrollPosition="0|0" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/d:Mappings/f:BonusPoints.hbm.xml" caret="871" scrollPosition="0|0" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/f:SMSSendingList.vb" caret="1141" scrollPosition="0|36" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/f:BonusPoints.vb" caret="614" scrollPosition="0|9" />
+      <File id="F2960866-6C8A-446F-9319-F01C1AED792C/f:Service1.cs" caret="6494" scrollPosition="0|128" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/d:Mappings/f:SMSSendingList.hbm.xml" caret="854" scrollPosition="0|0" />
+      <File id="DB11FF75-F34E-4194-A7B3-2DFADB5F1D06/d:DataAccessLayer/f:Manager.cs" caret="7464" scrollPosition="0|143" />
+      <File id="F2960866-6C8A-446F-9319-F01C1AED792C/f:App.config" caret="0" scrollPosition="0|0" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="F2960866-6C8A-446F-9319-F01C1AED792C/f:Service1.cs" caret="1750" scrollPosition="0|44" />
+      <File id="F2960866-6C8A-446F-9319-F01C1AED792C/f:Service1.cs" caret="4565" scrollPosition="0|100" />
+      <File id="F2960866-6C8A-446F-9319-F01C1AED792C/f:App.config" caret="1212" scrollPosition="0|0" />
+      <File id="F2960866-6C8A-446F-9319-F01C1AED792C/f:Service1.cs" caret="5871" scrollPosition="0|123" />
+      <File id="F2960866-6C8A-446F-9319-F01C1AED792C/f:Service1.cs" caret="5665" scrollPosition="0|90" />
+      <File id="F2960866-6C8A-446F-9319-F01C1AED792C/f:Service1.cs" caret="5543" scrollPosition="0|116" />
+      <File id="F2960866-6C8A-446F-9319-F01C1AED792C/f:Service1.cs" caret="1865" scrollPosition="0|57" />
+      <File id="DB11FF75-F34E-4194-A7B3-2DFADB5F1D06/d:DataAccessLayer/f:Manager.cs" caret="12486" scrollPosition="0|157" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/f:BirthDateGenerator.vb" caret="2987" scrollPosition="0|26" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/f:BirthDateGenerator.vb" caret="1374" scrollPosition="0|30" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/f:SMSSendingList.vb" caret="1147" scrollPosition="0|26" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/f:SMSSendingList.vb" caret="390" scrollPosition="0|0" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/f:SmsSendStatus.vb" caret="1475" scrollPosition="0|0" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/f:SmsSendStatus.vb" caret="1475" scrollPosition="0|9" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/f:SmsSendStatus.vb" caret="1475" scrollPosition="0|9" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/f:SmsSendStatus.vb" caret="1475" scrollPosition="0|9" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/f:SmsSendStatus.vb" caret="1475" scrollPosition="0|21" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/f:SMSSendingList.vb" caret="288" scrollPosition="0|0" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/f:SMSSendingList.vb" caret="1260" scrollPosition="0|33" />
+      <File id="DB11FF75-F34E-4194-A7B3-2DFADB5F1D06/d:Localization/f:Dictionary.xml" caret="18909" scrollPosition="0|200" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/f:BirthDateGenerator.vb" caret="2651" scrollPosition="0|57" />
+      <File id="F2960866-6C8A-446F-9319-F01C1AED792C/f:Service1.cs" caret="6062" scrollPosition="0|111" />
+      <File id="F2960866-6C8A-446F-9319-F01C1AED792C/f:Service1.cs" caret="4202" scrollPosition="0|87" />
+      <File id="F2960866-6C8A-446F-9319-F01C1AED792C/f:Service1.cs" caret="3265" scrollPosition="0|69" />
+      <File id="DB11FF75-F34E-4194-A7B3-2DFADB5F1D06/d:DataAccessLayer/f:Manager.cs" caret="6398" scrollPosition="0|167" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/d:Mappings/f:SMSSendingList.hbm.xml" caret="587" scrollPosition="0|0" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/d:Mappings/f:SMSSendingList.hbm.xml" caret="818" scrollPosition="0|0" />
+      <File id="DB11FF75-F34E-4194-A7B3-2DFADB5F1D06/d:DataAccessLayer/f:Manager.cs" caret="6563" scrollPosition="0|167" />
+      <File id="DB11FF75-F34E-4194-A7B3-2DFADB5F1D06/d:DataAccessLayer/f:Manager.cs" caret="7464" scrollPosition="0|143" />
+      <File id="F2960866-6C8A-446F-9319-F01C1AED792C/f:App.config" caret="947" scrollPosition="0|0" />
+    </RecentEdits>
+  </RecentFiles>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+      <setting name="UseSolutionBuilder">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="Patient" priority="0" />
+      <Item value="MobilePhone" priority="0" />
+      <Item value="Length" priority="1" />
+      <Item value="Instance" priority="0" />
+      <Item value="SetInstanceNull" priority="0" />
+      <Item value="Timeout" priority="1" />
+      <Item value="WebResponse" priority="0" />
+      <Item value="GetResponseStream" priority="0" />
+      <Item value="StringBuilder" priority="0" />
+      <Item value="Append" priority="0" />
+      <Item value="Response" priority="1" />
+      <Item value="ToString" priority="2" />
+      <Item value="Substring" priority="0" />
+      <Item value="Empty" priority="0" />
+      <Item value="SmsSendStatus.NotSent" priority="0" />
+      <Item value="SmsSendStatus.Sent" priority="0" />
+      <Item value="SmsSendStatus.InvalidPhone" priority="0" />
+      <Item value="SmsSendStatus" priority="1" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

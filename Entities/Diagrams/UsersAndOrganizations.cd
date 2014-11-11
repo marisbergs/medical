@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Core.Bll.DictionaryBase(Of IdType)" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Entities.Role" Collapsed="true">
+    <Position X="4.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Role.vb</FileName>
+      <HashCode>AQAAIAAQAAAAAAAAAAIAQAQgAAFAAIAAUQCBAAQACAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.AuditLog" Collapsed="true">
+    <Position X="7" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>AuditLog.vb</FileName>
+      <HashCode>AECBBAAAACAgDKAgAABEBAgCAgiAgICoggAAgIJIAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.Classifier" Collapsed="true">
+    <Position X="9.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Classifiers\Classifier.vb</FileName>
+      <HashCode>AAAAEBAAAAAAAAAAAECAAAAAAAAAAABIICACCAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.ClassifierType" Collapsed="true">
+    <Position X="11.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Classifiers\ClassifierType.vb</FileName>
+      <HashCode>AAAAAEIAAgBAIEAAEAAAIAJAAABAgABCAAAwAQAAAAI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.CodeCheck" Collapsed="true">
+    <Position X="13.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>CodeCheck.vb</FileName>
+      <HashCode>AAAEIAAABEAQAAAAEAAgQAQAAAAACAQCAAAAAAJgAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Entities.LogEntryConfig" Collapsed="true">
+    <Position X="16.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>LogEntryConfig.vb</FileName>
+      <HashCode>AAABCAAAAIAAAAAgEEAAAAAYACAAAIAAAACBgAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

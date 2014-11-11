@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.Permission, Entities" table="Permissions" mutable="false">
+    
+    <id name="Id" column="PRM_ID"><generator class="assigned"/></id>
+    <property name="DeleteTime" column="PRM__DELETE_TIME" />
+
+    <property name="Description" column="PRM_DESCRIPTION" not-null="true"/>
+
+  </class>
+</hibernate-mapping>

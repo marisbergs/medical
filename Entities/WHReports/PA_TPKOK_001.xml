@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<PA_TPKOK_001>
+  <Pamatdati>
+    <vidtin_kods>$this.S('CMCase.SrsDepartment.Department.Code')</vidtin_kods>
+    <akta_numurs>$this.S('CMCase.TIAct.DocNumber')</akta_numurs>
+    <akta_datums>$this.D('CMCase.TIAct.ActDate')</akta_datums>
+    <kp_veids>$this.S('CMCase.TIAct.CaseType.ExternalID')</kp_veids>
+    <nmr_kods>$this.S('CMCase.TaxpayerCode')</nmr_kods>
+    <adrese>$this.S('CMCase.TIAct.ObjAddress')</adrese>
+  </Pamatdati>
+  <Saturs>
+    <serija_numurs>$this.S('SerialNumber')</serija_numurs>
+    <ktpr_datums>$this.D('WBDate')</ktpr_datums>
+    <piegadataja_pazime>$this.S('Deliverer')</piegadataja_pazime>
+    <piegadataja_kods>$this.S('DelivererCode')</piegadataja_kods>
+    <sanemeja_pazime>$this.S('Receiver')</sanemeja_pazime>
+    <sanemeja_kods>$this.S('ReceiverCode')</sanemeja_kods>
+    <parvadataja_kods>$this.S('CarrierCode')</parvadataja_kods>
+    <transportlidz_regnr>$this.S('CarNumber')</transportlidz_regnr>
+    <ipasnieks>$this.S('CarOwner')</ipasnieks>
+    <transportlidz_vaditajs>$this.S('DriverCode')</transportlidz_vaditajs>
+    <kokmaterialu_daudzums>$this.N('Amount')</kokmaterialu_daudzums>
+    <summa>$this.N('Sum')</summa>
+  </Saturs>
+</PA_TPKOK_001>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.Sale, Entities" table="[Sales]" dynamic-update="true">
+    
+    <id name="Id" column="SAL_ID"><generator class="guid.comb" /></id>
+	  <many-to-one name="Patient" column="SAL_PATIENT_ID" fetch="join"/>
+    <property name="PaymentDate" column="SAL_PAYMENT_DATE" />
+    <many-to-one name="PaymentUser" column="SAL_PAYMENT_USER_ID" fetch="join" />
+    <property name="Notes" column="SAL_NOTES" />
+    <property name="CreateDate" column="SAL_CREATE_DATE" />
+    <property name="DeleteTime" column="SAL__DELETE_TIME" />
+    <many-to-one name="CreateUser" column="SAL_CREATE_USER_ID" fetch="join" />
+    <many-to-one name="DeleteUser" column="SAL_DELETE_USER_ID" fetch="select" />
+
+
+    <bag name="Products" table="[SaleProducts]"
+			  access="property" generic="true" inverse="true"
+				cascade="all-delete-orphan" lazy="true"
+				collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.SaleProduct, Entities]], Core">
+      <key column="SAP_SALE_ID" />
+      <one-to-many class="Entities.SaleProduct, Entities" />
+    </bag>
+  </class>
+</hibernate-mapping>

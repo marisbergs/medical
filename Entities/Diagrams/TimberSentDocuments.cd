@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Entities.Document" Collapsed="true">
+    <Position X="1" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Document.vb</FileName>
+      <HashCode>AAAiAACEAAAAAgAAABAAAAQAAAAEAAQAAAACAABAAAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.TimberSentDocument">
+    <Position X="1" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TimberSentDocument.vb</FileName>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Documents" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Entities.TimberSendDocumentDetail">
+    <Position X="3.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TimberSendDocumentDetail.vb</FileName>
+      <HashCode>AAAGAAAACAAAAggYIAAEAICAgAAAAAAAAAACAAFABAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Entities.Metal">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Metal.vb</FileName>
+      <HashCode>AKQABAAAAAEAASAAAAAAAGAACAIAEAAAEACBAAAAAhA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="PhysicalEntitiesPurchase" />
+      <Property Name="LegalEntitiesPurchase" />
+      <Property Name="LegalEntitiesSell" />
+    </ShowAsCollectionAssociation>
+    <AssociationLine Name="PhysicalEntitiesPurchase" Type="Entities.MetalPhysicalEntityPurchase" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5" Y="3.362" />
+        <Point X="6.75" Y="3.362" />
+        <Point X="6.75" Y="5" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="LegalEntitiesPurchase" Type="Entities.MetalLegalEntityPurchase" FixedToPoint="true">
+      <Path>
+        <Point X="4.625" Y="3.902" />
+        <Point X="4.625" Y="5" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="LegalEntitiesSell" Type="Entities.MetalLegalEntitySell" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.5" Y="3.375" />
+        <Point X="2.75" Y="3.375" />
+        <Point X="2.75" Y="5" />
+      </Path>
+    </AssociationLine>
+  </Class>
+  <Class Name="Entities.MetalLegalEntityBase">
+    <Position X="3" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MetalLegalEntityBase.vb</FileName>
+      <HashCode>IABAAgAAAQAAAgAAAAAAAAAAgCCAAAAAAAACABAAAAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.MetalLegalEntitySell">
+    <Position X="2" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MetalLegalEntitySell.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.MetalPhysicalEntityPurchase">
+    <Position X="6" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MetalPhysicalEntityPurchase.vb</FileName>
+      <HashCode>AAAAAAAEAQAhAgAAAEAIAIAAACAAAAAAAAACABQAAAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.Violation" Collapsed="true">
+    <Position X="8" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Violation.vb</FileName>
+      <HashCode>gBiAoEzAGAAAAABFAMAgAAUCAEEAAgEAE0CBAAEAIIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.Document" Collapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Document.vb</FileName>
+      <HashCode>wGAyqUCEBFSgAiCQLBgEAkQQAHIAIAiUUgEqAEJAACI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.MetalLegalEntityPurchase">
+    <Position X="4" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MetalLegalEntityPurchase.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

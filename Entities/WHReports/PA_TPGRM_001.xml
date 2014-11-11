@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<PA_TPGRM_001>
+  <Pamatdati>
+    <vidtin_kods>$this.S('CMCase.SrsDepartment.Department.Code')</vidtin_kods>
+    <akta_numurs>$this.S('CMCase.TIAct.DocNumber')</akta_numurs>
+    <akta_datums>$this.D('CMCase.TIAct.ActDate')</akta_datums>
+    <kp_veids>$this.S('CMCase.TIAct.CaseType.ExternalID')</kp_veids>
+    <nmr_kods>$this.S('CMCase.TaxpayerCode')</nmr_kods>
+    <adrese>$this.S('CMCase.TIAct.ObjAddress')</adrese>
+  </Pamatdati>
+  <Saturs>
+    <nmr_kods>$this.S('TaxpayerCode')</nmr_kods>
+    <gramatvediba_organiz>$this.S('TaxpayerName')</gramatvediba_organiz>
+    <liguma_datums>$this.D('ContractDate')</liguma_datums>
+    <termins_no>$this.D('ContractFrom')</termins_no>
+    <termins_lidz>$this.D('ContractUntil')</termins_lidz>
+  </Saturs>
+</PA_TPGRM_001>

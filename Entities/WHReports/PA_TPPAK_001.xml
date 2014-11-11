@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<PA_TPPAK_001>
+  <Pamatdati>
+    <vidtin_kods>$this.S('CMCase.SrsDepartment.Department.Code')</vidtin_kods>
+    <akta_numurs>$this.S('CMCase.TIAct.DocNumber')</akta_numurs>
+    <akta_datums>$this.D('CMCase.TIAct.ActDate')</akta_datums>
+    <kp_veids>$this.S('CMCase.TIAct.CaseType.ExternalID')</kp_veids>
+    <nmr_kods>$this.S('CMCase.TaxpayerCode')</nmr_kods>
+    <adrese>$this.S('CMCase.TIAct.ObjAddress')</adrese>
+  </Pamatdati>
+  <!--#if($this.Contractors.ActiveItems.Count>0)-->
+  <!--#foreach($a in $this.Contractors.ActiveItems)-->
+  <Saturs>
+    <nmr_kods>$this.S('TaxpayerCode')</nmr_kods>
+    <planotas_izmaksas>$this.N('Expenses')</planotas_izmaksas>
+    <darba_samaksa>$this.N('Wage')</darba_samaksa>
+    <vsaoi>$this.N('Tax')</vsaoi>
+    <uzn_nmrkods>$a.S('Code')</uzn_nmrkods>
+    <darbinieku_skaits>$a.S('Employees')</darbinieku_skaits>
+  </Saturs>
+  <!--#end-->
+  <!--#end-->
+</PA_TPPAK_001>

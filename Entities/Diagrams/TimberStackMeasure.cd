@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Entities.TimberStackMeasure">
+    <Position X="1" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TimberStackMeasure.vb</FileName>
+      <HashCode>AAAgEAAAAAAAAAAAAAAAAAAAABAAAAAIAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Measures" />
+    </ShowAsCollectionAssociation>
+    <InheritanceLine Type="Entities.Document" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="1.688" Y="1.13" />
+        <Point X="1.688" Y="2" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="Entities.Document" Collapsed="true">
+    <Position X="1" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Document.vb</FileName>
+      <HashCode>AAAiAACEAAAAAgAAABAAAAQAAAAEAAQAAAACAABAAAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.TimberStackMeasureDetail">
+    <Position X="4" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TimberStackMeasureDetail.vb</FileName>
+      <HashCode>AEAAAAAABAAAAAAAAAAAAEBCAAAAAAAAAAAAAAABAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.Guardian, Entities" table="[Guardians]" dynamic-update="true">
+    
+    <id name="Id" column="GUA_ID"><generator class="guid.comb" /></id>
+	  
+	  <property name="DeleteTime" column="GUA__DELETE_TIME" />
+	  <property name="Name" column="GUA_NAME" not-null="true" />
+	  <property name="Surname" column="GUA_SURNAME" not-null="true" />
+	  <property name="Code" column="GUA_CODE"/>
+	  <property name="Address" column="GUA_ADDRESS"/>
+	  <property name="MobilePhone" column="GUA_MOBILE_PHONE"/>
+	  <property name="Mail" column="GUA_MAIL"/>
+	  <component name="Type">
+		  <property name="Value" column="GUA_TYPE" access="property"/>
+	  </component>
+	  <many-to-one name="Patient" column="GUA_PATIENT_ID"/>
+
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.Classifier, Entities" table="Classifiers" dynamic-update="true">
+    
+    <id name="Id" column="CLS_ID"><generator class="guid.comb"/></id>
+	<discriminator column="CLS_TYPE_ID" type="String" />
+	<property name="DeleteTime" column="CLS__DELETE_TIME" />
+
+	  <property name="Value" column="CLS_NAME" />
+	  <property name="Code" column="CLS_CODE" />
+	<property name="ValidFrom" column="CLS_VALID_FROM" />
+	<property name="ValidUntil" column="CLS_VALID_UNTIL" />
+	<property name="Text" column="CLS_TEXT" />
+	<property name="DecimalValue" column="CLS_DECIMAL"/>
+	  <property name ="Mark" column ="CLS_MARK"/>
+	  <property name ="SecondMark" column ="CLS_SECOND_MARK"/>
+	  <property name ="IntegerValue" column ="CLS_INTEGER"/>
+	  <property name ="SecondIntegerValue" column ="CLS_SECOND_INTEGER"/>
+	  <property name ="ThirdIntegerValue" column ="CLS_THIRD_INTEGER"/>
+	  <property name ="FourIntegerValue" column ="CLS_FOUR_INTEGER"/>
+	<property name ="Comment" column ="CLS_COMMENTS" />
+	  <property name ="Parent" column ="CLS_PARENT_ID" />
+	  <property name ="Reference" column ="CLS_REFERENCE_ID" />
+	  <property name ="ReferenceSecond" column ="CLS_REFERENCE_ID_SECOND" />
+	  <property name ="ReferenceThird" column ="CLS_REFERENCE_ID_THIRD" />
+	  <property name ="ReferenceFourth" column ="CLS_REFERENCE_ID_FOURTH" />
+    <property name ="ReferenceFive" column ="CLS_REFERENCE_ID_FIVE" />
+    <property name ="ReferenceSix" column ="CLS_REFERENCE_ID_SIX" />
+	  <property name ="CanNotDelete" column ="CLS_CANNOT_DELETE" />
+
+
+	<subclass name="Entities.Position, Entities" discriminator-value="Position" />
+	<subclass name="Entities.Speciality, Entities" discriminator-value="Speciality">
+		<bag name="Services" table="SpecialitiesServices"
+				   access="property" generic="true" lazy="true"
+				   collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.Services, Entities]], Core">
+			<key column="SPS_SPECIALITY_ID"/>
+			<many-to-many column="SPS_SERVICE_ID" class="Entities.Services, Entities" fetch="join" />
+		</bag>
+	</subclass>
+	<subclass name="Entities.Room, Entities" discriminator-value="Room" />
+	  <subclass name="Entities.RoomGroups, Entities" discriminator-value="RoomGroups">
+		  <bag name="Specialities" table="RoomGroupSpecialities"
+					 access="property" generic="true" lazy="true"
+					 collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.Speciality, Entities]], Core">
+			  <key column="RGS_ROOM_GROUP_ID"/>
+			  <many-to-many column="RGS_SPECIALITY_ID" class="Entities.Speciality, Entities" fetch="join" />
+		  </bag>
+	  </subclass>
+	<subclass name="Entities.SpecialityGroups, Entities" discriminator-value="SpecialityGroups">
+	  <bag name="Specialities" table="SpecialityGroupsSpeciality"
+				 access="property" generic="true" lazy="true"
+				 collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.Speciality, Entities]], Core">
+		  <key column="SGS_SPECIALITY_GROUP_ID"/>
+		  <many-to-many column="SGS_SPECIALITY_ID" class="Entities.Speciality, Entities" fetch="join" />
+	  </bag>
+	</subclass>
+	<subclass name="Entities.VisitType, Entities" discriminator-value="VisitType" />
+	  <subclass name="Entities.Services, Entities" discriminator-value="Services">
+		  <bag name="RoomGroup" table="ServicesRoomGroups"
+							   access="property" generic="true" lazy="true"
+							   collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.RoomGroups, Entities]], Core">
+			  <key column="SRG_SERVICE_ID"/>
+			  <many-to-many column="SRG_ROOMGROUP_ID" class="Entities.RoomGroups, Entities" fetch="join" />
+		  </bag>
+	  </subclass>
+	  <subclass name="Entities.TemplateType, Entities" discriminator-value="TemplateType" />
+	  <subclass name="Entities.BloodGroup, Entities" discriminator-value="BloodGroup" />
+	  <subclass name="Entities.Language, Entities" discriminator-value="Language" />
+	  <subclass name="Entities.GroupsWork, Entities" discriminator-value="GroupsWork" />
+	  <subclass name="Entities.Percentage, Entities" discriminator-value="Percentage" />
+	  <subclass name="Entities.ServiceTypes, Entities" discriminator-value="ServiceTypes" />
+	  <subclass name="Entities.DocType, Entities" discriminator-value="DocType" />
+	  <subclass name="Entities.Specialization, Entities" discriminator-value="Specialization" />
+	  <subclass name="Entities.BusinessGroup, Entities" discriminator-value="BusinessGroup" />
+	  <subclass name="Entities.Kindred, Entities" discriminator-value="Kindred" />
+	  <subclass name="Entities.EmployeGrouping, Entities" discriminator-value="EmployeGrouping" />
+	  <subclass name="Entities.SpecialityType, Entities" discriminator-value="SpecialityType" />
+	  <subclass name="Entities.Resource, Entities" discriminator-value="Resource" />
+    <subclass name ="Entities.PaymentType, Entities" discriminator-value ="PaymentType" />
+    <subclass name ="Entities.RtgType, Entities" discriminator-value ="RtgType" />
+
+	  <subclass name="Entities.Statuss, Entities" discriminator-value="Statuss">
+		  <bag name="Status" table="StatusStatus"
+			   access="property" generic="true" lazy="true"
+			   collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.Statuss, Entities]], Core">
+			  <key column="SSS_STATUS_ID"/>
+			  <many-to-many column="SSS_NEXT_STATUS_ID" class="Entities.Statuss, Entities" fetch="join" />
+		  </bag>
+	  </subclass>
+
+
+  </class>
+</hibernate-mapping>
+

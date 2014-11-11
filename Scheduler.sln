@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scheduler", "Scheduler\Scheduler.csproj", "{7C4448AD-673C-4742-BC89-01CFE6C09BA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{DB11FF75-F34E-4194-A7B3-2DFADB5F1D06}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Entities", "Entities\Entities.vbproj", "{BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SchedulerSetup", "SchedulerSetup\TpaisSchedulerSetup.vdproj", "{98CCA228-8AFD-445B-ACA6-6D82348EC68D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C4448AD-673C-4742-BC89-01CFE6C09BA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C4448AD-673C-4742-BC89-01CFE6C09BA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C4448AD-673C-4742-BC89-01CFE6C09BA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C4448AD-673C-4742-BC89-01CFE6C09BA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB11FF75-F34E-4194-A7B3-2DFADB5F1D06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB11FF75-F34E-4194-A7B3-2DFADB5F1D06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB11FF75-F34E-4194-A7B3-2DFADB5F1D06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB11FF75-F34E-4194-A7B3-2DFADB5F1D06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98CCA228-8AFD-445B-ACA6-6D82348EC68D}.Debug|Any CPU.ActiveCfg = Debug
+		{98CCA228-8AFD-445B-ACA6-6D82348EC68D}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://zeus:8080/
+		SccProjectUniqueName0 = Scheduler\\Scheduler.csproj
+		SccProjectName0 = Scheduler
+		SccLocalPath0 = Scheduler
+		SccProjectUniqueName1 = Core\\Core.csproj
+		SccProjectName1 = Core
+		SccLocalPath1 = Core
+		SccProjectUniqueName2 = Entities\\Entities.vbproj
+		SccProjectName2 = Entities
+		SccLocalPath2 = Entities
+		SccLocalPath3 = .
+		SccProjectUniqueName4 = SchedulerSetup\\SchedulerSetup.vdproj
+		SccProjectName4 = SchedulerSetup
+		SccLocalPath4 = SchedulerSetup
+	EndGlobalSection
+EndGlobal

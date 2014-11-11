@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.SystemParameter, Entities" table="_SysParameters" dynamic-update="true">
+    <id name="Id" column="PRM_NAME">
+      <generator class="assigned"/>
+    </id>
+    <property name="Value" column="PRM_VALUE" />
+    <property name="ParamDate" column="PRM_DATE_VALUE" />
+  </class>
+</hibernate-mapping>

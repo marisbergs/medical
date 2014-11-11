@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<PA_TPNNP_001>
+  <Pamatdati>
+    <vidtin_kods>$this.S('CMCase.SrsDepartment.Department.Code')</vidtin_kods>
+    <akta_numurs>$this.S('CMCase.TIAct.DocNumber')</akta_numurs>
+    <akta_datums>$this.D('CMCase.TIAct.ActDate')</akta_datums>
+    <kp_veids>$this.S('CMCase.TIAct.CaseType.ExternalID')</kp_veids>
+    <nmr_kods>$this.S('CMCase.TaxpayerCode')</nmr_kods>
+    <adrese>$this.S('CMCase.TIAct.ObjAddress')</adrese>
+  </Pamatdati>
+  <!--#if($this.Taxpayers.ActiveItems.Count>0)-->
+  <!--#foreach($a in $this.Taxpayers.ActiveItems)-->
+  <Saturs>
+    <datums_no>$this.D('PeriodFrom')</datums_no>
+    <datums_lidz>$this.D('PeriodUntil')</datums_lidz>
+    <nmr_kods>$a.S('TaxpayerCode')</nmr_kods>
+  </Saturs>
+  <!--#end-->
+  <!--#end-->
+</PA_TPNNP_001>

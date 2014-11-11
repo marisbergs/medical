@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<raksturots_list>
+  <raksturots>
+    <nmr_kods></nmr_kods>
+    <datums></datums>
+    <koment></koment>
+    <datums_ne></datums_ne>
+    <sutit_visiem></sutit_visiem>
+    <id_rakstatciem></id_rakstatciem>
+    <id_rakstapakst></id_rakstapakst>
+    <atc_teksts></atc_teksts>
+    <datums_atc></datums_atc>
+    <piezimes></piezimes>
+  </raksturots>
+</raksturots_list>

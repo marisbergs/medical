@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.VisitResultAssignment, Entities" table="[VisitResultAssignments]" dynamic-update="true">
+    
+    <id name="Id" column="VRA_ID"><generator class="guid.comb" /></id>	  
+    <property name="DeleteTime" column="VRA__DELETE_TIME" />
+    
+    <property name ="VisitResult" column ="VRA_VISIT_RESULT_ID"/>
+    <property name ="Asignment" column ="VRA_ASIGNMENT_ID"/>
+  </class>
+</hibernate-mapping>

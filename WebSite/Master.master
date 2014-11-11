@@ -1,0 +1,31 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Master.master.cs" Inherits="Master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Premium Medical</title>
+    <link href="Style.css" rel="stylesheet" type="text/css" />
+</head>
+<body class = "body">
+    <form id="form1" runat="server">
+        <table style=" width:1000; BORDER: #d9d3a9 1px solid; background-color: #fefbdd; ">
+            <tr>
+                <td style="width: 183px; " align="right" valign="bottom">
+                    <asp:Image ID="Image2" ImageUrl="~/images/logo.gif" runat="server" />              
+                </td>                  
+                <td align="left" valign="bottom">
+                    <asp:Image ID="Image1" ImageUrl="~/images/banner.png" runat="server" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="height: 233px">
+                    <asp:contentplaceholder  id="ContentPlaceHolder1" runat="server">
+                        
+                    </asp:contentplaceholder>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.VisitStatusHistory, Entities" table="[VisitsStatusHistory]" dynamic-update="true">
+    
+    <id name="Id" column="VSH_ID"><generator class="guid.comb" /></id>	  
+	<property name="DeleteTime" column="VSH__DELETE_TIME" />
+
+	  <property name="Visit" column="VSH_VISIT_ID"/>
+	  <property name="User" column="VSH_CHANGE_USER"/>
+	  <property name ="Status" column ="VSH_STATUS_ID"/>
+	  <property name ="ChangeDate" column ="VSH_CHANGE_DATE"/>
+  </class>
+</hibernate-mapping>

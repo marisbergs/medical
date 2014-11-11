@@ -1,0 +1,2710 @@
+﻿<!DOCTYPE aliases [
+  <!ELEMENT aliases (Entry*)>
+  <!ELEMENT Entry EMPTY>
+  <!ATTLIST Entry key CDATA #REQUIRED>
+  <!ATTLIST Entry value CDATA #REQUIRED>
+]>
+
+<aliases>
+
+  <!-- TPD plāns -->
+  <Entry key ="D66_TPD_STRU_NOSAUKUMS" value ="$D66.RI('SrsDepartment.FullNameGen')"/>
+  <Entry key ="D66_TPD_PLANS_NUMURS" value ="$D66.DocNumber"/>
+  <Entry key ="D66_TPD_PLANS_NO" value ="$D66.FI('DateFrom', 'd')"/>
+  <Entry key ="D66_TPD_PLANS_LIDZ" value ="$D66.FI('DateUntil', 'd')"/>
+  <Entry key ="D66_TPD_APSTIPRINATAJS" value ="$D66.RI('Approver')"/>
+  <Entry key ="D66_TPD_APSTIPRINATAJS_AMATS" value ="$D66.RI('Approver.Position')"/>
+  <Entry key ="D66_TPD_APSTIPRINATAJS_DATUMS" value ="$D66.FI('ApprovalDate','d')"/>
+  <Entry key ="D66_TPD_SAGATAVOTAJS" value ="$D66.RI('Owner')"/>
+  <Entry key ="D66_TPD_SAGATAVOTAJS_TALRUNIS" value ="$D66.RI('Owner.Phone')"/>
+
+  <Entry key ="D66A" value ="#foreach($D66A in $D66.CasesSortedByRiskGroup)"/>
+  <Entry key ="D66A_TPD_RISKA_GRUPA" value ="#set ($x=$D66A.Key) $x.RI('Value')"/>
+  <Entry key ="_" value ="#end"/>
+  <Entry key ="D66B" value ="#foreach($D66B in $D66A.Value)"/>
+  <Entry key ="D66B_NM_KODS" value ="$D66B.RI('TaxpayerCode')"/>
+  <Entry key ="D66B_NM_NOSAUKUMS" value ="$D66B.RI('TaxpayerName')"/>
+  <Entry key ="D66B_NM_ADRESE" value ="$D66B.RI('TaxpayerAddress')"/>
+  <Entry key ="D66B_NM_VID_KODS" value ="$D66B.RI('TaxpayerSrsDepartment.Code')"/>
+  <Entry key ="D66B_NM_NACE" value ="$D66B.RI('TaxpayerNace.Value')"/>
+  <Entry key ="D66B_OBJEKTA_NOSAUKUMS" value ="$D66B.RI('ObjectName')"/>
+  <Entry key ="D66B_OBJEKTA_ADRESE" value ="$D66B.RI('ObjectAddress')"/>
+  <Entry key ="D66B_KP_VEIDS" value ="$D66B.RI('CMType')"/>
+  <Entry key ="D66B_KP_TEMAS" value ="$D66B.RI('ThemesString')"/>
+  <Entry key ="D66B_KP_RISKI" value ="$D66B.RI('RisksString')"/>
+  <Entry key ="D66B_NM_TP_DATUMS" value ="$D66B.FI('LastTIDate', 'd')"/>
+  <Entry key ="D66B_NM_TP_PARKAPUMS" value ="$D66B.RI('LatestCMHasViolations')"/>
+  <Entry key ="D66B_NM_APSEKOSANA_DATUMS" value ="$D66B.FI('LastInspectionDate', 'd')"/>
+  <Entry key ="D66B_NM_NOVEROSANA_DATUMS" value ="$D66B.FI('LastObservationDate', 'd')"/>
+  <Entry key ="D66B_NM_SP_DATUMS" value ="$D66B.FI('LastSIDate', 'd')"/>
+  <!-- End TPD plāns -->
+
+  <!--Pilnvarojums apmeklēt NM-->
+  <Entry key ="D1_SPEKA_LIDZ_TEKSTS" value ="$D1.DAT('ValidUntil', 'Lok', false)"/>
+  <Entry key ="D1_SPEKA_LIDZ_TEKSTS_GEN" value ="$D1.DAT('ValidUntil', 'Gen', false)"/>
+  <Entry key ="D1_SPEKA_LIDZ_TEKSTS_DAT" value ="$D1.DAT('ValidUntil', 'Dat', false)"/>
+  <Entry key ="D1_SPEKA_LIDZ_TEKSTS_LOK" value ="$D1.DAT('ValidUntil', 'Lok', false)"/>
+  <Entry key ="D1_SPEKA_LIDZ_TEKSTS_AKU" value ="$D1.DAT('ValidUntil', 'Aku', false)"/>
+  <Entry key ="D1_DOK_NUMURS" value ="$D1.DocNumber"/>
+
+  <Entry key ="D1_JURID" value ="#if($D1.PerformAtLegalAddress)"/>
+  <Entry key ="D1_STRU" value ="#if($D1.PerformAtDepartment)"/>
+  <Entry key ="D1_CITUR" value ="#if($D1.PerformSomewhereElse)"/>
+
+  <!--Lēmums par apsekošamas veikšanu-->
+  <Entry key ="D3_JURID" value ="#if($D3.PerformAtLegalAddress)"/>
+  <Entry key ="D3_STRU" value ="#if($D3.PerformAtDepartment)"/>
+  <Entry key ="D3_CITUR" value ="#if($D3.PerformSomewhereElse)"/>
+  <Entry key ="D3_VEIKSANA_LIDZ_TEKSTS" value ="$D3.DAT('PerformFrom', 'Lok', false)"/>
+  <Entry key ="D3_VEIKSANA_LIDZ_TEKSTS_GEN" value ="$D3.DAT('PerformFrom', 'Gen', false)"/>
+  <Entry key ="D3_VEIKSANA_LIDZ_TEKSTS_DAT" value ="$D3.DAT('PerformFrom', 'Dat', false)"/>
+  <Entry key ="D3_VEIKSANA_LIDZ_TEKSTS_LOK" value ="$D3.DAT('PerformFrom', 'Lok', false)"/>
+  <Entry key ="D3_VEIKSANA_LIDZ_TEKSTS_AKU" value ="$D3.DAT('PerformFrom', 'Aku', false)"/>
+  
+  <!--Lēmums par novērošanas veikšanu-->
+  <Entry key ="D4_JURID" value ="#if($D4.PerformAtLegalAddress)"/>
+  <Entry key ="D4_STRU" value ="#if($D4.PerformAtDepartment)"/>
+  <Entry key ="D4_CITUR" value ="#if($D4.PerformSomewhereElse)"/>
+  <Entry key ="D4_VEIKSANA_NO_TEKSTS" value ="$D4.DAT('PerformFrom', 'Lok', false)"/>
+  <Entry key ="D4_VEIKSANA_NO_TEKSTS_GEN" value ="$D4.DAT('PerformFrom', 'Gen', false)"/>
+  <Entry key ="D4_VEIKSANA_NO_TEKSTS_DAT" value ="$D4.DAT('PerformFrom', 'Dat', false)"/>
+  <Entry key ="D4_VEIKSANA_NO_TEKSTS_LOK" value ="$D4.DAT('PerformFrom', 'Lok', false)"/>
+  <Entry key ="D4_VEIKSANA_LIDZ_TEKSTS" value ="$D4.DAT('PerformUntil', 'Lok', false)"/>
+  <Entry key ="D4_VEIKSANA_LIDZ_TEKSTS_GEN" value ="$D4.DAT('PerformUntil', 'Gen', false)"/>
+  <Entry key ="D4_VEIKSANA_LIDZ_TEKSTS_DAT" value ="$D4.DAT('PerformUntil', 'Dat', false)"/>
+  <Entry key ="D4_VEIKSANA_LIDZ_TEKSTS_LOK" value ="$D4.DAT('PerformUntil', 'Lok', false)"/>
+
+  <!--Lēmums par TP veikšanu-->
+  <Entry key ="D5A" value ="#foreach($D5A in $D5.OI('CMCase.Themes.ActiveItems'))"/>
+  <Entry key ="D5A_TPT_NOSAUKUMS" value ="$D5A.RI('Theme.Value')"/>
+  <Entry key ="D5A_DATUMS_NO" value ="$D5A.FI('DateFrom', 'd')"/>
+  <Entry key ="D5A_DATUMS_LIDZ" value ="$D5A.FI('DateUntil', 'd')"/>
+
+  <Entry key ="D5_JURID" value ="#if($D5.PerformAtLegalAddress)"/>
+  <Entry key ="D5_STRU" value ="#if($D5.PerformAtDepartment)"/>
+  <Entry key ="D5_CITUR" value ="#if($D5.PerformSomewhereElse)"/>
+  <Entry key ="D5_VEIKSANA_LIDZ_TEKSTS" value ="$D5.DAT('PerformFrom', 'Lok', false)"/>
+  <Entry key ="D5_VEIKSANA_LIDZ_TEKSTS_GEN" value ="$D5.DAT('PerformFrom', 'Gen', false)"/>
+  <Entry key ="D5_VEIKSANA_LIDZ_TEKSTS_DAT" value ="$D5.DAT('PerformFrom', 'Dat', false)"/>
+  <Entry key ="D5_VEIKSANA_LIDZ_TEKSTS_LOK" value ="$D5.DAT('PerformFrom', 'Lok', false)"/>
+  <Entry key ="D5_VEIKSANA_LIDZ_TEKSTS_AKU" value ="$D5.DAT('PerformFrom', 'Aku', false)"/>
+  
+  <!--Lēmums par TP SDS veikšanu-->
+  <Entry key ="D6_JURID" value ="#if($D6.PerformAtLegalAddress)"/>
+  <Entry key ="D6_STRU" value ="#if($D6.PerformAtDepartment)"/>
+  <Entry key ="D6_CITUR" value ="#if($D6.PerformSomewhereElse)"/>
+  <Entry key ="D6_VEIKSANA_LIDZ_TEKSTS" value ="$D6.DAT('PerformFrom', 'Lok', false)"/>
+  <Entry key ="D6_VEIKSANA_LIDZ_TEKSTS_GEN" value ="$D6.DAT('PerformFrom', 'Gen', false)"/>
+  <Entry key ="D6_VEIKSANA_LIDZ_TEKSTS_DAT" value ="$D6.DAT('PerformFrom', 'Dat', false)"/>
+  <Entry key ="D6_VEIKSANA_LIDZ_TEKSTS_LOK" value ="$D6.DAT('PerformFrom', 'Lok', false)"/>
+  <Entry key ="D6_VEIKSANA_LIDZ_TEKSTS_AKU" value ="$D6.DAT('PerformFrom', 'Aku', false)"/>
+  
+  <Entry key ="D6A" value ="#foreach($D6A in $D6.OI('Partners.ActiveItems'))"/>
+  <Entry key ="D6A_DP_NOSAUKUMS" value ="$D6A.RI('TaxpayerName')"/>
+  <Entry key ="D6A_DP_KODS" value ="$D6A.RI('TaxpayerCode')"/>
+  <Entry key ="D6A_DP_ADRESE" value ="$D6A.RI('TaxpayerAddress')"/>
+  <Entry key ="D6A_PERIODS_NO" value ="$D6A.FI('DateFrom', 'd')"/>
+  <Entry key ="D6A_PERIODS_LIDZ" value ="$D6A.FI('DateUntil', 'd')"/>
+
+  <!-- Apsekošanas akts -->
+  <Entry key ="D8G" value ="#foreach($D8G in $D8.OI('CMCase.Patents.ActiveItems'))"/>
+  <Entry key ="D8G_PATENTA_NUMURS" value ="$D8G.RI('Number')"/>
+  <Entry key ="D8F" value ="#foreach($D8F in $D8.OI('DocumentPerformersForReport.ActiveItems'))"/>
+  <Entry key ="D8F_VEIC_AMATS" value ="$D8F.RI('PerformerPosition')"/>
+  <Entry key ="D8F_VEICEJS" value ="$D8F.RI('PerformerFullName')"/>
+  <Entry key ="D8F_VEIC_IESTADE" value ="$D8F.RI('Performer.User.Organization')"/>
+  <Entry key ="D8C" value ="#foreach($D8C in $D8.OI('ExternalPersons.ActiveItems'))"/>
+  <Entry key ="D8C_PIEAIC_IEST" value ="$D8C.RI('Organization')"/>
+  <Entry key ="D8C_PIEAIC_AMATS" value ="$D8C.RI('Position')"/>
+  <Entry key ="D8C_PIEAIC_V_UZV" value ="$D8C.RI('Person')"/>
+    
+  <Entry key ="D8A" value ="#foreach($D8A in $D8.OI('ActPartners.ActiveItems'))"/>
+  <Entry key ="D8A_PARTN_NMR" value ="$D8A.RI('Code')"/>
+  <Entry key ="D8A_PARTN_NOS" value ="$D8A.RI('Name')"/>
+
+  <Entry key ="D8_APSEKOSANAS_IEMESLS" value="$D8.RI('CMCase.InspectionReasons')"/>
+  <Entry key ="D8_AKTA_NR" value ="$D8.RI('DocNumber')"/>
+  <Entry key ="D8_APSEK_DATUMS" value ="$D8.RI('ActDateForReport')"/>
+  <Entry key ="D8_APSEK_LAIKS" value ="$D8.RI('ActTimeForReport')"/>
+  <Entry key ="D8_APLIEC_PILNVAR" value ="$D8.RI('DocPresented')"/>
+  <Entry key ="D8_PARB_OBJ" value ="$D8.RI('PerformPlaces')"/>
+  <Entry key ="D8_PARB_OBJ_REG_KODS" value ="$D8.RI('ObjCode')"/>
+  <Entry key ="D8_PARB_OBJ_NOS" value ="$D8.RI('ObjName')"/>
+  <Entry key ="D8_PARB_OBJ_ADR" value ="$D8.RI('ObjAddress')"/>
+  <Entry key ="D8_PARB_OBJ_TEL" value ="$D8.RI('ObjPhone')"/>
+  <Entry key ="D8_PARB_OBJ_NEEKS" value ="$D8.RI('ObjExists')"/>
+  <Entry key ="D8_PARB_OBJ_NEEKS_KOMENT" value ="$D8.RI('ObjNotes')"/>
+  <Entry key ="D8_PARB_OBJ_DARBA_LAIKS" value ="$D8.RI('ObjWorktime')"/>
+  <Entry key ="D8_TELP_IP_TIES" value ="$D8.RI('Ownership')"/>
+  <Entry key ="D8_TELP_IZNOM_NMR" value ="$D8.RI('OwnerCode')"/>
+  <Entry key ="D8_TELP_IZNOM_NOS" value ="$D8.RI('OwnerName')"/>
+  <Entry key ="D8_TELP_LIG_DATUMS" value ="$D8.FI('OwnerCtrDate', 'd')"/>
+  <Entry key ="D8_TELP_LIG_NUMURS" value ="$D8.RI('OwnerCtrNumber')"/>
+  <Entry key ="D8_TELP_LIG_NO" value ="$D8.FI('OwnerCtrFrom', 'd')"/>
+  <Entry key ="D8_TELP_LIG_LIDZ" value ="$D8.FI('OwnerCtrUntil', 'd')"/>
+  <Entry key ="D8_TELP_PIEZ" value ="$D8.RI('OwnerNotes')"/>
+  <Entry key ="D8_KONSTAT_DARB_VEIDS" value ="$D8.RI('HasAspectNotes')"/>
+  <Entry key ="D8_KONSTAT_DARB_V" value ="$D8.RI('AspectDetected')"/>
+  <Entry key ="D8_DARB_V_APR" value ="$D8.RI('AspectNotes')"/>
+  <Entry key ="D8_DARBIN_SKAITS" value ="$D8.RI('ObjEmployees')"/>
+  <Entry key ="D8_PARTN" value ="$D8.RI('HasActPartners')"/>
+  <Entry key ="D8_PAMATLIDZ_JA_NE" value ="$D8.RI('FixedAssets')"/>
+  <Entry key ="D8_PAMATLIDZ" value ="$D8.RI('FixedAssetsNotes')"/>
+  <Entry key ="D8_PIEZIMES" value ="$D8.RI('EndNotes')"/>
+  <Entry key ="D8_PASK_PIELIK" value ="$D8.BI('TpHasAdditionForReport')"/>
+  <Entry key ="D8_PASK_PIELIK_TEXT" value ="$D8.RI('TpAdditionText')"/>
+  <Entry key ="D8_PASK_PIER" value ="$D8.BI('TpHasToldForReport')"/>
+  <Entry key ="D8_PASK_PIER_TEXT" value ="$D8.RI('TpToldText')"/>
+  <Entry key ="D8_PASK_NAV" value ="$D8.RI('TpNoCommentsForReport')"/>
+  <Entry key ="D8_APSEK_PAB_DATUMS" value ="$D8.RI('EndDateForReport')"/>
+  <Entry key ="D8_APSEK_PAB_LAIKS" value ="$D8.RI('EndTimeForReport')"/>
+  <Entry key ="D8_LAPU_SKAITS" value ="$D8.RIN('EndPages')"/>
+  <Entry key ="D8_EX_SKAITS" value ="$D8.RI('EndCopies')"/>
+  <Entry key ="D8_PIEL" value ="$D8.RI('EndAdditions')"/>
+  <Entry key ="D8_PIEL_LAPU_SKAITS" value ="$D8.RIN('EndAdditionsPages')"/>
+  <Entry key ="D8_PIEL_EX_SKAITS" value ="$D8.RI('EndAdditionsCopies')"/>
+  <Entry key ="D8_SAN_DAT" value ="$D8.FIN('SignDate', 'd')"/>
+  <Entry key ="D8_NOD_PAZ" value ="$D8.RI('Delivered')"/>
+  <!-- End apsekošanas akts -->
+
+  <!--Lēmums par valsts nodevas pārbaudes veikšanu-->
+  <Entry key ="D7_VEIKSANA_NO_TEKSTS" value ="$D7.DAT('PerformFrom', 'Lok', false)"/>
+  <Entry key ="D7_VEIKSANA_NO_TEKSTS_GEN" value ="$D7.DAT('PerformFrom', 'Gen', false)"/>
+  <Entry key ="D7_VEIKSANA_NO_TEKSTS_DAT" value ="$D7.DAT('PerformFrom', 'Dat', false)"/>
+  <Entry key ="D7_VEIKSANA_NO_TEKSTS_LOK" value ="$D7.DAT('PerformFrom', 'Lok', false)"/>
+  <Entry key ="D7_VEIKSANA_NO_TEKSTS_AKU" value ="$D7.DAT('PerformFrom', 'Aku', false)"/>
+  <Entry key ="D7_VEIKSANA_LIDZ_TEKSTS" value ="$D7.DAT('PerformUntil', 'Lok', false)"/>
+  <Entry key ="D7_VEIKSANA_LIDZ_TEKSTS_GEN" value ="$D7.DAT('PerformUntil', 'Gen', false)"/>
+  <Entry key ="D7_VEIKSANA_LIDZ_TEKSTS_DAT" value ="$D7.DAT('PerformUntil', 'Dat', false)"/>
+  <Entry key ="D7_VEIKSANA_LIDZ_TEKSTS_LOK" value ="$D7.DAT('PerformUntil', 'Lok', false)"/>
+  <Entry key ="D7_VEIKSANA_LIDZ_TEKSTS_AKU" value ="$D7.DAT('PerformUntil', 'Aku', false)"/>
+  <Entry key ="D7A" value ="#foreach($D7A in $D7.OI('DutyInspections.ActiveItems'))"/>
+  <Entry key ="D7A_NODEVAS_VEIDS" value ="$D7A.RI('DutyType.Value')"/>
+  <Entry key ="D7A_PERIODS_NO" value ="$D7A.FI('DateFrom', 'd')"/>
+  <Entry key ="D7A_PERIODS_LIDZ" value ="$D7A.FI('DateUntil', 'd')"/>
+
+  <!--Automātiskie lauki-->
+  <Entry key ="A1_AMATPERSONA" value ="$A1.RI('FullName')"/>
+  <Entry key ="A1_AMATP_AMATA_STRU" value ="$A1.RI('PositionFullName')"/>
+  <Entry key ="A1_AMATP_AMATS" value ="$A1.RI('SignatoryPosition')"/>
+  <Entry key ="A1_AMATP_M_AMATS" value ="$A1.RIL('SignatoryPosition')"/>
+  <Entry key ="A1_AMATP_PARAKSTS" value ="$A1.RI('Signature')"/>
+  <Entry key ="A1_AMATP_STRU_NOSAUKUMS" value ="$A1.RI('OrganizationManual.Department.Name')"/>
+  <Entry key ="A1_AMATP_STRU_KODS" value ="$A1.RI('OrganizationManual.Department.Code')"/>
+  <Entry key ="A1_AMATP_STRU_REG_NR" value ="$A1.RI('OrganizationManual.Department.RegCode')"/>
+  <Entry key ="A1_AMATP_STRU_ADRESE" value ="$A1.RI('OrganizationManual.Department.Address')"/>
+  <Entry key ="A1_AMATP_STRU_TALRUNIS" value ="$A1.RI('OrganizationManual.Department.Phone')"/>
+  <Entry key ="A1_AMATP_STRU_FAX" value ="$A1.RI('OrganizationManual.Department.Fax')"/>
+  <Entry key ="A1_AMATP_STRU_EPASTS" value ="$A1.RI('OrganizationManual.Department.Email')"/>
+  <Entry key ="A1_AMATP_STRU_MAIL" value ="$A1.RI('OrganizationManual.Department.Email')"/>
+  <Entry key ="A1_AMATP_STRU_PILSETA" value ="$A1.RI('OrganizationManual.Department.City')"/>
+  <Entry key ="A1_AMATP_STRU_NOS_GEN" value ="$A1.RI('OrganizationManual.Department.NameGen')"/>
+  <Entry key ="A1_AMATP_STRU_NOS_LOK" value ="$A1.RI('OrganizationManual.Department.NameLoc')"/>
+  <Entry key ="A1_AMATP_TI_NOSAUKUMS" value ="$A1.RI('OrganizationManual.HeadOrganization.Name')"/>
+  <Entry key ="A1_AMATP_TI_NOS_GEN" value ="$A1.RI('OrganizationManual.HeadOrganization.NameGen')"/>
+  <Entry key ="A1_AMATP_TI_NOS_LOK" value ="$A1.RI('OrganizationManual.HeadOrganization.NameLoc')"/>
+  <Entry key ="A1_AMATP_TI_PILSETA" value ="$A1.RI('OrganizationManual.HeadOrganization.City')"/>
+
+  <Entry key ="A1_AMATP_TI_REG_NR" value ="$A1.RI('OrganizationManual.HeadOrganization.RegCode')"/>
+  <Entry key ="A1_AMATP_TI_ADRESE" value ="$A1.RI('OrganizationManual.HeadOrganization.Address')"/>
+  <Entry key ="A1_AMATP_TI_TALRUNIS" value ="$A1.RI('OrganizationManual.HeadOrganization.Phone')"/>
+  <Entry key ="A1_AMATP_TI_FAX" value ="$A1.RI('OrganizationManual.HeadOrganization.Fax')"/>
+  <Entry key ="A1_AMATP_TI_MAIL" value ="$A1.RI('OrganizationManual.HeadOrganization.Email')"/>
+
+  <Entry key ="A1_AMATP_STRU_PILNAIS_NOS" value ="$A1.RI('OrganizationManual')"/>
+  <Entry key ="A1_AMATP_STRU_NOS_PILNAIS_LOK" value ="$A1.RI('OrganizationManual.FullNameLoc')"/>
+  <Entry key ="A1_AMATP_STRU_NOS_PILNAIS_GEN" value ="$A1.RI('OrganizationManual.FullNameGen')"/>
+  <Entry key ="A1_IS_TI" value ="#if($A1.S('IsHeadOrganization')==true)"/>
+  <Entry key ="A1_IS_TIN" value ="#if($A1.S('IsDepartment')==true)"/>
+  <Entry key ="A1_TI" value ="#if($A1.S('ForHeadOrganization')==true)"/>
+  <Entry key ="A1_TIN" value ="#elseif($A1.S('ForDepartment')==true)"/>
+  <Entry key ="A1_CITS" value ="#else"/>
+  <Entry key ="A1_AMATP_REG_NR" value ="$A1.RI('OrganizationManual.RegCode')"/>
+  <Entry key ="A1_AMATP_ADRESE" value ="$A1.RI('OrganizationManual.Address')"/>
+  <Entry key ="A1_AMATP_TALRUNIS" value ="$A1.RI('OrganizationManual.Phone')"/>
+  <Entry key ="A1_AMATP_FAX" value ="$A1.RI('OrganizationManual.Fax')"/>
+  <Entry key ="A1_AMATP_MAIL" value ="$A1.RI('OrganizationManual.Email')"/>
+  <Entry key ="A1_AMATP_TI_NOS_VIRSRAKSTA" value ="$#if($A1.S('IsDepartment')==true)$A1.RI('OrganizationManual.HeadOrganization.Name')#elseif(1==1)$A1.RI('OrganizationManual.HeadOrganization.Name')#end"/>
+
+  <!--Akti-->
+  <Entry key ="A2_SAKUMA_DATUMS_LAIKS" value ="$A2.FI('ActDate', 'd') plkst. $A2.FI('ActDate', 'T')"/>
+  <Entry key ="A2_PARBAUDE_SAKUMA_DATUMS" value ="$A2.FI('ActDate', 'd')"/>
+  <Entry key ="A2_PARBAUDE_SAKUMA_DATUMS_LAIKS_TEKSTS" value ="$A2.DAT('ActDate', 'Lok', false)"/>
+  <Entry key ="A2_PARBAUDE_SAKUMA_DATUMS_LAIKS_TEKSTS_GEN" value ="$A2.DAT('ActDate', 'Gen', false)"/>
+  <Entry key ="A2_PARBAUDE_SAKUMA_DATUMS_LAIKS_TEKSTS_DAT" value ="$A2.DAT('ActDate', 'Dat', false)"/>
+  <Entry key ="A2_PARBAUDE_SAKUMA_DATUMS_LAIKS_TEKSTS_LOK" value ="$A2.DAT('ActDate', 'Lok', false)"/>
+  <Entry key ="A2_PARBAUDE_SAKUMA_DATUMS_LAIKS_TEKSTS_AKU" value ="$A2.DAT('ActDate', 'Aku', false)"/>
+  <Entry key ="A2_AKTA_NR" value ="$A2.RI('DocNumber')"/>
+  <Entry key ="A2_PATENTA_NUMURS" value ="$A2.RI('PatentsNumberForReport')"/>
+  <Entry key ="A2_PIEZIMES" value ="$A2.RI('EndNotes')" />
+  <Entry key ="A2_AKTA_LAPU_SKAITS" value ="$A2.RIN('EndPages')" />
+  <Entry key ="A2_AKTA_EKSEMPL_SKAITS" value ="$A2.RI('EndCopies')" />
+  <Entry key ="A2_PIELIK" value ="$A2.RI('EndAdditions')"  />
+  <Entry key ="A2_PIELIK_LAPU_SKAITS" value ="$A2.RIN('EndAdditionsPages')"  />
+  <Entry key ="A2_PIELIK_EKSEMPL_SKAITS" value ="$A2.RI('EndAdditionsCopies')"  />
+  <Entry key ="A2_PARBAUDE_SAKUMA_DATUMS_LAIKS" value ="$A2.FI('ActDate','d') plkst. $A2.FI('ActDate','T')"/>
+  <Entry key ="A2_PARBAUDE_PABEIGSANAS_DATUMS_LAIKS" value ="$A2.FI('EndDate', 'd') plkst. $A2.FI('EndDate', 'T')"/>
+  <Entry key ="A2_NM_KOMENTARS_IR" value ="$A2.BI('TpHasAdditionForReport')"/>
+  <Entry key ="A2_NM_KOMENTARS" value ="$A2.RI('TpAdditionText')"/>
+  <Entry key ="A2_NM_TEIKTAIS_IR" value ="$A2.BI('TpHasToldForReport')"/>
+  <Entry key ="A2_NM_TEIKTAIS" value ="$A2.RI('TpToldText')"/>
+  <Entry key ="A2_NM_PASKAIDROJUMI_NAV" value ="$A2.RI('TpNoCommentsForReport')"/>
+  <Entry key ="A2_OBJ_NOSAUKUMS" value ="$A2.RI('ObjName')"/>
+  <Entry key ="A2_OBJ_ADRESE" value ="$A2.RI('ObjAddress')"/>
+  <Entry key ="A2_OBJ_KODS" value ="$A2.RI('ObjCode')"/>
+  <Entry key ="A2_OBJ_TALRUNIS" value ="$A2.RI('ObjPhone')"/>
+  <Entry key ="A2_VEIKSANAS_VIETA" value ="$A2.RI('Location')"/>
+  <!--NM informēts-->
+  <Entry key ="A2D" value ="#foreach($A2D in $A2.OI('TaxpayerInformForReport.ActiveItems'))"/>
+  <Entry key ="A2_IR_CITI" value ="#if($A2.IsTaxpayerInformForReport)"/>
+  <Entry key ="A2D_NM_INFORMET_PAR_PIEZ" value ="$A2D.RI('InformNotes')"/>
+  <Entry key ="A2D_NM_INFORMETS_PAR" value ="$A2D.RI('Inform')"/>
+  <Entry key ="A2D_INFORMETS_PAR_PIEZ" value ="$A2D.RI('Notes')"/>
+
+  <Entry key ="A2_IR_NEDEKL_KONTS" value ="#if($A2.IsTaxpayerInformAccountForReport)"/>
+  <Entry key ="A2_INFORMETS_NEDEKLARETS_KONTS" value ="$A2.RI('TaxpayerInformAccountForReport.Inform')"/>
+  <Entry key ="A2_INFORMETS_NEDEKLARETS_KONTS_PIEZ" value ="$A2.RI('TaxpayerInformAccountForReport.Notes')"/>
+  <Entry key ="A2E" value ="#foreach($A2E in $A2.OI('UndeclaredAccounts.ActiveItems'))"/>
+  <Entry key ="A2E_KREDITIESTADES_NOSAUKUMS" value ="$A2E.RI('Credit')"/>
+  <Entry key ="A2E_KREDITIESTADES_KONTA_NR" value ="$A2E.RI('Account')"/>
+  <!--End Akti-->
+  <!--AnswerTo Act-->
+  <Entry key ="A3_AKTA_NR" value ="$A3.RI('DocNumber')"/>
+  <Entry key ="A3_NM_PARSTAVIS" value ="$A3.RI('Name')"/>
+  <Entry key ="A3_KP_VIETA" value ="$A3.RI('PerformPlaces')"/>
+  <Entry key ="A3A" value ="#foreach($A3A in $A3.OI('TaxpayerMembers.ActiveItems'))"/>
+  <Entry key ="A3A_NM_PARSTAVIS" value ="$A3A.RI('Name')"/>
+  <Entry key ="A3A_NM_PARSTAVIS_KODS" value ="$A3A.RI('Code')"/>
+  <Entry key ="A3A_NM_PARSTAVIS_AMATS" value ="$A3A.RI('Position')"/>
+
+  <Entry key ="A3B" value ="#foreach($A3B in $A3.OI('ExternalPersons.ActiveItems'))"/>
+  <Entry key ="A3B_PIEAIC_PERS" value ="$A3B.RI('Person')"/>
+  <Entry key ="A3B_PIEAIC_PERS_IESTADE" value ="$A3B.RI('Organization.Value')"/>
+  <Entry key ="A3B_PIEAIC_PERS_AMATS" value ="$A3B.RI('Position')"/>
+  <Entry key ="A3_NM_ADRESE" value ="$A3.RI('ObjAddress')"/>
+  <Entry key ="A3_NM_KODS" value ="$A3.RI('ObjCode')"/>
+  <Entry key ="A3_NM_NOSAUKUMS" value ="$A3.RI('ObjName')"/>
+  <!--End AnswerTo Act-->
+
+  <!--Answerto is TIAct or SpecialAct only-->
+  <Entry key ="A7_NE_STRU" value ="#if($A7.PerformPlaceNotDepartment)"/>
+  <Entry key ="A7_STRU" value ="#if($A7.PerformPlaceDepartment)"/>
+  
+  <Entry key ="A7_NM_NOSAUKUMS" value ="$A7.RI('GenTaxPayerName')"/>
+  <Entry key ="A7_NM_ADRESE" value ="$A7.RI('GenTaxPayerAddress')"/>
+  <Entry key ="A7_NM_KODS" value ="$A7.RI('GenTaxPayerCode')"/>
+  <Entry key ="A7_STRU_NOSAUKUMS" value ="$A7.RI('GenDepartmentName')"/>
+  <Entry key ="A7_STRU_ADRESE" value ="$A7.RI('GenDepartmentAddress')"/>
+  <Entry key ="A7_STRU_KODS" value ="$A7.RI('GenDepartmentCode')"/>
+  <!--End Answerto is TIAct or SpecialAct only-->
+  
+  <Entry key ="P0_LIETOTAJS" value ="$P0.RI('FullName')"/>
+  <Entry key ="P0_LIETOTAJA_AMATS" value ="$P0.RI('Position')"/>
+  <Entry key ="P0_LIETOTAJA_PARAKSTS" value ="$P0.RI('Signature')"/>
+  <Entry key ="P0_LIETOTAJA_APLIECIBAS_NR" value ="$P0.RI('CertNumber')"/>
+  <Entry key ="P0_LIETOTAJA_TELEFONS" value ="$P0.RI('Phone')"/>
+  <Entry key ="P0_STRU_NOSAUKUMS" value ="$P0.RI('Organization.Name')"/>
+  <Entry key ="P0_STRU_KODS" value ="$P0.RI('Organization.Code')"/>
+  <Entry key ="P0_STRU_REGISTRACIJAS_NR" value ="$P0.RI('Organization.RegCode')"/>
+  <Entry key ="P0_STRU_ADRESE" value ="$P0.RI('Organization.Address')"/>
+  <Entry key ="P0_STRU_PILSETA" value ="$P0.RI('Organization.City')"/>
+  <Entry key ="P0_STRU_NOSAUKUMS_GEN" value ="$P0.RI('Organization.NameGen')"/>
+  <Entry key ="P0_STRU_NOSAUKUMS_LOK" value ="$P0.RI('Organization.NameLoc')"/>
+
+  <Entry key ="P1_KP_NUMURS" value ="$P1.RI('Number')"/>
+  <Entry key ="P1_KP_STRU_ADRESE" value ="$P1.RI('SrsDepartment.Address')"/>
+  <Entry key ="P1_KP_STRU_FAKSS" value ="$P1.RI('SrsDepartment.Fax')"/>
+  <Entry key ="P1_KP_STRU_KODS" value ="$P1.RI('SrsDepartment.RegCode')"/>
+  <Entry key ="P1_KP_STRU_NOSAUKUMS" value ="$P1.RI('SrsDepartment.Name')"/>
+  <Entry key ="P1_KP_TIN_NOSAUKUMS" value ="$P1.RI('SrsDepartment.Department.Name')"/>
+  <Entry key ="P1_KP_TIN_NOS_GEN" value ="$P1.RI('SrsDepartment.Department.NameGen')"/>
+  <Entry key ="P1_KP_STRU_NOSAUKUMS_GEN" value ="$P1.RI('SrsDepartment.NameGen')"/>
+  <Entry key ="P1_KP_STRU_NOSAUKUMS_LOK" value ="$P1.RI('SrsDepartment.NameLoc')"/>
+  <Entry key ="P1_KP_STRU_REGISTRACIJAS_NR" value ="$P1.RI('SrsDepartment.RegCode')"/>
+  <Entry key ="P1_KP_STRU_PILSETA" value ="$P1.RI('SrsDepartment.City')"/>
+  <Entry key ="P1_KP_STRU_TALRUNIS" value ="$P1.RI('SrsDepartment.Phone')"/>
+  <Entry key ="P1_KP_TI_NOSAUKUMS" value ="$P1.RI('SrsDepartment.HeadOrganization.Name')"/>
+  <Entry key ="P1_KP_TI_NOSAUKUMS_GEN" value ="$P1.RI('SrsDepartment.HeadOrganization.NameGen')"/>
+  <Entry key ="P1_KP_TI_STRU_NOSAUKUMS" value ="$P1.RI('SrsDepartment.Department.Name')"/>
+  <Entry key ="P1_KP_TI_PILSETA" value ="$P1.RI('SrsDepartment.HeadOrganization.City')"/>
+  <Entry key ="P1_KP_TI_ADRESE" value ="$P1.RI('SrsDepartment.HeadOrganization.Address')"/>
+  <Entry key ="P1_KP_TI_FAKSS" value ="$P1.RI('SrsDepartment.HeadOrganization.Fax')"/>
+  <Entry key ="P1_KP_TI_KODS" value ="$P1.RI('SrsDepartment.HeadOrganization.Code')"/>
+  <Entry key ="P1_KP_TI_TALRUNIS" value ="$P1.RI('SrsDepartment.HeadOrganization.Phone')"/>
+  <Entry key ="P1_KP_STRU_NOS_PILNAIS" value ="$P1.RI('SrsDepartment')"/>
+  <Entry key ="P1_KP_STRU_NOS_PILNAIS_GEN" value ="$P1.RI('SrsDepartment.FullNameGen')"/>
+  <Entry key ="P1_KP_STRU_NOS_PILNAIS_LOC" value ="$P1.RI('SrsDepartment.FullNameLoc')"/>
+  <Entry key ="P1_KP_VEIDS" value ="$P1.RI('CMType.Value')"/>
+  <Entry key ="P1_KP_VEIKSANA_NO" value ="$P1.FI('PerformFrom', 'd')"/>
+  <Entry key ="P1_KP_VEIKSANA_LIDZ" value ="$P1.FI('PerformUntil', 'd')"/>
+  <Entry key ="P1_KP_VEIKSANA_NO_TEKSTS" value ="$P1.DAT('PerformFrom', 'Lok', false)"/>
+  <Entry key ="P1_KP_VEIKSANA_NO_TEKSTS_GEN" value ="$P1.DAT('PerformFrom', 'Gen', false)"/>
+  <Entry key ="P1_KP_VEIKSANA_NO_TEKSTS_DAT" value ="$P1.DAT('PerformFrom', 'Dat', false)"/>
+  <Entry key ="P1_KP_VEIKSANA_NO_TEKSTS_LOK" value ="$P1.DAT('PerformFrom', 'Lok', false)"/>
+  <Entry key ="P1_KP_VEIKSANA_NO_TEKSTS_AKU" value ="$P1.DAT('PerformFrom', 'Aku', false)"/>
+  <Entry key ="P1_KP_VEIKSANA_LIDZ_TEKSTS" value ="$P1.DAT('PerformUntil', 'Lok', false)"/>
+  <Entry key ="P1_KP_VEIKSANA_LIDZ_TEKSTS_GEN" value ="$P1.DAT('PerformUntil', 'Gen', false)"/>
+  <Entry key ="P1_KP_VEIKSANA_LIDZ_TEKSTS_DAT" value ="$P1.DAT('PerformUntil', 'Dat', false)"/>
+  <Entry key ="P1_KP_VEIKSANA_LIDZ_TEKSTS_LOK" value ="$P1.DAT('PerformUntil', 'Lok', false)"/>
+  <Entry key ="P1_KP_VEIKSANA_LIDZ_TEKSTS_AKU" value ="$P1.DAT('PerformUntil', 'Aku', false)"/>
+  <Entry key ="P1_KP_VEIKSANAS_VIETA" value ="$P1.RI('PerformPlace.Value')"/>
+  <Entry key ="P1_KP_IEMESLS" value ="$P1.RI('TIReason')"/>
+  <Entry key ="P1_PLANOTA_NEPLANOTA_KP_LIETA" value ="$P1.RI('Planned')"/>
+  <Entry key ="P1_KP_VIETA_IR_STRUKTURVIENIBA" value ="$P1.RI('CMCasePerformPlaceIsDepartment')"/>
+  <Entry key ="P1_KP_VIETA_IR_JURIDISKA_ADRESE" value ="$P1.RI('CMCasePerformPlaceIsLegalAddress')"/>
+  <Entry key ="P1_KP_VIETA_IR_CITA_VIETA" value ="$P1.RI('CMCasePerformPlaceIsOther')"/>
+
+  <Entry key ="P2_TPT_NOSAUKUMS" value ="$P1.RI('Theme.Value')"/>
+
+  <Entry key ="P3_NM_IR_KODS" value ="#if($P3.HasTaxpayerCode)"/>
+  <Entry key ="P3_NM_IR_NOSAUKUMS" value ="#if($P3.HasTaxpayerName)"/>
+  <Entry key ="P3_NM_IR_ADRESE" value ="#if($P3.HasTaxpayerAddress)"/>
+  <Entry key ="P3_NM_ADRESE" value ="$P3.RI('TaxpayerAddress')"/>
+  <Entry key ="P3_NM_KODS" value ="$P3.RI('TaxpayerCode')"/>
+  <Entry key ="P3_NM_NOSAUKUMS" value ="$P3.RI('TaxpayerName')"/>
+  <Entry key ="P3_NM_STRU_KODS" value ="$P3.RI('TaxpayerSrsDepartment.Code')"/>
+  <Entry key ="P3_NM_STRU_ADRESE" value ="$P3.RI('TaxpayerSrsDepartment.Address')"/>
+  <Entry key ="P3_NM_STRU_NOSAUKUMS" value ="$P3.RI('TaxpayerSrsDepartment.Name')"/>
+  <Entry key ="P3_NM_STRU_NOSAUKUMS_LOK" value ="$P3.RI('TaxpayerSrsDepartment.NameLoc')"/>
+  <Entry key ="P3_NM_STRU_NOSAUKUMS_GEN" value ="$P3.RI('TaxpayerSrsDepartment.NameGen')"/>
+  <Entry key ="P3_NM_STRU_REGISTRACIJAS_NR" value ="$P3.RI('TaxpayerSrsDepartment.RegCode')"/>
+  <Entry key ="P3_NM_STRU_PILSETA" value ="$P3.RI('TaxpayerSrsDepartment.City')"/>
+
+  <Entry key ="P4_NMO_NOSAUKUMS" value ="$P4.RI('ObjectName')"/>
+  <Entry key ="P4_NMO_ADRESE" value ="$P4.RI('ObjectAddress')"/>
+  <Entry key ="P4_NMO_KODS" value ="$P4.RI('ObjectCode')"/>
+  <Entry key ="P4_NMO_TALRUNIS" value ="$P4.RI('ObjectSrsDepartment.Phone')"/>
+  <Entry key ="P4_NMO_STRU_KODS" value ="$P4.RI('ObjectSrsDepartment.Code')"/>
+  <Entry key ="P4_NMO_STRU_ADRESE" value ="$P4.RI('ObjectSrsDepartment.Address')"/>
+  <Entry key ="P4_NMO_STRU_NOSAUKUMS" value ="$P4.RI('ObjectSrsDepartment.Name')"/>
+  <Entry key ="P4_NMO_STRU_NOSAUKUMS_LOK" value ="$P4.RI('ObjectSrsDepartment.NameLoc')"/>
+  <Entry key ="P4_NMO_STRU_NOSAUKUMS_GEN" value ="$P4.RI('ObjectSrsDepartment.NameGen')"/>
+  <Entry key ="P4_NMO_STRU_REGISTRACIJAS_NR" value ="$P4.RI('ObjectSrsDepartment.RegCode')"/>
+  <Entry key ="P4_NMO_STRU_PILSETA" value ="$P4.RI('ObjectSrsDepartment.City')"/>
+ 
+  <Entry key ="P5" value ="#foreach($P5A in $P5)"/>
+  <Entry key ="P5_VEICEJS" value ="$P5A.RI('User.FullName')"/>
+  <Entry key ="P5_VEIC_AMATS" value ="$P5A.RI('User.Position')"/>
+  <Entry key ="P5_VEIC_APLIECIBAS_NR" value ="$P5A.RI('User.CertNumber')"/>
+  <Entry key ="P5_VEIC_PARAKSTS" value ="$P5A.RI('User.Signature')"/>
+  <Entry key ="P5_VEIC_TALRUNIS" value ="$P5A.RI('User.Phone')"/>
+  <Entry key ="P5_VEIC_STRU_KODS" value ="$P5.RI('User.Organization.Code')"/>
+  <Entry key ="P5_VEIC_STRU_NOSAUKUMS" value ="$P5A.RI('User.Organization.Name')"/>
+  <Entry key ="P5_VEIC_STRU_NOSAUKUMS_LOK" value ="$P5.RI('User.Organization.NameLoc')"/>
+  <Entry key ="P5_VEIC_STRU_NOSAUKUMS_GEN" value ="$P5.RI('User.Organization.NameGen')"/>
+  <Entry key ="P5_VEIC_STRU_NOS_PILNAIS" value ="$P5A.RI('User.Organization')"/>
+  <Entry key ="P5_VEIC_STRU_NOS_LOK_PILNAIS" value ="$P5.RI('User.Organization.FullNameLoc')"/>
+  <Entry key ="P5_VEIC_STRU_NOS_GEN_PILNAIS" value ="$P5.RI('User.Organization.FullNameGen')"/>
+  <Entry key ="P5_VEIC_STRU_REGISTRACIJAS_NR" value ="$P5A.RI('User.Organization.RegCode')"/>
+  <Entry key ="P5_VEIC_STRU_ADRESE" value ="$P5A.RI('User.Organization.Address')"/>
+  <Entry key ="P5_VEIC_STRU_PILSETA" value ="$P5A.RI('User.Organization.City')"/>
+
+  <Entry key ="P6_DOK_IESN_DATUMS" value ="$P6.RI('AnswerTo.RecordDateShort')"/>
+  <Entry key ="P6_DOK_IESN_NUMURS" value ="$P6.RI('AnswerTo.RecordNumber')"/>
+  <Entry key ="P6_DOK_IZSTR_PK" value ="$P6.RI('Creator.PersonCode')"/>
+  <Entry key ="P6_DOK_IZSTR_PARAKSTS" value ="$P6.RI('Creator.Signature')"/>
+  <Entry key ="P6_DOK_IZSTR_VARDS" value ="$P6.RI('Creator.FirstName')"/>
+  <Entry key ="P6_DOK_IZSTR_UZVARDS" value ="$P6.RI('Creator.LastName')"/>
+  <Entry key ="P6_DOK_IZSTR_AMATS" value ="$P6.RI('Creator.Position')"/>
+  <Entry key ="P6_DOK_IZSTR_TELEFONS" value ="$P6.RI('Creator.Phone')"/>
+  <Entry key ="P6_DOK_IZSTR_TALRUNIS" value ="$P6.RI('Creator.Phone')"/>
+  <Entry key ="P6_DOK_IZSTRADATAJS" value ="$P6.RI('Creator.FullName')"/>
+  <Entry key ="P6_DOK_STRU_KODS" value ="$P6.RI('Creator.OrganizationManual.Code')"/>
+  <Entry key ="P6_DOK_STRU_ADRESE" value ="$P6.RI('Creator.OrganizationManual.Address')"/>
+  <Entry key ="P6_DOK_STRU_NOSAUKUMS" value ="$P6.RI('Creator.OrganizationManual.Name')"/>
+  <Entry key ="P6_DOK_STRU_NOSAUKUMS_LOK" value ="$P6.RI('Creator.Organization.NameLoc')"/>
+  <Entry key ="P6_DOK_STRU_PILSETA" value ="$P6.RI('Creator.OrganizationManual.City')"/>
+  <Entry key ="P6_DOK_STRU_REGISTRACIJAS_NR" value ="$P6.RI('Creator.OrganizationManual.RegCode')"/>
+  <Entry key ="P6_DOK_STRU_TALRUNIS" value ="$P6.RI('Creator.OrganizationManual.Phone')"/>
+  <Entry key ="P6_DOK_TI_KODS" value ="$P6.RI('Creator.OrganizationManual.HeadOrganization.Code')"/>
+  <Entry key ="P6_DOK_TI_NOSAUKUMS" value ="$P6.RI('Creator.OrganizationManual.HeadOrganization')"/>
+  <Entry key ="P6_DOK_TI_NOSAUKUMS_LOK" value ="$P6.RI('Creator.OrganizationManual.HeadOrganization.NameLoc')"/>
+  <Entry key ="P6_DOK_TI_REGISTRACIJAS_NR" value ="$P6.RI('Creator.OrganizationManual.HeadOrganization.RegCode')"/>
+  <Entry key ="P6_DOK_TI_ADRESE" value ="$P6.RI('Creator.OrganizationManual.HeadOrganization.Address')"/>
+  <Entry key ="P6_DOK_TI_PILSETA" value ="$P6.RI('Creator.OrganizationManual.HeadOrganization.City')"/>
+
+  <Entry key ="P6_DOK_STRU_PILNAIS_NOS" value ="$P6.RI('Creator.OrganizationManual')"/>
+  <Entry key ="P6_DOK_STRU_NOS_PILNAIS_LOK" value ="$P6.RI('Creator.OrganizationManual.FullNameLoc')"/>
+  <Entry key ="P6_DOK_STRU_NOS_PILNAIS_GEN" value ="$P6.RI('Creator.OrganizationManual.FullNameGen')"/>
+
+  <Entry key ="P6_DOK_REG_DATUMS" value ="$P6.RI('DocDateShort')"/>
+  <Entry key ="P6_DOK_REG_DATUMS_TEKSTS" value ="$P6.DAT('DocDate', 'Lok', true)"/>
+  <Entry key ="P6_DOK_REG_DATUMS_TEKSTS_GEN" value ="$P6.DAT('DocDate', 'Gen', true)"/>
+  <Entry key ="P6_DOK_REG_DATUMS_TEKSTS_DAT" value ="$P6.DAT('DocDate', 'Dat', true)"/>
+  <Entry key ="P6_DOK_REG_DATUMS_TEKSTS_LOK" value ="$P6.DAT('DocDate', 'Lok', true)"/>
+  <Entry key ="P6_DOK_REG_DATUMS_TEKSTS_AKU" value ="$P6.DAT('DocDate', 'Aku', true)"/>
+  <Entry key ="P6_DOK_REG_NUMURS" value ="$P6.RI('DocNumber')"/>
+  <Entry key ="P6_DOK_REGISTRACIJAS_NR" value ="$P6.RI('Creator.OrganizationManual.RegCode')"/>
+  <Entry key ="P6_DOK_LIETVEDIBAS_REG_DATUMS" value ="$P6.RI('RecordDateShort')"/>
+  <Entry key ="P6_DOK_LIETV_DATUMS_TEKSTS" value ="$P6.DAT('RecordDate', 'Lok', true)"/>
+  <Entry key ="P6_DOK_LIETV_DATUMS_TEKSTS_GEN" value ="$P6.DAT('RecordDate', 'Gen', true)"/>
+  <Entry key ="P6_DOK_LIETV_DATUMS_TEKSTS_DAT" value ="$P6.DAT('RecordDate', 'Dat', true)"/>
+  <Entry key ="P6_DOK_LIETV_DATUMS_TEKSTS_LOK" value ="$P6.DAT('RecordDate', 'Lok', true)"/>
+  <Entry key ="P6_DOK_LIETV_DATUMS_TEKSTS_AKU" value ="$P6.DAT('RecordDate', 'Aku', true)"/>
+  <Entry key ="P6_DOK_LIETVEDIBAS_REG_NUMURS" value ="$P6.RI('RecordNumber')"/>
+  <Entry key ="P6_DOK_LIETV_NUMURS" value ="$P6.RI('RecordNumber')"/>
+  <Entry key ="P6_DOK_NOSAUKUMS" value ="$P6.RI('Name')"/>
+  <Entry key ="P6_DOK_IZM_DATUMS" value ="$P6.FI('UpdateTime', 'd')"/>
+  <Entry key ="P6_DOK_PIEZIMES" value ="$P6.RI('Notes')"/>
+  
+  <Entry key ="P6A" value ="#foreach($P6A in $P6.OI('DocumentViolations.ActiveItems'))"/>
+  <Entry key ="P6A_PARK_BUT" value ="$P6A.RI('Description')"/>
+  <Entry key ="P6B" value ="#foreach($P6B in $P6A.OI('ViolatedRules.ActiveItems'))"/>
+  <Entry key ="P6B_PARK_NA" value ="$P6B.RI('FullName')"/>
+  <Entry key ="P6B_NR_NOM" value ="$P6B.RI('GenRuleNumberStringNom')"/>
+  <Entry key ="P6B_NR_LOK" value ="$P6B.RI('GenRuleNumberStringLok')"/>
+  <Entry key ="P6B_PARK_CITATS" value ="$P6B.RI('Rule.Quote')"/>
+  <Entry key ="P6C" value ="#foreach($P6C in $P6A.OI('ViolationResponsibleRules.ActiveItems'))"/>
+  <Entry key ="P6C_ATB_NA" value ="$P6C.RI('AlDoc')"/>
+  <Entry key ="P6C_NR_NOM" value ="$P6C.RI('GenRuleNumberStringNom')"/>
+  <Entry key ="P6C_NR_LOK" value ="$P6C.RI('GenRuleNumberStringLok')"/>
+  <Entry key ="P6C_ATB_CITATS" value ="$P6C.RI('Quote')"/>
+
+  <Entry key ="P7_AA_NUMURS" value ="$P7.RI('InspectionAct.DocNumber')"/>
+  <Entry key ="P7_AA_DATUMS" value ="$P7.FI('InspectionAct.ActDate', 'd')"/>
+  <Entry key ="P7_NA_NUMURS" value ="$P7.RI('ObservationAct.DocNumber')"/>
+  <Entry key ="P7_NA_DATUMS" value ="$P7.FI('ObservationAct.ActDate', 'd')"/>
+  <Entry key ="P7_SP_NUMURS" value ="$P7.RI('SpecialAct.DocNumber')"/>
+  <Entry key ="P7_SP_DATUMS" value ="$P7.FI('SpecialAct.ActDate', 'd')"/>
+  <Entry key ="P7_TP_NUMURS" value ="$P7.RI('TIAct.DocNumber')"/>
+  <Entry key ="P7_TP_DATUMS" value ="$P7.FI('TIAct.ActDate', 'd')"/>
+
+  <Entry key ="P8_VEICEJS" value ="$P8.RI('User.FullName')"/>
+  <Entry key ="P8_VEIC_AMATS" value ="$P8.RI('User.Position')"/>
+  <Entry key ="P8_VEIC_APLIECIBAS_NR" value ="$P8.RI('User.CertNumber')"/>
+  <Entry key ="P8_VEIC_PARAKSTS" value ="$P8.RI('User.Signature')"/>
+  <Entry key ="P8_VEIC_TALRUNIS" value ="$P8.RI('User.Phone')"/>
+  <Entry key ="P8_VEIC_STRU_KODS" value ="$P8.RI('User.OrganizationManual.Code')"/>
+  <Entry key ="P8_VEIC_STRU_NOSAUKUMS" value ="$P8.RI('User.OrganizationManual.Name')"/>
+  <Entry key ="P8_VEIC_STRU_NOSAUKUMS_LOK" value ="$P8.RI('User.OrganizationManual.NameLoc')"/>
+  <Entry key ="P8_VEIC_STRU_NOSAUKUMS_GEN" value ="$P8.RI('User.OrganizationManual.NameGen')"/>
+  <Entry key ="P8_VEIC_STRU_NOS_PILNAIS" value ="$P8.RI('User.OrganizationManual')"/>
+  <Entry key ="P8_VEIC_STRU_NOS_LOK_PILNAIS" value ="$P8.RI('User.OrganizationManual.FullNameLoc')"/>
+  <Entry key ="P8_VEIC_STRU_NOS_GEN_PILNAIS" value ="$P8.RI('User.OrganizationManual.FullNameGen')"/>
+  <Entry key ="P8_VEIC_STRU_REGISTRACIJAS_NR" value ="$P8.RI('User.OrganizationManual.RegCode')"/>
+  <Entry key ="P8_VEIC_STRU_ADRESE" value ="$P8.RI('User.OrganizationManual.Address')"/>
+  <Entry key ="P8_VEIC_STRU_PILSETA" value ="$P8.RI('User.OrganizationManual.City')"/>
+  <!--End Automātiskie lauki-->
+  
+  <Entry key ="D17_ALKO" value ="$D17.RI('Alcohol')"/>
+  <Entry key ="D17_TABAKA" value ="$D17.RI('Tobacco')"/>
+  <Entry key ="D17_DEGVIELA" value ="$D17.RI('Fuel')"/>
+  <Entry key ="D17_UZGLAB_ALCO" value ="$D17.RI('AStorage')"/>
+  <Entry key ="D17_UZGALB_TABAKA" value ="$D17.RI('TStorage')"/>
+  <Entry key ="D17_UZGLAB_DEGVIELA" value ="$D17.RI('FStorage')"/>
+  <Entry key ="D17_REGISTR_ZURN" value ="$D17.EnumTick('WaybillsPlace.Value','Journal')"/>
+  <Entry key ="D17_REGISTR_DAT" value ="$D17.EnumTick('WaybillsPlace.Value','Software')"/>
+  <Entry key ="D17_REGISTR_DAT_PROGR_NOS" value ="$D17.RI('Software')"/>
+  <Entry key ="D17_INFO_DRUKA" value ="$D17.RI('Printed')"/>
+  <Entry key ="D17_INFO_GLABA" value ="$D17.RI('Printouts')"/>
+  <Entry key ="D17_INFO_GLABA_KOMENT" value ="$D17.RI('Comment')"/>
+  <Entry key ="D17_REGISTR_NAV" value ="$D17.EnumTick('WaybillsPlace.Value','NotRegistered')"/>
+  <Entry key ="D17_UZSKAIT_ALCO" value ="$D17.RI('ASeparately')"/>
+  <Entry key ="D17_UZSKAIT_TABAKA" value ="$D17.RI('TSeparately')"/>
+  <Entry key ="D17_UZSKAIT_DEGVIELA" value ="$D17.RI('FSeparately')"/>
+  <Entry key ="D17_KVALIT_SERTIF_ALCO" value ="$D17.RI('ACertificate')"/>
+  <Entry key ="D17_KVALIT_SERTIF_TABAKA" value ="$D17.RI('TCertificate')"/>
+  <Entry key ="D17_KVALIT_SERTIF_DEGVIELA" value ="$D17.RI('FCertificate')"/>
+  <Entry key ="D17_DERIGUMA_TERM_ALCO" value ="$D17.RI('ABestBefore')"/>
+  <Entry key ="D17_MARKEJUMS_ALCO" value ="$D17.RI('AMarking')"/>
+  <Entry key ="D17_MARKEJUMS_TABAKA" value ="$D17.RI('TMarking')"/>
+
+  <Entry key ="D17" value ="#foreach($D17A in $D17.OI('ExciseGoodsNumbers.ActiveItems'))"/>
+  <Entry key ="D17A_SERIJA_NUMURS" value ="$D17A.RI('Number')"/>
+  <Entry key ="D17A_ATBILST_PAVADDOK" value ="$D17A.RI('Status')"/>
+  <Entry key ="D17A_PIEZIMES" value ="$D17A.RI('Notes')"/>
+
+  <Entry key ="D17_MERGLAZES" value ="$D17.RI('NeedBeakers')"/>
+  <Entry key ="D17_CISTERNAS" value ="$D17.RI('NeedCisterns')"/>
+  <Entry key ="D17_MERSTIENI" value ="$D17.RI('NeedDipsticks')"/>
+  <Entry key ="D17_SKAITITAJI" value ="$D17.RI('NeedCounters')"/>
+  <Entry key ="D17_TABULAS" value ="$D17.RI('NeedTables')"/>
+  <Entry key ="D17_CITI" value ="$D17.RI('NeedOther')"/>
+
+  <Entry key ="D17_MERGLAZES_IR_NAV" value ="$D17.RI('Beakers')"/>
+  <Entry key ="D17_CISTERNAS_IR_NAV" value ="$D17.RI('Cisterns')"/>
+  <Entry key ="D17_MERSTIENI_IR_NAV" value ="$D17.RI('Dipsticks')"/>
+  <Entry key ="D17_SKAITITAJI_IR_NAV" value ="$D17.RI('Counters')"/>
+  <Entry key ="D17_TABULAS_IR_NAV" value ="$D17.RI('Tables')"/>
+  <Entry key ="D17_CITI_IR_NAV" value ="$D17.RI('Other')"/>
+
+  <Entry key ="D17_CITI_PIEZIMES" value ="$D17.RIN('OtherName')"/>
+
+  <Entry key ="D17_PIEZIMES" value ="$D17.RI('Notes')"/>
+
+  <Entry key ="D18_LICENCE" value ="$D18.RI('HasLicence')"/>
+  <Entry key ="D18_NOTEIKUMU_KOPIJA" value ="$D18.RI('HasRules')"/>
+  <Entry key ="D18_INKASACIJAS_AKTS" value ="$D18.RI('HasAct')"/>
+
+  <Entry key ="D18_IPASNIEKA_NMR_KODS" value ="$D18.RI('OwnerCode')"/>
+  <Entry key ="D18_IPASNIEKA_NOSAUKUMS" value ="$D18.RI('OwnerName')"/>
+  <Entry key ="D18_IPASNIEKA_ADRESE" value ="$D18.RI('OwnerAddress')"/>
+  <Entry key ="D18_IPASNIEKA_LICENCES_NR" value ="$D18.RI('OwnerLicence')"/>
+
+  <Entry key ="D18A" value ="#foreach($D18A in $D18.OI('GambleEquipment.ActiveItems'))"/>
+  <Entry key ="D18A_IEK_ID_VID" value ="$D18A.RI('SrsNumber')"/>
+  <Entry key ="D18A_IEK_ID" value ="$D18A.RI('Number')"/>
+  <Entry key ="D18A_IEM_MARK_NR" value ="$D18A.RI('MarkNumber')"/>
+  <Entry key ="D18A_IEK_DAL_MAKS_LIKM" value ="$D18A.FI('ParticipationFee', 'f')"/>
+  <Entry key ="D18A_MEH_SKAIT_PARB_IEG_KP" value ="$D18A.FI('CreditAqcuired', 'f')"/>
+  <Entry key ="D18A_MEH_SKAIT_PARB_ZAUD_KP" value ="$D18A.FI('CreditLost', 'f')"/>
+  <Entry key ="D18A_MEH_SKAIT_PARB_JACKPOT" value ="$D18A.FI('Jackpot', 'f')"/>
+  <Entry key ="D18A_MEH_SKAIT_VEIDL_IEG_KP" value ="$D18A.FI('CreditAqcuiredWon', 'f')"/>
+  <Entry key ="D18A_MEH_SKAIT_VEIDL_ZAUD_KP" value ="$D18A.FI('CreditLostWon', 'f')"/>
+  <Entry key ="D18A_MEH_SKAIT_VEIDL_JACKPOT" value ="$D18A.FI('JackpotWon', 'f')"/>
+  <Entry key ="D18A_IENEMUMU_VEIDL_DAT" value ="$D18A.FI('FillDate', 'd')"/>
+
+  <Entry key ="D18_VECUMA_PARB" value ="$D18.RI('HasAgeCheck')"/>
+  <Entry key ="D18_PIEZIMES" value ="$D18.RI('Notes')"/>
+
+
+  <Entry key ="D021_PIEZIMES" value ="$D021.RI('Notes')"/>
+  <Entry key ="D021_VEIC_PERS_KODS" value ="$D021.RI('MeasureCode')"/>
+  <Entry key ="D021_VEICEJS" value ="$D021.RI('MeasureName')"/>
+  <Entry key ="D021_VEIC_AMATS" value ="$D021.RI('MeasurePosition')"/>
+
+  <Entry key ="D021A" value ="#foreach($D021A in $D021.OI('FuelMeasures.ActiveItems'))"/>
+  <Entry key ="D021A_DEGVIELAS_MARKA" value ="$D021A.RI('FuelTypeId')"/>
+  <Entry key ="D021A_TVERTNES_NR" value ="$D021A.RI('ContainerNumber')"/>
+  <Entry key ="D021A_MER_1" value ="$D021A.FI('Measure1', 'f')"/>
+  <Entry key ="D021A_MER_2" value ="$D021A.FI('Measure2', 'f')"/>
+  <Entry key ="D021A_MER_3" value ="$D021A.FI('Measure3', 'f')"/>
+  <Entry key ="D021A_VID" value ="$D021A.FI('MiddleValue', 'f')"/>
+  <Entry key ="D021A_IZMERITAIS_DAUDZUMS" value ="$D021A.FI('Reminder', 'f')"/>
+  <Entry key ="D021A_GRAMATVED_DAUDZ" value ="$D021A.FI('AccountingValue', 'f')"/>
+  <Entry key ="D021A_FAKTISKAIS_ZUD" value ="$D021A.FI('FuelLosses', 'f')"/>
+  <Entry key ="D021A_PIEZIMES" value ="$D021A.RI('MsNotes')"/>
+
+  <Entry key ="D19A" value ="#foreach($D19A in $D19.OI('Employees.ActiveItems'))"/>
+  <Entry key ="D19A_PERS_KODS" value ="$D19A.RI('Code')"/>
+  <Entry key ="D19A_VARDS_UZVARDS" value ="$D19A.RI('Name')"/>
+  <Entry key ="D19A_STRADA_NO" value ="$D19A.FI('From', 'd')"/>
+  <Entry key ="D19A_TERMINS_LIDZ" value ="$D19A.RI('Until')"/>
+  <Entry key ="D19A_NAV_LIGUMA" value ="$D19A.BTF('NoContract')"/>
+  <Entry key ="D19A_STUNDAS_MENESI" value ="$D19A.FI('Hours', 'f')"/>
+  <Entry key ="D19A_SAMAKSAS_VEIDS" value ="$D19A.RI('Payment')"/>
+  <Entry key ="D19A_SAMAKSAS_SUMMA" value ="$D19A.FI('Sum', 'f')"/>
+  <Entry key ="D19A_REG_ZURN" value ="$D19A.RI('WorkSafety')"/>
+  <Entry key ="D19_PIEZIMES" value ="$D19.RI('Notes')"/>
+
+  <!-- Datu salīdzināšana -->
+  <Entry key ="D20A" value ="#foreach($D20A in $D20.OI('DataCompareDetails.ActiveItems'))"/>
+  <Entry key ="D20A_NRPK" value ="$D20A.RI('Number')"/>
+  <Entry key ="D20A_NMR_KODS" value ="$D20A.RI('PartnerCode')"/>
+  <Entry key ="D20A_PARTNERA_NOS" value ="$D20A.RI('PartnerName')"/>
+  <Entry key ="D20A_DAR_DAT" value ="$D20A.FI('DealDate', 'd')"/>
+  <Entry key ="D20A_DAR_SUM" value ="$D20A.FI('DealSum', 'f')"/>
+  <Entry key ="D20A_DOK_DAT" value ="$D20A.FI('DocDate', 'd')"/>
+  <Entry key ="D20A_DOK_NOS" value ="$D20A.RI('DocType')"/>
+  <Entry key ="D20A_DOK_NR" value ="$D20A.RI('DocNumber')"/>
+  <Entry key ="D20A_DAR_APR" value ="$D20A.RI('DealDescription')"/>
+  <Entry key ="D20B" value ="#foreach($D20B in $D20.OI('DataCompareDetails.ActiveItems'))"/>
+  <Entry key ="D20B_NRPK" value ="$D20B.RI('Number')"/>
+  <Entry key ="D20B_ATBILST_NA" value ="$D20B.RI('ValidDocuments')"/>
+  <Entry key ="D20B_DAR_REGISTRETS" value ="$D20B.RI('DealRegistered')"/>
+  <Entry key ="D20B_DAR_REGISTRA_NOS" value ="$D20B.RI('RegistryName')"/>
+  <Entry key ="D20B_DAR_KONTA_NR" value ="$D20B.RI('Account')"/>
+  <Entry key ="D20B_APSK_VEIKTA" value ="$D20B.RI('InspectionDone')"/>
+  <Entry key ="D20B_APSK_ADRESE" value ="$D20B.RI('Address')"/>
+  <Entry key ="D20B_APSK_KONSTATETS" value ="$D20B.RI('GoodsEstablished')"/>
+
+  <Entry key ="D20C" value ="#foreach($D20C in $D20.OI('DataCompareDetails.ActiveItems'))"/>
+  <Entry key ="D20C_OPTIONAL" value ="#if($D20C.NeedInconsistenciesPage)"/>
+  <Entry key ="D20C_NRPK" value ="$D20C.RI('Number')"/>
+  <Entry key ="D20C_NEATBILST_NA" value ="$D20C.RI('InvalidDocuments')"/>
+  <Entry key ="D20C_NAV_REGISTRA" value ="$D20C.RI('Unregistered')"/>
+  <Entry key ="D20C_DATU_SAL_NEVAR_VEIKT" value ="$D20C.RI('CannotCompare')"/>
+  <Entry key ="D20C_PARBAUDI_DABA_NEVAR_VEIKT" value ="$D20C.RI('CannotInspect')"/>
+  <Entry key ="D20C_PIEZIMES" value ="$D20C.RI('Notes')"/>
+
+  <Entry key ="D20_PIEZIMES" value ="$D20.RI('Notes')"/>
+  <!-- Datu salīdzināšana -->
+  
+  <!-- Atsevišķa darījuma novērošanas akts -->
+  <Entry key ="D30A" value ="#foreach($D30A in $D30.OI('DealDocuments.ActiveItems'))"/>
+  <Entry key ="D30A_DDOK_NOSAUKUMS" value ="$D30A.RI('DocRequisites')"/>
+  <Entry key ="D30A_DDOK_DATUMS" value ="$D30A.FI('DocDate', 'd')"/>
+  <Entry key ="D30A_DDOK_NUMURS" value ="$D30A.RI('Number')"/>
+  <Entry key ="D30A_DDOK_PIEZIMES" value ="$D30A.RI('Notes')"/>
+  <Entry key ="D30D" value ="#foreach($D30D in $D30.OI('TaxpayerMembers.ActiveItems'))"/>
+  <Entry key ="D30D_NM_PARSTAVIS_KODS" value ="$D30D.RI('Code')"/>
+  <Entry key ="D30D_NM_PARSTAVIS" value ="$D30D.RI('Name')"/>
+  <Entry key ="D30D_NM_PARSTAVIS_AMATS" value ="$D30D.RI('Position')"/>
+  <Entry key ="D30E" value ="#foreach($D30E in $D30.OI('DocumentPerformersForReport.ActiveItems'))"/>
+  <Entry key ="D30E_VEIC_AMATS" value ="$D30E.RI('PerformerPosition')"/>
+  <Entry key ="D30E_VEICEJS" value ="$D30E.RI('PerformerFullName')"/>
+  <Entry key ="D30F" value ="#foreach($D30F in $D30.OI('ExternalPersons.ActiveItems'))"/>
+  <Entry key ="D30F_PIEAIC_IEST" value ="$D30F.RI('Organization')"/>
+  <Entry key ="D30F_PIEAIC_AMATS" value ="$D30F.RI('Position')"/>
+  <Entry key ="D30F_PIEAIC_V_UZV" value ="$D30F.RI('Person')"/>
+
+  <Entry key ="D30_PARBAUDES_VIETA" value ="$D30.RI('PerformPlaces')"/>
+  <Entry key ="D30_NMO_KODS" value ="$D30.RI('ObjCode')"/>
+  <Entry key ="D30_NMO_NOSAUKUMS" value ="$D30.RI('ObjName')"/>
+  <Entry key ="D30_NMO_ADRESE" value ="$D30.RI('ObjAddress')"/>
+  <Entry key ="D30_NMO_TALRUNIS" value ="$D30.RI('ObjPhone')"/>
+  <Entry key ="D30_UZRADIJA_APLIECIBU" value ="$D30.RI('DocPresented')"/>
+  <Entry key ="D30_DARIJUMA_APRAKSTS" value ="$D30.RI('DealDescription')"/>
+  <Entry key ="D30_DP_KODS" value ="$D30.RI('PartCode')"/>
+  <Entry key ="D30_DP_NOSAUKUMS" value ="$D30.RI('PartName')"/>
+  <Entry key ="D30_DP_ADRESE" value ="$D30.RI('PartAddress')"/>
+  <Entry key ="D30_PIEZIMES" value ="$D30.RI('EndNotes')"/>
+  <Entry key ="D30_NM_KOMENTARS_IR" value ="$D30.BI('TpHasAdditionForReport')"/>
+  <Entry key ="D30_NM_KOMENTARS" value ="$D30.RI('TpAdditionText')"/>
+  <Entry key ="D30_NM_TEIKTAIS_IR" value ="$D30.BI('TpHasToldForReport')"/>
+  <Entry key ="D30_NM_TEIKTAIS" value ="$D30.RI('TpToldText')"/>
+  <Entry key ="D30_NM_PASKAIDROJUMI_NAV" value ="$D30.RI('TpNoCommentsForReport')"/>
+  <Entry key ="D30_PARBAUDE_PABEIGSANAS_DATUMS" value ="$D30.RI('EndDateForReport')"/>
+  <Entry key ="D30_PARBAUDE_PABEIGSANAS_LAIKS" value ="$D30.RI('EndTimeForReport')"/>
+  <Entry key ="D30_AKTA_LAPU_SKAITS" value ="$D30.RI('EndPages')"/>
+  <Entry key ="D30_AKTA_EKSEMPL_SKAITS" value ="$D30.RI('EndCopies')"/>
+  <Entry key ="D30_PIELIK" value ="$D30.RI('EndAdditions')"/>
+  <Entry key ="D30_PIELIK_LAPU_SKAITS" value ="$D30.RI('EndAdditionsPages')"/>
+  <Entry key ="D30_PIELIK_EKSEMPL_SKAITS" value ="$D30.RI('EndAdditionsCopies')"/>
+  <Entry key ="D30_AKTA_SANEMSANA_DATUMS" value ="$D30.RIN('SignDateForReport')"/>
+  <Entry key ="D30_AKTA_NODOSANAS_PAZIME_IR" value ="$D30.RI('Delivered')"/>
+  <!-- End atsevišķa darījuma noverošanas akts -->
+
+  <!--APP-->
+  <Entry key ="D44_PE" value ="#if($D44.PhysicalEntity)"/>
+  <Entry key ="D44_LE" value ="#if($D44.LegalEntity)"/>
+
+  <Entry key ="D44_PV_JURID" value ="#if($D44.PerformPlaceLegalAddress)"/>
+  <Entry key ="D44_PV_STRU" value ="#if($D44.PerformPlaceDepartment)"/>
+  <Entry key ="D44_PV_VID" value ="#if($D44.PerformPlaceVIDInstitution)"/>
+  <Entry key ="D44_PV_GRAM" value ="#if($D44.PerformPlaceBookkeepingInstitution)"/>
+  <Entry key ="D44_PV_CITA_ADR" value ="#if($D44.PerformPlaceOtherAddress)"/>
+  <Entry key ="D44_PV_CITA" value ="#if($D44.PerformPlaceOther)"/>
+  
+  <!--<Entry key ="D44_IR_TIN" value ="#if($D44.SrsIsDepartment)"/>-->
+  <Entry key ="D44_IR_TIN" value ="#if($D44.S('SrsId.IsDepartment')==true)"/>
+  <Entry key ="D44_TI_NOSAUKUMS_GEN" value ="$D44.RI('SrsId.HeadOrganization.NameGen')"/>
+  <Entry key ="D44_STRU_NOSAUKUMS" value ="$D44.RI('SrsId.Name')"/>
+
+  <Entry key ="D44_STRU_NOSAUKUMS_GEN" value ="$D44.RI('SrsId.FullNameGen')"/>
+  <Entry key ="D44_STRU_KODS" value ="$D44.RI('SrsId.Code')"/>
+  <Entry key ="D44_STRU_REG_NR" value ="$D44.RI('SrsId.RegCode')"/>
+  <Entry key ="D44_STRU_ADRESE" value ="$D44.RI('SrsId.Address')"/>
+  <Entry key ="D44_STRU_TALRUNIS" value ="$D44.RI('SrsId.Phone')"/>
+  <Entry key ="D44_STRU_FAX" value ="$D44.RI('SrsId.Fax')"/>
+  <Entry key ="D44_STRU_PILSETA" value ="$D44.RI('SrsId.City')"/>
+  
+  <Entry key ="D44_APP_SAST_DATUMS_TEKSTS" value ="$P6.DAT('DocDate', 'Lok', false)"/>
+  <Entry key ="D44_APP_SAST_DATUMS_TEKSTS_GEN" value ="$P6.DAT('DocDate', 'Gen', false)"/>
+  <Entry key ="D44_APP_SAST_DATUMS_TEKSTS_DAT" value ="$P6.DAT('DocDate', 'Dat', false)"/>
+  <Entry key ="D44_APP_SAST_DATUMS_TEKSTS_LOK" value ="$P6.DAT('DocDate', 'Lok', false)"/>
+  <Entry key ="D44_APP_SAST_DATUMS_TEKSTS_AKU" value ="$P6.DAT('DocDate', 'Aku', false)"/>
+  <Entry key ="D44_APP_SAST_LAIKS" value ="$D44.FI('DocDate', 't')"/>
+  <Entry key ="D44_FP" value ="$D44.RI('PhysicalEntity')"/>
+  <Entry key ="D44_JP" value ="$D44.RI('LegalEntity')"/>
+
+  <Entry key ="D44_TI" value ="#if($D44.IsTIAct)"/>
+  <Entry key ="D44_TP_DATUMS" value ="$D44.FI('TIAct.ActDate', 'd')"/>
+  <Entry key ="D44_TP_NUMURS" value ="$D44.RI('TIAct.DocNumber')"/>
+
+  <Entry key ="D44_SP" value ="#if($D44.IsSPAct)"/>
+  <Entry key ="D44_SP_DATUMS" value ="$D44.FI('SPAct.ActDate', 'd')"/>
+  <Entry key ="D44_SP_NUMURS" value ="$D44.RI('SPAct.DocNumber')"/>
+
+  <Entry key ="D44_FP_VARDS_UZVARDS" value ="$D44.RI('PEName')"/>
+  <Entry key ="D44_JP_NOSAUKUMS" value ="$D44.RI('LEName')"/>
+  <Entry key ="D44_FP_PERS_KODS" value ="$D44.RI('PECode')"/>
+  <Entry key ="D44_JP_NMR_KODS" value ="$D44.RI('LECode')"/>
+  <Entry key ="D44_FP_ADRESE" value ="$D44.RI('PEAddress')"/>
+  <Entry key ="D44_JP_ADRESE" value ="$D44.RI('LEAddress')"/>
+  <Entry key ="D44_FP_DARBA_VIETA" value ="$D44.RI('PEWorkPlace')"/>
+  <Entry key ="D44_FP_AMATS" value ="$D44.RI('PEPosition')"/>
+  <Entry key ="D44_FP_ALGA" value ="$D44.RI('PEIncome')"/>
+  <Entry key ="D44_FP_APGADIBA" value ="$D44.RI('PEDependents')"/>
+  <Entry key ="D44_FP_PILNVAROJUMS" value ="$D44.RI('PEAuthorization')"/>
+
+  <Entry key ="D44_CITAS_ZINAS" value ="$D44.RI('Notes')"/>
+
+  <Entry key ="D44_TP_SAK_DAT" value ="$D44.FI('TIAct.ActDate', 'd') plkst. $D44.FI('TIAct.ActDate', 'T')"/>
+  <Entry key ="D44_TP_BEIG_DAT" value ="$D44.FI('TIEndDate', 'd') plkst. $D44.FI('TIEndDate', 'T')"/>
+
+  <Entry key ="D44_SP_SAK_DAT" value ="D4.DAT('SPAct.ActDate', 'Lok', false) plkst. $D44.FI('SPAct.ActDate', 'T')"/>
+  <Entry key ="D44_SP_SAK_DAT_TEKSTS_GEN" value ="$D4.DAT('SPAct.ActDate', 'Gen', false) plkst. $D44.FI('SPAct.ActDate', 'T')"/>
+  <Entry key ="D44_SP_SAK_DAT_TEKSTS_DAT" value ="$D4.DAT('SPAct.ActDate', 'Dat', false) plkst. $D44.FI('SPAct.ActDate', 'T')"/>
+  <Entry key ="D44_SP_SAK_DAT_TEKSTS_LOK" value ="$D4.DAT('SPAct.ActDate', 'Lok', false) plkst. $D44.FI('SPAct.ActDate', 'T')"/>
+  <Entry key ="D44_SP_SAK_DAT_TEKSTS_AKU" value ="$D4.DAT('SPAct.ActDate', 'Aku', false) plkst. $D44.FI('SPAct.ActDate', 'T')"/>
+  <Entry key ="D44_SP_BEIG_DAT" value ="$D44.DAT('SPEndDate', 'Lok', false) plkst. $D44.FI('SPEndDate', 'T')"/>
+  <Entry key ="D44_SP_BEIG_DAT_TEKSTS_GEN" value ="$D44.DAT('SPEndDate', 'Gen', false) plkst. $D44.FI('SPEndDate', 'T')"/>
+  <Entry key ="D44_SP_BEIG_DAT_TEKSTS_DAT" value ="$D44.DAT('SPEndDate', 'Dat', false) plkst. $D44.FI('SPEndDate', 'T')"/>
+  <Entry key ="D44_SP_BEIG_DAT_TEKSTS_LOK" value ="$D44.DAT('SPEndDate', 'Lok', false) plkst. $D44.FI('SPEndDate', 'T')"/>
+  <Entry key ="D44_SP_BEIG_DAT_TEKSTS_AKU" value ="$D44.DAT('SPEndDate', 'Aku', false) plkst. $D44.FI('SPEndDate', 'T')"/>
+  
+  <Entry key ="D44A" value ="#foreach($D44A in $D44.OI('GenViolations.ActiveItems'))"/>
+  <Entry key ="D44A_PARK_BUT" value ="$D44A.RI('Description')"/>
+
+  <Entry key ="D44B" value ="#foreach($D44B in $D44A.OI('ViolatedRules.ActiveItems'))"/>
+  <Entry key ="D44B_PARK_NA_PIENEMSANAS_DATUMS" value ="$D44B.DAT('CreationDate', 'Lok', false)"/>
+  <Entry key ="D44B_PARK_NA_PIENEMSANAS_DATUMS_TEKSTS_GEN" value ="$D44B.DAT('CreationDate', 'Gen', false)"/>
+  <Entry key ="D44B_PARK_NA_PIENEMSANAS_DATUMS_TEKSTS_DAT" value ="$D44B.DAT('CreationDate', 'Dat', false)"/>
+  <Entry key ="D44B_PARK_NA_PIENEMSANAS_DATUMS_TEKSTS_LOK" value ="$D44B.DAT('CreationDate', 'Lok', false)"/>
+  <Entry key ="D44B_PARK_NA_PIENEMSANAS_DATUMS_TEKSTS_AKU" value ="$D44B.DAT('CreationDate', 'Aku', false)"/>
+  <Entry key ="D44B_PARK_NA_VEIDS" value ="$D44B.RI('DocType')"/>
+  <Entry key ="D44B_PARK_NA_NUMURS" value ="$D44B.RI('No')"/>
+  <Entry key ="D44B_PARK_NA" value ="$D44B.RI('FullName')"/>
+
+  <Entry key ="D44B_NR" value ="$D44B.RI('GenRuleNumberStringNom')"/>
+  
+  <Entry key ="D44B_PARK_CITATS" value ="$D44B.RI('Rule.Quote')"/>
+
+  <Entry key ="D44C" value ="#foreach($D44C in $D44A.OI('ViolationResponsibleRules.ActiveItems'))"/>
+  <Entry key ="D44C_ATB_NA_PIENEMSANAS_DATUMS" value ="$D44C.FI('CreationDate', 'Lok', false)"/>
+  <Entry key ="D44C_ATB_NA_PIENEMSANAS_DATUMS_TEKSTS_GEN" value ="$D44C.FI('CreationDate', 'Gen', false)"/>
+  <Entry key ="D44C_ATB_NA_PIENEMSANAS_DATUMS_TEKSTS_DAT" value ="$D44C.FI('CreationDate', 'Dat', false)"/>
+  <Entry key ="D44C_ATB_NA_PIENEMSANAS_DATUMS_TEKSTS_LOK" value ="$D44C.FI('CreationDate', 'Lok', false)"/>
+  <Entry key ="D44C_ATB_NA_PIENEMSANAS_DATUMS_TEKSTS_AKU" value ="$D44C.FI('CreationDate', 'Aku', false)"/>
+  <Entry key ="D44C_ATB_NA_VEIDS" value ="$D44C.RI('DocType')"/>
+  <Entry key ="D44C_ATB_NA_NUMURS" value ="$D44C.RI('No')"/>
+  <Entry key ="D44C_ATB_NA" value ="$D44C.RI('FullName')"/>
+
+  <Entry key ="D44C_NR" value ="$D44C.RI('GenRuleNumberStringLok')"/>
+
+  <Entry key ="D44C_ATB_CITATS" value ="$D44C.RI('ViolationResponsibleRule.Quote')"/>
+
+  <Entry key ="D44D" value ="#foreach($D44D in $D44.OI('WithdrawalProtocols.ActiveItems'))"/>
+  <Entry key ="D44D_MDI_DAT" value ="$D44D.FI('DocDate', 'd')"/>
+  <Entry key ="D44D_MDI_NR" value ="$D44D.RI('DocNumber')"/>
+
+  <Entry key ="D44_PIEL_CHK" value ="$D44.RI('TPHasAddition')"/>
+  <Entry key ="D44_PIEL_TEXT" value ="$D44.RI('TPAddition')"/>
+  <Entry key ="D44_PIERAKST" value ="$D44.RI('TPHasTold')"/>
+  <Entry key ="D44_PIERAKST_TEXT" value ="$D44.RI('TPTold')"/>
+  <Entry key ="D44_PASK_PIEZ_NAV" value ="$D44.RI('TPNoComments')"/>
+  <Entry key ="D44_IER_DATUMS" value ="$D44.FI('InvDate', 'd')"/>
+  <Entry key ="D44_IER_LAIKS" value ="$D44.FI('InvDate', 't')"/>
+  <Entry key ="D44_UZAICIN_STRU" value ="$D44.RI('InvSrsId.Name')"/>
+  <Entry key ="D44_UZAICIN_ADR" value ="$D44.RI('InvSrsId.Address')"/>
+  <Entry key ="D44_UZAICIN_KAB_NR" value ="$D44.RI('InvRoom')"/>
+  <Entry key ="D44_PIELIKUMA" value ="$D44.RI('Additions')"/>
+  <Entry key ="D44_ZINAS_PAR_LIECINIEKIEM" value ="$D44.RI('Witness')"/>
+  <!--APP-->
+  
+  <!--Kokmateriālu pārbaude uz ceļa-->
+  <Entry key ="D49_KTPR_SERIJA" value ="$D49.RI('WBSerial')"/>
+  <Entry key ="D49_KTPR_NUMURS" value ="$D49.RI('WBNumber')"/>
+  <Entry key ="D49_KTPR_DATUMS" value ="$D49.FI('WBDate', 'd')"/>
+  <Entry key ="D49_PIEGADATAJS" value ="$D49.RI('Deliverer')"/>
+  <Entry key ="D49_PIEGADATAJA_NMR_KODS" value ="$D49.RI('DelivererCode')"/>
+  <Entry key ="D49_PIEGADATAJA_NOSAUKUMS" value ="$D49.RI('DelivererName')"/>
+  <Entry key ="D49_PIEGADATAJA_ADRESE" value ="$D49.RI('DelivererAddress')"/>
+  <Entry key ="D49_SANEMEJS" value ="$D49.RI('Receiver')"/>
+  <Entry key ="D49_SANEMEJA_NMR_KODS" value ="$D49.RI('ReceiverCode')"/>
+  <Entry key ="D49_SANEMEJA_NOSAUKUMS" value ="$D49.RI('ReceiverName')"/>
+  <Entry key ="D49_SANEMEJA_ADRESE" value ="$D49.RI('ReceiverAddress')"/>
+  <Entry key ="D49_PARVADATAJA_NMR_KODS" value ="$D49.RI('CarrierCode')"/>
+  <Entry key ="D49_PARVADATAJA_NOSAUKUMS" value ="$D49.RI('CarrierName')"/>
+  <Entry key ="D49_PARVADATAJA_ADRESE" value ="$D49.RI('CarrierAddress')"/>
+  <Entry key ="D49_VADITAJA_PERS_KODS" value ="$D49.RI('DriverCode')"/>
+  <Entry key ="D49_VADITAJA_VARDS_UZVARDS" value ="$D49.RI('DriverName')"/>
+  <Entry key ="D49_TL_VALSTS_REG_NUMURS" value ="$D49.RI('CarNumber')"/>
+  <Entry key ="D49_TL_IPASNIEKA_VARDS_UZVARDS" value ="$D49.RI('CarOwner')"/>
+  <Entry key ="D49_IEKRAUSANAS_VIETA_ADRESE" value ="$D49.RI('CarLoad')"/>
+  <Entry key ="D49_IZKRAUSANAS_VIETA_ADRESE" value ="$D49.RI('CarUnload')"/>
+  <Entry key ="D49_APMAKSAS_VEIDS" value ="$D49.RI('PaymentType')"/>
+  <Entry key ="D49_DAUDZUMS" value ="$D49.RI('Amount')"/>
+  <Entry key ="D49_MERVIENIBA" value ="$D49.RI('Unit')"/>
+  <Entry key ="D49_SUMMA" value ="$D49.FI('Sum', 'f')"/>
+  <Entry key ="D49_VALUTA" value ="$D49.RI('Currency')"/>
+  <Entry key ="D49_CIRSANAS_APLIECINAJUMA_STAVOKLIS" value ="$D49.RI('DeforestDocuments')"/>
+  <Entry key ="D49_CA_NUMURS" value ="$D49.RI('DeforestDocNumber')"/>
+  <Entry key ="D49_CA_DATUMS" value ="$D49.FI('DeforestDocDate', 'd')"/>
+  <Entry key ="D49_PIEZIMES" value ="$D49.RI('Notes')"/>
+  <!--End Kokmateriālu pārbaude uz ceļa-->
+
+  <Entry key ="D048_ATRASANAS_VIETA" value ="$D048.RI('PlaceForReport')"/>
+  <Entry key ="D048_CITA_ATRASANAS_VIETA" value ="$D048.RI('PlaceOther')"/>
+  <Entry key ="D048_KOPA_TILPUMS" value ="$D048.FI('TotalSumm', 'f')"/>
+  <Entry key ="D048_PIEZIMES" value ="$D048.RI('Notes')"/>
+  <Entry key ="D048A" value ="#foreach($D048A in $D048.OI('Measures.ActiveItems'))"/>
+  <Entry key ="D048A_KOKMAT_VEIDS" value ="$D048A.RI('TimberType')"/>
+  <Entry key ="D048A_GREDAS_PLATUMS" value ="$D048A.FI('SmdWidth', 'f')"/>
+  <Entry key ="D048A_GREDAS_GARUMS" value ="$D048A.FI('SmdLength', 'f')"/>
+  <Entry key ="D048A_GREDAS_AUGSTUMS" value ="$D048A.FI('SmdHeight', 'f')"/>
+  <Entry key ="D048A_KOKMAT_TILPIGUMA_KOEF" value ="$D048A.FI('SmdCapaciousness', 'f')"/>
+  <Entry key ="D048A_KOKMAT_TILPUMS" value ="$D048A.FI('SmdStearCapacity', 'f')"/>
+  <Entry key ="D048A_KOKMAT_TILPUMS_KUBIKMETROS" value ="$D048A.FI('SmdKMCapacity', 'f')"/>
+
+  <Entry key ="D048B" value ="#foreach($D048B in $D048.OI('ExternalPerson.ActiveItems'))"/>
+  <Entry key ="D048B_PIAC_PERS_STRU_NOSAUKUMS" value ="$D048B.RI('Organization')"/>
+  <Entry key ="D048B_PIAC_PERS_AMATS" value ="$D048B.RI('Position')"/>
+  <Entry key ="D048B_PIAC_PERS" value ="$D048B.RI('Person')"/>
+
+
+  <!--Saņemto kokmateriālu dokumentācijā sniegtā informācija-->
+  <Entry key ="D51_PARBAUDES_DATUMS_NO" value ="$D51.FI('PeriodFrom', 'd')"/>
+  <Entry key ="D51_PARBAUDES_DATUMS_LIDZ" value ="$D51.FI('PeriodUntil', 'd')"/>
+  <Entry key ="D51A" value ="#foreach($D51A in $D51.OI('Documents.ActiveItems'))"/>
+  <Entry key ="D51A_KTPR_VEIDS" value ="$D51A.RI('DocType')"/>
+  <Entry key ="D51A_KTPR_NUMURS" value ="$D51A.RI('DocNumber')"/>
+  <Entry key ="D51A_KTPR_DATUMS" value ="$D51A.FI('DocDate', 'd')"/>
+  <Entry key ="D51A_PAKALP_SNIEDZEJA_NMR_KODS" value ="$D51A.RI('SupplierCode')"/>
+  <Entry key ="D51A_PAKALP_SNIEDZEJA_NOSAUKUMS" value ="$D51A.RI('SupplierName')"/>
+  <Entry key ="D51A_PAKALP_SNIEDZEJA_ADRESE" value ="$D51A.RI('SupplierAddress')"/>
+  <Entry key ="D51A_DARIJUMA_RAKSTURS" value ="$D51A.RI('DealType')"/>
+  <Entry key ="D51A_KOKMAT_IEKRAUSANAS_VIETA" value ="$D51A.RI('LoadPlace')"/>
+  <Entry key ="D51A_KOKMAT_NOSAUKUMS" value ="$D51A.RI('TimberName')"/>
+  <Entry key ="D51A_KOKMAT_DAUDZUMS" value ="$D51A.RI('Amount')"/>
+  <Entry key ="D51A_KOKMAT_MERVIENIBA" value ="$D51A.RI('Unit')"/>
+  <Entry key ="D51A_APLIEC_DOK_VEIDS" value ="$D51A.RI('OriginDocType')"/>
+  <Entry key ="D51A_APLIEC_DOK_NUMURS" value ="$D51A.RI('OriginDocNumber')"/>
+  <Entry key ="D51A_APLIEC_DOK_IZSNIEGSANAS_DATUMS" value ="$D51A.FI('OriginDocDate', 'd')"/>
+  <Entry key ="D51A_UZRADITAIS_KOKMAT_DAUDZUMS" value ="$D51A.RI('OriginAmount')"/>
+  <Entry key ="D51A_UZRADITAIS_KOKMAT_MERVIENIBA" value ="$D51A.RI('OriginUnit')"/>
+  <Entry key ="D51A_PIEZIMES" value ="$D51A.RI('Notes')"/>
+  <!-- End Saņemto kokmateriālu dokumentācijā sniegtā informācija-->
+
+  <Entry key ="D52_PARBAUDES_DATUMS_NO" value ="$D52.FI('PeriodFrom', 'd')"/>
+  <Entry key ="D52_PARBAUDES_DATUMS_LIDZ" value ="$D52.FI('PeriodUntil', 'd')"/>
+  <Entry key ="D52A" value ="#foreach($D52A in $D52.OI('TimberSentDocumentDetails.ActiveItems'))"/>
+  <Entry key ="D52A_KTPR_VEIDS" value ="$D52A.RI('DocType')"/>
+  <Entry key ="D52A_KTPR_NUMURS" value ="$D52A.RI('DocNumber')"/>
+  <Entry key ="D52A_KTPR_DATUMS" value ="$D52A.FI('DocDate', 'd')"/>
+  <Entry key ="D52A_KTPR_NOS_DATUMS" value ="$D52A.FI('SentDate', 'd')"/>
+  <Entry key ="D52A_PAKALP_SANEMEJA_NMR_KODS" value ="$D52A.RI('ReceiverCode')"/>
+  <Entry key ="D52A_PAKALP_SANEMEJA_NOSAUKUMS" value ="$D52A.RI('ReceiverName')"/>
+  <Entry key ="D52A_PAKALP_SANEMEJA_ADRESE" value ="$D52A.RI('ReceiverAddress')"/>
+  <Entry key ="D52A_DARIJUMA_RAKSTURS" value ="$D52A.RI('DealType')"/>
+  <Entry key ="D52A_KOKMAT_IZKRAUSANAS_VIETA" value ="$D52A.RI('UnloadPlace')"/>
+  <Entry key ="D52A_KOKMAT_NOSAUKUMS" value ="$D52A.RI('TimberName')"/>
+  <Entry key ="D52A_KOKMAT_DAUDZUMS" value ="$D52A.RI('Amount')"/>
+  <Entry key ="D52A_KOKMAT_MERVIENIBA" value ="$D52A.RI('Unit')"/>
+  <Entry key ="D52A_PARVADATAJA_NMR_KODS" value ="$D52A.RI('CarrierCode')"/>
+  <Entry key ="D52A_PARVADATAJA_NOSAUKUMS" value ="$D52A.RI('CarrierName')"/>
+  <Entry key ="D52A_PARVADATAJA_ADRESE" value ="$D52A.RI('CarrierAddress')"/>
+  <Entry key ="D52A_TRANSPORTLIDZEKLA_REG_NR" value ="$D52A.RI('CarNumber')"/>
+  <Entry key ="D52A_TRANSPORTLIDZEKLA_VADITAJA_VARDS_UZVARDS" value ="$D52A.RI('CarDriver')"/>
+  <Entry key ="D52A_PIEZIMES" value ="$D52A.RI('Notes')"/>
+
+  <!-- TP akta titullapa -->
+  <Entry key ="D15F" value ="#set( $x = 1)#foreach($D15F in $D15.OI('DocumentPerformersForReport.ActiveItems'))$x.#set( $x = $x + 1)"/>
+  <Entry key ="D15F_VEIC_AMATS" value ="$D15F.RI('PerformerPosition')"/>
+  <Entry key ="D15F_VEICEJS" value ="$D15F.RI('PerformerFullName')"/>
+  <Entry key ="D15F_VEICEJA_STR" value ="$D15F.RI('Performer.User.OrganizationManual')"/>
+  <Entry key ="D15H" value ="#set( $x = 1)#foreach($D15H in $D15.OI('ExternalPersons.ActiveItems'))$x.#set( $x = $x + 1)"/>
+  <Entry key ="D15H_PIEAIC_PERS_IESTADE" value ="$D15H.RI('Organization')"/>
+  <Entry key ="D15H_PIEAIC_PERS_AMATS" value ="$D15H.RI('Position')"/>
+  <Entry key ="D15H_PIEAIC_PERS" value ="$D15H.RI('Person')"/>
+  <Entry key ="D15C" value ="#foreach($D15C in $D15.OI('InvitationDocuments.ActiveItems'))"/>
+  <Entry key ="D15C_DOK_NOSAUKUMS" value ="$D15C.RI('Document')"/>
+  <Entry key ="D15C_DOK_KOMENTARI" value ="$D15C.RI('Notes')"/>
+  <Entry key ="D15B" value ="#foreach($D15B in $D15.OI('Themes'))"/>
+  <Entry key ="D15B_TEMA" value ="$D15B.RI('Value')"/>
+  <Entry key ="D15I" value ="#set( $x = 1)#foreach($D15I in $D15.OI('TaxpayerMembers.ActiveItems'))$x.#set( $x = $x + 1)"/>
+  <Entry key ="D15I_NM_PARSATVIS_KODS" value ="$D15I.RI('Code')"/>
+  <Entry key ="D15I_NM_PARSTAVIS" value ="$D15I.RI('Name')"/>
+  <Entry key ="D15I_NM_PARSTAVIS_AMATS" value ="$D15I.RI('Position')"/>
+  <Entry key ="D15G" value ="#set( $x = 1)#foreach($D15G in $D15.OI('DocumentPerformersAllForReport.ActiveItems'))$x.#set( $x = $x + 1)"/>
+  <Entry key ="D15G_VEIC_AMATS" value ="$D15G.RI('PerformerPosition')"/>
+  <Entry key ="D15G_VEICEJA_STR" value ="$D15G.RI('Performer.User.OrganizationManual')"/>
+  <Entry key ="D15G_VEICEJS" value ="$D15G.RI('PerformerFullName')"/>
+  <Entry key ="D15A" value ="#set( $x = 1)#foreach($D15A in $D15.OI('Licences.ActiveItems'))$x.#set( $x = $x + 1)"/>
+  <Entry key ="D15A_ATLAUJAS_IZSNIEDZEJS" value ="$D15A.RI('Issuer')"/>
+  <Entry key ="D15A_ATLAUJAS_VEIDS" value ="$D15A.RI('Type')"/>
+  <Entry key ="D15A_ATLAUJAS_DATUMS" value ="$D15A.FI('LicDate', 'd')"/>
+  <Entry key ="D15A_ATLAUJAS_NUMURS" value ="$D15A.RI('Number')"/>
+  <Entry key ="D15A_ATLAUJAS_DATUMS_NO" value ="$D15A.FI('From', 'd')"/>
+  <Entry key ="D15A_ATLAUJAS_DATUMS_LIDZ" value ="$D15A.FI('Until', 'd')"/>
+
+  <Entry key ="D15_DOK_REG_NUMURS" value ="$D15.RI('DocNumber')"/>
+  <Entry key ="D15_PARBAUDES_SAKUMA_DATUMS_LAIKS" value ="$D15.FI('ActDate', 'd') plkst. $D15.FI('ActDate', 'T')"/>
+
+  <Entry key ="D15_NMO_PARBAUDES_VIETA" value ="$D15.RI('PerformPlaces')"/>
+  <Entry key ="D15_NMO_PARBAUDES_VIETA_CITA" value ="$D15.RI('PerformPlaceOther')"/>
+  <Entry key ="D15_IR_STRUKTURVIENIBA" value ="$D15.EnumTick('PerformPlaces.Value','Department')"/>
+  <Entry key ="D15_IR_JURIDISKA_ADRESE" value ="$D15.EnumTick('PerformPlaces.Value','LegalAddress')"/>
+  <Entry key ="D15_IR_CITA_VIETA" value ="$D15.EnumTick('PerformPlaces.Value','OtherPlace')"/>
+  <Entry key ="D15_CITA_VID_IESTADE" value ="$D15.EnumTick('PerformPlaceOther.Value','VIDInstitution')"/>
+  <Entry key ="D15_CITA_UZNEMUMA" value ="$D15.EnumTick('PerformPlaceOther.Value','BookkeepingInstitution')"/>
+  <Entry key ="D15_CITA_ADRESE" value ="$D15.EnumTick('PerformPlaceOther.Value','OtherAddress')"/>
+
+  <Entry key ="D15_NMO_KODS" value ="$D15.RI('ObjCode')"/>
+  <Entry key ="D15_NMO_NOSAUKUMS" value ="$D15.RI('ObjName')"/>
+  <Entry key ="D15_NMO_ADRESE" value ="$D15.RI('ObjAddress')"/>
+  <Entry key ="D15_NMO_TALRUNIS" value ="$D15.RI('ObjPhone')"/>
+  <Entry key ="D15_NMO_DARBA_LAIKS" value ="$D15.RI('ObjWorktime')"/>
+  <Entry key ="D15_NMO_STRU_PILSETA" value ="$D15.RI('Location')"/>
+  <Entry key ="D15_IPASUMTIESIBAS" value ="$D15.RI('Ownership')"/>
+  <Entry key ="D15_IZN_KODS" value ="$D15.RI('OwnerCode')"/>
+  <Entry key ="D15_IZN_NOSAUKUMS" value ="$D15.RI('OwnerName')"/>
+  <Entry key ="D15_IZN_LIG_DATUMS" value ="$D15.FI('OwnerCtrDate', 'd')"/>
+  <Entry key ="D15_IZN_LIG_NR" value ="$D15.RI('OwnerCtrNumber')"/>
+  <Entry key ="D15_IZN_DATUMS_NO" value ="$D15.FI('OwnerCtrFrom', 'd')"/>
+  <Entry key ="D15_IZN_DATUMS_LIDZ" value ="$D15.FI('OwnerCtrUntil', 'd')"/>
+  <Entry key ="D15_IZN_PIEZIMES" value ="$D15.RI('OwnerNotes')"/>
+  <Entry key ="D15_DARBIBAS_VEIDS_IR" value ="$D15.RI('HasAspectNotes')"/>
+  <Entry key ="D15_DARBIBAS_VEIDS" value ="$D15.RI('AspectDetected')"/>
+  <Entry key ="D15_UZRADITA_APLIECIBA_PILNVARA" value ="$D15.RI('DocPresented')"/>
+
+  <Entry key ="D15_PIEZIMES" value ="$D15.RI('ThemeNotes')"/>
+
+  <Entry key ="D15_STRU_NOSAUKUMS_LOK" value ="$D15.RI('InvSrs.FullNameLoc')"/>
+  <Entry key ="D15_IERASTIES_VID" value ="#if($D15.S('NeedMoreInfo')==true)"/>
+  <Entry key ="D15_IERASTIES_ADRESE" value ="$D15.RI('InvSrs.Address')"/>
+  <Entry key ="D15_IERASTIES_KABINETS" value ="$D15.RI('InvRoom')"/>
+  <Entry key ="D15_IERASTIES_TALRUNIS" value ="$D15.RI('InvPhone')"/>
+  <Entry key ="D15_IERASTIES_PERSONAI" value ="$D15.RI('InvPerson')"/>
+  <Entry key ="D15_IERASTIES_DATUMS_LAIKS" value ="$D15.FI('InvDate', 'd') plkst. $D15.FI('InvDate', 'T')"/>
+  <Entry key ="D15_NEPIECIESAMA_PAPILDUS_INFO" value ="$D15.RI('NeedMoreInfo')"/>
+  <Entry key ="D15_KONSTATETI_PARKAPUMI_JA" value ="$D15.RI('ViolationsDetectedYes')"/>
+  <Entry key ="D15_KONSTATETI_PARKAPUMI_NE" value ="$D15.RI('ViolationsDetectedNo')"/>
+
+  <Entry key ="D15_NOBEIGUMS_PIEZIMES" value ="$D15.RI('EndNotes')"/>
+  <Entry key ="D15_NM_KOMENTARS_IR" value ="$D15.BI('TpHasAdditionForReport')"/>
+  <Entry key ="D15_NM_KOMENTARS" value ="$D15.RI('TpAdditionText')"/>
+  <Entry key ="D15_NM_TEIKTAIS_IR" value ="$D15.BI('TpHasToldForReport')"/>
+  <Entry key ="D15_NM_TEIKTAIS" value ="$D15.RI('TpToldText')"/>
+  <Entry key ="D15_NM_PASKAIDROJUMI_NAV" value ="$D15.RI('TpNoCommentsForReport')"/>
+  <Entry key ="D15_PARBAUDE_PABEIGSANAS_DATUMS_LAIKS" value ="$D15.FI('EndDate', 'd') plkst. $D15.FI('EndDate', 'T')"/>
+  <Entry key ="D15_AKTA_LAPU_SKAITS" value ="$D15.RIN('EndPages')"/>
+  <Entry key ="D15_AKTA_EKSEMPL_SKAITS" value ="$D15.RI('EndCopies')"/>
+  <Entry key ="D15_PIELIK" value ="$D15.RI('EndAdditions')"/>
+  <Entry key ="D15_PIELIK_LAPU_SKAITS" value ="$D15.RIN('EndAdditionsPages')"/>
+  <Entry key ="D15_PIELIK_EKSEMPL_SKAITS" value ="$D15.RI('EndAdditionsCopies')"/>
+  <Entry key ="D15_AKTA_SANEMSANA_DATUMS" value ="$D15.FIN('SignDate', 'd')"/>
+  <Entry key ="D15_AKTA_NODOSANAS_PAZIME_IR" value ="$D15.RI('Delivered')"/>
+  <!-- End TP akta titullapa -->
+  
+  <!--Melno un krāsaino metālu atgriezumu un lūžņu iepirkšanas un uzglabāšanas vietu pārbaude-->
+  <Entry key ="D32_LICENCES_ORIGINALS" value ="$D32.RI('LicenceOriginal')"/>
+  <Entry key ="D32_LICENCES_KOPIJA" value ="$D32.RI('LicenceCopy')"/>
+  <Entry key ="D32_GLABASANAS_VIETA" value ="$D32.RI('Storage')"/>
+  <Entry key ="D32_IEPIRKSANAS_VIETA_FP" value ="$D32.RI('Purchase')"/>
+  <Entry key ="D32_ATTAISNOJUMA_DOKUMENTI" value ="$D32.RI('SourceDocument')"/>
+  <Entry key ="D32_BEZSKAIDRAS_NAUDAS_NOREKINS" value ="$D32.RI('Clearing')"/>
+  <Entry key ="D32_ZURNALA" value ="$D32.RI('JournalForReport')"/>
+  <Entry key ="D32_IERAKSTI_VEIKTI_SAVLAICIGI" value ="$D32.RI('JournalEntriesTimely')"/>
+  <Entry key ="D32_REG_VID_IESTADE" value ="$D32.RI('JournalRegistered')"/>
+  <Entry key ="D32_DATORPROGRAMMA" value ="$D32.BI('SoftwareForReport')"/>
+  <Entry key ="D32_ATBILS_NA_PRASIBAM" value ="$D32.RI('SoftwareOK')"/>
+  <Entry key ="D32_ZURNALU_VAR_IZDRUKAT" value ="$D32.RI('JournalPrintable')"/>
+  <Entry key ="D32_IEPIRKSANA_NO_JP" value ="$D32.BI('LegalEntityPurchaseForReport')"/>
+  <Entry key ="D32_PAVADZIMES_NOFORMETAS_IEPERKOT" value ="$D32.RI('LegalEntityPurchaseDocuments')"/>
+  <Entry key ="D32_IEPIRKSANA_NO_FP" value ="$D32.BI('PhysicalEntityPurchaseForReport')"/>
+  <Entry key ="D32_NOFORMETI_AKTI" value ="$D32.RI('PhysicalEntityPurchaseDocuments')"/>
+  <Entry key ="D32_REALIZACIJA_JP" value ="$D32.BI('LegalEntitySellForReport')"/>
+  <Entry key ="D32_NOFORMETI_PAVADDOK" value ="$D32.RI('LegalEntitySellDocuments')"/>
+  <Entry key ="D32_PIEZIMES" value ="$D32.RI('Notes')"/>
+
+  <Entry key ="D32A" value ="#foreach($D32A in $D32.OI('LegalEntitiesPurchase.ActiveItems'))"/>
+  <Entry key ="D32A_JP_NMR_KODS" value ="$D32A.RI('TaxpayerCode')"/>
+  <Entry key ="D32A_JP_NOSAUKUMS" value ="$D32A.RI('TaxpayerName')"/>
+  <Entry key ="D32A_JP_ADRESE" value ="$D32A.RI('TaxpayerAddress')"/>
+  <Entry key ="D32A_JP_DATUMS" value ="$D32A.FI('DocDate', 'd')"/>
+  <Entry key ="D32A_JP_DOK_SERIJA_NR" value ="$D32A.RI('DocNumber')"/>
+  <Entry key ="D32A_JP_METALA_VEIDS" value ="$D32A.RI('MetalType')"/>
+  <Entry key ="D32A_JP_SVARS" value ="$D32A.FI('Weight', 'f')"/>
+  <Entry key ="D32A_JP_IEPIRKUMA_CENA" value ="$D32A.FI('Price', 'f')"/>
+  <Entry key ="D32A_JP_SUMMA_BEZ_PVN" value ="$D32A.FI('SumWithoutVAT', 'f')"/>
+  <Entry key ="D32A_JP_PVN" value ="$D32A.FI('VAT', 'f')"/>
+  <Entry key ="D32A_JP_SUMMA" value ="$D32A.FI('Sum', 'f')"/>
+
+  <Entry key ="D32B" value ="#foreach($D32B in $D32.OI('LegalEntitiesSell.ActiveItems'))"/>
+  <Entry key ="D32B_NMR_KODS" value ="$D32B.RI('TaxpayerCode')"/>
+  <Entry key ="D32B_NOSAUKUMS" value ="$D32B.RI('TaxpayerName')"/>
+  <Entry key ="D32B_ADRESE" value ="$D32B.RI('TaxpayerAddress')"/>
+  <Entry key ="D32B_DATUMS" value ="$D32B.FI('DocDate', 'd')"/>
+  <Entry key ="D32B_DOK_SERIJA_NR" value ="$D32B.RI('DocNumber')"/>
+  <Entry key ="D32B_METALA_VEIDS" value ="$D32B.RI('MetalType')"/>
+  <Entry key ="D32B_SVARS" value ="$D32B.FI('Weight', 'f')"/>
+  <Entry key ="D32B_REALIZACIJAS_CENA" value ="$D32B.FI('Price', 'f')"/>
+  <Entry key ="D32B_SUMMA_BEZ_PVN" value ="$D32B.FI('SumWithoutVAT', 'f')"/>
+  <Entry key ="D32B_PVN" value ="$D32B.FI('VAT', 'f')"/>
+  <Entry key ="D32B_SUMMA" value ="$D32B.FI('Sum', 'f')"/>
+
+  <Entry key ="D32C" value ="#foreach($D32C in $D32.OI('PhysicalEntitiesPurchase.ActiveItems'))"/>
+  <Entry key ="D32C_FP_PERSONAS_KODS" value ="$D32C.RI('PersonCode')"/>
+  <Entry key ="D32C_FP_VARDS_UZVARDS" value ="$D32C.RI('PersonName')"/>
+  <Entry key ="D32C_FP_PERS_APLIEC_DOK" value ="$D32C.RI('PersonDocName')"/>
+  <Entry key ="D32C_FP_APLIEC_DOK_NR" value ="$D32C.RI('PersonDocNumber')"/>
+  <Entry key ="D32C_FP_AKTA_DATUMS" value ="$D32C.FI('DocDate', 'd')"/>
+  <Entry key ="D32C_FP_AKTA_NR" value ="$D32C.RI('DocNumber')"/>
+  <Entry key ="D32C_FP_METAL_NOSAUKUMS" value ="$D32C.RI('MetalType')"/>
+  <Entry key ="D32C_FP_SVARS" value ="$D32C.RI('Weight')"/>
+  <Entry key ="D32C_FP_CENA" value ="$D32C.RI('Price')"/>
+  <Entry key ="D32C_FP_SUMMA" value ="$D32C.RI('Sum')"/>
+  <Entry key ="D32C_FP_APREKINATS_IIN" value ="$D32C.RI('Calculated')"/>
+  <Entry key ="D32C_FP_IIN_SUMMA" value ="$D32C.FI('CalculatedSum', 'f')"/>
+  <Entry key ="D32C_FP_APREKINATS_PAREIZI" value ="$D32C.RI('CalculatedProperly')"/>
+  <!--End Melno un krāsaino metālu atgriezumu un lūžņu iepirkšanas un uzglabāšanas vietu pārbaude-->
+
+  <!--Paziņojums sodu reģistram par administratīvo sodu-->
+  <Entry key ="D58_PE" value ="#if($D58.PE)"/>
+  <Entry key ="D58_LE" value ="#if($D58.LE)"/>
+  
+  <Entry key ="D58_DOC_DAT" value ="$D58.FI('DocDate', 'd')"/>
+  <Entry key ="D58_DOC_NR" value ="$D58.RI('DocNumber')"/>
+  <Entry key ="D58_APL_NR" value ="$D58.RI('GenEndDecisionResponsibility.RecordNumber')"/>
+
+  <Entry key ="D58_PROT_NR" value ="$D58.RI('GenAVProtocol.DocNumber')"/>
+  <Entry key ="D58_APP_NR1" value ="$D58.RI('SplitAvpNo1')"/>
+  <Entry key ="D58_APP_NR2" value ="$D58.RI('SplitAvpNo2')"/>
+
+  <Entry key ="D58_PROT_SAST_STRU" value ="$D58.RI('GenAVProtocol.Creator.OrganizationManual.FullNameGen')"/>
+  <Entry key ="D58_PROT_SAST_V_UZV" value ="$D58.RI('GenAVProtocol.Creator.FullName')"/>
+  <Entry key ="D58_PROT_SAST_AMATS" value ="$D58.RI('GenAVProtocol.Creator.Position')"/>
+  <Entry key ="D58_PROT_SAST_TEL" value ="$D58.RI('GenAVProtocol.Creator.Phone')"/>
+  <Entry key ="D58_PARK_P_K" value ="$D58.RI('GenAVProtocol.PECode')"/>
+  <Entry key ="D58_PARK_DZD" value ="$D58.FI('PEBirthDate', 'd')"/>
+  
+  <Entry key ="D58_PARK_REG_NR" value ="$D58.RI('GenAVProtocol.LECode')"/>
+  <Entry key ="D58_PARK_UZV" value ="$D58.RI('GenPESurname')"/>
+  <Entry key ="D58_PARK_V" value ="$D58.RI('GenPEName')"/>
+  <Entry key ="D58_PARK_NOS" value ="$D58.RI('GenAVProtocol.LEName')"/>
+  <Entry key ="D58_DZIM_VIR" value ="$D58.EnumTick('Gender.Value','Male')"/>
+  <Entry key ="D58_DZIM_SIEV" value ="$D58.EnumTick('Gender.Value','Female')"/>
+  <Entry key ="D58_PARK_ADR_FIZ" value ="$D58.RI('GenAVProtocol.PEAddress')"/>
+  <Entry key ="D58_PARK_ADR_JURID" value ="$D58.RI('GenAVProtocol.LEAddress')"/>
+  
+  <Entry key ="D58_PARK_DAT" value ="$D58.FI('OffenceDate', 'd')"/>
+  <Entry key ="D58_PROTOK_DAT" value ="$D58.FI('GenAVProtocol.DocDate', 'd')"/>
+  
+  <Entry key ="D58A" value ="#foreach($D58A in $D58.OI('GenEndDecisionResponsibility.DocumentViolations.ActiveItems'))"/>
+  <Entry key ="D58B" value ="#foreach($D58B in $D58A.OI('ViolationResponsibleRules.ActiveItems'))"/>
+  <Entry key ="D58B_NR" value ="$D58B.RI('GenRuleNumberStringNom')"/>
+  
+  <Entry key ="D58_LEM_DAT" value ="$D58.FI('GenEndDecisionResponsibility.DocDate', 'd')"/>
+  <Entry key ="D58_SODA_NAUDA" value ="$D58.FI('GenEndDecisionResponsibility.FinalPenalty', 'f')"/>
+  <Entry key ="D58_KON_IR_NAV" value ="$D58.RI('GenEndDecisionResponsibility.FinalConfiscation')"/>
+  <Entry key ="D58_KONF" value ="$D58.RI('GenEndDecisionResponsibility.FinalConfiscationNotes')"/>
+  <Entry key ="D58_APSTR_IR_NAV" value ="$D58.RI('Litigate')"/>
+  <Entry key ="D58_APSTR_DAT" value ="$D58.FI('LitigationDate', 'd')"/>
+  <Entry key ="D58_LIETV_IZB_IR_NAV" value ="$D58.RI('DocumentationStopped')"/>
+  <Entry key ="D58_LIETV_IZB" value ="$D58.RI('DocumentationStoppedText')"/>
+ 
+  <Entry key ="D58_SODA_DAT" value ="$D58.RI('GenEndDecisionResponsibility.PaymentTerm')"/>
+  
+  <Entry key ="D58_LEM_STRU" value ="$D58.RI('GenEndDecisionResponsibility.Signatory.OrganizationManual.FullNameGen')"/>
+  <Entry key ="D58_LEM_AM" value ="$D58.RI('GenEndDecisionResponsibility.Signatory.Position')"/>
+  <Entry key ="D58_LEM_V_UZV" value ="$D58.RI('GenEndDecisionResponsibility.Signatory.FullName')"/>
+  <Entry key ="D58_LEM_TEL" value ="$D58.RI('GenEndDecisionResponsibility.Signatory.Phone')"/>
+
+  <!--Paziņojums sodu reģistram par administratīvo pārkāpumu-->
+  <Entry key ="D59_PE" value ="#if($D59.PE)"/>
+  <Entry key ="D59_LE" value ="#if($D59.LE)"/>
+  <Entry key ="D59_APP_NR" value ="$D59.RI('GenAVProtocol.DocNumber')"/>
+  <Entry key ="D59_APP_NR1" value ="$D59.RI('SplitAvpNo1')"/>
+  <Entry key ="D59_APP_NR2" value ="$D59.RI('SplitAvpNo2')"/>
+  <Entry key ="D59_DOC_DAT" value ="$D59.DAT('DocDate', 'Lok', false)"/>
+  <Entry key ="D59_DOC_DAT_TEKSTS_GEN" value ="$D59.DAT('DocDate', 'Gen', false)"/>
+  <Entry key ="D59_DOC_DAT_TEKSTS_DAT" value ="$D59.DAT('DocDate', 'Dat', false)"/>
+  <Entry key ="D59_DOC_DAT_TEKSTS_LOK" value ="$D59.DAT('DocDate', 'Lok', false)"/>
+  <Entry key ="D59_DOC_DAT_TEKSTS_AKU" value ="$D59.DAT('DocDate', 'Aku', false)"/>
+  <Entry key ="D59_DOC_NR" value ="$D59.RI('DocNumber')"/>
+  <Entry key ="D59_APL_NR" value ="$D59.RI('GenEndDecisionResponsibility.RecordNumber')"/>
+  <Entry key ="D59_PROT_SAST_TI" value ="$D59.RI('GenAVProtocol.Creator.Organization.HeadOrganization')"/>
+  <Entry key ="D59_PROT_SAST_AMATS" value ="$D59.RI('GenAVProtocol.Creator.Position')"/>
+  <Entry key ="D59_PROT_SAST_V_UZV" value ="$D59.RI('GenAVProtocol.Creator.FullName')"/>
+  <Entry key ="D59_PROT_SAST_TEL" value ="$D59.RI('GenAVProtocol.Creator.Phone')"/>
+  <Entry key ="D59_PARK_P_K" value ="$D59.RI('GenAVProtocol.PECode')"/>
+  <Entry key ="D59_PARK_DZD" value ="$D59.FI('PEBirthDate', 'd')"/>
+  
+  <Entry key ="D59_PARK_REG_NR" value ="$D59.RI('GenAVProtocol.LECode')"/>
+  <Entry key ="D59_PARK_UZV" value ="$D59.RI('GenPESurname')"/>
+  <Entry key ="D59_PARK_V" value ="$D59.RI('GenPEName')"/>
+  <Entry key ="D59_PARK_NOS" value ="$D59.RI('GenAVProtocol.LEName')"/>
+  <Entry key ="D59_DZIM_VIR" value ="$D59.EnumTick('Gender.Value','Male')"/>
+  <Entry key ="D59_DZIM_SIEV" value ="$D59.EnumTick('Gender.Value','Female')"/>
+  <Entry key ="D59_PARK_VALST_PIED" value ="$D59.RI('Citizenship')"/>
+  <Entry key ="D59_PARK_ADR_FIZ" value ="$D59.RI('GenAVProtocol.PEAddress')"/>
+  <Entry key ="D59_PARK_ADR_JURID" value ="$D59.RI('GenAVProtocol.LEAddress')"/>
+  
+  <Entry key ="D59_PARK_DAT" value ="$D59.FI('ViolationDate', 'd')"/>
+  <Entry key ="D59_PROTOK_DAT" value ="$D59.FI('GenAVProtocol.DocDate', 'd')"/>
+  <Entry key ="D59_NM" value ="$D59.RI('CMCase.TaxpayerName')"/>
+  <Entry key ="D59_PARB_OBJ_NOS" value ="$D59.RI('ViolationPlace')"/>
+
+  <Entry key ="D59A" value ="#foreach($D59A in $D59.OI('GenViolations.ActiveItems'))"/>
+  <Entry key ="D59B" value ="#foreach($D59B in $D59A.OI('ViolatedRules.ActiveItems'))"/>
+  <Entry key ="D59B_NR" value ="$D59B.RI('GenRuleNumberStringNom')"/>
+
+  <Entry key ="D59_PARK_IZD_LAIKS" value ="$D59.FI('ViolationDate', 't')"/>
+  <Entry key ="D59_PARK_IZD_ADRESE" value ="$D59.RI('ViolationAddress')"/>
+  <Entry key ="D59_NOSUT_DAT" value ="$D59.FI('SentDate', 'd')"/>
+  <Entry key ="D59_IESTADE" value ="$D59.RI('JudgementInstitution')"/>
+  <!--Paziņojums sodu reģistram par administratīvo pārkāpumu-->
+  
+  <Entry key ="D33_PERIODS_NO" value ="$D33.FI('PeriodFrom', 'd')"/>
+  <Entry key ="D33_PERIODS_LIDZ" value ="$D33.FI('PeriodUntil', 'd')"/>
+  <Entry key ="D33_DATUMS" value ="$D33.FI('PayerCountDate', 'd')"/>
+  <Entry key ="D33_FP" value ="$D33.RI('PayerCountPE')"/>
+  <Entry key ="D33_JP" value ="$D33.RI('PayerCountLE')"/>
+  <Entry key ="D33_APREKINATS" value ="$D33.RI('SumCalculated')"/>
+  <Entry key ="D33_IEKASETS" value ="$D33.RI('SumCollected')"/>
+  <Entry key ="D33_PARADS_UZ" value ="$D33.FI('DeptDate', 'd')"/>
+  <Entry key ="D33_PARADA_SUMMA" value ="$D33.FI('SumDept', 'f')"/>
+  <Entry key ="D33_UZSKAITI_VEIC_MANUALI" value ="$D33.RI('Manually')"/>
+  <Entry key ="D33_UZSKAITI_VEIC_IZM_PROGRAMMU" value ="$D33.RI('Software')"/>
+  <Entry key ="D33_IERAKSTI_VEIKTI_SAVLAICIGI" value ="$D33.RI('RecordsTimely')"/>
+  <Entry key ="D33_NIN_NM_UZSKAITES_REGISTRA" value ="$D33.RI('TaxpayerRegistered')"/>
+  <Entry key ="D33_KAD_VERTIBAS_AKTUALIZACIJA_SAVLAICIGA" value ="$D33.RI('LandValueActualized')"/>
+  <Entry key ="D33_IZDOTI_SAISTOSI_DOK" value ="$D33.RI('HavePrivilegeRules')"/>
+  <Entry key ="D33_NOTEIKUMI_STAJUSIES_SPEKA" value ="$D33.RI('RulesTakeEffect')"/>
+  <Entry key ="D33_ATVIEGLOJUMI_90" value ="$D33.RI('Privilege90')"/>
+  <Entry key ="D33_ATVIEGLOJUMI_70" value ="$D33.RI('Privilege70')"/>
+  <Entry key ="D33_ATVIEGLOJUMI_50" value ="$D33.RI('Privilege50')"/>
+  <Entry key ="D33_ATVIEGLOJUMI_25" value ="$D33.RI('Privilege25')"/>
+  <Entry key ="D33_PASVALDIBA_VEIC_PARADU_PIEDZINU" value ="$D33.RI('CollectionOfDepts')"/>
+  <Entry key ="D33_PARSKAITITAS_NIN_SUM_PAREIZIBA" value ="$D33.RI('TaxRevisedCount')"/>
+  <Entry key ="D33_NIN_APREKINA_KLUDAS" value ="$D33.RI('TaxErrorFoundCount')"/>
+  <Entry key ="D33_PRECIZETS_MAKSASANAS_PAZINOJUMS" value ="$D33.RI('TaxCalculationSpecifiedCount')"/>
+  <Entry key ="D33_RAKSTVEIDA_ATTEIKUMS" value ="$D33.RI('TaxRefusalCount')"/>
+  <Entry key ="D33A" value ="#foreach($D33A in $D33.OI('Taxpayers.ActiveItems'))"/>
+  <Entry key ="D33A_NMR_KODS" value ="$D33A.RI('TaxpayerCode')"/>
+  <Entry key ="D33A_NOSAUKUMS" value ="$D33A.RI('TaxpayerName')"/>
+  <Entry key ="D33A_ATVERTA_PK_KARTITE" value ="$D33A.RI('AccountOpened')"/>
+  <Entry key ="D33A_NIN_APREKINATS_NO_KAD_VERTIBAS" value ="$D33A.RI('CadastreValue')"/>
+  <Entry key ="D33A_EKAM_NIN_APR_NO_KAD_VERTIBAS" value ="$D33A.RI('BuildingValue')"/>
+  <Entry key ="D33A_LIKME_NO_KAD_VERTIBAS" value ="$D33A.RI('CadastreRate')"/>
+  <Entry key ="D33A_PIEMEROTI_ATVIEGLOJUMI" value ="$D33A.RI('PrivilegeApplied')"/>
+  <Entry key ="D33A_ATVIEGLOJUMI_POLITISKI_REPRESETAJIEM" value ="$D33A.RI('PrivilegeReprisal')"/>
+  <Entry key ="D33A_PAZINOJUMI_NOSUTITI" value ="$D33A.RI('PaymentNoticeSent')"/>
+  <Entry key ="D33A_NIN_MAKSAJUMI_SADALITI_PA_CETURKSNIEM" value ="$D33A.RI('PaymentDivided')"/>
+  <Entry key ="D33A_NIN_MAKSASANAS_TERMINS_AR_NAKAMO_MENESI" value ="$D33A.RI('PaymentNextMonth')"/>
+  <Entry key ="D33A_APREKINATA_SODA_NAUDA" value ="$D33A.RI('PenaltyCalculated')"/>
+
+  <Entry key ="D41_TP_KONSTATETS" value ="$D41.RI('Notes')"/>
+
+  <Entry key ="D40A" value ="#foreach($D40A in $D40.OI('CashDealDetails.ActiveItems'))"/>
+  <Entry key ="D40A_DATE_FROM" value ="$D40A.FI('PeriodFrom', 'd')"/>
+  <Entry key ="D40A_DATE_TO" value ="$D40A.FI('PeriodUntil', 'd')"/>
+  <Entry key ="D40A_DAR_DAL_NMR_KODS" value ="$D40A.RI('TaxpayerCode')"/>
+  <Entry key ="D40A_DAR_DAL_NOS" value ="$D40A.RI('TaxpayerName')"/>
+  <Entry key ="D40A_DAR_KOPSUMMA" value ="$D40A.FI('Sum', 'f')"/>
+  <Entry key ="D40A_KOMENT" value ="$D40A.RI('Notes')"/>
+  <Entry key ="D40A_LIKME" value ="$D40A.RI('FineRate.DecimalValue')"/>
+  <Entry key ="D40A_SUMMA" value ="$D40A.FI('FineSum', 'f')"/>
+  <Entry key ="D40_KOPA_SUMMA" value ="$D40.FI('TotalSum', 'f')"/>
+  <Entry key ="D40_PIEZIMES" value ="$D40.RI('Notes')"/>
+  
+  <Entry key ="D35A" value ="#foreach($D35A in $D35.OI('Documents.ActiveItems'))"/>
+  <Entry key ="D35A_LAIKA_PERIODS_NO" value ="$D35A.FI('PeriodFrom', 'd')"/>
+  <Entry key ="D35A_LAIKA_PERIODS_LIDZ" value ="$D35A.FI('PeriodUntil', 'd')"/>
+  <Entry key ="D35A_PAVADZIMES_VEIDS" value ="$D35A.RI('DocTypeShow')"/>
+  <Entry key ="D35A_VEIDLAPU_SKAITS" value ="$D35A.RI('Count')"/>
+  <Entry key ="D35A_ATLIKUMS" value ="$D35A.RI('Remainder')"/>
+  <Entry key ="D35A_SANEMTS" value ="$D35A.RI('Report')"/>
+  <Entry key ="D35A_IZLIETOTS" value ="$D35A.RI('UsedReport')"/>
+  <Entry key ="D35A_ANULETS" value ="$D35A.RI('AnnulledReport')"/>
+  <Entry key ="D35A_ATLIKUMS_BEIGAS" value ="$D35A.RI('RemainderEnd')"/>
+  <Entry key ="D35A_IZLIETOTS_PARBAUDE" value ="$D35A.RI('UsedActually')"/> 
+  <Entry key ="D35A_NOVIRZE_IZLIETOTS" value ="$D35A.RI('DiffUsed')"/>
+  <Entry key ="D35A_ANULETS_PARBAUDE" value ="$D35A.RI('AnnulledActually')"/>
+  <Entry key ="D35A_NOVIRZE_ANULETS" value ="$D35A.RI('DiffAnnulled')"/>
+  <Entry key ="D35A_PARBAUDES_PIEZIMES" value ="$D35A.RI('Notes')"/>
+  <Entry key ="D35A_DOK_NOSAUKUMS" value ="$D35A.RI('Document')"/>
+  <Entry key ="D35A_DOK_UZRADIJA" value ="$D35A.RI('Presented')"/>
+  <Entry key ="D35A_DOK_NEUZRADIJA" value ="$D35A.RI('NotPresented')"/>
+  <Entry key ="D35A_DOK_NOVERSTS" value ="$D35A.RI('ViolationPrevented')"/>
+  <Entry key ="D35A_DOK_KONSTATETS" value ="$D35A.RI('ViolationNotPrevented')"/>
+  <Entry key ="D35A_DOK_PIEZIMES" value ="$D35A.RI('Notes')"/>
+
+  <Entry key ="D35B" value ="#foreach($D35B in $D35.OI('Taxpayers.ActiveItems'))"/>
+  <Entry key ="D35B_NM_INORM_PAR" value ="$D35B.RI('Inform')"/>
+  <Entry key ="D35B_NM_INORM_PAR_PIEZ" value =""/>
+
+  <Entry key ="D35C" value ="#foreach($D35C in $D35.OI('Taxpayers.ActiveItems'))"/>
+  <Entry key ="D35C_KREDITIESTADES_NOSAUKUMS" value ="$D35C.RI('Credit')"/>
+  <Entry key ="D35C_KREDITIESTADES_KONTA_NR" value ="$D35C.RI('Account')"/>
+  
+  <Entry key ="D35_PIEZIMES" value ="$D35.RI('Notes')"/>
+  <Entry key ="D35_AKTA_NOSLEGUMA_DATUMS" value ="$D35.FI('EndDate', 'd')"/>
+  <Entry key ="D35_PARKAPUMI_KONSTATETI" value ="$D35.FI('ViolationsDetected')"/>
+
+  <!-- TP akta titullapas noslēgums -->
+  <Entry key ="D16_AKTA_NR" value ="$D16.RI('TiActNumber')" />
+  <Entry key ="D16_DATUMS_TEKSTS" value ="$D16.DAT('ActDate', 'Lok', false)"/>
+  <Entry key ="D16_DATUMS_TEKSTS_GEN" value ="$D16.DAT('ActDate', 'Gen', false)"/>
+  <Entry key ="D16_DATUMS_TEKSTS_DAT" value ="$D16.DAT('ActDate', 'Dat', false)"/>
+  <Entry key ="D16_DATUMS_TEKSTS_LOK" value ="$D16.DAT('ActDate', 'Lok', false)"/>
+  <Entry key ="D16_DATUMS_TEKSTS_AKU" value ="$D16.DAT('ActDate', 'Aku', false)"/>
+  <Entry key ="D16_STRU_NOSAUKUMS_LOK" value ="$D16.RI('InvSrs.NameLoc')"/>
+  <Entry key ="D16_PIEZIMES" value ="$D16.RI('EndNotes')"/>
+  <Entry key ="D16_KONSTATETI_PARKAPUMI_JA" value ="$D16.RI('ViolationsDetectedYes')"/>
+  <Entry key ="D16_KONSTATETI_PARKAPUMI_NE" value ="$D16.RI('ViolationsDetectedNo')"/>
+  <Entry key ="D16_NEPIECIESAMA_PAPILDUS_INFO" value ="$D16.RI('NeedMoreInfo')"/>
+  <Entry key ="D16_IERASTIES_VID" value ="#if($D16.S('NeedMoreInfo')==true)"/>
+  <Entry key ="D16_IERASTIES_NOSAUKUMS" value ="$D16.RI('InvSrs.FullNameLoc')"/>
+  <Entry key ="D16_IERASTIES_ADRESE" value ="$D16.RI('InvSrs.Address')"/>
+  <Entry key ="D16_IERASTIES_KABINETS" value ="$D16.RI('InvRoom')"/>
+  <Entry key ="D16_IERASTIES_TALRUNIS" value ="$D16.RI('InvPhone')"/>
+  <Entry key ="D16_IERASTIES_PERSONAI" value ="$D16.RI('InvPerson')"/>
+  <Entry key ="D16_IERASTIES_DAT" value ="$D16.FI('InvDate', 'd')"/>
+  <Entry key ="D16_IERASTIES_LAIKS" value ="$D16.FI('InvDate', 't')"/>
+  <Entry key ="D16_NM_KOMENTARS_IR" value ="$D16.BI('TpHasAdditionForReport')"/>
+  <Entry key ="D16_NM_KOMENTARS" value ="$D16.RI('TpAdditionText')"/>
+  <Entry key ="D16_NM_TEIKTAIS_IR" value ="$D16.BI('TpHasToldForReport')"/>
+  <Entry key ="D16_NM_TEIKTAIS" value ="$D16.RI('TpToldText')"/>
+  <Entry key ="D16_NM_PASKAIDROJUMI_NAV" value ="$D16.RI('TpNoCommentsForReport')"/>
+  <Entry key ="D16_AKTA_LAPU_SKAITS" value ="$D16.RIN('EndPages')"/>
+  <Entry key ="D16_AKTA_EKSEMPL_SKAITS" value ="$D16.RI('EndCopies')"/>
+  <Entry key ="D16_PIELIK" value ="$D16.RI('EndAdditions')"/>
+  <Entry key ="D16_PIELIK_LAPU_SKAITS" value ="$D16.RIN('EndAdditionsPages')"/>
+  <Entry key ="D16_PIELIK_EKSEMPL_SKAITS" value ="$D16.RI('EndAdditionsCopies')"/>
+  <Entry key ="D16_AKTA_PARAKSTISANAS_DATUMS" value ="$D16.FIN('SignDate', 'd')"/>
+  <Entry key ="D16C" value ="#set( $x = 0) #set( $y = $D16.RI('TaxpayerMembers.ActiveItemsWithoutEmpty.Count')) #foreach($D16C in $D16.OI('TaxpayerMembers.ActiveItems'))"/>
+  <Entry key ="D16C_NM_PARSTAVIS_KODS" value ="#set( $x = $x +1) $D16C.RI('Code')"/>
+  <Entry key ="D16C_NM_PARSTAVIS" value ="$D16C.RI('Name')"/>
+  <Entry key ="D16C_NM_PARSTAVIS_AMATS" value ="$D16C.RI('Position')"/>
+  <Entry key ="D16C_PERSONU_APLIECINOSS_DOK" value ="$D16C.RI('DocumentPresentedForReport')#if($x==$y).#else;#end"/>
+  <Entry key ="D16C_KOMENTARS" value ="$D16C.RI('Notes')"/>
+  <Entry key ="D16A" value ="#foreach($D16A in $D16.OI('InvitationDocuments.ActiveItems'))"/>
+  <Entry key ="D16A_DOK_NOSAUKUMS" value ="$D16A.RI('Document')"/>
+  <Entry key ="D16A_DOK_UZRADIJA" value ="$D16A.BTF('Presented')"/>
+  <Entry key ="D16A_DOK_NEUZRADIJA" value ="$D16A.BTF('NotPresented')"/>
+  <Entry key ="D16A_DOK_NOVERSTS" value ="$D16A.BTF('ViolationPrevented')"/>
+  <Entry key ="D16A_DOK_KONSTATETS" value ="$D16A.BTF('ViolationNotPrevented')"/>
+  <Entry key ="D16A_DOK_PIEZIMES" value ="$D16A.RI('Notes')"/>
+  <Entry key ="D16D" value ="#foreach($D16D in $D16.OI('DocumentPerformersForReport.ActiveItems'))"/>
+  <Entry key ="D16D_VEIC_AMATS" value ="$D16D.RI('PerformerPosition')"/>
+  <Entry key ="D16D_VEICEJS" value ="$D16D.RI('PerformerFullName')"/>
+  <!-- End TP akta titullapas noslēgums -->
+
+  <!--BEG D042_Uznemejdarbibas_riska_valsts_nodeva-->
+  <Entry key ="D42_PARBAUDES_PERIODS_NO" value ="$D42.FI('PeriodFrom', 'd')"/>
+  <Entry key ="D42_PARBAUDES_PERIODS_LIDZ" value ="$D42.FI('PeriodUntil', 'd')"/>
+  <Entry key ="D42A" value ="#foreach($D42A in $D42.OI('RiskDutyDetails.ActiveItems'))"/>
+  <Entry key ="D42A_TAKSACIJAS_PERIODS" value ="$D42A.RI('Period')"/>
+  <Entry key ="D42A_PAR_KURIEM_MAKSATS" value ="$D42A.RI('EmployeesPaid')"/>
+  <Entry key ="D42A_PAR_KURIEM_VAJAG_MAKSAT" value ="$D42A.RI('EmployeesMustPaid')"/>
+  <Entry key ="D42A_PAR_KURIEM_NAV_MAKSATS" value ="$D42A.RI('EmployeesNotPaid')"/>
+  <Entry key ="D42A_NM_DATI" value ="$D42A.FI('EmployerDuty', 'f')"/>
+  <Entry key ="D42A_VID_DATI" value ="$D42A.FI('SrsDuty', 'f')"/>
+  <Entry key ="D42A_MAZAK" value ="$D42A.FI('DutyCalculatedLess', 'f')"/>
+  <Entry key ="D42A_VAIRAK" value ="$D42A.FI('DutyCalculatedMore', 'f')"/>
+  <Entry key ="D42A_DIENU_SKAITS" value ="$D42A.RI('PeriodLate')"/>
+  <Entry key ="D42A_NOKAVEJUMA_SUMMA" value ="$D42A.FI('Unpaid', 'f')"/>
+  <Entry key ="D42A_PALIELINAJUMS" value ="$D42A.FI('RefinancingSum', 'f')"/>
+  <Entry key ="D42A_NOKAVEJUMA_NAUDA" value ="$D42A.FI('DutyLate', 'f')"/>
+  <Entry key ="D42A_KOPA_IEMAKSAI" value ="$D42A.FI('SumTotal', 'f')"/>
+  <Entry key ="D42_PAR_KURIEM_NAV_MAKSATS_KOPA" value ="$D42.RI('GenTotalEmployeesNotPaid')"/>
+  <Entry key ="D42_MAZAK_KOPA" value ="$D42.FI('GenTotalDutyCalculatedLess', 'f')"/>
+  <Entry key ="D42_VAIRAK_KOPA" value ="$D42.FI('GenTotalDutyCalculatedMore', 'f')"/>
+  <Entry key ="D42_NENOMAKSATAIS_KOPA" value ="$D42.FI('GenTotalUnpaid', 'f')"/>
+  <Entry key ="D42_PAMATPARADS_KOPA" value ="$D42.FI('GenTotalRefinancingSum', 'f')"/>
+  <Entry key ="D42_NOKAVEJUMA_NAUDA_KOPA" value ="$D42.FI('GenTotalDutyLate', 'f')"/>
+  <Entry key ="D42_VISS_KOPA" value ="$D42.FI('GenTotalSumTotal', 'f')"/>
+  
+  <Entry key ="D42B" value ="#foreach($D42B in $D42.OI('DistinctDocumentViolationsForReport.ActiveItems'))"/>
+  <Entry key ="D42B_PARKAPUMS" value ="$D42B.RI('Violation')"/>
+  <Entry key ="D42C" value ="#foreach($D42C in $D42B.OI('ViolatedRules.ActiveItems'))"/>
+  <Entry key ="D42C_NA_VEIDS" value ="$D42C.RI('Rule.AlDoc.DocType')"/>
+  <Entry key ="D42C_NADATUMS" value ="$D42C.FI('Rule.AlDoc.DateST', 'd')"/>
+  <Entry key ="D42C_NA_NOS" value ="$D42C.RI('Rule.AlDoc.Name')"/>
+  <Entry key ="D42C_NA_PANTS" value ="$D42C.RI('Rule.Article')"/>
+  <Entry key ="D42C_NA_PRIM" value ="$D42C.RI('Rule.Index')"/>
+  <Entry key ="D42C_NA_DALA" value ="$D42C.RI('Rule.Part')"/>
+  <Entry key ="D42C_NA_PUNKTS" value ="$D42C.RI('Rule.Point')"/>
+  <Entry key ="D42C_NA_SATURS" value ="$D42C.RI('Rule.Quote')"/>
+  <Entry key ="D42_SECINAJUMI" value ="$D42.RI('Notes')"/>
+  <!--BEG D042_Uznemejdarbibas_riska_valsts_nodeva-->
+  
+  <!--BEG D039_Savstarpejo darijumu salidzinasana-->
+  <Entry key ="D39_PARTN_NMR" value ="$D39.RI('DecisionPartnerID.TaxpayerCode')"/>
+  <Entry key ="D39_PARTN_NOS" value ="$D39.RI('DecisionPartnerID.TaxpayerName')"/>
+  <Entry key ="D39_PARTN_ADR" value ="$D39.RI('DecisionPartnerID.TaxpayerAddress')"/>
+  <Entry key ="D39_DAR_APR" value ="$D39.RI('Description')"/>
+  <Entry key ="D39_DAT_NO" value ="$D39.FI('PeriodFrom', 'd')"/>
+  <Entry key ="D39_DAT_LIDZ" value ="$D39.FI('PeriodUntil', 'd')"/>
+  
+  <Entry key ="D39A" value ="#foreach($D39A in $D39.OI('DealCompareDocuments.ActiveItems'))"/>
+  <Entry key ="D39A_DAR_NR" value ="$D39A.RI('Number')"/>
+  <Entry key ="D39A_DOC_VEIDS" value ="$D39A.RI('DocTypeID')"/>
+  <Entry key ="D39A_DOC_NR" value ="$D39A.RI('DocNumber')"/>
+  <Entry key ="D39A_DOC_DAT" value ="$D39A.FI('DocDate', 'd')"/>
+  <Entry key ="D39A_DAR_VER_KOPA" value ="$D39A.FI('Sum', 'f')"/>
+  <Entry key ="D39A_DAR_VER_BEZ_PVN" value ="$D39A.FI('SumWithoutVat', 'f')"/>
+  <Entry key ="D39A_DAR_VERT_PVN" value ="$D39A.FI('SumVat', 'f')"/>
+  <Entry key ="D39A_IEGRAM" value ="$D39A.RI('Recorded')"/>
+  <Entry key ="D39A_REG_NR" value ="$D39A.RI('RegNumber')"/>
+  <Entry key ="D39A_DAR_IEKL_PVN_DEKLAR" value ="$D39A.RI('VatDeclaration')"/>
+  <Entry key ="D39A_DAR_APSTIPR" value ="$D39A.RI('Approved')"/>
+  <Entry key ="D39_NOR_SK" value ="$D39.RI('Cash')"/>
+  <Entry key ="D39_NOR_SK_TEXT" value ="$D39.RI('CashText')"/>
+  <Entry key ="D39_NOR_BEZSK" value ="$D39.RI('Clearing')"/>
+  <Entry key ="D39_NOR_BEZSK_TEXT" value ="$D39.RI('ClearingText')"/>
+  <Entry key ="D39_NOREK_NAV" value ="$D39.RI('NoPayments')"/>
+  <Entry key ="D39_NOREK_NAV_TEXT" value ="$D39.RI('NoPaymentsText')"/>
+  <Entry key ="D39B" value ="#foreach($D39B in $D39.OI('DealCompareAccounts.ActiveItems'))"/>
+  <Entry key ="D39B_KREDITIEST" value ="$D39B.RI('InstitutionID')"/>
+  <Entry key ="D39B_KONTA_NR" value ="$D39B.RI('Account')"/>
+  <Entry key ="D39B_NAV_DEKL" value ="$D39B.RI('Declared')"/>
+  <Entry key ="D39_PIEZ" value ="$D39.RI('Notes')"/>
+  <!--END D039_Savstarpejo darijumu salidzinasana-->
+  
+  <!--Pārbaude būvobjektā-->
+  <Entry key ="D34_PARBAUDES_VIETA" value ="$D34.RI('PerformPlaces')"/>
+  <Entry key ="D34_NMR_KODS" value ="$D34.RI('TaxpayerCode')"/>
+  <Entry key ="D34_NOSAUKUMS" value ="$D34.RI('TaxpayerName')"/>
+  <Entry key ="D34_ADRESE" value ="$D34.RI('TaxpayerAddress')"/>
+  <Entry key ="D34_NEVAR_KONSTSTET_PASUTITAJU" value ="$D34.RI('CantDetect')"/>
+  <Entry key ="D34_PASUTITAJU_KOMENTARS" value ="$D34.RI('CantDetectNotes')"/>
+  <Entry key ="D34_BUVATLAUJA_UZRADITA" value ="$D34.RI('DocPermit')"/>
+  <Entry key ="D34_ATLAUJA_JA" value ="$D34.EnumTick('DocPermit.Value','Yes')"/>
+  <Entry key ="D34_ATLAUJA_NE" value ="$D34.EnumTick('DocPermit.Value','No')"/>
+  <Entry key ="D34_ATLAUJA_NEVAJAG" value ="$D34.EnumTick('DocPermit.Value','NotRequired')"/>
+  
+  <Entry key ="D34_BUVATLAUIA_IZSNIEGTA" value ="$D34.RI('DocIssuer')"/>
+  <Entry key ="D34_DATUMS" value ="$D34.FI('DocIssueDate', 'd')"/>
+  <Entry key ="D34_NUMURS" value ="$D34.RI('DocIssueNumber')"/>
+  <Entry key ="D34_DATUMS_NO" value ="$D34.FI('DocFrom', 'd')"/>
+  <Entry key ="D34_DATUMS_LIDZ" value ="$D34.FI('DocUntil', 'd')"/>
+  <Entry key ="D34_BUVATLAUJA_UZRADITA_KOMEN" value ="$D34.RI('DocNotes')"/>
+  <Entry key ="D34_BUVDARBU_ZURNALS_REG" value ="$D34.RI('JournalRegistered')"/>
+  <Entry key ="D34_REG_JA" value ="$D34.EnumTick('JournalRegistered.Value','Yes')"/>
+  <Entry key ="D34_REG_NE" value ="$D34.EnumTick('JournalRegistered.Value','No')"/>
+  <Entry key ="D34_REG_NK" value ="$D34.EnumTick('JournalRegistered.Value','CantTell')"/>
+  
+  <Entry key ="D34_BUVVALDES_NOSAUKUMS" value ="$D34.RI('Board')"/>
+  <Entry key ="D34_BUV_ZURNALS_REG_DATUMS" value ="$D34.FI('RegDate', 'd')"/>
+  <Entry key ="D34_BUV_ZURNALS_REG_NR" value ="$D34.RI('RegNumber')"/>
+  <Entry key ="D34_BUV_ZURNALS_REG_KOMENTARS" value ="$D34.RI('JournalNotes')"/>
+  <Entry key ="D34_ZURNALA_AIZPILDITAJS" value ="$D34.RI('RespName')"/>
+  <Entry key ="D34_ZURNALA_AIZPILDITAJU_NEVAR_KONSTATET" value ="$D34.RI('RespCantDetect')"/>
+  <Entry key ="D34_ZURNALA_AIZPILDITAJS_KOMENT" value ="$D34.RI('RespNotes')"/>
+  <Entry key ="D34_IZMAKSAS" value ="$D34.FI('Expenses', 'f')"/>
+  <Entry key ="D34_DARBA_SAMAKSA" value ="$D34.FI('Wage', 'f')"/>
+  <Entry key ="D34_VSAOI" value ="$D34.FI('Tax', 'f')"/>
+  <Entry key ="D34_NEVAR_KONSTATET_CELTNIECIBAS_IZMAKSAS" value ="$D34.RI('ExpensesCantDetect')"/>
+  <Entry key ="D34_DARBINIEKU_SKAITS_SUM" value ="$D34.RI('EmployeesSum')"/>
+  <Entry key ="D34_PIEZIMES" value ="$D34.RI('Notes')"/>
+  <Entry key ="D34_UZRADIJA_APLIECIBU" value ="$D34.RI('DocPresented')"/>
+  <Entry key ="D34_IERASTIES_ADRESE" value ="$D34.RI('InvSrs.Address')"/>
+  <Entry key ="D34_IERASTIES_KABINETS" value ="$D34.RI('InvRoom')"/>
+  <Entry key ="D34_IERASTIES_TALRUNIS" value ="$D34.RI('InvPhone')"/>
+  <Entry key ="D34_IERASTIES_DATUMS_LAIKIERASTIES_DATUMSS" value ="$D34.RI('InvDate')"/>
+
+  <Entry key ="D34A" value ="#foreach($D34A in $D34.OI('Contractors.ActiveItems'))"/>
+  <Entry key ="D34A_NMR_KODS" value ="$D34A.RI('Code')"/>
+  <Entry key ="D34A_NOSAUKUMS" value ="$D34A.RI('Name')"/>
+  <Entry key ="D34A_ADRESE" value ="$D34A.RI('Address')"/>
+  <Entry key ="D34A_DARBINIEKU_SKAITS" value ="$D34A.RI('Employees')"/>
+
+  <Entry key ="D34B" value ="#foreach($D34B in $D34.OI('Materials.ActiveItems'))"/>
+  <Entry key ="D34B_METALU_NOSAUKUMS" value ="$D34B.RI('Name')"/>
+  <Entry key ="D34B_REGISTRETS" value ="$D34B.RI('Registered')"/>
+  <Entry key ="D34B_REGISTRACIJAS_DATUMS" value ="$D34B.FI('RegDate', 'd')"/>
+  <!--End Pārbaude būvobjektā-->
+
+  <!--Kokmateriālu pastāvīgās uzglabāšanas vietas pārbaude-->
+  <Entry key ="D50_PARBAUDES_VIETA" value ="$D50.RI('InspectionPlaceForReport')"/>
+  <Entry key ="D50_CITA_PARBAUDES_VIETA" value ="$D50.RI('InspectionPlaceOther')"/>
+  <Entry key ="D50_SAGATAVOTS_KUSTIBAS_PARSKATS" value ="$D50.RI('MoveReport')"/>
+  <Entry key ="D50_PARSKATA_SAGATAVOSANA_PERIODS" value ="$D50.RI('MoveReportPeriod')"/>
+  <Entry key ="D50_CITS_PARSKATA_SAGATAVOSANA_PERIODS" value ="$D50.RIN('MoveReportPeriodOther')"/>
+  <Entry key ="D50_UZSKAITITS_KOKMATERILU_DAUDZUMS" value ="$D50.RI('TallyCargo')"/>
+  <Entry key ="D50_IEKARTOTI_REGISTRI" value ="$D50.RI('HaveRegisters')"/>
+  <Entry key ="D50_VAR_UZRADIT_KTPR" value ="$D50.RI('HaveWaybills')"/>
+  <Entry key ="D50_KTPR_REGISTRETI_UZSKAITES_REGISTRA" value ="$D50.RI('WaybillsRegistered')"/>
+  <Entry key ="D50_VISI_REKVIZITI_IR" value ="$D50.RI('WaybillsProperties')"/>
+  <Entry key ="D50_KTPR_NOFORMETI" value ="$D50.RI('SendWaybills')"/>
+  <Entry key ="D50_KTPR_REGISTRETI" value ="$D50.RI('SendWaybillsRegistered')"/>
+  <Entry key ="D50_PIEZIMES" value ="$D50.RI('Notes')"/>
+
+  <Entry key ="D50A" value ="#foreach($D50A in $D50.OI('TimberEquipments.ActiveItems'))"/>
+  <Entry key ="D50A_IEKARTAS_NOSAUKUMS" value ="$D50A.RI('Name')"/>
+  <Entry key ="D50A_IEKARTAS_ATRODAS_IPASUMA" value ="$D50A.BTF('PropertyTypeOwn')"/>
+  <Entry key ="D50A_IEKARTAS_ATRODAS_NOMA" value ="$D50A.BTF('PropertyTypeLease')"/>
+  <Entry key ="D50A_IEKARTAS_ATRODAS_NENOSKAIDROT" value ="$D50A.BTF('PropertyTypeNotClear')"/>
+  <Entry key ="D50A_IZMANTO_RAZOSANAS_PROCESA" value ="$D50A.BTF('ProductionUseYes')"/>
+  <Entry key ="D50A_NEIZMANTO_RAZOSANAS_PROCESA" value ="$D50A.BTF('ProductionUseNo')"/>
+  <Entry key ="D50A_NODARBINATA_STUNDAS" value ="$D50A.RI('ApplayTime')"/>
+  <Entry key ="D50A_STUNDA_PARSTRADA" value ="$D50A.RI('Power')"/>
+  <Entry key ="D50A_APKALPOJOSO_CILVEKU_SKAITS" value ="$D50A.RI('PersonCount')"/>
+  <Entry key ="D50A_PIEZIMES" value ="$D50A.RI('Notes')"/>
+
+  <Entry key ="D50B" value ="#foreach($D50B in $D50.OI('TimberIncompleteWaybills.ActiveItems'))"/>
+  <Entry key ="D50B_SERIJA" value ="$D50B.RI('DocNumber')"/>
+  <Entry key ="D50B_DATUMS" value ="$D50B.FI('DocDate', 'd')"/>
+  <Entry key ="D50B_NENORADITA_REKVIZITA_NOSAUKUMS" value ="$D50B.RI('Requisite')"/>
+
+  <Entry key ="D50C" value ="#foreach($D50C in $D50.OI('TimberRegisterResponsibles.ActiveItems'))"/>
+  <Entry key ="D50C_ATBILDIGAS_PERSONAS_VARDS_UZVARDS" value ="$D50C.RI('PersonName')"/>
+  <!--End Kokmateriālu pastāvīgās uzglabāšanas vietas pārbaude-->
+
+  <!--Ievestie pamatlīdzekļi-->
+  <Entry key ="D25_TAKSACIJAS_PERIODS" value ="$D25.RI('Period')"/>
+  <Entry key ="D25_PVN_SUMMA" value ="$D25.FI('VatSum', 'f')"/>
+  <Entry key ="D25_SECINAJUMI" value ="$D25.RI('Conclusions')"/>
+  <Entry key ="D25_PIEZIMES" value ="$D25.RI('Notes')"/>
+  <Entry key ="D25_KOPA_SODA_NAUDA" value ="$D25.FI('PenaltySumTotal', 'f')"/>
+
+  <Entry key ="D25A" value ="#foreach($D25A in $D25.OI('FixedAssetsWarehouse.ActiveItems'))"/>
+  <Entry key ="D25A_PAMATLIDZEKLA_KODS" value ="$D25A.RI('Code')"/>
+  <Entry key ="D25A_PAMATLIDZEKLA_NOSAUKUMS" value ="$D25A.RI('Name')"/>
+  <Entry key ="D25A_DAUDZUMS" value ="$D25A.RI('Amount')"/>
+  <Entry key ="D25A_MUITAS_KONTROLES_DATUMS" value ="$D25A.FI('CustomsControl', 'd')"/>
+  <Entry key ="D25A_MUITAS_DEKLARACIJAS_DATUMS" value ="$D25A.FI('CustomsDate', 'd')"/>
+  <Entry key ="D25A_MUITAS_DEKLARACIJAS_NUMURS" value ="$D25A.RI('CustomsNumber')"/>
+  <Entry key ="D25A_PAMATLIDZEKLA_VERTIBA" value ="$D25A.FI('CustomsSumWithoutVAT', 'f')"/>
+  <Entry key ="D25A_PVN_SUMMA" value ="$D25A.FI('CustomsSumVAT', 'f')"/>
+  <Entry key ="D25A_KOPEJA_VERTIBA" value ="$D25A.FI('CustomsSum', 'f')"/>
+
+  <Entry key ="D25B" value ="#foreach($D25B in $D25.OI('FixedAssetsAccounting.ActiveItems'))"/>
+  <Entry key ="D25B_NOSAUKUMS" value ="$D25B.RI('AssetName')"/>
+  <Entry key ="D25B_PAMATLIDZEKLIS_UZSKAITE" value ="$D25B.RI('Accounting')"/>
+  <Entry key ="D25B_ANALITISKAS_UZSKAITES_KARTITE" value ="$D25B.RI('AnalyticalCard')"/>
+  <Entry key ="D25B_IZNOMATS_VAI_CITADI_ATSAVINATS" value ="$D25B.RI('Rented')"/>
+  <Entry key ="D25B_IPASUMA_DOKUMENTI" value ="$D25B.RI('PropertyDocuments')"/>
+
+  <Entry key ="D25C" value ="#foreach($D25C in $D25.OI('FixedAssetsAccounting.ActiveItems'))"/>
+  <Entry key ="D25C_PAMATLIDZEKLI_REGISTRETI" value ="$D25C.RI('Registered')"/>
+  <Entry key ="D25C_IZMANTO_PVN_APLIEKAMOS_DARIJUMUOS" value ="$D25C.RI('VatDeals')"/>
+
+  <Entry key ="D25D" value ="#foreach($D25D in $D25.OI('FixedAssetsChecks.ActiveItems'))"/>
+  <Entry key ="D25D_NOSAUKUMS" value ="$D25D.RI('AssetName')"/>
+  <Entry key ="D25D_PAMATLIDZEKLIS_IR_FAKTISKI_UZSTADITS" value ="$D25D.RI('ActuallyMounted')"/>
+  <Entry key ="D25D_IZMANTO_PVN_APLIEKAMOS_DARIJUMUOS" value ="$D25D.RI('ActuallyVatDeals')"/>
+
+  <Entry key ="D25E" value ="#foreach($D25E in $D25.OI('FixedAssetsPenalties.ActiveItems'))"/>
+  <Entry key ="D25E_PAMATLIDZEKLA_KODS" value ="$D25E.RI('Code')"/>
+  <Entry key ="D25E_PAMATLIDZEKLA_NOSAUKUMS" value ="$D25E.RI('Name')"/>
+  <Entry key ="D25E_DAUDZUMS" value ="$D25E.RI('PenaltyAmount')"/>
+  <Entry key ="D25E_VERTIBA_BEZ_PVN" value ="$D25E.FI('PenaltySumWithoutVAT', 'f')"/>
+  <Entry key ="D25E_APREKINATA_SODA_NAUDA" value ="$D25E.FI('PenaltySum', 'f')"/>
+  <!--End Ievestie pamatlīdzekļi-->
+
+  <!--Kvalitātes novērtējums-->
+  <Entry key ="D55_VERTETAJA_VID_STRU" value ="$D55.RI('QualityFirstOrganization')"/>
+  <Entry key ="D55_DOK_NR" value ="$D55.RI('CMCase.CMCaseAct.DocNumber')"/>
+  <Entry key ="D55_DOK_DATUMS" value ="$D55.FI('CMCase.CMCaseAct.ActDate', 'dd.MM.yyyy')"/>
+  <Entry key ="D55_DOK_NM_NOSAUKUMS" value ="$D55.RI('CMCase.TaxpayerName')"/>
+  <Entry key ="D55_DOK_NMR" value ="$D55.RI('CMCase.TaxpayerCode')"/>
+
+  <Entry key ="D55C" value ="#set( $x = 0) #foreach($D55C in $D55.OI('QualityFirst'))"/>
+  <Entry key ="D55C_DOK_NOS" value ="#set($x = $x + 1)$D55C.SetGenNr($x)$D55C.RI('AnswerToDocType')"/>
+  <Entry key ="D55C_DOK_NR" value ="$D55C.RI('AnswerTo.DocNumber')"/>
+  <Entry key ="D55C_DOK_DAT" value ="$D55C.FI('EvaluatedDocumentsDate', 'd')"/>
+  <Entry key ="D55C_VERTEJUMA_DATUMS" value ="$D55C.FI('Date1', 'dd.MM.yyyy')"/>
+  <Entry key ="D55C_VERTETAJS" value ="$D55C.RI('User1')"/>
+  <Entry key ="D55C_VERTETAJA_AMATS" value ="$D55C.RI('User1.Position')"/>
+  <Entry key ="D55C_KOMISIJA" value ="$D55C.RI('ReviewCommission')"/>
+
+  <Entry key ="D55D" value ="#foreach($D55D in $D55.OI('QualityFirstNotesGen'))"/>
+  <Entry key ="D55D_NRPK" value ="$D55D.RI('GenNr')"/>
+  <Entry key ="D55A" value ="#foreach($D55A in $D55D.OI('QualityForFirst.ActiveItems'))"/>
+  <Entry key ="D55A_PIEZIME" value ="$D55A.RI('Notes')"/>
+  <Entry key ="D55A_PIEZIMES_AUTORS" value ="$D55A.RI('Author')"/>
+  <Entry key ="D55A_PIEZIMES_DATUMS" value ="$D55A.FI('NoteDate', 'dd.MM.yyyy')"/>
+
+  <Entry key ="D55B" value ="#foreach($D55B in $D55C.OI('QualityAcquaintancesForReport'))"/>
+  <Entry key ="D55B_IEPAZINIES" value ="$D55B.RI('Performer')"/>
+  <Entry key ="D55B_IEPAZINIES_DATUMS" value ="$D55B.FI('AcquaintDate', 'dd.MM.yyyy')"/>
+
+  <Entry key ="D55C_CODE1" value ="$D55C.XI('Code1ForReport')"/>
+  <Entry key ="D55C_CODE2" value ="$D55C.XI('Code2ForReport')"/>
+  <Entry key ="D55C_CODE3" value ="$D55C.XI('Code3ForReport')"/>
+  <Entry key ="D55C_CODE4" value ="$D55C.XI('Code4ForReport')"/>
+  <Entry key ="D55C_CODE5" value ="$D55C.XI('Code5ForReport')"/>
+  <Entry key ="D55C_CODE6" value ="$D55C.XI('Code6ForReport')"/>
+  <Entry key ="D55C_CODE7" value ="$D55C.XI('Code7ForReport')"/>
+  <Entry key ="D55C_CODE8" value ="$D55C.XI('Code8ForReport')"/>
+  <Entry key ="D55C_CODE9" value ="$D55C.XI('Code9ForReport')"/>
+  <Entry key ="D55C_CODE10" value ="$D55C.XI('Code10ForReport')"/>
+  <Entry key ="D55C_CODE11" value ="$D55C.XI('Code11ForReport')"/>
+  <Entry key ="D55C_CODE12" value ="$D55C.XI('Code12ForReport')"/>
+  <Entry key ="D55C_CODE13" value ="$D55C.XI('Code13ForReport')"/>
+  <Entry key ="D55C_CODE14" value ="$D55C.XI('Code14ForReport')"/>
+  <Entry key ="D55C_CODE15" value ="$D55C.XI('Code15ForReport')"/>
+  <Entry key ="D55C_CODE16" value ="$D55C.XI('Code16ForReport')"/>
+  <Entry key ="D55C_CODE17" value ="$D55C.XI('Code17ForReport')"/>
+  <Entry key ="D55C_CODE18" value ="$D55C.XI('Code18ForReport')"/>
+  <Entry key ="D55C_CODE19" value ="$D55C.XI('Code19ForReport')"/>
+    <!--End Kvalitātes novērtējums-->
+  
+  <!--Kvalitātes atkārtotais novērtējums-->
+  <Entry key ="D56_VERTETAJA_VID_STRU" value ="$D56.RI('QualitySecondOrganization')"/>
+  <Entry key ="D56_DOK_NR" value ="$D56.RI('CMCase.CMCaseAct.DocNumber')"/>
+  <Entry key ="D56_DOK_DATUMS" value ="$D56.FI('CMCase.CMCaseAct.ActDate', 'dd.MM.yyyy')"/>
+  <Entry key ="D56_DOK_NM_NOSAUKUMS" value ="$D56.RI('CMCase.TaxpayerName')"/>
+  <Entry key ="D56_DOK_NMR" value ="$D56.RI('CMCase.TaxpayerCode')"/>
+
+  <Entry key ="D56C" value ="#set( $x = 0) #foreach($D56C in $D56.OI('QualitySecond'))"/>
+  <Entry key ="D56C_DOK_NOS" value ="#set($x = $x + 1)$D56C.SetGenNr($x)$D56C.RI('AnswerToDocType')"/>
+  <Entry key ="D56C_DOK_NR" value ="$D56C.RI('AnswerTo.DocNumber')"/>
+  <Entry key ="D56C_DOK_DAT" value ="$D56C.FI('EvaluatedDocumentsDate', 'd')"/>
+  <Entry key ="D56C_VERTEJUMA_DATUMS" value ="$D56C.FI('Date1', 'dd.MM.yyyy')"/>
+  <Entry key ="D56C_VERTETAJS" value ="$D56C.RI('User1')"/>
+  <Entry key ="D56C_VERTEJUMA_DATUMS_R" value ="$D56C.FI('Date2', 'dd.MM.yyyy')"/>
+  <Entry key ="D56C_VERTETAJS_R" value ="$D56C.RI('User2')"/>
+  <Entry key ="D56C_IEPAZINIES_AMATS" value ="$D56C.RI('RepeatedUser.Position')"/>
+  <Entry key ="D56C_IEPAZINIES" value ="$D56C.RI('RepeatedUser')"/>
+  <Entry key ="D56C_IEPAZINIES_DATUMS" value ="$D56C.FI('RepeatedDate', 'dd.MM.yyyy')"/>
+  <Entry key ="D56C_KOMISIJA" value ="$D56C.RI('ReviewCommission')"/>
+
+  <Entry key ="D56B" value ="#foreach($D56B in $D56C.OI('QualityAcquaintancesForReport'))"/>
+  <Entry key ="D56B_IEPAZINIES" value ="$D56B.RI('Performer')"/>
+  <Entry key ="D56B_IEPAZINIES_DATUMS" value ="$D56B.FI('AcquaintDate', 'dd.MM.yyyy')"/>
+  
+  <Entry key ="D56D" value ="#foreach($D56D in $D56.OI('QualitySecondNotesGen'))"/>
+  <Entry key ="D56D_NRPK" value ="$D56D.RI('GenNr')"/>
+  <Entry key ="D56A" value ="#foreach($D56A in $D56D.OI('QualityNotes.ActiveItems'))"/>
+  <Entry key ="D56A_PIEZIME" value ="$D56A.RI('Notes')"/>
+  <Entry key ="D56A_PIEZIMES_AUTORS" value ="$D56A.RI('Author')"/>
+  <Entry key ="D56A_PIEZIMES_DATUMS" value ="$D56A.FI('NoteDate', 'dd.MM.yyyy')"/>
+  
+  <Entry key ="D56C_CODE1" value ="$D56C.XI('Code1ForReport')"/>
+  <Entry key ="D56C_CODE2" value ="$D56C.XI('Code2ForReport')"/>
+  <Entry key ="D56C_CODE3" value ="$D56C.XI('Code3ForReport')"/>
+  <Entry key ="D56C_CODE4" value ="$D56C.XI('Code4ForReport')"/>
+  <Entry key ="D56C_CODE5" value ="$D56C.XI('Code5ForReport')"/>
+  <Entry key ="D56C_CODE6" value ="$D56C.XI('Code6ForReport')"/>
+  <Entry key ="D56C_CODE7" value ="$D56C.XI('Code7ForReport')"/>
+  <Entry key ="D56C_CODE8" value ="$D56C.XI('Code8ForReport')"/>
+  <Entry key ="D56C_CODE9" value ="$D56C.XI('Code9ForReport')"/>
+  <Entry key ="D56C_CODE10" value ="$D56C.XI('Code10ForReport')"/>
+  <Entry key ="D56C_CODE11" value ="$D56C.XI('Code11ForReport')"/>
+  <Entry key ="D56C_CODE12" value ="$D56C.XI('Code12ForReport')"/>
+  <Entry key ="D56C_CODE13" value ="$D56C.XI('Code13ForReport')"/>
+  <Entry key ="D56C_CODE14" value ="$D56C.XI('Code14ForReport')"/>
+  <Entry key ="D56C_CODE15" value ="$D56C.XI('Code15ForReport')"/>
+  <Entry key ="D56C_CODE16" value ="$D56C.XI('Code16ForReport')"/>
+  <Entry key ="D56C_CODE17" value ="$D56C.XI('Code17ForReport')"/>
+  <Entry key ="D56C_CODE18" value ="$D56C.XI('Code18ForReport')"/>
+  <Entry key ="D56C_CODE19" value ="$D56C.XI('Code19ForReport')"/>
+
+  <Entry key ="D56C_CODE1R" value ="$D56C.XI('Code1RForReport')"/>
+  <Entry key ="D56C_CODE2R" value ="$D56C.XI('Code2RForReport')"/>
+  <Entry key ="D56C_CODE3R" value ="$D56C.XI('Code3RForReport')"/>
+  <Entry key ="D56C_CODE4R" value ="$D56C.XI('Code4RForReport')"/>
+  <Entry key ="D56C_CODE5R" value ="$D56C.XI('Code5RForReport')"/>
+  <Entry key ="D56C_CODE6R" value ="$D56C.XI('Code6RForReport')"/>
+  <Entry key ="D56C_CODE7R" value ="$D56C.XI('Code7RForReport')"/>
+  <Entry key ="D56C_CODE8R" value ="$D56C.XI('Code8RForReport')"/>
+  <Entry key ="D56C_CODE9R" value ="$D56C.XI('Code9RForReport')"/>
+  <Entry key ="D56C_CODE10R" value ="$D56C.XI('Code10RForReport')"/>
+  <Entry key ="D56C_CODE11R" value ="$D56C.XI('Code11RForReport')"/>
+  <Entry key ="D56C_CODE12R" value ="$D56C.XI('Code12RForReport')"/>
+  <Entry key ="D56C_CODE13R" value ="$D56C.XI('Code13RForReport')"/>
+  <Entry key ="D56C_CODE14R" value ="$D56C.XI('Code14RForReport')"/>
+  <Entry key ="D56C_CODE15R" value ="$D56C.XI('Code15RForReport')"/>
+  <Entry key ="D56C_CODE16R" value ="$D56C.XI('Code16RForReport')"/>
+  <Entry key ="D56C_CODE17R" value ="$D56C.XI('Code17RForReport')"/>
+  <Entry key ="D56C_CODE18R" value ="$D56C.XI('Code18RForReport')"/>
+  <Entry key ="D56C_CODE19R" value ="$D56C.XI('Code19RForReport')"/>
+  <!--End Kvalitātes atkārtotais novērtējums-->
+  
+  <!--End Ievestie pamatlīdzekļi-->
+
+  <!--Stingrās uzskaites PR veidlapu un pavadzīmju ar VID piešķirtajiem numuriem uzskaites, noformēšanas, lietošanas un uzglabāšanas pārbaude-->
+  <Entry key ="D36_PPR" value ="$D36.RI('Waybill')"/>
+  <Entry key ="D36_KTPR" value ="$D36.RI('Timber')"/>
+  <Entry key ="D36_PPR_FUEL" value ="$D36.RI('Fuel')"/>
+  <Entry key ="D36_PVIDNR" value ="$D36.RI('SrsWaybill')"/>
+  <Entry key ="D36_RAKSTISKI_UZSKAITE" value ="$D36.RI('WrittenOrder')"/>
+  <Entry key ="D36_DATUMS_UZSKAITE" value ="$D36.FI('DocDateOrder', 'd')"/>
+  <Entry key ="D36_NUMURS_UZSKAITE" value ="$D36.RI('DocNumberOrder')"/>
+  <Entry key ="D36_VEIDLAPAS_KOMENTARS" value ="$D36.RI('Comment')"/>
+  <Entry key ="D36_VEIDLAPU_UZSKAITE" value ="$D36.RI('Registration')"/>
+  <Entry key ="D36_VEIDLAPU_GLABASANA" value ="$D36.RI('Storage')"/>
+  <Entry key ="D36_VEIDLAPU_INVENTARIZACIJA" value ="$D36.RI('Inventory')"/>
+  <Entry key ="D36_VEIDLAPU_IZLIETOJUMS" value ="$D36.RI('Usage')"/>
+  <Entry key ="D36_VEIDLAPU_IZLIETOJUMS_KOMENTARS" value ="$D36.RI('UsageNotes')"/>
+
+  <Entry key ="D36_PVIDNR_KOMENTARS" value ="$D36.RI('SrsComment')"/>
+  <Entry key ="D36_PVIDNR_GLABASANA" value ="$D36.RI('UserStorage')"/>
+  <Entry key ="D36_PVIDNR_NUMURU_IZLIETOJUMS" value ="$D36.RI('UserUsage')"/>
+  <Entry key ="D36_PVIDNR_NUMURU_IZLIETOJUMS_KOMENTARS" value ="$D36.RI('UserUsageNotes')"/>
+  <Entry key ="D36_VEIDLAPAS_ANULETAS" value ="$D36.RI('Annulled')"/>
+  <Entry key ="D36_ANULETAS_VEIDLAPAS_VIENKOPUS" value ="$D36.RI('Together')"/>
+  <Entry key ="D36_ANULETAS_VEIDLAPAS_ATZIMETAS" value ="$D36.RI('HaveMarks')"/>
+  <Entry key ="D36_ANULESANAS_PAMATOJUMS" value ="$D36.RI('HaveReasons')"/>
+  <Entry key ="D36_APSTIPRINAJUMS_AR_PARAKSTU" value ="$D36.RI('Signed')"/>
+  <Entry key ="D36_ANULESANAS_IEMESLI" value ="$D36.RI('ReasonsText')"/>
+  <Entry key ="D36_GRAMATVEDIBA_GLABAJAS_KOPIJAS" value ="$D36.RI('HaveCopies')"/>
+  <Entry key ="D36_UZRADITI_ATBILSTOSIE_REKVIZITI" value ="$D36.RI('Requisites')"/>
+  <Entry key ="D36_UZRADITI_ATBILSTOSIE_REKVIZITI_KOMENTARS" value ="$D36.RI('RequisitesText')"/>
+  <Entry key ="D36_LABOJUMI" value ="$D36.RI('Corrections')"/>
+  <Entry key ="D36_LABOJUMI_APLIEC_AR_PARAKSTU" value ="$D36.RI('CorrectionsSigned')"/>
+  <Entry key ="D36_PIEZIMES" value ="$D36.RI('Notes')"/>
+
+  <Entry key ="D36A" value ="#foreach($D36A in $D36.OI('SrsNumberFormsConfirmPerson.ActiveItems'))"/>
+  <Entry key ="D36A_VEIDS" value ="$D36A.RI('DetailType')"/>
+  <Entry key ="D36A_RAKSTISKI" value ="$D36A.RI('Written')"/>
+  <Entry key ="D36A_DATUMS" value ="$D36A.FI('DocDate', 'd')"/>
+  <Entry key ="D36A_NUMURS" value ="$D36A.RI('DocNumber')"/>
+  <Entry key ="D36A_AMATS" value ="$D36A.RI('Position')"/>
+  <Entry key ="D36A_VARDS" value ="$D36A.RI('FullName')"/>
+
+  <Entry key ="D36B" value ="#foreach($D36B in $D36.OI('SrsNumberBlanks.ActiveItems'))"/>
+  <Entry key ="D36B_VEIDS" value ="$D36B.RI('DetailType')"/>
+  <Entry key ="D36B_RAKSTISKI" value ="$D36B.RI('Written')"/>
+  <Entry key ="D36B_DATUMS" value ="$D36B.FI('DocDate', 'd')"/>
+  <Entry key ="D36B_NUMURS" value ="$D36B.RI('DocNumber')"/>
+  <Entry key ="D36B_AMATS" value ="$D36B.RI('Position')"/>
+  <Entry key ="D36B_VARDS" value ="$D36B.RI('FullName')"/>
+  <!--End Stingrās uzskaites PR veidlapu un pavadzīmju ar VID piešķirtajiem numuriem uzskaites, noformēšanas, lietošanas un uzglabāšanas pārbaude-->
+
+  <!--NM raksturojumu izziņa-->
+  <Entry key ="D53A" value ="#foreach($D53A in $D53.OI('CharacterStatementDetails.ActiveItems'))"/>
+  <Entry key ="D53A_RAKST_TEMAS_KODS" value ="$D53A.RI('ParentThemeCode')"/>
+  <Entry key ="D53A_RAKST_APAKSTEMAS_KODS" value ="$D53A.RI('ChTheme_Code')"/>
+  <Entry key ="D53A_SUTIT_VISAM_NOD" value ="$D53A.BTF('SendToAll')"/>
+  <Entry key ="D53A_BRIDINAJUMS" value ="$D53A.BTF('Warning')"/>
+  <Entry key ="D53A_SVARIGUMS" value ="$D53A.RI('ChTheme_Importance')"/>
+  <Entry key ="D53A_PIESKIRSANAS_DATUMS" value ="$D53A.FI('GrantDate', 'd')"/>
+  <Entry key ="D53A_PIESKIRSANAS_AUTORS" value ="$D53A.RI('GrantUser.FullName')"/>
+  <Entry key ="D53A_ATCELSANAS_IEMESLS" value ="$D53A.RI('RejectReason_Code')"/>
+  <Entry key ="D53A_ATCELSANAS_DATUMS" value ="$D53A.FI('RejectDate', 'd')"/>
+  <Entry key ="D53A_ATCELSANAS_AUTORS" value ="$D53A.RI('RejectUser.FullName')"/>
+
+  <Entry key ="D53B" value ="#foreach($D53B in $D53.OI('AccountingSoftwares.ActiveItems'))"/>
+  <Entry key ="D53B_PROGRAMMAS_NOS" value ="$D53B.RI('Software.Value')"/>
+  <Entry key ="D53B_LICENCES_IZSNIEDZ" value ="$D53B.RI('LicenceIssuer')"/>
+  <Entry key ="D53B_LICENCES_NR" value ="$D53B.RI('LicenceNumber')"/>
+  <Entry key ="D53B_LICENCES_DATUMS" value ="$D53B.FI('LicenceDate', 'd')"/>
+
+  <Entry key ="D53C" value ="#foreach($D53C in $D53.OI('CharacterStatementDetails.ActiveItems'))"/>
+  <Entry key ="D53C_RAKST_TEMAS_KODS" value ="$D53C.RI('ParentThemeCode')"/>
+  <Entry key ="D53C_RAKST_APAKSTEMAS_KODS" value ="$D53C.RI('ChTheme_Code')"/>
+  <Entry key ="D53C_PAMATOJUMS" value ="$D53C.RI('Argument')"/>
+  <!--End NM raksturojumu izziņa-->
+
+  <!--NM saimnieciskās darbības novērošanas akts I, IV-->
+  <Entry key ="D10_NM_INFORMETS" value ="$D10.RI('Inform')" />
+  <Entry key ="D10_NMO_PARBAUDES_VIETA" value ="$D10.RI('PerformPlaces')"/>
+  <Entry key ="D10_NMO_KODS" value ="$D10.RI('ObjCode')"/>
+  <Entry key ="D10_NMO_NOSAUKUMS" value ="$D10.RI('ObjName')"/>
+  <Entry key ="D10_NMO_ADRESE" value ="$D10.RI('ObjAddress')"/>
+  <Entry key ="D10_NMO_TALRUNIS" value ="$D10.RI('ObjPhone')"/>
+  <Entry key ="D10E" value ="#foreach($D10E in $D10.OI('DocumentPerformersAllForReport.ActiveItems'))"/>
+  <Entry key ="D10E_VEIC_AMATS" value ="$D10E.RI('PerformerPosition')"/>
+  <Entry key ="D10E_VEICEJS" value ="$D10E.RI('PerformerFullName')"/>
+  <Entry key ="D10_UZRADITA_APLIECIBA_PILNVARA" value ="$D10.RI('DocPresented')"/>
+  <Entry key ="D10A" value ="#foreach($D10A in $D10.OI('Licences.ActiveItems'))"/>
+  <Entry key ="D10A_ATLAUJAS_IZSNIEDZEJS" value ="$D10A.RI('Issuer')"/>
+  <Entry key ="D10A_ATLAUJAS_VEIDS" value ="$D10A.RI('Type')"/>
+  <Entry key ="D10A_ATLAUJAS_DATUMS" value ="$D10A.FI('LicDate', 'd')"/>
+  <Entry key ="D10A_ATLAUJAS_NUMURS" value ="$D10A.RI('Number')"/>
+  <Entry key ="D10A_ATLAUJAS_DATUMS_NO" value ="$D10A.FI('From', 'd')"/>
+  <Entry key ="D10A_ATLAUJAS_DATUMS_LIDZ" value ="$D10A.FI('Until', 'd')"/>
+  <Entry key ="D10_DARBIBAS_VEIDS" value ="$D10.RI('AspectDetected')"/>
+  <Entry key ="D10_KASES_APARATI_IR" value ="$D10.RI('HasCashRegister')" />
+  <Entry key ="D10B" value ="#foreach($D10B in $D10.OI('CashRegister.ActiveItems'))"/>
+  <Entry key ="D10B_EKA_MARKA" value ="$D10B.RI('MarkModel')"/>
+  <Entry key ="D10B_EKA_SASIJAS_NR" value ="$D10B.RI('Number')"/>
+  <Entry key ="D10_NM_KOMENTARS_IR" value ="$D10.BI('TpHasAdditionForReport')"/>
+  <Entry key ="D10_NM_KOMENTARS" value ="$D10.RI('TpAdditionText')" />
+  <Entry key ="D10_NM_TEIKTAIS_IR" value ="$D10.BI('TpHasToldForReport')"/>
+  <Entry key ="D10_NM_TEIKTAIS" value ="$D10.RI('TpToldText')"/>
+  <Entry key ="D10_NM_PASKAIDROJUMI_NAV" value ="$D10.RI('TpNoCommentsForReport')" />
+  
+  <Entry key ="D10C" value ="#foreach($D10C in $D10.OI('DocumentPerformersForReport.ActiveItems'))"/>
+  <Entry key ="D10C_VEIC_AMATS" value ="$D10C.RI('PerformerPosition')"/>
+  <Entry key ="D10C_VEICEJS" value ="$D10C.RI('PerformerFullName')"/>
+  <Entry key ="D10_AKTA_SANEMSANA_DATUMS" value ="$D10.RIN('SignDateForReport')"/>
+  <Entry key ="D10_AKTA_NODOSANAS_PAZIME_IR" value ="$D10.RI('Delivered')" />
+  <!--End NM saimnieciskās darbības novērošanas akts I, IV-->
+
+  <!--NM SD novērošanas akts II-->
+  <Entry key ="D11_DARBINIEKU_SKAITS" value ="$D11.RI('EmployeeCount')" />
+  <Entry key ="D11_AKTA_NR" value ="$D11.RI('AnswerTo.DocNumber')" />
+  <Entry key ="D11_NM_NOSAUKUMS" value ="$D11.RI('AnswerTo.CMCase.TaxpayerName')" />
+  <Entry key ="D11_UZSAKSANAS_DATUMS_LAIKS" value ="$D11.FI('DateFrom', 'd') plkst. $D11.FI('DateFrom', 'T')" />
+  <Entry key ="D11_EKA_ZURNALA_DATI_PIRMS_IR" value ="$D11.RI('HasJournals')" />
+  <Entry key ="D11_IERAKSTS_PAR_NOVEROSANU" value ="$D11.RI('ObservationRecord')" />
+  <Entry key ="D11_PABEIGSANAS_DATUMS_LAIKS" value ="$D11.FI('DateUntil', 'd') plkst. $D11.FI('DateUntil', 'T')" />
+
+  <Entry key ="D11A" value ="#foreach($D11A in $D11.OI('ZXs.ActiveItems'))"/>
+  <Entry key ="D11A_EKA_SASIJAS_NR"  value ="$D11A.RI('Register.Number')"/>
+  <Entry key ="D11A_EKA_GT" value ="$D11A.FI('Gt', 'f')"/>
+  <Entry key ="D11A_EKA_MAINAS_NAUDA"  value ="$D11A.FI('ChangeMoney', 'f')"/>
+  <Entry key ="D11A_EKA_IENEMUMI_PIRMS"  value ="$D11A.FI('IncomeBefore', 'f')"/>
+  <Entry key ="D11A_EKA_IENEMUMI_PEC"  value ="$D11A.FI('IncomeAfter', 'f')"/>
+  <Entry key ="D11A_EKA_DARIJUMU_SK"  value ="$D11A.RI('DealCount')"/>
+  <Entry key ="D11A_EKA_ANULESANA_SK"  value ="$D11A.RI('AnnulCount')"/>
+  <Entry key ="D11A_EKA_ANULESANA_SUM"  value ="$D11A.FI('AnnulSum', 'f')"/>
+  <Entry key ="D11A_EKA_INDIKACIJA_SK"  value ="$D11A.RI('EncashCount')"/>
+  <Entry key ="D11A_EKA_INDIKACIJA_SUM"  value ="$D11A.FI('EncashSum', 'f')"/>
+  <Entry key ="D11A_EKA_ATGRIEZT_SK"  value ="$D11A.RI('ReturnCount')"/>
+  <Entry key ="D11A_EKA_ATGRIEZT_SUM"  value ="$D11A.FI('ReturnSum', 'f')"/>
+  <Entry key ="D11_IENAKUMI_PIRMS_KOPA" value ="$D11.FI('IncomeBeforeForReport', 'f')"/>
+  <Entry key ="D11_IENAKUMI_PEC_KOPA" value ="$D11.FI('IncomeAfterForReport', 'f')"/>
+  <Entry key ="D11_DARIJUMU_SK_KOPA" value ="$D11.RI('DealCountForReport')"/>
+  <Entry key ="D11_ANULESANA_SK_KOPA" value ="$D11.RI('AnnulCountForReport')"/>
+  <Entry key ="D11_ANULESANA_SUM_KOPA" value ="$D11.FI('AnnulSumForReport', 'f')"/>
+  <Entry key ="D11_INDIKACIJA_SK_KOPA" value ="$D11.RI('EncashCountForReport')"/>
+  <Entry key ="D11_INDIKACIJA_SUM_KOPA" value ="$D11.FI('EncashSumForReport', 'f')"/>
+  <Entry key ="D11_ATGRIEZT_SK_KOPA" value ="$D11.RI('ReturnCountForReport')"/>
+  <Entry key ="D11_ATGRIEZT_SUM_KOPA"  value ="$D11.FI('ReturnSumForReport', 'f')"/>
+  
+  <Entry key ="D11C" value ="#foreach($D11C in $D11.OI('Journals.ActiveItems'))"/>
+  <Entry key ="D11C_EKA_SASIJAS_NR" value ="$D11C.RI('Register.Number')"/>
+  <Entry key ="D11C_EKA_DATUMS" value ="$D11C.FI('JournalDate', 'd')"/>
+  <Entry key ="D11C_FINANSU_PARSKATS" value ="$D11C.RI('ZNumber')"/>
+  <Entry key ="D11C_DIENAS_IENEMUMI" value ="$D11C.FI('Income', 'f')"/>
+  <Entry key ="D11D" value ="#foreach($D11D in $D11.OI('DocumentPerformersAllForReport.ActiveItems'))"/>
+  <Entry key ="D11D_VEIC_AMATS" value ="$D11D.RI('PerformerPosition')"/>
+  <Entry key ="D11D_VEICEJS" value ="$D11D.RI('PerformerFullName')"/>
+ 
+  <Entry key ="D11M" value ="#foreach($D11M in $D11.InventoriesSortedByCashRegister)"/>
+  <Entry key ="D11M_EKA" value ="$D11M.Key.RI('Number')"/>
+  <Entry key ="D11M_SAKUMA_SUMMA" value ="$D11M.Key.FI('SumBeginForReport', 'f')"/>
+  <Entry key ="D11M_BEIGU_SUMMA" value ="$D11M.Key.FI('SumEndForReport', 'f')"/>
+  <Entry key ="D11N" value ="#foreach($D11N in $D11M.Value)"/>
+  <Entry key ="D11N_NAUDA" value ="$D11N.RI('MoneyName')"/>
+  <Entry key ="D11N_NAUDA_VERTIBA" value ="$D11N.RI('MoneyValue')"/>
+  <Entry key ="D11N_SAKUMA" value ="$D11N.RI('CountBegin')"/>
+  <Entry key ="D11N_SAKUMA_SUM" value ="$D11N.FI('SumBegin', 'f')"/>
+  <Entry key ="D11N_BEIGU" value ="$D11N.RI('CountEnd')"/>
+  <Entry key ="D11N_BEIGU_SUM" value ="$D11N.FI('SumEnd', 'f')"/>  
+    <!--End NM SD novērošanas akts II-->
+
+  <!--NM SD novērošanas akts III-->
+  <Entry key ="D12A" value ="#foreach($D12A in $D12.OI('ReceiptsBefore.ActiveItems'))"/>
+  <Entry key ="D12A_PIRMS_DATUMS" value ="$D12A.FI('ReceiptDate', 'd')"/>
+  <Entry key ="D12A_PIRMS_NR_NO" value ="$D12A.RI('NumberFrom')"/>
+  <Entry key ="D12A_PIRMS_NR_LIDZ" value ="$D12A.RI('NumberTill')"/>
+  <Entry key ="D12A_PIRMS_DARIJUMU_GR_REG" value ="$D12A.RI('Registered')"/>
+  <Entry key ="D12A_PIRMS_IENEMUMI" value ="$D12A.FI('Income', 'f')"/>
+  <Entry key ="D12B" value ="#foreach($D12B in $D12.OI('ReceiptsAfter.ActiveItems'))"/>
+  <Entry key ="D12B_PEC_NR_NO" value ="$D12B.RI('NumberFrom')" />
+  <Entry key ="D12B_PEC_NR_LIDZ" value ="$D12B.RI('NumberTill')" />
+  <Entry key ="D12B_PEC_IENEMUMI" value ="$D12B.FI('Income', 'f')" />
+  <Entry key ="D12B_PEC_DARIJUMU_SKAITS" value ="$D12B.RI('DealCount')" />
+  <Entry key ="D12B_PEC_ANULESANA_SK" value ="$D12B.RI('AnnulCount')" />
+  <Entry key ="D12B_PEC_ANULESANA_SUM" value ="$D12B.FI('AnnulSum', 'f')" />
+  <Entry key ="D12_IENEMUMI_KOPA" value ="$D12.FI('IncomeForReport', 'f')" />
+  <Entry key ="D12_DARIJUMI_KOPA" value ="$D12.FI('DealCountForReport', 'f')" />
+  <Entry key ="D12_ANULESANA_SK_KOPA" value ="$D12.RI('AnnulCountForReport')" />
+  <Entry key ="D12_ANULESANA_SUM_KOPA" value ="$D12.FI('AnnulSumForReport', 'f')" />
+  <Entry key ="D12_AKTA_NR" value ="$D12.RI('AnswerTo.DocNumber')" />
+  <Entry key ="D12_NM_NOSAUKUMS" value ="$D12.RI('AnswerTo.CMCase.TaxpayerName')" />
+  <Entry key ="D12_UZSAKSANAS_DATUMS_LAIKS" value ="$D12.FI('DateFrom', 'd') plkst. $D12.FI('DateFrom', 'T')" />
+  <Entry key ="D12_DARBINIEKU_SKAITS" value ="$D12.RI('EmployeeCount')" />
+  <Entry key ="D12_DARIJUMU_APLIECIN_PIRMS" value ="$D12.RI('HaveReceipts')"/>
+  <Entry key ="D12_PABEIGSANAS_DATUMS_LAIKS" value ="$D12.FI('DateUntil', 'd') plkst. $D12.FI('DateUntil', 'T')" />
+  <Entry key ="D12C" value ="#foreach($D12C in $D12.OI('DocumentPerformersAllForReport.ActiveItems'))"/>
+  <Entry key ="D12C_VEIC_AMATS" value ="$D12C.RI('PerformerPosition')"/>
+  <Entry key ="D12C_VEICEJS" value ="$D12C.RI('PerformerFullName')"/>
+  <!--End NM SD novērošanas akts III-->
+
+
+  <Entry key ="A5" value ="#foreach($A5A in $A5.OI('ExternalPersons.ActiveItems'))"/>
+  <Entry key ="A5_PIEAIC_PERS_IESTADE" value ="$A5A.RI('Organization')"/>
+  <Entry key ="A5_PIEAIC_PERS_AMATS" value ="$A5A.RI('Position')"/>
+  <Entry key ="A5_PIEAIC_PERS" value ="$A5A.RI('Person')"/>
+
+  <Entry key ="A6" value ="#foreach($A6A in $A6.OI('TaxpayerMembers.ActiveItems'))"/>
+  <Entry key ="A6_NM_PARSTAVIS" value ="$A6A.RI('Name')"/>
+  <Entry key ="A6_NM_PARSTAVIS_KODS" value ="$A6A.RI('Code')"/>
+  <Entry key ="A6_NM_PARSTAVIS_AMATS" value ="$A6A.RI('Position')"/>
+
+
+  <!-- D022 DEGVIELAS KRĀJUMU ATLIKUMU MĒRĪJUMOS KONSTATĒTĀ DEGVIELAS ZUDUMA VAI PĀRPALIKUMA Begin-->
+
+  <Entry key ="D022_DEGV_MARKA" value ="$D022.RI('FuelMeasure.FuelTypeId')"/>
+  <Entry key ="D022_TVERT_NR" value ="$D022.RI('FuelMeasure.ContainerNumber')"/>
+  <Entry key ="D022_MER" value ="$D022.FI('FuelMeasure.MiddleValue', 'f')"/>
+  <Entry key ="D022_IZM_DAUDZ" value ="$D022.FI('FuelMeasure.Reminder', 'f')"/>
+  <Entry key ="D022_SAN_DAUDZ" value ="$D022.FI('Received', 'f')"/>
+  <Entry key ="D022_ZUD_KOEFIC" value ="$D022.FI('LossRate.DecimalValue', 'g')"/>
+  <Entry key ="D022_IZSN_DAUDZ" value ="$D022.FI('Used', 'f')"/>
+  <Entry key ="D022_GRAM_DAUDZ" value ="$D022.FI('FuelMeasure.AccountingValue', 'f')"/>
+  <Entry key ="D022_ZUD_PARPAL" value ="$D022.FI('FuelMeasure.FuelLosses', 'f')"/>
+  <Entry key ="D022_DABISKIE_ZUD" value ="$D022.FI('NaturalLoss', 'f')"/>
+
+  <Entry key ="D022_MER_KLUDA_SAN" value ="$D022.FI('ReceivetError', 'f')"/>
+  <Entry key ="D022_MER_KLUDA_IZD" value ="$D022.FI('SendError', 'f')"/>
+
+  <Entry key ="D022_MER_ZUD_KALIB" value ="$D022.FI('ControlLossValume', 'f')"/>
+  <Entry key ="D022_MER_ZUD_KLUDA" value ="$D022.FI('ControlLossError', 'f')"/>
+  <Entry key ="D022_MER_PARP_KALIB" value ="$D022.FI('ControlRemainValue', 'f')"/>
+  <Entry key ="D022_MER_PARP_KLUDA" value ="$D022.FI('ControlSurPlussError', 'f')"/>
+  <Entry key ="D022_MER_INST_ZUD_KALIB" value ="$D022.FI('MeasureLossVolume', 'f')"/>
+  <Entry key ="D022_MER_INST_ZUD_KLUDA" value ="$D022.FI('MeasureLossError', 'f')"/>
+  <Entry key ="D022_MER_INST_PARP_KALIB" value ="$D022.FI('MeasureRemainVolume', 'f')"/>
+  <Entry key ="D022_MER_INST_PARP_KLUDA" value ="$D022.FI('MeasureSurPlussError', 'f')"/>
+  <Entry key ="D022_MER_KLUDA_TVERTN_KALIB" value ="$D022.FI('ContainerCalibrityError', 'f')"/>
+
+  <Entry key ="D022_LOSS" value ="#if($D022.IsLoss)"/>
+  <Entry key ="D022_ZUD_DABISKIE_ZUD" value ="$D022.FI('NaturalLoss','f')"/>
+  <Entry key ="D022_ZUD_MER_KLUDA_SAN" value ="$D022.FI('ReceivetError', 'f')"/>
+  <Entry key ="D022_ZUD_MER_KLUDA_IZD" value ="$D022.FI('SendError', 'f')"/>
+  <Entry key ="D022_ZUD_MER_PARP_KLUDA" value ="$D022.FI('ControlLossError', 'f')"/>
+  <Entry key ="D022_ZUD_MER_INST_ZUD_KLUDA" value ="$D022.FI('MeasureLossError', 'f')"/>
+  <Entry key ="D022_ZUD_MER_KLUDA_TVERTN_KALIB" value ="$D022.FI('ContainerCalibrityError', 'f')"/>
+  <Entry key ="D022_ZUD_NOVIRZE" value ="$D022.RI('ConstatedLossesDivergenceYesNo')"/>
+
+  <Entry key ="D022_SURPLUS" value ="#if($D022.IsSurplus)"/>
+  <Entry key ="D022_PARP_DABISKIE_ZUD" value ="$D022.FI('NaturalLoss', 'f')"/>
+  <Entry key ="D022_PARP_MER_KLUDA_SAN" value ="$D022.FI('ReceivetError', 'f')"/>
+  <Entry key ="D022_PARP_MER_KLUDA_IZD" value ="$D022.FI('SendError', 'f')"/>
+  <Entry key ="D022_PARP_MER_PARP_KLUDA" value ="$D022.FI('ControlSurPlussError', 'f')"/>
+  <Entry key ="D022_PARP_MER_INST_ZUD_KLUDA" value ="$D022.FI('MeasureSurPlussError', 'f')"/>
+  <Entry key ="D022_PARP_MER_KLUDA_TVERTN_KALIB" value ="$D022.FI('ContainerCalibrityError', 'f')"/>
+  <Entry key ="D022_PARP_NOVIRZE" value ="$D022.RI('ConstatedMeasureDivergenceYesNo')"/>
+
+
+  <Entry key ="D022_PIEL_ZUD" value ="$D022.FI('ConstatedLossesAllowedLoss', 'f')"/>
+  <Entry key ="D022_PARPAL_ZUD" value ="$D022.FI('ConstatedLossesFacticLoss', 'f')"/>
+  <Entry key ="D022_PIEL_H_ZUD" value ="$D022.FI('ConstatedMeasureAllowedLoss', 'f')"/>
+  <Entry key ="D022_PARPAL_H_ZUD" value ="$D022.FI('ConstatedMeasureFacticLoss', 'f')"/>
+
+  <Entry key ="D022_ZUD_NOV" value ="$D022.FI('ConstatedLossesDivergence', 'f')"/>
+  <Entry key ="D022_PARP_NOV" value ="$D022.FI('ConstatedMeasureDivergence', 'f')"/>
+
+  <Entry key ="D022_PIEZIMES" value ="$D022.RI('Notes')"/>
+  <Entry key ="D022_AIZ_VARDS_UZV" value ="$D022.RI('Creator')"/>
+  <!-- D022 End-->
+  <!-- D038 Preču reģistrācija un uzskaite vairumtirdzniecībā Begin-->
+  
+  <Entry key ="D038_PR_REG" value ="$D038.RI('GoodsRegister')"/>
+  <Entry key ="D038_REG_ZURN" value ="$D038.RI('RegisterJournal')"/>
+  <Entry key ="D038_REG_KART" value ="$D038.RI('RegisterJournal')"/>
+  <Entry key ="D038_REG_PROGR" value ="$D038.RI('RegisterSoftware')"/>
+  <Entry key ="D038_REG_PROGR_NOS" value ="$D038.RI('RegisterSoftwareName')"/>
+  <Entry key ="D038_DRUKASANA" value ="$D038.RI('RegisterPrintable')"/>
+  <Entry key ="D038_PED_IER" value ="$D038.FI('RegisterLastEntry', 'd')"/>
+  <Entry key ="D038_NA_REKVIZ" value ="$D038.RI('PropertiesRegistered')"/>
+  <Entry key ="D038_NA_REKVIZ_NAV" value ="$D038.RI('WWDocumentsRequisitesString')"/>
+  <Entry key ="D038_IER_PAR_PARB" value ="$D038.RI('JournalChecked')"/>
+  <Entry key ="D038_PR_PAVADD" value ="$D038.RI('HaveWaybills')"/>
+  <Entry key ="D038_PR_PAVADD_PROT_NR" value ="$D038.RI('MdiProtocol')"/>
+  <Entry key ="D038_PR_IR_REG" value ="$D038.RI('SampleWaybillsRegistered')"/>
+  <Entry key ="D038_PAVADD_REG" value ="$D038.RI('SampleWaybillsRegistered')"/>
+  <Entry key ="D038_DER_TERMINS" value ="$D038.RI('ExpiryDateSpecified')"/>
+  <Entry key ="D038_DER_TERM_PR" value ="$D038.RI('ExpiryDateSpecifiedMdi')"/>
+  <Entry key ="D038_DER_TERM_IEVEROTS" value ="$D038.RI('ExpiryDateNoticed')"/>
+  <Entry key ="D038_DER_TERM_IEVER_PR" value ="$D038.RI('ExpiryDateNoticedMdi')"/>
+  <Entry key ="D038_PIEZ" value ="$D038.RI('Notes')"/>
+
+  <Entry key ="D038A" value ="#foreach($D038A in $D038.OI('WholesaleGoods.ActiveItems'))"/>
+  <Entry key ="D038A_PR_DAT" value ="$D038A.FI('DocDate', 'd')"/>
+  <Entry key ="D038A_PR_DOC_NOS" value ="$D038A.RI('DocName')"/>
+  <Entry key ="D038A_PR_DOC_NR" value ="$D038A.RI('DocNumber')"/>
+  <Entry key ="D038A_PR" value ="$D038A.RI('GoodsName')"/>
+  <Entry key ="D038A_PR_SUMMA" value ="$D038A.FI('Sum', 'f')"/>
+  
+  <Entry key ="D038B" value ="#foreach($D038B in $D038.OI('WWDocuments.ActiveItems'))"/>
+  <Entry key ="D038B_PAVADD_DAT" value ="$D038B.FI('DocDate', 'd')"/>
+  <Entry key ="D038B_PAVADD_NOS" value ="$D038B.RI('DocName')"/>
+  <Entry key ="D038B_PAVADD_NR" value ="$D038B.RI('DocNumber')"/>
+  <Entry key ="D038B_PAVADD_SUM" value ="$D038B.FI('Sum', 'f')"/>
+
+  <Entry key ="D038C" value ="#foreach($D038C in $D038.OI('WWExtraCharges.ActiveItems'))"/>
+  <Entry key ="D038C_UZC_PR_NOS" value ="$D038C.RI('GoodsName')"/>
+  <Entry key ="D038C_UZC_PR_MERV" value ="$D038C.RI('Unit')"/>
+  <Entry key ="D038C_UZC_IEPIRK_CENA" value ="$D038C.FI('PurchasePrice', 'f')"/>
+  <Entry key ="D038C_UZC_PARD_CENA" value ="$D038C.FI('SalePrice', 'f')"/>
+  <Entry key ="D038C_UZC_UZC" value ="$D038C.FI('ExtraPrice', 'f')"/>
+  <Entry key ="D038C_UZC_PAVADD_NOS" value ="$D038C.RI('DocName')"/>
+  <Entry key ="D038C_UZC_PAVADD_SER_NR" value ="$D038C.RI('DocNumber')"/>
+  <Entry key ="D038C_UZC_PAVADD_DAT" value ="$D038C.FI('DocDate', 'd')"/>
+  <Entry key ="D038C_UZC_PIEG_NMR" value ="$D038C.RI('SupplierCode')"/>
+  <Entry key ="D038C_UZC_PIEG_NOS" value ="$D038C.RI('SupplierName')"/>
+
+  <!-- End of D038-->
+
+  <!--D043 Valsts nodeva begin-->
+  <Entry key ="D043_NODEVA" value ="$D043.RI('DutyType')"/>
+  <Entry key ="D043_PARBAUDES_PERIODS_NO" value ="$D043.FI('PeriodFrom', 'd')"/>
+  <Entry key ="D043_PARBAUDES_PERIODS_LIDZ" value ="$D043.FI('PeriodUntil', 'd')"/>
+  <Entry key ="D043_CITI_PARKAPUMI" value ="$D043.RI('OtherInformation')"/>
+  
+  <Entry key ="D043_SUM1" value ="$D043.FI('Min', 'f')"/>
+  <Entry key ="D043_SUM2" value ="$D043.FI('Max', 'f')"/>
+  <Entry key ="D043_SUM3" value ="$D043.FI('MissingSum', 'f')"/>
+  <Entry key ="D043_SUM4" value ="$D043.FI('Missing', 'f')"/>
+
+
+  <Entry key ="D043A" value ="#foreach($D043A in $D043.OI('StateDutyDocuments.ActiveItems'))"/>
+  <Entry key ="D043A_DOKUMENTA_PERIODS_NO" value ="$D043A.FI('PeriodFrom', 'd')"/>
+  <Entry key ="D043A_DOKUMENTA_PERIODS_LIDZ" value ="$D043A.FI('PeriodUntil', 'd')"/>
+  <Entry key ="D043A_DOKUMENTA_NOS" value ="$D043A.RI('DocName')"/>
+  <Entry key ="D043A_DOKUMENTA_DATUMS" value ="$D043A.FI('DocDate','d')"/>
+  <Entry key ="D043A_DOKUMENTA_NR" value ="$D043A.RI('DocNumber')"/>
+  
+  <Entry key ="D043B" value ="#foreach($D043B in $D043.OI('StateDutyServices.ActiveItems'))"/>
+  <Entry key ="D043B_NMR" value ="$D043B.RI('TaxpayerCode')"/>
+  <Entry key ="D043B_NM" value ="$D043B.RI('TaxpayerName')"/>
+  <Entry key ="D043B_ADRESE" value ="$D043B.RI('TaxpayerAddress')"/>
+  <Entry key ="D043B_NM_DOKUMENTA_DATUMS" value ="$D043B.FI('DocDate', 'd')"/>
+  <Entry key ="D043B_NM_DOKUMENTA_NR" value ="$D043B.RI('DocNumber')"/>
+  <Entry key ="D043B_NM_DATI" value ="$D043B.FI('TaxpayerSum', 'f')"/>
+  <Entry key ="D043B_VID_DATI" value ="$D043B.FI('SrsSum', 'f')"/>
+  <Entry key ="D043B_MAZAK" value ="$D043B.FI('SrsTaxpayerSum', 'f')"/>
+  <Entry key ="D043B_VAIRAK" value ="$D043B.FI('TaxpayerSrsSum', 'f')"/>
+  <Entry key ="D043B_DIENU_SKAITS" value ="$D043B.RI('MissedDays')"/>
+  <Entry key ="D043B_NOKAVEJUMA_SUMMA" value ="$D043B.FI('Unpaid', 'f')"/>
+  <Entry key ="D043B_PAMATPARADA_PALIELINAJUMS" value ="$D043B.FI('RefinancingSum', 'f')"/>
+  <Entry key ="D043B_NOKAVEJUMA_NAUDA" value ="$D043B.FI('MissingSum', 'f')"/>
+  <Entry key ="D043B_PARKAPUMA_RAKSTUROJUMS" value ="$D043B.RI('ViolationId')"/>
+
+  <Entry key ="D043E" value ="#foreach($D043E in $D043.OI('StateDutyNotFromTaxpayerServices.ActiveItems'))"/>
+  <Entry key ="D043E_PERIODS_NO" value ="$D043E.FI('PeriodFrom', 'd')"/>
+  <Entry key ="D043E_PERIODS_LIDZ" value ="$D043E.FI('PeriodUntil', 'd')"/>
+  <Entry key ="D043E_NOKAVEJUMA_SUMMA" value ="$D043E.FI('Unpaid', 'f')"/>
+  <Entry key ="D043E_NOKAVEJUMA_NAUDA" value ="$D043E.FI('MissingSum', 'f')"/>
+
+  <Entry key ="D043D" value ="#foreach($D043D in $D043.OI('DistinctDocumentViolationsForReport.ActiveItems'))"/>
+  <Entry key ="D043D_PARKAPUMS" value ="$D043D.RI('Violation')"/>
+
+  <Entry key ="D043_IR_PARKAPUMS" value ="#if($D043.IsViolation)"/>
+
+  <Entry key ="D043C" value ="#foreach($D043C in $D043D.OI('ViolatedRules.ActiveItems'))"/>
+  <Entry key ="D043C_NA_VEIDS" value ="$D043C.RI('Rule.AlDoc.DocType')"/>
+  <Entry key ="D043C_NADATUMS" value ="$D043C.FI('Rule.AlDoc.DateST', 'd')"/>
+  <Entry key ="D043C_NA_NOS" value ="$D043C.RI('Rule.AlDoc.Name')"/>
+  <Entry key ="D043C_NA_PANTS" value ="$D043C.RI('Rule.Article')"/>
+  <Entry key ="D043C_NA_PRIM" value ="$D043C.RI('Rule.Index')"/>
+  <Entry key ="D043C_NA_DALA" value ="$D043C.RI('Rule.Part')"/>
+  <Entry key ="D043C_NA_PUNKTS" value ="$D043C.RI('Rule.Point')"/>
+  <Entry key ="D043C_NA_SATURS" value ="$D043C.RI('Rule.Quote')"/>
+  
+ 
+  <Entry key ="D043_SECINAJUMI" value ="$D043.RI('Notes')"/>
+  <!--End of D043-->
+
+  <!--BEG D31_Lēmums_par_skaidras_naudas_darījumu_pārbaudes_rezultātiem-->
+  <Entry key ="D31B" value ="#foreach($D31B in $D31.OI('GenCashDealDocList.ActiveItems'))"/>
+  <Entry key ="D31B_DATUMS_NO" value ="$D31B.FI('PeriodFrom', 'd')"/>
+  <Entry key ="D31B_DATUMS_LIDZ" value ="$D31B.FI('PeriodUntil', 'd')"/>
+  <Entry key ="D31B_NMR_KODS" value ="$D31B.RI('TaxpayerCode')"/>
+  <Entry key ="D31B_NOSAUKUMS" value ="$D31B.RI('TaxpayerName')"/>
+  <Entry key ="D31B_DARIJUMA_KOPSUMMA" value ="$D31B.FI('Sum', 'f')"/>
+  <Entry key ="D31B_SODA_NAUDA_SUMMA" value ="$D31B.FI('FineSum', 'f')"/>
+  <Entry key ="D31B_SODA_NAUDA" value ="$D31B.FI('FineRate.DecimalValue', 'f')"/>
+  <Entry key ="D31_AKTA_NR" value ="$D31.RI('Act.DocNumber')"/>
+  <Entry key ="D31_AKTA_DAT_TEKSTS" value ="$D31.DAT('Act.ActDate', 'Lok', false)"/>
+  <Entry key ="D31_AKTA_DAT_TEKSTS_TEKSTS_GEN" value ="$D31.DAT('Act.ActDate', 'Gen', false)"/>
+  <Entry key ="D31_AKTA_DAT_TEKSTS_TEKSTS_DAT" value ="$D31.DAT('Act.ActDate', 'Dat', false)"/>
+  <Entry key ="D31_AKTA_DAT_TEKSTS_TEKSTS_LOK" value ="$D31.DAT('Act.ActDate', 'Lok', false)"/>
+  <Entry key ="D31_AKTA_DAT_TEKSTS_TEKSTS_AKU" value ="$D31.DAT('Act.ActDate', 'Aku', false)"/>
+  <Entry key ="D31_SN_SUMMA" value ="$D31.FI('GenCashDealFineSum', 'f')"/>
+  <!--END D31_Lēmums_par_skaidras_naudas_darījumu_pārbaudes_rezultātiem-->
+  
+  <!--Lēmums par ieviesto pamatlīdzekļu pārbaudes rezultātiem-->
+  <Entry key ="D61D" value ="#foreach($D61D in $D61.OI('GenFixedAssetList.ActiveItems'))"/>
+  <Entry key ="D61D_PAMATLIDZEKLA_KODS" value ="$D61D.RI('Code')"/>
+  <Entry key ="D61D_PAMATLIDZEKLA_NOSAUKUMS" value ="$D61D.RI('Name')"/>
+  <Entry key ="D61D_PAMATLIDZEKLA_DAUDZUMS" value ="$D61D.FI('Amount', 'f')"/>
+  <Entry key ="D61D_PAMATLIDZEKLA_VERTIBA" value ="$D61D.FI('CustomsSum', 'f')"/>
+  <Entry key ="D61D_SAODA_NAUDA" value ="$D61D.FI('PenaltySum', 'f')"/>
+  <Entry key ="D61_AKTA_NR" value ="$D61.RI('Act.DocNumber')"/>
+  <Entry key ="D61_AKTA_DAT_TEKSTS" value ="$D61.DAT('Act.ActDate', 'Gen', false)"/>
+  <Entry key ="D61_AKTA_DAT_TEKSTS_GEN" value ="$D61.DAT('Act.ActDate', 'Gen', false)"/>
+  <Entry key ="D61_AKTA_DAT_TEKSTS_DAT" value ="$D61.DAT('Act.ActDate', 'Dat', false)"/>
+  <Entry key ="D61_AKTA_DAT_TEKSTS_LOK" value ="$D61.DAT('Act.ActDate', 'Lok', false)"/>
+  <Entry key ="D61_AKTA_DAT_TEKSTS_AKU" value ="$D61.DAT('Act.ActDate', 'Aku', false)"/>
+  <Entry key ="D61_SAODA_NAUDA_KOPA" value ="$D61.FI('GenFixedAssetFineSum', 'f')"/>
+  <!--End Lēmums par ieviesto pamatlīdzekļu pārbaudes rezultātiem-->
+
+  <Entry key ="D52_AKTA_NR" value ="$D52.RI('Act.DocNumber')"/>
+  <Entry key ="D52_AKTA_DAT_TEKSTS" value ="$D52.DAT('Act.ActDate', 'Lok', false)"/>
+  <Entry key ="D52_AKTA_DAT_TEKSTS_GEN" value ="$D52.DAT('Act.ActDate', 'Gen', false)"/>
+  <Entry key ="D52_AKTA_DAT_TEKSTS_DAT" value ="$D52.DAT('Act.ActDate', 'Dat', false)"/>
+  <Entry key ="D52_AKTA_DAT_TEKSTS_LOK" value ="$D52.DAT('Act.ActDate', 'Lok', false)"/>
+  <Entry key ="D52_AKTA_DAT_TEKSTS_AKU" value ="$D52.DAT('Act.ActDate', 'Aku', false)"/>
+  
+  <Entry key ="D52D" value ="#foreach($D52D in $D52.OI('GenViolationList.ActiveItems'))"/>
+  <Entry key ="D52D_NA_DATUMS_TEKSTS" value ="$D52D.DAT('AlDoc.DateST', 'Lok', false)"/>
+  <Entry key ="D52D_NA_DATUMS_TEKSTS_GEN" value ="$D52D.DAT('AlDoc.DateST', 'Gen', false)"/>
+  <Entry key ="D52D_NA_DATUMS_TEKSTS_DAT" value ="$D52D.DAT('AlDoc.DateST', 'Dat', false)"/>
+  <Entry key ="D52D_NA_DATUMS_TEKSTS_LOK" value ="$D52D.DAT('AlDoc.DateST', 'Lok', false)"/>
+  <Entry key ="D52D_NA_DATUMS_TEKSTS_AKU" value ="$D52D.DAT('AlDoc.DateST', 'Aku', false)"/>
+  <Entry key ="D52D_NA_NOSAUKUMS" value ="$D52D.RI('AlDoc.Name')"/>
+  <Entry key ="D52D_NA_PANTS" value ="$D52D.RI('Article')"/>
+  <Entry key ="D52D_NA_PANTA_INDEKSS" value ="$D52D.RI('Index')"/>
+  <Entry key ="D52D_NA_PANTA_DALA" value ="$D52D.RI('Part')"/>
+  <Entry key ="D52D_NA_PANTA_PUNKTS" value ="$D52D.RI('Point')"/>
+  <Entry key ="D52D_PARK_NA" value ="$D52D.RI('FullName')"/>
+  <Entry key ="D52D_NR_NOM" value ="$D52D.RI('GenRuleNumberStringNom')"/>
+  <Entry key ="D52D_PARK_CITATS" value ="$D52D.RI('Rule.Quote')"/>
+
+
+  <Entry key ="D52E" value ="#foreach($D52E in $D52.OI('GenStateDutyServicesCalcLessList.ActiveItems'))"/>
+  <Entry key ="D52E_NOSAUKUMS" value ="$D52E.RI('TaxpayerName')"/>
+  <Entry key ="D52E_NM_KODS" value ="$D52E.RI('TaxpayerCode')"/>
+  <Entry key ="D52E_NM_ADRESE" value ="$D52E.RI('TaxpayerAddress')"/>
+  <Entry key ="D52E_SUMMA" value ="$D52E.FI('SrsTaxpayerSum', 'f')"/>
+  <Entry key ="D52_SUMMA_KOPA" value ="$D52.FI('GenStateDutyServicesSum', 'f')"/>
+  
+  <Entry key ="D52B" value ="#foreach($D52B in $D52.OI('GenStateDutiesList.ActiveItems'))"/>
+  <Entry key ="D52B_NODEVAS_VEIDS" value ="$D52B.RI('DutyType')"/>
+  <Entry key ="D52B_MAKSAJUMA_VEIDS_PAMATPARADA" value ="$D52B.RI('PaymentTypePenal')"/>
+  <Entry key ="D52B_MAKSAJUMA_VEIDS_KAVEJUMA" value ="$D52B.RI('PaymentTypeMiss')"/>
+  <Entry key ="D52B_PARADA_KONTS" value ="$D52B.RI('AccountPenal')"/>
+  <Entry key ="D52B_KAVEJUMA_KONTS" value ="$D52B.RI('AccountMiss')"/>
+  <Entry key ="D52B_PARADA_SUMMA" value ="$D52B.FI('RefinancingSum', 'f')"/>
+  <Entry key ="D52B_KAVEJUMA_NAUDA" value ="$D52B.FI('Missing', 'f')"/>
+  <Entry key ="D52_PARADA_SUMMA_KOPA" value ="$D52.FI('GenStateDutyFineSum', 'f')"/>
+  
+  <Entry key ="D52F" value ="#foreach($D52F in $D52.OI('GenStateDutyServicesCalcMoreList.ActiveItems'))"/>
+  <Entry key ="D52F_NOSAUKUMS_ATMAKSA" value ="$D52F.RI('TaxpayerName')"/>
+  <Entry key ="D52F_NM_KODS_ATMAKSA" value ="$D52F.RI('TaxpayerCode')"/>
+  <Entry key ="D52F_NM_ADRESE_ATMAKSA" value ="$D52F.RI('TaxpayerAddress')"/>
+  <Entry key ="D52F_SUMMA_ATMAKSA" value ="$D52F.FI('TaxpayerSrsSum', 'f')"/>
+  <Entry key ="D52_SUMMA_KOPA_ATMAKSA" value ="$D52.FI('GenStateDutyCalculatedMoreSum', 'f')"/>
+  <Entry key ="D52_DATUMS_LIDZ_KURAM_JAINFORME_TEKSTS" value ="$D52.DAT('InformTerm', 'Lok', false)"/>
+  <Entry key ="D52_DATUMS_LIDZ_KURAM_JAINFORME_TEKSTS_GEN" value ="$D52.DAT('InformTerm', 'Gen', false)"/>
+  <Entry key ="D52_DATUMS_LIDZ_KURAM_JAINFORME_TEKSTS_DAT" value ="$D52.DAT('InformTerm', 'Dat', false)"/>
+  <Entry key ="D52_DATUMS_LIDZ_KURAM_JAINFORME_TEKSTS_LOK" value ="$D52.DAT('InformTerm', 'Lok', false)"/>
+  <Entry key ="D52_DATUMS_LIDZ_KURAM_JAINFORME_TEKSTS_AKU" value ="$D52.DAT('InformTerm', 'Aku', false)"/>
+  
+  <Entry key ="D52_NODEVU_SUMMA_KOPA" value ="$D52.FI('GenRiskDutySum', 'f')"/>
+  <Entry key ="D52_RISKA_NODAVA_SUMMA" value ="$D52.FI('GenTotalDutyCalculatedLess', 'f')"/>
+  <Entry key ="D52_PAMATPARADA_SUMMA" value ="$D52.FI('GenTotalRefinancingSum', 'f')"/>
+  <Entry key ="D52_KAVEJUMA_NAUDAS_SUMMA" value ="$D52.FI('GenTotalDutyLate', 'f')"/>
+
+  <!--BEG D45_Lēmums_administratīvā_pārkāpuma_lietā-->
+  <Entry key ="D45_APL_DATUMS_TEKSTS" value ="$D45.DAT('RecordDate', 'Lok', true)"/>
+  <Entry key ="D45_APL_DATUMS_TEKSTS_GEN" value ="$D45.DAT('RecordDate', 'Gen', true)"/>
+  <Entry key ="D45_APL_DATUMS_TEKSTS_DAT" value ="$D45.DAT('RecordDate', 'Dat', true)"/>
+  <Entry key ="D45_APL_DATUMS_TEKSTS_LOK" value ="$D45.DAT('RecordDate', 'Lok', true)"/>
+  <Entry key ="D45_APL_DATUMS_TEKSTS_AKU" value ="$D45.DAT('RecordDate', 'Aku', true)"/>
+  <Entry key ="D45_FP" value ="$D45.EnumTick('DocType.Value','EndDecisionResponsibilityPE')"/>
+  <Entry key ="D45_JP" value ="$D45.EnumTick('DocType.Value','EndDecisionResponsibilityLE')"/>
+  <Entry key ="D45_FP_VARDS_UZVARDS" value ="$D45.RI('GenAvp.PEName')"/>
+  <Entry key ="D45_JP_NOSAUKUMS" value ="$D45.RI('GenAvp.LEName')"/>
+  <Entry key ="D45_FP_PERS_KODS" value ="$D45.RI('GenAvp.PECode')"/>
+  <Entry key ="D45_JP_NMR_KODS" value ="$D45.RI('GenAvp.LECode')"/>
+  <Entry key ="D45_FP_ADRESE" value ="$D45.RI('GenAvp.PEAddress')"/>
+  <Entry key ="D45_JP_ADRESE" value ="$D45.RI('GenAvp.LEAddress')"/>
+  
+  <Entry key ="D45_APP_DATUMS_TEKSTS" value ="$D45.DAT('GenAvp.DocDate', 'Lok', false)"/>
+  <Entry key ="D45_APP_DATUMS_TEKSTS_GEN" value ="$D45.DAT('GenAvp.DocDate', 'Gen', false)"/>
+  <Entry key ="D45_APP_DATUMS_TEKSTS_DAT" value ="$D45.DAT('GenAvp.DocDate', 'Dat', false)"/>
+  <Entry key ="D45_APP_DATUMS_TEKSTS_LOK" value ="$D45.DAT('GenAvp.DocDate', 'Lok', false)"/>
+  <Entry key ="D45_APP_DATUMS_TEKSTS_AKU" value ="$D45.DAT('GenAvp.DocDate', 'Aku', false)"/>
+  <Entry key ="D45_APP_LAIKS" value ="$D45.FI('GenAvp.DocDate', 't')"/>
+  <Entry key ="D45_APP_PARAKST_TI_GEN" value ="$D45.RI('GenAvp.Creator.OrganizationManual.HeadOrganization.NameGen')"/>
+  <Entry key ="D45_APP_PARAKST_STRU" value ="$D45.RI('GenAvp.Creator.OrganizationManual.NameGen')"/>
+  <Entry key ="D45_APP_PARAKST_AMATS" value ="$D45.RI('GenAvp.Creator.Position')"/>
+  <Entry key ="D45_APP_PARAKST" value ="$D45.RI('GenAvp.Creator.FullName')"/>
+  <Entry key ="D45_APP_NR" value ="$D45.RI('GenAvp.DocNumber')"/>
+
+  <Entry key ="D45_TP" value ="#if($D45.GenAvp.IsTIAct)"/>
+  <Entry key ="D45_SP" value ="#if($D45.GenAvp.IsSPAct)"/>
+  <Entry key ="D45_AKTA_NR" value ="$D45.RI('GenActNo')"/>
+  <Entry key ="D45_AKTA_SAK_DAT_LAIKS" value ="$D45.FI('GenActStartDate', 'd') plkst. $D45.FI('GenActStartDate', 'T')"/>
+  <Entry key ="D45_AKTA_BEIG_DAT" value ="$D45.FI('GenEndActDate', 'd') plkst. $D45.FI('GenEndActDate', 'T')"/>
+
+  <Entry key ="D45A" value ="#foreach($D45A in $D45.OI('DocumentViolations.ActiveItems'))"/>
+  <Entry key ="D45A_PARK_BUT" value ="$D45A.RI('Description')"/>
+  
+  <Entry key ="D45B" value ="#foreach($D45B in $D45A.OI('ViolatedRules.ActiveItems'))"/>
+    
+  <Entry key ="D45B_PARK_NA" value ="$D45B.RI('FullName')"/>
+
+  <Entry key ="D45B_NR" value ="$D45B.RI('GenRuleNumberStringNom')"/>
+
+  <Entry key ="D45B_PARK_CITATS" value ="$D45B.RI('Rule.Quote')"/>
+  <Entry key ="D45C" value ="#foreach($D45C in $D45A.OI('ViolationResponsibleRules.ActiveItems'))"/>
+  <Entry key ="D45C_ATB_NA" value ="$D45C.RI('AlDoc')"/>
+
+  <Entry key ="D45C_NR" value ="$D45C.RI('GenRuleNumberStringLok')"/>
+  
+  <Entry key ="D45C_ATB_CITATS" value ="$D45C.RI('Quote')"/>
+
+  <Entry key ="D45_KONSTAT_APSTAKLI" value ="$D45.RI('Comment.Text')"/>
+
+  <Entry key ="D45E" value ="#foreach($D45E in $D45.OI('MitigatingCircumstances.ActiveItems'))"/>
+  <Entry key ="D45E_APST" value ="$D45E.RI('MitigatingCircumstances')"/>
+  <Entry key ="D45E_KOMENT" value ="$D45E.RI('Comment')"/>
+
+  <Entry key ="D45F" value ="#foreach($D45F in $D45.OI('AggravatingCircumstances.ActiveItems'))"/>
+  <Entry key ="D45F_APST" value ="$D45F.RI('AggravatingCircumstances')"/>
+  <Entry key ="D45F_KOMENT" value ="$D45F.RI('Comment')"/>
+
+  <Entry key ="D45D" value ="#foreach($D45D in $D45.OI('Responsibility.ActiveItems'))"/>
+  <Entry key ="D45D_PARK_NA" value ="$D45D.RI('AlDoc')"/>
+  <Entry key ="D45D_PARK_NA_VEIDS" value ="$D45D.RI('DocType')"/>
+
+  <Entry key ="D45D_NR" value ="$D45D.RI('GenRuleNumberStringLok')"/>
+  
+  <Entry key ="D45D_IR_NAUDAS_SODS" value ="#if($D45D.IsPenalty)"/>
+  <Entry key ="D45D_NAUDAS_SODS" value ="$D45D.FI('Pentalty', 'f')"/>
+
+  <Entry key ="D45D_IR_KONFISKACIJA" value ="#if($D45D.Confiscation)"/>
+  <Entry key ="D45D_KONFISKACIJA" value ="$D45D.RI('ConfiscationNotes')"/>
+
+  <Entry key ="D45D_IR_21_PANTS" value ="#if($D45D.Article_21)"/>
+
+  <Entry key ="D45D_IR_CITI_IZB_IEMESLI" value ="#if($D45D.IsRecordTermination)"/>
+  <Entry key ="D45D_CITI_IZB_IEMESLI" value ="$D45D.RI('RecordTermination')"/>
+
+  <Entry key ="D45_IR_GAL_NAUDAS_SODS" value ="#if($D45.IsFinalPenalty)"/>
+  <Entry key ="D45_GAL_NAUDAS_SODS" value ="$D45.FI('FinalFine', 'f')"/>
+
+  <Entry key ="D45_IR_GAL_KONFISK" value ="#if($D45.FinalConfiscation)"/>
+  <Entry key ="D45_GAL_KONFISK" value ="$D45.RI('FinalConfiscationNotes')"/>
+
+  <Entry key ="D45_IR_21_PANTS" value ="#if($D45.FinalArticle_21)"/>
+
+  <Entry key ="D45_IR_GAL_CITS" value ="#if($D45.IsFinalRecordTermination)"/>
+  <Entry key ="D45_GAL_CITS" value ="$D45.RI('FinalRecordTermination')"/>
+
+  <!--END D45_Lēmums_administratīvā_pārkāpuma_lietā-->
+
+  <!--BEG D46_Lēmums_par_brīdināšanu_apturēt_saimniecisko_darbību-->
+  <Entry key ="D46_AKTA_NR" value ="$D46.RI('Act.DocNumber')"/>
+  <Entry key ="D46_AKTA_DAT" value ="$D46.DAT('Act.ActDate', 'Gen', false)"/>
+  <Entry key ="D46_AKTA_DAT_TEKSTS_GEN" value ="$D46.DAT('Act.ActDate', 'Gen', false)"/>
+  <Entry key ="D46_AKTA_DAT_TEKSTS_DAT" value ="$D46.DAT('Act.ActDate', 'Dat', false)"/>
+  <Entry key ="D46_AKTA_DAT_TEKSTS_LOK" value ="$D46.DAT('Act.ActDate', 'Lok', false)"/>
+  <Entry key ="D46_AKTA_DAT_TEKSTS_AKU" value ="$D46.DAT('Act.ActDate', 'Aku', false)"/>
+  <Entry key ="D46A" value ="#foreach($D46A in $D46.OI('DocumentViolations.ActiveItems'))"/>
+  <Entry key ="D46A_PARK_BUT" value ="$D46A.RI('Description')"/>
+  <Entry key ="D46B" value ="#foreach($D46B in $D46A.OI('ViolatedRules.ActiveItems'))"/>
+  <Entry key ="D46B_PT_PANTS" value ="$D46B.RI('Rule.Article')"/>
+  <Entry key ="D46B_PT_INDEKSS" value ="$D46B.RI('Rule.Index')"/>
+  <Entry key ="D46B_PT_DALA" value ="$D46B.RI('Rule.Part')"/>
+  <Entry key ="D46B_PT_PUNKTS" value ="$D46B.RI('Rule.Point')"/>
+  <Entry key ="D46B_PT_CITATS" value ="$D46B.RI('Rule.Quote')"/>
+  <Entry key ="D46_TERM" value ="$D46.RI('WarningTime')"/>
+  <!--END D46_Lēmums_par_brīdināšanu_apturēt_saimniecisko_darbību-->
+
+  <!--BEG D47_Lēmums_par_pārbaudāmā_objekta_saimnieciskās_darbības_apturēšanu-->
+  <Entry key ="D47_AKTA_NR" value ="$D47.RI('GenActNo')"/>
+  <Entry key ="D47_AKTA_DAT" value ="$D47.DAT('GenActDate', 'Gen', false)"/>
+  <Entry key ="D47_AKTA_DAT_TEKSTS_GEN" value ="$D47.DAT('GenActDate', 'Gen', false)"/>
+  <Entry key ="D47_AKTA_DAT_TEKSTS_DAT" value ="$D47.DAT('GenActDate', 'Dat', false)"/>
+  <Entry key ="D47_AKTA_DAT_TEKSTS_LOK" value ="$D47.DAT('GenActDate', 'Lok', false)"/>
+  <Entry key ="D47_AKTA_DAT_TEKSTS_AKU" value ="$D47.DAT('GenActDate', 'Aku', false)"/>
+  <Entry key ="D47A" value ="#foreach($D47A in $D47.OI('DocumentViolations.ActiveItems'))"/>
+  <Entry key ="D47A_PARK_BUT" value ="$D47A.RI('Description')"/>
+  <Entry key ="D47B" value ="#foreach($D47B in $D47A.OI('ViolatedRules.ActiveItems'))"/>
+  <Entry key ="D47B_PT_PANTS" value ="$D47B.RI('Rule.Article')"/>
+  <Entry key ="D47B_PT_INDEKSS" value ="$D47B.RI('Rule.Index')"/>
+  <Entry key ="D47B_PT_DALA" value ="$D47B.RI('Rule.Part')"/>
+  <Entry key ="D47B_PT_PUNKTS" value ="$D47B.RI('Rule.Point')"/>
+  <Entry key ="D47B_PT_CITATS" value ="$D47B.RI('Rule.Quote')"/>
+  <Entry key ="D47_APTURESANAS_DATUMS_TEKSTS" value ="$D47.DAT('HaltDate', 'Aku', false)"/>
+  <Entry key ="D47_APTURESANAS_DATUMS_TEKSTS_GEN" value ="$D47.DAT('HaltDate', 'Gen', false)"/>
+  <Entry key ="D47_APTURESANAS_DATUMS_TEKSTS_DAT" value ="$D47.DAT('HaltDate', 'Dat', false)"/>
+  <Entry key ="D47_APTURESANAS_DATUMS_TEKSTS_LOK" value ="$D47.DAT('HaltDate', 'Lok', false)"/>
+  <Entry key ="D47_APTURESANAS_DATUMS_TEKSTS_AKU" value ="$D47.DAT('HaltDate', 'Aku', false)"/>
+  <!--END D47_Lēmums_par_pārbaudāmā_objekta_saimnieciskās_darbības_apturēšanu-->
+
+  <!--BEG D48_Lēmums_par_pārbaudāmā_objekta_saimnieciskās_darbības_apturēšanas_laika_pagarināšanu-->
+  <Entry key ="D48_AKTA_NR" value ="$D48.RI('Act.DocNumber')"/>
+  <Entry key ="D48_AKTA_DAT" value ="$D48.FI('Act.ActDate', 'd')"/>
+  <Entry key ="D48_KONTROLES_PASAKUMS" value ="$D48.RI('AuditTypeToLower')"/>
+  <Entry key ="D48_PAGARINAT_LIDZ" value ="$D48.FI('HaltUntil', 'd')"/>
+  <Entry key ="D48_PAGARINAT_LIDZ_TEKSTS_GEN" value ="$D48.DAT('HaltUntil', 'Gen', false)"/>
+  <Entry key ="D48_PAGARINAT_LIDZ_TEKSTS_DAT" value ="$D48.DAT('HaltUntil', 'Dat', false)"/>
+  <Entry key ="D48_PAGARINAT_LIDZ_TEKSTS_LOK" value ="$D48.DAT('HaltUntil', 'Lok', false)"/>
+  <Entry key ="D48_PAGARINAT_LIDZ_TEKSTS_AKU" value ="$D48.DAT('HaltUntil', 'Aku', false)"/>
+  <!--END D48_Lēmums_par_pārbaudāmā_objekta_saimnieciskās_darbības_apturēšanas_laika_pagarināšanu-->
+
+  <!--BEG D49_Lēmums_par_pārbaudāmā_objekta_saimnieciskās_darbības_atjaunošanu-->
+  <Entry key ="D49_AKTA_NR" value ="$D49.RI('GenActNo')"/>
+  <Entry key ="D49_AKTA_DAT" value ="$D49.DAT('GenActDate', 'Lok', false)"/>
+  <Entry key ="D49_AKTA_DAT_TEKSTS_GEN" value ="$D49.DAT('GenActDate', 'Gen', false)"/>
+  <Entry key ="D49_AKTA_DAT_TEKSTS_DAT" value ="$D49.DAT('GenActDate', 'Dat', false)"/>
+  <Entry key ="D49_AKTA_DAT_TEKSTS_LOK" value ="$D49.DAT('GenActDate', 'Lok', false)"/>
+  <Entry key ="D49_AKTA_DAT_TEKSTS_AKU" value ="$D49.DAT('GenActDate', 'Aku', false)"/>
+  <Entry key ="D49_ATJAUNOSANAS_DATUMS_TEKSTS" value ="$D49.DAT('SDRestoreDate', 'Lok', false)"/>
+  <Entry key ="D49_ATJAUNOSANAS_DATUMS_TEKSTS_GEN" value ="$D49.DAT('SDRestoreDate', 'Gen', false)"/>
+  <Entry key ="D49_ATJAUNOSANAS_DATUMS_TEKSTS_DAT" value ="$D49.DAT('SDRestoreDate', 'Dat', false)"/>
+  <Entry key ="D49_ATJAUNOSANAS_DATUMS_TEKSTS_LOK" value ="$D49.DAT('SDRestoreDate', 'Lok', false)"/>
+  <Entry key ="D49_ATJAUNOSANAS_DATUMS_TEKSTS_AKU" value ="$D49.DAT('SDRestoreDate', 'Aku', false)"/>
+  <!--END D49_Lēmums_par_pārbaudāmā_objekta_saimnieciskās_darbības_atjaunošanu-->
+
+  <Entry key ="A4_NM_KOMENTARS_IR" value ="$A4.BI('TpHasAdditionForReport')"/>
+  <Entry key ="A4_NM_KOMENTARS" value ="$A4.RI('TpAdditionText')"/>
+  <Entry key ="A4_NM_TEIKTAIS_IR" value ="$A4.BI('TpHasToldForReport')"/>
+  <Entry key ="A4_NM_TEIKTAIS" value ="$A4.RI('TpToldText')"/>
+  <Entry key ="A4_NM_PASKAIDROJUMI_NAV" value ="$A4.RI('TpNoCommentsForReport')"/>
+  <Entry key ="A4_AKTA_LAPU_SKAITS" value ="$A4.RI('EndPages')"/>
+  <Entry key ="A4_AKTA_EKSEMPL_SKAITS" value ="$A4.RI('EndCopies')"/>
+  <Entry key ="A4_PIELIK" value ="$A4.RI('EndAdditions')"/>
+  <Entry key ="A4_PIELIK_LAPU_SKAITS" value ="$A4.RI('EndAdditionsPages')"/>
+  <Entry key ="A4_PIELIK_EKSEMPL_SKAITS" value ="$A4.RI('EndAdditionsCopies')"/>
+  <Entry key ="A4_PIEZIMES" value ="$A4.RI('Notes')"/>
+  <Entry key ="A4_PARBAUDE_PABEIGSANAS_DATUMS_LAIKS" value ="$A4.FI('EndDate', 'd') plkst. $A4.FI('EndDate', 'T')"/>
+  <Entry key ="A4_AKTA_SANEMSANA_DATUMS" value ="$A4.RI('SignDateForReport')"/>
+  <Entry key ="A4_AKTA_NODOSANAS_PAZIME_IR" value ="$A4.RI('Delivered')"/>
+  
+  <!-- Begin of D057-->
+  <Entry key ="D057_AKTS_TP_IR" value ="$D057.RI('TPexist')"/>
+  <Entry key ="D057_AKTS_TP_NR" value ="$D057.RI('TPnumber')"/>
+  <Entry key ="D057_AKTS_AP_IR" value ="$D057.RI('APexist')"/>
+  <Entry key ="D057_AKTS_AP_NR" value ="$D057.RI('APnumber')"/>
+  <Entry key ="D057_AKTS_NO_IR" value ="$D057.RI('NPexist')"/>
+  <Entry key ="D057_AKTS_NO_NR" value ="$D057.RI('NPnumber')"/>
+  <Entry key ="D057_AKTS_SP_IR" value ="$D057.RI('SPexist')"/>
+  <Entry key ="D057_AKTS_SP_NR" value ="$D057.RI('SPnumber')"/>
+  <Entry key ="D057_PARBAUDE_SAKUMA_DATUMS_LAIKS" value ="$D057.FI('ActStartDate', 'd')"/>
+
+  <Entry key ="D057_NREG_STRUKT_CH" value ="$D057.RI('UnitNotRgistered')"/>
+  <Entry key ="D057_NREG_STRUKT_ADRESE" value ="$D057.RI('UnitNotRgisteredAddress')"/>
+  <Entry key ="D057_NENON_STRUKT_CH" value ="$D057.RI('UnitNotStricked')"/>
+  <Entry key ="D057_NENON_STRUKT_ADRESE" value ="$D057.RI('UnitNotStrickedAddress')"/>
+  <Entry key ="D057_NAV_REGISTRETS_EKA" value ="$D057.RI('CheckInfoAboutStatedCashRegistersNotRegistered')"/>
+  <Entry key ="D057_NAV_NONEMTS_NO_UZSKAITES_EKA" value ="$D057.RI('CheckInfoAboutStatedCashRegistersNotStricked')"/>
+
+  <Entry key ="D057_NAV_PARSKATS_PAR_PERIODU" value ="$D057.RI('NaturalResourceTax')"/>
+  <Entry key ="D057_UZDOTS_IESNIEGT_PARSKATUS" value ="$D057.RI('ReportsNotSubmitted')"/>
+  <Entry key ="D057_UZDOTS_VEIKT_LABOJUMS" value ="$D057.RI('ReportCorrections')"/>
+  <Entry key ="D057_UZZINATS_BANKAS_KONTS" value ="$D057.RI('BancAccount')"/>
+
+  <Entry key ="D057_DARB_VEIDS_CH" value ="$D057.RI('BasicActiviytUpdated')"/>
+  <Entry key ="D057_DARB_VEIDS_TEKSTS" value ="$D057.RI('NaceForPrintOut')"/>
+  <Entry key ="D057_BEZ_LIC_DV_CH" value ="$D057.RI('NoLicence')"/>
+  <Entry key ="D057_BEZ_LIC_DV_TEKSTS" value ="$D057.RI('ActivityType')"/>
+
+  <Entry key ="D057A" value ="#foreach($D057A in $D057.OI('InfoAboutStatedCashRegistersNotRegistered.ActiveItems'))"/>
+  <Entry key ="D057A_EKA_MARKA" value ="$D057A.RI('ModelParent')"/>
+  <Entry key ="D057A_EKA_MODELIS" value ="$D057A.RI('Model')"/>
+  <Entry key ="D057A_EKA_SAS" value ="$D057A.RI('Number')"/>
+  
+  <Entry key ="D057G" value ="#foreach($D057G in $D057.OI('InfoAboutStatedCashRegistersNotStricked.ActiveItems'))"/>
+  <Entry key ="D057G_EKA_MARKA" value ="$D057G.RI('ModelParent')"/>
+  <Entry key ="D057G_EKA_MODELIS" value ="$D057G.RI('Model')"/>
+  <Entry key ="D057G_EKA_SAS" value ="$D057G.RI('Number')"/>
+  
+  <Entry key ="D057_NEREG_SAIMN_DARB_CH" value ="$D057.RI('BusinessNotRegistered')"/>
+  <Entry key ="D057_NEREG_SAIMN_DARB_TEKSTS" value ="$D057.RI('BusinessNotes')"/>
+  <Entry key ="D057_NZ_PAR_DN_SK_CH" value ="$D057.RI('Employes')"/>
+  <Entry key ="D057_NZ_PAR_DN_SKAITS" value ="$D057.RI('EmployesCount')"/>
+
+  <Entry key ="D057B" value ="#foreach($D057B in $D057.OI('InfoAboutStatedEmployeesI.ActiveItems'))"/>
+  <Entry key ="D057B_NZ_PAR_DN_V" value ="$D057B.RI('FullName')"/>
+  <Entry key ="D057B_NZ_PAR_DN_PK" value ="$D057B.RI('PersCode')"/>
+  <Entry key ="D057B_NZ_PAR_DN_PER_FROM" value ="$D057B.FI('DateFrom', 'd')"/>
+  <Entry key ="D057B_NZ_PAR_DN_PER_UNTIL" value ="$D057B.RI('DateUntilText')"/>
+
+  <Entry key ="D057_NI_IIN_SK_CH" value ="$D057.RI('IncomeTaxNotReported')"/>
+  <Entry key ="D057_NI_IIN_SKAITS" value ="$D057.RI('IncomeTaxCount')"/>
+
+  <Entry key ="D057C" value ="#foreach($D057C in $D057.OI('InfoAboutStatedEmployeesII.ActiveItems'))"/>
+  <Entry key ="D057C_NI_IIN_V" value ="$D057C.RI('FullName')"/>
+  <Entry key ="D057C_NI_IIN_PK" value ="$D057C.RI('PersCode')"/>
+  <Entry key ="D057C_NI_IIN_PER_FROM" value ="$D057C.FI('DateFrom', 'd')"/>
+  <Entry key ="D057C_NI_IIN_PER_UNTIL" value ="$D057C.FI('DateUntil', 'd')"/>
+
+  <Entry key ="D057H" value ="#foreach($D057H in $D057.OI('InfoAboutStatedNaturalResources.ActiveItems'))"/>
+  <Entry key ="D057H_DRN_PER_FROM" value ="$D057H.FI('DateFrom', 'd')"/>
+  <Entry key ="D057H_DRN_PER_UNTIL" value ="$D057H.FI('DateUntil', 'd')"/>
+
+  <Entry key ="D057D" value ="#foreach($D057D in $D057.OI('InfoAboutStatedReportsReport.ActiveItems'))"/>
+  <Entry key ="D057D_PARSK_NOS" value ="$D057D.RI('Inform')"/>
+  <Entry key ="D057D_PARSK_PER_NO" value ="$D057D.FI('PeriodFrom', 'd')"/>
+  <Entry key ="D057D_PARSK_PER_LIDZ" value ="$D057D.FI('PeriodUntil', 'd')"/>
+
+  <Entry key ="D057E" value ="#foreach($D057E in $D057.OI('InfoAboutStatedReportsCorrection.ActiveItems'))"/>
+  <Entry key ="D057E_PARSK_NOS" value ="$D057E.RI('Inform')"/>
+  <Entry key ="D057E_PARSK_PER_NO" value ="$D057E.FI('PeriodFrom', 'd')"/>
+  <Entry key ="D057E_PARSK_PER_LIDZ" value ="$D057E.FI('PeriodUntil', 'd')"/>
+  
+  <Entry key ="D057F" value ="#foreach($D057F in $D057.OI('InfoAboutStatedAccounts.ActiveItems'))"/>
+  <Entry key ="D057F_BANK_KRED" value ="$D057F.RI('Institution')"/>
+  <Entry key ="D057F_BANK_KODS" value ="$D057F.RI('InstitutionCode')"/>
+  <Entry key ="D057F_BANK_KONTS" value ="$D057F.RI('Account')"/>
+  <Entry key ="D057_CITS_IR" value ="$D057.RI('Other')"/>
+  <Entry key ="D057_CITS_INFO" value ="$D057.RI('OtherNotes')"/>
+
+  <!-- End of D057-->
+
+  <!-- D023 BEGIN-->
+  
+  <Entry key ="D023_MANUALI" value ="$D023.RI('AccountingTypeBoolM')"/>
+    
+  <Entry key ="D023A" value ="#foreach($D023A in $D023.OI('AccountingRegisters.ActiveItems'))"/>
+  <Entry key ="D023A_REG_NOS" value ="$D023A.RI('RegisterName')"/>
+  <Entry key ="D023A_UZRADITI_REG" value ="$D023A.RI('Specified')"/>
+  <Entry key ="D023A_PER_NO" value ="$D023A.FI('PeriodFrom', 'd')"/>
+  <Entry key ="D023A_PER_LIDZ" value ="$D023A.FI('PeriodUntil', 'd')"/>
+    
+  <Entry key ="D023_DATORPROGRAMMA" value ="$D023.RI('AccountingTypeBoolS')"/>
+    
+  <Entry key ="D023B" value ="#foreach($D023B in $D023.OI('AccountingSimpleRecordsSoftware.ActiveItems'))"/>
+  <Entry key ="D023B_PROGR_NOS" value ="$D023B.RI('Soft')"/>
+  <Entry key ="D023B_LICENCE" value ="$D023B.RI('Licence')"/>
+  <Entry key ="D023B_IZSNIEDZEJS" value ="$D023B.RI('LicenceIssuer')"/>
+  <Entry key ="D023B_NUMURS" value ="$D023B.RI('LicenceNumber')"/>
+  <Entry key ="D023B_IZSNIEGS_DATUMS" value ="$D023B.FI('LicenceDate', 'd')"/>
+    
+  <Entry key ="D023_KOMENTARS" value ="$D023.RIN('Comment')"/>
+  <Entry key ="D023_PAPIRA_KOPIJA" value ="$D023.RI('Paper')"/>
+  <Entry key ="D023_IFORMAC_NES" value ="$D023.RI('Printout')"/>
+  <Entry key ="D023_ATTAISNOJ_DOK" value ="$D023.RI('DealsRegistered')"/>
+  <Entry key ="D023_ATTAISNOJ_DOK_KOMEN" value ="$D023.RIN('DealsRegisteredText')"/>
+  <Entry key ="D023_ATTAISNOJ_DOK_REKVIZITI" value ="$D023.RI('DocumentRequisites')"/>
+  <Entry key ="D023_ATTAISNOJ_DOK_REKVIZITI_KOMENTARI" value ="$D023.RIN('DocumentRequisitesText')"/>
+
+  <Entry key ="D023C" value ="#foreach($D023C in $D023.OI('AccountingSimpleRecordsDocuments.ActiveItems'))"/>
+  <Entry key ="D023C_REKV_NOS" value ="$D023C.RI('UngivenRequisite')"/>
+  <Entry key ="D023C_DOK_NOS" value ="$D023C.RI('GivenRequisite')"/>
+  <Entry key ="D023C_DOK_DATUMS_TEKSTS" value ="$D023C.RI('GivenDate')"/>
+  <Entry key ="D023C_DOK_NR" value ="$D023C.RI('GivenNumber')"/>
+    
+  <Entry key ="D023_NORM_AKTU_PRAS" value ="$D023.RI('MeetRequirements')"/>
+  <Entry key ="D023_NORM_AKTU_PRAS_KOMENT" value ="$D023.RIN('MeetRequirementsText')"/>
+  <Entry key ="D023_VAR_GUT_PRIEKSSTATU_NO_DARIJUMA_REGISTRA" value ="$D023.RI('EconomicDeals')"/>
+  <Entry key ="D023_VAR_GUT_PRIEKSSTATU_NO_DARIJUMA_REGISTRA_KOMENT" value ="$D023.RIN('EconomicDealsText')"/>
+  <Entry key ="D023_DOK_UZGLABATS_ATBILST" value ="$D023.RI('Storage')"/>
+  <Entry key ="D023_DOK_UZGLABATS_ATBILST_KOMENT" value ="$D023.RIN('StorageText')"/>
+  <Entry key ="D023_NOSKIRTAS_KASES" value ="$D023.RI('RegisterSeparate')"/>
+  <Entry key ="D023_NOSKIRTAS_KASES_KOMENT" value ="$D023.RIN('RegisterSeparateText')"/>
+  <Entry key ="D023_PIEZIMES" value ="$D023.RI('Notes')"/>
+
+  <!--D023 END-->
+
+  <!-- D024 begin-->
+  <Entry key ="D024_PATSTAVIGS_DARBINIEKS" value ="$D024.RI('OrganizeTypeFactory')"/>
+  <Entry key ="D024_DARBINIEKA_AMATS" value ="$D024.RI('Position')"/>
+  <Entry key ="D024_DARBINIEKA_VARDS_UZVARDS" value ="$D024.RI('FullName')"/>
+  <Entry key ="D024_DARBINIEKA_KODS" value ="$D024.RI('PersCode')"/>
+  <Entry key ="D024_DARBINIEKA_PIEZIMES" value ="$D024.RI('PersNotes')"/>
+  
+  <Entry key ="D024_CITS_UZNEMUMS" value ="$D024.RI('OrganizeTypeOther')"/>
+  <Entry key ="D024_GRAMATV_UZN_KODS" value ="$D024.RI('TaxpayerCode')"/>
+  <Entry key ="D024_GRAMATV_UZN_NOS" value ="$D024.RI('TaxpayerName')"/>
+  <Entry key ="D024_GRAMATV_UZN_LIG_NR" value ="$D024.RI('ContractNumber')"/>
+  <Entry key ="D024_GRAMATV_UZN_LIG_NOSL_DAT" value ="$D024.FI('ContractDate', 'd')"/>
+  <Entry key ="D024_GRAMATV_UZN_LIG_SPEKA_NO" value ="$D024.FI('ContractFrom', 'd')"/>
+  <Entry key ="D024_GRAMATV_UZN_LIG_SPEKA_LIDZ" value ="$D024.FI('ContractUntil', 'd')"/>
+  
+  <Entry key ="D024_APRAKSTS_VAI_SHEMA" value ="$D024.RI('DocumentTurnover')"/>
+  <Entry key ="D024_KONTU_PLANS" value ="$D024.RI('AccountChart')"/>
+  <Entry key ="D024_LIETOSANAS_NOTEIKUMI" value ="$D024.RI('CodeSystem')"/>
+  <Entry key ="D024_GLABASANAS_NOTEIKUMI" value ="$D024.RI('RecordRules')"/>
+  <Entry key ="D024_SAGATAVOSANAS_NOTEIKUMI" value ="$D024.RI('ReportRules')"/>
+  <Entry key ="D024_INSTRUKCIJA" value ="$D024.RI('InventoryInstruction')"/>
+  <Entry key ="D024_KLASIFIKACIJAS_KRITERIJI" value ="$D024.RI('ClassificationCriteria')"/>
+  <Entry key ="D024_KARTIBAS_NOTEIKUMI" value ="$D024.RI('RecourcesRules')"/>
+  <Entry key ="D024_DATORPROGRAMMAS" value ="$D024.RI('Software')"/>
+  <Entry key ="D024_GRAMATVED_PROGRAM" value ="$D024.RI('AccountingSoftware')"/>
+  <Entry key ="D024_GRAMATVED_PROGRAM_KOMENT" value ="$D024.RIN('AccountingSoftwareNotes')"/>
+
+  <Entry key ="D024A" value ="#foreach($D024A in $D024.OI('AccountingSoftwares.ActiveItems'))"/>
+  <Entry key ="D024A_GRAMATVED_PROGRAM_NOS" value ="$D024A.RI('Soft')"/>
+  <Entry key ="D024A_GRAMATVED_PROGRAM_LIC" value ="$D024A.RI('Licence')"/>
+  <Entry key ="D024A_GRAMATVED_PROGRAM_LIC_IZSN" value ="$D024A.RI('LicenceIssuer')"/>
+  <Entry key ="D024A_GRAMATVED_PROGRAM_LIC_NR" value ="$D024A.RI('LicenceNumber')"/>
+  <Entry key ="D024A_GRAMATVED_PROGRAM_LIC_DAT" value ="$D024A.FI('LicenceDate', 'd')"/>
+  
+  <Entry key ="D024_PAPIRA_KOPIJA" value ="$D024.RI('DocumentCopies')"/>
+  <Entry key ="D024_IFORMAC_NES" value ="$D024.RI('ArchieveCarrier')"/>
+  <Entry key ="D024_IZDRUKAS" value ="$D024.RI('ArchivePrintouts')"/>
+  <Entry key ="D024_CITAS_PROGRAMAS" value ="$D024.RI('OtherSoftware')"/>
+
+  <Entry key ="D024B" value ="#foreach($D024B in $D024.OI('AccountingOtherSoftwares.ActiveItems'))"/>
+  <Entry key ="D024B_CITAS_PROGRAM_NOS" value ="$D024B.RI('SoftwareName')"/>
+  <Entry key ="D024B_CITAS_PROGRAM_LIC" value ="$D024B.RI('Licence')"/>
+  <Entry key ="D024B_CITAS_PROGRAM_LIC_IZSN" value ="$D024B.RI('LicenceIssuer')"/>
+  <Entry key ="D024B_CITAS_PROGRAM_LIC_NR" value ="$D024B.RI('LicenceNumber')"/>
+  <Entry key ="D024B_CITAS_PROGRAM_LIC_DAT" value ="$D024B.FI('LicenceDate', 'd')"/>
+  
+  <Entry key ="D024_GALVENA_GRAMATA" value ="$D024.RI('GeneralLedger')"/>
+  <Entry key ="D024_GALVENA_GRAMATA_KOMENT" value ="$D024.RIN('GeneralLedgerNotes')"/>
+  <Entry key ="D024_VIRSGRAMATA" value ="$D024.RI('Journal')"/>
+  <Entry key ="D024_VIRSGRAMATA_KOMENT" value ="$D024.RIN('JournalNotes')"/>
+  <Entry key ="D024_HRONOLOGISKIE_REGISTRI" value ="$D024.RI('ChronologicalRegisters')"/>
+  <Entry key ="D024_HRONOLOGISKIE_REGISTRI_KOMENT" value ="$D024.RIN('ChronologicalRegistersNotes')"/>
+  <Entry key ="D024_ANALITISKA_UZSKAITES_REGISTRI" value ="$D024.RI('AnalyticalRegisters')"/>
+  <Entry key ="D024_ANALITISKA_UZSKAITES_REGISTRI_KOMENT" value ="$D024.RIN('AnalyticalRegistersNotes')"/>
+  <Entry key ="D024_NAUDAS_VIENIBA" value ="$D024.RI('MoneyCountry')"/>
+  <Entry key ="D024_LATVIESU_VALODA" value ="$D024.RI('RegistersLatvian')"/>
+  <Entry key ="D024_DIVKARSA_IERAKSTA_SISTEMA" value ="$D024.RI('DoubleRegisters')"/>
+  <Entry key ="D024_ATTAISNOJUMA_DOKUMENTI" value ="$D024.RI('SourceDocuments')"/>
+  <Entry key ="D024_ATTAISNOJUMA_DOKUMENTI_KOMENT" value ="$D024.RIN('SourceDocumentsNotes')"/>
+  <Entry key ="D024_ATTAISNOJUMA_DOKUMENTU_REKVIZITI" value ="$D024.RI('Requisites')"/>
+  <Entry key ="D024_ATTAISNOJUMA_DOKUMENTU_REKVIZITI_KOMENT" value ="$D024.RIN('RequisitesNotes')"/>
+
+  <Entry key ="D024C" value ="#foreach($D024C in $D024.OI('AccountingDocuments.ActiveItems'))"/>
+  <Entry key ="D024C_ATTAISNOJUMA_DOKUMENTA_NOSAUKUMS" value ="$D024C.RI('GivenRequisite')"/>
+  <Entry key ="D024C_ATTAISNOJUMA_DOKUMENTA_REKVIZITI" value ="$D024C.RI('UngivenRequisite')"/>
+  <Entry key ="D024C_DOK_DATUMS_TEKSTS" value ="$D024C.RI('GivenDate')"/>
+  <Entry key ="D024C_DOK_NR" value ="$D024C.RI('GivenNumber')"/>
+  
+  <Entry key ="D024_IEGRAMATOJUMS_VAI_TA_ATSIFREJUMS" value ="$D024.RI('EletronicEntries')"/>
+  <Entry key ="D024_KARTAS_NUMURS" value ="$D024.RI('OrderNumber')"/>
+  <Entry key ="D024_IERAKSTI_VEIKTI_LAICIGI" value ="$D024.RI('EntriesTimely')"/>
+  <Entry key ="D024_IERAKSTI_PILNIGI" value ="$D024.RI('EntriesComplete')"/>
+  <Entry key ="D024_IERAKSTI_AR_LABOJUMIEM" value ="$D024.RI('SourceDocumentsEditable')"/>
+  <Entry key ="D024_LABOJUMI_ATBILST_NA" value ="$D024.RI('SourceDocumentsCorrect')"/>
+  <Entry key ="D024_KASES_GRAMATA_ATBILSTOSI_NA" value ="$D024.RI('CashBook')"/>
+  <Entry key ="D024_KASES_GRAMATA_ATBILSTOSI_NA_KOMENT" value ="$D024.RIN('CashBookNotes')"/>
+  <Entry key ="D024_KASES_ORDERI_NUMURETI" value ="$D024.RI('IncomeOrdersNumbered')"/>
+  <Entry key ="D024_KASES_ORDERI_NUMURETI_KOMENT" value ="$D024.RIN('IncomeOrdersNumberedNotes')"/>
+  <Entry key ="D024_OBLIGATIE_REKVIZITI" value ="$D024.RI('OrderRequisites')"/>
+  <Entry key ="D024_OBLIGATIE_REKVIZITI_KOMENT" value ="$D024.RIN('OrderRequisitesNotes')"/>
+  <Entry key ="D024_ORDERI_REGISTRETI" value ="$D024.RI('OrdersRegistered')"/>
+  <Entry key ="D024_ORDERI_REGISTRETI_KOMENT" value ="$D024.RIN('OrdersRegisteredNotes')"/>
+  <Entry key ="D024_INVENTARIZAC_SARAKSTI_ATBILST_NA" value ="$D024.RI('InventoryList')"/>
+  <Entry key ="D024_INVENTARIZAC_SARAKSTI_ATBILST_NA_KOMENT" value ="$D024.RIN('InventoryListNotes')"/>
+  <Entry key ="D024_KASIERIS_GRAMATVED_DAZADAS_PERS" value ="$D024.RI('DifferentPersons')"/>
+  <Entry key ="D024_KASIERIS_GRAMATVED_DAZADAS_PERS_KOMENT" value ="$D024.RIN('DifferentPersonsNotes')"/>
+  <Entry key ="D024_PARBAUDES_PERIODS_NO" value ="$D024.FI('PeriodFrom', 'd')"/>
+  <Entry key ="D024_PARBAUDES_PERIODS_LIDZ" value ="$D024.FI('PeriodUntil', 'd')"/>
+  <Entry key ="D024_PIEZIMES" value ="$D024.RI('Notes')"/>
+
+  <!-- D024 end-->
+
+  <!--TP izziņa-->
+  <Entry key ="D54_AKTA_DATUMS" value ="$D54.FI('TIAct.ActDate', 'd')"/>
+  <Entry key ="D54_AKTA_NR" value ="$D54.RI('AnswerTo.DocNumber')"/>
+  <Entry key ="D54_VID_KODS" value ="$D54.RI('SrsDepartment.Code')"/>
+  <Entry key ="D54_PARBAUDES_VIETA_ADRESE" value ="$D54.RI('TIAct.ObjAddress')"/>
+  <Entry key ="D54_PARBAUDES_VIETA_KODS" value ="$D54.RI('ObjectPlace.Code')"/>
+
+  <Entry key ="D54J" value ="#foreach($D54J in $D54.OI('TIAct.ExternalPersons.ActiveItems'))"/>
+  <Entry key ="D54J_PARBAUDI_KODS" value ="$D54J.RI('Organization.Code')"/>
+
+  <Entry key ="D54I" value ="#foreach($D54I in $D54.OI('StatementSpecialMarks.ActiveItems'))"/>
+  <Entry key ="D54I_IPASA_PAZIME_KODS" value ="$D54I.RI('SpecialMark.Code')"/>
+  <Entry key ="D54I_IPASA_PAZIME" value ="$D54I.RI('SpecialMark')"/>
+  
+  <Entry key ="D54A" value ="#foreach($D54A in $D54.OI('StatementViolations.ActiveItems'))"/>
+  <Entry key ="D54A_TEMA_NR" value ="$D54A.RI('Theme.Code')"/>  
+  <Entry key ="D54A_TEMA" value ="$D54A.RI('Theme')"/>
+  <Entry key ="D54B" value ="#foreach($D54B in $D54A.OI('StatementViolationDetails.ActiveItems'))"/>
+  <Entry key ="D54B_PARKAPUMU_KODS" value ="$D54B.RI('ExtArt')"/>
+  <Entry key ="D54A_NAUDAS_SODS" value ="$D54A.FI('Pentality', 'f')"/>
+  <Entry key ="D54A_BRIDINAJUMS" value ="$D54A.BTF('HaltWarning')"/>
+  <Entry key ="D54A_APTURET_SD" value ="$D54A.BTF('HaltStop')"/>
+  <Entry key ="D54A_MAKSAJUMI_BUDZETA" value ="$D54A.RI('Payment')"/>
+  <Entry key ="D54A_SAMAZINATA_SN" value ="$D54A.RI('ReducedPentality')"/>
+
+  <Entry key ="D54C" value ="#foreach($D54C in $D54.OI('StatementPenalties.ActiveItems'))"/>
+  <Entry key ="D54C_TEMA_NR" value ="$D54C.RI('TITheme.Code')"/>
+  <Entry key ="D54C_NMR_KODS" value ="$D54C.RI('EndDecision.RelatedDocumenta.TaxpayerCode')"/>
+  <Entry key ="D54C_NM_NOSAUKUMS" value ="$D54C.RI('EndDecision.RelatedDocumenta.TaxpayerName')"/>
+  <Entry key ="D54D" value ="#foreach($D54D in $D54C.OI('StatementPenaltyRules.ActiveItems'))"/>
+  <Entry key ="D54D_PANTS_DALA" value ="$D54D.RI('Article.Value')"/>
+  <Entry key ="D54D_NAUDAS_SODS" value ="$D54D.FI('Pentalty', 'f')"/>
+  <Entry key ="D54D_KONF" value ="$D54D.BTF('Confiscation')"/>
+  <Entry key ="D54D_LEMUMS" value ="#if($D54D.Final) $D54D.BTF('Final') #end #if($D54D.NeadOtherDecision) $D54D.RI('Point21') #end"/>
+  <Entry key ="D54C_LEMUMA_DATUMS" value ="$D54C.RI('EndDecision.RecordDateShort')"/>
+
+  <Entry key ="D54E" value ="#foreach($D54E in $D54.OI('StatementDecisions.ActiveItems'))"/>
+  <Entry key ="D54E_LEMUMS" value ="$D54E.RI('Decision')"/>
+  <Entry key ="D54E_DATUMS" value ="$D54E.FI('DecisionDate', 'd')"/>
+
+  <Entry key ="D54F" value ="#foreach($D54F in $D54.OI('StatementAfterActions.ActiveItems'))"/>
+  <Entry key ="D54F_KODS" value ="$D54F.RI('AfterAction.Code')"/>
+  <Entry key ="D54F_DARBIBA" value ="$D54F.RI('AfterAction')"/>
+  <Entry key ="D54F_DARBIBS_TERMINS" value ="$D54F.FI('Term', 'd')"/>
+
+  <Entry key ="D54G" value ="#foreach($D54G in $D54.OI('DealPartners.ActiveItems'))"/>
+  <Entry key ="D54G_DARIJUMA_PARTNERA_REG_KODS" value ="$D54G.RI('GenPartnerCode')"/>
+  <Entry key ="D54G_DARIJUMA_PARTNERA_REG_NOSAUKUMS" value ="$D54G.RI('GenPartnerName')"/>
+  <Entry key ="D54G_PARBAUDES_PERIODS_NO" value ="$D54G.FI('PeriodFrom', 'd')"/>
+  <Entry key ="D54G_PARBAUDES_PERIODS_LIDZ" value ="$D54G.FI('PeriodUntil', 'd')"/>
+  <Entry key ="D54G_DARIJUMS_NAV_APSTIPRINAJIES" value ="$D54G.BTF('Approved')"/>
+
+  <Entry key ="D54_PIEZIMES" value ="$D54.RI('Notes')"/>
+  <Entry key ="D54_VEICEJA_PAZIME" value ="$D54.RI('PerformerMark')"/>
+  
+  <Entry key ="D54H" value ="#foreach($D54H in $D54.OI('TIAct.DocumentPerformers.ActiveItems'))"/>
+  <Entry key ="D54H_PARBAUDI_VEICA" value ="$D54H.RI('Performer')"/>
+  <Entry key ="D54H_PARBAUDI_VEICA_AMATS" value ="$D54H.RI('PerformerPosition')"/>
+
+  <Entry key ="D54_AIZPILDISANAS_DATUMS" value ="$D54.FI('FillDate', 'd')"/>
+  <Entry key ="D54_IEVADITA_NIS_DATUMS" value ="$D54.FI('ExternalDate', 'd')"/>
+  <Entry key ="D54_DOK_NR_NIS" value ="$D54.RI('ExternalNumber')"/>
+
+  <!--End TP izziņa-->
+  
+  <!--Kases operācijas-->
+  <Entry key ="D26_KONTROLPIRKUMS" value ="$D26.RI('ControlBuy')"/>
+  <Entry key ="D26_KONTROLPIRKUMS_KOMENT" value ="$D26.RIN('ControlBuyNotes')"/>
+  <Entry key ="D26A" value ="#foreach($D26A in $D26.OI('CashOperationGoods.ActiveItems'))"/>
+  <Entry key ="D26A_PRECES_NOS" value ="$D26A.RI('GoodsName')"/>
+  <Entry key ="D26A_PRECES_SKAITS" value ="$D26A.RI('Amount')"/>
+  <Entry key ="D26A_PRECES_CENA" value ="$D26A.FI('Price', 'f')"/>
+  <Entry key ="D26A_PRECES_SUMMA" value ="$D26A.FI('PriceTotal', 'f')"/>
+
+  <Entry key ="D26_PRECES_SUMMA_KOPA" value ="$D26.FI('PriceTotalSumForReport', 'f')"/>
+  <Entry key ="D26_PVN" value ="$D26.FI('VatSum', 'f')"/>
+  <Entry key ="D26_IEDOTS" value ="$D26.FI('GiveSum', 'f')"/>
+  <Entry key ="D26_IZDOTS" value ="$D26.FI('ServeOutSum', 'f')"/>
+  <Entry key ="D26_REGISTRETS_KASES_APARATA" value ="$D26.RI('CashRegisterForReport')"/>
+  <Entry key ="D26_IZSNIEGTS_CEKS" value ="$D26.RI('CheckIssued')"/>
+  <Entry key ="D26_CEKA_NR" value ="$D26.RI('CheckNumber')"/>
+  <Entry key ="D26_CEKA_SUMMA" value ="$D26.FI('CheckSum', 'f')"/>
+  <Entry key ="D26_IZSNIEGTS_CEKS_KOMENT" value ="$D26.RI('CheckNotes')"/>
+  <Entry key ="D26_CEKA_NORDITI_REKVIZITI" value ="$D26.RI('CheckHaveRequisites')"/>
+  <Entry key ="D26_VAR_IZSNIEGT_KVITI" value ="$D26.RI('CanIssueReceipt')"/>
+ 
+  <Entry key ="D26_CEKA_REKVIZITI" value ="$D26.RI('RequisitesCashRegisterString')"/>
+
+  <Entry key ="D26_REGISTRETS_KVISU_GRAMATINA" value ="$D26.RI('ReceiptBookForReport')"/>
+  <Entry key ="D26_IZSNIEGTA_KVITS" value ="$D26.RI('ReceiptIssued')"/>
+  <Entry key ="D26_KVITS_SERIJA" value ="$D26.RI('ReceiptSeries')"/>
+  <Entry key ="D26_KVITS_NR" value ="$D26.RI('ReceiptNumber')"/>
+  <Entry key ="D26_KVITS_SUMMA" value ="$D26.FI('ReceiptSum', 'f')"/>
+  <Entry key ="D26_IZSNIEGTA_KVITS_KOMENT" value ="$D26.RI('ReceiptNotes')"/>
+  <Entry key ="D26_KVITI_NORADITI_REKVIZITI" value ="$D26.RI('ReceiptHaveRequisites')"/>
+
+  <Entry key ="D26_KVITS_REKVIZITI" value ="$D26.RI('RequisitesReceiptBookString')"/>
+
+  <Entry key ="D26_REGISTRETA_VID" value ="$D26.RI('ReceiptBookRegistered')"/>
+  <Entry key ="D26_REGISTRACIJAS_DATUMS" value ="$D26.FI('ReceiptBookDate', 'd')"/>
+  <Entry key ="D26_SERIJAS_NR" value ="$D26.RI('ReceiptBookSeries')"/>
+  <Entry key ="D26_NUMURS_NO" value ="$D26.RI('ReceiptBookNumbersFrom')"/>
+  <Entry key ="D26_NUMURS_LIDZ" value ="$D26.RI('ReceiptBookNumbersUntil')"/>
+  <Entry key ="D26_KVISU_GRAMATINA_NEREG_KOMENT" value ="$D26.RI('ReceiptBookNotes')"/>
+  <Entry key ="D26_KONTROLPIRKUMS_NAV_REGISTERETS" value ="$D26.RI('NotRegisteredForReport')"/>
+  <Entry key ="D26_KONTROLPIRKUMS_NAV_REGISTERETS_KOMENT" value ="$D26.RI('MoneyNotRegistered')"/>
+  <Entry key ="D26_KONTROLPIRKUMS_ATGRIEZTS" value ="$D26.RI('ControlBuyReturn')"/>
+  <Entry key ="D26_ATGRIEZANAS_CEKA_NR" value ="$D26.RI('ReturnBillNo')"/>
+  <Entry key ="D26_INVENTARIZACIJA" value ="$D26.RI('Inventory')"/>
+  <Entry key ="D26_INVENTARIZACIJA_KOMENT" value ="$D26.RI('InventoryNotes')"/>
+  <Entry key ="D26_EKA_MARKA" value ="$D26.RI('ModelParent')"/>
+  <Entry key ="D26_EKA_MODELIS" value ="$D26.RI('Model')"/>
+  <Entry key ="D26_EKA_SASIJAS_NR" value ="$D26.RI('CashRegisterNumber')"/>
+
+  <Entry key ="D26D" value ="#foreach($D26D in $D26.OI('CashOperationMoneys.ActiveItems'))"/>
+  <Entry key ="D26D_NOSAUKUMS" value ="$D26D.RI('MoneyUnit')"/>
+  <Entry key ="D26D_VERTIBA" value ="$D26D.FI('MoneyValue', 'f')"/>
+  <Entry key ="D26D_DAUDZUMS" value ="$D26D.RI('Count')"/>
+  <Entry key ="D26D_SUMMA" value ="$D26D.FI('Sum', 'f')"/>
+
+  <Entry key ="D26_KOPA" value ="$D26.FI('InventorySum', 'f')"/>
+  <Entry key ="D26_X_PARSKATA_SUMMA" value ="$D26.FI('ReportSum', 'f')"/>
+  <Entry key ="D26_KONSTATETA_SUMMA" value ="$D26.FI('InventorySum', 'f')"/>
+  <Entry key ="D26_IZTRUKUMS" value ="$D26.RI('InventoryDeficit')"/>
+  <Entry key ="D26_PARPALIKUMS" value ="$D26.RI('InventoryOverstock')"/>
+  <Entry key ="D26_PARPALIKUMS_REGISTRETS_EKA" value ="$D26.RI('OverstockRegistered')"/>
+  <Entry key ="D26_PARPALIKUMA_CEKA_NR" value ="$D26.RI('OverstockCheck')"/>
+  <Entry key ="D26_PARPALIKUMS_REGISTRETS_EKA_KOMENT" value ="$D26.RI('OverstockNotes')"/>
+  <Entry key ="D26_REGISTRETS_VID" value ="$D26.RI('PassportRegistered')"/>
+  <Entry key ="D26_EKA_REGISTRACIJAS_DATUMS" value ="$D26.FI('PassportDate', 'd')"/>
+  <Entry key ="D26_EKA_APKALPOSANAS_LIG" value ="$D26.RI('ContractSpecified')"/>
+  <Entry key ="D26_LIGUMA_DATUMS_NO" value ="$D26.FI('ContractDateFrom', 'd')"/>
+  <Entry key ="D26_LIGUMA_DATUMS_LIDZ" value ="$D26.FI('ContractDateUntil', 'd')"/>
+  <Entry key ="D26_DIENESTA_KODS" value ="$D26.RI('ContractTaxpayerCode')"/>
+  <Entry key ="D26_DIENESTA_NOSAUKUMS" value ="$D26.RI('ContractTaxpayerName')"/>
+  <Entry key ="D26_NOLOMBETS" value ="$D26.RI('Sealed')"/>
+  <Entry key ="D26_NENOPLOMBETS_KOMENT" value ="$D26.RI('SealedNotes')"/>
+  <Entry key ="D26_EKA_ZURNALS_UZRADITS" value ="$D26.RI('JournalSpecified')"/>
+  <Entry key ="D26_EKA_ZURNALS_SAGATAVOTS_ELEKTRONISKI" value ="$D26.RI('JournalElectronic')"/>
+  <Entry key ="D26_EKA_ZURNALS_SAGATAVOTS_MANUALI" value ="$D26.RI('JournalManually')"/>
+  <Entry key ="D26_EKA_ZURNALS_AIZPILDITS_PAREIZI" value ="$D26.RI('JournalCorrect')"/>
+
+  <Entry key ="D26_EKA_ZURNALA_REKVIZITI" value ="$D26.RI('RequisitesJournalString')"/>
+  
+  <Entry key ="D26_UZRADITS_Z_PARSKATS" value ="$D26.RI('ReportZSpecified')"/>
+  <Entry key ="D26_Z_PARSKATA_VISI_REKVIZITI" value ="$D26.RI('ReportZRequisites')"/>
+
+  <Entry key ="D26_Z_PARSKATA_REKVIZITI" value ="$D26.RI('RequisitesZReportString')"/>
+  
+  <Entry key ="D26_GRAND_TOTAL_SUMMA" value ="$D26.FI('GrandTotal', 'f')"/>
+  <Entry key ="D26_GRAND_TOTAL_DATUMS" value ="$D26.FI('GrandTotalDate', 'd')"/>
+  <Entry key ="D26_VID_AMATPERS_IERAKSTS_EKA_ZURNALA" value ="$D26.RI('JournalEntryMade')"/>
+  <Entry key ="D26_PIEZIMES" value ="$D26.RI('Notes')"/>
+  <!--End Kases operācijas-->
+
+  <!--SP akta titullapa-->
+  <Entry key ="D13_PARBAUDES_VIETA" value ="$D13.RI('PerformPlaces')"/>
+  <Entry key ="D13_IR_STRUKTURVIENIBA" value ="$D13.RI('IsDepartment')"/>
+  <Entry key ="D13_IR_JURIDISKA_ADRESE" value ="$D13.RI('IsLegalAddress')"/>
+  <Entry key ="D13_IR_CITA_VIETA" value ="$D13.RI('IsOtherPlace')"/>
+  <Entry key ="D13_PIEZIME_KONSTATETS" value ="$D13.RI('Established')"/>
+  <Entry key ="D13_UZRADIJA_APLIECIBU" value ="$D13.RI('DocPresented')"/>
+  <Entry key ="D13_KONSTATETI_PARKAPUMI_JA" value ="$D13.RI('ViolationsDetectedYes')"/>
+  <Entry key ="D13_KONSTATETI_PARKAPUMI_NE" value ="$D13.RI('ViolationsDetectedNo')"/>
+  <Entry key ="D13_NEPIECIESAMA_PAPILDUS_INFO" value ="$D13.RI('NeedMoreInfo')"/>
+  <Entry key ="D13_NMO_STRU_PILSETA" value ="$D13.RI('Location')"/>
+
+  <Entry key ="D13B" value ="#foreach($D13B in $D13.OI('DocumentPerformersAllForReport.ActiveItems'))"/>
+  <Entry key ="D13B_VEIC_AMATS" value ="$D13B.RI('PerformerPosition')"/>
+  <Entry key ="D13B_VEICEJS" value ="$D13B.RI('PerformerFullName')"/>
+  <Entry key ="D13F" value ="#foreach($D13F in $D13.OI('DocumentPerformersForReport.ActiveItems'))"/>
+  <Entry key ="D13F_VEIC_IESTADE" value ="$D13F.RI('Performer.User.Organization')"/>
+  <Entry key ="D13F_VEIC_AMATS" value ="$D13F.RI('PerformerPosition')"/>
+  <Entry key ="D13F_VEICEJS" value ="$D13F.RI('PerformerFullName')"/>
+
+  <Entry key ="D13H" value ="#foreach($D13H in $D13.OI('ExternalPersons.ActiveItems'))"/>
+  <Entry key ="D13H_PIEAIC_PERS_IESTADE" value ="$D13H.RI('Organization')"/>
+  <Entry key ="D13H_PIEAIC_PERS_AMATS" value ="$D13H.RI('Position')"/>
+  <Entry key ="D13H_PIEAIC_PERS" value ="$D13H.RI('Person')"/>
+
+  <Entry key ="D13A" value ="#foreach($D13A in $D13.OI('InvitationDocuments.ActiveItems'))"/>
+  <Entry key ="D13A_DOK_NOSAUKUMS" value ="$D13A.RI('DocumentAndNotes')"/>
+  <Entry key ="D13A_DOK_KOMENTARI" value ="$D13A.RI('Notes')"/>
+
+  <Entry key ="D13C" value ="#foreach($D13C in $D13.OI('TaxpayerMembers.ActiveItems'))"/>
+  <Entry key ="D13C_NM_PARSTAVIS_KODS" value ="$D13C.RI('Code')"/>
+  <Entry key ="D13C_NM_PARSTAVIS" value ="$D13C.RI('Name')"/>
+  <Entry key ="D13C_NM_PARSTAVIS_AMATS" value ="$D13C.RI('Position')"/>
+
+  <Entry key ="D13_STRU_NOSAUKUMS_LOK" value ="$D13.RI('InvSrs.FullNameLoc')"/>
+  <Entry key ="D13_IERASTIES_VID" value ="#if($D13.S('NeedMoreInfo')==true)"/>
+  <Entry key ="D13_IERASTIES_ADRESE" value ="$D13.RI('InvSrs.Address')"/>
+  <Entry key ="D13_IERASTIES_KABINETS" value ="$D13.RI('InvRoom')"/>
+  <Entry key ="D13_IERASTIES_TALRUNIS" value ="$D13.RI('InvPhone')"/>
+  <Entry key ="D13_IERASTIES_PERSONAI" value ="$D13.RI('InvPerson')"/>
+  <Entry key ="D13_IERASTIES_DATUMS_LAIKS" value ="$D13.FI('InvDate', 'd') plkst. $D13.FI('InvDate', 'T')"/>
+
+  <Entry key ="D13_AKTA_SANEMSANAS_DATUMS" value ="$D13.FIN('SignDate', 'd')"/>
+  <Entry key ="D13_AKTA_NODOSANAS_PAZIME_IR" value ="$D13.RI('Delivered')"/>
+  <Entry key ="D13_NM_KOMENTARS_NAV" value ="#if($D13.NotTpAdditionText)"/>
+  <!--End SP akta titullapa-->
+
+  <!--SP akta titullapas noslēgums-->
+  <Entry key ="D14A" value ="#foreach($D14A in $D14.OI('InvitationDocuments.ActiveItems'))"/>
+  <Entry key ="D14A_DOK_NOSAUKUMS" value ="$D14A.RI('Document')"/>
+  <Entry key ="D14A_DOK_UZRADIJA" value ="$D14A.BTF('Presented')"/>
+  <Entry key ="D14A_DOK_NEUZRADIJA" value ="$D14A.BTF('NotPresented')"/>
+  <Entry key ="D14A_DOK_NOVERSTS" value ="$D14A.BTF('ViolationPrevented')"/>
+  <Entry key ="D14A_DOK_KONSTATETS" value ="$D14A.BTF('ViolationNotPrevented')"/>
+  <Entry key ="D14A_DOK_PIEZIMES" value ="$D14A.RI('Notes')"/>
+  <Entry key ="D14B" value ="#set( $x = 0) #set( $y = $D14.RI('TaxpayerMembers.ActiveItemsWithoutEmpty.Count')) #foreach($D14B in $D14.OI('TaxpayerMembers.ActiveItems'))"/>
+  <Entry key ="D14B_NM_PARSTAVIS_KODS" value ="#set( $x = $x +1) $D14B.RI('Code')"/>
+  <Entry key ="D14B_NM_PARSTAVIS" value ="$D14B.RI('Name')"/>
+  <Entry key ="D14B_NM_PARSTAVIS_AMATS" value ="$D14B.RI('Position')"/>
+  <Entry key ="D14B_PERSONU_APLIECINOSS_DOK" value ="$D14B.RI('DocumentPresentedForReport')#if($x==$y).#else;#end"/>
+  <Entry key ="D14B_KOMENTARS" value ="$D14B.RI('Notes')"/>
+  <Entry key ="D14F" value ="#foreach($D14F in $D14.OI('DocumentPerformersForReport.ActiveItems'))"/>
+  <Entry key ="D14F_VEIC_AMATS" value ="$D14F.RI('PerformerPosition')"/>
+  <Entry key ="D14F_VEICEJS" value ="$D14F.RI('PerformerFullName')"/>
+
+  <Entry key ="D14_PIEZIMES" value ="$D14.RI('EndNotes')"/>
+  <Entry key ="D14_KONSTATETI_PARKAPUMI_JA" value ="$D14.RI('ViolationsDetectedYes')"/>
+  <Entry key ="D14_KONSTATETI_PARKAPUMI_NE" value ="$D14.RI('ViolationsDetectedNo')"/>
+  <Entry key ="D14_NEPIECIESAMA_PAPILDUS_INFO" value ="$D14.RI('NeedMoreInfo')"/>
+  <Entry key ="D14_AKTA_SANEMSANA_DATUMS" value ="$D14.FIN('SignDate', 'd')"/>
+  <Entry key ="D14_IERASTIES_VID" value ="#if($D14.S('NeedMoreInfo')==true)"/>
+  <Entry key ="D14_IERASTIES_PERSONAI" value ="$D14.RI('InvPerson')"/>
+  <Entry key ="D14_IERASTIES_NOSAUKUMS" value ="$D14.RI('InvSrs.FullNameLoc')"/>
+  <Entry key ="D14_IERASTIES_ADRESE" value ="$D14.RI('InvSrs.Address')"/>
+  <Entry key ="D14_IERASTIES_KABINETS" value ="$D14.RI('InvRoom')"/>
+  <Entry key ="D14_IERASTIES_TALRUNIS" value ="$D14.RI('InvPhone')"/>
+  <Entry key ="D14_IERASTIES_DAT" value ="$D14.FI('InvDate', 'd')"/>
+  <Entry key ="D14_IERASTIES_LAIKS" value ="$D14.FI('InvDate', 't')"/>
+  <!--End SP akta titullapas noslēgums-->
+
+  <!--begin Sarakstes dokumenti-->
+  <Entry key ="D60_SANEMEJS" value ="$D60.RI('RecipientName')"/>
+  <Entry key ="D60_SANEMEJA_ADRESE" value ="$D60.RI('RecipientAddress')"/>
+  <!--end Sarakstes dokumenti-->
+
+  <!--begin Informācija par darba devēju-->
+  <Entry key ="D62_PRODUKCIJAS_APJOMS" value ="$D62.RI('VolumeOfProduction')"/>
+  <Entry key ="D62_IR_MAINAS" value ="$D62.RI('Shift')"/>
+  <Entry key ="D62_MAINAS_SKAITS" value ="$D62.RI('ShiftCount')"/>
+  <Entry key ="D62_PIRMAJA_MAINA" value ="$D62.RI('FirstShiftCount')"/>
+  <Entry key ="D62_OTRAJA_MAINA" value ="$D62.RI('SecondShiftCount')"/>
+  <Entry key ="D62_NAKTS_MAINA" value ="$D62.RI('NightShiftCount')"/>
+  <Entry key ="D62_IR_LAIKA_TABELES" value ="$D62.RI('WorktimeRegistration')"/>
+  <Entry key ="D62_ARPUS_DARBA_LAIKA" value ="$D62.RI('Overtime')"/>
+  <Entry key ="D62_ATSPOGULOTS_TABELE" value ="$D62.RI('OvertimeRegistered')"/>
+  <Entry key ="D62_ATRODAS_OBJEKTA" value ="$D62.RI('ShowRegistration')"/>
+  <Entry key ="D62_NM_LUGT_PASKAIDROJUMU" value ="$D62.RI('ProcessExplanation')"/>
+  <Entry key ="D62_PIEVIENOTS_TP_AKTAM" value ="$D62.RI('ExplanationAddedTIAct')"/>
+  <Entry key ="D62_SKATITS_ZURNALS" value ="$D62.RI('ShowWorkSafetyJournal')"/>
+  <Entry key ="D62_IR_NEREGISTRETI_DARBINIEKI" value ="$D62.RI('EmployeeNotinJournal')"/>
+  <Entry key ="D62_DARBINIEKU_VARDS_UZVARDS" value ="#if($D62.IsNonRegistered), $D62.RI('ListOfEmployees')#end"/>
+  <Entry key ="D62_IR_KOPLIGUMS" value ="$D62.RI('CollectiveAgreement')"/>
+  <Entry key ="D62_PIEZIMES" value ="$D62.RI('AgreementNotes')"/>
+
+  <Entry key ="D62A" value ="#foreach($D62A in $D62.OI('InfoAboutEmployerProductionMachines.ActiveItems'))"/>
+  <Entry key ="D62A_IEKARTAS_NOSAUKUMS" value ="$D62A.RI('Name')"/>
+  <Entry key ="D62A_IZMANTO_RAZOSANAS" value ="$D62A.RI('ProductionUse')"/>
+  <Entry key ="D62A_DARBINIEKU_SKAITS" value ="$D62A.RI('StaffCount')"/>
+  <Entry key ="D62A_IEKARTAS_JAUDA" value ="$D62A.RI('Power')"/>
+  <Entry key ="D62A_STUNDU_NODARBINATA" value ="$D62A.RI('WorkTime')"/>
+  <Entry key ="D62A_PIEZIMES" value ="$D62A.RI('Notes')"/>
+  <!--end Informācija par darba devēju-->
+
+</aliases>
+

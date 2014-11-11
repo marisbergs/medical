@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+  <tpb_izzina_list xmlns="http://tempuri.org/TPB_IZZINA.xsd">
+    <tpb_izzina>
+    <guid>$this.S('CMCase.Id')</guid>
+    <numurs>$this.S('TIAct.DocNumber')</numurs>
+    <nmr_kods>$this.S('CMCase.TaxpayerCode')</nmr_kods>
+    <datums_parb>$this.D('TIAct.ActDate')</datums_parb>
+    <datums_izz>$this.D('FillDate')</datums_izz>
+    <id_vidparb>$this.S('CMCase.SrsDepartment.GetCMCaseExternalId')</id_vidparb>
+    <id_vidlemum>$this.S('DMS.GetCMCaseExternalId')</id_vidlemum>
+    <!--#if($this.Com)-->
+    <koment>$this.S('Notes')</koment>
+    <!--#end-->
+    <kont_park>$this.S('IsViol')</kont_park>
+    <id_adrese>$this.S('Addr')</id_adrese>
+    <id_tpbdarbk>$this.S('ObjectPlace.ExternalID')</id_tpbdarbk>
+    <!--#if($this.IsReason)-->
+    <id_tpbiemesls>$this.S('CMCase.Reason.ExternalID')</id_tpbiemesls>
+    <!--#end-->
+    <id_tpbveiceji>$this.S('PerformerMark.ExternalID')</id_tpbveiceji>
+    <!--#if($this.S('Addr')=="-1")-->
+    <adrese>
+      <id_pilspag>$this.S('Atvk.ExternalID')</id_pilspag>
+      <teksts>$this.S('Adres')</teksts>
+      <adresveids>$this.S('AdrType')</adresveids>
+    </adrese>
+    <!--#end-->
+    <planots>$this.S('CMCases.PlannedForStatement')</planots>
+    <!--#foreach($a in $this.TIAct.DocumentPerformersForReport)-->
+    <tpb_viddarb>
+      <id_viddarbin>$a.S('Performer.User.ExternalId')</id_viddarbin>
+    </tpb_viddarb>
+    <!--#end-->
+      <!--#foreach($a in $this.SD)-->
+    <tpb_lemumi>
+      <id_tpblemkods>$a.S('Decision.ExternalID')</id_tpblemkods>
+      <datums>$a.D('DecisionDate')</datums>
+    </tpb_lemumi>
+      <!--#end-->
+    <!--#foreach($a in $this.TIAct.ExternalPersons.ActiveItemsWithoutEmpty)-->
+    <tpb_parbiest>
+      <id_parbiestade>$a.S('Organization.ExternalID')</id_parbiestade>
+      <id_vidnod>-1</id_vidnod>
+    </tpb_parbiest>
+    <!--#end-->
+    <!--#foreach($a in $this.SSM)-->
+    <tpb_parbpaz>
+      <id_tpbpazime>$a.S('SpecialMark.ExternalID')</id_tpbpazime>
+    </tpb_parbpaz>
+    <!--#end-->
+    <!--#foreach($a in $this.SAA)-->
+    <tpb_parbpectp>
+      <id_tpbpectp>$a.S('AfterAction.ExternalID')</id_tpbpectp>
+      <datums_lidz>$a.D('Term')</datums_lidz>
+    </tpb_parbpectp>
+    <!--#end-->
+    <!--#foreach($a in $this.SV)-->
+    <tpb_parbtem>
+      <id_tpbtema>$a.S('Theme.ExternalID')</id_tpbtema>
+      <!--#if($a.P)-->
+      <adm_summa>$a.N('Pentality')</adm_summa>
+      <!--#end-->
+      <!--#if($a.Pa)-->
+      <budz_summa>$a.N('Payment')</budz_summa>
+      <!--#end-->
+      <!--#if($a.HS)-->
+      <saimn_aptur>$a.S('HaltStr')</saimn_aptur>
+      <!--#end-->
+      <!--#if($a.S)-->
+      <sods_maz33p>$a.S('ReducedPentality')</sods_maz33p>
+      <!--#end-->  
+      <!--#if($a.Sa)-->
+      <budz_sumk>$a.N('Summ')</budz_sumk>
+      <!--#end-->
+      <!--#if($this.ND)-->
+      <!--#foreach($b in $a.SVD)-->
+      <tpb_parbkods>
+        <id_tpbpkods>$b.S('ExtViol.ExternalID')</id_tpbpkods>
+      </tpb_parbkods>
+      <!--#end-->
+      <!--#end-->
+      <!--#if($this.Need($a.Theme))-->
+      <!--#foreach($b in $this.DPB($a.Theme))-->
+      <tpb_parbpartn>
+        <nmr_kods>$b.S('PartnerCode')</nmr_kods>
+        <koment>$b.S('Comment')</koment>
+        <datums_no>$b.D('PeriodFrom')</datums_no>
+        <datums_lidz>$b.D('PeriodUntil')</datums_lidz>
+        <apstiprinats>$b.FT('Approved')</apstiprinats>
+        <nm_koment>$b.S('Identifaier')</nm_koment>
+      </tpb_parbpartn>
+      <!--#end-->
+      <!--#end-->
+      <!--#foreach($b in $this.SP)-->
+      <!--#if($b.TITheme.S('Id')==$a.Theme.S('Id'))-->      
+      <tpb_admsods>
+        <nmr_kods>$b.S('Co')</nmr_kods>
+        <summa>$b.N('Pentalty')</summa>
+        <maks_term>$b.D('PayTerm')</maks_term>
+        <id_normapants>$b.S('EndDecision.FinalResponsible.Article.ExternalID')</id_normapants>
+        <lemuma_dat>$b.D('EndDecision.DocDate')</lemuma_dat>
+        <!--#foreach($c in $b.SPR)-->
+        <tpb_admkonst>
+          <id_normapants>$c.S('Article.ExternalID')</id_normapants>
+          <id_tpbadmlem>$b.S('Fin')</id_tpbadmlem>
+          <summa>$c.N('Pe')</summa>
+          <id_tpbtema>$a.S('Theme.ExternalID')</id_tpbtema>
+          <konfiskacija>$b.FT('Conf')</konfiskacija>
+        </tpb_admkonst>
+        <!--#end-->
+      </tpb_admsods>
+      <!--#end-->
+      <!--#end-->
+    </tpb_parbtem>
+    <!--#end-->
+  </tpb_izzina>
+</tpb_izzina_list>

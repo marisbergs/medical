@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.CampaignPatient, Entities" table="[CampaignPatients]" dynamic-update="true">
+    
+    <id name="Id" column="CUI_ID"><generator class="guid.comb" /></id>	  
+    <property name="DeleteTime" column="CUI__DELETE_TIME" />
+    <property name="Campaign" column="CUI_CAMPAIGN_ID" />
+    <property name="Patient" column="CUI_PATIENT_ID" />
+	  <property name="ValidFrom" column="CUI_VALID_FROM" />
+	  <property name="ValidTo" column="CUI_VALID_TO" />
+	  <property name="Discount" column="CUI_DISCOUNT" />
+	  <property name="CampaignValue" column="CUI_CAMPAIGN_VALUE" />
+	  <property name="Comment" column="CUI_COMMENT" />
+    <property name="CreateDate" column="CUI_CREATE_DATE" />
+    <property name="CreateUser" column="CUI_CREATE_USER_ID" />
+  </class>
+</hibernate-mapping>

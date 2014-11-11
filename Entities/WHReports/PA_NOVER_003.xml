@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<PA_NOVER_003>
+  <Pamatdati>
+    <vidtin_kods>$this.S('CMCase.SrsDepartment.Department.Code')</vidtin_kods>
+    <akta_numurs>$this.S('DocNumber')</akta_numurs>
+    <akta_datums>$this.D('DocDate')</akta_datums>
+    <kp_veids>$this.S('CaseType.ExternalID')</kp_veids>
+    <nmr_kods>$this.S('CMCase.TaxpayerCode')</nmr_kods>
+    <adrese>$this.S('ObjAddress')</adrese>
+  </Pamatdati>
+  <Saturs>
+    <darbinieku_skaits>$this.S('EAAct_3.EmployeeCount')</darbinieku_skaits>
+    <ienemumi>$this.S('DayIncome')</ienemumi>
+    <uzsaksanas_datums>$this.S('DateFrom')</uzsaksanas_datums>
+    <ienemumi_kpa>$this.S('IncomeTotal')</ienemumi_kpa>
+  </Saturs>
+</PA_NOVER_003>

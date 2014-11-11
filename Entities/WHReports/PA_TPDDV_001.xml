@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<PA_TPDDV_001>
+  <Pamatdati>
+    <vidtin_kods>$this.S('CMCase.SrsDepartment.Department.Code')</vidtin_kods>
+    <akta_numurs>$this.S('CMCase.TIAct.DocNumber')</akta_numurs>
+    <akta_datums>$this.D('CMCase.TIAct.ActDate')</akta_datums>
+    <kp_veids>$this.S('CMCase.TIAct.CaseType.ExternalID')</kp_veids>
+    <nmr_kods>$this.S('CMCase.TaxpayerCode')</nmr_kods>
+    <adrese>$this.S('CMCase.TIAct.ObjAddress')</adrese>
+  </Pamatdati>
+  <!--#if($this.Employees.ActiveItems.Count>0)-->
+  <!--#foreach($a in $this.Employees.ActiveItems)-->
+  <Saturs>
+    <personas_kods>$a.S('Code')</personas_kods>
+    <pienemsanas_datums>$a.D('From')</pienemsanas_datums>
+    <termins_lidz>$a.D('Until')</termins_lidz>
+    <nav_liiguma>$a.FT('NoContract')</nav_liiguma>
+    <stundas_menesi>$a.N('Hours')</stundas_menesi>
+    <samaksas_veids>$a.S('Payment')</samaksas_veids>
+    <samaksas_summa>$a.N('Sum')</samaksas_summa>
+  </Saturs>
+  <!--#end-->
+  <!--#end-->
+</PA_TPDDV_001>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.DocFileHistory, Entities" table="[DocFileHistory]" dynamic-update="true">
+
+    <id name="Id" column="DFH_ID">
+      <generator class="guid.comb"/>
+    </id>
+
+    <!-- Common fields for optimistic locking and data synchronization -->
+    <property name="DeleteTime" column="DFH__DELETE_TIME" />
+    <!-- . -->
+
+    <property name="CreationDate" column="DFH_CREATION_DATE" not-null="true"/>
+    <property name="VersionNumber" column="DFH_VERSION_NUMBER" not-null="true"/>
+
+    <many-to-one name="Document" column="DFH_DOCUMENT_ID" not-null="true" fetch="join"/>
+    <many-to-one name="File" column="DFH_FILE_ID" not-null="true" fetch="join" cascade ="all-delete-orphan"/>
+    <many-to-one name="Creator" column="DFH_CREATOR_ID" not-null="true" fetch="join"/>
+  </class>
+</hibernate-mapping>

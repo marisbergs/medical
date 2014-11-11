@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.PatientProfileDescription, Entities" table="[PatientProfileDetails]" dynamic-update="true">
+    
+    <id name="Id" column="PPD_ID"><generator class="guid.comb" /></id>	  
+	<property name="DeleteTime" column="PPD__DELETE_TIME" />
+    <many-to-one name="Patient" column="PPD_PATIENT_ID" fetch="join"/>
+    <many-to-one name="Profile" column="PPD_PROFILE_ID" fetch="join"/>
+    <property name="Number" column="PPD_NUMBER" />
+    <property name="BeginDate" column="PPD_BEGIN_DATE" />
+    <property name="EndDate" column="PPD_END_DATE" />
+    <property name="Price" column="PPD_PRICE" />
+    <property name="Count" column="PPD_SERVICE_COUNT" />
+    <property name="PayDate" column="PPD_PAY_DATE" />
+    <property name="PaymentAcceptedByUser" column="PPD_PAYMENT_ACCEPT" />
+    <property name="CreateDate" column="PPD_CREATE_DATE" />
+    <property name="CreateUser" column="PPD_CREATE_USER" />
+
+    <bag name="FreeService" table="[PatientProfileDescriptionServices]"
+			  access="property" generic="true" inverse="true"
+				cascade="all-delete-orphan" lazy="true" where="PAS_FREE_GROUP=1"
+				collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.PatientProfileDescriptionService, Entities]], Core">
+      <key column="PAS_PATIENT_PROFILE_DESCRIPTION_ID" />
+      <one-to-many class="Entities.PatientProfileDescriptionService, Entities" />
+    </bag>
+    <bag name="DiscountService" table="[PatientProfileDescriptionServices]"
+			  access="property" generic="true" inverse="true"
+				cascade="all-delete-orphan" lazy="true" where="PAS_FREE_GROUP=0"
+				collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.PatientProfileDescriptionService, Entities]], Core">
+      <key column="PAS_PATIENT_PROFILE_DESCRIPTION_ID" />
+      <one-to-many class="Entities.PatientProfileDescriptionService, Entities" />
+    </bag>
+  </class>
+</hibernate-mapping>

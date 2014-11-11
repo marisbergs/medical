@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Entities.CMCase">
+    <Position X="0.5" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>CMCase.vb</FileName>
+      <HashCode>IETAJQAEEAKBCEAJCFBAIAEYgM6UIEIAgACFYEBk0AA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TcdPlan" />
+    </ShowAsAssociation>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="Entities.TcdPlan">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TcdPlan.vb</FileName>
+      <HashCode>AAgAIAAAAAAAAAAAAEAACAAIAAABAAgBEQAAAABEAAg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.StatusChange" Collapsed="true">
+    <Position X="6" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>StatusChange.vb</FileName>
+      <HashCode>AAAgAAAEAAAAAAAAAAAAAAAAAAABAAAAAAAAAABAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.Activity">
+    <Position X="3.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Activity.vb</FileName>
+      <HashCode>AAAgAAAAIAAAAAAIAAAAAAAAAAAAABAAAQAABAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Resources" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Entities.Resource">
+    <Position X="6.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Resource.vb</FileName>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.Performer" Collapsed="true">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Performer.vb</FileName>
+      <HashCode>AAABAAAAAAAAAAAAAAQAAAABAABAABAAAAAAAEBEAAg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.BinaryFile" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BinaryFile.vb</FileName>
+      <HashCode>AAAAIgAAAgAAAAABAAAAAAQAAAAAAAAAAAAAAAAABAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="Entities.DocOwnerHistory" Collapsed="true">
+    <Position X="6" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>DocOwnerHistory.vb</FileName>
+      <HashCode>AAAAAACABAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.DocStatusHistory" Collapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>DocStatusHistory.vb</FileName>
+      <HashCode>AAAAAAAEABAAAAAAAAAAAAAAAAAAAAACAAEAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.DocFileHistory" Collapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>DocFileHistory.vb</FileName>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAEAAACEAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.CMCaseTheme">
+    <Position X="4" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>CMCaseTheme.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.User" Collapsed="true">
+    <Position X="3.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>User.vb</FileName>
+      <HashCode>AgGABkQAAKgBAAAkkDEAJECCAAhBAAIBBABBpIBAIBk=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Entities.CaseStatus" Collapsed="true">
+    <Position X="6" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>CaseStatus.vb</FileName>
+      <HashCode>AIAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAEQgAAIA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Entities.EntityType" Collapsed="true">
+    <Position X="4.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EntityType.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+</ClassDiagram>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.ProgrammTemplateService, Entities" table="[ProgrammsTemplatesServices]" dynamic-update="true">
+    
+    <id name="Id" column="PTS_ID"><generator class="guid.comb" /></id>	  
+	  <property name="DeleteTime" column="PTS__DELETE_TIME" />
+	  <many-to-one name="ProgrammTemplate" column="PTS_PROGRAMM_TEMPLATE_ID" fetch ="select"/>
+    <many-to-one name="Service" column="PTS_SERVICE_ID" fetch ="join" />
+    <property name="Count" column="PTS_SERVICE_COUNT" />
+    <property name="Price" column="PTS_PRICE" />
+    <property name="PaymentGroup" column="PTS_USE_AS_PAYMENT_SERVICE" />
+
+  </class>
+</hibernate-mapping>

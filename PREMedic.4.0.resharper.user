@@ -1,0 +1,99 @@
+<Configuration>
+  <UnitTestRunner>
+    <CustomStartDirectory>
+    </CustomStartDirectory>
+    <UseShadowCopy>True</UseShadowCopy>
+    <UseCustomFolder>False</UseCustomFolder>
+    <EnableUnitTesting>True</EnableUnitTesting>
+    <Providers />
+  </UnitTestRunner>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/d:SearchObjects/f:FindActivity.vb" caret="348" scrollPosition="0|0" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/d:SearchObjects/f:FindSubscription.vb" caret="2919" scrollPosition="0|0" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/d:Mappings/f:Subscription.hbm.xml" caret="1277" scrollPosition="0|0" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/f:frmSubscriptionDetail.Designer.vb" caret="746" scrollPosition="0|0" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/f:frmMain.vb" caret="21083" scrollPosition="0|0" />
+      <File id="DB11FF75-F34E-4194-A7B3-2DFADB5F1D06/d:UI/f:frmBase.cs" caret="3005" scrollPosition="0|0" />
+      <File id="DB11FF75-F34E-4194-A7B3-2DFADB5F1D06/d:UI/f:CoreGrid.cs" caret="11097" scrollPosition="0|0" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Search Controls/f:ctlFind.vb" caret="2818" scrollPosition="0|0" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Localization/f:Dictionary.xml" caret="23948" scrollPosition="0|0" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Search Controls/f:ctlSubscriptionFind.vb" caret="325" scrollPosition="0|0" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/d:SearchObjects/f:ClassifierFind.vb" caret="8901" scrollPosition="0|0" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/d:Classifiers/f:Classifier.vb" caret="380" scrollPosition="0|0" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Atbalsta Procesi/f:frmActivityEdit.vb" caret="566" scrollPosition="0|0" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Atbalsta Procesi/f:frmActivity.vb" caret="960" scrollPosition="0|0" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/f:frmSubscription.vb" caret="3331" scrollPosition="0|63" />
+      <File id="DB11FF75-F34E-4194-A7B3-2DFADB5F1D06/d:UI/f:MsgBox.cs" caret="8315" scrollPosition="0|0" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/f:SubscriptionDetail.vb" caret="603" scrollPosition="0|25" />
+      <File id="DB11FF75-F34E-4194-A7B3-2DFADB5F1D06/d:DataAccessLayer/d:Impl/f:Session.cs" caret="28218" scrollPosition="0|0" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/f:hibernate.central.cfg.xml" caret="496" scrollPosition="0|0" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/f:Subscription.vb" caret="433" scrollPosition="0|0" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Universalais Klasifikators/f:frmClassifierList.vb" caret="7268" scrollPosition="0|0" />
+      <File id="DB11FF75-F34E-4194-A7B3-2DFADB5F1D06/f:hibernate.debug.central.cfg.xml" caret="484" scrollPosition="0|0" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/d:Mappings/f:SubscriptionDetail.hbm.xml" caret="589" scrollPosition="0|0" />
+      <File id="DB11FF75-F34E-4194-A7B3-2DFADB5F1D06/d:BusinessObjectsBase/f:Entities.cs" caret="3250" scrollPosition="16|87" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/f:VisitService.vb" caret="67" scrollPosition="0|36" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/f:Visit.vb" caret="15765" scrollPosition="0|510" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/f:frmSubscriptionDetail.vb" caret="8919" scrollPosition="0|181" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/f:frmPatientVisitList.vb" caret="513" scrollPosition="0|1" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/d:Mappings/f:Patient.hbm.xml" caret="3575" scrollPosition="0|39" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/f:Patient.vb" caret="0" scrollPosition="0|0" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/f:SubscriptionDetail.vb" caret="603" scrollPosition="0|25" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/f:frmSubscriptionDetail.vb" caret="9782" scrollPosition="0|149" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/f:frmSubscriptionDetail.vb" caret="7542" scrollPosition="0|157" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/f:frmSubscriptionDetail.vb" caret="8551" scrollPosition="0|165" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/f:frmSubscriptionDetail.vb" caret="8130" scrollPosition="0|174" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/f:frmSubscriptionDetail.vb" caret="8695" scrollPosition="0|166" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/f:hibernate.central.cfg.xml" caret="496" scrollPosition="41|0" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/f:Subscription.vb" caret="392" scrollPosition="0|0" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/f:frmSubscriptionDetail.vb" caret="780" scrollPosition="0|8" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/f:frmSubscriptionDetail.vb" caret="1040" scrollPosition="0|8" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Universalais Klasifikators/f:frmClassifierList.vb" caret="27617" scrollPosition="0|357" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Universalais Klasifikators/f:frmClassifierList.vb" caret="28234" scrollPosition="0|366" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Universalais Klasifikators/f:frmClassifierList.vb" caret="6246" scrollPosition="0|93" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Universalais Klasifikators/f:frmClassifierList.vb" caret="6894" scrollPosition="0|108" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Universalais Klasifikators/f:frmClassifierList.vb" caret="5600" scrollPosition="0|96" />
+      <File id="DB11FF75-F34E-4194-A7B3-2DFADB5F1D06/f:hibernate.debug.central.cfg.xml" caret="484" scrollPosition="58|0" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/d:Universalais Klasifikators/f:frmClassifierList.vb" caret="7268" scrollPosition="0|123" />
+      <File id="DB11FF75-F34E-4194-A7B3-2DFADB5F1D06/d:BusinessObjectsBase/f:Entities.cs" caret="3250" scrollPosition="16|87" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/f:frmPatientVisitList.vb" caret="794" scrollPosition="0|0" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/f:frmPatientVisitList.vb" caret="1140" scrollPosition="0|17" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/f:frmPatientVisitList.vb" caret="81" scrollPosition="0|0" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/f:frmPatientVisitList.vb" caret="1400" scrollPosition="0|21" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/f:frmSubscriptionDetail.vb" caret="9314" scrollPosition="0|192" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/f:frmSubscriptionDetail.vb" caret="9618" scrollPosition="0|195" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/f:frmSubscriptionDetail.vb" caret="8919" scrollPosition="0|181" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/f:frmPatientVisitList.vb" caret="733" scrollPosition="66|10" />
+      <File id="2480A2EC-8686-4902-9B8B-421D83485299/f:frmPatientVisitList.vb" caret="412" scrollPosition="0|10" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/d:Mappings/f:Patient.hbm.xml" caret="3575" scrollPosition="0|39" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/f:Patient.vb" caret="2633" scrollPosition="0|48" />
+      <File id="BB62071A-98D4-44D7-BAD2-1BAA19D9DB4F/f:Patient.vb" caret="2903" scrollPosition="0|48" />
+    </RecentEdits>
+  </RecentFiles>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+      <setting name="UseSolutionBuilder">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="PresentCardState.Izveidota" priority="0" />
+      <Item value="PresentCardState.Nopirkta" priority="0" />
+      <Item value="Application" priority="0" />
+      <Item value="Run" priority="0" />
+      <Item value="Exists" priority="0" />
+      <Item value="fileName" priority="0" />
+      <Item value="SmsSendStatus.InvalidPhone" priority="0" />
+      <Item value="SmsSendStatus.NotSent" priority="1" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.PresentCard, Entities" table="[PresentCards]" dynamic-update="true">
+    
+    <id name="Id" column="PRC_ID"><generator class="guid.comb" /></id>	  
+	<property name="DeleteTime" column="PRC__DELETE_TIME" />
+	  <many-to-one name="Service" column="PRC_SERVICE_ID" fetch="join"/>
+      <property name="PayDate" column="PRC_BAY_DATE" />
+	  <property name="Number" column="PRC_NUMBER" />
+	  <property name="Price" column="PRC_PRICE" />
+	  <component name="Status">
+		  <property name="Value" column="PRC_STATE" access="property"/>
+	  </component>
+
+
+	  <bag name="VisitServices" table="[VisitsServices]"
+			  access="property" generic="true" inverse="true"
+				cascade="all-delete-orphan" lazy="false" outer-join ="true"
+				collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.VisitService, Entities]], Core">
+		  <key column="VSS_PRESENT_CARD_ID" />
+		  <one-to-many class="Entities.VisitService, Entities" />
+	  </bag>
+  </class>
+</hibernate-mapping>

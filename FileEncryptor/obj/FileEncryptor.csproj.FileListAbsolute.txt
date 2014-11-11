@@ -1,0 +1,8 @@
+D:\PRA\PRA\FileEncryptor\bin\Debug\FileEncryptor.exe
+D:\PRA\PRA\FileEncryptor\bin\Debug\FileEncryptor.pdb
+D:\PRA\PRA\FileEncryptor\obj\Debug\ResolveAssemblyReference.cache
+D:\PRA\PRA\FileEncryptor\obj\Debug\FileEncryptor.Form1.resources
+D:\PRA\PRA\FileEncryptor\obj\Debug\FileEncryptor.Properties.Resources.resources
+D:\PRA\PRA\FileEncryptor\obj\Debug\FileEncryptor.csproj.GenerateResource.Cache
+D:\PRA\PRA\FileEncryptor\obj\Debug\FileEncryptor.exe
+D:\PRA\PRA\FileEncryptor\obj\Debug\FileEncryptor.pdb

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-access="nosetter.camelcase-underscore" default-lazy="true">
+  <class name="Entities.PatientCommercInformation, Entities" table="[PatientCommercInformation]" dynamic-update="true">
+    
+    <id name="Id" column="PCI_ID"><generator class="guid.comb" /></id>
+	  
+	  <property name="DeleteTime" column="PCI__DELETE_TIME" />
+	  <property name="Patient" column="PCI_PATIENT_ID"/>
+	  <property name="Name" column="PCI_NAME"/>
+	  <property name="User" column="PCI_USER_ID" />
+	  <property name="GivDate" column="PCI_DATE" />
+	  <property name="Notes" column="PCI_NOTES" />
+  </class>
+</hibernate-mapping>

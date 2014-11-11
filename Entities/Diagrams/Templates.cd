@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Entities.BinaryFile">
+    <Position X="3" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BinaryFile.vb</FileName>
+      <HashCode>AAAAIgAAAgAAAAABAAAAAAQAAAAAAAAAAAAAAAAADAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="FileType" />
+      <Property Name="Content" />
+    </ShowAsAssociation>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="Entities.BinaryContent">
+    <Position X="5.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BinaryFile.vb</FileName>
+      <HashCode>AAACACAgAIAAAAAAAABAAAAAAAAAAAAAAAAAAABAQAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="Entities.TemplateFileVersion">
+    <Position X="2.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TemplateFileVersion.vb</FileName>
+      <HashCode>AAAAEAAEEEAAAECAAAAAQAAAAAAEAABAICAAAAAAGAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Template" />
+      <Property Name="File" />
+    </ShowAsAssociation>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Entities.Template">
+    <Position X="5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Template.vb</FileName>
+      <HashCode>AAQAMMBBAAAgAAQUAAAgAEQAAAQAAAhAISABAAAgHIA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Type" />
+    </ShowAsAssociation>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="Entities.TemplateSignatory">
+    <Position X="6.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TemplateSignatory.vb</FileName>
+      <HashCode>AAAAEAAAAEAAAACgAAAAQAAAAAAAAABAICAAgAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Template" />
+      <Property Name="Position" />
+    </ShowAsAssociation>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Entities.Position" Collapsed="true">
+    <Position X="9.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Classifiers\ClassifierWithCode.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.TemplateType" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Classifiers\TemplateType.vb</FileName>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Enum Name="Entities.BinaryFileType" Collapsed="true">
+    <Position X="0.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BinaryFile.vb</FileName>
+      <HashCode>BAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+</ClassDiagram>
