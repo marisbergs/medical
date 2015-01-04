@@ -32,6 +32,26 @@ Icon
 # Thumbnails
 ._*
 
+#Ignore files build by Visual Studio
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.bak
+*.cache
+*.ilk
+*.log
+[Bb]in
+[Dd]ebug*/
+*.sbr
+obj/
+[Rr]elease*/
+_ReSharper*/
+
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
@@ -45,3 +65,5 @@ Temporary Items
 /_ReSharper.PREMedic/
 /_ReSharper.PreMedicScheduler/
 /_UpgradeReport_Files/
+bin/
+obj/
