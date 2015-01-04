@@ -87,6 +87,15 @@
     <subclass name ="Entities.PatientType, Entities" discriminator-value ="PatientType" />
     <subclass name ="Entities.Profile, Entities" discriminator-value ="Profile" />
     <subclass name ="Entities.Assignment, Entities" discriminator-value ="Assignment" />
+    <subclass name ="Entities.BloodTestGroup, Entities" discriminator-value ="BloodTestGroup">
+      <bag name="BloodTests" table="Classifiers"
+             access="property" generic="true" lazy="false"
+             collection-type="Core.Dal.Impl.ChildCollectionType`1[[Entities.BloodTest, Entities]], Core">
+        <key column="CLS_REFERENCE_ID"/>
+        <many-to-many column="CLS_ID" class="Entities.BloodTest, Entities" fetch="join" />
+      </bag>
+    </subclass>
+    <subclass name ="Entities.BloodTest, Entities" discriminator-value ="BloodTest" />
 
 	  <subclass name="Entities.Statuss, Entities" discriminator-value="Statuss">
 		  <bag name="Status" table="StatusStatus"

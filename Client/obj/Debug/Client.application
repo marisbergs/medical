@@ -11,14 +11,14 @@
     <deploymentProvider codebase="file://192.168.1.246/Application/Client.application" />
   </deployment>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Client.exe.manifest" size="16091">
+    <dependentAssembly dependencyType="install" codebase="Client.exe.manifest" size="17359">
       <assemblyIdentity name="Client.exe" version="1.0.0.246" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>3gw2BxsxOAMhkJ3k8Cp+LdqJTkw=</dsig:DigestValue>
+        <dsig:DigestValue>jpRKyPz2E5GbI9U5Gh9ckJQOEdc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

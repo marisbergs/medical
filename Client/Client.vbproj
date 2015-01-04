@@ -231,6 +231,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Localization\Languages.vb" />
+    <Compile Include="Planotaji\frmBloodTest.Designer.vb">
+      <DependentUpon>frmBloodTest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Planotaji\frmBloodTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Planotaji\frmNorikojumi.Designer.vb">
       <DependentUpon>frmNorikojumi.vb</DependentUpon>
     </Compile>
@@ -770,6 +776,9 @@
     <EmbeddedResource Include="frmUIBase.resx">
       <DependentUpon>frmUIBase.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Planotaji\frmBloodTest.resx">
+      <DependentUpon>frmBloodTest.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Planotaji\frmNorikojumi.resx">
       <DependentUpon>frmNorikojumi.vb</DependentUpon>
     </EmbeddedResource>
@@ -1089,6 +1098,8 @@
     <None Include="My Project\DataSources\Entities.AnamnesesHereditaryDsesase.datasource" />
     <None Include="My Project\DataSources\Entities.AnamnesesOperation.datasource" />
     <None Include="My Project\DataSources\Entities.AnamnesesUsedMedicaments.datasource" />
+    <None Include="My Project\DataSources\Entities.BloodTest.datasource" />
+    <None Include="My Project\DataSources\Entities.BloodTestGroup.datasource" />
     <None Include="My Project\DataSources\Entities.BonusPoints.datasource" />
     <None Include="My Project\DataSources\Entities.Campaign.datasource" />
     <None Include="My Project\DataSources\Entities.Classifier.datasource" />

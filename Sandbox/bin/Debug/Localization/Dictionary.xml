@@ -11,10 +11,8 @@
   <Entry key="rbn.Yes" value="Jā"/>
   <Entry key="rbn.NO" value="Nē"/>
 
-
-  <Entry key="Err.TidWithoutTcd" value ="Izvēlētā struktūrvienība nav Tematisko pārbaužu daļa!"/>
-  <Entry key="Err.EmailNotValid" value ="E-pasta adrese ir ievadīta nepareizi!"/>
-  <Entry key="Err.IncompatiblePermissions" value="Atļaujas {0} un {1} ir savstarpēji izslēdzošas!"/>
+  <Entry key="Err.HasErrors" value="Pirms saglabāt ierakstu, izlabojiet ievadlauku kļūdas!"/>
+  <Entry key="Err.TimeIntervalOverlap" value ="Ņorādītie laika intervāli pārklājās ar {0}"/>
   <Entry key="Err.TooLong" value="Lauka garums nedrīkst pārsniegt {0} simbolus!" />
   <Entry key="Err.TooBig" value="Lauka maksimālā vērtība ir {0}!" />
   <Entry key="Err.TooShort" value="Lauka garums nedrīkst būt mazāks par {0} simboliem!" />
@@ -24,167 +22,29 @@
   <Entry key="Err.InvalidDateValueGrt" value="Datumam jābūt mazākam vai vienādam ar {0}!" />
   <Entry key="Err.InvalidDecimalValueLes" value="Skaitļim jābūt lielākam vai vienādam ar {0}!" />
   <Entry key="Err.InvalidDecimalValueGrt" value="Skaitļim jābūt mazākam vai vienādam ar {0}!" />
+  <Entry key="Err.EmailNotValid" value ="E-pasta adrese ir ievadīta nepareizi!"/>
+  <Entry key ="Err.InvalidVisitTime" value="Norādītais vizītes laiks neietilpst pieejamajā intervālā, kas ir no {0} līdz {1}"/>
   <Entry key="Err.FutureDate" value="Datums nevar būt lielāks par šodienas datumu!" />
   <Entry key="Err.Negative" value="Skaitlis nevar būt negatīvs!" />
   <Entry key="Err.PastDate" value="Datums nevar būt mazāks par šodienas datumu!" />
-  <Entry key="Err.InvalidLoginInformation" value="Nepareizs lietotāja vārds vai parole!" />
   <Entry key="Err.UnhandledException" value="Negaidīta kļūda!" />
+  <Entry key="Err.InvalidLoginInformation" value="Nepareizs lietotāja vārds vai parole!" />
+  <Entry key="Msg.CloseApp" value="Vai tiešām vēlaties beigt darbu ar aplikāciju?"/>
+  <Entry key="Msg.SaveNewVersion" value="No datubāzes atvērtajā dokumentā ir veiktas izmaiņas vai vēlaties tās saglabāt arī sistēmā?"/>
+  <Entry key="Msg.ActivateConfirmation" value ="Vai tiešām vēlaties atjaunot šo ierakstu?"/>
+  <Entry key="Err.HierClassifierDeleteChild" value="Pirms dzēst ierakstu, izdzēšiet apakšierakstus!"/>
   <Entry key="Err.CouldNotDelete" value="Neizdevās izdzēst ierakstu!" />
   <Entry key="Err.CouldNotSave" value="Neizdevās saglabāt ierakstu!" />
-  <Entry key="Err.TcdPlanCannotChangeCMCaseList" value="KP lietu sarakstu TPD plānā var mainīt tikai tad, ja plāns atrodas statusā 'Sagatavošanā' vai 'Gatavs'!" />
-  <Entry key="Err.TcdPlanCannotReceiveCMCases" value="KP lietas var pārvietot tikai uz TPD plānu, kas atrodas statusā 'Sagatavošanā' vai 'Gatavs'!" />
-  <Entry key="Err.TcdPlanSelectedCannotBeTheSame" value="TPD plānu sarksta formā izvēlētais TPD plāns nedrīkst sakrist ar atvērto plānu!"/>
-  <Entry key="Err.TcdPlanSelectAtLeastOneCMCase" value="Atzīmējiet vismaz vienu KP lietu!"/>
-  <Entry key="Err.TcdPlanNotSelected" value="TPD plānu sarksta formā netika izvēlēts TPD plāns, kuram piesaistīt atzīmētās KP lietas!"/>
-  <Entry key="Err.TcdPlanCheckDateOverlap" value="'Datums no' un 'Datums līdz' pārklājas ar cita TPD plāna laika periodu!"/>
-  <Entry key="Err.HasErrors" value="Pirms saglabāt ierakstu, izlabojiet ievadlauku kļūdas!"/>
-  <Entry key="Err.HasErrorsBeforeStatusChange" value="Pirms Statusu maiņas, izlabojiet ievadlauku kļūdas!"/>
-  <Entry key="Err.HasFieldErrors" value="Izlabojiet ievadlauku kļūdas!"/>
-  <Entry key="Err.SelectedCMCaseSendToTcdPlan" value="Vai vēlaties nosūtīt atzīmētās lietas uz plānu?"/>
-  <Entry key="Err.OrganizationDeleteChild" value="Pirms dzēst struktūrvienību, izdzēšiet apakšstruktūrvienības!"/>
-  <Entry key="Err.ClassifierBeforeChooseTheme" value ="Pirms izvēlaties NIS pārkāpumu, aizpildiet lauku TP tēma!"/>
-  <Entry key="Err.HierClassifierDeleteChild" value="Pirms dzēst ierakstu, izdzēšiet apakšierakstus!"/>
-  <Entry key="Err.UserRoleIsIncorrect" value="Ar sarakstu var daboties analizēs daļas darbinieks un koordinators!"/>
-  <Entry key="Err.HasErrorsOnStatusChange" value="Pirms mainīt statusu, izlabojiet ievadlauku kļūdas!"/>
-  <Entry key="Err.TcdPlanApprovalDateNeedValue" value="Pirms mainīt statusu uz 'Pabeigts' aizpildiet apstiprināšanas datumu!"/>
-  <Entry key="Err.SaveBeforeAddViolation" value="Pirms pārkāpumu pievienošanas nepieciešams saglabāt izveidoto dokumentu."/>
-  <Entry key="Err.TIActCannotChangeStatus" value ="Akta statusu nav iespējams nomainīt uz nosūtīts, jo aktam piesaistītais(ie) dokuments(i) nav pabeigts(i)!"/>
-  <Entry key="Err.TIActCannotChangeStatusToComplete" value ="Akta statusu nav iespējams nomainīt uz pabeigts, jo aktam piesaistītais(ie) dokuments(i) nav pabeigts(i)!"/>
-  <Entry key="Err.TIActNoDocumentPerformers" value ="Akta lapā 'VID un NM amatpersonas' nav piesaistīta neviena VID amatpersona!"/>
-  <Entry key="Err.TIActNoTaxpayerMembers" value ="Akta lapā 'VID un NM amatpersonas' nav piesaistīta neviena NM amatpersona!"/>
-  <Entry key="Err.EAAct1_4NoDocumentPerformers" value ="Akta lapā 'Visi veicēji' nav piesaistīta neviena VID amatpersona!"/>
-  <Entry key="Err.NoBOAppInstalled" value ="Iespējams nav uzinstalēta BO parlūkprogramma."/>
-  <Entry key="Err.MandatoryFormCheckDateOverlap" value="'Periods no' un 'Periods līdz' pārklājas ar cita 'Veidlapu izlietojumu' laika periodu!"/>
-  <Entry key="Err.StatusChangeToSend" value ="Nav iespējams nomainīt statusu jo dokuments '{0}' nav statusā 'Nosūtīts'."/>
-  <Entry key="Err.NotAdded" value ="Nav iespējams nomainīt statusu jo nav pievienots obligātais dokuments '{0}'."/>
-  <Entry key="Err.AuditLogImportIncorrect" value ="Datu imports neizdevās!"/>
-  <Entry key="Err.TemplateFileOpened" value ="Pievienojamais fails atvērts. Lūdzu aizveriet un mēģiniet vēlreiz!"/>
-  <Entry key="Err.ReportIsOpened" value ="Šis pārskats jau ir atvērts!"/>
-  <Entry key="Err.ConnFailed" value="Nevar pieslēgties datubāzei."/>
-  <Entry key="Err.AuditLogImportFileTypeIncorrect" value ="Importā vajag tikai xml-failu!"/>
-  <Entry key="Err.InspectionActDeletePartners" value="Vai vēlaties dzēst pievienotos darījumu partnerus?"/>
-  <Entry key ="Err.InspectionActNoDocumentPerformers" value ="Akta lapā 'Nobeigums' nav piesaistīta neviena VID pilnvarotā persona!"/>
-  <Entry key ="Err.ActDeleteUndeclaredAccounts" value ="Dzēšot ierakstu 'Konstatēts nedeklarēts norēķinu konts' tiks dzēsti pievienotie nedeklarētie norēķinu konti! Vai turpināt dzēšanu?"/>
-  <Entry key ="Err.MandatoryFormDetailUniquenees" value ="Ieraksta laukiem 'Periods no' , 'Periods līdz'  un 'Pavadzīmes veids'  jābūt unikāliem!"/>
-  <Entry key ="Err.TaxpayerInformNeedToAddUndeclaredAccount" value ="Sarakstam 'Nedeklarēts norēķinu konts' jābūt pievienotam vismaz vienam ierakstam!"/>
-  <Entry key ="Err.ActDeleteTpNotes" value ="Atzīmējot izvēles rūtiņu 'Paskaidrojumu, piezīmju nav' tiks dzēstas ievadītās vērtības laukos 'Pielikumā' un 'Pierakstīts no NM teiktā'! Vai dzēst šīs vērtības?"/>
-  <Entry key ="Err.NotAddedPerformer" value ="Pirms mainīt KP lietas statusu uz 'Sagatavošanās' ir jānorāda vismaz viens KP veicējs."/>
-  <Entry key="Err.NotArticleLength" value ="Atbildību nosakošā NA panta garumam {0} ir jābūt no 1 - 4 cipari!"/>
-  <Entry key="Err.NotNumber" value ="Ievadītais atbildību nosakošais NA pants {0} nav cipars!"/>
-  <Entry key="Err.AppealHasNoFiles" value ="Pārsūdzībai nav pievienots neviens dokuments!"/>
-  <Entry key="Err.AppealHasNoStatement" value ="Pārsūdzībai nav pievienota TP izziņa!"/>
-  <Entry key="Err.ActiveCodeChecks" value="Sadaļā 'Kļūdainie dati' ir aktīvi ieraksti!"/>
-  <Entry key="Err.UnCheckedCode" value="Sadaļā 'Kļūdainie dati' visi ieraksti nav salīdzināti ar NIS!"/>
-  <Entry key="Err.TimeIntervalOverlap" value ="Ņorādītie laika intervāli pārklājās ar {0}"/>
-  <Entry key ="Err.InvalidVisitTime" value="Norādītais vizītes laiks neietilpst pieejamajā intervālā, kas ir no {0} līdz {1}"/>
-  <Entry key="Err.NotResponsibilityFinal" value="Sadaļā 'Pārkāpumu saraksta jābūt vienam pārkāpumam tikt fiksēts, ka tas ir gala lēmums!"/>
-  <Entry key="Err.NotResponsibilityFinalOnlyOne" value="Pārkāpumu saraksta tikai vienam pārkāpumam var tikt fiksēts, ka tas ir gala lēmums!"/>
-
-  <Entry key="Msg.RequisitesWillBeDeleted" value="Attaisnojuma dokumentos norādīti normatīvajos aktos noteiktie rekvizīt tiks dzēsti. Vai vēlaties turpināt?" />
   <Entry key="Msg.EntryAlreadyDeleted" value="Šis ieraksts ir jau izdzēsts!" />
   <Entry key="Msg.DeleteConfirmation" value="Vai tiešām vēlaties dzēst šo ierakstu?" />
-  <Entry key="Msg.DeleteReasonOnCMTypeChange" value="Ieraksts dzēsts veicot KP veida maiņu." />
-  <Entry key="Msg.DeleteTheme" value="Mainot KP veidu tiks dzēstas visas tēmas. Vai vēlaties turpināt?" />
-  <Entry key="Msg.ActivateConfirmation" value ="Vai tiešām vēlaties atjaunot šo ierakstu?"/>
-  <Entry key="Msg.Save" value="Vai vēlaties saglabāt veiktās izmaiņas?" />
-  <Entry key="Msg.TcdPlanCMCasesRemove" value="Vai tiešām vēlaties izņemt atzīmētās KP lietas no TPD plāna?" />
-  <Entry key="Msg.TcdPlanCMCasesMove" value="  Vai jūs tiešām vēlaties TPD plānam Nr.: '{0}' piesaistīt atzīmētās KP lietas?" />
   <Entry key="Msg.CantGenerateUnlessSaved" value="Pirms dokumenta ģenerēšanas jāsaglabā veiktās izmaiņas!" />
   <Entry key="Msg.GenerateAgain" value="Dokuments jau ir ģenerēts, vai vēlaties ģenerēt vēlreiz? Ģenerējot vēlreiz, tiks zaudētas izmaiņas, kas pirms tam veiktas WORD dokumentā." />
-  <Entry key="Msg.TiActCheckDate" value="Ierašanās datums vairāk kā 30 dienas pārsniedz TP uzsākšanas datumu!" />
-  <Entry key="Msg.CMCaseMoveToADadvices" value="Vai tiešām vēlaties pārcelt atzīmētās KP lietas uz ieteikumiem?" />
-  <!--<Entry key="Msg.CMCaseMoveToPreparation" value ="KP lietas statuss joprojām ir 'Neplānotas KP lietas sagatave'! Vai tiešām vēlaties aizvērt formu?"/>-->
-  <Entry key="Msg.CMCaseMoveToPreparation" value ="KP lietas statuss joprojām ir '{0}'! Vai tiešām vēlaties aizvērt formu?"/>
-  <Entry key="Msg.UserConfirmLockout" value="Vai jūs tiešām vēlaties noņemt darbiniekam piešķirto lomu?"/>
-  <Entry key="Msg.InvalidTaxpayerCode" value="Ievadītais NMR kods ir īsāks par 11 simboliem. Vai vēlaties veikt pieprasījumu?"/>
-  <Entry key="Msg.WHRequestReload" value="Vai vēlaties pārlasīt pieprasījumu?"/>
-  <Entry key="Msg.NoRowsInForms" value="Nav pievienots neviens ieraksts lapas 'Veidlapas' tabulā!"/>
-  <Entry key="Msg.NoRowsInBlanks" value="Nav pievienots neviens ieraksts lapas 'PVIIDNr' tabulā!"/>
-  <Entry key="Msg.StaleObject" value ="Cits lietotājs jau ir izmainījis šī ieraksta datus! Aizveriet formu un atveriet vēlreiz labošanai!"/>
-  <Entry key="Msg.AuditLogRowsWillBeDeleted" value="Arhivējamie notikumu žurnāla ieraksti tiks dzēsti!"/>
-  <Entry key="Msg.AuditLogRowsImported" value="Pievienotas ierakstu skaits:"/>
-  <Entry key="Msg.MailPS" value="Šis ir automatizēti ģenerēts TPAIS sistēmas e-pasts un lūdzu neatbildēt un nesūtīt e-pastus uz e-pasta adresi TPAIS.Serviss@vid.gov.lv."/>
-  <Entry key="Msg.CantChangeStatusInComplete" value="Nav ievadīts Lietvedības datums un/vai numurs"/>
-  <Entry key="Msg.AuditLogImportNotRealized" value="Datu imports nenotiek. Tādi ieraksti notikumu žurnālā jau ir!"/>
-  <Entry key="Msg.CloseApp" value="Vai tiešām vēlaties beigt darbu ar aplikāciju?"/>
-  <Entry key="Msg.TcdPlanIsSent" value="KP lietu nevar pievienot, jo TPD plāns nav statusā 'Sagatavošana'." />
-  <Entry key="Msg.TcdPlanIsDraft" value="Izvēlieties TPD plānu (s) un spiediet pogu 'Labi'." />
-  <Entry key="Msg.TcdPlanListIsEmpty" value="KP lietu nevar pievienot, jo nav izveidots neviens plāns." />
-  <Entry key="Msg.NoGenerateDocument" value="Pirms statusa maiņas veiciet dokumenta ģenerēšanu." />
-  <Entry key="Msg.ExecutionDecisionAlreadyAdded" value="KP lietā tāds uzsākšanas lēmums jau ir." />
-  <Entry key="Msg.TcdPlanApprovalDate" value="Vai tiešām vēlas mainīt statusu TPD plānam, kur apstiprināšanas datums lielāks nekā uzsākšanas datums?" />
-  <Entry key="Msg.SaveNewVersion" value="No datubāzes atvērtajā dokumentā ir veiktas izmaiņas vai vēlaties tās saglabāt arī sistēmā?"/>
-  <Entry key="Msg.NoPermissionToDelete" value="Nav tiesību dzēst šo ierakstu."/>
-  <Entry key="Msg.NoTaxpayerCode" value="DNS pieprasījums netiks izveidots jo KP lietas pamatinformācijā nav ievadīts NMR kods."/>
-  <Entry key="Msg.NoRowsInPartners" value="Nav norādīts neviens no darījuma partneriem!"/>
-  <Entry key="Msg.NoRowsInDutyInspections" value="Nav pievienots neviens pārbaudāmās nodevas veids!"/>
-  <Entry key="Msg.PromptStatusChange" value="Vai tiešām vēlaties mainīt statusu uz &quot;"/>
-  <Entry key="Msg.QuestionMark" value="&quot;?"/>
-  <Entry key="Msg.TcdPlanNoCMCases" value="Nav norādīts neviens nodokļu maksātājs!"/>
-  <Entry key="Msg.StatementAddAtAppeal" value="Lai izveidotu izziņu, vispirms jāsaglabā pārsūdzība!"/>
-  <Entry key="Msg.CorrespondenceNoTemplate" value="Lai ģenerētu dokumentu, vispirms jāizvēlas veidlapu grupa un dokumenta veids!"/>
-  <Entry key="Msg.CheckProperty" value="Nav atzīmēts, ka uzrādīta apliecība, pilnvarojums! Vai vēlaties to atzīmēt un saglabāt visas izmaiņas?"/>
-  <Entry key="Msg.ViolationNotExternal" value="Vai pārkāpums ir jāiekļauj TP izziņā?"/>
-  <Entry key="Msg.DocumentWasInCorrection" value="Dokuments ir bijis statusā labošana."/>
-  <Entry key="Msg.NeedCopy" value="Vai vēlaties kopēt datus no iepriekšējās dokumenta versijas?."/>
-  <Entry key="Msg.SetRedy" value="Pārkāpumam nav norādīta pazīme, ka tas ir sagatavots. Vai vēlaties to norādīt un saglabāt?"/>
-  <Entry key="Msg.Duty" value="Pārbaudāmās valsts nodevas"/>
-  <Entry key="Msg.Partner" value="Pārbaudāmie darījumu partneri"/>
-  <Entry key="Msg.AVPs" value="Administratīvā pārkāpuma protokoli FP"/>
-  <Entry key="Msg.EndDecResps" value="Administratīvā pārkāpuma lēmumi FP"/>
   <Entry key="Msg.IncorrectPassword" value ="Ievadītās paroles nesakrīt."/>
-  <Entry key="Msg.Corrected" value="(labota)"/>
-  <Entry key="Msg.Copy" value="(kopēta)"/>
-  <Entry key="Msg.Plkst" value="plkst"/>
-  <Entry key="Msg.From" value="No"/>
-  <Entry key="Msg.Until" value="līdz"/>
-  <Entry key="Msg.ViolPartNom" value="daļa"/>
-  <Entry key="Msg.ViolArticleNom" value="pants"/>
-  <Entry key="Msg.ViolPointNom" value="punkts"/>
-  <Entry key="Msg.ViolIndexNom" value="indekss"/>
-  <Entry key="Msg.ViolPartGen" value="daļas"/>
-  <Entry key="Msg.ViolArticleGen" value="panta"/>
-  <Entry key="Msg.ViolPointGen" value="punkta"/>
-  <Entry key="Msg.ViolIndexGen" value="indeksa"/>
-  <Entry key="Msg.ViolPartLok" value="daļā"/>
-  <Entry key="Msg.ViolArticleLok" value="pantā"/>
-  <Entry key="Msg.ViolPointLok" value="punktā"/>
-  <Entry key="Msg.ViolIndexLok" value="indeksā"/>
-  <Entry key="Msg.Department" value="struktūrvienība"/>
-  <Entry key="Msg.NeedSaveDocument" value="Pirms pievienot pārkāpumus saglabājiet dokumentu, kuram pārkāpums tiks piesaistīts."/>
-  <Entry key="Msg.HasNoTIDocuments" value="Nav pārbaudīta neviena tēma. Nepieciešama papildus informācija vai jāpārbauda kāda tēma!"/>
-  <Entry key="Msg.WrongPECodeInAVProtocol" value="Personas koda dzimšanas datuma daļa ir nekorekta! Vai vēlaties turpināt ģenerēšanu?"/>
-  <Entry key="Msg.Article21" value="21.pants"/>
-  <Entry key="Msg.FuelLossViewOrMakeNew" value="Dokuments 'Degvielas zuduma pārbaudes aprēķins' ir statusā '{0}'. Vai vēlaties izveidot jaunu 'Degvielas zuduma pārbaudes aprēķina' dokumentu?"/>
-  <Entry key="Msg.Waybills_WaybillRegistrationText" value="Preču pavaddokumentus reģistrē:"/>
-  <Entry key="Msg.Waybills_WaybillRegisterJournalText" value="Pavaddokumentu reģistrācijas žurnālā"/>
-  <Entry key="Msg.Waybills_PropertiesRegisteredText" value="Preču pavaddokumentu reģistrā norādīti NA noteiktie rekvizīti:"/>
-  <Entry key="Msg.Waybills_JournalCheckedText" value="Žurnālā par pārbaudi veikts ieraksts:"/>
-  <Entry key="Msg.HasNoObjectAddressId" value="Pirms TP izziņas pievienošanas nepieciešams norādīt: KP lietas pamatinformācijā pārbaudāmā objekta adresi no NIS vai TP aktā veikšanas vietu 'Cita adrese'!"/>
-
-  <Entry key="Msg.NotActDateInExecutionDecisionPeriod" value="Akta datums neiekļaujas periodā no pēdējā attiecīgā lēmuma par uzsākšanu."/>
-  <Entry key="Msg.NotActivityDateInCMCasePeriod" value="Aktivitātes datums neiekļaujas periodā, kas norādīts KP lietas pamatinformācijā."/>
-  <Entry key="Msg.NotExecutionDecisionDateInActivityPeriod" value="Lēmuma par uzsākšanu datums neiekļaujas periodā, kas norādīts aktivitātes."/>
-  <Entry key="Msg.NotAuthorizationDateInActivityPeriod" value="Pilnvarojuma datums neiekļaujas periodā, kas norādīts aktivitātes."/>
-
-
-  <Entry key="Err.InvalidDateInclusion" value="Aizstāšanas termiņam jāiekļaujas prombūtnes termiņā!" />
-  <Entry key="Err.UserReplacementListDate" value="Aizstāšanas termiņi nevar pārklāties!" />
-  <Entry key="Err.UserReplacementDateOverlap" value="Aizstājējs norādītajā laika periodā nevar aizstāt citu darbinieku!" />
-  <Entry key="Err.UserReplacementUnavailableDateOverlap" value="Aizstājējs norādītajā laika periodā nedrīkst būt reģistrēts kā prombūtnē esošs!" />
-  <Entry key="Err.SoapException" value="Neizdevās pieslēgties TPAIS web servisam." />
-  <Entry key="Err.EmptyDnsData" value ="NMR kods nav atrasts!"/>
-  <Entry key ="Err.InformActValueIaAdded" value ="Izvēlētā vērtība jau ir pievienota!"/>
-
-  <Entry key="Err.EAAct2CashRegisterIsDeleted" value="Dzēstu EKA nevar izvēlēties!" />
-  
-  <Entry key="Err.CannotChangeData" value="Jums nav tiesību mainīt datus!" />
   <Entry key="Err.RoleIsBysy" value="Loma ir piešķirta sistēmas lietotājiem!" />
-  <Entry key="Err.LogonNotUnique" value="Ievadītais Aktīvās direktorijas konts ir piešķirts sistēmas lietotājiem!" />
-   
-  <!--Prioritāte-->
-  <Entry key="PriorityType.Low" value="Parasta"/>
-  <Entry key="PriorityType.High" value="Steidzama"/>
+  <Entry key="Err.TemplateFileOpened" value ="Pievienojamais fails atvērts. Lūdzu aizveriet un mēģiniet vēlreiz!"/>
+  <Entry key="Msg.UserConfirmLockout" value="Vai jūs tiešām vēlaties noņemt darbiniekam piešķirto lomu?"/>
+  <Entry key="Msg.Save" value="Ieraksta dati ir laboti. Vai vēlaties saglabāt datus?"/>
+
 
   <Entry key ="BonusPointType.Add" value ="Pievienot"/>
   <Entry key ="BonusPointType.Use" value ="Izmantota"/>
@@ -192,19 +52,6 @@
   <!-- YesNo... -->
   <Entry key="YesNo.Yes" value="Ir"/>
   <Entry key="YesNo.No" value="Nav"/>
-  <Entry key="YesNo.Ne" value="Nē"/>
-  <Entry key="YesNo.Ja" value="Jā"/>
-  <Entry key="YesNo.NotPresent" value="Nevar uzrādīt"/>
-  <Entry key="YesNo.NotSent" value="Nav nosūtīta"/>
-  <Entry key="YesNo.NotExecuted" value="Nav veikta"/>
-  <Entry key="YesNo.CantExecute" value="Nevar veikt"/>
-  <Entry key="YesNo.IsLocatedIsExecuted" value="Atrodas/Ir veikts"/>
-  <Entry key="YesNo.NotLocatedNotExecuted" value="Neatrodas/Nav veikts"/>
-  <Entry key="YesNo.NotPurchase" value="Neiepērk"/>
-  <Entry key="YesNo.NotRefer" value="Neattiecas"/>
-  <Entry key="YesNo.ALossLessFLoss" value="Di&lt;D"/>
-  <Entry key="YesNo.ALossGreaterFLoss" value="Di&gt;=D"/>
-  <Entry key="YesNo.NotDocument" value ="Nevar uzrādīt pavaddokumentu"/>
     
   <Entry key="Sex.Male" value="Vīrietis"/>
   <Entry key="Sex.Female" value="Sieviete"/>
@@ -357,58 +204,6 @@
   <Entry key ="Classifier.Color" value ="Krāsa"/>
   <Entry key ="Classifier.NeedCall" value ="Klientam jāzvana"/>
 	
-
-	<!-- Date -->
-  <Entry key ="Date.Year" value ="gada"/>
-  <Entry key ="Date.1.Gen" value ="janvāra"/>
-  <Entry key ="Date.2.Gen" value ="februāra"/>
-  <Entry key ="Date.3.Gen" value ="marta"/>
-  <Entry key ="Date.4.Gen" value ="aprīļa"/>
-  <Entry key ="Date.5.Gen" value ="maija"/>
-  <Entry key ="Date.6.Gen" value ="jūnija"/>
-  <Entry key ="Date.7.Gen" value ="jūlija"/>
-  <Entry key ="Date.8.Gen" value ="augusta"/>
-  <Entry key ="Date.9.Gen" value ="septembra"/>
-  <Entry key ="Date.10.Gen" value ="oktobra"/>
-  <Entry key ="Date.11.Gen" value ="novembra"/>
-  <Entry key ="Date.12.Gen" value ="decembra"/>  
-  <Entry key ="Date.1.Dat" value ="janvārim"/>
-  <Entry key ="Date.2.Dat" value ="februārim"/>
-  <Entry key ="Date.3.Dat" value ="martam"/>
-  <Entry key ="Date.4.Dat" value ="aprīlim"/>
-  <Entry key ="Date.5.Dat" value ="maijam"/>
-  <Entry key ="Date.6.Dat" value ="jūnijam"/>
-  <Entry key ="Date.7.Dat" value ="jūlijam"/>
-  <Entry key ="Date.8.Dat" value ="augustam"/>
-  <Entry key ="Date.9.Dat" value ="septembrim"/>
-  <Entry key ="Date.10.Dat" value ="oktobrim"/>
-  <Entry key ="Date.11.Dat" value ="novembrim"/>
-  <Entry key ="Date.12.Dat" value ="decembrim"/>
-  <Entry key ="Date.1.Aku" value ="janvāri"/>
-  <Entry key ="Date.2.Aku" value ="februāri"/>
-  <Entry key ="Date.3.Aku" value ="martu"/>
-  <Entry key ="Date.4.Aku" value ="aprīli"/>
-  <Entry key ="Date.5.Aku" value ="maiju"/>
-  <Entry key ="Date.6.Aku" value ="jūniju"/>
-  <Entry key ="Date.7.Aku" value ="jūliju"/>
-  <Entry key ="Date.8.Aku" value ="augustu"/>
-  <Entry key ="Date.9.Aku" value ="septembri"/>
-  <Entry key ="Date.10.Aku" value ="oktobri"/>
-  <Entry key ="Date.11.Aku" value ="novembri"/>
-  <Entry key ="Date.12.Aku" value ="decembri"/>
-  <Entry key ="Date.1.Lok" value ="janvārī"/>
-  <Entry key ="Date.2.Lok" value ="februārī"/>
-  <Entry key ="Date.3.Lok" value ="martā"/>
-  <Entry key ="Date.4.Lok" value ="aprīlī"/>
-  <Entry key ="Date.5.Lok" value ="maijā"/>
-  <Entry key ="Date.6.Lok" value ="jūnijā"/>
-  <Entry key ="Date.7.Lok" value ="jūlijā"/>
-  <Entry key ="Date.8.Lok" value ="augustā"/>
-  <Entry key ="Date.9.Lok" value ="septembrī"/>
-  <Entry key ="Date.10.Lok" value ="oktobrī"/>
-  <Entry key ="Date.11.Lok" value ="novembrī"/>
-  <Entry key ="Date.12.Lok" value ="decembrī"/>
-
   <Entry key="DocumentType.Prescription" value ="Parastā recepte"/>
   <Entry key="DocumentType.RtgSummary" value ="Rentgendiagnostikas izmeklējumu slēdziens"/>
   <Entry key="DocumentType.RTG" value ="RTG"/>

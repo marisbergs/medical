@@ -118,6 +118,7 @@
     <Compile Include="Campaign.vb" />
     <Compile Include="CampaignPatient.vb" />
     <Compile Include="Activity.vb" />
+    <Compile Include="VisitBloodTest.vb" />
     <Compile Include="VisitResultAssignment.vb" />
     <Compile Include="VisitResult.vb" />
     <Compile Include="Documents\DenticalCard.vb" />
@@ -368,7 +369,9 @@
     <EmbeddedResource Include="Mappings\Classifiers\Classifier.hbm.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Mappings\Classifiers\ClassifierType.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Classifiers\ClassifierType.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Mappings\Patient.hbm.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -426,6 +429,7 @@
     <EmbeddedResource Include="Mappings\Localization.hbm.xml" />
     <EmbeddedResource Include="Mappings\VisitResult.hbm.xml" />
     <EmbeddedResource Include="Mappings\VisitResultAssignment.hbm.xml" />
+    <EmbeddedResource Include="Mappings\VisitBloodTest.hbm.xml" />
     <Content Include="WHReports\PA_APSEK_001.xml" />
     <Content Include="WHReports\PA_LMPBP_004.xml" />
     <Content Include="WHReports\PA_NOVER_003.xml" />

@@ -43,6 +43,7 @@
   <Entry key="Err.RoleIsBysy" value="Loma ir piešķirta sistēmas lietotājiem!" />
   <Entry key="Err.TemplateFileOpened" value ="Pievienojamais fails atvērts. Lūdzu aizveriet un mēģiniet vēlreiz!"/>
   <Entry key="Msg.UserConfirmLockout" value="Vai jūs tiešām vēlaties noņemt darbiniekam piešķirto lomu?"/>
+  <Entry key="Msg.Save" value="Ieraksta dati ir laboti. Vai vēlaties saglabāt datus?"/>
 
 
   <Entry key ="BonusPointType.Add" value ="Pievienot"/>

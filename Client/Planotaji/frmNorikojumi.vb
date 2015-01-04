@@ -117,7 +117,14 @@ Public Class frmNorikojumi
 
     'Asins analīzes
     Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
-
+        Dim frm As New frmBloodTest()
+        frm.Session = Nothing
+        frm.PartnerSession = Session
+        Dim data As New System.Collections.Generic.Dictionary(Of System.Type, System.Guid)
+        data.Add(GetType(WorkTime), Visit.Id)
+        frm.Visit = Visit
+        frm.DataIDs = data
+        frm.ShowDialog()
     End Sub
 
     Private Sub Button3_Click(sender As System.Object, e As System.EventArgs) Handles Button3.Click
@@ -184,5 +191,19 @@ Public Class frmNorikojumi
         key.Add(GetType(Patient), Visit.Patient.Id)
         frm.DataIDs = key
         frmMain.AddChild(frm)
+    End Sub
+
+Private Sub btnVisit_Click( sender As System.Object,  e As System.EventArgs) Handles btnVisit.Click
+OpenVisit()
+End Sub
+
+    
+    Private Sub OpenVisit()
+        If visit Is Nothing Then Return
+            Dim frm As New frmVisitEdit
+            frm.visit = visit
+            frm.Session = Nothing
+            frm.PartnerSession = Session
+            frmMain.AddChild(frm)
     End Sub
 End Class

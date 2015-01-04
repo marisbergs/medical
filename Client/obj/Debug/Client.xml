@@ -6,26 +6,57 @@ Client
 </name>
 </assembly>
 <members>
-<member name="T:Client.ctlFind">
+<member name="T:Client.TwinDataDataSet.Patients_1DataTable">
 	<summary>
- Bāzes kontrole visādiem tur searchiem
- </summary>
-	<remarks>
- Novietojiet uz tās savu TableLayout ar atlases kritērijiem (Dock: Fill).
- Šo layoutu izvēlieties kontroles propertijā CriteriaTable
- </remarks>
-</member><member name="P:Client.My.Resources.Resources.ResourceManager">
-	<summary>
-  Returns the cached ResourceManager instance used by this class.
+Represents the strongly named DataTable class.
 </summary>
-</member><member name="P:Client.My.Resources.Resources.Culture">
+</member><member name="T:Client.TwinDataDataSet.Patients_2DataTable">
 	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
+Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:Client.My.Resources.Resources">
+</member><member name="T:Client.TwinDataDataSet.Patients_3DataTable">
 	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Client.TwinDataDataSet.Patients_1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Client.TwinDataDataSet.Patients_2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Client.TwinDataDataSet.Patients_3Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Client.TwinDataDataSet.Patients_1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Client.TwinDataDataSet.Patients_2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Client.TwinDataDataSet.Patients_3RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Client.TwinDataDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Client.TwinDataDataSetTableAdapters.Patients_1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Client.TwinDataDataSetTableAdapters.Patients_2TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Client.TwinDataDataSetTableAdapters.Patients_3TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
 </summary>
 </member><member name="P:Client.ClassifierFind.UseInClassifier">
 	<summary>
@@ -150,6 +181,19 @@ Client
 	<summary>
  Tikai aktuālie
  </summary>
+</member><member name="P:Client.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Client.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Client.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
 </member><member name="P:Client.FindPatients.UseName">
 	<summary>
  Vārds
@@ -182,58 +226,14 @@ Client
 	<summary>
  klienta numurs
  </summary>
-</member><member name="T:Client.TwinDataDataSet.Patients_1DataTable">
+</member><member name="T:Client.ctlFind">
 	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Client.TwinDataDataSet.Patients_2DataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Client.TwinDataDataSet.Patients_3DataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Client.TwinDataDataSet.Patients_1Row">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Client.TwinDataDataSet.Patients_2Row">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Client.TwinDataDataSet.Patients_3Row">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Client.TwinDataDataSet.Patients_1RowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Client.TwinDataDataSet.Patients_2RowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Client.TwinDataDataSet.Patients_3RowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Client.TwinDataDataSet">
-	<summary>
-Represents a strongly typed in-memory cache of data.
-</summary>
-</member><member name="T:Client.TwinDataDataSetTableAdapters.Patients_1TableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Client.TwinDataDataSetTableAdapters.Patients_2TableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Client.TwinDataDataSetTableAdapters.Patients_3TableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
+ Bāzes kontrole visādiem tur searchiem
+ </summary>
+	<remarks>
+ Novietojiet uz tās savu TableLayout ar atlases kritērijiem (Dock: Fill).
+ Šo layoutu izvēlieties kontroles propertijā CriteriaTable
+ </remarks>
 </member>
 </members>
 </doc>

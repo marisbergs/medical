@@ -166,42 +166,42 @@ Partial Class frmVisitEdit
         Me.BandedGridColumn4 = New DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn()
         Me.cmsInsuranceTemplates = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ToolTipController1 = New DevExpress.Utils.ToolTipController(Me.components)
-        Me.FlowLayoutPanel2.SuspendLayout()
-        CType(Me.bndData, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtDoctor.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtService.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtPatient.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
-        CType(Me.txtRelatedDoctor.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PatientBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.gbhVisitServices.SuspendLayout()
-        CType(Me.grdVisitServices, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.VisitServicesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AdvBandedGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtServiceCol, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtPresentCard, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.chkPayd, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.cmbPaymentType, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RepositoryItemCheckEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RepositoryItemImageEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SplitContainer1.Panel1.SuspendLayout()
-        Me.SplitContainer1.Panel2.SuspendLayout()
-        Me.SplitContainer1.SuspendLayout()
-        CType(Me.grdRelatedVisits, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.bndRelatedVisits, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.gvwRelatedVisits, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RepositoryItemButtonEdit3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RepositoryItemButtonEdit4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RepositoryItemCheckEdit2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.cmbPaymentTypeRelatedSevice, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RepositoryItemCheckEdit3, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout()
+        Me.FlowLayoutPanel2.SuspendLayout
+        CType(Me.bndData,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.ErrorProvider1,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.txtDoctor.Properties,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.txtService.Properties,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.txtPatient.Properties,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel1.SuspendLayout
+        CType(Me.txtRelatedDoctor.Properties,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PatientBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.TextEdit1.Properties,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.gbhVisitServices.SuspendLayout
+        CType(Me.grdVisitServices,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.VisitServicesBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.AdvBandedGridView1,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.txtServiceCol,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.txtPresentCard,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.chkPayd,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.cmbPaymentType,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.RepositoryItemCheckEdit1,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.RepositoryItemImageEdit1,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.SplitContainer1.Panel1.SuspendLayout
+        Me.SplitContainer1.Panel2.SuspendLayout
+        Me.SplitContainer1.SuspendLayout
+        CType(Me.grdRelatedVisits,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.bndRelatedVisits,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.gvwRelatedVisits,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.RepositoryItemButtonEdit3,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.RepositoryItemButtonEdit4,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.RepositoryItemCheckEdit2,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.cmbPaymentTypeRelatedSevice,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.RepositoryItemCheckEdit3,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.SuspendLayout
         '
         'FlowLayoutPanel1
         '
-        Me.FlowLayoutPanel1.AutoSize = True
+        Me.FlowLayoutPanel1.AutoSize = true
         Me.FlowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 0)
@@ -211,7 +211,7 @@ Partial Class frmVisitEdit
         '
         'Label3
         '
-        Me.Label3.AutoSize = True
+        Me.Label3.AutoSize = true
         Me.Label3.Location = New System.Drawing.Point(11, 12)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(41, 13)
@@ -220,8 +220,8 @@ Partial Class frmVisitEdit
         '
         'Label1
         '
-        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label1.AutoSize = True
+        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.Label1.AutoSize = true
         Me.Label1.Location = New System.Drawing.Point(789, 38)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(33, 13)
@@ -250,7 +250,7 @@ Partial Class frmVisitEdit
         '
         'btnClose
         '
-        Me.btnClose.AutoSize = True
+        Me.btnClose.AutoSize = true
         Me.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnClose.Location = New System.Drawing.Point(1101, 3)
         Me.btnClose.MinimumSize = New System.Drawing.Size(75, 23)
@@ -258,90 +258,90 @@ Partial Class frmVisitEdit
         Me.btnClose.Size = New System.Drawing.Size(75, 23)
         Me.btnClose.TabIndex = 4
         Me.btnClose.Text = "Aizvērt"
-        Me.btnClose.UseVisualStyleBackColor = True
+        Me.btnClose.UseVisualStyleBackColor = true
         '
         'btnSave
         '
-        Me.btnSave.AutoSize = True
+        Me.btnSave.AutoSize = true
         Me.btnSave.Location = New System.Drawing.Point(1020, 3)
         Me.btnSave.MinimumSize = New System.Drawing.Size(75, 23)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(75, 23)
         Me.btnSave.TabIndex = 5
         Me.btnSave.Text = "Saglabāt"
-        Me.btnSave.UseVisualStyleBackColor = True
+        Me.btnSave.UseVisualStyleBackColor = true
         '
         'btnCheck
         '
-        Me.btnCheck.AutoSize = True
+        Me.btnCheck.AutoSize = true
         Me.btnCheck.Location = New System.Drawing.Point(939, 3)
         Me.btnCheck.MinimumSize = New System.Drawing.Size(75, 23)
         Me.btnCheck.Name = "btnCheck"
         Me.btnCheck.Size = New System.Drawing.Size(75, 23)
         Me.btnCheck.TabIndex = 6
         Me.btnCheck.Text = "Pārbaudīt"
-        Me.btnCheck.UseVisualStyleBackColor = True
+        Me.btnCheck.UseVisualStyleBackColor = true
         '
         'btnOpenPatient
         '
-        Me.btnOpenPatient.AutoSize = True
+        Me.btnOpenPatient.AutoSize = true
         Me.btnOpenPatient.Location = New System.Drawing.Point(809, 3)
         Me.btnOpenPatient.MinimumSize = New System.Drawing.Size(75, 23)
         Me.btnOpenPatient.Name = "btnOpenPatient"
         Me.btnOpenPatient.Size = New System.Drawing.Size(124, 23)
         Me.btnOpenPatient.TabIndex = 7
         Me.btnOpenPatient.Text = "Atvērt klienta kartiņu"
-        Me.btnOpenPatient.UseVisualStyleBackColor = True
+        Me.btnOpenPatient.UseVisualStyleBackColor = true
         '
         'btnState
         '
-        Me.btnState.AutoSize = True
+        Me.btnState.AutoSize = true
         Me.btnState.Location = New System.Drawing.Point(728, 3)
         Me.btnState.MinimumSize = New System.Drawing.Size(75, 23)
         Me.btnState.Name = "btnState"
         Me.btnState.Size = New System.Drawing.Size(75, 23)
         Me.btnState.TabIndex = 8
         Me.btnState.Text = "Statuss"
-        Me.btnState.UseVisualStyleBackColor = True
-        Me.btnState.Visible = False
+        Me.btnState.UseVisualStyleBackColor = true
+        Me.btnState.Visible = false
         '
         'btnPay
         '
-        Me.btnPay.AutoSize = True
+        Me.btnPay.AutoSize = true
         Me.btnPay.Location = New System.Drawing.Point(647, 3)
         Me.btnPay.MinimumSize = New System.Drawing.Size(75, 23)
         Me.btnPay.Name = "btnPay"
         Me.btnPay.Size = New System.Drawing.Size(75, 23)
         Me.btnPay.TabIndex = 9
         Me.btnPay.Text = "Apmaksāt"
-        Me.btnPay.UseVisualStyleBackColor = True
+        Me.btnPay.UseVisualStyleBackColor = true
         '
         'btnGenerateInsurance
         '
-        Me.btnGenerateInsurance.AutoSize = True
+        Me.btnGenerateInsurance.AutoSize = true
         Me.btnGenerateInsurance.Location = New System.Drawing.Point(461, 3)
         Me.btnGenerateInsurance.MinimumSize = New System.Drawing.Size(75, 23)
         Me.btnGenerateInsurance.Name = "btnGenerateInsurance"
         Me.btnGenerateInsurance.Size = New System.Drawing.Size(180, 23)
         Me.btnGenerateInsurance.TabIndex = 10
         Me.btnGenerateInsurance.Text = "Ģenerēt apdrošināšanas veidlapas"
-        Me.btnGenerateInsurance.UseVisualStyleBackColor = True
-        Me.btnGenerateInsurance.Visible = False
+        Me.btnGenerateInsurance.UseVisualStyleBackColor = true
+        Me.btnGenerateInsurance.Visible = false
         '
         'btnNewWisit
         '
-        Me.btnNewWisit.AutoSize = True
+        Me.btnNewWisit.AutoSize = true
         Me.btnNewWisit.Location = New System.Drawing.Point(347, 3)
         Me.btnNewWisit.MinimumSize = New System.Drawing.Size(75, 23)
         Me.btnNewWisit.Name = "btnNewWisit"
         Me.btnNewWisit.Size = New System.Drawing.Size(108, 23)
         Me.btnNewWisit.TabIndex = 11
         Me.btnNewWisit.Text = "Ieplānot jaunu vizīti"
-        Me.btnNewWisit.UseVisualStyleBackColor = True
+        Me.btnNewWisit.UseVisualStyleBackColor = true
         '
         'Button1
         '
-        Me.Button1.AutoSize = True
+        Me.Button1.AutoSize = true
         Me.Button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.Button1.Location = New System.Drawing.Point(264, 3)
         Me.Button1.MinimumSize = New System.Drawing.Size(75, 23)
@@ -349,11 +349,11 @@ Partial Class frmVisitEdit
         Me.Button1.Size = New System.Drawing.Size(77, 23)
         Me.Button1.TabIndex = 138
         Me.Button1.Text = "Atgādinājumi"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = true
         '
         'btnNorikojumi
         '
-        Me.btnNorikojumi.AutoSize = True
+        Me.btnNorikojumi.AutoSize = true
         Me.btnNorikojumi.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.btnNorikojumi.Location = New System.Drawing.Point(145, 3)
         Me.btnNorikojumi.MinimumSize = New System.Drawing.Size(75, 23)
@@ -361,13 +361,13 @@ Partial Class frmVisitEdit
         Me.btnNorikojumi.Size = New System.Drawing.Size(113, 23)
         Me.btnNorikojumi.TabIndex = 139
         Me.btnNorikojumi.Text = "Norīkojumi/Rezultāti"
-        Me.btnNorikojumi.UseVisualStyleBackColor = True
+        Me.btnNorikojumi.UseVisualStyleBackColor = true
         '
         'TimeEdit2
         '
-        Me.TimeEdit2.AutoSize = True
+        Me.TimeEdit2.AutoSize = true
         Me.TimeEdit2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.TimeEdit2.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.bndData, "EndTime", True))
+        Me.TimeEdit2.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.bndData, "EndTime", true))
         Me.TimeEdit2.EditValue = Nothing
         Me.TimeEdit2.Location = New System.Drawing.Point(166, 61)
         Me.TimeEdit2.Margin = New System.Windows.Forms.Padding(0)
@@ -381,9 +381,9 @@ Partial Class frmVisitEdit
         '
         'TimeEdit1
         '
-        Me.TimeEdit1.AutoSize = True
+        Me.TimeEdit1.AutoSize = true
         Me.TimeEdit1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.TimeEdit1.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.bndData, "StartTime", True))
+        Me.TimeEdit1.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.bndData, "StartTime", true))
         Me.TimeEdit1.EditValue = Nothing
         Me.TimeEdit1.Location = New System.Drawing.Point(82, 61)
         Me.TimeEdit1.Margin = New System.Windows.Forms.Padding(0)
@@ -393,7 +393,7 @@ Partial Class frmVisitEdit
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
+        Me.Label2.AutoSize = true
         Me.Label2.Location = New System.Drawing.Point(11, 65)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(50, 13)
@@ -402,7 +402,7 @@ Partial Class frmVisitEdit
         '
         'Label4
         '
-        Me.Label4.AutoSize = True
+        Me.Label4.AutoSize = true
         Me.Label4.Location = New System.Drawing.Point(137, 65)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(27, 13)
@@ -417,24 +417,24 @@ Partial Class frmVisitEdit
         '
         'txtDoctor
         '
-        Me.txtDoctor.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtDoctor.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.bndData, "Doctor", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.txtDoctor.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.txtDoctor.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.bndData, "Doctor", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.txtDoctor.Location = New System.Drawing.Point(902, 35)
         Me.txtDoctor.Name = "txtDoctor"
-        Me.txtDoctor.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Ellipsis, "", -1, True, False, False, DevExpress.Utils.HorzAlignment.Center, Nothing)})
-        Me.txtDoctor.Properties.ReadOnly = True
+        Me.txtDoctor.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Ellipsis, "", -1, true, false, false, DevExpress.Utils.HorzAlignment.Center, Nothing)})
+        Me.txtDoctor.Properties.ReadOnly = true
         Me.txtDoctor.Size = New System.Drawing.Size(274, 20)
         Me.txtDoctor.TabIndex = 126
         '
         'txtNotes
         '
-        Me.txtNotes.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtNotes.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.bndData, "Notes", True))
+        Me.txtNotes.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
+            Or System.Windows.Forms.AnchorStyles.Left)  _
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.txtNotes.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.bndData, "Notes", true))
         Me.txtNotes.Location = New System.Drawing.Point(82, 88)
         Me.txtNotes.MaxLength = 1000
-        Me.txtNotes.Multiline = True
+        Me.txtNotes.Multiline = true
         Me.txtNotes.Name = "txtNotes"
         Me.txtNotes.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.txtNotes.Size = New System.Drawing.Size(584, 66)
@@ -442,7 +442,7 @@ Partial Class frmVisitEdit
         '
         'Label5
         '
-        Me.Label5.AutoSize = True
+        Me.Label5.AutoSize = true
         Me.Label5.Location = New System.Drawing.Point(12, 93)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(52, 13)
@@ -451,19 +451,19 @@ Partial Class frmVisitEdit
         '
         'txtService
         '
-        Me.txtService.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtService.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.bndData, "Serv", True))
+        Me.txtService.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left)  _
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.txtService.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.bndData, "Serv", true))
         Me.txtService.Location = New System.Drawing.Point(82, 35)
         Me.txtService.Name = "txtService"
         Me.txtService.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
-        Me.txtService.Properties.ReadOnly = True
+        Me.txtService.Properties.ReadOnly = true
         Me.txtService.Size = New System.Drawing.Size(701, 20)
         Me.txtService.TabIndex = 131
         '
         'Label6
         '
-        Me.Label6.AutoSize = True
+        Me.Label6.AutoSize = true
         Me.Label6.Location = New System.Drawing.Point(11, 39)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(70, 13)
@@ -472,7 +472,7 @@ Partial Class frmVisitEdit
         '
         'Label7
         '
-        Me.Label7.AutoSize = True
+        Me.Label7.AutoSize = true
         Me.Label7.Location = New System.Drawing.Point(424, 65)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(45, 13)
@@ -481,24 +481,24 @@ Partial Class frmVisitEdit
         '
         'txtStatuss
         '
-        Me.txtStatuss.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.bndData, "Status", True))
+        Me.txtStatuss.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.bndData, "Status", true))
         Me.txtStatuss.Location = New System.Drawing.Point(475, 62)
         Me.txtStatuss.Name = "txtStatuss"
-        Me.txtStatuss.ReadOnly = True
+        Me.txtStatuss.ReadOnly = true
         Me.txtStatuss.Size = New System.Drawing.Size(87, 20)
         Me.txtStatuss.TabIndex = 133
         '
         'cmsState
         '
         Me.cmsState.Name = "ContextMenuStrip1"
-        Me.cmsState.ShowImageMargin = False
+        Me.cmsState.ShowImageMargin = false
         Me.cmsState.Size = New System.Drawing.Size(36, 4)
         '
         'txtPatient
         '
-        Me.txtPatient.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtPatient.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.bndData, "PatientList", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.txtPatient.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left)  _
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.txtPatient.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.bndData, "PatientList", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.txtPatient.Location = New System.Drawing.Point(82, 9)
         Me.txtPatient.Name = "txtPatient"
         Me.txtPatient.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
@@ -562,8 +562,8 @@ Partial Class frmVisitEdit
         '
         'Label18
         '
-        Me.Label18.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label18.AutoSize = True
+        Me.Label18.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.Label18.AutoSize = true
         Me.Label18.Location = New System.Drawing.Point(706, 12)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(39, 13)
@@ -572,91 +572,91 @@ Partial Class frmVisitEdit
         '
         'TextBox10
         '
-        Me.TextBox10.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.bndData, "PatientGroup", True))
+        Me.TextBox10.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.TextBox10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.bndData, "PatientGroup", true))
         Me.TextBox10.Location = New System.Drawing.Point(749, 9)
         Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.ReadOnly = True
+        Me.TextBox10.ReadOnly = true
         Me.TextBox10.Size = New System.Drawing.Size(31, 20)
         Me.TextBox10.TabIndex = 166
         '
         'CheckBox2
         '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.DataBindings.Add(New System.Windows.Forms.Binding("Enabled", Me.bndData, "IsActiveSubscription", True))
-        Me.CheckBox2.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.bndData, "SetPAK", True))
+        Me.CheckBox2.AutoSize = true
+        Me.CheckBox2.DataBindings.Add(New System.Windows.Forms.Binding("Enabled", Me.bndData, "IsActiveSubscription", true))
+        Me.CheckBox2.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.bndData, "SetPAK", true))
         Me.CheckBox2.Location = New System.Drawing.Point(12, 186)
         Me.CheckBox2.Name = "CheckBox2"
         Me.CheckBox2.Size = New System.Drawing.Size(88, 17)
         Me.CheckBox2.TabIndex = 165
         Me.CheckBox2.Text = "Abonements:"
-        Me.CheckBox2.UseVisualStyleBackColor = True
+        Me.CheckBox2.UseVisualStyleBackColor = true
         '
         'TextBox9
         '
-        Me.TextBox9.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox9.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left)  _
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.TextBox9.Location = New System.Drawing.Point(106, 184)
         Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.ReadOnly = True
+        Me.TextBox9.ReadOnly = true
         Me.TextBox9.Size = New System.Drawing.Size(560, 20)
         Me.TextBox9.TabIndex = 164
         '
         'chkProgramm
         '
-        Me.chkProgramm.AutoSize = True
+        Me.chkProgramm.AutoSize = true
         Me.chkProgramm.Location = New System.Drawing.Point(12, 160)
         Me.chkProgramm.Name = "chkProgramm"
         Me.chkProgramm.Size = New System.Drawing.Size(82, 17)
         Me.chkProgramm.TabIndex = 163
         Me.chkProgramm.Text = "Programma:"
-        Me.chkProgramm.UseVisualStyleBackColor = True
+        Me.chkProgramm.UseVisualStyleBackColor = true
         '
         'TextBox8
         '
-        Me.TextBox8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left)  _
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.TextBox8.Location = New System.Drawing.Point(106, 158)
         Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.ReadOnly = True
+        Me.TextBox8.ReadOnly = true
         Me.TextBox8.Size = New System.Drawing.Size(560, 20)
         Me.TextBox8.TabIndex = 162
         '
         'CheckBox1
         '
-        Me.CheckBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.bndData, "SetPAK", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.CheckBox1.DataBindings.Add(New System.Windows.Forms.Binding("Enabled", Me.bndData, "IsActivePAK", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.CheckBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.CheckBox1.AutoSize = true
+        Me.CheckBox1.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.bndData, "SetPAK", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.CheckBox1.DataBindings.Add(New System.Windows.Forms.Binding("Enabled", Me.bndData, "IsActivePAK", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.CheckBox1.Location = New System.Drawing.Point(675, 186)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(50, 17)
         Me.CheckBox1.TabIndex = 161
         Me.CheckBox1.Text = "PAK:"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.CheckBox1.UseVisualStyleBackColor = true
         '
         'TextBox7
         '
-        Me.TextBox7.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox7.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.bndData, "ActivePAK", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.TextBox7.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.TextBox7.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.bndData, "ActivePAK", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.TextBox7.Location = New System.Drawing.Point(751, 184)
         Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.ReadOnly = True
+        Me.TextBox7.ReadOnly = true
         Me.TextBox7.Size = New System.Drawing.Size(425, 20)
         Me.TextBox7.TabIndex = 160
         '
         'TextBox6
         '
-        Me.TextBox6.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.bndData, "CreateDate", True))
+        Me.TextBox6.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.bndData, "CreateDate", true))
         Me.TextBox6.Location = New System.Drawing.Point(355, 62)
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.ReadOnly = True
+        Me.TextBox6.ReadOnly = true
         Me.TextBox6.Size = New System.Drawing.Size(67, 20)
         Me.TextBox6.TabIndex = 158
         '
         'Label17
         '
-        Me.Label17.AutoSize = True
+        Me.Label17.AutoSize = true
         Me.Label17.Location = New System.Drawing.Point(302, 65)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(52, 13)
@@ -666,30 +666,30 @@ Partial Class frmVisitEdit
         '
         'lblCampaignSumm
         '
-        Me.lblCampaignSumm.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblCampaignSumm.AutoSize = True
+        Me.lblCampaignSumm.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.lblCampaignSumm.AutoSize = true
         Me.lblCampaignSumm.Location = New System.Drawing.Point(1029, 87)
         Me.lblCampaignSumm.Name = "lblCampaignSumm"
         Me.lblCampaignSumm.Size = New System.Drawing.Size(89, 13)
         Me.lblCampaignSumm.TabIndex = 156
         Me.lblCampaignSumm.Text = "Pieejamā summa:"
-        Me.lblCampaignSumm.Visible = False
+        Me.lblCampaignSumm.Visible = false
         '
         'txtCampaignSumm
         '
-        Me.txtCampaignSumm.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtCampaignSumm.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.txtCampaignSumm.Location = New System.Drawing.Point(1122, 84)
         Me.txtCampaignSumm.Name = "txtCampaignSumm"
-        Me.txtCampaignSumm.ReadOnly = True
+        Me.txtCampaignSumm.ReadOnly = true
         Me.txtCampaignSumm.Size = New System.Drawing.Size(54, 20)
         Me.txtCampaignSumm.TabIndex = 155
-        Me.txtCampaignSumm.Visible = False
+        Me.txtCampaignSumm.Visible = false
         '
         'lblCampaignName
         '
-        Me.lblCampaignName.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblCampaignName.AutoSize = True
-        Me.lblCampaignName.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(186, Byte))
+        Me.lblCampaignName.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.lblCampaignName.AutoSize = true
+        Me.lblCampaignName.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(186,Byte))
         Me.lblCampaignName.ForeColor = System.Drawing.Color.Red
         Me.lblCampaignName.Location = New System.Drawing.Point(902, 109)
         Me.lblCampaignName.Name = "lblCampaignName"
@@ -697,24 +697,24 @@ Partial Class frmVisitEdit
         Me.lblCampaignName.TabIndex = 154
         Me.lblCampaignName.Tag = "Akcija: {0}"
         Me.lblCampaignName.Text = "Akcija:"
-        Me.lblCampaignName.Visible = False
+        Me.lblCampaignName.Visible = false
         '
         'chkCampaign
         '
-        Me.chkCampaign.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.chkCampaign.AutoSize = True
+        Me.chkCampaign.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.chkCampaign.AutoSize = true
         Me.chkCampaign.Location = New System.Drawing.Point(905, 87)
         Me.chkCampaign.Name = "chkCampaign"
         Me.chkCampaign.Size = New System.Drawing.Size(101, 17)
         Me.chkCampaign.TabIndex = 153
         Me.chkCampaign.Text = "Piesaistīt akcijai"
-        Me.chkCampaign.UseVisualStyleBackColor = True
-        Me.chkCampaign.Visible = False
+        Me.chkCampaign.UseVisualStyleBackColor = true
+        Me.chkCampaign.Visible = false
         '
         'txtRelatedDoctor
         '
-        Me.txtRelatedDoctor.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtRelatedDoctor.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.bndData, "RelatedDoctor", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.txtRelatedDoctor.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.txtRelatedDoctor.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.bndData, "RelatedDoctor", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.txtRelatedDoctor.Location = New System.Drawing.Point(902, 9)
         Me.txtRelatedDoctor.Name = "txtRelatedDoctor"
         Me.txtRelatedDoctor.PickerPresets = Nothing
@@ -725,23 +725,23 @@ Partial Class frmVisitEdit
         '
         'Label16
         '
-        Me.Label16.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label16.AutoSize = True
+        Me.Label16.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.Label16.AutoSize = true
         Me.Label16.Location = New System.Drawing.Point(786, 12)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(90, 13)
         Me.Label16.TabIndex = 151
         Me.Label16.Text = "Piesaistītais ārsts:"
-        Me.ToolTipController1.SetToolTip(Me.Label16, "Piesaistītais ārsts tiks izmantots algu aprēķinos. Piemēram ārsts veic analīžu re" & _
+        Me.ToolTipController1.SetToolTip(Me.Label16, "Piesaistītais ārsts tiks izmantots algu aprēķinos. Piemēram ārsts veic analīžu re"& _ 
         "zultātu apstrādi ārpus klīnikas.")
         '
         'TextBox5
         '
-        Me.TextBox5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox5.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PatientBindingSource, "CurrentInsuranceNumber", True))
+        Me.TextBox5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.TextBox5.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PatientBindingSource, "CurrentInsuranceNumber", true))
         Me.TextBox5.Location = New System.Drawing.Point(977, 158)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.ReadOnly = True
+        Me.TextBox5.ReadOnly = true
         Me.TextBox5.Size = New System.Drawing.Size(199, 20)
         Me.TextBox5.TabIndex = 150
         '
@@ -751,8 +751,8 @@ Partial Class frmVisitEdit
         '
         'Label15
         '
-        Me.Label15.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label15.AutoSize = True
+        Me.Label15.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.Label15.AutoSize = true
         Me.Label15.Location = New System.Drawing.Point(902, 161)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(46, 13)
@@ -761,18 +761,18 @@ Partial Class frmVisitEdit
         '
         'TextBox4
         '
-        Me.TextBox4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox4.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PatientBindingSource, "CurrentInsuranceValid", True))
+        Me.TextBox4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.TextBox4.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PatientBindingSource, "CurrentInsuranceValid", true))
         Me.TextBox4.Location = New System.Drawing.Point(751, 158)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.ReadOnly = True
+        Me.TextBox4.ReadOnly = true
         Me.TextBox4.Size = New System.Drawing.Size(145, 20)
         Me.TextBox4.TabIndex = 148
         '
         'Label14
         '
-        Me.Label14.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label14.AutoSize = True
+        Me.Label14.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.Label14.AutoSize = true
         Me.Label14.Location = New System.Drawing.Point(672, 161)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(41, 13)
@@ -781,18 +781,18 @@ Partial Class frmVisitEdit
         '
         'TextBox3
         '
-        Me.TextBox3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox3.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PatientBindingSource, "CurrentInsuranceProgramm", True))
+        Me.TextBox3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.TextBox3.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PatientBindingSource, "CurrentInsuranceProgramm", true))
         Me.TextBox3.Location = New System.Drawing.Point(977, 132)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.ReadOnly = True
+        Me.TextBox3.ReadOnly = true
         Me.TextBox3.Size = New System.Drawing.Size(199, 20)
         Me.TextBox3.TabIndex = 146
         '
         'Label13
         '
-        Me.Label13.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label13.AutoSize = True
+        Me.Label13.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.Label13.AutoSize = true
         Me.Label13.Location = New System.Drawing.Point(902, 135)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(63, 13)
@@ -801,18 +801,18 @@ Partial Class frmVisitEdit
         '
         'TextBox2
         '
-        Me.TextBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PatientBindingSource, "CurrentInsurance", True))
+        Me.TextBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.TextBox2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PatientBindingSource, "CurrentInsurance", true))
         Me.TextBox2.Location = New System.Drawing.Point(751, 132)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.ReadOnly = True
+        Me.TextBox2.ReadOnly = true
         Me.TextBox2.Size = New System.Drawing.Size(145, 20)
         Me.TextBox2.TabIndex = 144
         '
         'Label12
         '
-        Me.Label12.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label12.AutoSize = True
+        Me.Label12.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.Label12.AutoSize = true
         Me.Label12.Location = New System.Drawing.Point(672, 135)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(73, 13)
@@ -821,18 +821,18 @@ Partial Class frmVisitEdit
         '
         'txtBonusPoints
         '
-        Me.txtBonusPoints.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtBonusPoints.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.bndData, "BonusPoints", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.txtBonusPoints.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.txtBonusPoints.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.bndData, "BonusPoints", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.txtBonusPoints.Location = New System.Drawing.Point(800, 106)
         Me.txtBonusPoints.Name = "txtBonusPoints"
-        Me.txtBonusPoints.ReadOnly = True
+        Me.txtBonusPoints.ReadOnly = true
         Me.txtBonusPoints.Size = New System.Drawing.Size(96, 20)
         Me.txtBonusPoints.TabIndex = 142
         '
         'Label11
         '
-        Me.Label11.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label11.AutoSize = True
+        Me.Label11.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.Label11.AutoSize = true
         Me.Label11.Location = New System.Drawing.Point(672, 109)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(125, 13)
@@ -841,18 +841,18 @@ Partial Class frmVisitEdit
         '
         'TextBox1
         '
-        Me.TextBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.bndData, "CreatePlace", True))
+        Me.TextBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.TextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.bndData, "CreatePlace", true))
         Me.TextBox1.Location = New System.Drawing.Point(863, 83)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ReadOnly = True
+        Me.TextBox1.ReadOnly = true
         Me.TextBox1.Size = New System.Drawing.Size(33, 20)
         Me.TextBox1.TabIndex = 140
         '
         'Label10
         '
-        Me.Label10.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label10.AutoSize = True
+        Me.Label10.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.Label10.AutoSize = true
         Me.Label10.Location = New System.Drawing.Point(786, 85)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(75, 13)
@@ -861,19 +861,19 @@ Partial Class frmVisitEdit
         '
         'chkPrepareCard
         '
-        Me.chkPrepareCard.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.chkPrepareCard.AutoSize = True
-        Me.chkPrepareCard.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.bndData, "PrepareCard", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.chkPrepareCard.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.chkPrepareCard.AutoSize = true
+        Me.chkPrepareCard.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.bndData, "PrepareCard", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.chkPrepareCard.Location = New System.Drawing.Point(672, 85)
         Me.chkPrepareCard.Name = "chkPrepareCard"
         Me.chkPrepareCard.Size = New System.Drawing.Size(116, 17)
         Me.chkPrepareCard.TabIndex = 138
         Me.chkPrepareCard.Text = "Sagatavota kartiņa"
-        Me.chkPrepareCard.UseVisualStyleBackColor = True
+        Me.chkPrepareCard.UseVisualStyleBackColor = true
         '
         'TextEdit1
         '
-        Me.TextEdit1.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.bndData, "Length", True))
+        Me.TextEdit1.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.bndData, "Length", true))
         Me.TextEdit1.Location = New System.Drawing.Point(260, 62)
         Me.TextEdit1.Name = "TextEdit1"
         Me.TextEdit1.Properties.Mask.EditMask = "n0"
@@ -883,7 +883,7 @@ Partial Class frmVisitEdit
         '
         'Label9
         '
-        Me.Label9.AutoSize = True
+        Me.Label9.AutoSize = true
         Me.Label9.Location = New System.Drawing.Point(221, 65)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(40, 13)
@@ -892,18 +892,18 @@ Partial Class frmVisitEdit
         '
         'txtCreator
         '
-        Me.txtCreator.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtCreator.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.bndData, "Creator", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.txtCreator.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left)  _
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.txtCreator.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.bndData, "Creator", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.txtCreator.Location = New System.Drawing.Point(628, 61)
         Me.txtCreator.Name = "txtCreator"
-        Me.txtCreator.ReadOnly = True
+        Me.txtCreator.ReadOnly = true
         Me.txtCreator.Size = New System.Drawing.Size(548, 20)
         Me.txtCreator.TabIndex = 135
         '
         'Label8
         '
-        Me.Label8.AutoSize = True
+        Me.Label8.AutoSize = true
         Me.Label8.Location = New System.Drawing.Point(564, 65)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(59, 13)
@@ -912,46 +912,46 @@ Partial Class frmVisitEdit
         '
         'gbhVisitServices
         '
-        Me.gbhVisitServices.AutoSize = True
+        Me.gbhVisitServices.AutoSize = true
         Me.gbhVisitServices.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.gbhVisitServices.Controls.Add(Me.btnAddNewService)
         Me.gbhVisitServices.Controls.Add(Me.btnAddNewVisit)
-        Me.gbhVisitServices.DeleteReason = False
+        Me.gbhVisitServices.DeleteReason = false
         Me.gbhVisitServices.DeleteReasonColumn = Nothing
         Me.gbhVisitServices.Dock = System.Windows.Forms.DockStyle.Top
         Me.gbhVisitServices.Grid = Me.grdVisitServices
         Me.gbhVisitServices.GridDataSource = Me.VisitServicesBindingSource
         Me.gbhVisitServices.Location = New System.Drawing.Point(0, 213)
         Me.gbhVisitServices.Name = "gbhVisitServices"
-        Me.gbhVisitServices.ShowActive = False
-        Me.gbhVisitServices.ShowAdd = True
-        Me.gbhVisitServices.ShowChk = True
-        Me.gbhVisitServices.ShowDelete = True
+        Me.gbhVisitServices.ShowActive = false
+        Me.gbhVisitServices.ShowAdd = true
+        Me.gbhVisitServices.ShowChk = true
+        Me.gbhVisitServices.ShowDelete = true
         Me.gbhVisitServices.Size = New System.Drawing.Size(1184, 29)
         Me.gbhVisitServices.TabIndex = 135
-        Me.gbhVisitServices.UseCanDelete = True
+        Me.gbhVisitServices.UseCanDelete = true
         '
         'btnAddNewService
         '
-        Me.btnAddNewService.AutoSize = True
+        Me.btnAddNewService.AutoSize = true
         Me.btnAddNewService.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.btnAddNewService.Location = New System.Drawing.Point(260, 3)
         Me.btnAddNewService.Name = "btnAddNewService"
         Me.btnAddNewService.Size = New System.Drawing.Size(144, 23)
         Me.btnAddNewService.TabIndex = 4
         Me.btnAddNewService.Text = "Pievienot citu pakalpojumu"
-        Me.btnAddNewService.UseVisualStyleBackColor = True
+        Me.btnAddNewService.UseVisualStyleBackColor = true
         '
         'btnAddNewVisit
         '
-        Me.btnAddNewVisit.AutoSize = True
+        Me.btnAddNewVisit.AutoSize = true
         Me.btnAddNewVisit.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.btnAddNewVisit.Location = New System.Drawing.Point(410, 3)
         Me.btnAddNewVisit.Name = "btnAddNewVisit"
         Me.btnAddNewVisit.Size = New System.Drawing.Size(148, 23)
         Me.btnAddNewVisit.TabIndex = 5
         Me.btnAddNewVisit.Text = "Pievienot vizīti pie cita ārsta"
-        Me.btnAddNewVisit.UseVisualStyleBackColor = True
+        Me.btnAddNewVisit.UseVisualStyleBackColor = true
         '
         'grdVisitServices
         '
@@ -961,12 +961,12 @@ Partial Class frmVisitEdit
         '
         '
         Me.grdVisitServices.EmbeddedNavigator.Name = ""
-        Me.grdVisitServices.EnforceCanEdit = False
+        Me.grdVisitServices.EnforceCanEdit = false
         Me.grdVisitServices.Location = New System.Drawing.Point(0, 0)
         Me.grdVisitServices.MainView = Me.AdvBandedGridView1
         Me.grdVisitServices.Name = "grdVisitServices"
         Me.grdVisitServices.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.txtServiceCol, Me.chkPayd, Me.txtPresentCard, Me.RepositoryItemCheckEdit1, Me.RepositoryItemImageEdit1, Me.cmbPaymentType})
-        Me.grdVisitServices.ShowOnlyActive = False
+        Me.grdVisitServices.ShowOnlyActive = false
         Me.grdVisitServices.Size = New System.Drawing.Size(1184, 146)
         Me.grdVisitServices.TabIndex = 136
         Me.grdVisitServices.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.AdvBandedGridView1})
@@ -982,9 +982,9 @@ Partial Class frmVisitEdit
         Me.AdvBandedGridView1.Columns.AddRange(New DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn() {Me.colCode, Me.colServiceGiven, Me.colService, Me.colGroupWork, Me.colDefaultPrice, Me.colDefaultPercentagePrice, Me.colDefaultPriceWithOutPercentage, Me.colPrice, Me.colPercentage, Me.colPriceWithOutPercentage, Me.colPercentagePrice, Me.colPayd, Me.GridColumn1, Me.colInsurance, Me.colPresentCardNumber, Me.colPresentCardSum, Me.colBonusPoints, Me.BandedGridColumn1, Me.BandedGridColumn3, Me.colDiscount, Me.BandedGridColumn5})
         Me.AdvBandedGridView1.GridControl = Me.grdVisitServices
         Me.AdvBandedGridView1.Name = "AdvBandedGridView1"
-        Me.AdvBandedGridView1.OptionsView.ShowDetailButtons = False
-        Me.AdvBandedGridView1.OptionsView.ShowFilterPanel = False
-        Me.AdvBandedGridView1.OptionsView.ShowGroupPanel = False
+        Me.AdvBandedGridView1.OptionsView.ShowDetailButtons = false
+        Me.AdvBandedGridView1.OptionsView.ShowFilterPanel = false
+        Me.AdvBandedGridView1.OptionsView.ShowGroupPanel = false
         '
         'GridBand1
         '
@@ -1003,9 +1003,9 @@ Partial Class frmVisitEdit
         Me.colCode.Caption = "Kods"
         Me.colCode.FieldName = "ServiceCode"
         Me.colCode.Name = "colCode"
-        Me.colCode.OptionsColumn.AllowEdit = False
-        Me.colCode.OptionsColumn.ReadOnly = True
-        Me.colCode.Visible = True
+        Me.colCode.OptionsColumn.AllowEdit = false
+        Me.colCode.OptionsColumn.ReadOnly = true
+        Me.colCode.Visible = true
         Me.colCode.Width = 46
         '
         'colService
@@ -1014,22 +1014,22 @@ Partial Class frmVisitEdit
         Me.colService.ColumnEdit = Me.txtServiceCol
         Me.colService.FieldName = "Service"
         Me.colService.Name = "colService"
-        Me.colService.Visible = True
+        Me.colService.Visible = true
         Me.colService.Width = 249
         '
         'txtServiceCol
         '
-        Me.txtServiceCol.AutoHeight = False
+        Me.txtServiceCol.AutoHeight = false
         Me.txtServiceCol.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.txtServiceCol.Name = "txtServiceCol"
-        Me.txtServiceCol.ReadOnly = True
+        Me.txtServiceCol.ReadOnly = true
         '
         'colGroupWork
         '
         Me.colGroupWork.Caption = "Grupas nodarbība"
         Me.colGroupWork.FieldName = "GroupWork"
         Me.colGroupWork.Name = "colGroupWork"
-        Me.colGroupWork.OptionsColumn.ReadOnly = True
+        Me.colGroupWork.OptionsColumn.ReadOnly = true
         '
         'colPercentage
         '
@@ -1060,7 +1060,7 @@ Partial Class frmVisitEdit
         Me.colDefaultPrice.Caption = "Cena"
         Me.colDefaultPrice.FieldName = "DefaultPrice"
         Me.colDefaultPrice.Name = "colDefaultPrice"
-        Me.colDefaultPrice.Visible = True
+        Me.colDefaultPrice.Visible = true
         Me.colDefaultPrice.Width = 45
         '
         'colDiscount
@@ -1068,7 +1068,7 @@ Partial Class frmVisitEdit
         Me.colDiscount.Caption = "Atlaide %"
         Me.colDiscount.FieldName = "Discount"
         Me.colDiscount.Name = "colDiscount"
-        Me.colDiscount.Visible = True
+        Me.colDiscount.Visible = true
         Me.colDiscount.Width = 67
         '
         'colDefaultPriceWithOutPercentage
@@ -1098,7 +1098,7 @@ Partial Class frmVisitEdit
         Me.colPrice.Caption = "Summa"
         Me.colPrice.FieldName = "Price"
         Me.colPrice.Name = "colPrice"
-        Me.colPrice.Visible = True
+        Me.colPrice.Visible = true
         Me.colPrice.Width = 64
         '
         'colPriceWithOutPercentage
@@ -1128,7 +1128,7 @@ Partial Class frmVisitEdit
         Me.colInsurance.Caption = "Summa"
         Me.colInsurance.FieldName = "Insurance"
         Me.colInsurance.Name = "colInsurance"
-        Me.colInsurance.Visible = True
+        Me.colInsurance.Visible = true
         Me.colInsurance.Width = 81
         '
         'GridBand8
@@ -1146,12 +1146,12 @@ Partial Class frmVisitEdit
         Me.colPresentCardNumber.ColumnEdit = Me.txtPresentCard
         Me.colPresentCardNumber.FieldName = "PresentCardNumber"
         Me.colPresentCardNumber.Name = "colPresentCardNumber"
-        Me.colPresentCardNumber.Visible = True
+        Me.colPresentCardNumber.Visible = true
         Me.colPresentCardNumber.Width = 55
         '
         'txtPresentCard
         '
-        Me.txtPresentCard.AutoHeight = False
+        Me.txtPresentCard.AutoHeight = false
         Me.txtPresentCard.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.txtPresentCard.Name = "txtPresentCard"
         Me.txtPresentCard.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
@@ -1161,7 +1161,7 @@ Partial Class frmVisitEdit
         Me.colPresentCardSum.Caption = "Summa"
         Me.colPresentCardSum.FieldName = "PresentCardSum"
         Me.colPresentCardSum.Name = "colPresentCardSum"
-        Me.colPresentCardSum.Visible = True
+        Me.colPresentCardSum.Visible = true
         Me.colPresentCardSum.Width = 53
         '
         'GridBand9
@@ -1177,7 +1177,7 @@ Partial Class frmVisitEdit
         Me.colBonusPoints.Caption = "Summa"
         Me.colBonusPoints.FieldName = "BonusPoints"
         Me.colBonusPoints.Name = "colBonusPoints"
-        Me.colBonusPoints.Visible = True
+        Me.colBonusPoints.Visible = true
         Me.colBonusPoints.Width = 80
         '
         'GridBand10
@@ -1199,12 +1199,12 @@ Partial Class frmVisitEdit
         Me.colPayd.FieldName = "Payd"
         Me.colPayd.Name = "colPayd"
         Me.colPayd.ToolTip = "Apmaksāts"
-        Me.colPayd.Visible = True
+        Me.colPayd.Visible = true
         Me.colPayd.Width = 44
         '
         'chkPayd
         '
-        Me.chkPayd.AutoHeight = False
+        Me.chkPayd.AutoHeight = false
         Me.chkPayd.Name = "chkPayd"
         '
         'BandedGridColumn5
@@ -1213,12 +1213,12 @@ Partial Class frmVisitEdit
         Me.BandedGridColumn5.ColumnEdit = Me.cmbPaymentType
         Me.BandedGridColumn5.FieldName = "PaymentType"
         Me.BandedGridColumn5.Name = "BandedGridColumn5"
-        Me.BandedGridColumn5.Visible = True
+        Me.BandedGridColumn5.Visible = true
         Me.BandedGridColumn5.Width = 99
         '
         'cmbPaymentType
         '
-        Me.cmbPaymentType.AutoHeight = False
+        Me.cmbPaymentType.AutoHeight = false
         Me.cmbPaymentType.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Down)})
         Me.cmbPaymentType.Name = "cmbPaymentType"
         Me.cmbPaymentType.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
@@ -1230,12 +1230,12 @@ Partial Class frmVisitEdit
         Me.colServiceGiven.FieldName = "ServiceGiven"
         Me.colServiceGiven.Name = "colServiceGiven"
         Me.colServiceGiven.ToolTip = "Pakalpojums sniegts"
-        Me.colServiceGiven.Visible = True
+        Me.colServiceGiven.Visible = true
         Me.colServiceGiven.Width = 58
         '
         'RepositoryItemCheckEdit1
         '
-        Me.RepositoryItemCheckEdit1.AutoHeight = False
+        Me.RepositoryItemCheckEdit1.AutoHeight = false
         Me.RepositoryItemCheckEdit1.Name = "RepositoryItemCheckEdit1"
         '
         'BandedGridColumn1
@@ -1243,8 +1243,8 @@ Partial Class frmVisitEdit
         Me.BandedGridColumn1.Caption = "Apmaksas statusu mainīja"
         Me.BandedGridColumn1.FieldName = "PaydStateChangedByUser"
         Me.BandedGridColumn1.Name = "BandedGridColumn1"
-        Me.BandedGridColumn1.OptionsColumn.ReadOnly = True
-        Me.BandedGridColumn1.Visible = True
+        Me.BandedGridColumn1.OptionsColumn.ReadOnly = true
+        Me.BandedGridColumn1.Visible = true
         Me.BandedGridColumn1.Width = 149
         '
         'BandedGridColumn3
@@ -1252,13 +1252,13 @@ Partial Class frmVisitEdit
         Me.BandedGridColumn3.Caption = "Apmaksas datums"
         Me.BandedGridColumn3.FieldName = "PaydDate"
         Me.BandedGridColumn3.Name = "BandedGridColumn3"
-        Me.BandedGridColumn3.OptionsColumn.ReadOnly = True
-        Me.BandedGridColumn3.Visible = True
+        Me.BandedGridColumn3.OptionsColumn.ReadOnly = true
+        Me.BandedGridColumn3.Visible = true
         Me.BandedGridColumn3.Width = 105
         '
         'RepositoryItemImageEdit1
         '
-        Me.RepositoryItemImageEdit1.AutoHeight = False
+        Me.RepositoryItemImageEdit1.AutoHeight = false
         Me.RepositoryItemImageEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Down)})
         Me.RepositoryItemImageEdit1.Name = "RepositoryItemImageEdit1"
         '
@@ -1288,12 +1288,12 @@ Partial Class frmVisitEdit
         '
         '
         Me.grdRelatedVisits.EmbeddedNavigator.Name = ""
-        Me.grdRelatedVisits.EnforceCanEdit = False
+        Me.grdRelatedVisits.EnforceCanEdit = false
         Me.grdRelatedVisits.Location = New System.Drawing.Point(0, 0)
         Me.grdRelatedVisits.MainView = Me.gvwRelatedVisits
         Me.grdRelatedVisits.Name = "grdRelatedVisits"
         Me.grdRelatedVisits.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemButtonEdit3, Me.RepositoryItemCheckEdit2, Me.RepositoryItemButtonEdit4, Me.RepositoryItemCheckEdit3, Me.cmbPaymentTypeRelatedSevice})
-        Me.grdRelatedVisits.ShowOnlyActive = False
+        Me.grdRelatedVisits.ShowOnlyActive = false
         Me.grdRelatedVisits.Size = New System.Drawing.Size(1184, 145)
         Me.grdRelatedVisits.TabIndex = 138
         Me.grdRelatedVisits.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.gvwRelatedVisits})
@@ -1308,9 +1308,9 @@ Partial Class frmVisitEdit
         Me.gvwRelatedVisits.Columns.AddRange(New DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn() {Me.colRelatedCode, Me.colServiceGiven1, Me.BandedGridColumn12, Me.BandedGridColumn13, Me.BandedGridColumn16, Me.BandedGridColumn18, Me.BandedGridColumn17, Me.BandedGridColumn19, Me.BandedGridColumn14, Me.BandedGridColumn20, Me.BandedGridColumn21, Me.BandedGridColumn26, Me.BandedGridColumn15, Me.BandedGridColumn22, Me.BandedGridColumn23, Me.BandedGridColumn24, Me.BandedGridColumn25, Me.BandedGridColumn2, Me.BandedGridColumn4, Me.colDiscount1, Me.BandedGridColumn6})
         Me.gvwRelatedVisits.GridControl = Me.grdRelatedVisits
         Me.gvwRelatedVisits.Name = "gvwRelatedVisits"
-        Me.gvwRelatedVisits.OptionsView.ShowDetailButtons = False
-        Me.gvwRelatedVisits.OptionsView.ShowFilterPanel = False
-        Me.gvwRelatedVisits.OptionsView.ShowGroupPanel = False
+        Me.gvwRelatedVisits.OptionsView.ShowDetailButtons = false
+        Me.gvwRelatedVisits.OptionsView.ShowFilterPanel = false
+        Me.gvwRelatedVisits.OptionsView.ShowGroupPanel = false
         Me.gvwRelatedVisits.SortInfo.AddRange(New DevExpress.XtraGrid.Columns.GridColumnSortInfo() {New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.BandedGridColumn23, DevExpress.Data.ColumnSortOrder.Ascending)})
         '
         'GridBand11
@@ -1330,9 +1330,9 @@ Partial Class frmVisitEdit
         Me.colRelatedCode.Caption = "Kods"
         Me.colRelatedCode.FieldName = "ServiceCode"
         Me.colRelatedCode.Name = "colRelatedCode"
-        Me.colRelatedCode.OptionsColumn.AllowEdit = False
-        Me.colRelatedCode.OptionsColumn.ReadOnly = True
-        Me.colRelatedCode.Visible = True
+        Me.colRelatedCode.OptionsColumn.AllowEdit = false
+        Me.colRelatedCode.OptionsColumn.ReadOnly = true
+        Me.colRelatedCode.Visible = true
         Me.colRelatedCode.Width = 44
         '
         'BandedGridColumn12
@@ -1341,22 +1341,22 @@ Partial Class frmVisitEdit
         Me.BandedGridColumn12.ColumnEdit = Me.RepositoryItemButtonEdit3
         Me.BandedGridColumn12.FieldName = "Service"
         Me.BandedGridColumn12.Name = "BandedGridColumn12"
-        Me.BandedGridColumn12.Visible = True
+        Me.BandedGridColumn12.Visible = true
         Me.BandedGridColumn12.Width = 248
         '
         'RepositoryItemButtonEdit3
         '
-        Me.RepositoryItemButtonEdit3.AutoHeight = False
+        Me.RepositoryItemButtonEdit3.AutoHeight = false
         Me.RepositoryItemButtonEdit3.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.RepositoryItemButtonEdit3.Name = "RepositoryItemButtonEdit3"
-        Me.RepositoryItemButtonEdit3.ReadOnly = True
+        Me.RepositoryItemButtonEdit3.ReadOnly = true
         '
         'BandedGridColumn13
         '
         Me.BandedGridColumn13.Caption = "Grupas nodarbība"
         Me.BandedGridColumn13.FieldName = "GroupWork"
         Me.BandedGridColumn13.Name = "BandedGridColumn13"
-        Me.BandedGridColumn13.OptionsColumn.ReadOnly = True
+        Me.BandedGridColumn13.OptionsColumn.ReadOnly = true
         '
         'BandedGridColumn14
         '
@@ -1387,7 +1387,7 @@ Partial Class frmVisitEdit
         Me.BandedGridColumn16.Caption = "Cena"
         Me.BandedGridColumn16.FieldName = "DefaultPrice"
         Me.BandedGridColumn16.Name = "BandedGridColumn16"
-        Me.BandedGridColumn16.Visible = True
+        Me.BandedGridColumn16.Visible = true
         Me.BandedGridColumn16.Width = 45
         '
         'colDiscount1
@@ -1395,7 +1395,7 @@ Partial Class frmVisitEdit
         Me.colDiscount1.Caption = "Atlaide %"
         Me.colDiscount1.FieldName = "Discount"
         Me.colDiscount1.Name = "colDiscount1"
-        Me.colDiscount1.Visible = True
+        Me.colDiscount1.Visible = true
         Me.colDiscount1.Width = 70
         '
         'BandedGridColumn17
@@ -1425,7 +1425,7 @@ Partial Class frmVisitEdit
         Me.BandedGridColumn19.Caption = "Summa"
         Me.BandedGridColumn19.FieldName = "Price"
         Me.BandedGridColumn19.Name = "BandedGridColumn19"
-        Me.BandedGridColumn19.Visible = True
+        Me.BandedGridColumn19.Visible = true
         Me.BandedGridColumn19.Width = 62
         '
         'BandedGridColumn20
@@ -1455,7 +1455,7 @@ Partial Class frmVisitEdit
         Me.BandedGridColumn22.Caption = "Summa"
         Me.BandedGridColumn22.FieldName = "Insurance"
         Me.BandedGridColumn22.Name = "BandedGridColumn22"
-        Me.BandedGridColumn22.Visible = True
+        Me.BandedGridColumn22.Visible = true
         Me.BandedGridColumn22.Width = 88
         '
         'GridBand15
@@ -1473,12 +1473,12 @@ Partial Class frmVisitEdit
         Me.BandedGridColumn23.ColumnEdit = Me.RepositoryItemButtonEdit4
         Me.BandedGridColumn23.FieldName = "PresentCardNumber"
         Me.BandedGridColumn23.Name = "BandedGridColumn23"
-        Me.BandedGridColumn23.Visible = True
+        Me.BandedGridColumn23.Visible = true
         Me.BandedGridColumn23.Width = 66
         '
         'RepositoryItemButtonEdit4
         '
-        Me.RepositoryItemButtonEdit4.AutoHeight = False
+        Me.RepositoryItemButtonEdit4.AutoHeight = false
         Me.RepositoryItemButtonEdit4.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.RepositoryItemButtonEdit4.Name = "RepositoryItemButtonEdit4"
         Me.RepositoryItemButtonEdit4.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
@@ -1488,7 +1488,7 @@ Partial Class frmVisitEdit
         Me.BandedGridColumn24.Caption = "Summa"
         Me.BandedGridColumn24.FieldName = "PresentCardSum"
         Me.BandedGridColumn24.Name = "BandedGridColumn24"
-        Me.BandedGridColumn24.Visible = True
+        Me.BandedGridColumn24.Visible = true
         Me.BandedGridColumn24.Width = 52
         '
         'GridBand16
@@ -1504,7 +1504,7 @@ Partial Class frmVisitEdit
         Me.BandedGridColumn25.Caption = "Summa"
         Me.BandedGridColumn25.FieldName = "BonusPoints"
         Me.BandedGridColumn25.Name = "BandedGridColumn25"
-        Me.BandedGridColumn25.Visible = True
+        Me.BandedGridColumn25.Visible = true
         Me.BandedGridColumn25.Width = 83
         '
         'GridBand17
@@ -1526,12 +1526,12 @@ Partial Class frmVisitEdit
         Me.BandedGridColumn26.FieldName = "Payd"
         Me.BandedGridColumn26.Name = "BandedGridColumn26"
         Me.BandedGridColumn26.ToolTip = "Apmaksāts"
-        Me.BandedGridColumn26.Visible = True
+        Me.BandedGridColumn26.Visible = true
         Me.BandedGridColumn26.Width = 55
         '
         'RepositoryItemCheckEdit2
         '
-        Me.RepositoryItemCheckEdit2.AutoHeight = False
+        Me.RepositoryItemCheckEdit2.AutoHeight = false
         Me.RepositoryItemCheckEdit2.Name = "RepositoryItemCheckEdit2"
         '
         'BandedGridColumn6
@@ -1540,12 +1540,12 @@ Partial Class frmVisitEdit
         Me.BandedGridColumn6.ColumnEdit = Me.cmbPaymentTypeRelatedSevice
         Me.BandedGridColumn6.FieldName = "PaymentType"
         Me.BandedGridColumn6.Name = "BandedGridColumn6"
-        Me.BandedGridColumn6.Visible = True
+        Me.BandedGridColumn6.Visible = true
         Me.BandedGridColumn6.Width = 92
         '
         'cmbPaymentTypeRelatedSevice
         '
-        Me.cmbPaymentTypeRelatedSevice.AutoHeight = False
+        Me.cmbPaymentTypeRelatedSevice.AutoHeight = false
         Me.cmbPaymentTypeRelatedSevice.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Down)})
         Me.cmbPaymentTypeRelatedSevice.Name = "cmbPaymentTypeRelatedSevice"
         Me.cmbPaymentTypeRelatedSevice.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
@@ -1557,12 +1557,12 @@ Partial Class frmVisitEdit
         Me.colServiceGiven1.FieldName = "ServiceGiven"
         Me.colServiceGiven1.Name = "colServiceGiven1"
         Me.colServiceGiven1.ToolTip = "Pakalpojums sniegts"
-        Me.colServiceGiven1.Visible = True
+        Me.colServiceGiven1.Visible = true
         Me.colServiceGiven1.Width = 58
         '
         'RepositoryItemCheckEdit3
         '
-        Me.RepositoryItemCheckEdit3.AutoHeight = False
+        Me.RepositoryItemCheckEdit3.AutoHeight = false
         Me.RepositoryItemCheckEdit3.Name = "RepositoryItemCheckEdit3"
         '
         'BandedGridColumn2
@@ -1570,8 +1570,8 @@ Partial Class frmVisitEdit
         Me.BandedGridColumn2.Caption = "Apmaksas statusu mainīja"
         Me.BandedGridColumn2.FieldName = "PaydStateChangedByUser"
         Me.BandedGridColumn2.Name = "BandedGridColumn2"
-        Me.BandedGridColumn2.OptionsColumn.ReadOnly = True
-        Me.BandedGridColumn2.Visible = True
+        Me.BandedGridColumn2.OptionsColumn.ReadOnly = true
+        Me.BandedGridColumn2.Visible = true
         Me.BandedGridColumn2.Width = 142
         '
         'BandedGridColumn4
@@ -1579,19 +1579,19 @@ Partial Class frmVisitEdit
         Me.BandedGridColumn4.Caption = "Apmaksas datums"
         Me.BandedGridColumn4.FieldName = "PaydDate"
         Me.BandedGridColumn4.Name = "BandedGridColumn4"
-        Me.BandedGridColumn4.OptionsColumn.ReadOnly = True
-        Me.BandedGridColumn4.Visible = True
+        Me.BandedGridColumn4.OptionsColumn.ReadOnly = true
+        Me.BandedGridColumn4.Visible = true
         Me.BandedGridColumn4.Width = 105
         '
         'cmsInsuranceTemplates
         '
         Me.cmsInsuranceTemplates.Name = "ContextMenuStrip1"
-        Me.cmsInsuranceTemplates.ShowImageMargin = False
+        Me.cmsInsuranceTemplates.ShowImageMargin = false
         Me.cmsInsuranceTemplates.Size = New System.Drawing.Size(36, 4)
         '
         'frmVisitEdit
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1184, 566)
         Me.Controls.Add(Me.SplitContainer1)
@@ -1603,44 +1603,44 @@ Partial Class frmVisitEdit
         Me.Name = "frmVisitEdit"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Vizīte"
-        Me.FlowLayoutPanel2.ResumeLayout(False)
-        Me.FlowLayoutPanel2.PerformLayout()
-        CType(Me.bndData, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtDoctor.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtService.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtPatient.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        CType(Me.txtRelatedDoctor.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PatientBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.gbhVisitServices.ResumeLayout(False)
-        Me.gbhVisitServices.PerformLayout()
-        CType(Me.grdVisitServices, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.VisitServicesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AdvBandedGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtServiceCol, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtPresentCard, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.chkPayd, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.cmbPaymentType, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RepositoryItemCheckEdit1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RepositoryItemImageEdit1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.SplitContainer1.Panel1.ResumeLayout(False)
-        Me.SplitContainer1.Panel2.ResumeLayout(False)
-        Me.SplitContainer1.ResumeLayout(False)
-        CType(Me.grdRelatedVisits, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.bndRelatedVisits, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.gvwRelatedVisits, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RepositoryItemButtonEdit3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RepositoryItemButtonEdit4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RepositoryItemCheckEdit2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.cmbPaymentTypeRelatedSevice, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RepositoryItemCheckEdit3, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        Me.FlowLayoutPanel2.ResumeLayout(false)
+        Me.FlowLayoutPanel2.PerformLayout
+        CType(Me.bndData,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.ErrorProvider1,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.txtDoctor.Properties,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.txtService.Properties,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.txtPatient.Properties,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel1.ResumeLayout(false)
+        Me.Panel1.PerformLayout
+        CType(Me.txtRelatedDoctor.Properties,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PatientBindingSource,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.TextEdit1.Properties,System.ComponentModel.ISupportInitialize).EndInit
+        Me.gbhVisitServices.ResumeLayout(false)
+        Me.gbhVisitServices.PerformLayout
+        CType(Me.grdVisitServices,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.VisitServicesBindingSource,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.AdvBandedGridView1,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.txtServiceCol,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.txtPresentCard,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.chkPayd,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.cmbPaymentType,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.RepositoryItemCheckEdit1,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.RepositoryItemImageEdit1,System.ComponentModel.ISupportInitialize).EndInit
+        Me.SplitContainer1.Panel1.ResumeLayout(false)
+        Me.SplitContainer1.Panel2.ResumeLayout(false)
+        Me.SplitContainer1.ResumeLayout(false)
+        CType(Me.grdRelatedVisits,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.bndRelatedVisits,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.gvwRelatedVisits,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.RepositoryItemButtonEdit3,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.RepositoryItemButtonEdit4,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.RepositoryItemCheckEdit2,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.cmbPaymentTypeRelatedSevice,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.RepositoryItemCheckEdit3,System.ComponentModel.ISupportInitialize).EndInit
+        Me.ResumeLayout(false)
+        Me.PerformLayout
 
-    End Sub
+End Sub
     Friend WithEvents FlowLayoutPanel1 As System.Windows.Forms.FlowLayoutPanel
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label

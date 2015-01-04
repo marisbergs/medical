@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Client.exe" size="1559552">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Client.exe" size="1568768">
       <assemblyIdentity name="Client" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>67qbWgvMwS8mPunA9TiZ2pmFXhQ=</dsig:DigestValue>
+        <dsig:DigestValue>Gu3EvHytUr4rptKb9bS7lmKG6pM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -73,7 +73,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>LAw6N9kTUBw9UlqvM5Drv7iHZ4w=</dsig:DigestValue>
+        <dsig:DigestValue>wHE2oA8GdMi5/3bN1ByQbdUzekU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -85,7 +85,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>zV5kdo0VUj4i9RNVr7RmrZe5S0k=</dsig:DigestValue>
+        <dsig:DigestValue>zE+JCYQDHRyYnQTRrblaSdd9I6A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -97,7 +97,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>+uU5H64VZ7WdtsMzVTIjxtXZPIk=</dsig:DigestValue>
+        <dsig:DigestValue>olYYLRLyrkXSv2GwI9jhvJdqKaM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -109,7 +109,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>6pYRgYsBDUVu+7DFjw6+kupE7E8=</dsig:DigestValue>
+        <dsig:DigestValue>N1kK4UetJj5Rt3uVfBQMN6CAo7o=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -186,14 +186,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Entities.dll" size="374784">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Entities.dll" size="377344">
       <assemblyIdentity name="Entities" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>OtqfnGE0hkcUiqB9vPDGk5ZutWo=</dsig:DigestValue>
+        <dsig:DigestValue>ow7fn5/daDqflJC/oB9mColGV8k=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -254,13 +254,13 @@
       <dsig:DigestValue>3UI2qa7hutHpFjxWbVNZ05spYP0=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="hibernate.central.cfg.xml" size="793">
+  <file name="hibernate.central.cfg.xml" size="802">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>W1KOXKI/uQcrcdJBpKpzUeLjM8k=</dsig:DigestValue>
+      <dsig:DigestValue>AR7PfXXIfnobtGGs5kM5PhcWlfQ=</dsig:DigestValue>
     </hash>
   </file>
   <file name="icon_new.ico" size="2238">

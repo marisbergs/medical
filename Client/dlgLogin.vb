@@ -30,6 +30,10 @@ Public Class dlgLogin
             Else
                 Me.DialogResult = Windows.Forms.DialogResult.OK
             End If
+            catch 
+                If Context.Current.AuthenticatedUser Is Nothing Then
+                    Return
+                End If
         Finally
             Me.Cursor = Cursors.Default
 #If Not Debug Then

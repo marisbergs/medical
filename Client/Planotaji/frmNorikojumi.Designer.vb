@@ -27,25 +27,25 @@ Partial Class frmNorikojumi
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnVisit = New System.Windows.Forms.Button()
+        Me.btnPatientCard = New System.Windows.Forms.Button()
         Me.tabNorikojumi = New System.Windows.Forms.TabControl()
         Me.pagMainInformation = New System.Windows.Forms.TabPage()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.VisitResultBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnVisit = New System.Windows.Forms.Button()
-        Me.btnPatientCard = New System.Windows.Forms.Button()
-        Me.FlowLayoutPanel1.SuspendLayout()
-        Me.FlowLayoutPanel2.SuspendLayout()
-        Me.tabNorikojumi.SuspendLayout()
-        Me.pagMainInformation.SuspendLayout()
-        CType(Me.VisitResultBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout()
+        Me.VisitResultBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.FlowLayoutPanel1.SuspendLayout
+        Me.FlowLayoutPanel2.SuspendLayout
+        Me.tabNorikojumi.SuspendLayout
+        Me.pagMainInformation.SuspendLayout
+        CType(Me.VisitResultBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.SuspendLayout
         '
         'FlowLayoutPanel1
         '
-        Me.FlowLayoutPanel1.AutoSize = True
+        Me.FlowLayoutPanel1.AutoSize = true
         Me.FlowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.FlowLayoutPanel1.Controls.Add(Me.btnPievienotNorikojumus)
         Me.FlowLayoutPanel1.Controls.Add(Me.btnNonemtNorikojumus)
@@ -57,29 +57,29 @@ Partial Class frmNorikojumi
         '
         'btnPievienotNorikojumus
         '
-        Me.btnPievienotNorikojumus.AutoSize = True
+        Me.btnPievienotNorikojumus.AutoSize = true
         Me.btnPievienotNorikojumus.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.btnPievienotNorikojumus.Location = New System.Drawing.Point(3, 3)
         Me.btnPievienotNorikojumus.Name = "btnPievienotNorikojumus"
         Me.btnPievienotNorikojumus.Size = New System.Drawing.Size(116, 23)
         Me.btnPievienotNorikojumus.TabIndex = 0
         Me.btnPievienotNorikojumus.Text = "Pievienot norīkojumu"
-        Me.btnPievienotNorikojumus.UseVisualStyleBackColor = True
+        Me.btnPievienotNorikojumus.UseVisualStyleBackColor = true
         '
         'btnNonemtNorikojumus
         '
-        Me.btnNonemtNorikojumus.AutoSize = True
+        Me.btnNonemtNorikojumus.AutoSize = true
         Me.btnNonemtNorikojumus.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.btnNonemtNorikojumus.Location = New System.Drawing.Point(125, 3)
         Me.btnNonemtNorikojumus.Name = "btnNonemtNorikojumus"
         Me.btnNonemtNorikojumus.Size = New System.Drawing.Size(109, 23)
         Me.btnNonemtNorikojumus.TabIndex = 1
         Me.btnNonemtNorikojumus.Text = "Noņemt norīkojumu"
-        Me.btnNonemtNorikojumus.UseVisualStyleBackColor = True
+        Me.btnNonemtNorikojumus.UseVisualStyleBackColor = true
         '
         'FlowLayoutPanel2
         '
-        Me.FlowLayoutPanel2.AutoSize = True
+        Me.FlowLayoutPanel2.AutoSize = true
         Me.FlowLayoutPanel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.FlowLayoutPanel2.Controls.Add(Me.Button3)
         Me.FlowLayoutPanel2.Controls.Add(Me.Button1)
@@ -95,7 +95,7 @@ Partial Class frmNorikojumi
         '
         'Button3
         '
-        Me.Button3.AutoSize = True
+        Me.Button3.AutoSize = true
         Me.Button3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.Button3.Location = New System.Drawing.Point(703, 3)
         Me.Button3.MinimumSize = New System.Drawing.Size(75, 23)
@@ -103,11 +103,11 @@ Partial Class frmNorikojumi
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = "Aizvērt"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Button3.UseVisualStyleBackColor = true
         '
         'Button1
         '
-        Me.Button1.AutoSize = True
+        Me.Button1.AutoSize = true
         Me.Button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.Button1.Location = New System.Drawing.Point(622, 3)
         Me.Button1.MinimumSize = New System.Drawing.Size(75, 23)
@@ -115,11 +115,11 @@ Partial Class frmNorikojumi
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 3
         Me.Button1.Text = "Saglabāt"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = true
         '
         'Button2
         '
-        Me.Button2.AutoSize = True
+        Me.Button2.AutoSize = true
         Me.Button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.Button2.Location = New System.Drawing.Point(532, 3)
         Me.Button2.MinimumSize = New System.Drawing.Size(75, 23)
@@ -127,7 +127,31 @@ Partial Class frmNorikojumi
         Me.Button2.Size = New System.Drawing.Size(84, 23)
         Me.Button2.TabIndex = 4
         Me.Button2.Text = "Asins analīzes"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = true
+        '
+        'btnVisit
+        '
+        Me.btnVisit.AutoSize = true
+        Me.btnVisit.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btnVisit.Location = New System.Drawing.Point(451, 3)
+        Me.btnVisit.MinimumSize = New System.Drawing.Size(75, 23)
+        Me.btnVisit.Name = "btnVisit"
+        Me.btnVisit.Size = New System.Drawing.Size(75, 23)
+        Me.btnVisit.TabIndex = 5
+        Me.btnVisit.Text = "Vizīte"
+        Me.btnVisit.UseVisualStyleBackColor = true
+        '
+        'btnPatientCard
+        '
+        Me.btnPatientCard.AutoSize = true
+        Me.btnPatientCard.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btnPatientCard.Location = New System.Drawing.Point(361, 3)
+        Me.btnPatientCard.MinimumSize = New System.Drawing.Size(75, 23)
+        Me.btnPatientCard.Name = "btnPatientCard"
+        Me.btnPatientCard.Size = New System.Drawing.Size(84, 23)
+        Me.btnPatientCard.TabIndex = 6
+        Me.btnPatientCard.Text = "Klienta kartiņa"
+        Me.btnPatientCard.UseVisualStyleBackColor = true
         '
         'tabNorikojumi
         '
@@ -149,11 +173,11 @@ Partial Class frmNorikojumi
         Me.pagMainInformation.Size = New System.Drawing.Size(773, 233)
         Me.pagMainInformation.TabIndex = 0
         Me.pagMainInformation.Text = "Pamatinformācija"
-        Me.pagMainInformation.UseVisualStyleBackColor = True
+        Me.pagMainInformation.UseVisualStyleBackColor = true
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
+        Me.Label2.AutoSize = true
         Me.Label2.Location = New System.Drawing.Point(8, 177)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(171, 13)
@@ -162,24 +186,20 @@ Partial Class frmNorikojumi
         '
         'CheckBox1
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.VisitResultBindingSource, "NotNeedBloodTest", True))
+        Me.CheckBox1.AutoSize = true
+        Me.CheckBox1.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.VisitResultBindingSource, "NotNeedBloodTest", true))
         Me.CheckBox1.Location = New System.Drawing.Point(185, 177)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox1.TabIndex = 2
-        Me.CheckBox1.UseVisualStyleBackColor = True
-        '
-        'VisitResultBindingSource
-        '
-        Me.VisitResultBindingSource.DataSource = GetType(Entities.VisitResult)
+        Me.CheckBox1.UseVisualStyleBackColor = true
         '
         'TextBox1
         '
-        Me.TextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.VisitResultBindingSource, "Notes", True))
+        Me.TextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.VisitResultBindingSource, "Notes", true))
         Me.TextBox1.Location = New System.Drawing.Point(66, 7)
         Me.TextBox1.MaxLength = 3000
-        Me.TextBox1.Multiline = True
+        Me.TextBox1.Multiline = true
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.TextBox1.Size = New System.Drawing.Size(704, 164)
@@ -187,55 +207,35 @@ Partial Class frmNorikojumi
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
+        Me.Label1.AutoSize = true
         Me.Label1.Location = New System.Drawing.Point(8, 10)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(52, 13)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Piezīmes:"
         '
-        'btnVisit
+        'VisitResultBindingSource
         '
-        Me.btnVisit.AutoSize = True
-        Me.btnVisit.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.btnVisit.Location = New System.Drawing.Point(451, 3)
-        Me.btnVisit.MinimumSize = New System.Drawing.Size(75, 23)
-        Me.btnVisit.Name = "btnVisit"
-        Me.btnVisit.Size = New System.Drawing.Size(75, 23)
-        Me.btnVisit.TabIndex = 5
-        Me.btnVisit.Text = "Vizīte"
-        Me.btnVisit.UseVisualStyleBackColor = True
-        '
-        'btnPatientCard
-        '
-        Me.btnPatientCard.AutoSize = True
-        Me.btnPatientCard.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.btnPatientCard.Location = New System.Drawing.Point(361, 3)
-        Me.btnPatientCard.MinimumSize = New System.Drawing.Size(75, 23)
-        Me.btnPatientCard.Name = "btnPatientCard"
-        Me.btnPatientCard.Size = New System.Drawing.Size(84, 23)
-        Me.btnPatientCard.TabIndex = 6
-        Me.btnPatientCard.Text = "Klienta kartiņa"
-        Me.btnPatientCard.UseVisualStyleBackColor = True
+        Me.VisitResultBindingSource.DataSource = GetType(Entities.VisitResult)
         '
         'frmNorikojumi
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.ClientSize = New System.Drawing.Size(781, 317)
         Me.Controls.Add(Me.tabNorikojumi)
         Me.Controls.Add(Me.FlowLayoutPanel2)
         Me.Controls.Add(Me.FlowLayoutPanel1)
         Me.Name = "frmNorikojumi"
         Me.Text = "Norīkojumi"
-        Me.FlowLayoutPanel1.ResumeLayout(False)
-        Me.FlowLayoutPanel1.PerformLayout()
-        Me.FlowLayoutPanel2.ResumeLayout(False)
-        Me.FlowLayoutPanel2.PerformLayout()
-        Me.tabNorikojumi.ResumeLayout(False)
-        Me.pagMainInformation.ResumeLayout(False)
-        Me.pagMainInformation.PerformLayout()
-        CType(Me.VisitResultBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ResumeLayout(False)
+        Me.FlowLayoutPanel1.ResumeLayout(false)
+        Me.FlowLayoutPanel1.PerformLayout
+        Me.FlowLayoutPanel2.ResumeLayout(false)
+        Me.FlowLayoutPanel2.PerformLayout
+        Me.tabNorikojumi.ResumeLayout(false)
+        Me.pagMainInformation.ResumeLayout(false)
+        Me.pagMainInformation.PerformLayout
+        CType(Me.VisitResultBindingSource,System.ComponentModel.ISupportInitialize).EndInit
+        Me.ResumeLayout(false)
         Me.PerformLayout
 
 End Sub

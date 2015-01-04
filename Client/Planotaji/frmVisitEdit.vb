@@ -1131,6 +1131,7 @@ Public Class frmVisitEdit
             Return
         End If
         Dim frm As New frmNorikojumi
+        frm.Visit = visit
         Dim key As New Dictionary(Of Type, Guid)
         frm.PartnerSession = Me.Session
         frm.Session = Nothing

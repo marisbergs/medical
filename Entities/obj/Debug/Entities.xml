@@ -6,198 +6,163 @@ Entities
 </name>
 </assembly>
 <members>
-<member name="F:Entities.SmsSendStatusEnum.NotSent">
-	<summary>Jauns</summary>
-</member><member name="F:Entities.SmsSendStatusEnum.Sent">
-	<summary>Nosûtīts</summary>
-</member><member name="F:Entities.SmsSendStatusEnum.InvalidPhone">
-	<summary>Kļûdains telefona numurs</summary>
-</member><member name="T:Entities.SmsSendStatusEnum">
-	<summary>Nodarbinātības veidi</summary>
-</member><member name="F:Entities.SmsSendStatus.NotSent">
-	<summary>Jauns</summary>
-</member><member name="F:Entities.SmsSendStatus.Sent">
-	<summary>Nosûtīts</summary>
-</member><member name="F:Entities.SmsSendStatus.InvalidPhone">
-	<summary>Kļûdains telefona numurs</summary>
-</member><member name="P:Entities.SmsSendStatus.ListSource">
+<member name="P:Entities.Classifier.Mark">
 	<summary>
- Optimized ListSource (provided constant elements are already translated)
+ Pazīme
  </summary>
-</member><member name="F:Entities.DocumentStatusEnum.Draft">
-	<summary>Sagatavošanā</summary>
-</member><member name="F:Entities.DocumentStatusEnum.Ready">
-	<summary>Gatavs</summary>
-</member><member name="F:Entities.DocumentStatusEnum.Complete">
-	<summary>Pabeigts</summary>
-</member><member name="F:Entities.DocumentStatusEnum.Sent">
-	<summary>Nosūtīts</summary>
-</member><member name="F:Entities.DocumentStatusEnum.NotValid">
-	<summary>Spēkā neesošs</summary>
-</member><member name="F:Entities.DocumentStatusEnum.Cancelled">
-	<summary>Anulēts</summary>
-</member><member name="F:Entities.DocumentStatusEnum.AppealStarted">
-	<summary>Pārsūdzības statuss: uzsākta</summary>
-</member><member name="F:Entities.DocumentStatusEnum.AppealCompleted">
-	<summary>Pārsūdzības statuss: pabeigta</summary>
-</member><member name="F:Entities.DocumentStatusEnum.Correction">
-	<summary>Labošana</summary>
-</member><member name="T:Entities.DocumentStatusEnum">
-	<summary>Dokumenta statusu kodi</summary>
-</member><member name="F:Entities.DocumentStatus.Draft">
-	<summary>Sagatavošanā</summary>
-</member><member name="F:Entities.DocumentStatus.Ready">
-	<summary>Gatavs</summary>
-</member><member name="F:Entities.DocumentStatus.Complete">
-	<summary>Pabeigts</summary>
-</member><member name="F:Entities.DocumentStatus.Sent">
-	<summary>Nosūtīts</summary>
-</member><member name="F:Entities.DocumentStatus.NotValid">
-	<summary>Spēkā neesošs</summary>
-</member><member name="F:Entities.DocumentStatus.Cancelled">
-	<summary>Anulēts</summary>
-</member><member name="F:Entities.DocumentStatus.Correction">
-	<summary>Labošana</summary>
-</member><member name="F:Entities.DocumentStatus.AppealStarted">
-	<summary>Pārsūdzības statuss: uzsākta</summary>
-</member><member name="F:Entities.DocumentStatus.AppealCompleted">
-	<summary>Pārsūdzības statuss: pabeigta</summary>
-</member><member name="P:Entities.DocumentStatus.ListSource">
+</member><member name="P:Entities.Classifier.SecondMark">
 	<summary>
- Optimized ListSource (provided constant elements are already translated)
+ otra pazīme Pazīme
  </summary>
-</member><member name="P:Entities.DocumentStatus.ListSourceAppealStatuses">
+</member><member name="P:Entities.Classifier.ExternalID">
 	<summary>
- Pārsūdzības statusu saraksts
+ Ārējais ID
  </summary>
-</member><member name="P:Entities.DocumentStatus.ListOfActiveStatuses">
+</member><member name="P:Entities.Classifier.Parent">
 	<summary>
- Aktīvu [nedzēstu] dokumenta statusu sarkasts
- Draft, Ready, Complete, Sent, Correction
+ Saistītais klasifikators
  </summary>
-</member><member name="P:Entities.DocumentStatus.ListOfActiveNotSentStatuses">
+</member><member name="P:Entities.Classifier.Reference">
 	<summary>
- Aktīvu, bet nenosūtītu dokumenta statusu saraksts
- [Draft, Ready, Complete, Correction]
+ Saistītais klasifikators
  </summary>
-</member><member name="P:Entities.DocumentStatus.ListOfNotCompleteStatuses">
+</member><member name="P:Entities.Classifier.ReferenceSecond">
 	<summary>
- Nepabeigtu dokumenta statusu saraksts
- [Draft, Ready, Correction]
+ Saistītais klasifikators 2
  </summary>
-</member><member name="T:Entities.DocumentStatus">
+</member><member name="P:Entities.Classifier.ReferenceThird">
 	<summary>
- Dokumenta statusi
+ Saistītais klasifikators 3
  </summary>
-</member><member name="T:Entities.PresentedDocumentEnum">
-	<summary>Uzrādītais dokuments</summary>
-</member><member name="F:Entities.PresentedDocument.Passport">
-	<summary>Pase</summary>
-</member><member name="F:Entities.PresentedDocument.DrivingLicence">
-	<summary>Vadītāja apliecība</summary>
-</member><member name="F:Entities.PresentedDocument.Other">
-	<summary>Cits</summary>
-</member><member name="F:Entities.PresentedDocument.PassportAccuse">
-	<summary>Pase(Akuz.)</summary>
-</member><member name="F:Entities.PresentedDocument.DrivingLicenceAccuse">
-	<summary>Vadītāja apliecība(Akuz.)</summary>
-</member><member name="F:Entities.PresentedDocument.OtherAccuse">
-	<summary>Cits(Akuz.)</summary>
-</member><member name="P:Entities.PresentedDocument.ListSource">
+</member><member name="P:Entities.Classifier.ReferenceFourth">
 	<summary>
- Uzrādīto dokumentu saraksts
+ Saistītais klasifikators 4
  </summary>
-</member><member name="P:Entities.PresentedDocument.ListSourceAccuse">
+</member><member name="P:Entities.Classifier.ReferenceFive">
 	<summary>
- Uzrādīto dokumentu saraksts(Akuz.)
+ Saistītais klasifikators 5
  </summary>
-</member><member name="P:Entities.FindActivity.UsePatientName">
+</member><member name="P:Entities.Classifier.ReferenceSix">
 	<summary>
- Meklēt pēc klienta vārda
+ Saistītais klasifikators 5
  </summary>
-</member><member name="P:Entities.FindActivity.PatientName">
+</member><member name="P:Entities.Classifier.Type">
 	<summary>
- Klienta vārds
+ Klasifikatora tips
  </summary>
-</member><member name="P:Entities.FindActivity.UsePatientSurname">
+</member><member name="P:Entities.Classifier.CanNotDelete">
 	<summary>
- Meklēt pāc klienta uzvārda
+ Klasifikatoru nedrīkst dzēst
  </summary>
-</member><member name="P:Entities.FindActivity.PatientSurname">
+</member><member name="P:Entities.Classifier.NotName">
 	<summary>
- Klienta uzvārds
+ Lai obligāta ieraksta zīme netiktu attēlota laukā, kur ieraksts var arī nebūt
  </summary>
-</member><member name="P:Entities.FindActivity.UseUserName">
+</member><member name="P:Entities.Classifier.DisplayValue">
 	<summary>
- Meklēt pēc klienta vārda
+ Lai obligāta ieraksta zīme netiktu attēlota laukā, kur ieraksts var arī nebūt
  </summary>
-</member><member name="P:Entities.FindActivity.UserName">
+</member><member name="T:Entities.Position">
+	<summary>KAmatu klasifikators</summary>
+</member><member name="T:Entities.TemplateType">
+	<summary>Veidlapu sagatavju grupas</summary>
+</member><member name="T:Entities.Language">
+	<summary>Valoda</summary>
+</member><member name="T:Entities.Specialization">
+	<summary>Medicīniskā specializācija</summary>
+</member><member name="T:Entities.RtgType">
+	<summary>RTG attēlu veidi</summary>
+</member><member name="T:Entities.BusinessGroup">
+	<summary>Biznesa grupējums</summary>
+</member><member name="T:Entities.Kindred">
+	<summary>Radniecība</summary>
+</member><member name="T:Entities.PatientType">
+	<summary>Klientu veids</summary>
+</member><member name="F:Entities.Statuss.Notify">
 	<summary>
- Klienta vārds
+ Pieteikta
  </summary>
-</member><member name="P:Entities.FindActivity.UseUserSurname">
+</member><member name="T:Entities.Statuss">
+	<summary>Vizītes statusi</summary>
+</member><member name="T:Entities.Speciality">
+	<summary>Specialitāšu klasifikators</summary>
+</member><member name="T:Entities.Room">
+	<summary>Kabinetu klasifikators</summary>
+</member><member name="T:Entities.RoomGroups">
+	<summary>Kabinetu grupu klasifikators</summary>
+</member><member name="T:Entities.SpecialityGroups">
+	<summary>Kabinetu grupu klasifikators</summary>
+</member><member name="T:Entities.VisitType">
+	<summary>Vizīšu tipu klasifikators</summary>
+</member><member name="T:Entities.SpecialityType">
 	<summary>
- Meklēt pāc klienta uzvārda
+ specialitātes veids Pieaugušo Bērnu
  </summary>
-</member><member name="P:Entities.FindActivity.UserSurname">
+	<remarks></remarks>
+</member><member name="T:Entities.Profile">
 	<summary>
- Klienta uzvārds
+ Klientu programmu profili
  </summary>
-</member><member name="P:Entities.FindActivity.UseService">
+	<remarks></remarks>
+</member><member name="T:Entities.PaymentType">
 	<summary>
- personas kods
+ Maksājuma veids (skaidrā naudā, ar pārskaitījumu)
  </summary>
-</member><member name="P:Entities.FindActivity.Service">
+	<remarks></remarks>
+</member><member name="T:Entities.ServiceTypes">
+	<summary>Pakalpojuma veidu klasifikators</summary>
+</member><member name="T:Entities.DocType">
 	<summary>
- personas kods
+ Dokumentu veids
  </summary>
-</member><member name="F:Entities.PresentCardStateEnum.Izveidota">
-	<summary>Izveidota</summary>
-</member><member name="F:Entities.PresentCardStateEnum.Nopirkta">
-	<summary>Nopirkta</summary>
-</member><member name="F:Entities.PresentCardStateEnum.DalejiIzmantota">
-	<summary>Daļēji izmantota</summary>
-</member><member name="F:Entities.PresentCardStateEnum.PilnibaIzmantota">
-	<summary>Pilnībā izmantota</summary>
-</member><member name="F:Entities.PresentCardStateEnum.Bezmaksas">
-	<summary>Bezmaksas</summary>
-</member><member name="T:Entities.PresentCardStateEnum">
-	<summary>Nodarbinātības veidi</summary>
-</member><member name="F:Entities.PresentCardState.Izveidota">
-	<summary>izveidota</summary>
-</member><member name="F:Entities.PresentCardState.Nopirkta">
-	<summary>Nopirkta</summary>
-</member><member name="F:Entities.PresentCardState.Bezmaksas">
-	<summary>Bezmaksas</summary>
-</member><member name="F:Entities.PresentCardState.DalejiIzmantota">
-	<summary>Daļēji izmantota</summary>
-</member><member name="F:Entities.PresentCardState.PilnibaIzmantota">
-	<summary>Pilnībā izmantota</summary>
-</member><member name="P:Entities.PresentCardState.ListSource">
+	<remarks></remarks>
+</member><member name="T:Entities.EmployeGrouping">
 	<summary>
- Optimized ListSource (provided constant elements are already translated)
+ Darbinieku grupējums
  </summary>
-</member><member name="F:Entities.WHRequestStatusEnum.Draft">
-	<summary>Jauns</summary>
-</member><member name="F:Entities.WHRequestStatusEnum.Ready">
-	<summary>Izpildīts</summary>
-</member><member name="F:Entities.WHRequestStatusEnum.Sent">
-	<summary>Pieprasīts</summary>
-</member><member name="T:Entities.WHRequestStatusEnum">
-	<summary>DN pieprasоjumu statusu kodi</summary>
-</member><member name="F:Entities.WHRequestStatus.Draft">
-	<summary>Jauns</summary>
-</member><member name="F:Entities.WHRequestStatus.Ready">
-	<summary>Izpildīts</summary>
-</member><member name="F:Entities.WHRequestStatus.Sent">
-	<summary>Pieprasīts</summary>
-</member><member name="P:Entities.WHRequestStatus.ListSource">
+</member><member name="T:Entities.Resource">
 	<summary>
- Optimized ListSource (provided constant elements are already translated)
+ Klīnikas resursu (iekārtu) klasifikators
  </summary>
-</member><member name="P:Entities.RtgSummary.Rtg">
+</member><member name="T:Entities.Assignment">
 	<summary>
- izmeklējumu ieraksti
+ Norīkojumu klasifikators
+ </summary>
+</member><member name="T:Entities.BloodTestGroup">
+	<summary>
+ Asins analīžu grupas
+ </summary>
+</member><member name="T:Entities.BloodTest">
+	<summary>
+ Asins analīzes
+ </summary>
+</member><member name="T:Entities.Services">
+	<summary>Pakalpojumu klasifikators</summary>
+</member><member name="T:Entities.GroupsWork">
+	<summary>Grupu nodarbību klasifikators</summary>
+</member><member name="T:Entities.BloodGroup">
+	<summary>Asinsgrupu klasifikators</summary>
+</member><member name="T:Entities.Percentage">
+	<summary>Procentu likmes</summary>
+</member><member name="P:Entities.FindSubscription.UseService">
+	<summary>
+ vai izmantot pakalpojumu kā atlases kritēriju
+ </summary>
+</member><member name="P:Entities.FindSubscription.Service">
+	<summary>
+ atlasē iekļautie pakalpojumi
+ </summary>
+</member><member name="P:Entities.FindSubscription.UsePatient">
+	<summary>
+ vai izmantot klintu kā atlases kritēriju
+ </summary>
+</member><member name="P:Entities.FindSubscription.Patient">
+	<summary>
+ atlasē iekļautie klienti
+ </summary>
+</member><member name="P:Entities.FindSubscription.UseActive">
+	<summary>
+ vai atlasīt tikai aktīvos abonementus(tie kuri nav dzēsti
  </summary>
 </member><member name="P:Entities.FindPatients.UseName">
 	<summary>
@@ -267,271 +232,6 @@ Entities
 	<summary>
  Ieteica cita persona
  </summary>
-</member><member name="F:Entities.PriorityTypeEnum.Low">
-	<summary>Parasta</summary>
-</member><member name="F:Entities.PriorityTypeEnum.High">
-	<summary>Steidzama</summary>
-</member><member name="T:Entities.PriorityTypeEnum">
-	<summary>Prioritāte</summary>
-</member><member name="F:Entities.PriorityType.Low">
-	<summary>Parasta</summary>
-</member><member name="F:Entities.PriorityType.High">
-	<summary>Steidzama</summary>
-</member><member name="P:Entities.PriorityType.ListSource">
-	<summary>
- Optimized ListSource (provided constant elements are already translated)
- </summary>
-</member><member name="T:Entities.PriorityType">
-	<summary>Prioritāte</summary>
-</member><member name="F:Entities.YesNoEnum.No">
-	<summary>Ir</summary>
-</member><member name="F:Entities.YesNoEnum.Yes">
-	<summary>Nav</summary>
-</member><member name="F:Entities.YesNoEnum.Ne">
-	<summary>Nevar konstatēt</summary>
-</member><member name="F:Entities.YesNoEnum.Ja">
-	<summary>Nav nepieciešams</summary>
-</member><member name="F:Entities.YesNoEnum.NotPresent">
-	<summary>Nevar uzrādīt</summary>
-</member><member name="F:Entities.YesNoEnum.NotSent">
-	<summary>Nav nosûtīta</summary>
-</member><member name="F:Entities.YesNoEnum.NotExecuted">
-	<summary>Nav veikta</summary>
-</member><member name="F:Entities.YesNoEnum.CantExecute">
-	<summary>Nevar veikt</summary>
-</member><member name="F:Entities.YesNoEnum.IsLocatedIsExecuted">
-	<summary>Atrodas/ir veikts</summary>
-</member><member name="F:Entities.YesNoEnum.NotLocatedNotExecuted">
-	<summary>Neatrodas/nav veikts</summary>
-</member><member name="F:Entities.YesNoEnum.NotPurchase">
-	<summary>Neiepērk</summary>
-</member><member name="F:Entities.YesNoEnum.NotRefer">
-	<summary>Neattiecas</summary>
-</member><member name="F:Entities.YesNoEnum.ALossGreaterFLoss">
-	<summary>Novirze lielāka</summary>
-</member><member name="F:Entities.YesNoEnum.ALossLessFLoss">
-	<summary>Novirze mazāka</summary>
-</member><member name="F:Entities.YesNoEnum.Partially">
-	<summary>Daļēji</summary>
-</member><member name="F:Entities.YesNoEnum.Loto">
-	<summary>Izlases kartība</summary>
-</member><member name="F:Entities.YesNoEnum.NoLease">
-	<summary>Nē - iznomāts</summary>
-</member><member name="F:Entities.YesNoEnum.NoOtherForfeit">
-	<summary>Nē - citādi atsavināts</summary>
-</member><member name="F:Entities.YesNoEnum.NoNotAdjust">
-	<summary>Nē - nav uzstādīts</summary>
-</member><member name="F:Entities.YesNoEnum.Male">
-	<summary>Vīrietis</summary>
-</member><member name="F:Entities.YesNoEnum.Female">
-	<summary>Sieviete</summary>
-</member><member name="F:Entities.YesNoEnum.DpGreaterOrEqualD">
-	<summary>DpGreaterOrEquaD</summary>
-</member><member name="F:Entities.YesNoEnum.DpLessD">
-	<summary>DpLessD</summary>
-</member><member name="F:Entities.YesNoEnum.NotDocument">
-	<summary>Nevar uzrādīt pavaddokumentu</summary>
-</member><member name="T:Entities.YesNoEnum">
-	<summary>Radiopogas vērtības</summary>
-</member><member name="F:Entities.YesNo.No">
-	<summary>Nē</summary>
-</member><member name="F:Entities.YesNo.Yes">
-	<summary>Jā</summary>
-</member><member name="F:Entities.YesNo.Ne">
-	<summary>Nevar konstatēt</summary>
-</member><member name="F:Entities.YesNo.Ja">
-	<summary>Nav nepieciešams</summary>
-</member><member name="F:Entities.YesNo.NotPresent">
-	<summary>Nevar uzrādīt</summary>
-</member><member name="F:Entities.YesNo.NotSent">
-	<summary>Nev nosûtīta</summary>
-</member><member name="F:Entities.YesNo.NotExecuted">
-	<summary>Nav veikta</summary>
-</member><member name="F:Entities.YesNo.CantExecute">
-	<summary>Nevar veikt</summary>
-</member><member name="F:Entities.YesNo.IsLocatedIsExecuted">
-	<summary>Atrodas/ir veikts</summary>
-</member><member name="F:Entities.YesNo.NotLocatedNotExecuted">
-	<summary>Neatrodas/nav veikts</summary>
-</member><member name="F:Entities.YesNo.NotPurchase">
-	<summary>Neiepērk</summary>
-</member><member name="F:Entities.YesNo.NotRefer">
-	<summary>Neattiecas</summary>
-</member><member name="F:Entities.YesNo.Partially">
-	<summary>Daļēji</summary>
-</member><member name="F:Entities.YesNo.ALossGreaterFLoss">
-	<summary>Novirze lielāka</summary>
-</member><member name="F:Entities.YesNo.ALossLessFLoss">
-	<summary>Novirze mazāka</summary>
-</member><member name="F:Entities.YesNo.Loto">
-	<summary>Izlases kartība</summary>
-</member><member name="F:Entities.YesNo.NoLease">
-	<summary>Nē - iznomāts</summary>
-</member><member name="F:Entities.YesNo.NoOtherForfeit">
-	<summary>Nē - citādi atsavināts</summary>
-</member><member name="F:Entities.YesNo.NoNotAdjust">
-	<summary>Nē - nav uzstādīts</summary>
-</member><member name="F:Entities.YesNo.Male">
-	<summary>Vīrietis</summary>
-</member><member name="F:Entities.YesNo.Female">
-	<summary>Sieviete</summary>
-</member><member name="F:Entities.YesNo.DpGreaterOrEqualD">
-	<summary>DpGreaterOrEqualD</summary>
-</member><member name="F:Entities.YesNo.DpLessD">
-	<summary>DpLessD</summary>
-</member><member name="F:Entities.YesNo.NotDocument">
-	<summary>Nevar uzrādīt pavaddokumentu</summary>
-</member><member name="P:Entities.YesNo.ListSource">
-	<summary>
- Optimized ListSource (provided constant elements are already translated)
- </summary>
-</member><member name="P:Entities.YesNo.ListSourceNeJa">
-	<summary>
- Yes/No/Can't tell list
- </summary>
-</member><member name="P:Entities.YesNo.ListSourceNoDocument">
-	<summary>
- Yes/No/not document
- </summary>
-</member><member name="P:Entities.YesNo.ListSourceNoCantTell">
-	<summary>
- No/Can't tell list
- </summary>
-</member><member name="P:Entities.YesNo.ListSourceNo">
-	<summary>
- No
- </summary>
-</member><member name="P:Entities.YesNo.ListSourceCantTellOnly">
-	<summary>
- Can't tell list
- </summary>
-</member><member name="P:Entities.YesNo.ListSourceNotRequired">
-	<summary>
- Yes/No/NotRequired list
- </summary>
-</member><member name="P:Entities.YesNo.ListSourceNotRequiredOnly">
-	<summary>
- NotRequired list
- </summary>
-</member><member name="P:Entities.YesNo.ListSourceYes">
-	<summary>
- Yes
- </summary>
-</member><member name="P:Entities.YesNo.ListSourceNoNotRequired">
-	<summary>
- No/NotRequired
- </summary>
-</member><member name="P:Entities.YesNo.ListSourceNotRequiredNotPresent">
-	<summary>
- Yes/No/NotRequired/NotPresent list
- </summary>
-</member><member name="P:Entities.YesNo.ListSourceNotSent">
-	<summary>
- Yes/No/Not Sent
- </summary>
-</member><member name="P:Entities.YesNo.ListSourceNotExecuted">
-	<summary>
- Yes/Not Executed/Can't Execute list
- </summary>
-</member><member name="P:Entities.YesNo.ListSourceIsLocated">
-	<summary>
- IsLocatedIsexecuted/NotLocatedNotExecuted list
- </summary>
-</member><member name="P:Entities.YesNo.ListSourceNotPurchase">
-	<summary>
- Yes/No/NotPurchase
- </summary>
-</member><member name="P:Entities.YesNo.ListSourceNotRefer">
-	<summary>
- Yes/No/NotRefer
- </summary>
-</member><member name="P:Entities.YesNo.ListSourceNotReferCantTell">
-	<summary>
- Yes/No/NotRefer/CantTell
- </summary>
-</member><member name="P:Entities.YesNo.ListSourcePartially">
-	<summary>
- Yes/No/Partially
- </summary>
-</member><member name="P:Entities.YesNo.ListSourceLosses">
-	<summary>
- ALossGreaterFLoss/ALossLessFLoss
- </summary>
-</member><member name="P:Entities.YesNo.ListSourceFixedAssetAdjust">
-	<summary>
- Yes/NoLease/NoOtherForfeit/NoNotAdjust
- </summary>
-</member><member name="P:Entities.YesNo.ListSourceNotPresent">
-	<summary>
- Yes/No/NotPresent
- </summary>
-</member><member name="P:Entities.YesNo.ListSourceLoto">
-	<summary>
- Yes/No/Loto
- </summary>
-</member><member name="P:Entities.YesNo.ListSourceCantTellnotRequired">
-	<summary>
- Yes/No/Loto
- </summary>
-</member><member name="P:Entities.YesNo.ListSourceGender">
-	<summary>
- Male/Female
- </summary>
-</member><member name="P:Entities.YesNo.ListSourceDAndDp">
-	<summary>
- Dp and D
- </summary>
-</member><member name="P:Entities.TemplateFileVersion.Template">
-	<summary>
- Veidlapa
- </summary>
-</member><member name="P:Entities.TemplateFileVersion.Parent">
-	<summary>
- Parent
- </summary>
-</member><member name="T:Entities.PatientProfileDescription">
-	<summary>
- Primārās aprûpes karte PAK
- </summary>
-	<remarks></remarks>
-</member><member name="F:Entities.LayEnum.One">
-	<summary>Viens</summary>
-</member><member name="F:Entities.LayEnum.Many">
-	<summary>Vairāki</summary>
-</member><member name="T:Entities.LayEnum">
-	<summary>Nodarbinātības veidi</summary>
-</member><member name="F:Entities.Lay.One">
-	<summary>Viens</summary>
-</member><member name="F:Entities.Lay.Many">
-	<summary>Vairāki</summary>
-</member><member name="P:Entities.Lay.ListSource">
-	<summary>
- Optimized ListSource (provided constant elements are already translated)
- </summary>
-</member><member name="P:Entities.AnamnesesAllergy.Allergy">
-	<summary>
- Alerģija
- </summary>
-</member><member name="P:Entities.AnamnesesAllergy.Notes">
-	<summary>
- Alerģijas piezīmes
- </summary>
-</member><member name="P:Entities.AnamnesesAllergy.Gynaecology">
-	<summary>
- Ginekoloģijas karte
- </summary>
-</member><member name="P:Entities.AnamnesesAllergy.CanDelete">
-	<summary>
- Vai drīkst dzēst ierakstu
- </summary>
-</member><member name="P:Entities.AnamnesesAllergy.CanEdit">
-	<summary>
- Vai drīkst labot ierakstu
- </summary>
-</member><member name="T:Entities.AnamnesesAllergy">
-	<summary>
- Alerģijas
- </summary>
 </member><member name="F:Entities.CorrectionTypeEnum.Copy">
 	<summary>Labots-&gt;NM</summary>
 </member><member name="F:Entities.CorrectionTypeEnum.Edited">
@@ -550,153 +250,102 @@ Entities
 	<summary>
  Optimized ListSource (provided constant elements are already translated)
  </summary>
-</member><member name="P:Entities.FindSubscription.UseService">
+</member><member name="P:Entities.User.FirstName">
 	<summary>
- vai izmantot pakalpojumu kā atlases kritēriju
+ Vārds
  </summary>
-</member><member name="P:Entities.FindSubscription.Service">
+</member><member name="P:Entities.User.LastName">
 	<summary>
- atlasē iekļautie pakalpojumi
+ Uzvārds
  </summary>
-</member><member name="P:Entities.FindSubscription.UsePatient">
+</member><member name="P:Entities.User.OtherNames">
 	<summary>
- vai izmantot klintu kā atlases kritēriju
+ Otrs vārds
  </summary>
-</member><member name="P:Entities.FindSubscription.Patient">
+</member><member name="P:Entities.User.Signature">
 	<summary>
- atlasē iekļautie klienti
+ Paraksts
  </summary>
-</member><member name="P:Entities.FindSubscription.UseActive">
+</member><member name="P:Entities.User.Email">
 	<summary>
- vai atlasīt tikai aktīvos abonementus(tie kuri nav dzēsti
+ E-pasts
  </summary>
-</member><member name="P:Entities.VisitsFinder.UseCampaigns">
+</member><member name="P:Entities.User.Phone">
 	<summary>
- Izmantot akciju kā atlases kritēriju
+ Tālrunis
  </summary>
-</member><member name="P:Entities.VisitsFinder.Campaigns">
+</member><member name="P:Entities.User.CellPhone">
 	<summary>
- Akciju saraksts kā atlases kritēriji
+ Mob.tālrunis
  </summary>
-</member><member name="F:Entities.SMSTypeEnum.Before">
-	<summary>Pirms noteiktā laika</summary>
-</member><member name="F:Entities.SMSTypeEnum.After">
-	<summary>Pēc noteiktā laika</summary>
-</member><member name="F:Entities.SMSTypeEnum.GroupWork">
-	<summary>Grupu nodarbības</summary>
-</member><member name="F:Entities.SMSTypeEnum.Reservation">
-	<summary>Vizītes rezervācija</summary>
-</member><member name="F:Entities.SMSTypeEnum.BlackList">
-	<summary>Paziņojums par iekļaušanu melnajā sarakstā</summary>
-</member><member name="F:Entities.SMSTypeEnum.BonusPointsAdded">
-	<summary>Paziņojums par piešķirtiem bonusa punktiem</summary>
-</member><member name="F:Entities.SMSTypeEnum.BirthDay">
-	<summary>Dzimšanas dienas apsveikums</summary>
-</member><member name="T:Entities.SMSTypeEnum">
-	<summary>Nodarbinātības veidi</summary>
-</member><member name="F:Entities.SMSType.Before">
-	<summary>Pirms noteiktā laika</summary>
-</member><member name="F:Entities.SMSType.After">
-	<summary>Pēc noteiktā laika</summary>
-</member><member name="F:Entities.SMSType.GroupWork">
-	<summary>Pēc noteiktā laika</summary>
-</member><member name="F:Entities.SMSType.Reservation">
-	<summary>Pēc noteiktā laika</summary>
-</member><member name="F:Entities.SMSType.BlackList">
-	<summary>Paziņojums par iekļaušanu melnajā sarakstā</summary>
-</member><member name="F:Entities.SMSType.BonusPointsAdded">
-	<summary>Paziņojums par piešķirtiem bonusa punktiem</summary>
-</member><member name="F:Entities.SMSType.BirthDay">
-	<summary>Dzimšanas dienas apsveikums</summary>
-</member><member name="P:Entities.SMSType.ListSource">
+</member><member name="P:Entities.User.Code">
 	<summary>
- Optimized ListSource (provided constant elements are already translated)
+ Darbinieka kods
  </summary>
-</member><member name="P:Entities.Labour.Year">
+</member><member name="P:Entities.User.SalaryNote">
 	<summary>
- dzimšanas gads
+ Piezīmes par darba līgumu un apmaksas noteikumiem
  </summary>
-</member><member name="P:Entities.Labour.Weight">
+</member><member name="P:Entities.User.PK">
 	<summary>
- Svars
+ Darbinieka personas kods
  </summary>
-</member><member name="P:Entities.Labour.Sex">
+</member><member name="P:Entities.User.Position">
 	<summary>
- Dzimums
+ Amats
  </summary>
-</member><member name="P:Entities.Labour.Lactation">
+</member><member name="P:Entities.User.Logon">
 	<summary>
- Laktācija
+ Lietotājs
  </summary>
-</member><member name="P:Entities.Labour.Health">
+</member><member name="P:Entities.User.Password">
 	<summary>
- veselības stāvoklis dzemdībās
+ Parole
  </summary>
-</member><member name="P:Entities.Labour.HealthNotes">
+</member><member name="P:Entities.User.Role">
 	<summary>
- dzemdību apraksts
+ Loma
  </summary>
-</member><member name="P:Entities.Labour.HealthNow">
+</member><member name="P:Entities.User.WorksFrom">
 	<summary>
- Pāšreizējais veselības stāvoklis
+ Strādā no
  </summary>
-</member><member name="P:Entities.Labour.HealthNowNotes">
+</member><member name="P:Entities.User.WorkedUntil">
 	<summary>
- Pašreizējo slimību apraksts
+ Strādāja līdz
  </summary>
-</member><member name="P:Entities.Labour.Gynaecology">
+</member><member name="P:Entities.User.FullName">
 	<summary>
- Ginekoloģijas karte
+ uzvārds, vārds
  </summary>
-</member><member name="P:Entities.Labour.CanDelete">
+</member><member name="P:Entities.User.FullNameStartWithName">
 	<summary>
- Vai drīkst dzēst ierakstu
+ uzvārds, vārds
  </summary>
-</member><member name="P:Entities.Labour.CanEdit">
+</member><member name="P:Entities.User.IsSystemUser">
 	<summary>
- Vai drīkst labot ierakstu
+ Ir sistēmas lietotājs
  </summary>
-</member><member name="T:Entities.Labour">
+</member><member name="P:Entities.User.Today">
 	<summary>
- Ikdienā lietojamie medikamenti
+ Šodiena
  </summary>
-</member><member name="P:Entities.AnamnesesEvolutionAnomaly.EvolutionAnomaly">
+</member><member name="M:Entities.User.LockOut">
 	<summary>
- Anomālija
+ Revokes user's access to system by removing Role
  </summary>
-</member><member name="P:Entities.AnamnesesEvolutionAnomaly.Notes">
+	<remarks></remarks>
+</member><member name="T:Entities.User">
 	<summary>
- OAnomālijas piezīmes
+ Lietotājs
  </summary>
-</member><member name="P:Entities.AnamnesesEvolutionAnomaly.Gynaecology">
+</member><member name="P:Entities.TimeTable.Speciality">
 	<summary>
- Ginekoloģijas karte
+ specialitāte
  </summary>
-</member><member name="P:Entities.AnamnesesEvolutionAnomaly.CanDelete">
+</member><member name="P:Entities.TimeTable.VisiteType">
 	<summary>
- Vai drīkst dzēst ierakstu
- </summary>
-</member><member name="P:Entities.AnamnesesEvolutionAnomaly.CanEdit">
-	<summary>
- Vai drīkst labot ierakstu
- </summary>
-</member><member name="T:Entities.AnamnesesEvolutionAnomaly">
-	<summary>
- Attīstības anomālijas
- </summary>
-</member><member name="F:Entities.ReceiverTypeEnum.TimberReceiver">
-	<summary>Kokmateriālu saņēmējs</summary>
-</member><member name="F:Entities.ReceiverTypeEnum.ServiceReceiver">
-	<summary>Pakalpojumu saņēmējs</summary>
-</member><member name="T:Entities.ReceiverTypeEnum">
-	<summary>Piegādātāja veidi</summary>
-</member><member name="F:Entities.ReceiverType.TimberReceiver">
-	<summary>Kokmateriālu saņēmējs</summary>
-</member><member name="F:Entities.ReceiverType.ServiceReceiver">
-	<summary>Pakalpojumu saņēmējs</summary>
-</member><member name="P:Entities.ReceiverType.ListSource">
-	<summary>
- Optimized ListSource (provided constant elements are already translated)
+ ārsts
  </summary>
 </member><member name="P:Entities.My.Resources.Resources.ResourceManager">
 	<summary>
@@ -711,21 +360,6 @@ Entities
 	<summary>
   A strongly-typed resource class, for looking up localized strings, etc.
 </summary>
-</member><member name="P:Entities.ClassifierType.CommentPrompt">
-	<summary>
- Rādīt komentārus
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="T:Entities.ClassifierType">
-	<summary>
- Classifier of classifiers
- </summary>
-	<remarks>
- Provided together with the system, unchangeable, localizable.
- Property "Value" contains corresponding class name
- </remarks>
 </member><member name="P:Entities.ClassifierWithCode.CodeRequired">
 	<summary>
  Priekš validācijas -&gt; CheckConditionalRequired 
@@ -774,73 +408,67 @@ Entities
  </summary>
 </member><member name="T:Entities.SrsAccount">
 	<summary> VID konti</summary>
-</member><member name="P:Entities.PatientDocument.Patient">
+</member><member name="P:Entities.UserLanguage.Language">
 	<summary>
- Dokuments - pārsûdzība
+ Valoda
  </summary>
-</member><member name="P:Entities.PatientDocument.Parent">
+</member><member name="P:Entities.UserLanguage.User">
 	<summary>
- Parents
+ Ārsts
  </summary>
-</member><member name="P:Entities.PatientDocument.DocType">
+</member><member name="P:Entities.UserLanguage.CanDelete">
 	<summary>
- dokumenta tips
+ Return whether can delete CM case theme
  </summary>
-</member><member name="P:Entities.PatientDocument.CreateDate">
+</member><member name="P:Entities.UserLanguage.CanEdit">
 	<summary>
- daokumenta fails
+ Return whether can edit CM case theme
  </summary>
-</member><member name="P:Entities.PatientDocument.Creator">
+</member><member name="T:Entities.UserLanguage">
 	<summary>
- daokumenta fails
+ KP lietas tematiskās pārbaudes tēmas
  </summary>
-</member><member name="P:Entities.PatientDocument.Files">
-	<summary>
- daokumenta fails
- </summary>
-</member><member name="F:Entities.SeleryTypeEnum.Time">
-	<summary>Nodarbība</summary>
-</member><member name="F:Entities.SeleryTypeEnum.Percentage">
-	<summary>Procentu</summary>
-</member><member name="T:Entities.SeleryTypeEnum">
-	<summary>Atalgojuma veids</summary>
-</member><member name="F:Entities.SeleryEnum.Percentage">
-	<summary>Precentos</summary>
-</member><member name="F:Entities.SeleryEnum.Ls">
-	<summary>Latos</summary>
-</member><member name="T:Entities.SeleryEnum">
-	<summary>Atalgojuma procentos vai latos</summary>
-</member><member name="F:Entities.SeleryType.Time">
-	<summary>Laika</summary>
-</member><member name="F:Entities.SeleryType.Percentage">
-	<summary>Procentu</summary>
-</member><member name="P:Entities.SeleryType.ListSource">
+</member><member name="F:Entities.GuardianTypeEnum.Mother">
+	<summary>Māte</summary>
+</member><member name="F:Entities.GuardianTypeEnum.Father">
+	<summary>Tēvs</summary>
+</member><member name="F:Entities.GuardianTypeEnum.Guardian">
+	<summary>Aizbildnis</summary>
+</member><member name="T:Entities.GuardianTypeEnum">
+	<summary>Nodarbinātības veidi</summary>
+</member><member name="F:Entities.GuardianType.Mother">
+	<summary>Māte</summary>
+</member><member name="F:Entities.GuardianType.Father">
+	<summary>Tēvs</summary>
+</member><member name="F:Entities.GuardianType.Guardian">
+	<summary>Aizbildnis</summary>
+</member><member name="P:Entities.GuardianType.ListSource">
 	<summary>
  Optimized ListSource (provided constant elements are already translated)
  </summary>
-</member><member name="F:Entities.Selery.Percentage">
-	<summary>Laika</summary>
-</member><member name="F:Entities.Selery.Ls">
-	<summary>Procentu</summary>
-</member><member name="P:Entities.Selery.ListSource">
+</member><member name="P:Entities.VisitsFinder.UseCampaigns">
 	<summary>
- Optimized ListSource (provided constant elements are already translated)
+ Izmantot akciju kā atlases kritēriju
  </summary>
-</member><member name="P:Entities.VisitStatusHistory.Visit">
+</member><member name="P:Entities.VisitsFinder.Campaigns">
 	<summary>
- Vizīte
+ Akciju saraksts kā atlases kritēriji
  </summary>
-</member><member name="P:Entities.VisitStatusHistory.User">
+</member><member name="P:Entities.SMSMessages.MeesageText">
 	<summary>
- Lietotājs, kas veicis statusa maiņu
+ paziņojuma teksts
  </summary>
-</member><member name="P:Entities.VisitStatusHistory.Status">
+</member><member name="P:Entities.SMSMessages.DaysBefore">
 	<summary>
- status uz kuru veikta nomaiņa
+ cik dienas iepriekš
  </summary>
-</member><member name="P:Entities.VisitStatusHistory.ChangeDate">
+</member><member name="P:Entities.SMSMessages.SendTime">
 	<summary>
- statusa maiņas laiks
+ sûtīšanas laiks
+ </summary>
+</member><member name="P:Entities.SMSMessages.Type">
+	<summary>
+ sûtīšanas laiks
  </summary>
 </member><member name="F:Entities.SexEnum.Male">
 	<summary>Vīrietis</summary>
@@ -856,62 +484,114 @@ Entities
 	<summary>
  Optimized ListSource (provided constant elements are already translated)
  </summary>
-</member><member name="F:Entities.EntityType.LegalEntity">
+</member><member name="P:Entities.Subscription.SubscriptionDetail">
 	<summary>
- Juridiska persona
+ Dokumenta failu maiņas saraksts
  </summary>
-</member><member name="F:Entities.EntityType.PhysicalEntity">
+</member><member name="F:Entities.HealthEnum.Normal">
+	<summary>Normāls</summary>
+</member><member name="F:Entities.HealthEnum.Pathalogical">
+	<summary>Pataloģisks</summary>
+</member><member name="F:Entities.HealthEnum.SC">
+	<summary>S.C.</summary>
+</member><member name="F:Entities.HealthEnum.Well">
+	<summary>Vesels</summary>
+</member><member name="F:Entities.HealthEnum.Ill">
+	<summary>Slims</summary>
+</member><member name="T:Entities.HealthEnum">
+	<summary>Nodarbinātības veidi</summary>
+</member><member name="F:Entities.Health.Normal">
+	<summary>Normāls</summary>
+</member><member name="F:Entities.Health.Pathalogical">
+	<summary>Pataloģisks</summary>
+</member><member name="F:Entities.Health.SC">
+	<summary>S.C.</summary>
+</member><member name="F:Entities.Health.Well">
+	<summary>Vesels</summary>
+</member><member name="F:Entities.Health.Ill">
+	<summary>Slims</summary>
+</member><member name="P:Entities.Health.ListSource">
 	<summary>
- Fiziska persona
+ Optimized ListSource (provided constant elements are already translated)
  </summary>
-</member><member name="T:Entities.EntityType">
+</member><member name="P:Entities.Health.ListSourceWellIll">
 	<summary>
- Nodokļu maksātāju veidi
+ Vesels slims
  </summary>
-</member><member name="P:Entities.Context.AuthenticatedUser">
+</member><member name="P:Entities.AnamnesesUsedMedicaments.UsedMedicaments">
 	<summary>
- Informācija par autorizēto lietotāju
+ Medikaments
  </summary>
-	<value><seealso cref="T:Entities.User"/> objekts, kas atbilst autorizētajam lietotājam</value>
-	<remarks>Lietotājs, ar kura vārdu un paroli notika pieslēgšanās sistēmai</remarks>
-</member><member name="M:Entities.Context.Connect(System.String,System.String,Core.Dal.ISession@,Core.Dal.ConnectionTarget)">
+</member><member name="P:Entities.AnamnesesUsedMedicaments.Notes">
 	<summary>
- Pieslēgšanās sistēmai
+ Medikamentsa apraksts
  </summary>
-	<param name="userName">Lietotāja vārds formā DOMAIN\User</param>
-	<param name="password">Lietotāja AD parole</param>
-	<param name="session">Starting ISession for the application</param>
-	<param name="target">Pieslēgšanās centrālajam vai lokālajam serverim</param>
-	<returns>Saraksts ar iespējamajām lietotāja identitātēm</returns>
-</member><member name="P:Entities.Context.ImpersonatedUser">
+</member><member name="P:Entities.AnamnesesUsedMedicaments.Gynaecology">
 	<summary>
- Impersonētais lietotājs
+ Ginekoloģijas karte
  </summary>
-	<value><seealso cref="T:Entities.User"/></value>
-</member><member name="P:Entities.Context.Permissions">
+</member><member name="P:Entities.AnamnesesUsedMedicaments.CanDelete">
 	<summary>
- Permissions of ImpersonatedUser
+ Vai drīkst dzēst ierakstu
  </summary>
-	<value><seealso cref="T:System.Collections.Generic.IDictionary`2"/> of Permissions</value>
-</member><member name="P:Entities.Context.ConnectedTo">
+</member><member name="P:Entities.AnamnesesUsedMedicaments.CanEdit">
 	<summary>
- Currently or previously connected server
+ Vai drīkst labot ierakstu
  </summary>
-	<value><seealso cref="T:Core.Dal.ConnectionTarget"/></value>
-</member><member name="P:Entities.Context.IsConnected">
+</member><member name="T:Entities.AnamnesesUsedMedicaments">
 	<summary>
- Norāda, vai lietotājs ir veiksmīgi pieslēdzies sistēmai
+ Ikdienā lietojamie medikamenti
  </summary>
-	<value><c>True</c>, ja lietotājs ir pieslēdzies, <c>False</c>, ja nav</value>
-</member><member name="P:Entities.Context.IPAddress">
+</member><member name="M:Entities.IResolver.ChooseWorkstationId(System.Nullable{System.Guid}@)">
 	<summary>
- IP address of current computer
+ Requests workstation id during the first synchronization or reports workstation id during subsequent synchronizations
  </summary>
-	<value>IP address as string</value>
-</member><member name="T:Entities.Context">
+	<returns>Workstation id or <c>Guid.Empty</c> if process should be aborted</returns>
+</member><member name="M:Entities.IResolver.ObsoleteCaseIsDirty(System.Guid)">
 	<summary>
- Current context
+ Called when an obsolete case that has to be deleted from local workstation contains unsynchronized data
  </summary>
+	<param name="caseId">The Id of case that should be deleted</param>
+</member><member name="M:Entities.IResolver.ConflictingChangesOfObject(System.Object)">
+	<summary>
+ Called when version conflict occurred
+ </summary>
+	<param name="conflict">object in conflict</param>
+</member><member name="M:Entities.IResolver.ReportProgress(System.Object,System.Object[])">
+	<summary>
+ Reports progress and gives an oportunity to interrupt synchronization
+ </summary>
+	<param name="message">String, Core.Err or Core.Msg</param>
+	<param name="messageParams">Message parameters</param>
+	<returns><c>True</c> if synchronization should continue</returns>
+</member><member name="T:Entities.IResolver">
+	<summary>
+ Callbacks to resolve synchronization conflicts and other problems
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Entities.TextContent.Text">
+	<summary>
+ Tematiskās pārbaudes tēma
+ </summary>
+</member><member name="T:Entities.TextContent">
+	<summary>
+ KP lietas tematiskās pārbaudes tēmas
+ </summary>
+</member><member name="P:Entities.ClassifierType.CommentPrompt">
+	<summary>
+ Rādīt komentārus
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Entities.ClassifierType">
+	<summary>
+ Classifier of classifiers
+ </summary>
+	<remarks>
+ Provided together with the system, unchangeable, localizable.
+ Property "Value" contains corresponding class name
+ </remarks>
 </member><member name="F:Entities.BonusPointTypeEnum.Add">
 	<summary>Pievienoja</summary>
 </member><member name="F:Entities.BonusPointTypeEnum.Use">
@@ -925,140 +605,6 @@ Entities
 </member><member name="P:Entities.BonusPointType.ListSource">
 	<summary>
  Optimized ListSource (provided constant elements are already translated)
- </summary>
-</member><member name="P:Entities.RtgSummaryRecord.Parent">
-	<summary>
- Parents
- </summary>
-</member><member name="P:Entities.UserService.Service">
-	<summary>
- Specialitāte
- </summary>
-</member><member name="P:Entities.UserService.ManualPrice">
-	<summary>
- manuāli norādītā cena, kas glabājas DB
- </summary>
-</member><member name="P:Entities.UserService.Time">
-	<summary>
- cena, kas bindojās ar UI
- </summary>
-</member><member name="P:Entities.UserService.ManualTime">
-	<summary>
- manuāli norādītais laiks, kas glabājas DB
- </summary>
-</member><member name="P:Entities.UserService.SeleryType">
-	<summary>
- Atalgojuma tips
- </summary>
-</member><member name="P:Entities.UserService.SeleryValue">
-	<summary>
- Atalgojuma apjoms
- </summary>
-</member><member name="P:Entities.UserService.Selery">
-	<summary>
- Atalgojuma aprēķina veids procenti vai Lati
- </summary>
-</member><member name="P:Entities.UserService.Price">
-	<summary>
- cena, kas bindojās ar UI
- </summary>
-</member><member name="P:Entities.UserService.User">
-	<summary>
- Ārsts
- </summary>
-</member><member name="P:Entities.UserService.CanDelete">
-	<summary>
- Return whether can delete CM case theme
- </summary>
-</member><member name="P:Entities.UserService.CanEdit">
-	<summary>
- Return whether can edit CM case theme
- </summary>
-</member><member name="T:Entities.UserService">
-	<summary>
- KP lietas tematiskās pārbaudes tēmas
- </summary>
-</member><member name="P:Entities.AnamnesesHereditaryDsesase.HereditaryDsesase">
-	<summary>
- Slimība
- </summary>
-</member><member name="P:Entities.AnamnesesHereditaryDsesase.Notes">
-	<summary>
- Slimības apraksts
- </summary>
-</member><member name="P:Entities.AnamnesesHereditaryDsesase.Gynaecology">
-	<summary>
- Ginekoloģijas karte
- </summary>
-</member><member name="P:Entities.AnamnesesHereditaryDsesase.CanDelete">
-	<summary>
- Vai drīkst dzēst ierakstu
- </summary>
-</member><member name="P:Entities.AnamnesesHereditaryDsesase.CanEdit">
-	<summary>
- Vai drīkst labot ierakstu
- </summary>
-</member><member name="T:Entities.AnamnesesHereditaryDsesase">
-	<summary>
- Iedzimtās slimības
- </summary>
-</member><member name="F:Entities.UsageStatusEnum.Created">
-	<summary>Jauns</summary>
-</member><member name="F:Entities.UsageStatusEnum.StartUsed">
-	<summary>Uzsākts izmantot</summary>
-</member><member name="F:Entities.UsageStatusEnum.Used">
-	<summary>Izmantots pilnībā</summary>
-</member><member name="T:Entities.UsageStatusEnum">
-	<summary>Izlietojuma statusi</summary>
-</member><member name="F:Entities.UsageStatus.Created">
-	<summary>Jauns</summary>
-</member><member name="F:Entities.UsageStatus.StartUsed">
-	<summary>Uzsākts izmantot</summary>
-</member><member name="F:Entities.UsageStatus.Used">
-	<summary>Izmantots pilnībā</summary>
-</member><member name="P:Entities.UsageStatus.ListSource">
-	<summary>
- Optimized ListSource (provided constant elements are already translated)
- </summary>
-</member><member name="P:Entities.FindPatientsAdvanced.UseSex">
-	<summary>
- Dzimums
- </summary>
-</member><member name="P:Entities.FindPatientsAdvanced.Sex">
-	<summary>
- dzimums
- </summary>
-</member><member name="P:Entities.FindPatientsAdvanced.UseNewClient">
-	<summary>
- Dzimums
- </summary>
-</member><member name="P:Entities.FindPatientsAdvanced.NewClient">
-	<summary>
- dzimums
- </summary>
-</member><member name="P:Entities.DocFileHistory.Document">
-	<summary>
- Dokuments
- </summary>
-</member><member name="P:Entities.DocFileHistory.File">
-	<summary>
- Fails
- </summary>
-</member><member name="P:Entities.DocFileHistory.Creator">
-	<summary>
- Lietotājs, kurš ģenerējis/pievienojis failu
- </summary>
-</member><member name="P:Entities.DocFileHistory.CreationDate">
-	<summary>
- Izveidošanas datums
- </summary>
-</member><member name="P:Entities.DocFileHistory.VersionNumber">
-	<summary>
- Faila versijas nr.
- </summary>
-</member><member name="T:Entities.DocFileHistory">
-	<summary>
- Ģenerēto dokumentu versijas
  </summary>
 </member><member name="P:Entities.GynaecologyIlness.Ilness">
 	<summary>
@@ -1083,136 +629,6 @@ Entities
 </member><member name="T:Entities.GynaecologyIlness">
 	<summary>
  Ikdienā lietojamie medikamenti
- </summary>
-</member><member name="P:Entities.GynaecologyActualMedicaments.Medicament">
-	<summary>
- Medikaments
- </summary>
-</member><member name="P:Entities.GynaecologyActualMedicaments.Notes">
-	<summary>
- Medikamentsa apraksts
- </summary>
-</member><member name="P:Entities.GynaecologyActualMedicaments.Gynaecology">
-	<summary>
- Ginekoloģijas karte
- </summary>
-</member><member name="P:Entities.GynaecologyActualMedicaments.CanDelete">
-	<summary>
- Vai drīkst dzēst ierakstu
- </summary>
-</member><member name="P:Entities.GynaecologyActualMedicaments.CanEdit">
-	<summary>
- Vai drīkst labot ierakstu
- </summary>
-</member><member name="T:Entities.GynaecologyActualMedicaments">
-	<summary>
- Ikdienā lietojamie medikamenti
- </summary>
-</member><member name="P:Entities.AnamnesesExtragenitalPathalogy.ExtragenitalPathalogy">
-	<summary>
- Dizagnoze
- </summary>
-</member><member name="P:Entities.AnamnesesExtragenitalPathalogy.Notes">
-	<summary>
- Dizagnozes piezīmes
- </summary>
-</member><member name="P:Entities.AnamnesesExtragenitalPathalogy.Gynaecology">
-	<summary>
- Ginekoloģijas karte
- </summary>
-</member><member name="P:Entities.AnamnesesExtragenitalPathalogy.CanDelete">
-	<summary>
- Vai drīkst dzēst ierakstu
- </summary>
-</member><member name="P:Entities.AnamnesesExtragenitalPathalogy.CanEdit">
-	<summary>
- Vai drīkst labot ierakstu
- </summary>
-</member><member name="T:Entities.AnamnesesExtragenitalPathalogy">
-	<summary>
- Ekstraģenitālā pataloģija
- </summary>
-</member><member name="P:Entities.UsersSpecialities.Speciality">
-	<summary>
- Specialitāte
- </summary>
-</member><member name="P:Entities.UsersSpecialities.User">
-	<summary>
- Saistītā KP lieta
- </summary>
-</member><member name="P:Entities.UsersSpecialities.From">
-	<summary>
- Sertifikāts derīgs no
- </summary>
-</member><member name="P:Entities.UsersSpecialities.Number">
-	<summary>
- Sertifikāta numurs
- </summary>
-</member><member name="P:Entities.UsersSpecialities.Until">
-	<summary>
- Sertifikāts derīgs līdz
- </summary>
-</member><member name="P:Entities.UsersSpecialities.CanDelete">
-	<summary>
- Return whether can delete CM case theme
- </summary>
-</member><member name="P:Entities.UsersSpecialities.CanEdit">
-	<summary>
- Return whether can edit CM case theme
- </summary>
-</member><member name="T:Entities.UsersSpecialities">
-	<summary>
- KP lietas tematiskās pārbaudes tēmas
- </summary>
-</member><member name="T:Entities.AuditMessage">
-	<summary>
- Notikumu veidi (notikumu žurnālam)
- </summary>
-</member><member name="F:Entities.WorkingEnum.Work">
-	<summary>Strādā</summary>
-</member><member name="F:Entities.WorkingEnum.Student">
-	<summary>Students</summary>
-</member><member name="F:Entities.WorkingEnum.Unwork">
-	<summary>Bezdarbnieks</summary>
-</member><member name="F:Entities.WorkingEnum.Children">
-	<summary>Bērns</summary>
-</member><member name="F:Entities.WorkingEnum.Senior">
-	<summary>Pensionārs</summary>
-</member><member name="T:Entities.WorkingEnum">
-	<summary>Nodarbinātības veidi</summary>
-</member><member name="F:Entities.Working.Work">
-	<summary>Strādā</summary>
-</member><member name="F:Entities.Working.Student">
-	<summary>Students</summary>
-</member><member name="F:Entities.Working.Unwork">
-	<summary>Bezdarbnieks</summary>
-</member><member name="F:Entities.Working.Children">
-	<summary>Bērns</summary>
-</member><member name="F:Entities.Working.Senior">
-	<summary>Pensionārs</summary>
-</member><member name="P:Entities.Working.ListSource">
-	<summary>
- Optimized ListSource (provided constant elements are already translated)
- </summary>
-</member><member name="P:Entities.UserServiceSalary.UserService">
-	<summary>
- Ārsta pakalpojums
- </summary>
-</member><member name="P:Entities.UserServiceSalary.SeleryType">
-	<summary>
- Atalgojuma tips
- </summary>
-</member><member name="P:Entities.UserServiceSalary.SeleryValue">
-	<summary>
- Atalgojuma apjoms
- </summary>
-</member><member name="P:Entities.UserServiceSalary.Selery">
-	<summary>
- Atalgojuma aprēķina veids procenti vai Lati
- </summary>
-</member><member name="T:Entities.UserServiceSalary">
-	<summary>
- KP lietas tematiskās pārbaudes tēmas
  </summary>
 </member><member name="P:Entities.AnamnesesOperation.Operation">
 	<summary>
@@ -1370,218 +786,135 @@ Entities
 	<summary>
  Dzemdības
  </summary>
-</member><member name="P:Entities.UsersWorkTime.Room">
+</member><member name="F:Entities.TaxpayerTypeEnum.IsTaxpayer">
+	<summary>Darījumu partneris reģistrēts kā NM</summary>
+</member><member name="F:Entities.TaxpayerTypeEnum.NotTaxpayer_JP">
+	<summary>Juridiska persona nav NM</summary>
+</member><member name="F:Entities.TaxpayerTypeEnum.NotTaxpayer_FP">
+	<summary>Fiziska persona nav NM</summary>
+</member><member name="T:Entities.TaxpayerTypeEnum">
+	<summary>Darījuma partnera veidi</summary>
+</member><member name="F:Entities.TaxpayerType.IsTaxpayer">
+	<summary>Darījumu partneris reģistrēts kā NM</summary>
+</member><member name="F:Entities.TaxpayerType.NotTaxpayer_JP">
+	<summary>Juridiska persona nav NM</summary>
+</member><member name="F:Entities.TaxpayerType.NotTaxpayer_FP">
+	<summary>Fiziska persona nav NM</summary>
+</member><member name="P:Entities.TaxpayerType.ListSource">
 	<summary>
- Kabinets
+ Optimized ListSource (provided constant elements are already translated)
  </summary>
-</member><member name="P:Entities.UsersWorkTime.RoomId">
+</member><member name="T:Entities.Theme">
 	<summary>
- kabineta Id priekš validācijas
- </summary>
-</member><member name="P:Entities.UsersWorkTime.StartTime">
-	<summary>
- Uzsākšanas laiks
- </summary>
-</member><member name="P:Entities.UsersWorkTime.StartTimeN">
-	<summary>
- Uzsākšanas laiks
- </summary>
-</member><member name="P:Entities.UsersWorkTime.EndTime">
-	<summary>
- Beigšanas laiks
- </summary>
-</member><member name="P:Entities.UsersWorkTime.EndTimeN">
-	<summary>
- Uzsākšanas laiks
- </summary>
-</member><member name="P:Entities.UsersWorkTime.DayOfWeek">
-	<summary>
- Beigšanas laiks
- </summary>
-</member><member name="P:Entities.UsersWorkTime.User">
-	<summary>
- Saistītā KP lieta
- </summary>
-</member><member name="P:Entities.UsersWorkTime.CanDelete">
-	<summary>
- Return whether can delete CM case theme
- </summary>
-</member><member name="P:Entities.UsersWorkTime.CanEdit">
-	<summary>
- Return whether can edit CM case theme
- </summary>
-</member><member name="T:Entities.UsersWorkTime">
-	<summary>
- KP lietas tematiskās pārbaudes tēmas
- </summary>
-</member><member name="T:Entities.BinaryFileType">
-	<summary>
- Binary file types
+ TP tēmu klasifikators
  </summary>
 	<remarks></remarks>
-</member><member name="P:Entities.BinaryFile.Name">
+</member><member name="T:Entities.PatientProfileDescription">
 	<summary>
- Faila nosaukums
+ Primārās aprûpes karte PAK
  </summary>
-</member><member name="P:Entities.BinaryFile.FileType">
+	<remarks></remarks>
+</member><member name="P:Entities.RtgSummaryRecord.Parent">
 	<summary>
- Faila veids.
+ Parents
  </summary>
-	<returns>Faila veids, kas atbilst Name propertijā reģistrētā faila vārda paplašinājumam.</returns>
-</member><member name="P:Entities.BinaryFile.Content">
+</member><member name="P:Entities.DocFileHistory.Document">
 	<summary>
- Faila saturs
+ Dokuments
  </summary>
-</member><member name="M:Entities.BinaryFile.#ctor(Core.Dal.ISession,System.String)">
+</member><member name="P:Entities.DocFileHistory.File">
 	<summary>
- Constructor from file
+ Fails
  </summary>
-</member><member name="M:Entities.BinaryFile.#ctor">
+</member><member name="P:Entities.DocFileHistory.Creator">
 	<summary>
- Standard constructor
+ Lietotājs, kurš ģenerējis/pievienojis failu
  </summary>
-</member><member name="P:Entities.BinaryFile.Documents">
+</member><member name="P:Entities.DocFileHistory.CreationDate">
 	<summary>
- KP lietai pievienotie dokumenti
+ Izveidošanas datums
  </summary>
-</member><member name="T:Entities.BinaryFile">
+</member><member name="P:Entities.DocFileHistory.VersionNumber">
 	<summary>
- Faili (uzģenerētie, pievienotie, templeiti u.c.)
+ Faila versijas nr.
  </summary>
-</member><member name="M:Entities.BinaryContent.GetAsStream">
+</member><member name="T:Entities.DocFileHistory">
 	<summary>
- Returns a Stream for data access or Nothing (null) if there is no data
+ Ģenerēto dokumentu versijas
  </summary>
-</member><member name="M:Entities.BinaryContent.SetFromStream(System.IO.Stream)">
+</member><member name="P:Entities.AnamnesesEvolutionAnomaly.EvolutionAnomaly">
 	<summary>
- Passes data to store, as an input stream
- <example>
-    Dim target As BinaryContent = New BinaryContent()
-    Dim inputStream As New FileStream(fileName, FileMode.Open, FileAccess.Read, FileShare.Read)
-    target.SetFromStream(inputStream)
- </example>
-	</summary>
-	<param name="instream">Stream that contains the data to be stored</param>
-</member><member name="T:Entities.BinaryContent">
-	<summary>
- The compressed content of BinaryFile
+ Anomālija
  </summary>
-	<remarks>Separated from BinaryFile to utilize lazy loading of large binary content.</remarks>
-</member><member name="P:Entities.FindProgramm.UseProgrammTemplate">
+</member><member name="P:Entities.AnamnesesEvolutionAnomaly.Notes">
 	<summary>
- vai izmantot pakalpojumu kā atlases kritēriju
+ OAnomālijas piezīmes
  </summary>
-</member><member name="P:Entities.FindProgramm.ProgrammTemplate">
-	<summary>
- atlasē iekļautie pakalpojumi
- </summary>
-</member><member name="P:Entities.FindProgramm.UsePatient">
-	<summary>
- vai izmantot klintu kā atlases kritēriju
- </summary>
-</member><member name="P:Entities.FindProgramm.Patient">
-	<summary>
- atlasē iekļautie klienti
- </summary>
-</member><member name="P:Entities.FindProgramm.UseActive">
-	<summary>
- vai atlasīt tikai aktīvos abonementus(tie kuri nav dzēsti
- </summary>
-</member><member name="P:Entities.Visit.StartTime">
-	<summary>
- Uzsākšanas laiks
- </summary>
-</member><member name="P:Entities.Visit.EndTime">
-	<summary>
- Beigšanas laiks
- </summary>
-</member><member name="P:Entities.Visit.Start">
-	<summary>
- Uzsākšanas laiks
- </summary>
-</member><member name="P:Entities.Visit.EndT">
-	<summary>
- Beigšanas laiks
- </summary>
-</member><member name="P:Entities.Visit.Acyity">
-	<summary>
- Akûtā vizīte
- </summary>
-</member><member name="P:Entities.Visit.CreateDate">
-	<summary>
- ieraksta izveides laiks
- </summary>
-</member><member name="P:Entities.Visit.Used">
-	<summary>
- Pazīme par to vai ieraksts jau ir piesaistīts kādam laika periodam
- </summary>
-</member><member name="P:Entities.Visit.ParentId">
-	<summary>
- Pazīme par to vai ieraksts jau ir piesaistīts kādam laika periodam
- </summary>
-</member><member name="P:Entities.Visit.Called">
-	<summary>
- veikta atzvanīšana
- </summary>
-</member><member name="P:Entities.Visit.CreatePlace">
-	<summary>
- Ieraksta izveides vieta
- </summary>
-</member><member name="P:Entities.Visit.VisitServices">
-	<summary>
- Dokumenta failu maiņas saraksts
- </summary>
-</member><member name="P:Entities.Visit.VisitStatus">
-	<summary>
- Vizītes statusu maiņas vēsture
- </summary>
-</member><member name="P:Entities.Visit.DoctorVisit">
-	<summary>
- Ârsta apmeklējums
- </summary>
-</member><member name="P:Entities.Visit.Diagnostic">
-	<summary>
- Diagnostiskie izmeklējumi
- </summary>
-</member><member name="P:Entities.Visit.Laboratory">
-	<summary>
- Laboratoriskie izmeklējumi
- </summary>
-</member><member name="P:Entities.Visit.Manipulations">
-	<summary>
- Medicīniskās manipulācijas
- </summary>
-</member><member name="P:Entities.Visit.Vaccination">
-	<summary>
- Vakcinācija
- </summary>
-</member><member name="P:Entities.Visit.Dentist">
-	<summary>
- Vakcinācija
- </summary>
-</member><member name="P:Entities.AnamnesesUsedMedicaments.UsedMedicaments">
-	<summary>
- Medikaments
- </summary>
-</member><member name="P:Entities.AnamnesesUsedMedicaments.Notes">
-	<summary>
- Medikamentsa apraksts
- </summary>
-</member><member name="P:Entities.AnamnesesUsedMedicaments.Gynaecology">
+</member><member name="P:Entities.AnamnesesEvolutionAnomaly.Gynaecology">
 	<summary>
  Ginekoloģijas karte
  </summary>
-</member><member name="P:Entities.AnamnesesUsedMedicaments.CanDelete">
+</member><member name="P:Entities.AnamnesesEvolutionAnomaly.CanDelete">
 	<summary>
  Vai drīkst dzēst ierakstu
  </summary>
-</member><member name="P:Entities.AnamnesesUsedMedicaments.CanEdit">
+</member><member name="P:Entities.AnamnesesEvolutionAnomaly.CanEdit">
 	<summary>
  Vai drīkst labot ierakstu
  </summary>
-</member><member name="T:Entities.AnamnesesUsedMedicaments">
+</member><member name="T:Entities.AnamnesesEvolutionAnomaly">
 	<summary>
- Ikdienā lietojamie medikamenti
+ Attīstības anomālijas
+ </summary>
+</member><member name="P:Entities.AnamnesesHereditaryDsesase.HereditaryDsesase">
+	<summary>
+ Slimība
+ </summary>
+</member><member name="P:Entities.AnamnesesHereditaryDsesase.Notes">
+	<summary>
+ Slimības apraksts
+ </summary>
+</member><member name="P:Entities.AnamnesesHereditaryDsesase.Gynaecology">
+	<summary>
+ Ginekoloģijas karte
+ </summary>
+</member><member name="P:Entities.AnamnesesHereditaryDsesase.CanDelete">
+	<summary>
+ Vai drīkst dzēst ierakstu
+ </summary>
+</member><member name="P:Entities.AnamnesesHereditaryDsesase.CanEdit">
+	<summary>
+ Vai drīkst labot ierakstu
+ </summary>
+</member><member name="T:Entities.AnamnesesHereditaryDsesase">
+	<summary>
+ Iedzimtās slimības
+ </summary>
+</member><member name="P:Entities.TemplateFileVersion.Template">
+	<summary>
+ Veidlapa
+ </summary>
+</member><member name="P:Entities.TemplateFileVersion.Parent">
+	<summary>
+ Parent
+ </summary>
+</member><member name="F:Entities.SmsSendStatusEnum.NotSent">
+	<summary>Jauns</summary>
+</member><member name="F:Entities.SmsSendStatusEnum.Sent">
+	<summary>Nosûtīts</summary>
+</member><member name="F:Entities.SmsSendStatusEnum.InvalidPhone">
+	<summary>Kļûdains telefona numurs</summary>
+</member><member name="T:Entities.SmsSendStatusEnum">
+	<summary>Nodarbinātības veidi</summary>
+</member><member name="F:Entities.SmsSendStatus.NotSent">
+	<summary>Jauns</summary>
+</member><member name="F:Entities.SmsSendStatus.Sent">
+	<summary>Nosûtīts</summary>
+</member><member name="F:Entities.SmsSendStatus.InvalidPhone">
+	<summary>Kļûdains telefona numurs</summary>
+</member><member name="P:Entities.SmsSendStatus.ListSource">
+	<summary>
+ Optimized ListSource (provided constant elements are already translated)
  </summary>
 </member><member name="P:Entities.Patient.Name">
 	<summary>
@@ -1783,45 +1116,27 @@ Entities
 	<summary>
  Diagnoze
  </summary>
-</member><member name="F:Entities.DocumentType.Prescription">
-	<summary>Receptes</summary>
-</member><member name="F:Entities.DocumentType.RtgSummary">
-	<summary>RTG izmeklējuma slēdziens</summary>
-</member><member name="F:Entities.DocumentType.RTG">
-	<summary>RTG</summary>
-</member><member name="F:Entities.DocumentType.USG">
-	<summary>USG</summary>
-</member><member name="F:Entities.DocumentType.DenticalCard">
-	<summary>USG</summary>
-</member><member name="P:Entities.DocumentType.ListSource">
+</member><member name="T:Entities.PresentedDocumentEnum">
+	<summary>Uzrādītais dokuments</summary>
+</member><member name="F:Entities.PresentedDocument.Passport">
+	<summary>Pase</summary>
+</member><member name="F:Entities.PresentedDocument.DrivingLicence">
+	<summary>Vadītāja apliecība</summary>
+</member><member name="F:Entities.PresentedDocument.Other">
+	<summary>Cits</summary>
+</member><member name="F:Entities.PresentedDocument.PassportAccuse">
+	<summary>Pase(Akuz.)</summary>
+</member><member name="F:Entities.PresentedDocument.DrivingLicenceAccuse">
+	<summary>Vadītāja apliecība(Akuz.)</summary>
+</member><member name="F:Entities.PresentedDocument.OtherAccuse">
+	<summary>Cits(Akuz.)</summary>
+</member><member name="P:Entities.PresentedDocument.ListSource">
 	<summary>
- Optimized ListSource (provided constant elements are already translated)
+ Uzrādīto dokumentu saraksts
  </summary>
-</member><member name="P:Entities.TextContent.Text">
+</member><member name="P:Entities.PresentedDocument.ListSourceAccuse">
 	<summary>
- Tematiskās pārbaudes tēma
- </summary>
-</member><member name="T:Entities.TextContent">
-	<summary>
- KP lietas tematiskās pārbaudes tēmas
- </summary>
-</member><member name="F:Entities.PaymentStatusEnum.NotPayd">
-	<summary>Apmaksa nav veikta</summary>
-</member><member name="F:Entities.PaymentStatusEnum.PaydPart">
-	<summary>Apmaksāts daļēji</summary>
-</member><member name="F:Entities.PaymentStatusEnum.PaydAll">
-	<summary>Apmaksāts pilnībā</summary>
-</member><member name="T:Entities.PaymentStatusEnum">
-	<summary>Apmaksas statusi</summary>
-</member><member name="F:Entities.PaymentStatus.NotPayd">
-	<summary>Apmaksa nav veikta</summary>
-</member><member name="F:Entities.PaymentStatus.PaydPart">
-	<summary>Apmaksāts daļēji</summary>
-</member><member name="F:Entities.PaymentStatus.PaydAll">
-	<summary>Apmaksāts pilnībā</summary>
-</member><member name="P:Entities.PaymentStatus.ListSource">
-	<summary>
- Optimized ListSource (provided constant elements are already translated)
+ Uzrādīto dokumentu saraksts(Akuz.)
  </summary>
 </member><member name="T:Entities.RequisiteDocTypeEnum">
 	<summary>
@@ -1839,177 +1154,143 @@ Entities
 	<summary>
  Neuzrādito rkvizītu dokumenti
  </summary>
-</member><member name="P:Entities.LatestCM.CMDate">
-	<summary>
- KP lietas veikšanas datums
- </summary>
-</member><member name="P:Entities.LatestCM.Theme">
-	<summary>
- Tematiskās pārbaudes tēma
- </summary>
-</member><member name="P:Entities.LatestCM.Reason">
-	<summary>
- Tematiskās pārbaudes iemesli
- </summary>
-</member><member name="P:Entities.LatestCM.Violation">
-	<summary>
- KP lietā konstatēts pārkāpums
- </summary>
-</member><member name="T:Entities.LatestCM">
-	<summary>
- KP lietas tematiskās pārbaudes tēmas
- </summary>
-</member><member name="P:Entities.Role.WasJustDeleted">
-	<summary>
- For logging purposes only: used to determine if the entry has just been set inactive
- </summary>
-</member><member name="P:Entities.Role.Name">
-	<summary>
- Lomas nosaukums
- </summary>
-</member><member name="P:Entities.Role.NameTouched">
-	<summary>
- For logging purposes only: Name property has been changed
- </summary>
-</member><member name="P:Entities.Role.OldName">
-	<summary>
- For logging purposes only: previous value of name property
- </summary>
-</member><member name="P:Entities.Role.ActiveUsers">
-	<summary>
- Lomai piesaistītie lietotāji
- </summary>
-</member><member name="P:Entities.Role.HasUsers">
-	<summary>
- Vai lomai ir aktīvi lietotāji
- </summary>
-</member><member name="F:Entities.DayEnum.Monday">
-	<summary>Pirmdiena</summary>
-</member><member name="F:Entities.DayEnum.Tuesday">
-	<summary>Otrdiena</summary>
-</member><member name="F:Entities.DayEnum.Wednesday">
-	<summary>Trešdiena</summary>
-</member><member name="F:Entities.DayEnum.Thursday">
-	<summary>Ceturtdiena</summary>
-</member><member name="F:Entities.DayEnum.Friday">
-	<summary>Piektdiena</summary>
-</member><member name="F:Entities.DayEnum.Saturday">
-	<summary>Sestdiena</summary>
-</member><member name="F:Entities.DayEnum.Sanday">
-	<summary>Svētdiena</summary>
-</member><member name="T:Entities.DayEnum">
-	<summary>Nodarbinātības veidi</summary>
-</member><member name="F:Entities.Day.Monday">
-	<summary>Pirmdiena</summary>
-</member><member name="F:Entities.Day.Tuesday">
-	<summary>Otrdiena</summary>
-</member><member name="F:Entities.Day.Wednesday">
-	<summary>Trešdiena</summary>
-</member><member name="F:Entities.Day.Thursday">
-	<summary>Ceturtdiena</summary>
-</member><member name="F:Entities.Day.Friday">
-	<summary>Piektdiena</summary>
-</member><member name="F:Entities.Day.Saturday">
-	<summary>Sestdiena</summary>
-</member><member name="F:Entities.Day.Sanday">
-	<summary>Svētdiena</summary>
-</member><member name="P:Entities.Day.ListSource">
+</member><member name="F:Entities.YesNoEnum.No">
+	<summary>Ir</summary>
+</member><member name="F:Entities.YesNoEnum.Yes">
+	<summary>Nav</summary>
+</member><member name="F:Entities.YesNoEnum.Ne">
+	<summary>Nevar konstatēt</summary>
+</member><member name="F:Entities.YesNoEnum.Ja">
+	<summary>Nav nepieciešams</summary>
+</member><member name="F:Entities.YesNoEnum.NotPresent">
+	<summary>Nevar uzrādīt</summary>
+</member><member name="F:Entities.YesNoEnum.NotSent">
+	<summary>Nav nosûtīta</summary>
+</member><member name="F:Entities.YesNoEnum.NotExecuted">
+	<summary>Nav veikta</summary>
+</member><member name="F:Entities.YesNoEnum.CantExecute">
+	<summary>Nevar veikt</summary>
+</member><member name="F:Entities.YesNoEnum.IsLocatedIsExecuted">
+	<summary>Atrodas/ir veikts</summary>
+</member><member name="F:Entities.YesNoEnum.NotLocatedNotExecuted">
+	<summary>Neatrodas/nav veikts</summary>
+</member><member name="F:Entities.YesNoEnum.NotPurchase">
+	<summary>Neiepērk</summary>
+</member><member name="F:Entities.YesNoEnum.NotRefer">
+	<summary>Neattiecas</summary>
+</member><member name="F:Entities.YesNoEnum.ALossGreaterFLoss">
+	<summary>Novirze lielāka</summary>
+</member><member name="F:Entities.YesNoEnum.ALossLessFLoss">
+	<summary>Novirze mazāka</summary>
+</member><member name="F:Entities.YesNoEnum.Partially">
+	<summary>Daļēji</summary>
+</member><member name="F:Entities.YesNoEnum.Loto">
+	<summary>Izlases kartība</summary>
+</member><member name="F:Entities.YesNoEnum.NoLease">
+	<summary>Nē - iznomāts</summary>
+</member><member name="F:Entities.YesNoEnum.NoOtherForfeit">
+	<summary>Nē - citādi atsavināts</summary>
+</member><member name="F:Entities.YesNoEnum.NoNotAdjust">
+	<summary>Nē - nav uzstādīts</summary>
+</member><member name="F:Entities.YesNoEnum.Male">
+	<summary>Vīrietis</summary>
+</member><member name="F:Entities.YesNoEnum.Female">
+	<summary>Sieviete</summary>
+</member><member name="F:Entities.YesNoEnum.DpGreaterOrEqualD">
+	<summary>DpGreaterOrEquaD</summary>
+</member><member name="F:Entities.YesNoEnum.DpLessD">
+	<summary>DpLessD</summary>
+</member><member name="F:Entities.YesNoEnum.NotDocument">
+	<summary>Nevar uzrādīt pavaddokumentu</summary>
+</member><member name="T:Entities.YesNoEnum">
+	<summary>Radiopogas vērtības</summary>
+</member><member name="F:Entities.YesNo.No">
+	<summary>Nē</summary>
+</member><member name="F:Entities.YesNo.Yes">
+	<summary>Jā</summary>
+</member><member name="F:Entities.YesNo.Ne">
+	<summary>Nevar konstatēt</summary>
+</member><member name="F:Entities.YesNo.Ja">
+	<summary>Nav nepieciešams</summary>
+</member><member name="F:Entities.YesNo.Male">
+	<summary>Vīrietis</summary>
+</member><member name="F:Entities.YesNo.Female">
+	<summary>Sieviete</summary>
+</member><member name="P:Entities.YesNo.ListSource">
 	<summary>
  Optimized ListSource (provided constant elements are already translated)
  </summary>
-</member><member name="F:Entities.CycleEnum.Regular">
-	<summary>Regulārs</summary>
-</member><member name="F:Entities.CycleEnum.Irregular">
-	<summary>Neregulārs</summary>
-</member><member name="T:Entities.CycleEnum">
-	<summary>Nodarbinātības veidi</summary>
-</member><member name="F:Entities.Cycle.Regular">
-	<summary>Strādā</summary>
-</member><member name="F:Entities.Cycle.Irregular">
-	<summary>Students</summary>
-</member><member name="P:Entities.Cycle.ListSource">
+</member><member name="P:Entities.Labour.Year">
 	<summary>
- Optimized ListSource (provided constant elements are already translated)
+ dzimšanas gads
  </summary>
-</member><member name="T:Entities.Insurance">
+</member><member name="P:Entities.Labour.Weight">
 	<summary>
- Apdrošinātāju klasifikators
+ Svars
  </summary>
-	<remarks></remarks>
-</member><member name="T:Entities.Diagnoze">
+</member><member name="P:Entities.Labour.Sex">
 	<summary>
- Diagnozes, ko piesaista klientam
+ Dzimums
  </summary>
-	<remarks></remarks>
-</member><member name="P:Entities.UserLanguage.Language">
+</member><member name="P:Entities.Labour.Lactation">
 	<summary>
- Valoda
+ Laktācija
  </summary>
-</member><member name="P:Entities.UserLanguage.User">
+</member><member name="P:Entities.Labour.Health">
 	<summary>
- Ārsts
+ veselības stāvoklis dzemdībās
  </summary>
-</member><member name="P:Entities.UserLanguage.CanDelete">
+</member><member name="P:Entities.Labour.HealthNotes">
 	<summary>
- Return whether can delete CM case theme
+ dzemdību apraksts
  </summary>
-</member><member name="P:Entities.UserLanguage.CanEdit">
+</member><member name="P:Entities.Labour.HealthNow">
 	<summary>
- Return whether can edit CM case theme
+ Pāšreizējais veselības stāvoklis
  </summary>
-</member><member name="T:Entities.UserLanguage">
+</member><member name="P:Entities.Labour.HealthNowNotes">
 	<summary>
- KP lietas tematiskās pārbaudes tēmas
+ Pašreizējo slimību apraksts
  </summary>
-</member><member name="F:Entities.GuardianTypeEnum.Mother">
-	<summary>Māte</summary>
-</member><member name="F:Entities.GuardianTypeEnum.Father">
-	<summary>Tēvs</summary>
-</member><member name="F:Entities.GuardianTypeEnum.Guardian">
-	<summary>Aizbildnis</summary>
-</member><member name="T:Entities.GuardianTypeEnum">
-	<summary>Nodarbinātības veidi</summary>
-</member><member name="F:Entities.GuardianType.Mother">
-	<summary>Māte</summary>
-</member><member name="F:Entities.GuardianType.Father">
-	<summary>Tēvs</summary>
-</member><member name="F:Entities.GuardianType.Guardian">
-	<summary>Aizbildnis</summary>
-</member><member name="P:Entities.GuardianType.ListSource">
+</member><member name="P:Entities.Labour.Gynaecology">
 	<summary>
- Optimized ListSource (provided constant elements are already translated)
+ Ginekoloģijas karte
  </summary>
-</member><member name="P:Entities.Guardian.Patient">
+</member><member name="P:Entities.Labour.CanDelete">
 	<summary>
- Klients
+ Vai drīkst dzēst ierakstu
  </summary>
-</member><member name="P:Entities.Guardian.Name">
+</member><member name="P:Entities.Labour.CanEdit">
 	<summary>
- Vārds
+ Vai drīkst labot ierakstu
  </summary>
-</member><member name="P:Entities.Guardian.Surname">
+</member><member name="T:Entities.Labour">
 	<summary>
- Uzvārds
+ Ikdienā lietojamie medikamenti
  </summary>
-</member><member name="P:Entities.Guardian.Code">
+</member><member name="P:Entities.GynaecologyActualMedicaments.Medicament">
 	<summary>
- personas kods
+ Medikaments
  </summary>
-</member><member name="P:Entities.Guardian.Address">
+</member><member name="P:Entities.GynaecologyActualMedicaments.Notes">
 	<summary>
- Adrese
+ Medikamentsa apraksts
  </summary>
-</member><member name="P:Entities.Guardian.MobilePhone">
+</member><member name="P:Entities.GynaecologyActualMedicaments.Gynaecology">
 	<summary>
- Mobilais telefons
+ Ginekoloģijas karte
  </summary>
-</member><member name="P:Entities.Guardian.Mail">
+</member><member name="P:Entities.GynaecologyActualMedicaments.CanDelete">
 	<summary>
- e-pasts
+ Vai drīkst dzēst ierakstu
  </summary>
-</member><member name="P:Entities.Guardian.Type">
+</member><member name="P:Entities.GynaecologyActualMedicaments.CanEdit">
 	<summary>
- Aizbilldnis
+ Vai drīkst labot ierakstu
+ </summary>
+</member><member name="T:Entities.GynaecologyActualMedicaments">
+	<summary>
+ Ikdienā lietojamie medikamenti
  </summary>
 </member><member name="P:Entities.Contacts.Name">
 	<summary>
@@ -2047,6 +1328,174 @@ Entities
 	<summary>
  Konta numurs
  </summary>
+</member><member name="P:Entities.VisitStatusHistory.Visit">
+	<summary>
+ Vizīte
+ </summary>
+</member><member name="P:Entities.VisitStatusHistory.User">
+	<summary>
+ Lietotājs, kas veicis statusa maiņu
+ </summary>
+</member><member name="P:Entities.VisitStatusHistory.Status">
+	<summary>
+ status uz kuru veikta nomaiņa
+ </summary>
+</member><member name="P:Entities.VisitStatusHistory.ChangeDate">
+	<summary>
+ statusa maiņas laiks
+ </summary>
+</member><member name="F:Entities.PriorityTypeEnum.Low">
+	<summary>Parasta</summary>
+</member><member name="F:Entities.PriorityTypeEnum.High">
+	<summary>Steidzama</summary>
+</member><member name="T:Entities.PriorityTypeEnum">
+	<summary>Prioritāte</summary>
+</member><member name="F:Entities.PriorityType.Low">
+	<summary>Parasta</summary>
+</member><member name="F:Entities.PriorityType.High">
+	<summary>Steidzama</summary>
+</member><member name="P:Entities.PriorityType.ListSource">
+	<summary>
+ Optimized ListSource (provided constant elements are already translated)
+ </summary>
+</member><member name="T:Entities.PriorityType">
+	<summary>Prioritāte</summary>
+</member><member name="P:Entities.LatestCM.CMDate">
+	<summary>
+ KP lietas veikšanas datums
+ </summary>
+</member><member name="P:Entities.LatestCM.Theme">
+	<summary>
+ Tematiskās pārbaudes tēma
+ </summary>
+</member><member name="P:Entities.LatestCM.Reason">
+	<summary>
+ Tematiskās pārbaudes iemesli
+ </summary>
+</member><member name="P:Entities.LatestCM.Violation">
+	<summary>
+ KP lietā konstatēts pārkāpums
+ </summary>
+</member><member name="T:Entities.LatestCM">
+	<summary>
+ KP lietas tematiskās pārbaudes tēmas
+ </summary>
+</member><member name="F:Entities.WHRequestStatusEnum.Draft">
+	<summary>Jauns</summary>
+</member><member name="F:Entities.WHRequestStatusEnum.Ready">
+	<summary>Izpildīts</summary>
+</member><member name="F:Entities.WHRequestStatusEnum.Sent">
+	<summary>Pieprasīts</summary>
+</member><member name="T:Entities.WHRequestStatusEnum">
+	<summary>DN pieprasоjumu statusu kodi</summary>
+</member><member name="F:Entities.WHRequestStatus.Draft">
+	<summary>Jauns</summary>
+</member><member name="F:Entities.WHRequestStatus.Ready">
+	<summary>Izpildīts</summary>
+</member><member name="F:Entities.WHRequestStatus.Sent">
+	<summary>Pieprasīts</summary>
+</member><member name="P:Entities.WHRequestStatus.ListSource">
+	<summary>
+ Optimized ListSource (provided constant elements are already translated)
+ </summary>
+</member><member name="P:Entities.FindProgramm.UseProgrammTemplate">
+	<summary>
+ vai izmantot pakalpojumu kā atlases kritēriju
+ </summary>
+</member><member name="P:Entities.FindProgramm.ProgrammTemplate">
+	<summary>
+ atlasē iekļautie pakalpojumi
+ </summary>
+</member><member name="P:Entities.FindProgramm.UsePatient">
+	<summary>
+ vai izmantot klintu kā atlases kritēriju
+ </summary>
+</member><member name="P:Entities.FindProgramm.Patient">
+	<summary>
+ atlasē iekļautie klienti
+ </summary>
+</member><member name="P:Entities.FindProgramm.UseActive">
+	<summary>
+ vai atlasīt tikai aktīvos abonementus(tie kuri nav dzēsti
+ </summary>
+</member><member name="P:Entities.FindPatientsAdvanced.UseSex">
+	<summary>
+ Dzimums
+ </summary>
+</member><member name="P:Entities.FindPatientsAdvanced.Sex">
+	<summary>
+ dzimums
+ </summary>
+</member><member name="P:Entities.FindPatientsAdvanced.UseNewClient">
+	<summary>
+ Dzimums
+ </summary>
+</member><member name="P:Entities.FindPatientsAdvanced.NewClient">
+	<summary>
+ dzimums
+ </summary>
+</member><member name="P:Entities.RtgSummary.Rtg">
+	<summary>
+ izmeklējumu ieraksti
+ </summary>
+</member><member name="F:Entities.DayEnum.Monday">
+	<summary>Pirmdiena</summary>
+</member><member name="F:Entities.DayEnum.Tuesday">
+	<summary>Otrdiena</summary>
+</member><member name="F:Entities.DayEnum.Wednesday">
+	<summary>Trešdiena</summary>
+</member><member name="F:Entities.DayEnum.Thursday">
+	<summary>Ceturtdiena</summary>
+</member><member name="F:Entities.DayEnum.Friday">
+	<summary>Piektdiena</summary>
+</member><member name="F:Entities.DayEnum.Saturday">
+	<summary>Sestdiena</summary>
+</member><member name="F:Entities.DayEnum.Sanday">
+	<summary>Svētdiena</summary>
+</member><member name="T:Entities.DayEnum">
+	<summary>Nodarbinātības veidi</summary>
+</member><member name="F:Entities.Day.Monday">
+	<summary>Pirmdiena</summary>
+</member><member name="F:Entities.Day.Tuesday">
+	<summary>Otrdiena</summary>
+</member><member name="F:Entities.Day.Wednesday">
+	<summary>Trešdiena</summary>
+</member><member name="F:Entities.Day.Thursday">
+	<summary>Ceturtdiena</summary>
+</member><member name="F:Entities.Day.Friday">
+	<summary>Piektdiena</summary>
+</member><member name="F:Entities.Day.Saturday">
+	<summary>Sestdiena</summary>
+</member><member name="F:Entities.Day.Sanday">
+	<summary>Svētdiena</summary>
+</member><member name="P:Entities.Day.ListSource">
+	<summary>
+ Optimized ListSource (provided constant elements are already translated)
+ </summary>
+</member><member name="P:Entities.AnamnesesExtragenitalPathalogy.ExtragenitalPathalogy">
+	<summary>
+ Dizagnoze
+ </summary>
+</member><member name="P:Entities.AnamnesesExtragenitalPathalogy.Notes">
+	<summary>
+ Dizagnozes piezīmes
+ </summary>
+</member><member name="P:Entities.AnamnesesExtragenitalPathalogy.Gynaecology">
+	<summary>
+ Ginekoloģijas karte
+ </summary>
+</member><member name="P:Entities.AnamnesesExtragenitalPathalogy.CanDelete">
+	<summary>
+ Vai drīkst dzēst ierakstu
+ </summary>
+</member><member name="P:Entities.AnamnesesExtragenitalPathalogy.CanEdit">
+	<summary>
+ Vai drīkst labot ierakstu
+ </summary>
+</member><member name="T:Entities.AnamnesesExtragenitalPathalogy">
+	<summary>
+ Ekstraģenitālā pataloģija
+ </summary>
 </member><member name="P:Entities.Personalization.User">
 	<summary>
  Lietotājs
@@ -2067,280 +1516,139 @@ Entities
 	<summary>
  Izkārtojums
  </summary>
-</member><member name="P:Entities.AttachmentFile.PatientDocument">
-	<summary>
- Dokuments - pārsûdzība
- </summary>
-</member><member name="P:Entities.AttachmentFile.Parent">
-	<summary>
- Parents
- </summary>
-</member><member name="P:Entities.AttachmentFile.File">
-	<summary>
- daokumenta fails
- </summary>
-</member><member name="P:Entities.Classifier.Mark">
-	<summary>
- Pazīme
- </summary>
-</member><member name="P:Entities.Classifier.SecondMark">
-	<summary>
- otra pazīme Pazīme
- </summary>
-</member><member name="P:Entities.Classifier.ExternalID">
-	<summary>
- Ārējais ID
- </summary>
-</member><member name="P:Entities.Classifier.Parent">
-	<summary>
- Saistītais klasifikators
- </summary>
-</member><member name="P:Entities.Classifier.Reference">
-	<summary>
- Saistītais klasifikators
- </summary>
-</member><member name="P:Entities.Classifier.ReferenceSecond">
-	<summary>
- Saistītais klasifikators 2
- </summary>
-</member><member name="P:Entities.Classifier.ReferenceThird">
-	<summary>
- Saistītais klasifikators 3
- </summary>
-</member><member name="P:Entities.Classifier.ReferenceFourth">
-	<summary>
- Saistītais klasifikators 4
- </summary>
-</member><member name="P:Entities.Classifier.ReferenceFive">
-	<summary>
- Saistītais klasifikators 5
- </summary>
-</member><member name="P:Entities.Classifier.ReferenceSix">
-	<summary>
- Saistītais klasifikators 5
- </summary>
-</member><member name="P:Entities.Classifier.Type">
-	<summary>
- Klasifikatora tips
- </summary>
-</member><member name="P:Entities.Classifier.CanNotDelete">
-	<summary>
- Klasifikatoru nedrīkst dzēst
- </summary>
-</member><member name="P:Entities.Classifier.NotName">
-	<summary>
- Lai obligāta ieraksta zīme netiktu attēlota laukā, kur ieraksts var arī nebūt
- </summary>
-</member><member name="T:Entities.Position">
-	<summary>KAmatu klasifikators</summary>
-</member><member name="T:Entities.TemplateType">
-	<summary>Veidlapu sagatavju grupas</summary>
-</member><member name="T:Entities.Language">
-	<summary>Valoda</summary>
-</member><member name="T:Entities.Specialization">
-	<summary>Medicīniskā specializācija</summary>
-</member><member name="T:Entities.RtgType">
-	<summary>RTG attēlu veidi</summary>
-</member><member name="T:Entities.BusinessGroup">
-	<summary>Biznesa grupējums</summary>
-</member><member name="T:Entities.Kindred">
-	<summary>Radniecība</summary>
-</member><member name="T:Entities.PatientType">
-	<summary>Klientu veids</summary>
-</member><member name="F:Entities.Statuss.Notify">
-	<summary>
- Pieteikta
- </summary>
-</member><member name="T:Entities.Statuss">
-	<summary>Vizītes statusi</summary>
-</member><member name="T:Entities.Speciality">
-	<summary>Specialitāšu klasifikators</summary>
-</member><member name="T:Entities.Room">
-	<summary>Kabinetu klasifikators</summary>
-</member><member name="T:Entities.RoomGroups">
-	<summary>Kabinetu grupu klasifikators</summary>
-</member><member name="T:Entities.SpecialityGroups">
-	<summary>Kabinetu grupu klasifikators</summary>
-</member><member name="T:Entities.VisitType">
-	<summary>Vizīšu tipu klasifikators</summary>
-</member><member name="T:Entities.SpecialityType">
-	<summary>
- specialitātes veids Pieaugušo Bērnu
- </summary>
-	<remarks></remarks>
-</member><member name="T:Entities.Profile">
-	<summary>
- Klientu programmu profili
- </summary>
-	<remarks></remarks>
-</member><member name="T:Entities.PaymentType">
-	<summary>
- Maksājuma veids (skaidrā naudā, ar pārskaitījumu)
- </summary>
-	<remarks></remarks>
-</member><member name="T:Entities.ServiceTypes">
-	<summary>Pakalpojuma veidu klasifikators</summary>
-</member><member name="T:Entities.DocType">
-	<summary>
- Dokumentu veids
- </summary>
-	<remarks></remarks>
-</member><member name="T:Entities.EmployeGrouping">
-	<summary>
- Darbinieku grupējums
- </summary>
-</member><member name="T:Entities.Resource">
-	<summary>
- Klīnikas resursu (iekārtu) klasifikators
- </summary>
-</member><member name="T:Entities.Assignment">
-	<summary>
- Norīkojumu klasifikators
- </summary>
-</member><member name="T:Entities.Services">
-	<summary>Pakalpojumu klasifikators</summary>
-</member><member name="T:Entities.GroupsWork">
-	<summary>Grupu nodarbību klasifikators</summary>
-</member><member name="T:Entities.BloodGroup">
-	<summary>Asinsgrupu klasifikators</summary>
-</member><member name="T:Entities.Percentage">
-	<summary>Procentu likmes</summary>
-</member><member name="P:Entities.Subscription.SubscriptionDetail">
-	<summary>
- Dokumenta failu maiņas saraksts
- </summary>
-</member><member name="P:Entities.WorkTime.Room">
-	<summary>
- Kabinets
- </summary>
-</member><member name="P:Entities.WorkTime.StartDateTime">
-	<summary>
- Uzsākšanas laiks
- </summary>
-</member><member name="P:Entities.WorkTime.StartTime">
-	<summary>
- Uzsākšanas laiks
- </summary>
-</member><member name="P:Entities.WorkTime.EndTime">
-	<summary>
- Beigšanas laiks
- </summary>
-</member><member name="P:Entities.WorkTime.User">
-	<summary>
- ārsts
- </summary>
-</member><member name="P:Entities.WorkTime.GroupWork">
-	<summary>
- grupu nodarbība
- </summary>
-</member><member name="P:Entities.WorkTime.GroupId">
-	<summary>
- grupu nodarbība
- </summary>
-</member><member name="P:Entities.WorkTime.Price">
-	<summary>
- Grupas nodarbības cena
- </summary>
-</member><member name="P:Entities.WorkTime.PatientCount">
-	<summary>
- Grupas nodarbības dalībnieku skaits
- </summary>
-</member><member name="P:Entities.WorkTime.Length">
-	<summary>
- Grupas nodarbības ilgums
- </summary>
-</member><member name="P:Entities.WorkTime.Acity">
-	<summary>
- akūta vizīte
- </summary>
-</member><member name="P:Entities.WorkTime.UserWorkTime">
-	<summary>
- darbinieka apamatnoslodze
- </summary>
-</member><member name="P:Entities.WorkTime.FromUserWorkTime">
-	<summary>
- vai ieraksts ir ņemts no darbinieka pamatnodslodes
- </summary>
-</member><member name="P:Entities.WorkTime.UsedTime">
-	<summary>
- vai ieraksts ir ņemts no darbinieka pamatnodslodes
- </summary>
-</member><member name="P:Entities.WorkTime.CanDelete">
-	<summary>
- Return whether can delete CM case theme
- </summary>
-</member><member name="P:Entities.WorkTime.CanEdit">
-	<summary>
- Return whether can edit CM case theme
- </summary>
-</member><member name="T:Entities.WorkTime">
-	<summary>
-	</summary>
-</member><member name="M:Entities.IResolver.ChooseWorkstationId(System.Nullable{System.Guid}@)">
-	<summary>
- Requests workstation id during the first synchronization or reports workstation id during subsequent synchronizations
- </summary>
-	<returns>Workstation id or <c>Guid.Empty</c> if process should be aborted</returns>
-</member><member name="M:Entities.IResolver.ObsoleteCaseIsDirty(System.Guid)">
-	<summary>
- Called when an obsolete case that has to be deleted from local workstation contains unsynchronized data
- </summary>
-	<param name="caseId">The Id of case that should be deleted</param>
-</member><member name="M:Entities.IResolver.ConflictingChangesOfObject(System.Object)">
-	<summary>
- Called when version conflict occurred
- </summary>
-	<param name="conflict">object in conflict</param>
-</member><member name="M:Entities.IResolver.ReportProgress(System.Object,System.Object[])">
-	<summary>
- Reports progress and gives an oportunity to interrupt synchronization
- </summary>
-	<param name="message">String, Core.Err or Core.Msg</param>
-	<param name="messageParams">Message parameters</param>
-	<returns><c>True</c> if synchronization should continue</returns>
-</member><member name="T:Entities.IResolver">
-	<summary>
- Callbacks to resolve synchronization conflicts and other problems
- </summary>
-	<remarks></remarks>
-</member><member name="F:Entities.TaxpayerTypeEnum.IsTaxpayer">
-	<summary>Darījumu partneris reģistrēts kā NM</summary>
-</member><member name="F:Entities.TaxpayerTypeEnum.NotTaxpayer_JP">
-	<summary>Juridiska persona nav NM</summary>
-</member><member name="F:Entities.TaxpayerTypeEnum.NotTaxpayer_FP">
-	<summary>Fiziska persona nav NM</summary>
-</member><member name="T:Entities.TaxpayerTypeEnum">
-	<summary>Darījuma partnera veidi</summary>
-</member><member name="F:Entities.TaxpayerType.IsTaxpayer">
-	<summary>Darījumu partneris reģistrēts kā NM</summary>
-</member><member name="F:Entities.TaxpayerType.NotTaxpayer_JP">
-	<summary>Juridiska persona nav NM</summary>
-</member><member name="F:Entities.TaxpayerType.NotTaxpayer_FP">
-	<summary>Fiziska persona nav NM</summary>
-</member><member name="P:Entities.TaxpayerType.ListSource">
+</member><member name="F:Entities.WorkingEnum.Work">
+	<summary>Strādā</summary>
+</member><member name="F:Entities.WorkingEnum.Student">
+	<summary>Students</summary>
+</member><member name="F:Entities.WorkingEnum.Unwork">
+	<summary>Bezdarbnieks</summary>
+</member><member name="F:Entities.WorkingEnum.Children">
+	<summary>Bērns</summary>
+</member><member name="F:Entities.WorkingEnum.Senior">
+	<summary>Pensionārs</summary>
+</member><member name="T:Entities.WorkingEnum">
+	<summary>Nodarbinātības veidi</summary>
+</member><member name="F:Entities.Working.Work">
+	<summary>Strādā</summary>
+</member><member name="F:Entities.Working.Student">
+	<summary>Students</summary>
+</member><member name="F:Entities.Working.Unwork">
+	<summary>Bezdarbnieks</summary>
+</member><member name="F:Entities.Working.Children">
+	<summary>Bērns</summary>
+</member><member name="F:Entities.Working.Senior">
+	<summary>Pensionārs</summary>
+</member><member name="P:Entities.Working.ListSource">
 	<summary>
  Optimized ListSource (provided constant elements are already translated)
  </summary>
-</member><member name="P:Entities.LogEntryConfig.ActionId">
+</member><member name="P:Entities.Context.AuthenticatedUser">
 	<summary>
- Audita ziņojuma ID
+ Informācija par autorizēto lietotāju
  </summary>
-</member><member name="P:Entities.LogEntryConfig.CurrentUser">
+	<value><seealso cref="T:Entities.User"/> objekts, kas atbilst autorizētajam lietotājam</value>
+	<remarks>Lietotājs, ar kura vārdu un paroli notika pieslēgšanās sistēmai</remarks>
+</member><member name="M:Entities.Context.Connect(System.String,System.String,Core.Dal.ISession@,Core.Dal.ConnectionTarget)">
 	<summary>
- Sūtīt ziņojumu lietotājam, kurš veicis labojumu
+ Pieslēgšanās sistēmai
  </summary>
-</member><member name="P:Entities.LogEntryConfig.EMails">
+	<param name="userName">Lietotāja vārds formā DOMAIN\User</param>
+	<param name="password">Lietotāja AD parole</param>
+	<param name="session">Starting ISession for the application</param>
+	<param name="target">Pieslēgšanās centrālajam vai lokālajam serverim</param>
+	<returns>Saraksts ar iespējamajām lietotāja identitātēm</returns>
+</member><member name="P:Entities.Context.ImpersonatedUser">
 	<summary>
- Sūtīt ziņojumu konkrētām e-pasta adresēm
+ Impersonētais lietotājs
  </summary>
-</member><member name="P:Entities.LogEntryConfig.User">
+	<value><seealso cref="T:Entities.User"/></value>
+</member><member name="P:Entities.Context.Permissions">
 	<summary>
- Sūtīt atgādinājumu konkrētam lietotājam
+ Permissions of ImpersonatedUser
  </summary>
-</member><member name="P:Entities.LogEntryConfig.Role">
+	<value><seealso cref="T:System.Collections.Generic.IDictionary`2"/> of Permissions</value>
+</member><member name="P:Entities.Context.ConnectedTo">
 	<summary>
- Sūtīt ziņojumu lietotājiem ar konkrētu lomu
+ Currently or previously connected server
  </summary>
+	<value><seealso cref="T:Core.Dal.ConnectionTarget"/></value>
+</member><member name="P:Entities.Context.IsConnected">
+	<summary>
+ Norāda, vai lietotājs ir veiksmīgi pieslēdzies sistēmai
+ </summary>
+	<value><c>True</c>, ja lietotājs ir pieslēdzies, <c>False</c>, ja nav</value>
+</member><member name="P:Entities.Context.IPAddress">
+	<summary>
+ IP address of current computer
+ </summary>
+	<value>IP address as string</value>
+</member><member name="T:Entities.Context">
+	<summary>
+ Current context
+ </summary>
+</member><member name="P:Entities.Guardian.Patient">
+	<summary>
+ Klients
+ </summary>
+</member><member name="P:Entities.Guardian.Name">
+	<summary>
+ Vārds
+ </summary>
+</member><member name="P:Entities.Guardian.Surname">
+	<summary>
+ Uzvārds
+ </summary>
+</member><member name="P:Entities.Guardian.Code">
+	<summary>
+ personas kods
+ </summary>
+</member><member name="P:Entities.Guardian.Address">
+	<summary>
+ Adrese
+ </summary>
+</member><member name="P:Entities.Guardian.MobilePhone">
+	<summary>
+ Mobilais telefons
+ </summary>
+</member><member name="P:Entities.Guardian.Mail">
+	<summary>
+ e-pasts
+ </summary>
+</member><member name="P:Entities.Guardian.Type">
+	<summary>
+ Aizbilldnis
+ </summary>
+</member><member name="P:Entities.ClassifierFind.UseInClassifier">
+	<summary>
+ vai iekļaut atlasē: tēmas 
+ </summary>
+</member><member name="P:Entities.ClassifierFind.UseInList">
+	<summary>
+ vai iekļaut atlasē: tēmas 
+ </summary>
+</member><member name="P:Entities.ClassifierFind.UseIsParent">
+	<summary>
+ vai iekļaut atlasē: tēmas 
+ </summary>
+</member><member name="P:Entities.ClassifierFind.UseNotInClassifier">
+	<summary>
+ vai neiekļaut lietotājus atlasē
+ </summary>
+</member><member name="P:Entities.ClassifierFind.Classifier">
+	<summary>
+ Atlasē neiekļautie lietotāji; ieļautās tēmas
+ </summary>
+</member><member name="P:Entities.ClassifierFind.ClassifiersId">
+	<summary>
+ Atlasē neiekļautie lietotāji; ieļautās tēmas
+ </summary>
+</member><member name="P:Entities.ClassifierFind.ExcludeComputersInUse">
+	<summary>
+ Special property for computer lists
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
 </member><member name="P:Entities.FindUsers.UseNotInUser">
 	<summary>
  vai neiekļaut lietotājus atlasē
@@ -2433,35 +1741,172 @@ Entities
 	<summary>
  Tikai aktuālie
  </summary>
-</member><member name="F:Entities.HealthEnum.Normal">
-	<summary>Normāls</summary>
-</member><member name="F:Entities.HealthEnum.Pathalogical">
-	<summary>Pataloģisks</summary>
-</member><member name="F:Entities.HealthEnum.SC">
-	<summary>S.C.</summary>
-</member><member name="F:Entities.HealthEnum.Well">
-	<summary>Vesels</summary>
-</member><member name="F:Entities.HealthEnum.Ill">
-	<summary>Slims</summary>
-</member><member name="T:Entities.HealthEnum">
-	<summary>Nodarbinātības veidi</summary>
-</member><member name="F:Entities.Health.Normal">
-	<summary>Normāls</summary>
-</member><member name="F:Entities.Health.Pathalogical">
-	<summary>Pataloģisks</summary>
-</member><member name="F:Entities.Health.SC">
-	<summary>S.C.</summary>
-</member><member name="F:Entities.Health.Well">
-	<summary>Vesels</summary>
-</member><member name="F:Entities.Health.Ill">
-	<summary>Slims</summary>
-</member><member name="P:Entities.Health.ListSource">
+</member><member name="P:Entities.WorkTime.Room">
+	<summary>
+ Kabinets
+ </summary>
+</member><member name="P:Entities.WorkTime.StartDateTime">
+	<summary>
+ Uzsākšanas laiks
+ </summary>
+</member><member name="P:Entities.WorkTime.StartTime">
+	<summary>
+ Uzsākšanas laiks
+ </summary>
+</member><member name="P:Entities.WorkTime.EndTime">
+	<summary>
+ Beigšanas laiks
+ </summary>
+</member><member name="P:Entities.WorkTime.User">
+	<summary>
+ ārsts
+ </summary>
+</member><member name="P:Entities.WorkTime.GroupWork">
+	<summary>
+ grupu nodarbība
+ </summary>
+</member><member name="P:Entities.WorkTime.GroupId">
+	<summary>
+ grupu nodarbība
+ </summary>
+</member><member name="P:Entities.WorkTime.Price">
+	<summary>
+ Grupas nodarbības cena
+ </summary>
+</member><member name="P:Entities.WorkTime.PatientCount">
+	<summary>
+ Grupas nodarbības dalībnieku skaits
+ </summary>
+</member><member name="P:Entities.WorkTime.Length">
+	<summary>
+ Grupas nodarbības ilgums
+ </summary>
+</member><member name="P:Entities.WorkTime.Acity">
+	<summary>
+ akūta vizīte
+ </summary>
+</member><member name="P:Entities.WorkTime.UserWorkTime">
+	<summary>
+ darbinieka apamatnoslodze
+ </summary>
+</member><member name="P:Entities.WorkTime.FromUserWorkTime">
+	<summary>
+ vai ieraksts ir ņemts no darbinieka pamatnodslodes
+ </summary>
+</member><member name="P:Entities.WorkTime.UsedTime">
+	<summary>
+ vai ieraksts ir ņemts no darbinieka pamatnodslodes
+ </summary>
+</member><member name="P:Entities.WorkTime.CanDelete">
+	<summary>
+ Return whether can delete CM case theme
+ </summary>
+</member><member name="P:Entities.WorkTime.CanEdit">
+	<summary>
+ Return whether can edit CM case theme
+ </summary>
+</member><member name="T:Entities.WorkTime">
+	<summary>
+	</summary>
+</member><member name="F:Entities.ReceiverTypeEnum.TimberReceiver">
+	<summary>Kokmateriālu saņēmējs</summary>
+</member><member name="F:Entities.ReceiverTypeEnum.ServiceReceiver">
+	<summary>Pakalpojumu saņēmējs</summary>
+</member><member name="T:Entities.ReceiverTypeEnum">
+	<summary>Piegādātāja veidi</summary>
+</member><member name="F:Entities.ReceiverType.TimberReceiver">
+	<summary>Kokmateriālu saņēmējs</summary>
+</member><member name="F:Entities.ReceiverType.ServiceReceiver">
+	<summary>Pakalpojumu saņēmējs</summary>
+</member><member name="P:Entities.ReceiverType.ListSource">
 	<summary>
  Optimized ListSource (provided constant elements are already translated)
  </summary>
-</member><member name="P:Entities.Health.ListSourceWellIll">
+</member><member name="F:Entities.EntityType.LegalEntity">
 	<summary>
- Vesels slims
+ Juridiska persona
+ </summary>
+</member><member name="F:Entities.EntityType.PhysicalEntity">
+	<summary>
+ Fiziska persona
+ </summary>
+</member><member name="T:Entities.EntityType">
+	<summary>
+ Nodokļu maksātāju veidi
+ </summary>
+</member><member name="P:Entities.AttachmentFile.PatientDocument">
+	<summary>
+ Dokuments - pārsûdzība
+ </summary>
+</member><member name="P:Entities.AttachmentFile.Parent">
+	<summary>
+ Parents
+ </summary>
+</member><member name="P:Entities.AttachmentFile.File">
+	<summary>
+ daokumenta fails
+ </summary>
+</member><member name="T:Entities.Insurance">
+	<summary>
+ Apdrošinātāju klasifikators
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Entities.Diagnoze">
+	<summary>
+ Diagnozes, ko piesaista klientam
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Entities.PatientDocument.Patient">
+	<summary>
+ Dokuments - pārsûdzība
+ </summary>
+</member><member name="P:Entities.PatientDocument.Parent">
+	<summary>
+ Parents
+ </summary>
+</member><member name="P:Entities.PatientDocument.DocType">
+	<summary>
+ dokumenta tips
+ </summary>
+</member><member name="P:Entities.PatientDocument.CreateDate">
+	<summary>
+ daokumenta fails
+ </summary>
+</member><member name="P:Entities.PatientDocument.Creator">
+	<summary>
+ daokumenta fails
+ </summary>
+</member><member name="P:Entities.PatientDocument.Files">
+	<summary>
+ daokumenta fails
+ </summary>
+</member><member name="F:Entities.SeleryTypeEnum.Time">
+	<summary>Nodarbība</summary>
+</member><member name="F:Entities.SeleryTypeEnum.Percentage">
+	<summary>Procentu</summary>
+</member><member name="T:Entities.SeleryTypeEnum">
+	<summary>Atalgojuma veids</summary>
+</member><member name="F:Entities.SeleryEnum.Percentage">
+	<summary>Precentos</summary>
+</member><member name="F:Entities.SeleryEnum.Ls">
+	<summary>Latos</summary>
+</member><member name="T:Entities.SeleryEnum">
+	<summary>Atalgojuma procentos vai latos</summary>
+</member><member name="F:Entities.SeleryType.Time">
+	<summary>Laika</summary>
+</member><member name="F:Entities.SeleryType.Percentage">
+	<summary>Procentu</summary>
+</member><member name="P:Entities.SeleryType.ListSource">
+	<summary>
+ Optimized ListSource (provided constant elements are already translated)
+ </summary>
+</member><member name="F:Entities.Selery.Percentage">
+	<summary>Laika</summary>
+</member><member name="F:Entities.Selery.Ls">
+	<summary>Procentu</summary>
+</member><member name="P:Entities.Selery.ListSource">
+	<summary>
+ Optimized ListSource (provided constant elements are already translated)
  </summary>
 </member><member name="P:Entities.Document.DocType">
 	<summary>
@@ -2540,6 +1985,52 @@ Entities
 </member><member name="P:Entities.Licence.FromWh">
 	<summary>
 	</summary>
+</member><member name="P:Entities.LogEntryConfig.ActionId">
+	<summary>
+ Audita ziņojuma ID
+ </summary>
+</member><member name="P:Entities.LogEntryConfig.CurrentUser">
+	<summary>
+ Sūtīt ziņojumu lietotājam, kurš veicis labojumu
+ </summary>
+</member><member name="P:Entities.LogEntryConfig.EMails">
+	<summary>
+ Sūtīt ziņojumu konkrētām e-pasta adresēm
+ </summary>
+</member><member name="P:Entities.LogEntryConfig.User">
+	<summary>
+ Sūtīt atgādinājumu konkrētam lietotājam
+ </summary>
+</member><member name="P:Entities.LogEntryConfig.Role">
+	<summary>
+ Sūtīt ziņojumu lietotājiem ar konkrētu lomu
+ </summary>
+</member><member name="F:Entities.PresentCardStateEnum.Izveidota">
+	<summary>Izveidota</summary>
+</member><member name="F:Entities.PresentCardStateEnum.Nopirkta">
+	<summary>Nopirkta</summary>
+</member><member name="F:Entities.PresentCardStateEnum.DalejiIzmantota">
+	<summary>Daļēji izmantota</summary>
+</member><member name="F:Entities.PresentCardStateEnum.PilnibaIzmantota">
+	<summary>Pilnībā izmantota</summary>
+</member><member name="F:Entities.PresentCardStateEnum.Bezmaksas">
+	<summary>Bezmaksas</summary>
+</member><member name="T:Entities.PresentCardStateEnum">
+	<summary>Nodarbinātības veidi</summary>
+</member><member name="F:Entities.PresentCardState.Izveidota">
+	<summary>izveidota</summary>
+</member><member name="F:Entities.PresentCardState.Nopirkta">
+	<summary>Nopirkta</summary>
+</member><member name="F:Entities.PresentCardState.Bezmaksas">
+	<summary>Bezmaksas</summary>
+</member><member name="F:Entities.PresentCardState.DalejiIzmantota">
+	<summary>Daļēji izmantota</summary>
+</member><member name="F:Entities.PresentCardState.PilnibaIzmantota">
+	<summary>Pilnībā izmantota</summary>
+</member><member name="P:Entities.PresentCardState.ListSource">
+	<summary>
+ Optimized ListSource (provided constant elements are already translated)
+ </summary>
 </member><member name="P:Entities.TaxpayerMember.Code">
 	<summary>
  Personas kods
@@ -2580,154 +2071,543 @@ Entities
 	<summary>
  NM amatpersona (pārstāvis)
  </summary>
-</member><member name="T:Entities.Theme">
+</member><member name="P:Entities.Role.WasJustDeleted">
 	<summary>
- TP tēmu klasifikators
+ For logging purposes only: used to determine if the entry has just been set inactive
+ </summary>
+</member><member name="P:Entities.Role.Name">
+	<summary>
+ Lomas nosaukums
+ </summary>
+</member><member name="P:Entities.Role.NameTouched">
+	<summary>
+ For logging purposes only: Name property has been changed
+ </summary>
+</member><member name="P:Entities.Role.OldName">
+	<summary>
+ For logging purposes only: previous value of name property
+ </summary>
+</member><member name="P:Entities.Role.ActiveUsers">
+	<summary>
+ Lomai piesaistītie lietotāji
+ </summary>
+</member><member name="P:Entities.Role.HasUsers">
+	<summary>
+ Vai lomai ir aktīvi lietotāji
+ </summary>
+</member><member name="P:Entities.UserServiceSalary.UserService">
+	<summary>
+ Ārsta pakalpojums
+ </summary>
+</member><member name="P:Entities.UserServiceSalary.SeleryType">
+	<summary>
+ Atalgojuma tips
+ </summary>
+</member><member name="P:Entities.UserServiceSalary.SeleryValue">
+	<summary>
+ Atalgojuma apjoms
+ </summary>
+</member><member name="P:Entities.UserServiceSalary.Selery">
+	<summary>
+ Atalgojuma aprēķina veids procenti vai Lati
+ </summary>
+</member><member name="T:Entities.UserServiceSalary">
+	<summary>
+ KP lietas tematiskās pārbaudes tēmas
+ </summary>
+</member><member name="P:Entities.Visit.StartTime">
+	<summary>
+ Uzsākšanas laiks
+ </summary>
+</member><member name="P:Entities.Visit.EndTime">
+	<summary>
+ Beigšanas laiks
+ </summary>
+</member><member name="P:Entities.Visit.Start">
+	<summary>
+ Uzsākšanas laiks
+ </summary>
+</member><member name="P:Entities.Visit.EndT">
+	<summary>
+ Beigšanas laiks
+ </summary>
+</member><member name="P:Entities.Visit.Acyity">
+	<summary>
+ Akûtā vizīte
+ </summary>
+</member><member name="P:Entities.Visit.CreateDate">
+	<summary>
+ ieraksta izveides laiks
+ </summary>
+</member><member name="P:Entities.Visit.Used">
+	<summary>
+ Pazīme par to vai ieraksts jau ir piesaistīts kādam laika periodam
+ </summary>
+</member><member name="P:Entities.Visit.ParentId">
+	<summary>
+ Pazīme par to vai ieraksts jau ir piesaistīts kādam laika periodam
+ </summary>
+</member><member name="P:Entities.Visit.Called">
+	<summary>
+ veikta atzvanīšana
+ </summary>
+</member><member name="P:Entities.Visit.CreatePlace">
+	<summary>
+ Ieraksta izveides vieta
+ </summary>
+</member><member name="P:Entities.Visit.VisitServices">
+	<summary>
+ Dokumenta failu maiņas saraksts
+ </summary>
+</member><member name="P:Entities.Visit.VisitStatus">
+	<summary>
+ Vizītes statusu maiņas vēsture
+ </summary>
+</member><member name="P:Entities.Visit.DoctorVisit">
+	<summary>
+ Ârsta apmeklējums
+ </summary>
+</member><member name="P:Entities.Visit.Diagnostic">
+	<summary>
+ Diagnostiskie izmeklējumi
+ </summary>
+</member><member name="P:Entities.Visit.Laboratory">
+	<summary>
+ Laboratoriskie izmeklējumi
+ </summary>
+</member><member name="P:Entities.Visit.Manipulations">
+	<summary>
+ Medicīniskās manipulācijas
+ </summary>
+</member><member name="P:Entities.Visit.Vaccination">
+	<summary>
+ Vakcinācija
+ </summary>
+</member><member name="P:Entities.Visit.Dentist">
+	<summary>
+ Vakcinācija
+ </summary>
+</member><member name="P:Entities.AnamnesesAllergy.Allergy">
+	<summary>
+ Alerģija
+ </summary>
+</member><member name="P:Entities.AnamnesesAllergy.Notes">
+	<summary>
+ Alerģijas piezīmes
+ </summary>
+</member><member name="P:Entities.AnamnesesAllergy.Gynaecology">
+	<summary>
+ Ginekoloģijas karte
+ </summary>
+</member><member name="P:Entities.AnamnesesAllergy.CanDelete">
+	<summary>
+ Vai drīkst dzēst ierakstu
+ </summary>
+</member><member name="P:Entities.AnamnesesAllergy.CanEdit">
+	<summary>
+ Vai drīkst labot ierakstu
+ </summary>
+</member><member name="T:Entities.AnamnesesAllergy">
+	<summary>
+ Alerģijas
+ </summary>
+</member><member name="P:Entities.UsersSpecialities.Speciality">
+	<summary>
+ Specialitāte
+ </summary>
+</member><member name="P:Entities.UsersSpecialities.User">
+	<summary>
+ Saistītā KP lieta
+ </summary>
+</member><member name="P:Entities.UsersSpecialities.From">
+	<summary>
+ Sertifikāts derīgs no
+ </summary>
+</member><member name="P:Entities.UsersSpecialities.Number">
+	<summary>
+ Sertifikāta numurs
+ </summary>
+</member><member name="P:Entities.UsersSpecialities.Until">
+	<summary>
+ Sertifikāts derīgs līdz
+ </summary>
+</member><member name="P:Entities.UsersSpecialities.CanDelete">
+	<summary>
+ Return whether can delete CM case theme
+ </summary>
+</member><member name="P:Entities.UsersSpecialities.CanEdit">
+	<summary>
+ Return whether can edit CM case theme
+ </summary>
+</member><member name="T:Entities.UsersSpecialities">
+	<summary>
+ KP lietas tematiskās pārbaudes tēmas
+ </summary>
+</member><member name="T:Entities.AuditMessage">
+	<summary>
+ Notikumu veidi (notikumu žurnālam)
+ </summary>
+</member><member name="P:Entities.UsersWorkTime.Room">
+	<summary>
+ Kabinets
+ </summary>
+</member><member name="P:Entities.UsersWorkTime.RoomId">
+	<summary>
+ kabineta Id priekš validācijas
+ </summary>
+</member><member name="P:Entities.UsersWorkTime.StartTime">
+	<summary>
+ Uzsākšanas laiks
+ </summary>
+</member><member name="P:Entities.UsersWorkTime.StartTimeN">
+	<summary>
+ Uzsākšanas laiks
+ </summary>
+</member><member name="P:Entities.UsersWorkTime.EndTime">
+	<summary>
+ Beigšanas laiks
+ </summary>
+</member><member name="P:Entities.UsersWorkTime.EndTimeN">
+	<summary>
+ Uzsākšanas laiks
+ </summary>
+</member><member name="P:Entities.UsersWorkTime.DayOfWeek">
+	<summary>
+ Beigšanas laiks
+ </summary>
+</member><member name="P:Entities.UsersWorkTime.User">
+	<summary>
+ Saistītā KP lieta
+ </summary>
+</member><member name="P:Entities.UsersWorkTime.CanDelete">
+	<summary>
+ Return whether can delete CM case theme
+ </summary>
+</member><member name="P:Entities.UsersWorkTime.CanEdit">
+	<summary>
+ Return whether can edit CM case theme
+ </summary>
+</member><member name="T:Entities.UsersWorkTime">
+	<summary>
+ KP lietas tematiskās pārbaudes tēmas
+ </summary>
+</member><member name="F:Entities.DocumentStatusEnum.Draft">
+	<summary>Sagatavošanā</summary>
+</member><member name="F:Entities.DocumentStatusEnum.Ready">
+	<summary>Gatavs</summary>
+</member><member name="F:Entities.DocumentStatusEnum.Complete">
+	<summary>Pabeigts</summary>
+</member><member name="F:Entities.DocumentStatusEnum.Sent">
+	<summary>Nosūtīts</summary>
+</member><member name="F:Entities.DocumentStatusEnum.NotValid">
+	<summary>Spēkā neesošs</summary>
+</member><member name="F:Entities.DocumentStatusEnum.Cancelled">
+	<summary>Anulēts</summary>
+</member><member name="F:Entities.DocumentStatusEnum.AppealStarted">
+	<summary>Pārsūdzības statuss: uzsākta</summary>
+</member><member name="F:Entities.DocumentStatusEnum.AppealCompleted">
+	<summary>Pārsūdzības statuss: pabeigta</summary>
+</member><member name="F:Entities.DocumentStatusEnum.Correction">
+	<summary>Labošana</summary>
+</member><member name="T:Entities.DocumentStatusEnum">
+	<summary>Dokumenta statusu kodi</summary>
+</member><member name="F:Entities.DocumentStatus.Draft">
+	<summary>Sagatavošanā</summary>
+</member><member name="F:Entities.DocumentStatus.Ready">
+	<summary>Gatavs</summary>
+</member><member name="F:Entities.DocumentStatus.Complete">
+	<summary>Pabeigts</summary>
+</member><member name="F:Entities.DocumentStatus.Sent">
+	<summary>Nosūtīts</summary>
+</member><member name="F:Entities.DocumentStatus.NotValid">
+	<summary>Spēkā neesošs</summary>
+</member><member name="F:Entities.DocumentStatus.Cancelled">
+	<summary>Anulēts</summary>
+</member><member name="F:Entities.DocumentStatus.Correction">
+	<summary>Labošana</summary>
+</member><member name="F:Entities.DocumentStatus.AppealStarted">
+	<summary>Pārsūdzības statuss: uzsākta</summary>
+</member><member name="F:Entities.DocumentStatus.AppealCompleted">
+	<summary>Pārsūdzības statuss: pabeigta</summary>
+</member><member name="P:Entities.DocumentStatus.ListSource">
+	<summary>
+ Optimized ListSource (provided constant elements are already translated)
+ </summary>
+</member><member name="P:Entities.DocumentStatus.ListSourceAppealStatuses">
+	<summary>
+ Pārsūdzības statusu saraksts
+ </summary>
+</member><member name="P:Entities.DocumentStatus.ListOfActiveStatuses">
+	<summary>
+ Aktīvu [nedzēstu] dokumenta statusu sarkasts
+ Draft, Ready, Complete, Sent, Correction
+ </summary>
+</member><member name="P:Entities.DocumentStatus.ListOfActiveNotSentStatuses">
+	<summary>
+ Aktīvu, bet nenosūtītu dokumenta statusu saraksts
+ [Draft, Ready, Complete, Correction]
+ </summary>
+</member><member name="P:Entities.DocumentStatus.ListOfNotCompleteStatuses">
+	<summary>
+ Nepabeigtu dokumenta statusu saraksts
+ [Draft, Ready, Correction]
+ </summary>
+</member><member name="T:Entities.DocumentStatus">
+	<summary>
+ Dokumenta statusi
+ </summary>
+</member><member name="P:Entities.FindActivity.UsePatientName">
+	<summary>
+ Meklēt pēc klienta vārda
+ </summary>
+</member><member name="P:Entities.FindActivity.PatientName">
+	<summary>
+ Klienta vārds
+ </summary>
+</member><member name="P:Entities.FindActivity.UsePatientSurname">
+	<summary>
+ Meklēt pāc klienta uzvārda
+ </summary>
+</member><member name="P:Entities.FindActivity.PatientSurname">
+	<summary>
+ Klienta uzvārds
+ </summary>
+</member><member name="P:Entities.FindActivity.UseUserName">
+	<summary>
+ Meklēt pēc klienta vārda
+ </summary>
+</member><member name="P:Entities.FindActivity.UserName">
+	<summary>
+ Klienta vārds
+ </summary>
+</member><member name="P:Entities.FindActivity.UseUserSurname">
+	<summary>
+ Meklēt pāc klienta uzvārda
+ </summary>
+</member><member name="P:Entities.FindActivity.UserSurname">
+	<summary>
+ Klienta uzvārds
+ </summary>
+</member><member name="P:Entities.FindActivity.UseService">
+	<summary>
+ personas kods
+ </summary>
+</member><member name="P:Entities.FindActivity.Service">
+	<summary>
+ personas kods
+ </summary>
+</member><member name="P:Entities.UserService.Service">
+	<summary>
+ Specialitāte
+ </summary>
+</member><member name="P:Entities.UserService.ManualPrice">
+	<summary>
+ manuāli norādītā cena, kas glabājas DB
+ </summary>
+</member><member name="P:Entities.UserService.Time">
+	<summary>
+ cena, kas bindojās ar UI
+ </summary>
+</member><member name="P:Entities.UserService.ManualTime">
+	<summary>
+ manuāli norādītais laiks, kas glabājas DB
+ </summary>
+</member><member name="P:Entities.UserService.SeleryType">
+	<summary>
+ Atalgojuma tips
+ </summary>
+</member><member name="P:Entities.UserService.SeleryValue">
+	<summary>
+ Atalgojuma apjoms
+ </summary>
+</member><member name="P:Entities.UserService.Selery">
+	<summary>
+ Atalgojuma aprēķina veids procenti vai Lati
+ </summary>
+</member><member name="P:Entities.UserService.Price">
+	<summary>
+ cena, kas bindojās ar UI
+ </summary>
+</member><member name="P:Entities.UserService.User">
+	<summary>
+ Ārsts
+ </summary>
+</member><member name="P:Entities.UserService.CanDelete">
+	<summary>
+ Return whether can delete CM case theme
+ </summary>
+</member><member name="P:Entities.UserService.CanEdit">
+	<summary>
+ Return whether can edit CM case theme
+ </summary>
+</member><member name="T:Entities.UserService">
+	<summary>
+ KP lietas tematiskās pārbaudes tēmas
+ </summary>
+</member><member name="F:Entities.CycleEnum.Regular">
+	<summary>Regulārs</summary>
+</member><member name="F:Entities.CycleEnum.Irregular">
+	<summary>Neregulārs</summary>
+</member><member name="T:Entities.CycleEnum">
+	<summary>Nodarbinātības veidi</summary>
+</member><member name="F:Entities.Cycle.Regular">
+	<summary>Strādā</summary>
+</member><member name="F:Entities.Cycle.Irregular">
+	<summary>Students</summary>
+</member><member name="P:Entities.Cycle.ListSource">
+	<summary>
+ Optimized ListSource (provided constant elements are already translated)
+ </summary>
+</member><member name="F:Entities.DocumentType.Prescription">
+	<summary>Receptes</summary>
+</member><member name="F:Entities.DocumentType.RtgSummary">
+	<summary>RTG izmeklējuma slēdziens</summary>
+</member><member name="F:Entities.DocumentType.RTG">
+	<summary>RTG</summary>
+</member><member name="F:Entities.DocumentType.USG">
+	<summary>USG</summary>
+</member><member name="F:Entities.DocumentType.DenticalCard">
+	<summary>USG</summary>
+</member><member name="P:Entities.DocumentType.ListSource">
+	<summary>
+ Optimized ListSource (provided constant elements are already translated)
+ </summary>
+</member><member name="T:Entities.BinaryFileType">
+	<summary>
+ Binary file types
  </summary>
 	<remarks></remarks>
-</member><member name="P:Entities.SMSMessages.MeesageText">
+</member><member name="P:Entities.BinaryFile.Name">
 	<summary>
- paziņojuma teksts
+ Faila nosaukums
  </summary>
-</member><member name="P:Entities.SMSMessages.DaysBefore">
+</member><member name="P:Entities.BinaryFile.FileType">
 	<summary>
- cik dienas iepriekš
+ Faila veids.
  </summary>
-</member><member name="P:Entities.SMSMessages.SendTime">
+	<returns>Faila veids, kas atbilst Name propertijā reģistrētā faila vārda paplašinājumam.</returns>
+</member><member name="P:Entities.BinaryFile.Content">
 	<summary>
- sûtīšanas laiks
+ Faila saturs
  </summary>
-</member><member name="P:Entities.SMSMessages.Type">
+</member><member name="M:Entities.BinaryFile.#ctor(Core.Dal.ISession,System.String)">
 	<summary>
- sûtīšanas laiks
+ Constructor from file
  </summary>
-</member><member name="P:Entities.ClassifierFind.UseInClassifier">
+</member><member name="M:Entities.BinaryFile.#ctor">
 	<summary>
- vai iekļaut atlasē: tēmas 
+ Standard constructor
  </summary>
-</member><member name="P:Entities.ClassifierFind.UseInList">
+</member><member name="P:Entities.BinaryFile.Documents">
 	<summary>
- vai iekļaut atlasē: tēmas 
+ KP lietai pievienotie dokumenti
  </summary>
-</member><member name="P:Entities.ClassifierFind.UseIsParent">
+</member><member name="T:Entities.BinaryFile">
 	<summary>
- vai iekļaut atlasē: tēmas 
+ Faili (uzģenerētie, pievienotie, templeiti u.c.)
  </summary>
-</member><member name="P:Entities.ClassifierFind.UseNotInClassifier">
+</member><member name="M:Entities.BinaryContent.GetAsStream">
 	<summary>
- vai neiekļaut lietotājus atlasē
+ Returns a Stream for data access or Nothing (null) if there is no data
  </summary>
-</member><member name="P:Entities.ClassifierFind.Classifier">
+</member><member name="M:Entities.BinaryContent.SetFromStream(System.IO.Stream)">
 	<summary>
- Atlasē neiekļautie lietotāji; ieļautās tēmas
+ Passes data to store, as an input stream
+ <example>
+    Dim target As BinaryContent = New BinaryContent()
+    Dim inputStream As New FileStream(fileName, FileMode.Open, FileAccess.Read, FileShare.Read)
+    target.SetFromStream(inputStream)
+ </example>
+	</summary>
+	<param name="instream">Stream that contains the data to be stored</param>
+</member><member name="T:Entities.BinaryContent">
+	<summary>
+ The compressed content of BinaryFile
  </summary>
-</member><member name="P:Entities.ClassifierFind.ClassifiersId">
+	<remarks>Separated from BinaryFile to utilize lazy loading of large binary content.</remarks>
+</member><member name="F:Entities.UsageStatusEnum.Created">
+	<summary>Jauns</summary>
+</member><member name="F:Entities.UsageStatusEnum.StartUsed">
+	<summary>Uzsākts izmantot</summary>
+</member><member name="F:Entities.UsageStatusEnum.Used">
+	<summary>Izmantots pilnībā</summary>
+</member><member name="T:Entities.UsageStatusEnum">
+	<summary>Izlietojuma statusi</summary>
+</member><member name="F:Entities.UsageStatus.Created">
+	<summary>Jauns</summary>
+</member><member name="F:Entities.UsageStatus.StartUsed">
+	<summary>Uzsākts izmantot</summary>
+</member><member name="F:Entities.UsageStatus.Used">
+	<summary>Izmantots pilnībā</summary>
+</member><member name="P:Entities.UsageStatus.ListSource">
 	<summary>
- Atlasē neiekļautie lietotāji; ieļautās tēmas
+ Optimized ListSource (provided constant elements are already translated)
  </summary>
-</member><member name="P:Entities.ClassifierFind.ExcludeComputersInUse">
+</member><member name="F:Entities.PaymentStatusEnum.NotPayd">
+	<summary>Apmaksa nav veikta</summary>
+</member><member name="F:Entities.PaymentStatusEnum.PaydPart">
+	<summary>Apmaksāts daļēji</summary>
+</member><member name="F:Entities.PaymentStatusEnum.PaydAll">
+	<summary>Apmaksāts pilnībā</summary>
+</member><member name="T:Entities.PaymentStatusEnum">
+	<summary>Apmaksas statusi</summary>
+</member><member name="F:Entities.PaymentStatus.NotPayd">
+	<summary>Apmaksa nav veikta</summary>
+</member><member name="F:Entities.PaymentStatus.PaydPart">
+	<summary>Apmaksāts daļēji</summary>
+</member><member name="F:Entities.PaymentStatus.PaydAll">
+	<summary>Apmaksāts pilnībā</summary>
+</member><member name="P:Entities.PaymentStatus.ListSource">
 	<summary>
- Special property for computer lists
+ Optimized ListSource (provided constant elements are already translated)
  </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:Entities.User.FirstName">
+</member><member name="F:Entities.SMSTypeEnum.Before">
+	<summary>Pirms noteiktā laika</summary>
+</member><member name="F:Entities.SMSTypeEnum.After">
+	<summary>Pēc noteiktā laika</summary>
+</member><member name="F:Entities.SMSTypeEnum.GroupWork">
+	<summary>Grupu nodarbības</summary>
+</member><member name="F:Entities.SMSTypeEnum.Reservation">
+	<summary>Vizītes rezervācija</summary>
+</member><member name="F:Entities.SMSTypeEnum.BlackList">
+	<summary>Paziņojums par iekļaušanu melnajā sarakstā</summary>
+</member><member name="F:Entities.SMSTypeEnum.BonusPointsAdded">
+	<summary>Paziņojums par piešķirtiem bonusa punktiem</summary>
+</member><member name="F:Entities.SMSTypeEnum.BirthDay">
+	<summary>Dzimšanas dienas apsveikums</summary>
+</member><member name="T:Entities.SMSTypeEnum">
+	<summary>Nodarbinātības veidi</summary>
+</member><member name="F:Entities.SMSType.Before">
+	<summary>Pirms noteiktā laika</summary>
+</member><member name="F:Entities.SMSType.After">
+	<summary>Pēc noteiktā laika</summary>
+</member><member name="F:Entities.SMSType.GroupWork">
+	<summary>Pēc noteiktā laika</summary>
+</member><member name="F:Entities.SMSType.Reservation">
+	<summary>Pēc noteiktā laika</summary>
+</member><member name="F:Entities.SMSType.BlackList">
+	<summary>Paziņojums par iekļaušanu melnajā sarakstā</summary>
+</member><member name="F:Entities.SMSType.BonusPointsAdded">
+	<summary>Paziņojums par piešķirtiem bonusa punktiem</summary>
+</member><member name="F:Entities.SMSType.BirthDay">
+	<summary>Dzimšanas dienas apsveikums</summary>
+</member><member name="P:Entities.SMSType.ListSource">
 	<summary>
- Vārds
+ Optimized ListSource (provided constant elements are already translated)
  </summary>
-</member><member name="P:Entities.User.LastName">
+</member><member name="F:Entities.LayEnum.One">
+	<summary>Viens</summary>
+</member><member name="F:Entities.LayEnum.Many">
+	<summary>Vairāki</summary>
+</member><member name="T:Entities.LayEnum">
+	<summary>Nodarbinātības veidi</summary>
+</member><member name="F:Entities.Lay.One">
+	<summary>Viens</summary>
+</member><member name="F:Entities.Lay.Many">
+	<summary>Vairāki</summary>
+</member><member name="P:Entities.Lay.ListSource">
 	<summary>
- Uzvārds
- </summary>
-</member><member name="P:Entities.User.OtherNames">
-	<summary>
- Otrs vārds
- </summary>
-</member><member name="P:Entities.User.Signature">
-	<summary>
- Paraksts
- </summary>
-</member><member name="P:Entities.User.Email">
-	<summary>
- E-pasts
- </summary>
-</member><member name="P:Entities.User.Phone">
-	<summary>
- Tālrunis
- </summary>
-</member><member name="P:Entities.User.CellPhone">
-	<summary>
- Mob.tālrunis
- </summary>
-</member><member name="P:Entities.User.Code">
-	<summary>
- Darbinieka kods
- </summary>
-</member><member name="P:Entities.User.SalaryNote">
-	<summary>
- Piezīmes par darba līgumu un apmaksas noteikumiem
- </summary>
-</member><member name="P:Entities.User.PK">
-	<summary>
- Darbinieka personas kods
- </summary>
-</member><member name="P:Entities.User.Position">
-	<summary>
- Amats
- </summary>
-</member><member name="P:Entities.User.Logon">
-	<summary>
- Lietotājs
- </summary>
-</member><member name="P:Entities.User.Password">
-	<summary>
- Parole
- </summary>
-</member><member name="P:Entities.User.Role">
-	<summary>
- Loma
- </summary>
-</member><member name="P:Entities.User.WorksFrom">
-	<summary>
- Strādā no
- </summary>
-</member><member name="P:Entities.User.WorkedUntil">
-	<summary>
- Strādāja līdz
- </summary>
-</member><member name="P:Entities.User.FullName">
-	<summary>
- uzvārds, vārds
- </summary>
-</member><member name="P:Entities.User.FullNameStartWithName">
-	<summary>
- uzvārds, vārds
- </summary>
-</member><member name="P:Entities.User.IsSystemUser">
-	<summary>
- Ir sistēmas lietotājs
- </summary>
-</member><member name="P:Entities.User.Today">
-	<summary>
- Šodiena
- </summary>
-</member><member name="M:Entities.User.LockOut">
-	<summary>
- Revokes user's access to system by removing Role
- </summary>
-	<remarks></remarks>
-</member><member name="T:Entities.User">
-	<summary>
- Lietotājs
- </summary>
-</member><member name="P:Entities.TimeTable.Speciality">
-	<summary>
- specialitāte
- </summary>
-</member><member name="P:Entities.TimeTable.VisiteType">
-	<summary>
- ārsts
+ Optimized ListSource (provided constant elements are already translated)
  </summary>
 </member>
 </members>
